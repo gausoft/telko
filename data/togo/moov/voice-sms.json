@@ -1,0 +1,516 @@
+{
+  "operator": "moov",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "moov-voice-sms-f150-v",
+      "kind": "bundle",
+      "name": "F 150 V",
+      "description": "11 min d'appels valables 1 jour.",
+      "price_xof": 150,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 11,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 Jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page détaillée l'appelle par erreur « Volume Méga 11 Min »."
+    },
+    {
+      "id": "moov-voice-sms-f250-v",
+      "kind": "bundle",
+      "name": "F 250 V",
+      "description": "20 min d'appels valables 2 jours.",
+      "price_xof": 250,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*2*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f450-v",
+      "kind": "bundle",
+      "name": "F 450 V",
+      "description": "36 min d'appels valables 3 jours.",
+      "price_xof": 450,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 36,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La promotion du 13 au 18/10/2026 donnait 45 min au lieu de 36 : valeur de base du catalogue retenue."
+    },
+    {
+      "id": "moov-voice-sms-f600-v",
+      "kind": "bundle",
+      "name": "F 600 V",
+      "description": "50 min d'appels valables 3 jours.",
+      "price_xof": 600,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*10*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f900-v",
+      "kind": "bundle",
+      "name": "F 900 V",
+      "description": "75 min d'appels valables 7 jours.",
+      "price_xof": 900,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 75,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*4*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f1400-v",
+      "kind": "bundle",
+      "name": "F 1400 V",
+      "description": "120 min d'appels valables 10 jours.",
+      "price_xof": 1400,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 120,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*5*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f2500-v",
+      "kind": "bundle",
+      "name": "F 2500 V",
+      "description": "220 min d'appels valables 15 jours.",
+      "price_xof": 2500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 220,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*6*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f5000-v",
+      "kind": "bundle",
+      "name": "F 5000 V",
+      "description": "450 min d'appels valables 30 jours.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 450,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*7*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-voice-sms-f7000-v",
+      "kind": "bundle",
+      "name": "F 7000 V",
+      "description": "660 min d'appels valables 30 jours.",
+      "price_xof": 7000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 660,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*8*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/entreprise/offres-mixtes-et-voix-corporate/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Même code que la version Corporate, qui donne 680 min + 10 min."
+    },
+    {
+      "id": "moov-voice-sms-f9500-v",
+      "kind": "bundle",
+      "name": "F 9500 V",
+      "description": "930 min d'appels valables 30 jours.",
+      "price_xof": 9500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 930,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*555*2*9*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/entreprise/offres-mixtes-et-voix-corporate/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Même code que la version Corporate (930 min aussi)."
+    },
+    {
+      "id": "moov-voice-sms-forfait-sms",
+      "kind": "bundle",
+      "name": "Forfait SMS",
+      "description": "50 SMS valables 1 jour.",
+      "price_xof": 150,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*143*53*50#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms",
+        "journalier"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-sms/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Vérifier : *555*1*3#."
+    },
+    {
+      "id": "moov-voice-sms-solde-sms",
+      "kind": "service",
+      "name": "Solde SMS",
+      "description": "Consulter le nombre de SMS restants.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*555*1*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-sms/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/offres-mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

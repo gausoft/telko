@@ -1,0 +1,305 @@
+{
+  "operator": "yas",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "yas-mobile-money-menu-mixx",
+      "kind": "service",
+      "name": "Menu Mixx by Yas",
+      "description": "Menu principal du mobile money Mixx by Yas.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "t-money",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code PIN se saisit dans le menu. Contact e-mail Mixx : mixxbyyas@yas.tg. Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-mobile-money-transfert-argent",
+      "kind": "service",
+      "name": "Transfert d'argent",
+      "description": "Envoyer de l'argent à un autre compte Mixx.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "transfert",
+        "envoyer",
+        "argent"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Bénéficiaire, montant et PIN se saisissent dans le menu ; aucune syntaxe directe publiée. Frais officiels : les 6 premiers transferts de la journée sont gratuits, 1 % à partir du 7e (tarif susceptible de changer)."
+    },
+    {
+      "id": "yas-mobile-money-retrait-argent",
+      "kind": "service",
+      "name": "Retrait d'argent",
+      "description": "Retirer de l'argent chez un agent ou en agence Togocom.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "retrait",
+        "agent",
+        "cash"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Agent, montant et PIN se saisissent dans le menu. Frais : voir la grille de retrait (presse, janvier 2025)."
+    },
+    {
+      "id": "yas-mobile-money-achat-credit-forfait",
+      "kind": "service",
+      "name": "Achat de crédit/forfait",
+      "description": "Acheter du crédit ou un forfait pour vous ou un proche.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "crédit",
+        "forfait",
+        "achat",
+        "autrui"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro, forfait et PIN se saisissent dans le menu. Aucun code direct en une étape publié."
+    },
+    {
+      "id": "yas-mobile-money-paiement-factures",
+      "kind": "service",
+      "name": "Paiement de factures",
+      "description": "Payer électricité, eau ou télévision.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "facture",
+        "électricité",
+        "eau",
+        "télé"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-mobile-money-paiement-marchand",
+      "kind": "service",
+      "name": "Paiement marchand",
+      "description": "Payer un commerçant avec Mixx.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "paiement",
+        "marchand",
+        "commerçant"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code marchand, montant et PIN se saisissent dans le menu."
+    },
+    {
+      "id": "yas-mobile-money-selfcare-mixx",
+      "kind": "service",
+      "name": "Selfcare Mixx",
+      "description": "Réinitialiser le PIN, revoir les 3 derniers codes LAFIA, annuler un transfert erroné.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*8#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "pin",
+        "lafia",
+        "cash power",
+        "annulation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-mobile-money-mixx-vers-banque",
+      "kind": "service",
+      "name": "Pass Mixx (Mixx vers banque)",
+      "description": "Envoyer de l'argent de Mixx vers un compte Orabank.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "banque",
+        "orabank"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://momocalc.com/fr/togo/frais-tmoney",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire uniquement : *145# puis 6, 1, 2 dans le menu. Frais : 1 %, plafonné à 2M (selon momocalc)."
+    }
+  ]
+}

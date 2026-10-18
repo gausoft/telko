@@ -1,0 +1,754 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-menu-principal",
+      "kind": "service",
+      "name": "Menu principal *100#",
+      "description": "Infos sur son numéro, son profil, ses avantages et les offres.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*100#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "mon numéro",
+        "profil"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pour connaître son propre numéro, des sources tierces donnent *106# ou *100*1*1# (contradictoires). Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-general-solde-credit",
+      "kind": "service",
+      "name": "Solde crédit",
+      "description": "Consulter son crédit de communication.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*101#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/faq/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/informations-sur-les-recharges/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://temovision.com/fr/credit-de-communication-et-solde-de-donnees-sur-moov-togo/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Selon une source tierce, l'option 1 affiche aussi le solde internet."
+    },
+    {
+      "id": "moov-general-notifications-push",
+      "kind": "service",
+      "name": "Activer ou désactiver les notifications push",
+      "description": "Activer ou couper les messages promotionnels push.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*100*3*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "notifications",
+        "publicité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Une source tierce utilise ce même code pour « acheter un pass pour un tiers », ce qui contredit le site officiel."
+    },
+    {
+      "id": "moov-general-statut-identification",
+      "kind": "service",
+      "name": "Statut d'identification",
+      "description": "Vérifier si sa carte SIM est bien identifiée.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*202#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "identification",
+        "sim"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site donne aussi *848# pour le même service."
+    },
+    {
+      "id": "moov-general-signaler-arnaque",
+      "kind": "service",
+      "name": "Signaler une arnaque",
+      "description": "Signaler une tentative d'escroquerie.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*100*9#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "arnaque",
+        "fraude"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/fr/moov-togo/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source tierce uniquement, absent du site officiel."
+    },
+    {
+      "id": "moov-general-migration-moov-classic",
+      "kind": "service",
+      "name": "Moov Classic",
+      "description": "Passer au profil Moov Classic.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*106*0#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "profil",
+        "migration"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/moov-classic/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels nationaux 79 F/min (30 s), 50 F vers les numéros complices, SMS 20 F national / 90 F international. Coût de migration non précisé."
+    },
+    {
+      "id": "moov-general-migration-epiq-nation",
+      "kind": "service",
+      "name": "Epiq Nation",
+      "description": "Passer au profil Epiq Nation.",
+      "price_xof": 100,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*106*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "profil",
+        "migration",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/epiq-nation/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Inclut 12 Mo/jour WhatsApp + Facebook. Appels nationaux 79 F/min (30 s). Numéros complices : 50 F (30 s) sur la page du profil, 30 F/min sur la page des services à valeur ajoutée."
+    },
+    {
+      "id": "moov-general-migration-moov-seconde",
+      "kind": "service",
+      "name": "Moov Seconde",
+      "description": "Passer au profil Moov Seconde, facturé à la seconde.",
+      "price_xof": 100,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*106*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "profil",
+        "migration",
+        "seconde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/moov-seconde/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels nationaux 79 F (1,3 F/s), numéros complices 60 F (1 F/s), SMS 20 F national / 90 F international."
+    },
+    {
+      "id": "moov-general-migration-moov-privilege",
+      "kind": "service",
+      "name": "Moov Privilège",
+      "description": "Passer au profil Moov Privilège.",
+      "price_xof": 100,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*106*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "profil",
+        "migration"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/moov-privilege/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Nécessite au moins 5 000 F de crédit et une consommation d'au moins 30 000 F par trimestre. Appels nationaux 60 F/min (30 s)."
+    },
+    {
+      "id": "moov-general-solde-kit-aeroport",
+      "kind": "service",
+      "name": "Solde Kit Aéroport",
+      "description": "Consulter le solde de son Kit Aéroport.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*101*13#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "aéroport",
+        "kit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/kits-aeroport/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Kits vendus uniquement à l'agence de l'aéroport : OR 5 000 F (100 min, 5 min international, 6 Go, 500 F, 30 jours) et DIAMANT 10 000 F (240 min, 10 min international, 15 Go, 1 000 F, 30 jours)."
+    },
+    {
+      "id": "moov-general-complices-liste",
+      "kind": "service",
+      "name": "Voir ma liste de numéros complices",
+      "description": "Afficher ses numéros complices.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*107#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéros complices",
+        "favoris"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-general-complices-ajouter",
+      "kind": "service",
+      "name": "Ajouter un numéro complice",
+      "description": "Ajouter un numéro à sa liste de 5 numéros complices.",
+      "price_xof": 0,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*107*1*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro à ajouter",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéros complices",
+        "favoris"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Première liste de 5 numéros gratuite, puis 300 F par numéro modifié. Appels vers les complices : 50 F/min (30 F/min pour Epiq Nation et MoovIn selon la page des services). Tous réseaux nationaux."
+    },
+    {
+      "id": "moov-general-complices-supprimer",
+      "kind": "service",
+      "name": "Supprimer un numéro complice",
+      "description": "Retirer un numéro de sa liste de numéros complices.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*107*0*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro à retirer",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéros complices",
+        "favoris"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-general-moov-bip",
+      "kind": "service",
+      "name": "Moov Bip",
+      "description": "Envoyer gratuitement un « rappelle-moi » à un numéro.",
+      "price_xof": 0,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*108*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro à biper",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "rappelle-moi",
+        "bip"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "10 par jour au maximum. La page « codes utiles » l'étiquette par erreur « Voir ma liste de numéros complices »."
+    },
+    {
+      "id": "moov-general-instavoice-activer",
+      "kind": "service",
+      "name": "InstaVoice (activer)",
+      "description": "Activer la messagerie vocale InstaVoice.",
+      "price_xof": 0,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*004*9911#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "messagerie vocale",
+        "répondeur"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/divertissement/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation gratuite. Écouter ses messages : *2*."
+    },
+    {
+      "id": "moov-general-instavoice-desactiver",
+      "kind": "service",
+      "name": "InstaVoice (désactiver)",
+      "description": "Désactiver la messagerie vocale InstaVoice.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#004#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "messagerie vocale",
+        "répondeur"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/divertissement/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-general-moovkiosque",
+      "kind": "service",
+      "name": "MoovKiosque",
+      "description": "Recevoir des informations par SMS.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*218#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "infos",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/divertissement/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "25 F par SMS reçu. Aussi par mot-clé au 3030. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-general-moov-together-no-limit",
+      "kind": "service",
+      "name": "Moov Together « No limit »",
+      "description": "Option d'appels illimités pour les membres d'un groupe Moov Together.",
+      "price_xof": 7000,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*143*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "groupe",
+        "illimité",
+        "moov together"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/moov-together/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "7 000 F par ligne. Réservé aux groupes Moov Together (consommation minimale 5 000 F par mois)."
+    },
+    {
+      "id": "moov-general-moov-together-free-call",
+      "kind": "service",
+      "name": "Moov Together « Free call »",
+      "description": "2 h d'appels pour les membres d'un groupe Moov Together.",
+      "price_xof": 2000,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*143*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "groupe",
+        "appels",
+        "moov together"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/moov-together/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "2 000 F par ligne. Réservé aux groupes Moov Together."
+    },
+    {
+      "id": "moov-general-moov-together-solde",
+      "kind": "service",
+      "name": "Moov Together, solde Free call",
+      "description": "Consulter le solde de son option Free call.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*143*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "groupe",
+        "moov together"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/moov-together/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

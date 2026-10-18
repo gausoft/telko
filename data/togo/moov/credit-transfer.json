@@ -1,0 +1,390 @@
+{
+  "operator": "moov",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "moov-credit-transfer-changer-code-transfert",
+      "kind": "service",
+      "name": "Changer le code secret de transfert de crédit",
+      "description": "Remplacer le code par défaut 0000 avant le premier transfert.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*102*0000*{new_code}#",
+        "params": [
+          {
+            "name": "new_code",
+            "type": "pin",
+            "label": "Nouveau code secret",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "transfert de crédit",
+        "code secret"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Obligatoire avant le premier transfert. 0000 est le code par défaut."
+    },
+    {
+      "id": "moov-credit-transfer-transfert-credit",
+      "kind": "service",
+      "name": "Transfert de crédit",
+      "description": "Envoyer du crédit de communication à un autre numéro Moov.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*102*{amount}*{phone}*{secret_code}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true
+          },
+          {
+            "name": "secret_code",
+            "type": "pin",
+            "label": "Code secret de transfert",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert de crédit",
+        "envoyer crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret est inclus dans le code. Frais : 3 % du montant. Minimum 200 F, maximum 5 000 F par transfert, 20 000 F par jour, 50 000 F par semaine, 100 000 F par mois. La page « codes utiles » l'étiquette par erreur « Consulter son solde »."
+    },
+    {
+      "id": "moov-credit-transfer-recharge-tiers-carte",
+      "kind": "service",
+      "name": "Recharger un tiers par carte",
+      "description": "Charger une carte de recharge sur le numéro de quelqu'un d'autre.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*109*{card_code}*{phone}#",
+        "params": [
+          {
+            "name": "card_code",
+            "type": "text",
+            "label": "Code de la carte de recharge",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "carte",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi accessible par le menu *109#."
+    },
+    {
+      "id": "moov-credit-transfer-recharge-carte",
+      "kind": "service",
+      "name": "Recharger par carte",
+      "description": "Charger une carte de recharge sur son propre numéro.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*124*{card_code}#",
+        "params": [
+          {
+            "name": "card_code",
+            "type": "text",
+            "label": "Code de la carte (12 chiffres)",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/informations-sur-les-recharges/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Écrit « *124* puis les 12 chiffres » : le # final est supposé. Cartes de 500 à 40 000 F, valables 90 jours."
+    },
+    {
+      "id": "moov-credit-transfer-achat-credit-flooz",
+      "kind": "service",
+      "name": "Acheter du crédit avec Flooz",
+      "description": "Acheter du crédit pour soi avec son compte Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*3*1*{amount}*{pin}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "flooz",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/achat-de-credits-via-flooz/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/informations-sur-les-recharges/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret Flooz est inclus dans le code. À partir de 200 F. Une autre page écrit *155*3*1# (entrée de menu)."
+    },
+    {
+      "id": "moov-credit-transfer-achat-credit-flooz-tiers",
+      "kind": "service",
+      "name": "Acheter du crédit avec Flooz pour un autre numéro",
+      "description": "Acheter du crédit pour un autre numéro avec son compte Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*3*2*{phone}*{amount}*{pin}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "flooz",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/achat-de-credits-via-flooz/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret Flooz est inclus dans le code."
+    },
+    {
+      "id": "moov-credit-transfer-moovcredit-secours",
+      "kind": "service",
+      "name": "MoovCrédit Secours",
+      "description": "Emprunter du crédit, remboursé avec 10 % à la prochaine recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*222#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "prêt",
+        "crédit",
+        "dépannage",
+        "sos"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://temovision.com/fr/moov-togo/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Montants 100, 200, 500, 1 000 ou 2 000 F, remboursés 110, 220, 550, 1 100 ou 2 200 F. Aussi par SMS « SOS montant » au 9898, ou en direct (ex. *222*200#). Conditions : 3 mois sur le réseau (aussi écrit « 90 jours »), crédit inférieur ou égal à 50 F, au moins 1 000 F consommés dans le mois. Le texte parle de « 3 niveaux » mais liste 5 montants. Une source tierce donne *222*1#. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-credit-transfer-solde-promo-recharge",
+      "kind": "service",
+      "name": "Solde bonus de recharge",
+      "description": "Consulter le bonus reçu lors d'une promotion de recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*101*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "bonus",
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/promotions/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/promotion/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

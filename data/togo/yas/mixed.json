@@ -1,0 +1,494 @@
+{
+  "operator": "yas",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "yas-mixed-lema200-plus",
+      "kind": "bundle",
+      "name": "Léma200+",
+      "description": "1 000 F de crédit d'appels tous réseaux, 20 Mo et 20 SMS sur 1 jour.",
+      "price_xof": 200,
+      "allowances": {
+        "data_mb": 20,
+        "voice_min": null,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*311#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (1 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema250-plus",
+      "kind": "bundle",
+      "name": "Léma250+",
+      "description": "2 500 F de crédit d'appels tous réseaux, 20 Mo et 20 SMS sur 1 jour.",
+      "price_xof": 250,
+      "allowances": {
+        "data_mb": 20,
+        "voice_min": null,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*314#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (2 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema300-plus",
+      "kind": "bundle",
+      "name": "Léma300+",
+      "description": "2 000 F de crédit d'appels tous réseaux, 40 Mo et 40 SMS sur 2 jours.",
+      "price_xof": 300,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": null,
+        "sms": 40
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*312#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (2 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Moins de crédit que Léma250+, tel que publié par la page et la boutique. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema400-plus",
+      "kind": "bundle",
+      "name": "Léma400+",
+      "description": "3 500 F de crédit d'appels tous réseaux, 40 Mo et 40 SMS sur 2 jours.",
+      "price_xof": 400,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": null,
+        "sms": 40
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*315#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (3 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema500-plus",
+      "kind": "bundle",
+      "name": "Léma500+",
+      "description": "4 000 F de crédit d'appels tous réseaux, 50 Mo et 50 SMS sur 3 jours.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": 50
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*313#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (4 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema1000-plus",
+      "kind": "bundle",
+      "name": "Léma1000+",
+      "description": "7 500 F de crédit d'appels tous réseaux, 250 Mo et 250 SMS sur 7 jours.",
+      "price_xof": 1000,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": 250
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*321#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/forfait-voix-lema/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (7 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. La page promo « forfait-voix-lema » donne le code *909*445# et « plus de 1000 minutes » ; la FAQ présente *445# comme le prêt de data. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema2000-plus",
+      "kind": "bundle",
+      "name": "Léma2000+",
+      "description": "20 000 F de crédit d'appels tous réseaux, 500 Mo et 250 SMS sur 7 jours.",
+      "price_xof": 2000,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": 250
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*324#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (20 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-mixed-lema5000-plus",
+      "kind": "bundle",
+      "name": "Léma5000+",
+      "description": "37 500 F de crédit d'appels tous réseaux, 1 Go et 250 SMS sur 30 jours.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": 250
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*332#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (37 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-mixed-lema7500-plus",
+      "kind": "bundle",
+      "name": "Léma7500+",
+      "description": "75 000 F de crédit d'appels tous réseaux, 1,5 Go et 250 SMS sur 30 jours.",
+      "price_xof": 7500,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": 250
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*331#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (75 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-mixed-lema9000-plus",
+      "kind": "bundle",
+      "name": "Léma9000+",
+      "description": "90 000 F de crédit d'appels tous réseaux, 2 Go et 250 SMS sur 30 jours.",
+      "price_xof": 9000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": 250
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*431#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "léma+",
+        "appels",
+        "sms",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit d'appels (90 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+    }
+  ]
+}

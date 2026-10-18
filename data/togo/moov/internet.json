@@ -1,0 +1,758 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-izi-free",
+      "kind": "bundle",
+      "name": "iZi'Free",
+      "description": "50 Mo valables 1 jour.",
+      "price_xof": 100,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 Jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "journalier",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izifree/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La promo « iZi Free Turbo » d'octobre 2026 utilise le même code avec une base de 1 Go, contre 50 Mo au catalogue. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-cool",
+      "kind": "bundle",
+      "name": "iZi'Cool",
+      "description": "120 Mo valables 1 jour.",
+      "price_xof": 200,
+      "allowances": {
+        "data_mb": 120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 Jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "journalier",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izicool/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-kif",
+      "kind": "bundle",
+      "name": "iZi'Kif",
+      "description": "300 Mo valables 3 jours.",
+      "price_xof": 300,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*1*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izikif/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page de présentation indique 300 Mo, la page détaillée (plus ancienne) 180 Mo. Valeur la plus récente retenue. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-relax",
+      "kind": "bundle",
+      "name": "iZi'Relax",
+      "description": "600 Mo valables 3 jours.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*1*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izirelax/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page de présentation indique 600 Mo, la page détaillée (plus ancienne) 400 Mo. Valeur la plus récente retenue, confirmée par la page promotions d'octobre 2026. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-wik",
+      "kind": "bundle",
+      "name": "iZi'Wik",
+      "description": "2 Go valables 7 jours.",
+      "price_xof": 1000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 Jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "hebdomadaire",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-iziwik/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page de présentation indique 2 Go, la page détaillée (plus ancienne) 1,5 Go. Valeur la plus récente retenue. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-moon",
+      "kind": "bundle",
+      "name": "iZi'Moon",
+      "description": "4 Go valables 1 nuit.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "1 Nuit"
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "*400*2*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nuit",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izimoon/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Solde : *400*2*3*3#. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-small-1",
+      "kind": "bundle",
+      "name": "iZi'Small 1",
+      "description": "6 Go valables 10 jours.",
+      "price_xof": 2500,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izismall-1/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-small-2",
+      "kind": "bundle",
+      "name": "iZi'Small 2",
+      "description": "6 Go valables 30 jours.",
+      "price_xof": 4500,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*2*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mensuel",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izismall-2/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page promotions d'octobre 2026 parle de « 10 Go au lieu de 7 Go » : le volume de base est peut-être passé à 7 Go (non vérifié). Les flottes Corporate Star reçoivent 1 Go de bonus. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-medium-1",
+      "kind": "bundle",
+      "name": "iZi'Medium 1",
+      "description": "15 Go valables 15 jours.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*2*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izimedium-1/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-medium-2",
+      "kind": "bundle",
+      "name": "iZi'Medium 2",
+      "description": "30 Go valables 30 jours.",
+      "price_xof": 9000,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*2*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mensuel",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izimedium-2/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page promotions d'octobre 2026 indique deux bases différentes, « au lieu de 35 Go » et « au lieu de 30 Go » (non vérifié). Les flottes Corporate Star reçoivent 5 Go de bonus. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-large",
+      "kind": "bundle",
+      "name": "iZi'Large",
+      "description": "75 Go valables 30 jours.",
+      "price_xof": 15000,
+      "allowances": {
+        "data_mb": 76800,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*2*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mensuel",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izilarge/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page promotions d'octobre 2026 parle de « au lieu de 85 Go » : le volume de base a peut-être changé (non vérifié). Les flottes Corporate Star reçoivent 10 Go de bonus. Le paiement par Flooz est annoncé par Moov, mais aucun code Flooz n'est publié pour ce forfait."
+    },
+    {
+      "id": "moov-internet-izi-nam",
+      "kind": "service",
+      "name": "Izi'Nam",
+      "description": "Transférer 100, 200 ou 300 Mo de son forfait vers un autre numéro Moov.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": {
+        "days": null,
+        "label": "24 H"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*400*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert de méga",
+        "internet",
+        "partage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/transfert-de-mega/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/faq/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre promotionnelle. Coût : 50, 100 ou 150 F pour 100, 200 ou 300 Mo transférés, 300 Mo par jour au maximum. Vérifier : *400*3*2*2#. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-internet-sos-data",
+      "kind": "service",
+      "name": "SOS Data",
+      "description": "Emprunter de l'internet, remboursé à la prochaine recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*222#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "prêt",
+        "internet",
+        "dépannage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/services-a-valeur-ajoutee/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://temovision.com/fr/moov-togo/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "75, 120 ou 300 Mo, à rembourser 220, 330 ou 550 F. Une source tierce donne *222*2#. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-internet-validite-plus",
+      "kind": "service",
+      "name": "Validité Plus",
+      "description": "Prolonger la validité de son forfait internet de 1 ou 3 jours.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*400*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "validité",
+        "prolonger",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/validite-plus/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "50 F pour 1 jour, 125 F pour 3 jours. Vérifier : *400*4#. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-internet-solde-izi",
+      "kind": "service",
+      "name": "Solde des forfaits iZi",
+      "description": "Consulter le volume restant de ses forfaits iZi.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*400*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "internet",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pour iZi'Moon, le solde se consulte avec *400*2*3*3#."
+    },
+    {
+      "id": "moov-internet-solde-izi-moon",
+      "kind": "service",
+      "name": "Solde iZi'Moon",
+      "description": "Consulter le volume restant du forfait de nuit iZi'Moon.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*400*2*3*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "nuit",
+        "izi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/forfaits-internet-4g/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/forfait-izimoon/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-internet-compatibilite-4g",
+      "kind": "service",
+      "name": "Vérifier la compatibilité 4G de la SIM",
+      "description": "Savoir si sa carte SIM est compatible 4G.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*400*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "4g",
+        "sim"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

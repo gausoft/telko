@@ -1,0 +1,59 @@
+name: Nouvelle offre ou correction
+description: Proposer une offre, un code ou un prix manquant
+title: "[Offre] "
+labels: ["new-offer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Indiquez votre source. Ne partagez **jamais** votre code secret.
+  - type: dropdown
+    id: operator
+    attributes:
+      label: Opérateur
+      options:
+        - Yas Togo
+        - Moov Africa Togo
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Nom de l'offre ou du service
+      placeholder: Net5000, transfert Flooz…
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code USSD
+      description: Remplacez les valeurs variables par {numero}, {montant}, {code_secret}.
+      placeholder: "*155*1*1*{numero}*{montant}*{code_secret}#"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Prix, volume, validité
+      placeholder: "5 000 FCFA, 6 Go, 30 jours"
+  - type: dropdown
+    id: proof
+    attributes:
+      label: Source
+      options:
+        - Testé sur mon téléphone
+        - Site officiel de l'opérateur
+        - Autre (blog, appli, réseaux sociaux)
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Lien de la source (si disponible)
+  - type: input
+    id: date
+    attributes:
+      label: Date de la vérification
+      placeholder: "2026-10-18"
+    validations:
+      required: true

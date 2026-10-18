@@ -1,0 +1,151 @@
+{
+  "operator": "moov",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "moov-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Moov Africa Togo",
+      "description": "Joindre le service client de Moov Africa Togo.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+22899990000",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "contact",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/contactez-nous/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro affiché « +228 99 99 00 00 ». Email : moov-contact@moov-africa.tg. Adresse : Boulevard de la Paix, Lomé, BP 14511. Aucun numéro court de service client mobile (type 111) n'est publié."
+    },
+    {
+      "id": "moov-useful-numbers-service-client-fixe",
+      "kind": "service",
+      "name": "Service client Moov Africa Togo (fixe)",
+      "description": "Joindre Moov Africa Togo sur sa ligne fixe.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+22822201323",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "contact"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/contactez-nous/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro affiché « +228 22 20 13 23 »."
+    },
+    {
+      "id": "moov-useful-numbers-centre-appel-flooz",
+      "kind": "service",
+      "name": "Centre d'appel Flooz",
+      "description": "Joindre l'assistance Moov Money Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "777",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "flooz",
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/annulation-de-transfert-flooz/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/moov-money/ouverture-compte-flooz/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-useful-numbers-corporate",
+      "kind": "service",
+      "name": "Équipe Corporate",
+      "description": "Joindre l'équipe entreprises (postpayé, flottes, abonnements).",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "99182200",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "entreprise",
+        "postpayé",
+        "flotte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/offres-abonnement-clients-particuliers/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/entreprise/offres-abonnement-flottes-pour-clients-entreprises/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro affiché « 99 18 22 00 »."
+    }
+  ]
+}

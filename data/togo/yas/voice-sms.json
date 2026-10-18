@@ -1,0 +1,101 @@
+{
+  "operator": "yas",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "yas-voice-sms-illimites-voix-hebdo",
+      "kind": "bundle",
+      "name": "Illimités voix hebdo",
+      "description": "Appels illimités vers tous les réseaux nationaux pendant 7 jours.",
+      "price_xof": 4500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*323#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "illimité",
+        "appels",
+        "voix",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi appelé « Appel_illimité_7J ». Paiement par Mixx non confirmé au code ; possible via le menu Mixx *145*3# (à vérifier)."
+    },
+    {
+      "id": "yas-voice-sms-illimites-voix-mensuel",
+      "kind": "bundle",
+      "name": "Illimités voix mensuel",
+      "description": "Appels illimités nationaux et 30 min vers l'international pendant 30 jours.",
+      "price_xof": 15000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*334#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "illimité",
+        "appels",
+        "voix",
+        "mensuel",
+        "international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/mixtes-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi appelé « Appel_illimité_30J ». Inclut 30 min vers l'international. L'ancienne page donnait *909*432#. Paiement par Mixx non confirmé au code ; possible via *145*3# (à vérifier)."
+    }
+  ]
+}

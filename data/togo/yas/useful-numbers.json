@@ -1,0 +1,150 @@
+{
+  "operator": "yas",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "yas-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Yas",
+      "description": "Service client : 1 Mobile, 2 Fibre, 3 Mixx by Yas.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "888",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance",
+        "réclamation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais d'appel standard ; la fiche App Store de Mixx parle de 20 F (non vérifié). Réclamations : reclamation.client@yas.tg. GitHub (mai 2025) cite aussi le 8845 (service client général) et le 119 (fibre), absents de yas.tg."
+    },
+    {
+      "id": "yas-useful-numbers-service-client-business",
+      "kind": "service",
+      "name": "Service client Yas Business",
+      "description": "Service client des entreprises.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "8899",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "entreprise",
+        "business"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "yas-useful-numbers-service-client-etranger",
+      "kind": "service",
+      "name": "Service client depuis l'étranger",
+      "description": "Joindre le service client hors du Togo.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+22890300888",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro affiché : +228 90 30 08 88."
+    },
+    {
+      "id": "yas-useful-numbers-whatsapp",
+      "kind": "service",
+      "name": "WhatsApp Yas",
+      "description": "Joindre le service client sur WhatsApp.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+22890928888",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "whatsapp",
+        "service client"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro affiché : +228 90 92 88 88 (wa.me/22890928888)."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "operator": "yas",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "yas-credit-transfer-menu-transfert-credit",
+      "kind": "service",
+      "name": "Transfert de crédit",
+      "description": "Menu de transfert de crédit.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*5*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "crédit",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-credit-transfer-transfert-credit-p2p",
+      "kind": "service",
+      "name": "Transfert de crédit P2P",
+      "description": "Envoyer du crédit à un autre numéro Yas.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*216*{phone}*{amount}*{pin}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "crédit",
+        "p2p",
+        "envoyer"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minimum 1 F, maximum 45 000 F, 3 transferts réussis par jour, frais de 3 % du montant. Code secret par défaut : 1234. Le code PIN n'est jamais enregistré."
+    },
+    {
+      "id": "yas-credit-transfer-changer-code-p2p",
+      "kind": "service",
+      "name": "Changer le code secret P2P",
+      "description": "Modifier le code secret du transfert de crédit.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*217*{old_pin}*{new_pin}*{new_pin}#",
+        "params": [
+          {
+            "name": "old_pin",
+            "type": "pin",
+            "label": "Ancien code secret",
+            "required": true
+          },
+          {
+            "name": "new_pin",
+            "type": "pin",
+            "label": "Nouveau code secret",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "code secret",
+        "pin",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le nouveau code se saisit deux fois. La FAQ cite aussi *909*5*2# pour le changement de code, que la page services présente comme le transfert de crédit. Le code PIN n'est jamais enregistré."
+    },
+    {
+      "id": "yas-credit-transfer-recharge-moi",
+      "kind": "service",
+      "name": "Recharge-moi",
+      "description": "Recharger un autre numéro avec une carte de recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*218*{voucher_code}*{phone}#",
+        "params": [
+          {
+            "name": "voucher_code",
+            "type": "text",
+            "label": "Code de la carte de recharge",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du bénéficiaire",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "carte",
+        "autrui"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La même FAQ donne aussi *216*N° de carte*n° du bénéficiaire#, alors que *216 est le transfert P2P."
+    }
+  ]
+}

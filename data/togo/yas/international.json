@@ -1,0 +1,195 @@
+{
+  "operator": "yas",
+  "category": "international",
+  "entries": [
+    {
+      "id": "yas-international-menu-international",
+      "kind": "service",
+      "name": "Menu international",
+      "description": "Menu des forfaits d'appels internationaux.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*62#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international",
+        "menu",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/international/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur. Tarifs hors forfait (F/min, SMS 90 F partout) : Bénin, Canada, Côte d'Ivoire, Inde, Nigeria, USA 90 ; Allemagne 90 et 280 (listée deux fois) ; Sénégal 130 ; Liban, France, Burkina Faso, Gabon 150 ; Italie 175 ; Afrique du Sud, Ghana, Maroc 180 ; Afghanistan et reste du monde 200 ; Mali 250 ; Cameroun 275 ; Niger 280 ; Espagne, Guinée Conakry, Belgique 300 ; Congo Brazzaville, Guinée équatoriale, Centrafrique, Tchad 350 ; Royaume-Uni 400."
+    },
+    {
+      "id": "yas-international-forfait-inter-500",
+      "kind": "bundle",
+      "name": "Forfait Inter 500",
+      "description": "10 min vers le Canada, les USA, le Gabon et l'Inde.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*621#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international",
+        "appels",
+        "canada",
+        "usa",
+        "gabon",
+        "inde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/international/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Hors forfait : 50 F/min (pop-up)."
+    },
+    {
+      "id": "yas-international-forfait-inter-800",
+      "kind": "bundle",
+      "name": "Forfait Inter 800",
+      "description": "10 min vers le Bénin, Moov Côte d'Ivoire et Yas Sénégal.",
+      "price_xof": 800,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*622#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international",
+        "appels",
+        "bénin",
+        "côte d'ivoire",
+        "sénégal"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/international/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Un autre pop-up, périmé, annonce « Côte d'Ivoire, Ghana, Sénégal, 800 FCFA, 5 minutes » pour le même code. La boutique indique 10 min."
+    },
+    {
+      "id": "yas-international-forfait-inter-750",
+      "kind": "bundle",
+      "name": "Forfait Inter 750",
+      "description": "5 min vers Orange Burkina Faso, le Ghana et Moov Mali.",
+      "price_xof": 750,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*623#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international",
+        "appels",
+        "burkina",
+        "ghana",
+        "mali"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/international/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Hors forfait : 150 F/min (pop-up). GitHub (ancien) donnait ce code pour 600 F / 10 min vers Canada, USA, Chine, Inde, Royaume-Uni."
+    }
+  ]
+}

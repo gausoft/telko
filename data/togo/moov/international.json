@@ -1,0 +1,136 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-pass-internationaux",
+      "kind": "service",
+      "name": "Pass internationaux",
+      "description": "Menu des pass d'appels vers l'international.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*228#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/pass-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Clients Open (postpayé) exclus. Le Pass Filiales Sahels (600 F, 5 min vers Onatel Burkina et Malitel Mali) n'a pas de code de souscription publié. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-international-pass-filiales-voisins",
+      "kind": "bundle",
+      "name": "Pass Filiales Voisins",
+      "description": "5 min vers Moov Bénin et Moov Côte d'Ivoire, valables 1 jour.",
+      "price_xof": 400,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 Jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*228*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "bénin",
+        "côte d'ivoire"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/pass-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/pass-filiales-voisins/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Vérifier : *101*79#."
+    },
+    {
+      "id": "moov-international-pass-diaspora",
+      "kind": "bundle",
+      "name": "Pass Diaspora",
+      "description": "5 min vers les USA, la Chine, le Liban, le Canada, le Nigeria et l'Inde, valables 1 jour.",
+      "price_xof": 300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 Jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*228*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "diaspora",
+        "usa",
+        "canada"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/particulier/pass-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://moov-africa.tg/particulier/pass-diaspora/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de vérification contradictoire : *101*80# (page de présentation) ou *101*82# (page détaillée)."
+    }
+  ]
+}

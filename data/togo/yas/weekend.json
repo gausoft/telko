@@ -1,0 +1,45 @@
+{
+  "operator": "yas",
+  "category": "weekend",
+  "entries": [
+    {
+      "id": "yas-weekend-inscription-sowe",
+      "kind": "service",
+      "name": "Inscription SoWe",
+      "description": "S'inscrire au programme jeunes SoWe (15 à 34 ans).",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*81#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "sowe",
+        "jeunes",
+        "inscription"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/sowe/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gratuit, pour les clients Yas prépayés de 15 à 34 ans. Offres SoWe sans code USSD publié : SoWe 300 (300 F, 250 Mo le jour + 250 Mo la nuit de 22h à 5h, 300 SMS, 1 jour) ; SoWe 700 (700 F, 700 Mo + 700 Mo la nuit, 700 SMS, 3 jours) ; SoWe 2000 (2 000 F, 3 072 Mo + 3 072 Mo la nuit, 1 000 SMS, 7 jours). GitHub (mai 2025) liste une ancienne gamme (300/500/1000/3500) avec les codes *909*8*1# à *909*8*4#, non confirmée."
+    }
+  ]
+}

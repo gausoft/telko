@@ -1,0 +1,716 @@
+{
+  "operator": "yas",
+  "category": "general",
+  "entries": [
+    {
+      "id": "yas-general-menu-principal",
+      "kind": "service",
+      "name": "Menu principal Yas",
+      "description": "Accès à tous les services Yas.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "services"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-general-consulter-soldes",
+      "kind": "service",
+      "name": "Consulter les soldes",
+      "description": "Solde du crédit et des forfaits.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*0#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/best-deals/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le dépôt GitHub skpassegna/USSD-Togo (mai 2025) donne *444#, absent de yas.tg. Code officiel : *909*0#."
+    },
+    {
+      "id": "yas-general-menu-forfait-net",
+      "kind": "service",
+      "name": "Forfait Net",
+      "description": "Menu d'achat des forfaits internet.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "menu",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-general-menu-forfait-ovo",
+      "kind": "service",
+      "name": "Forfait Ovo",
+      "description": "Menu d'achat des forfaits mixtes.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "menu",
+        "forfait",
+        "léma+"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ancien nom « Ovo » dans la FAQ. Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-general-menu-forfait-lema",
+      "kind": "service",
+      "name": "Forfait Léma",
+      "description": "Menu d'achat des forfaits voix.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "menu",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-general-achat-forfait-pour-autrui",
+      "kind": "service",
+      "name": "Achat de forfait pour autrui",
+      "description": "Acheter un forfait pour un autre numéro.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*7#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "autrui",
+        "forfait",
+        "cadeau"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro du bénéficiaire se saisit dans le menu. Non vérifié : ce menu couvre-t-il tous les forfaits ?"
+    },
+    {
+      "id": "yas-general-mon-numero",
+      "kind": "service",
+      "name": "Connaître son numéro",
+      "description": "Affiche votre propre numéro.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*555#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "mon numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "On peut aussi appeler le 555."
+    },
+    {
+      "id": "yas-general-detail-consommation",
+      "kind": "service",
+      "name": "Détail de consommation",
+      "description": "Demander le détail de sa consommation.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*9*5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "consommation",
+        "historique"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Service payant : par e-mail 500 F (7 jours) ou 1 315 F (8 à 29 jours) ; en agence 1 000 F (7 jours) ou 3 000 F (8 à 29 jours)."
+    },
+    {
+      "id": "yas-general-sos-credit-forfait",
+      "kind": "service",
+      "name": "SOS Crédit & Forfait",
+      "description": "Emprunter du crédit ou un forfait, remboursé à la prochaine recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*51#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "sos",
+        "prêt",
+        "avance",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/sos-credit-forfait/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Menu : SOS Crédit, SOS Internet, SOS OVO, SOS Léma. Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-general-sos-credit",
+      "kind": "service",
+      "name": "SOS Crédit",
+      "description": "Emprunter du crédit, remboursé à la prochaine recharge.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*445#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "sos",
+        "prêt",
+        "avance",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Autre code donné par la page services : *909*5*1#. Conditions (page services) : 180 jours sur le réseau, au moins 1 200 F rechargés sur 30 jours, aucun prêt en cours, moins de 100 F sur le compte principal. La FAQ indique plutôt 6 mois d'ancienneté, 10 % de commission, aucun crédit sur le compte principal. Conflit : la FAQ présente *445# comme le « prêt de data », et une page promo l'imprime pour Léma1000+."
+    },
+    {
+      "id": "yas-general-activer-internet-mobile",
+      "kind": "service",
+      "name": "Activer l'internet mobile",
+      "description": "Activer l'accès internet sur la ligne.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*104*2*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "activation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ancien menu *104#, peut-être obsolète."
+    },
+    {
+      "id": "yas-general-alerte-appels-manques",
+      "kind": "service",
+      "name": "Alerte appels manqués",
+      "description": "Être prévenu des appels manqués.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "002890049127",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "appels manqués",
+        "alerte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro à appeler. Service gratuit."
+    },
+    {
+      "id": "yas-general-messagerie-vocale",
+      "kind": "service",
+      "name": "Messagerie vocale",
+      "description": "Accéder à la messagerie vocale.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "002890049125",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "messagerie",
+        "répondeur"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro à appeler."
+    },
+    {
+      "id": "yas-general-preference",
+      "kind": "service",
+      "name": "Préférence",
+      "description": "Choisir ses numéros préférés.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "777",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "préférence",
+        "numéros préférés"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appeler le 777 pour les instructions. 200 F par numéro ajouté ou modifié."
+    },
+    {
+      "id": "yas-general-activation-sim",
+      "kind": "service",
+      "name": "Activation / identification SIM",
+      "description": "Activer ou identifier une nouvelle carte SIM.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*900#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "sim",
+        "activation",
+        "identification"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/comment-activer-votre-nouvelle-sim-yas-guide-etape-par-etape/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source faible : article de blog yas.tg (« généralement »), qui cite aussi *909#. Un kit SIM neuf contient 1 000 F de crédit, 200 Mo, 20 SMS et 200 F de Mixx."
+    },
+    {
+      "id": "yas-general-afreekaplay",
+      "kind": "service",
+      "name": "Afreekaplay",
+      "description": "Abonnement musique.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*541#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "musique",
+        "abonnement",
+        "divertissement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "À partir de 100 F (jour, semaine ou mois). Désabonnement : *909*5*4*1*2*2#."
+    },
+    {
+      "id": "yas-general-myzik",
+      "kind": "service",
+      "name": "MyZik",
+      "description": "Tonalité d'attente musicale.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*5*5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "tonalité",
+        "sonnerie",
+        "abonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix : « à partir de 25 F » (page services) ; la FAQ dit 35 F/jour, 150 F/semaine, 400 F/mois. Désabonnement : *909*5*5*9#."
+    },
+    {
+      "id": "yas-general-portail-religieux",
+      "kind": "service",
+      "name": "Portail religieux",
+      "description": "Contenus religieux à la demande.",
+      "price_xof": 25,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*532#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "religion",
+        "abonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "25 F à la demande (page services) ; la FAQ dit 50 F/jour, 200 F/semaine, 500 F/mois. Désabonnement : *909*53# puis 99. GitHub donne *90956#."
+    },
+    {
+      "id": "yas-general-mc-plus",
+      "kind": "service",
+      "name": "MC+",
+      "description": "Actualités et divertissement.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*5*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "actualités",
+        "divertissement",
+        "abonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "À partir de 25 F (page services) ; la FAQ dit 20 F par service. Désabonnement : envoyer STOP au *909*5*3*9#."
+    },
+    {
+      "id": "yas-general-odo-aguea",
+      "kind": "service",
+      "name": "O'do Aguéa",
+      "description": "Jeu-quiz avec des lots en data.",
+      "price_xof": 100,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*8555#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "quiz",
+        "jeu",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/services-et-divertissements/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "100 F par SMS. Participation aussi par SMS « YAS » au 8555."
+    }
+  ]
+}

@@ -1,0 +1,889 @@
+{
+  "operator": "yas",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "yas-internet-net100",
+      "kind": "bundle",
+      "name": "Net100",
+      "description": "45 Mo valables 24 h.",
+      "price_xof": 100,
+      "allowances": {
+        "data_mb": 45,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*212#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net199",
+      "kind": "bundle",
+      "name": "Net199",
+      "description": "1 Go la nuit, de 22h00 à 6h00.",
+      "price_xof": 199,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (22h00-6h00)"
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*909*217#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Autre code publié : *909*199#. GitHub donne *909*218# (aujourd'hui Net1499)."
+    },
+    {
+      "id": "yas-internet-net200",
+      "kind": "bundle",
+      "name": "Net200",
+      "description": "100 Mo valables 1 jour.",
+      "price_xof": 200,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*213#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option +150 Mo pour 50 F proposée pendant l'achat. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net250-alez",
+      "kind": "bundle",
+      "name": "NET250 Alèz",
+      "description": "250 Mo valables 1 jour.",
+      "price_xof": 250,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*250#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/best-deals/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option +125 Mo pour 100 F. GitHub (ancien) : 2 jours, et une version 375 Mo / 350 F / *909*350# non officielle aujourd'hui."
+    },
+    {
+      "id": "yas-internet-net350",
+      "kind": "bundle",
+      "name": "Net350",
+      "description": "280 Mo valables 2 jours.",
+      "price_xof": 350,
+      "allowances": {
+        "data_mb": 280,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*214#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net500-nuit",
+      "kind": "bundle",
+      "name": "Net500 (Nuit)",
+      "description": "3 Go la nuit, de 22h00 à 6h00.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (22h00-6h00)"
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*909*215#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi appelé « NET Nuit »."
+    },
+    {
+      "id": "yas-internet-net599",
+      "kind": "bundle",
+      "name": "Net599",
+      "description": "5 Go en 24 h, puis connexion maintenue.",
+      "price_xof": 599,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*241#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "jour",
+        "non-stop"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/forfait-illimite-5go-valable-24h/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Vendu comme « illimité 5Go 24H ». Connexion maintenue après épuisement du volume ; débit après épuisement non publié."
+    },
+    {
+      "id": "yas-internet-net600",
+      "kind": "bundle",
+      "name": "Net600",
+      "description": "700 Mo valables 3 jours.",
+      "price_xof": 600,
+      "allowances": {
+        "data_mb": 700,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*216#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Conflit de validité : la page internet dit 2 jours, le catalogue de la boutique (plus récent) dit 3 jours. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net1499",
+      "kind": "bundle",
+      "name": "Net1499",
+      "description": "5 Go valables 3 jours.",
+      "price_xof": 1499,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*218#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue de la boutique le classe « spécial » et non-stop, ce que la page ne dit pas. GitHub donne *909*242#."
+    },
+    {
+      "id": "yas-internet-net1000",
+      "kind": "bundle",
+      "name": "Net1000",
+      "description": "1,5 Go valables 7 jours.",
+      "price_xof": 1000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*221#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net1500",
+      "kind": "bundle",
+      "name": "Net1500",
+      "description": "2,5 Go valables 7 jours.",
+      "price_xof": 1500,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*222#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "GitHub (ancien) indique 1,6 Go. Report du volume restant si renouvelé sous 10 jours."
+    },
+    {
+      "id": "yas-internet-net3999",
+      "kind": "bundle",
+      "name": "Net3999",
+      "description": "15 Go sur 7 jours, puis connexion maintenue.",
+      "price_xof": 3999,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*223#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "semaine",
+        "non-stop"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/weekly-illimite/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi appelé « NET_illimité_7J ». La page promo « weekly-illimite » annonce 4 900 F pour le même code ; la page internet et la boutique disent 3 999 F. Connexion maintenue après épuisement du volume ; débit après épuisement non publié."
+    },
+    {
+      "id": "yas-internet-net2500",
+      "kind": "bundle",
+      "name": "Net2500",
+      "description": "2 Go valables 30 jours.",
+      "price_xof": 2500,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*236#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-internet-net3000",
+      "kind": "bundle",
+      "name": "Net3000",
+      "description": "3 Go valables 30 jours.",
+      "price_xof": 3000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*231#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-internet-net5000",
+      "kind": "bundle",
+      "name": "Net5000",
+      "description": "8 Go valables 30 jours.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": 8192,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*232#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://github.com/skpassegna/USSD-Togo",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "GitHub (ancien) indique 6 Go. Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-internet-net10000",
+      "kind": "bundle",
+      "name": "Net10000",
+      "description": "20 Go valables 30 jours.",
+      "price_xof": 10000,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*233#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-internet-air-fiber",
+      "kind": "bundle",
+      "name": "Air Fiber",
+      "description": "60 Go valables 30 jours.",
+      "price_xof": 15000,
+      "allowances": {
+        "data_mb": 61440,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*234#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel",
+        "box"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 30 jours."
+    },
+    {
+      "id": "yas-internet-air-fiber-plus",
+      "kind": "bundle",
+      "name": "Air Fiber+",
+      "description": "110 Go valables 30 jours.",
+      "price_xof": 25000,
+      "allowances": {
+        "data_mb": 112640,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*235#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mensuel",
+        "box"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/internet/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Report du volume restant si renouvelé sous 30 jours."
+    }
+  ]
+}

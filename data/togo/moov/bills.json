@@ -1,0 +1,976 @@
+{
+  "operator": "moov",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "moov-bills-menu-factures",
+      "kind": "service",
+      "name": "Paiement de factures Flooz",
+      "description": "Menu de paiement des factures avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "flooz"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-ceet-tde",
+      "kind": "service",
+      "name": "Facture CEET et TdE",
+      "description": "Payer sa facture d'électricité CEET ou d'eau TdE avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "ceet",
+        "tde",
+        "électricité",
+        "eau",
+        "factures"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Même code pour les deux. Ensuite : référence client, montant, code secret. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-universite-lome-ancien",
+      "kind": "service",
+      "name": "Université de Lomé, ancien étudiant",
+      "description": "Payer ses frais d'inscription à l'Université de Lomé (ancien étudiant).",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*2*1*1*Ancien Etudiant*{student_id}*{amount}*{pin}*{pin}#",
+        "params": [
+          {
+            "name": "student_id",
+            "type": "text",
+            "label": "Numéro matricule",
+            "required": true
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "université",
+        "lomé",
+        "frais de scolarité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Ancien Etudiant » est probablement un choix de menu et non un texte à saisir (à vérifier). Le code secret apparaît deux fois."
+    },
+    {
+      "id": "moov-bills-universite-lome-nouveau",
+      "kind": "service",
+      "name": "Université de Lomé, nouvel inscrit",
+      "description": "Payer ses frais d'inscription à l'Université de Lomé (nouvel inscrit).",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*2*1*2*Nouveaux Inscrits*{bac_year}*{amount}*{bac_table_number}*{pin}*{pin}#",
+        "params": [
+          {
+            "name": "bac_year",
+            "type": "text",
+            "label": "Année du bac",
+            "required": true
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "bac_table_number",
+            "type": "text",
+            "label": "Numéro de table du bac",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "université",
+        "lomé",
+        "frais de scolarité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Nouveaux Inscrits » est probablement un choix de menu (à vérifier). Le code secret apparaît deux fois."
+    },
+    {
+      "id": "moov-bills-grandes-ecoles",
+      "kind": "service",
+      "name": "Grandes écoles",
+      "description": "Payer ses frais de scolarité dans une grande école avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*2*2*{school_id}*{student_id}*{amount}*{pin}#",
+        "params": [
+          {
+            "name": "school_id",
+            "type": "text",
+            "label": "Identifiant de l'école",
+            "required": true
+          },
+          {
+            "name": "student_id",
+            "type": "text",
+            "label": "Numéro matricule",
+            "required": true
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant (FCFA)",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "école",
+        "frais de scolarité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-bills-assurance",
+      "kind": "service",
+      "name": "Assurance",
+      "description": "Payer une prime d'assurance avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*3",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "assurance",
+        "factures"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Écrit sans le # final par Moov. Ensuite : numéro de police, montant, code secret. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-postpaye-mon-compte",
+      "kind": "service",
+      "name": "Facture Moov postpayé, mon compte",
+      "description": "Payer sa propre facture Moov postpayée avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*4*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov",
+        "postpayé",
+        "factures"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-postpaye-autre-compte",
+      "kind": "service",
+      "name": "Facture Moov postpayé, autre compte",
+      "description": "Payer la facture Moov postpayée d'un autre client avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*4*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov",
+        "postpayé",
+        "factures"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-postpaye-facture",
+      "kind": "service",
+      "name": "Facture Moov postpayé, avec ou sans facture",
+      "description": "Payer avec une facture, ou enregistrer un compte sans facture.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*4*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov",
+        "postpayé",
+        "factures"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Moov donne le même code pour « avec facture » et « enregistrement sans facture ». Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-cash-power",
+      "kind": "service",
+      "name": "Cash Power",
+      "description": "Acheter de l'électricité prépayée Cash Power avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "cash power",
+        "électricité",
+        "ceet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ensuite : numéro de compteur, montant, code secret. Duplicata d'un code perdu : même menu, option 3, puis code secret. Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canalbox-meme-offre",
+      "kind": "service",
+      "name": "CanalBox, même offre",
+      "description": "Renouveler son abonnement CanalBox avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*7*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canalbox",
+        "internet fixe"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canalbox-changer-offre",
+      "kind": "service",
+      "name": "CanalBox, changer d'offre",
+      "description": "Changer d'offre CanalBox et payer avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*7*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canalbox",
+        "internet fixe"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canalbox-enregistrer",
+      "kind": "service",
+      "name": "CanalBox, enregistrer sa box",
+      "description": "Enregistrer le numéro de sa box CanalBox.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*7*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canalbox",
+        "internet fixe"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canal-plus-reabonnement",
+      "kind": "service",
+      "name": "Canal+, même formule",
+      "description": "Renouveler son abonnement Canal+ avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "télévision",
+        "réabonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canal-plus-changer-formule",
+      "kind": "service",
+      "name": "Canal+, changement de formule",
+      "description": "Changer de formule Canal+ et payer avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "télévision"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code entre en collision avec ceux de New World TV (*155*4*8*2*1#, *155*4*8*2*2#…). Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-canal-plus-modifier-carte",
+      "kind": "service",
+      "name": "Canal+, modifier une carte enregistrée",
+      "description": "Remplacer le numéro d'une carte Canal+ enregistrée.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*3*1*{card_choice}*{new_card_number}*{pin}#",
+        "params": [
+          {
+            "name": "card_choice",
+            "type": "text",
+            "label": "Carte à modifier",
+            "required": true
+          },
+          {
+            "name": "new_card_number",
+            "type": "text",
+            "label": "Nouveau numéro de carte",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "télévision",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov-bills-canal-plus-nouvelle-carte",
+      "kind": "service",
+      "name": "Canal+, enregistrer une nouvelle carte",
+      "description": "Enregistrer une nouvelle carte Canal+.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*3*2*{card_number}*{card_number}*{pin}#",
+        "params": [
+          {
+            "name": "card_number",
+            "type": "text",
+            "label": "Numéro de carte",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "télévision",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro de carte est saisi deux fois."
+    },
+    {
+      "id": "moov-bills-new-world-tv-reabonnement",
+      "kind": "service",
+      "name": "New World TV, réabonnement",
+      "description": "Renouveler son abonnement New World TV avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "new world tv",
+        "télévision"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-new-world-tv-changer-offre",
+      "kind": "service",
+      "name": "New World TV, changer d'offre",
+      "description": "Changer d'offre New World TV et payer avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*2*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "new world tv",
+        "télévision"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-new-world-tv-nouvelle-carte",
+      "kind": "service",
+      "name": "New World TV, nouvelle carte",
+      "description": "Enregistrer une nouvelle carte New World TV.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*8*2*3*{card_number}*{card_number}*{pin}#",
+        "params": [
+          {
+            "name": "card_number",
+            "type": "text",
+            "label": "Numéro de carte",
+            "required": true
+          },
+          {
+            "name": "pin",
+            "type": "pin",
+            "label": "Code secret Flooz",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "new world tv",
+        "télévision",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Le numéro de carte est saisi deux fois."
+    },
+    {
+      "id": "moov-bills-solergie",
+      "kind": "service",
+      "name": "Solergie",
+      "description": "Payer son kit solaire Solergie avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*9*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "solaire",
+        "énergie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-cizo-bboxx-moi",
+      "kind": "service",
+      "name": "CIZO-BBOXX, pour moi",
+      "description": "Payer son kit solaire CIZO-BBOXX avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*9*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "solaire",
+        "énergie",
+        "cizo"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-cizo-bboxx-autre",
+      "kind": "service",
+      "name": "CIZO-BBOXX, pour un autre",
+      "description": "Payer le kit solaire CIZO-BBOXX d'une autre personne avec Flooz.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*9*2*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "solaire",
+        "énergie",
+        "cizo"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    },
+    {
+      "id": "moov-bills-cizo-bboxx-enregistrer",
+      "kind": "service",
+      "name": "CIZO-BBOXX, enregistrer",
+      "description": "Enregistrer son compte CIZO-BBOXX.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*4*9*2*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "flooz"
+      ],
+      "third_party": null,
+      "tags": [
+        "solaire",
+        "énergie",
+        "cizo"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/moov-money/paiement-de-factures/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code de menu : la suite se choisit à l'écran."
+    }
+  ]
+}

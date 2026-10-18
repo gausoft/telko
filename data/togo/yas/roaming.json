@@ -1,0 +1,536 @@
+{
+  "operator": "yas",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "yas-roaming-activer-roaming",
+      "kind": "service",
+      "name": "Activer le roaming prépayé",
+      "description": "Activer l'itinérance sur une ligne prépayée.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*611#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "itinérance",
+        "activation",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gratuit en prépayé ; 9 440 F en postpayé. Autres codes : *909*6*1*1# (FAQ « about ») et *104*1*1# (ancien). Roaming gratuit CEDEAO (Bénin, Burkina Faso, Côte d'Ivoire, Ghana, Sénégal) : appels reçus gratuits pendant 30 jours consécutifs, SMS gratuits, data à tarif préférentiel."
+    },
+    {
+      "id": "yas-roaming-desactiver-roaming",
+      "kind": "service",
+      "name": "Désactiver le roaming prépayé",
+      "description": "Désactiver l'itinérance.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*613#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "itinérance",
+        "désactivation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ancien code : *104*1*2#."
+    },
+    {
+      "id": "yas-roaming-acheter-forfait-roaming",
+      "kind": "service",
+      "name": "Achat de forfaits roaming",
+      "description": "Acheter un forfait roaming ; le roaming s'active automatiquement.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*612#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "forfait",
+        "data",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://web-api-gw.yas.tg/web-selfcare-unprotected/api/bundle-offers",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Autre code : *909*6*1*2#. Code menu : le reste se choisit dans le menu de l'opérateur. Passes du catalogue de la boutique (octobre 2026), sans code USSD publié : Voisin_1500 (1 500 F, 676 Mo, 7 jours) et Voisin_5000 (5 000 F, 2,2 Go, 30 jours) pour Bénin, Burkina, Côte d'Ivoire, Sénégal ; Ghana_1500 (1 500 F, 999 Mo, 7 jours) et Ghana_5000 (5 000 F, 3,2 Go, 30 jours) ; MEA_GABON_7500 (7 500 F, 500 Mo, 30 jours) pour Égypte, Émirats, Gabon, Maroc, Oman, Qatar, Tunisie, Algérie, Arabie saoudite ; Pays_Yas_5000 (5 000 F, 2,2 Go, 30 jours) pour Comores, Madagascar, Tanzanie ; Pays_Yas_10000 (10 000 F, 4,4 Go, 30 jours) pour Comores, Madagascar (la ligne Tanzanie affiche 5 000 F, erreur de données). Ils sont peut-être sous ce menu, non confirmé."
+    },
+    {
+      "id": "yas-roaming-menu-roaming",
+      "kind": "service",
+      "name": "Menu roaming",
+      "description": "Menu des services roaming.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*6#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/about-yas-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+    },
+    {
+      "id": "yas-roaming-appeler-en-roaming",
+      "kind": "service",
+      "name": "Appeler depuis l'étranger",
+      "description": "Passer un appel quand on est en roaming.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*101*{country_code}{phone}#",
+        "params": [
+          {
+            "name": "country_code",
+            "type": "text",
+            "label": "Indicatif du pays",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro à appeler",
+            "required": true
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "appel",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Composer le code, puis lancer l'appel."
+    },
+    {
+      "id": "yas-roaming-z1-benin-500",
+      "kind": "bundle",
+      "name": "Z1 Bénin 500",
+      "description": "225 Mo au Bénin, valables 30 jours.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 225,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*61211#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "bénin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z1-z5-1000",
+      "kind": "bundle",
+      "name": "Z1 Bénin / Z5 Côte d'Ivoire 1000",
+      "description": "500 Mo au Bénin ou en Côte d'Ivoire, valables 30 jours.",
+      "price_xof": 1000,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*61222#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "bénin",
+        "côte d'ivoire"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page affiche deux pass 1 000 F (Bénin et Côte d'Ivoire) sur le même code. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z2-arabie-saoudite-7500",
+      "kind": "bundle",
+      "name": "Z2 Arabie saoudite 7500",
+      "description": "500 Mo en Arabie saoudite, valables 30 jours.",
+      "price_xof": 7500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*6123#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "arabie saoudite"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z3-ghana-5000",
+      "kind": "bundle",
+      "name": "Z3 Ghana 5000",
+      "description": "370 Mo au Ghana, valables 30 jours.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": 370,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*6124#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z3-ghana-1400",
+      "kind": "bundle",
+      "name": "Z3 Ghana 1400",
+      "description": "Pass data au Ghana.",
+      "price_xof": 1400,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*61231#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Carte illisible : la page indique « 370 MB » et « 1 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z3-ghana-5000-bis",
+      "kind": "bundle",
+      "name": "Z3 Ghana 5000 (bis)",
+      "description": "Pass data au Ghana.",
+      "price_xof": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*909*61232#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Carte illisible : la page indique « 370 MB » et « 4 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z4-gabon-7500",
+      "kind": "bundle",
+      "name": "Z4 Gabon 7500",
+      "description": "500 Mo au Gabon, valables 30 jours.",
+      "price_xof": 7500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*6125#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "gabon"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    },
+    {
+      "id": "yas-roaming-z5-cote-divoire-500",
+      "kind": "bundle",
+      "name": "Z5 Côte d'Ivoire 500",
+      "description": "225 Mo en Côte d'Ivoire, valables 30 jours.",
+      "price_xof": 500,
+      "allowances": {
+        "data_mb": 225,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours"
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*909*61221#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data",
+        "étranger",
+        "côte d'ivoire"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/forfaits-mobile/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+    }
+  ]
+}

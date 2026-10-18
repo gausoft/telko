@@ -1,0 +1,812 @@
+{
+  "operator": "yas",
+  "service": "mixx",
+  "entries": [
+    {
+      "id": "yas-fees-transfert-mixx-6-premiers",
+      "operation": "transfer-national",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": 0,
+      "fee_percent": null,
+      "label": "Transfert Mixx vers Mixx, 6 premiers de la journée",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "« Les 6 premiers transferts de la journée sont gratuits » (tarification susceptible d'être changée)."
+    },
+    {
+      "id": "yas-fees-transfert-mixx-a-partir-du-7e",
+      "operation": "transfer-national",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": null,
+      "fee_percent": 1,
+      "label": "Transfert Mixx vers Mixx, à partir du 7e de la journée",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "« Facturation 1 % à partir du 7ème transfert ». Base du calcul non précisée. La presse (janvier 2025) citait un ancien « 2,5 % à partir de la 4e opération », non vérifié."
+    },
+    {
+      "id": "yas-fees-depot",
+      "operation": "other",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": 0,
+      "fee_percent": null,
+      "label": "Dépôt d'argent",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Presse du 31 janvier 2025."
+    },
+    {
+      "id": "yas-fees-reception",
+      "operation": "other",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": 0,
+      "fee_percent": null,
+      "label": "Réception d'argent",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://momocalc.com/fr/togo/frais-tmoney",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "yas-fees-retrait-1-500",
+      "operation": "withdrawal",
+      "min_xof": 1,
+      "max_xof": 500,
+      "fee_xof": 50,
+      "fee_percent": null,
+      "label": "Retrait de 1 à 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-501-5000",
+      "operation": "withdrawal",
+      "min_xof": 501,
+      "max_xof": 5000,
+      "fee_xof": 100,
+      "fee_percent": null,
+      "label": "Retrait de 501 à 5 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-5001-20000",
+      "operation": "withdrawal",
+      "min_xof": 5001,
+      "max_xof": 20000,
+      "fee_xof": 300,
+      "fee_percent": null,
+      "label": "Retrait de 5 001 à 20 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-20001-50000",
+      "operation": "withdrawal",
+      "min_xof": 20001,
+      "max_xof": 50000,
+      "fee_xof": 600,
+      "fee_percent": null,
+      "label": "Retrait de 20 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-50001-100000",
+      "operation": "withdrawal",
+      "min_xof": 50001,
+      "max_xof": 100000,
+      "fee_xof": 1000,
+      "fee_percent": null,
+      "label": "Retrait de 50 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-100001-200000",
+      "operation": "withdrawal",
+      "min_xof": 100001,
+      "max_xof": 200000,
+      "fee_xof": 3100,
+      "fee_percent": null,
+      "label": "Retrait de 100 001 à 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-200001-300000",
+      "operation": "withdrawal",
+      "min_xof": 200001,
+      "max_xof": 300000,
+      "fee_xof": 3700,
+      "fee_percent": null,
+      "label": "Retrait de 200 001 à 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-300001-500000",
+      "operation": "withdrawal",
+      "min_xof": 300001,
+      "max_xof": 500000,
+      "fee_xof": 4200,
+      "fee_percent": null,
+      "label": "Retrait de 300 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-500001-850000",
+      "operation": "withdrawal",
+      "min_xof": 500001,
+      "max_xof": 850000,
+      "fee_xof": 4400,
+      "fee_percent": null,
+      "label": "Retrait de 500 001 à 850 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée. Momocalc arrête sa grille à « 500 001 et plus = 4 400 » et dit que la TAF est incluse."
+    },
+    {
+      "id": "yas-fees-retrait-850001-900000",
+      "operation": "withdrawal",
+      "min_xof": 850001,
+      "max_xof": 900000,
+      "fee_xof": 4600,
+      "fee_percent": null,
+      "label": "Retrait de 850 001 à 900 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-900001-950000",
+      "operation": "withdrawal",
+      "min_xof": 900001,
+      "max_xof": 950000,
+      "fee_xof": 4900,
+      "fee_percent": null,
+      "label": "Retrait de 900 001 à 950 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-950001-1000000",
+      "operation": "withdrawal",
+      "min_xof": 950001,
+      "max_xof": 1000000,
+      "fee_xof": 5100,
+      "fee_percent": null,
+      "label": "Retrait de 950 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://actulome.com/mixx-by-yas-nouveaux-frais-de-retrait/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1000001-1100000",
+      "operation": "withdrawal",
+      "min_xof": 1000001,
+      "max_xof": 1100000,
+      "fee_xof": 5400,
+      "fee_percent": null,
+      "label": "Retrait de 1 000 001 à 1 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1100001-1150000",
+      "operation": "withdrawal",
+      "min_xof": 1100001,
+      "max_xof": 1150000,
+      "fee_xof": 5900,
+      "fee_percent": null,
+      "label": "Retrait de 1 100 001 à 1 150 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1150001-1200000",
+      "operation": "withdrawal",
+      "min_xof": 1150001,
+      "max_xof": 1200000,
+      "fee_xof": 6200,
+      "fee_percent": null,
+      "label": "Retrait de 1 150 001 à 1 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1200001-1250000",
+      "operation": "withdrawal",
+      "min_xof": 1200001,
+      "max_xof": 1250000,
+      "fee_xof": 6500,
+      "fee_percent": null,
+      "label": "Retrait de 1 200 001 à 1 250 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1250001-1300000",
+      "operation": "withdrawal",
+      "min_xof": 1250001,
+      "max_xof": 1300000,
+      "fee_xof": 6800,
+      "fee_percent": null,
+      "label": "Retrait de 1 250 001 à 1 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1300001-1350000",
+      "operation": "withdrawal",
+      "min_xof": 1300001,
+      "max_xof": 1350000,
+      "fee_xof": 7000,
+      "fee_percent": null,
+      "label": "Retrait de 1 300 001 à 1 350 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1350001-1400000",
+      "operation": "withdrawal",
+      "min_xof": 1350001,
+      "max_xof": 1400000,
+      "fee_xof": 7300,
+      "fee_percent": null,
+      "label": "Retrait de 1 350 001 à 1 400 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1400001-1450000",
+      "operation": "withdrawal",
+      "min_xof": 1400001,
+      "max_xof": 1450000,
+      "fee_xof": 7600,
+      "fee_percent": null,
+      "label": "Retrait de 1 400 001 à 1 450 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1450001-1500000",
+      "operation": "withdrawal",
+      "min_xof": 1450001,
+      "max_xof": 1500000,
+      "fee_xof": 7800,
+      "fee_percent": null,
+      "label": "Retrait de 1 450 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-retrait-1500001-2000000",
+      "operation": "withdrawal",
+      "min_xof": 1500001,
+      "max_xof": 2000000,
+      "fee_xof": 9700,
+      "fee_percent": null,
+      "label": "Retrait de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://levisionnaire.tg/mixx-by-yas-togo-nouvelle-grille-tarifaire-pour-les-retraits-dargent/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://afriqueinter.tg/post/mobile-money-yas-togo-modifie-ses-frais-de-retrait-de-transfert-et-de-depot-dargent",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+    },
+    {
+      "id": "yas-fees-mixx-vers-banque",
+      "operation": "other",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": null,
+      "fee_percent": 1,
+      "label": "Mixx vers banque (Pass Mixx Orabank)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://momocalc.com/fr/togo/frais-tmoney",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire : « 1 % plafonné à 2M », sens du plafond non précisé."
+    },
+    {
+      "id": "yas-fees-mixx-vers-flooz",
+      "operation": "transfer-cross-network",
+      "min_xof": 1,
+      "max_xof": null,
+      "fee_xof": null,
+      "fee_percent": null,
+      "label": "Transfert Mixx vers Flooz (Moov)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.togofirst.com/fr/gouvernance-economique/0510-20246-transferts-monetaires-interoperables-la-bceao-rend-pi-spi-obligatoire-pour-les-particuliers-des-novembre-2026",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "http://newsoftogo.tg/2026/04/15/interoperabilite-mixx-togo-ouvre-lere-des-transferts-instantanes-dans-luemoa/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          },
+          {
+            "url": "https://www.financialafrik.com/en/2026/04/15/togo-mixx-by-yas-activates-interoperable-instant-transfers-within-the-uemoa/",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais non trouvés. Mixx a rejoint PI-SPI (annonce du 15 avril 2026, sans frais publiés). Règle BCEAO : à partir du 2 novembre 2026, transferts nationaux interopérables gratuits jusqu'à 8 000 F cumulés par jour, réception gratuite sans limite."
+    }
+  ]
+}
