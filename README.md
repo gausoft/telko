@@ -1,6 +1,6 @@
 # Telko
 
-**Mobile offers, mobile money and USSD codes for Togo, open and sourced.**
+**Mobile offers, mobile money and USSD codes across Africa, open and sourced.**
 
 [![CI](https://github.com/gausoft/telko/actions/workflows/ci.yml/badge.svg)](https://github.com/gausoft/telko/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-4B3BFF)](LICENSE)
@@ -8,7 +8,16 @@
 
 **Live: [telko.pages.dev](https://telko.pages.dev)**
 
-Telko lists the data bundles, call plans, mobile money services, bill payments and USSD codes of Yas Togo (with Mixx) and Moov Africa Togo (with Moov Money). Every entry shows where it comes from and when it was last checked. Tap an offer and the phone dialer opens with the code ready.
+Telko gathers, country by country, the data bundles, call plans, mobile money services, bill payments and USSD codes that African mobile users look for every day. Every entry shows where it comes from and when it was last checked. Tap an offer and the phone dialer opens with the code ready.
+
+## Countries
+
+| Country | Status | Operators |
+|---|---|---|
+| Togo | **Live** | Yas Togo with Mixx, Moov Africa Togo with Moov Money |
+| Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal | Soon | Open to contributors |
+
+Any country can join: the dataset, the pages and the offline mode are built per country. A country goes live when people who live there bring its data. **[Bring your country](CONTRIBUTING.md#add-a-country).**
 
 <p align="center">
   <img src="docs/images/home.png" width="250" alt="Home screen: most asked offer, shortcuts and sections">
@@ -16,7 +25,7 @@ Telko lists the data bundles, call plans, mobile money services, bill payments a
   <img src="docs/images/mobile-money.png" width="250" alt="Mobile money codes with their parameters">
 </p>
 
-> **Status: early.** The dataset (about 200 codes and 76 fee lines) comes from official and public sources and is **not verified on a real phone yet**. Each page says so. Always check the confirmation screen on your phone before a money transfer.
+> **Status: early.** The Togo dataset (about 200 codes and 76 fee lines) comes from official and public sources and is **not verified on a real phone yet**. Each page says so. Always check the confirmation screen on your phone before a money transfer.
 
 ## Features
 
