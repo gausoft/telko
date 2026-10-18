@@ -20,15 +20,20 @@ const { country, back, title, switcher } = Astro.props;
     back ? (
       <a class="back" href={back} aria-label="Retour">
         <ArrowLeft size={24} aria-hidden="true" />
+        <span class="offline-dot" aria-hidden="true" />
       </a>
     ) : (
       <a class="brand" href={`/${country.code}`} aria-label="Telko, accueil">
-        <img src="/telko-symbol.svg" alt="" width="28" height="28" />
+        <span class="symbol">
+          <img src="/telko-symbol.svg" alt="" width="28" height="28" />
+          <span class="offline-dot" aria-hidden="true" />
+        </span>
         <span class="wordmark">telk<span class="dot" /></span>
       </a>
     )
   }
   {title && <h1 class="title">{title}</h1>}
+  <span class="visually-hidden offline-label">Hors connexion</span>
   {switcher && <OperatorSwitcher operators={switcher.operators} current={switcher.current} hrefTemplate={switcher.hrefTemplate} />}
 </header>
 
@@ -78,5 +83,45 @@ const { country, back, title, switcher } = Astro.props;
     flex: 1;
     font-size: 21px;
     font-weight: 800;
+  }
+
+  .back,
+  .symbol {
+    position: relative;
+  }
+
+  .symbol {
+    display: inline-flex;
+  }
+
+  /* Offline: a small red dot, nothing else changes. */
+  .offline-dot {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff3b4e;
+    box-shadow: 0 0 0 2px var(--surface);
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+
+  .back .offline-dot {
+    top: 8px;
+    right: 6px;
+  }
+
+  :global(html[data-offline]) .offline-dot {
+    transform: scale(1);
+  }
+
+  .offline-label {
+    display: none;
+  }
+
+  :global(html[data-offline]) .offline-label {
+    display: inline;
   }
 </style>

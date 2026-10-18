@@ -12,4 +12,4 @@ Telko is a static website with no server and no user accounts. The most sensitiv
 
 Telko never asks for, stores or transmits a mobile money PIN. Codes that need one are dialed up to the PIN and closed with `#`, so the operator's own menu asks for it. Any code path that could expose a PIN is a vulnerability.
 
-The only personal data kept is the last five recipient numbers typed in the code assistant, in the browser's local storage, removable from Settings. Amounts are never kept.
+Data kept on the device only (IndexedDB), never sent anywhere: the last five recipient numbers typed in the code assistant (removable from Settings) and which codes are used and how often (code ids only). Amounts and secret codes are never kept. See `docs/offline.md`.

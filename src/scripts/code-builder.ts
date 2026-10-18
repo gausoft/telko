@@ -4,6 +4,7 @@ import { bindChoiceList } from './choice-list';
 import { reviewView, stepView } from './code-builder-steps';
 import type { Builder, BuilderState, BuilderUi, StepView } from './code-builder-types';
 import { codeLineElement } from './code-line';
+import { recordUse } from '../db/usage-store';
 import { readRecipients, rememberRecipient } from './recipients';
 
 /** Opens the code assistant on any element with data-build="<entry id>". */
@@ -13,7 +14,7 @@ export function startCodeBuilder(): void {
   const home = payload?.countries.find((c) => c.code === payload.home);
   if (!payload || !sheet || !home) return;
 
-  const builder: Builder = { payload, home, ui: findUi(sheet), state: null, view: null, syncCountryList: () => undefined };
+  const builder: Builder = { payload, home, ui: findUi(sheet), state: null, view: null, recipients: [], syncCountryList: () => undefined };
 
   wireCountryList(builder);
   builder.ui.next.addEventListener('click', () => next(builder));
@@ -73,6 +74,10 @@ function open(builder: Builder, event: Event): void {
   builder.syncCountryList(builder.home.code);
   builder.ui.sheet.showModal();
   render(builder, 'none');
+  void readRecipients().then((list) => {
+    builder.recipients = list;
+    if (builder.state?.index === 0 && list.length > 0) render(builder, 'none');
+  });
 }
 
 function render(builder: Builder, direction: 'none' | 'forward' | 'back'): void {
@@ -98,13 +103,13 @@ function render(builder: Builder, direction: 'none' | 'forward' | 'back'): void 
 
 function viewFor(builder: Builder, state: BuilderState): StepView {
   const step = state.steps[state.index];
-  if (!step) return reviewView({ built: buildCode(state.entry.ussd, state.values), onDial: () => remember(state) });
+  if (!step) return reviewView({ built: buildCode(state.entry.ussd, state.values), onDial: () => remember(builder, state) });
 
   return stepView({
     step,
     raw: state.raw[step.name] ?? '',
     country: state.country,
-    recipients: readRecipients(),
+    recipients: builder.recipients,
     onPickCountry: () => {
       saveDraft(builder);
       builder.syncCountryList(state.country.code);
@@ -165,13 +170,16 @@ function saveDraft(builder: Builder): void {
   if (builder.state && step && builder.view) builder.state.raw[step.name] = builder.view.read();
 }
 
-/** Only validated national numbers are kept, with the country they were checked against. */
-function remember(state: BuilderState): void {
+/** Only validated national numbers are kept, with the country they were checked against. The code itself counts as a habit. */
+function remember(builder: Builder, state: BuilderState): void {
+  void recordUse({ entryId: state.entry.id, country: state.entry.country, operator: state.entry.operator });
+
   for (const step of state.steps) {
     const value = state.values[step.name];
     if (step.type !== 'phone' || !value || step.format === 'any') continue;
 
     const national = step.format === 'international' ? value.slice(state.country.dialCode.length) : value;
-    rememberRecipient({ country: state.country.code, number: national });
+    void rememberRecipient({ country: state.country.code, number: national });
   }
+  void readRecipients().then((list) => (builder.recipients = list));
 }

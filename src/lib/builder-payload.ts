@@ -6,7 +6,7 @@ export function builderPayload(catalog: Catalog, home: string): string {
   const entries = [...catalog.byCountry.values()]
     .flatMap((c) => c.entries)
     .filter((e) => e.ussd.params.length > 0 && e.provenance.status !== 'discontinued')
-    .map((e) => [e.id, { id: e.id, title: e.name, ussd: e.ussd }] as const);
+    .map((e) => [e.id, { id: e.id, country: e.country, operator: e.operator, title: e.name, ussd: e.ussd }] as const);
 
   const payload: BuilderPayload = {
     home,

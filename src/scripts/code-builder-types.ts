@@ -56,6 +56,7 @@ export interface Builder {
   ui: BuilderUi;
   state: BuilderState | null;
   view: StepView | null;
+  recipients: Recipient[];
   syncCountryList(code: string): void;
 }
 

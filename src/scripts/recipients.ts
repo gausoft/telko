@@ -1,34 +1,48 @@
+import { db } from '../db/db';
 import type { Recipient } from './recipients-types';
 
-const KEY = 'telko.recipients';
 const MAX = 5;
+const LEGACY_KEY = 'telko.recipients';
 
 /** Last phone numbers typed in the code assistant, kept on this device only. Never amounts or secret codes. */
-export function readRecipients(): Recipient[] {
+export async function readRecipients(): Promise<Recipient[]> {
   try {
-    const raw: unknown = JSON.parse(window.localStorage.getItem(KEY) ?? '[]');
+    await migrateLegacy();
+    const rows = await db.recipients.orderBy('usedAt').reverse().limit(MAX).toArray();
 
-    return Array.isArray(raw) ? raw.filter(isRecipient) : [];
+    return rows.map(({ country, number }) => ({ country, number }));
   } catch {
     return [];
   }
 }
 
-export function rememberRecipient(recipient: Recipient): void {
-  const next = [recipient, ...readRecipients().filter((r) => r.number !== recipient.number || r.country !== recipient.country)].slice(0, MAX);
-  write(next);
-}
-
-export function clearRecipients(): void {
-  write([]);
-}
-
-function write(list: Recipient[]): void {
+export async function rememberRecipient(recipient: Recipient, now: number = Date.now()): Promise<void> {
   try {
-    window.localStorage.setItem(KEY, JSON.stringify(list));
+    await db.recipients.put({ key: `${recipient.country}:${recipient.number}`, ...recipient, usedAt: now, updatedAt: now });
+    const extra = await db.recipients.orderBy('usedAt').reverse().offset(MAX).primaryKeys();
+    await db.recipients.bulkDelete(extra);
   } catch {
-    // Storage can be unavailable (private mode); recipients are a convenience only.
+    // Without IndexedDB (rare private modes) recipients are simply not kept.
   }
+}
+
+export async function clearRecipients(): Promise<void> {
+  await db.recipients.clear();
+}
+
+/** Numbers saved by the first version (localStorage) move to the database once. */
+async function migrateLegacy(): Promise<void> {
+  let raw: unknown = [];
+  try {
+    raw = JSON.parse(window.localStorage.getItem(LEGACY_KEY) ?? '[]');
+    window.localStorage.removeItem(LEGACY_KEY);
+  } catch {
+    return;
+  }
+  if (!Array.isArray(raw)) return;
+
+  const valid = raw.filter(isRecipient).reverse();
+  for (const [i, recipient] of valid.entries()) await rememberRecipient(recipient, Date.now() - valid.length + i);
 }
 
 function isRecipient(value: unknown): value is Recipient {

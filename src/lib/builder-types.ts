@@ -2,6 +2,8 @@ import type { Ussd } from './schema';
 
 export interface BuilderEntry {
   id: string;
+  country: string;
+  operator: string;
   title: string;
   ussd: Ussd;
 }
