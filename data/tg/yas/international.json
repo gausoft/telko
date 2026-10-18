@@ -39,7 +39,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur. Tarifs hors forfait (F/min, SMS 90 F partout) : Bénin, Canada, Côte d'Ivoire, Inde, Nigeria, USA 90 ; Allemagne 90 et 280 (listée deux fois) ; Sénégal 130 ; Liban, France, Burkina Faso, Gabon 150 ; Italie 175 ; Afrique du Sud, Ghana, Maroc 180 ; Afghanistan et reste du monde 200 ; Mali 250 ; Cameroun 275 ; Niger 280 ; Espagne, Guinée Conakry, Belgique 300 ; Congo Brazzaville, Guinée équatoriale, Centrafrique, Tchad 350 ; Royaume-Uni 400."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur. Tarifs hors forfait (F/min, SMS 90 F partout) : Bénin, Canada, Côte d'Ivoire, Inde, Nigeria, USA 90 ; Allemagne 90 et 280 (listée deux fois) ; Sénégal 130 ; Liban, France, Burkina Faso, Gabon 150 ; Italie 175 ; Afrique du Sud, Ghana, Maroc 180 ; Afghanistan et reste du monde 200 ; Mali 250 ; Cameroun 275 ; Niger 280 ; Espagne, Guinée Conakry, Belgique 300 ; Congo Brazzaville, Guinée équatoriale, Centrafrique, Tchad 350 ; Royaume-Uni 400.",
+      "en": {
+        "name": "International menu",
+        "description": "International call bundles menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu. Out-of-bundle rates (F/min, SMS 90 F everywhere): Benin, Canada, Côte d'Ivoire, India, Nigeria, USA 90; Germany 90 and 280 (listed twice); Senegal 130; Lebanon, France, Burkina Faso, Gabon 150; Italy 175; South Africa, Ghana, Morocco 180; Afghanistan and rest of the world 200; Mali 250; Cameroon 275; Niger 280; Spain, Guinea Conakry, Belgium 300; Congo Brazzaville, Equatorial Guinea, Central African Republic, Chad 350; United Kingdom 400."
+      }
     },
     {
       "id": "yas-international-forfait-inter-500",
@@ -54,7 +59,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -88,7 +96,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Hors forfait : 50 F/min (pop-up)."
+      "notes": "Hors forfait : 50 F/min (pop-up).",
+      "en": {
+        "name": "Inter 500 bundle",
+        "description": "10 min to Canada, the USA, Gabon and India.",
+        "notes": "Out of bundle: 50 F/min (pop-up)."
+      }
     },
     {
       "id": "yas-international-forfait-inter-800",
@@ -103,7 +116,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -136,7 +152,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Un autre pop-up, périmé, annonce « Côte d'Ivoire, Ghana, Sénégal, 800 FCFA, 5 minutes » pour le même code. La boutique indique 10 min."
+      "notes": "Un autre pop-up, périmé, annonce « Côte d'Ivoire, Ghana, Sénégal, 800 FCFA, 5 minutes » pour le même code. La boutique indique 10 min.",
+      "en": {
+        "name": "Inter 800 bundle",
+        "description": "10 min to Benin, Moov Côte d'Ivoire and Yas Senegal.",
+        "notes": "Another, outdated pop-up announces \"Côte d'Ivoire, Ghana, Senegal, 800 FCFA, 5 minutes\" for the same code. The shop says 10 min."
+      }
     },
     {
       "id": "yas-international-forfait-inter-750",
@@ -151,7 +172,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -189,7 +213,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Hors forfait : 150 F/min (pop-up). GitHub (ancien) donnait ce code pour 600 F / 10 min vers Canada, USA, Chine, Inde, Royaume-Uni."
+      "notes": "Hors forfait : 150 F/min (pop-up). GitHub (ancien) donnait ce code pour 600 F / 10 min vers Canada, USA, Chine, Inde, Royaume-Uni.",
+      "en": {
+        "name": "Inter 750 bundle",
+        "description": "5 min to Orange Burkina Faso, Ghana and Moov Mali.",
+        "notes": "Out of bundle: 150 F/min (pop-up). GitHub (old) gave this code for 600 F / 10 min to Canada, USA, China, India, United Kingdom."
+      }
     }
   ]
 }

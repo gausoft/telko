@@ -22,7 +22,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "« Les 6 premiers transferts de la journée sont gratuits » (tarification susceptible d'être changée)."
+      "notes": "« Les 6 premiers transferts de la journée sont gratuits » (tarification susceptible d'être changée).",
+      "en": {
+        "label": "Mixx to Mixx transfer, first 6 of the day",
+        "notes": "\"The first 6 transfers of the day are free\" (pricing subject to change)."
+      }
     },
     {
       "id": "yas-fees-transfert-mixx-a-partir-du-7e",
@@ -44,7 +48,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "« Facturation 1 % à partir du 7ème transfert ». Base du calcul non précisée. La presse (janvier 2025) citait un ancien « 2,5 % à partir de la 4e opération », non vérifié."
+      "notes": "« Facturation 1 % à partir du 7ème transfert ». Base du calcul non précisée. La presse (janvier 2025) citait un ancien « 2,5 % à partir de la 4e opération », non vérifié.",
+      "en": {
+        "label": "Mixx to Mixx transfer, from the 7th of the day",
+        "notes": "\"1% charged from the 7th transfer\". The basis of the calculation is not stated. The press (January 2025) quoted an older \"2.5% from the 4th operation\", not checked."
+      }
     },
     {
       "id": "yas-fees-depot",
@@ -76,7 +84,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Presse du 31 janvier 2025."
+      "notes": "Presse du 31 janvier 2025.",
+      "en": {
+        "label": "Cash deposit",
+        "notes": "Press of 31 January 2025."
+      }
     },
     {
       "id": "yas-fees-reception",
@@ -98,7 +110,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Receiving money"
+      }
     },
     {
       "id": "yas-fees-retrait-1-500",
@@ -130,7 +145,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 to 500 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-501-5000",
@@ -162,7 +181,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 501 to 5 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-5001-20000",
@@ -194,7 +217,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 5 001 to 20 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-20001-50000",
@@ -226,7 +253,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 20 001 to 50 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-50001-100000",
@@ -258,7 +289,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 50 001 to 100 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-100001-200000",
@@ -290,7 +325,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 100 001 to 200 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-200001-300000",
@@ -322,7 +361,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 200 001 to 300 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-300001-500000",
@@ -354,7 +397,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 300 001 to 500 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-500001-850000",
@@ -386,7 +433,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée. Momocalc arrête sa grille à « 500 001 et plus = 4 400 » et dit que la TAF est incluse."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée. Momocalc arrête sa grille à « 500 001 et plus = 4 400 » et dit que la TAF est incluse.",
+      "en": {
+        "label": "Withdrawal from 500 001 to 850 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated. Momocalc stops its table at \"500 001 and more = 4 400\" and says the TAF is included."
+      }
     },
     {
       "id": "yas-fees-retrait-850001-900000",
@@ -418,7 +469,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 850 001 to 900 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-900001-950000",
@@ -450,7 +505,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 900 001 to 950 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-950001-1000000",
@@ -482,7 +541,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 950 001 to 1 000 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1000001-1100000",
@@ -509,7 +572,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 000 001 to 1 100 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1100001-1150000",
@@ -536,7 +603,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 100 001 to 1 150 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1150001-1200000",
@@ -563,7 +634,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 150 001 to 1 200 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1200001-1250000",
@@ -590,7 +665,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 200 001 to 1 250 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1250001-1300000",
@@ -617,7 +696,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 250 001 to 1 300 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1300001-1350000",
@@ -644,7 +727,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 300 001 to 1 350 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1350001-1400000",
@@ -671,7 +758,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 350 001 to 1 400 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1400001-1450000",
@@ -698,7 +789,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 400 001 to 1 450 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1450001-1500000",
@@ -725,7 +820,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 450 001 to 1 500 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-retrait-1500001-2000000",
@@ -752,7 +851,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
+      "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée.",
+      "en": {
+        "label": "Withdrawal from 1 500 001 to 2 000 000 F",
+        "notes": "Press table of 31 January 2025; no official table found; whether the TAF tax (10%) is included is not stated."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-flooz",
@@ -789,7 +892,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Frais non trouvés. Mixx a rejoint PI-SPI (annonce du 15 avril 2026, sans frais publiés). Règle BCEAO : à partir du 2 novembre 2026, transferts nationaux interopérables gratuits jusqu'à 8 000 F cumulés par jour, réception gratuite sans limite."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Frais non trouvés. Mixx a rejoint PI-SPI (annonce du 15 avril 2026, sans frais publiés). Règle BCEAO : à partir du 2 novembre 2026, transferts nationaux interopérables gratuits jusqu'à 8 000 F cumulés par jour, réception gratuite sans limite.",
+      "en": {
+        "label": "Mixx to Moov Money transfer (Moov)",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed). Fees not found. Mixx joined PI-SPI (announced on 15 April 2026, with no published fees). BCEAO rule: from 2 November 2026, interoperable national transfers are free up to 8 000 F in total per day, and receiving is free with no limit."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-200-1000",
@@ -811,7 +918,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 200 to 1 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-1001-3000",
@@ -833,7 +944,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 1 001 to 3 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-3001-5000",
@@ -855,7 +970,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 3 001 to 5 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-5001-15000",
@@ -877,7 +996,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 5 001 to 15 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-15001-25000",
@@ -899,7 +1022,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 15 001 to 25 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-25001-50000",
@@ -921,7 +1048,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 25 001 to 50 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-50001-100000",
@@ -943,7 +1074,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 50 001 to 100 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-100001-200000",
@@ -965,7 +1100,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 100 001 to 200 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-200001-300000",
@@ -987,7 +1126,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 200 001 to 300 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-300001-500000",
@@ -1009,7 +1152,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 300 001 to 500 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-500001-750000",
@@ -1031,7 +1178,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 500 001 to 750 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-750001-1000000",
@@ -1053,7 +1204,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 750 001 to 1 000 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-1000001-1500000",
@@ -1075,7 +1230,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 1 000 001 to 1 500 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-mixx-vers-orabank-1500001-2000000",
@@ -1097,7 +1256,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Mixx to Orabank from 1 500 001 to 2 000 000 F",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-orabank-vers-mixx",
@@ -1119,7 +1282,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais.",
+      "en": {
+        "label": "Orabank to Mixx: 1 %",
+        "notes": "Orabank Pass Mixx user guide of 26/06/2025, page 10 (partner bank document). Replaces a secondary table that had the direction of the fees reversed."
+      }
     },
     {
       "id": "yas-fees-pispi-national-gratuit",
@@ -1141,7 +1308,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer)."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer).",
+      "en": {
+        "label": "Mixx to another operator, up to 8 000 F in total per day: free (from 02/11/2026)",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed)."
+      }
     },
     {
       "id": "yas-fees-pispi-national-au-dela",
@@ -1163,7 +1334,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié.",
+      "en": {
+        "label": "Mixx to another operator, above 8 000 F per day: 0 to 0.8% before tax (from 02/11/2026)",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed). The operator's exact rate is not published."
+      }
     }
   ]
 }

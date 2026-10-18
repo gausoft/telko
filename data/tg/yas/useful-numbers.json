@@ -39,7 +39,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Frais d'appel standard ; la fiche App Store de Mixx parle de 20 F (non vérifié). Réclamations : reclamation.client@yas.tg. GitHub (mai 2025) cite aussi le 8845 (service client général) et le 119 (fibre), absents de yas.tg."
+      "notes": "Frais d'appel standard ; la fiche App Store de Mixx parle de 20 F (non vérifié). Réclamations : reclamation.client@yas.tg. GitHub (mai 2025) cite aussi le 8845 (service client général) et le 119 (fibre), absents de yas.tg.",
+      "en": {
+        "name": "Yas customer service",
+        "description": "Customer service: 1 Mobile, 2 Fibre, 3 Mixx by Yas.",
+        "notes": "Standard call rates; the Mixx App Store page mentions 20 F (not checked). Complaints: reclamation.client@yas.tg. GitHub (May 2025) also gives 8845 (general customer service) and 119 (fibre), which are not on yas.tg."
+      }
     },
     {
       "id": "yas-useful-numbers-service-client-business",
@@ -73,7 +78,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Yas Business customer service",
+        "description": "Business customer service."
+      }
     },
     {
       "id": "yas-useful-numbers-service-client-etranger",
@@ -111,7 +120,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro affiché : +228 90 30 08 88."
+      "notes": "Numéro affiché : +228 90 30 08 88.",
+      "en": {
+        "name": "Customer service from abroad",
+        "description": "Contact customer service from outside Togo.",
+        "notes": "Number shown: +228 90 30 08 88."
+      }
     },
     {
       "id": "yas-useful-numbers-whatsapp",
@@ -144,7 +158,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro affiché : +228 90 92 88 88 (wa.me/22890928888)."
+      "notes": "Numéro affiché : +228 90 92 88 88 (wa.me/22890928888).",
+      "en": {
+        "name": "Yas WhatsApp",
+        "description": "Contact customer service on WhatsApp.",
+        "notes": "Number shown: +228 90 92 88 88 (wa.me/22890928888)."
+      }
     }
   ]
 }

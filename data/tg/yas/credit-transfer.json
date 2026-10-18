@@ -34,7 +34,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Airtime transfer",
+        "description": "Airtime transfer menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-credit-transfer-transfert-credit-p2p",
@@ -52,19 +57,28 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "PIN"
+            }
           }
         ]
       },
@@ -90,7 +104,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Minimum 1 F, maximum 45 000 F, 3 transferts réussis par jour, frais de 3 % du montant. Code secret par défaut : 1234. Le code PIN n'est jamais enregistré."
+      "notes": "Minimum 1 F, maximum 45 000 F, 3 transferts réussis par jour, frais de 3 % du montant. Code secret par défaut : 1234. Le code PIN n'est jamais enregistré.",
+      "en": {
+        "name": "P2P airtime transfer",
+        "description": "Send airtime to another Yas number.",
+        "notes": "Minimum 1 F, maximum 45,000 F, 3 successful transfers per day, fees of 3% of the amount. Default PIN: 1234. The PIN is never saved."
+      }
     },
     {
       "id": "yas-credit-transfer-changer-code-p2p",
@@ -108,13 +127,19 @@
             "name": "old_pin",
             "type": "pin",
             "label": "Ancien code secret",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Old PIN"
+            }
           },
           {
             "name": "new_pin",
             "type": "pin",
             "label": "Nouveau code secret",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "New PIN"
+            }
           }
         ]
       },
@@ -137,7 +162,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le nouveau code se saisit deux fois. La FAQ cite aussi *909*5*2# pour le changement de code, que la page services présente comme le transfert de crédit. Le code PIN n'est jamais enregistré."
+      "notes": "Le nouveau code se saisit deux fois. La FAQ cite aussi *909*5*2# pour le changement de code, que la page services présente comme le transfert de crédit. Le code PIN n'est jamais enregistré.",
+      "en": {
+        "name": "Change the P2P PIN",
+        "description": "Change the airtime transfer PIN.",
+        "notes": "The new code is typed twice. The FAQ also gives *909*5*2# to change the code, which the services page shows as the airtime transfer. The PIN is never saved."
+      }
     },
     {
       "id": "yas-credit-transfer-recharge-moi",
@@ -157,13 +187,20 @@
             "label": "Code de la carte de recharge",
             "required": true,
             "short": "Carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Top-up card code",
+              "short": "Card"
+            }
           },
           {
             "name": "phone",
             "type": "phone",
             "label": "Numéro du bénéficiaire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Beneficiary's number"
+            }
           }
         ]
       },
@@ -186,7 +223,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La même FAQ donne aussi *216*N° de carte*n° du bénéficiaire#, alors que *216 est le transfert P2P."
+      "notes": "La même FAQ donne aussi *216*N° de carte*n° du bénéficiaire#, alors que *216 est le transfert P2P.",
+      "en": {
+        "name": "Recharge-moi (top me up)",
+        "description": "Top up another number with a top-up card.",
+        "notes": "The same FAQ also gives *216*card number*beneficiary number#, while *216 is the P2P transfer."
+      }
     }
   ]
 }

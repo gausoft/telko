@@ -2,19 +2,19 @@
   "country": "tg",
   "updated": "2026-10-18",
   "items": [
-    { "entry_id": "yas-internet-net599", "label": "Le plus demandé" },
-    { "entry_id": "yas-internet-net3999", "label": "Pour la semaine" },
-    { "entry_id": "yas-internet-net5000", "label": "Pour le mois" },
-    { "entry_id": "moov-internet-izi-wik", "label": "Le plus demandé" },
-    { "entry_id": "moov-internet-izi-small-2", "label": "Pour le mois" },
-    { "entry_id": "moov-internet-izi-moon", "label": "Pour la nuit" }
+    { "entry_id": "yas-internet-net599", "label": "Le plus demandé", "en": { "label": "Most popular" } },
+    { "entry_id": "yas-internet-net3999", "label": "Pour la semaine", "en": { "label": "For the week" } },
+    { "entry_id": "yas-internet-net5000", "label": "Pour le mois", "en": { "label": "For the month" } },
+    { "entry_id": "moov-internet-izi-wik", "label": "Le plus demandé", "en": { "label": "Most popular" } },
+    { "entry_id": "moov-internet-izi-small-2", "label": "Pour le mois", "en": { "label": "For the month" } },
+    { "entry_id": "moov-internet-izi-moon", "label": "Pour la nuit", "en": { "label": "For the night" } }
   ],
   "shortcuts": [
-    { "entry_id": "yas-general-consulter-soldes", "label": "Solde", "brand": "operator" },
-    { "entry_id": "yas-mobile-money-menu-mixx", "label": "Mixx", "brand": "mobile_money" },
-    { "entry_id": "yas-general-mon-numero", "label": "Mon numéro", "brand": "operator" },
-    { "entry_id": "moov-general-solde-credit", "label": "Solde", "brand": "operator" },
-    { "entry_id": "moov-mobile-money-solde-flooz", "label": "Solde Moov Money", "brand": "mobile_money" },
-    { "entry_id": "moov-internet-solde-izi", "label": "Solde internet", "brand": "operator" }
+    { "entry_id": "yas-general-consulter-soldes", "label": "Solde", "brand": "operator", "en": { "label": "Balance" } },
+    { "entry_id": "yas-mobile-money-menu-mixx", "label": "Mixx", "brand": "mobile_money", "en": { "label": "Mixx" } },
+    { "entry_id": "yas-general-mon-numero", "label": "Mon numéro", "brand": "operator", "en": { "label": "My number" } },
+    { "entry_id": "moov-general-solde-credit", "label": "Solde", "brand": "operator", "en": { "label": "Balance" } },
+    { "entry_id": "moov-mobile-money-solde-flooz", "label": "Solde Moov Money", "brand": "mobile_money", "en": { "label": "Moov Money balance" } },
+    { "entry_id": "moov-internet-solde-izi", "label": "Solde internet", "brand": "operator", "en": { "label": "Data balance" } }
   ]
 }

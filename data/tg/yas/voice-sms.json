@@ -15,7 +15,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -47,7 +50,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aussi appelé « Appel_illimité_7J ». Paiement par Mixx non confirmé au code ; possible via le menu Mixx *145*3# (à vérifier)."
+      "notes": "Aussi appelé « Appel_illimité_7J ». Paiement par Mixx non confirmé au code ; possible via le menu Mixx *145*3# (à vérifier).",
+      "en": {
+        "name": "Weekly unlimited calls",
+        "description": "Unlimited calls to all national networks for 7 days.",
+        "notes": "Also called \"Appel_illimité_7J\". Payment with Mixx not confirmed for this code; possible through the Mixx menu *145*3# (to be checked)."
+      }
     },
     {
       "id": "yas-voice-sms-illimites-voix-mensuel",
@@ -62,7 +70,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -95,7 +106,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aussi appelé « Appel_illimité_30J ». Inclut 30 min vers l'international. L'ancienne page donnait *909*432#. Paiement par Mixx non confirmé au code ; possible via *145*3# (à vérifier)."
+      "notes": "Aussi appelé « Appel_illimité_30J ». Inclut 30 min vers l'international. L'ancienne page donnait *909*432#. Paiement par Mixx non confirmé au code ; possible via *145*3# (à vérifier).",
+      "en": {
+        "name": "Monthly unlimited calls",
+        "description": "Unlimited national calls and 30 min international for 30 days.",
+        "notes": "Also called \"Appel_illimité_30J\". Includes 30 min to international numbers. The old page gave *909*432#. Payment with Mixx not confirmed for this code; possible through *145*3# (to be checked)."
+      }
     }
   ]
 }

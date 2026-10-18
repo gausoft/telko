@@ -15,7 +15,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 Jour"
+        "label": "1 Jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -48,7 +51,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La promo « iZi Free Turbo » d'octobre 2026 utilise le même code avec une base de 1 Go, contre 50 Mo au catalogue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La promo « iZi Free Turbo » d'octobre 2026 utilise le même code avec une base de 1 Go, contre 50 Mo au catalogue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Free",
+        "description": "50 MB, valid 1 day.",
+        "notes": "The October 2026 \"iZi Free Turbo\" promotion uses the same code with a base of 1 GB, against 50 MB in the catalogue. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-cool",
@@ -63,7 +71,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 Jour"
+        "label": "1 Jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -96,7 +107,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Cool",
+        "description": "120 MB, valid 1 day.",
+        "notes": "Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-kif",
@@ -111,7 +127,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 Jours"
+        "label": "3 Jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -143,7 +162,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page de présentation indique 300 Mo, la page détaillée (plus ancienne) 180 Mo. Valeur la plus récente retenue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page de présentation indique 300 Mo, la page détaillée (plus ancienne) 180 Mo. Valeur la plus récente retenue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Kif",
+        "description": "300 MB, valid 3 days.",
+        "notes": "The overview page says 300 MB, the (older) detail page 180 MB. The most recent value is used. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-relax",
@@ -158,7 +182,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 Jours"
+        "label": "3 Jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -190,7 +217,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page de présentation indique 600 Mo, la page détaillée (plus ancienne) 400 Mo. Valeur la plus récente retenue, confirmée par la page promotions d'octobre 2026. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page de présentation indique 600 Mo, la page détaillée (plus ancienne) 400 Mo. Valeur la plus récente retenue, confirmée par la page promotions d'octobre 2026. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Relax",
+        "description": "600 MB, valid 3 days.",
+        "notes": "The overview page says 600 MB, the (older) detail page 400 MB. The most recent value is used, confirmed by the October 2026 promotions page. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-wik",
@@ -205,7 +237,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 Jours"
+        "label": "7 Jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -238,7 +273,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page de présentation indique 2 Go, la page détaillée (plus ancienne) 1,5 Go. Valeur la plus récente retenue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page de présentation indique 2 Go, la page détaillée (plus ancienne) 1,5 Go. Valeur la plus récente retenue. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Wik",
+        "description": "2 GB, valid 7 days.",
+        "notes": "The overview page says 2 GB, the (older) detail page 1.5 GB. The most recent value is used. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-moon",
@@ -253,7 +293,10 @@
       },
       "validity": {
         "days": null,
-        "label": "1 Nuit"
+        "label": "1 Nuit",
+        "en": {
+          "label": "1 night"
+        }
       },
       "time_window": {
         "from": "22:00",
@@ -289,7 +332,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Solde : *400*2*3*3#. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "Solde : *400*2*3*3#. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Moon",
+        "description": "4 GB, valid 1 night.",
+        "notes": "Balance: *400*2*3*3#. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-small-1",
@@ -304,7 +352,10 @@
       },
       "validity": {
         "days": 10,
-        "label": "10 jours"
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -336,7 +387,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Small 1",
+        "description": "6 GB, valid 10 days.",
+        "notes": "Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-small-2",
@@ -351,7 +407,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -384,7 +443,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page promotions d'octobre 2026 parle de « 10 Go au lieu de 7 Go » : le volume de base est peut-être passé à 7 Go (non vérifié). Les flottes Corporate Star reçoivent 1 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page promotions d'octobre 2026 parle de « 10 Go au lieu de 7 Go » : le volume de base est peut-être passé à 7 Go (non vérifié). Les flottes Corporate Star reçoivent 1 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Small 2",
+        "description": "6 GB, valid 30 days.",
+        "notes": "The October 2026 promotions page says \"10 GB instead of 7 GB\": the base volume may have become 7 GB (not checked). Corporate Star fleets get a 1 GB bonus. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-medium-1",
@@ -399,7 +463,10 @@
       },
       "validity": {
         "days": 15,
-        "label": "15 jours"
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -431,7 +498,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Medium 1",
+        "description": "15 GB, valid 15 days.",
+        "notes": "Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-medium-2",
@@ -446,7 +518,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -479,7 +554,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page promotions d'octobre 2026 indique deux bases différentes, « au lieu de 35 Go » et « au lieu de 30 Go » (non vérifié). Les flottes Corporate Star reçoivent 5 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page promotions d'octobre 2026 indique deux bases différentes, « au lieu de 35 Go » et « au lieu de 30 Go » (non vérifié). Les flottes Corporate Star reçoivent 5 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Medium 2",
+        "description": "30 GB, valid 30 days.",
+        "notes": "The October 2026 promotions page gives two different bases, \"instead of 35 GB\" and \"instead of 30 GB\" (not checked). Corporate Star fleets get a 5 GB bonus. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-large",
@@ -494,7 +574,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -527,7 +610,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page promotions d'octobre 2026 parle de « au lieu de 85 Go » : le volume de base a peut-être changé (non vérifié). Les flottes Corporate Star reçoivent 10 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait."
+      "notes": "La page promotions d'octobre 2026 parle de « au lieu de 85 Go » : le volume de base a peut-être changé (non vérifié). Les flottes Corporate Star reçoivent 10 Go de bonus. Le paiement par Moov Money est annoncé par Moov, mais aucun code Moov Money n'est publié pour ce forfait.",
+      "en": {
+        "name": "iZi'Large",
+        "description": "75 GB, valid 30 days.",
+        "notes": "The October 2026 promotions page says \"instead of 85 GB\": the base volume may have changed (not checked). Corporate Star fleets get a 10 GB bonus. Moov announces payment with Moov Money, but publishes no Moov Money code for this bundle."
+      }
     },
     {
       "id": "moov-internet-izi-nam",
@@ -538,7 +626,10 @@
       "allowances": null,
       "validity": {
         "days": null,
-        "label": "24 H"
+        "label": "24 H",
+        "en": {
+          "label": "24 h"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -571,7 +662,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Offre promotionnelle. Coût : 50, 100 ou 150 F pour 100, 200 ou 300 Mo transférés, 300 Mo par jour au maximum. Vérifier : *400*3*2*2#. Code de menu : la suite se choisit à l'écran."
+      "notes": "Offre promotionnelle. Coût : 50, 100 ou 150 F pour 100, 200 ou 300 Mo transférés, 300 Mo par jour au maximum. Vérifier : *400*3*2*2#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Izi'Nam",
+        "description": "Transfer 100, 200 or 300 MB of your bundle to another Moov number.",
+        "notes": "Promotional offer. Cost: 50, 100 or 150 F for 100, 200 or 300 MB transferred, 300 MB per day at most. Check: *400*3*2*2#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-internet-sos-data",
@@ -610,7 +706,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "75, 120 ou 300 Mo, à rembourser 220, 330 ou 550 F. Une source tierce donne *222*2#. Code de menu : la suite se choisit à l'écran."
+      "notes": "75, 120 ou 300 Mo, à rembourser 220, 330 ou 550 F. Une source tierce donne *222*2#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "SOS Data",
+        "description": "Borrow data, paid back at your next top-up.",
+        "notes": "75, 120 or 300 MB, to pay back 220, 330 or 550 F. A third-party source gives *222*2#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-internet-validite-plus",
@@ -646,7 +747,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "50 F pour 1 jour, 125 F pour 3 jours. Vérifier : *400*4#. Code de menu : la suite se choisit à l'écran."
+      "notes": "50 F pour 1 jour, 125 F pour 3 jours. Vérifier : *400*4#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Validité Plus",
+        "description": "Extend your data bundle by 1 or 3 days.",
+        "notes": "50 F for 1 day, 125 F for 3 days. Check: *400*4#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-internet-solde-izi",
@@ -680,7 +786,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pour iZi'Moon, le solde se consulte avec *400*2*3*3#."
+      "notes": "Pour iZi'Moon, le solde se consulte avec *400*2*3*3#.",
+      "en": {
+        "name": "iZi bundle balance",
+        "description": "Check the data left on your iZi bundles.",
+        "notes": "For iZi'Moon, check the balance with *400*2*3*3#."
+      }
     },
     {
       "id": "moov-internet-solde-izi-moon",
@@ -719,7 +830,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "iZi'Moon balance",
+        "description": "Check the data left on the iZi'Moon night bundle."
+      }
     },
     {
       "id": "moov-internet-compatibilite-4g",
@@ -752,7 +867,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Check if the SIM supports 4G",
+        "description": "Find out if your SIM card supports 4G."
+      }
     }
   ]
 }

@@ -22,7 +22,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 1 to 500 F: 50 F"
+      }
     },
     {
       "id": "moov-fees-retrait-501-1000",
@@ -44,7 +47,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 501 to 1 000 F: 75 F"
+      }
     },
     {
       "id": "moov-fees-retrait-1001-5000",
@@ -66,7 +72,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 1 001 to 5 000 F: 100 F"
+      }
     },
     {
       "id": "moov-fees-retrait-5001-15000",
@@ -88,7 +97,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 5 001 to 15 000 F: 280 F"
+      }
     },
     {
       "id": "moov-fees-retrait-15001-20000",
@@ -110,7 +122,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 15 001 to 20 000 F: 320 F"
+      }
     },
     {
       "id": "moov-fees-retrait-20001-50000",
@@ -132,7 +147,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 20 001 to 50 000 F: 600 F"
+      }
     },
     {
       "id": "moov-fees-retrait-50001-100000",
@@ -154,7 +172,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "Withdrawal from 50 001 to 100 000 F: 1 000 F"
+      }
     },
     {
       "id": "moov-fees-retrait-100001-200000",
@@ -176,7 +197,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 3 169 à 3 356 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 3 169 à 3 356 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 100 001 to 200 000 F: between 3 169 and 3 356 F",
+        "notes": "Moov publishes a range (between 3 169 and 3 356 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-200001-300000",
@@ -198,7 +223,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 3 729 à 4 195 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 3 729 à 4 195 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 200 001 to 300 000 F: between 3 729 and 4 195 F",
+        "notes": "Moov publishes a range (between 3 729 and 4 195 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-300001-500000",
@@ -220,7 +249,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 4 195 à 4 381 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 4 195 à 4 381 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 300 001 to 500 000 F: between 4 195 and 4 381 F",
+        "notes": "Moov publishes a range (between 4 195 and 4 381 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-500001-850000",
@@ -242,7 +275,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 4 381 à 4 568 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 4 381 à 4 568 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 500 001 to 850 000 F: between 4 381 and 4 568 F",
+        "notes": "Moov publishes a range (between 4 381 and 4 568 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-850001-1000000",
@@ -264,7 +301,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 4 568 à 5 407 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 4 568 à 5 407 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 850 001 to 1 000 000 F: between 4 568 and 5 407 F",
+        "notes": "Moov publishes a range (between 4 568 and 5 407 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-1000001-1500000",
@@ -286,7 +327,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 5 407 à 8 110 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 5 407 à 8 110 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 1 000 001 to 1 500 000 F: between 5 407 and 8 110 F",
+        "notes": "Moov publishes a range (between 5 407 and 8 110 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-retrait-1500001-2000000",
@@ -308,7 +353,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov publie une fourchette (entre 8 110 à 9 788 F) sans expliquer comment le montant est choisi."
+      "notes": "Moov publie une fourchette (entre 8 110 à 9 788 F) sans expliquer comment le montant est choisi.",
+      "en": {
+        "label": "Withdrawal from 1 500 001 to 2 000 000 F: between 8 110 and 9 788 F",
+        "notes": "Moov publishes a range (between 8 110 and 9 788 F) without explaining how the amount is chosen."
+      }
     },
     {
       "id": "moov-fees-transfert-regional-500-5000",
@@ -330,7 +379,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 500 to 5 000 F: 200 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-5001-15000",
@@ -352,7 +404,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 5 001 to 15 000 F: 250 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-15001-20000",
@@ -374,7 +429,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 15 001 to 20 000 F: 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-20001-50000",
@@ -396,7 +454,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 20 001 to 50 000 F: 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-50001-100000",
@@ -418,7 +479,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 50 001 to 100 000 F: 1 000 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-100001-200000",
@@ -440,7 +504,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 100 001 to 200 000 F: 1 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-200001-300000",
@@ -462,7 +529,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 200 001 to 300 000 F: 2 000 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-300001-500000",
@@ -484,7 +554,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 300 001 to 500 000 F: 2 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-500001-850000",
@@ -506,7 +579,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 500 001 to 850 000 F: 2 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-850001-1000000",
@@ -528,7 +604,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 850 001 to 1 000 000 F: 3 000 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-1000001-1500000",
@@ -550,7 +629,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 1 000 001 to 1 500 000 F: 3 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-regional-1500001-2000000",
@@ -572,7 +654,10 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "label": "International transfer from 1 500 001 to 2 000 000 F: 3 500 F"
+      }
     },
     {
       "id": "moov-fees-transfert-national",
@@ -599,7 +684,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Texte officiel : « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert ». La période (par jour ou par mois) et les frais au-delà ne sont pas publiés. Une source tierce lit « par jour » (non vérifié)."
+      "notes": "Texte officiel : « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert ». La période (par jour ou par mois) et les frais au-delà ne sont pas publiés. Une source tierce lit « par jour » (non vérifié).",
+      "en": {
+        "label": "National transfer: free up to the 3rd transfer",
+        "notes": "Official text: \"All national money transfers are free up to the third transfer\". The period (per day or per month) and the fees beyond are not published. A third-party source reads it as \"per day\" (not checked)."
+      }
     },
     {
       "id": "moov-fees-transfert-autre-reseau",
@@ -631,7 +720,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Aucun frais publié par Moov. Une source tierce affirme que la plateforme de paiement instantané de la BCEAO (PI-SPI) rend gratuits les transferts entre particuliers dans l'UEMOA depuis septembre/octobre 2025 (non vérifié)."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Aucun frais publié par Moov. Une source tierce affirme que la plateforme de paiement instantané de la BCEAO (PI-SPI) rend gratuits les transferts entre particuliers dans l'UEMOA depuis septembre/octobre 2025 (non vérifié).",
+      "en": {
+        "label": "Transfer to another network: fees not published",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed). No fees published by Moov. A third-party source says the BCEAO instant payment platform (PI-SPI) has made transfers between individuals in the WAEMU free since September/October 2025 (not checked)."
+      }
     },
     {
       "id": "moov-fees-banque-orabank-1-5000",
@@ -653,7 +746,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement (guide Orabank de juin 2024). Montant donné « environ »."
+      "notes": "Source tierce uniquement (guide Orabank de juin 2024). Montant donné « environ ».",
+      "en": {
+        "label": "Moov Money to Orabank up to 5 000 F: about 47 F",
+        "notes": "Third-party source only (Orabank guide of June 2024). Amount given as \"about\"."
+      }
     },
     {
       "id": "moov-fees-banque-orabank-5001-500000",
@@ -675,7 +772,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement (guide Orabank de juin 2024). La borne basse de 5 001 F est déduite de la tranche précédente."
+      "notes": "Source tierce uniquement (guide Orabank de juin 2024). La borne basse de 5 001 F est déduite de la tranche précédente.",
+      "en": {
+        "label": "Moov Money to Orabank up to 500 000 F: 280 F",
+        "notes": "Third-party source only (Orabank guide of June 2024). The lower bound of 5 001 F is deduced from the previous band."
+      }
     },
     {
       "id": "moov-fees-pispi-national-gratuit",
@@ -697,7 +798,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer)."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer).",
+      "en": {
+        "label": "Moov Money to another operator, up to 8 000 F in total per day: free (from 02/11/2026)",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed)."
+      }
     },
     {
       "id": "moov-fees-pispi-national-au-dela",
@@ -719,7 +824,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié.",
+      "en": {
+        "label": "Moov Money to another operator, above 8 000 F per day: 0 to 0.8% before tax (from 02/11/2026)",
+        "notes": "BCEAO rule from 02/11/2026: transfers between operators are free up to 8 000 F in total per day, per user and per operator; above that, 0 to 0.8% before tax depending on the operator; receiving is free. Does not cover transfers within the same operator (reading to be confirmed). The operator's exact rate is not published."
+      }
     }
   ]
 }

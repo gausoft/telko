@@ -18,7 +18,10 @@
             "name": "new_code",
             "type": "pin",
             "label": "Nouveau code secret",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "New PIN"
+            }
           }
         ]
       },
@@ -45,7 +48,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Obligatoire avant le premier transfert. 0000 est le code par défaut."
+      "notes": "Obligatoire avant le premier transfert. 0000 est le code par défaut.",
+      "en": {
+        "name": "Change the airtime transfer PIN",
+        "description": "Replace the default code 0000 before your first transfer.",
+        "notes": "Required before the first transfer. 0000 is the default code."
+      }
     },
     {
       "id": "moov-credit-transfer-transfert-credit",
@@ -63,19 +71,28 @@
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
           },
           {
             "name": "secret_code",
             "type": "pin",
             "label": "Code secret de transfert",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Transfer PIN"
+            }
           }
         ]
       },
@@ -104,7 +121,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret est inclus dans le code. Frais : 3 % du montant. Minimum 200 F, maximum 5 000 F par transfert, 20 000 F par jour, 50 000 F par semaine, 100 000 F par mois. La page « codes utiles » l'étiquette par erreur « Consulter son solde »."
+      "notes": "Le code secret est inclus dans le code. Frais : 3 % du montant. Minimum 200 F, maximum 5 000 F par transfert, 20 000 F par jour, 50 000 F par semaine, 100 000 F par mois. La page « codes utiles » l'étiquette par erreur « Consulter son solde ».",
+      "en": {
+        "name": "Airtime transfer",
+        "description": "Send airtime to another Moov number.",
+        "notes": "The PIN is part of the code. Fees: 3% of the amount. Minimum 200 F, maximum 5,000 F per transfer, 20,000 F per day, 50,000 F per week, 100,000 F per month. The \"useful codes\" page labels it \"Check your balance\" by mistake."
+      }
     },
     {
       "id": "moov-credit-transfer-recharge-tiers-carte",
@@ -124,13 +146,20 @@
             "label": "Code de la carte de recharge",
             "required": true,
             "short": "Carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Top-up card code",
+              "short": "Card"
+            }
           },
           {
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
           }
         ]
       },
@@ -158,7 +187,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aussi accessible par le menu *109#."
+      "notes": "Aussi accessible par le menu *109#.",
+      "en": {
+        "name": "Top up someone else with a card",
+        "description": "Load a top-up card onto someone else's number.",
+        "notes": "Also available through the *109# menu."
+      }
     },
     {
       "id": "moov-credit-transfer-recharge-carte",
@@ -179,7 +213,11 @@
             "required": true,
             "short": "Carte",
             "numeric": true,
-            "length": 12
+            "length": 12,
+            "en": {
+              "label": "Card code (12 digits)",
+              "short": "Card"
+            }
           }
         ]
       },
@@ -201,7 +239,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Écrit « *124* puis les 12 chiffres » : le # final est supposé. Cartes de 500 à 40 000 F, valables 90 jours."
+      "notes": "Écrit « *124* puis les 12 chiffres » : le # final est supposé. Cartes de 500 à 40 000 F, valables 90 jours.",
+      "en": {
+        "name": "Top up with a card",
+        "description": "Load a top-up card onto your own number.",
+        "notes": "Written \"*124* then the 12 digits\": the final # is assumed. Cards from 500 to 40,000 F, valid 90 days."
+      }
     },
     {
       "id": "moov-credit-transfer-achat-credit-flooz",
@@ -219,13 +262,19 @@
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -255,7 +304,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Moov Money est inclus dans le code. À partir de 200 F. Une autre page écrit *155*3*1# (entrée de menu)."
+      "notes": "Le code secret Moov Money est inclus dans le code. À partir de 200 F. Une autre page écrit *155*3*1# (entrée de menu).",
+      "en": {
+        "name": "Buy airtime with Moov Money",
+        "description": "Buy airtime for yourself with your Moov Money account.",
+        "notes": "The Moov Money PIN is part of the code. From 200 F. Another page writes *155*3*1# (menu entry)."
+      }
     },
     {
       "id": "moov-credit-transfer-achat-credit-flooz-tiers",
@@ -273,19 +327,28 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -310,7 +373,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Moov Money est inclus dans le code."
+      "notes": "Le code secret Moov Money est inclus dans le code.",
+      "en": {
+        "name": "Buy airtime with Moov Money for another number",
+        "description": "Buy airtime for another number with your Moov Money account.",
+        "notes": "The Moov Money PIN is part of the code."
+      }
     },
     {
       "id": "moov-credit-transfer-moovcredit-secours",
@@ -350,7 +418,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Montants 100, 200, 500, 1 000 ou 2 000 F, remboursés 110, 220, 550, 1 100 ou 2 200 F. Aussi par SMS « SOS montant » au 9898, ou en direct (ex. *222*200#). Conditions : 3 mois sur le réseau (aussi écrit « 90 jours »), crédit inférieur ou égal à 50 F, au moins 1 000 F consommés dans le mois. Le texte parle de « 3 niveaux » mais liste 5 montants. Une source tierce donne *222*1#. Code de menu : la suite se choisit à l'écran."
+      "notes": "Montants 100, 200, 500, 1 000 ou 2 000 F, remboursés 110, 220, 550, 1 100 ou 2 200 F. Aussi par SMS « SOS montant » au 9898, ou en direct (ex. *222*200#). Conditions : 3 mois sur le réseau (aussi écrit « 90 jours »), crédit inférieur ou égal à 50 F, au moins 1 000 F consommés dans le mois. Le texte parle de « 3 niveaux » mais liste 5 montants. Une source tierce donne *222*1#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "MoovCrédit Secours",
+        "description": "Borrow airtime, paid back with 10% at your next top-up.",
+        "notes": "Amounts of 100, 200, 500, 1,000 or 2,000 F, paid back as 110, 220, 550, 1,100 or 2,200 F. Also by SMS \"SOS amount\" to 9898, or directly (e.g. *222*200#). Conditions: 3 months on the network (also written \"90 days\"), airtime of 50 F or less, at least 1,000 F used in the month. The text mentions \"3 levels\" but lists 5 amounts. A third-party source gives *222*1#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-credit-transfer-solde-promo-recharge",
@@ -389,7 +462,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Top-up bonus balance",
+        "description": "Check the bonus received from a top-up promotion."
+      }
     }
   ]
 }

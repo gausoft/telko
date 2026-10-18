@@ -39,7 +39,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Gratuit, pour les clients Yas prépayés de 15 à 34 ans. Offres SoWe sans code USSD publié : SoWe 300 (300 F, 250 Mo le jour + 250 Mo la nuit de 22h à 5h, 300 SMS, 1 jour) ; SoWe 700 (700 F, 700 Mo + 700 Mo la nuit, 700 SMS, 3 jours) ; SoWe 2000 (2 000 F, 3 072 Mo + 3 072 Mo la nuit, 1 000 SMS, 7 jours). GitHub (mai 2025) liste une ancienne gamme (300/500/1000/3500) avec les codes *909*8*1# à *909*8*4#, non confirmée."
+      "notes": "Gratuit, pour les clients Yas prépayés de 15 à 34 ans. Offres SoWe sans code USSD publié : SoWe 300 (300 F, 250 Mo le jour + 250 Mo la nuit de 22h à 5h, 300 SMS, 1 jour) ; SoWe 700 (700 F, 700 Mo + 700 Mo la nuit, 700 SMS, 3 jours) ; SoWe 2000 (2 000 F, 3 072 Mo + 3 072 Mo la nuit, 1 000 SMS, 7 jours). GitHub (mai 2025) liste une ancienne gamme (300/500/1000/3500) avec les codes *909*8*1# à *909*8*4#, non confirmée.",
+      "en": {
+        "name": "SoWe sign-up",
+        "description": "Join the SoWe youth programme (ages 15 to 34).",
+        "notes": "Free, for Yas prepaid customers aged 15 to 34. SoWe offers with no published USSD code: SoWe 300 (300 F, 250 MB by day + 250 MB at night from 10 pm to 5 am, 300 SMS, 1 day); SoWe 700 (700 F, 700 MB + 700 MB at night, 700 SMS, 3 days); SoWe 2000 (2,000 F, 3,072 MB + 3,072 MB at night, 1,000 SMS, 7 days). GitHub (May 2025) lists an older range (300/500/1000/3500) with codes *909*8*1# to *909*8*4#, not confirmed."
+      }
     }
   ]
 }

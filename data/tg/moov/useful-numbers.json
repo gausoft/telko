@@ -34,7 +34,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro affiché « +228 99 99 00 00 ». Email : moov-contact@moov-africa.tg. Adresse : Boulevard de la Paix, Lomé, BP 14511. Aucun numéro court de service client mobile (type 111) n'est publié."
+      "notes": "Numéro affiché « +228 99 99 00 00 ». Email : moov-contact@moov-africa.tg. Adresse : Boulevard de la Paix, Lomé, BP 14511. Aucun numéro court de service client mobile (type 111) n'est publié.",
+      "en": {
+        "name": "Moov Africa Togo customer service",
+        "description": "Contact Moov Africa Togo customer service.",
+        "notes": "Number shown \"+228 99 99 00 00\". Email: moov-contact@moov-africa.tg. Address: Boulevard de la Paix, Lomé, BP 14511. No short mobile customer service number (such as 111) is published."
+      }
     },
     {
       "id": "moov-useful-numbers-service-client-fixe",
@@ -67,7 +72,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro affiché « +228 22 20 13 23 »."
+      "notes": "Numéro affiché « +228 22 20 13 23 ».",
+      "en": {
+        "name": "Moov Africa Togo customer service (landline)",
+        "description": "Call Moov Africa Togo on its landline.",
+        "notes": "Number shown \"+228 22 20 13 23\"."
+      }
     },
     {
       "id": "moov-useful-numbers-centre-appel-flooz",
@@ -106,7 +116,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Moov Money call centre",
+        "description": "Contact Moov Money support."
+      }
     },
     {
       "id": "moov-useful-numbers-corporate",
@@ -145,7 +159,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro affiché « 99 18 22 00 »."
+      "notes": "Numéro affiché « 99 18 22 00 ».",
+      "en": {
+        "name": "Corporate team",
+        "description": "Contact the business team (postpaid, fleets, subscriptions).",
+        "notes": "Number shown \"99 18 22 00\"."
+      }
     }
   ]
 }

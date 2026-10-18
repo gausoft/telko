@@ -33,7 +33,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Clients Open (postpayé) exclus. Le Pass Filiales Sahels (600 F, 5 min vers Onatel Burkina et Malitel Mali) n'a pas de code de souscription publié. Code de menu : la suite se choisit à l'écran."
+      "notes": "Clients Open (postpayé) exclus. Le Pass Filiales Sahels (600 F, 5 min vers Onatel Burkina et Malitel Mali) n'a pas de code de souscription publié. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "International passes",
+        "description": "International call passes menu.",
+        "notes": "Open (postpaid) customers excluded. The Pass Filiales Sahels (600 F, 5 min to Onatel Burkina and Malitel Mali) has no published sign-up code. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-international-pass-filiales-voisins",
@@ -48,7 +53,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 Jour"
+        "label": "1 Jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -81,7 +89,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Vérifier : *101*79#."
+      "notes": "Vérifier : *101*79#.",
+      "en": {
+        "name": "Neighbouring countries pass",
+        "description": "5 min to Moov Benin and Moov Côte d'Ivoire, valid 1 day.",
+        "notes": "Check: *101*79#."
+      }
     },
     {
       "id": "moov-international-pass-diaspora",
@@ -96,7 +109,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 Jour"
+        "label": "1 Jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -130,7 +146,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de vérification contradictoire : *101*80# (page de présentation) ou *101*82# (page détaillée)."
+      "notes": "Code de vérification contradictoire : *101*80# (page de présentation) ou *101*82# (page détaillée).",
+      "en": {
+        "name": "Diaspora pass",
+        "description": "5 min to the USA, China, Lebanon, Canada, Nigeria and India, valid 1 day.",
+        "notes": "Conflicting check code: *101*80# (overview page) or *101*82# (detail page)."
+      }
     }
   ]
 }

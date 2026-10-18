@@ -40,7 +40,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Gratuit en prépayé ; 9 440 F en postpayé. Autres codes : *909*6*1*1# (FAQ « about ») et *104*1*1# (ancien). Roaming gratuit CEDEAO (Bénin, Burkina Faso, Côte d'Ivoire, Ghana, Sénégal) : appels reçus gratuits pendant 30 jours consécutifs, SMS gratuits, data à tarif préférentiel."
+      "notes": "Gratuit en prépayé ; 9 440 F en postpayé. Autres codes : *909*6*1*1# (FAQ « about ») et *104*1*1# (ancien). Roaming gratuit CEDEAO (Bénin, Burkina Faso, Côte d'Ivoire, Ghana, Sénégal) : appels reçus gratuits pendant 30 jours consécutifs, SMS gratuits, data à tarif préférentiel.",
+      "en": {
+        "name": "Turn on prepaid roaming",
+        "description": "Turn on roaming on a prepaid line.",
+        "notes": "Free on prepaid; 9,440 F on postpaid. Other codes: *909*6*1*1# (\"about\" FAQ) and *104*1*1# (old). Free ECOWAS roaming (Benin, Burkina Faso, Côte d'Ivoire, Ghana, Senegal): incoming calls free for 30 consecutive days, free SMS, data at a preferential rate."
+      }
     },
     {
       "id": "yas-roaming-desactiver-roaming",
@@ -74,7 +79,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Ancien code : *104*1*2#."
+      "notes": "Ancien code : *104*1*2#.",
+      "en": {
+        "name": "Turn off prepaid roaming",
+        "description": "Turn off roaming.",
+        "notes": "Old code: *104*1*2#."
+      }
     },
     {
       "id": "yas-roaming-acheter-forfait-roaming",
@@ -119,7 +129,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Autre code : *909*6*1*2#. Code menu : le reste se choisit dans le menu de l'opérateur. Passes du catalogue de la boutique (octobre 2026), sans code USSD publié : Voisin_1500 (1 500 F, 676 Mo, 7 jours) et Voisin_5000 (5 000 F, 2,2 Go, 30 jours) pour Bénin, Burkina, Côte d'Ivoire, Sénégal ; Ghana_1500 (1 500 F, 999 Mo, 7 jours) et Ghana_5000 (5 000 F, 3,2 Go, 30 jours) ; MEA_GABON_7500 (7 500 F, 500 Mo, 30 jours) pour Égypte, Émirats, Gabon, Maroc, Oman, Qatar, Tunisie, Algérie, Arabie saoudite ; Pays_Yas_5000 (5 000 F, 2,2 Go, 30 jours) pour Comores, Madagascar, Tanzanie ; Pays_Yas_10000 (10 000 F, 4,4 Go, 30 jours) pour Comores, Madagascar (la ligne Tanzanie affiche 5 000 F, erreur de données). Ils sont peut-être sous ce menu, non confirmé."
+      "notes": "Autre code : *909*6*1*2#. Code menu : le reste se choisit dans le menu de l'opérateur. Passes du catalogue de la boutique (octobre 2026), sans code USSD publié : Voisin_1500 (1 500 F, 676 Mo, 7 jours) et Voisin_5000 (5 000 F, 2,2 Go, 30 jours) pour Bénin, Burkina, Côte d'Ivoire, Sénégal ; Ghana_1500 (1 500 F, 999 Mo, 7 jours) et Ghana_5000 (5 000 F, 3,2 Go, 30 jours) ; MEA_GABON_7500 (7 500 F, 500 Mo, 30 jours) pour Égypte, Émirats, Gabon, Maroc, Oman, Qatar, Tunisie, Algérie, Arabie saoudite ; Pays_Yas_5000 (5 000 F, 2,2 Go, 30 jours) pour Comores, Madagascar, Tanzanie ; Pays_Yas_10000 (10 000 F, 4,4 Go, 30 jours) pour Comores, Madagascar (la ligne Tanzanie affiche 5 000 F, erreur de données). Ils sont peut-être sous ce menu, non confirmé.",
+      "en": {
+        "name": "Buy roaming bundles",
+        "description": "Buy a roaming bundle; roaming turns on automatically.",
+        "notes": "Another code: *909*6*1*2#. Menu code: you choose the rest in the operator's menu. Passes from the shop catalogue (October 2026), with no published USSD code: Voisin_1500 (1,500 F, 676 MB, 7 days) and Voisin_5000 (5,000 F, 2.2 GB, 30 days) for Benin, Burkina, Côte d'Ivoire, Senegal; Ghana_1500 (1,500 F, 999 MB, 7 days) and Ghana_5000 (5,000 F, 3.2 GB, 30 days); MEA_GABON_7500 (7,500 F, 500 MB, 30 days) for Egypt, UAE, Gabon, Morocco, Oman, Qatar, Tunisia, Algeria, Saudi Arabia; Pays_Yas_5000 (5,000 F, 2.2 GB, 30 days) for Comoros, Madagascar, Tanzania; Pays_Yas_10000 (10,000 F, 4.4 GB, 30 days) for Comoros, Madagascar (the Tanzania line shows 5,000 F, a data error). They may be under this menu, not confirmed."
+      }
     },
     {
       "id": "yas-roaming-menu-roaming",
@@ -152,7 +167,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Roaming menu",
+        "description": "Roaming services menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-roaming-appeler-en-roaming",
@@ -172,14 +192,21 @@
             "label": "Indicatif du pays",
             "required": true,
             "short": "Indicatif",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Country code",
+              "short": "Code"
+            }
           },
           {
             "name": "phone",
             "type": "phone",
             "label": "Numéro à appeler",
             "required": true,
-            "format": "any"
+            "format": "any",
+            "en": {
+              "label": "Number to call"
+            }
           }
         ]
       },
@@ -202,7 +229,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Composer le code, puis lancer l'appel."
+      "notes": "Composer le code, puis lancer l'appel.",
+      "en": {
+        "name": "Call from abroad",
+        "description": "Make a call while roaming.",
+        "notes": "Dial the code, then start the call."
+      }
     },
     {
       "id": "yas-roaming-z1-benin-500",
@@ -217,7 +249,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -244,7 +279,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z1 Benin 500",
+        "description": "225 MB in Benin, valid 30 days.",
+        "notes": "Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z1-z5-1000",
@@ -259,7 +299,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -287,7 +330,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page affiche deux pass 1 000 F (Bénin et Côte d'Ivoire) sur le même code. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "La page affiche deux pass 1 000 F (Bénin et Côte d'Ivoire) sur le même code. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z1 Benin / Z5 Côte d'Ivoire 1000",
+        "description": "500 MB in Benin or Côte d'Ivoire, valid 30 days.",
+        "notes": "The page shows two 1,000 F passes (Benin and Côte d'Ivoire) on the same code. Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z2-arabie-saoudite-7500",
@@ -302,7 +350,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -329,7 +380,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z2 Saudi Arabia 7500",
+        "description": "500 MB in Saudi Arabia, valid 30 days.",
+        "notes": "Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z3-ghana-5000",
@@ -344,7 +400,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -371,7 +430,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z3 Ghana 5000",
+        "description": "370 MB in Ghana, valid 30 days.",
+        "notes": "Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z3-ghana-1400",
@@ -410,7 +474,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Carte illisible : la page indique « 370 MB » et « 1 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Carte illisible : la page indique « 370 MB » et « 1 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z3 Ghana 1400",
+        "description": "Data pass in Ghana.",
+        "notes": "Unreadable card: the page says \"370 MB\" and \"1 GB\", no validity. Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z3-ghana-5000-bis",
@@ -449,7 +518,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Carte illisible : la page indique « 370 MB » et « 4 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Carte illisible : la page indique « 370 MB » et « 4 Go », validité absente. Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z3 Ghana 5000 (second offer)",
+        "description": "Data pass in Ghana.",
+        "notes": "Unreadable card: the page says \"370 MB\" and \"4 GB\", no validity. Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z4-gabon-7500",
@@ -464,7 +538,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -491,7 +568,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z4 Gabon 7500",
+        "description": "500 MB in Gabon, valid 30 days.",
+        "notes": "Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     },
     {
       "id": "yas-roaming-z5-cote-divoire-500",
@@ -506,7 +588,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -533,7 +618,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique."
+      "notes": "Pass de la page roaming yas.tg (juillet 2025), qui ne correspond pas au catalogue actuel de la boutique.",
+      "en": {
+        "name": "Z5 Côte d'Ivoire 500",
+        "description": "225 MB in Côte d'Ivoire, valid 30 days.",
+        "notes": "Pass from the yas.tg roaming page (July 2025), which does not match the shop's current catalogue."
+      }
     }
   ]
 }
