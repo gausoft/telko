@@ -10,9 +10,11 @@ import type { PageSeo } from '../lib/seo-types';
 interface Props {
   seo: PageSeo;
   withDock?: boolean;
+  /** "brand" paints the page ultramarine; iOS colours the installed app's status bar from the page background. */
+  ground?: 'brand';
 }
 
-const { seo, withDock = false } = Astro.props;
+const { seo, withDock = false, ground } = Astro.props;
 ---
 
 <!doctype html>
@@ -38,7 +40,7 @@ const { seo, withDock = false } = Astro.props;
       } catch {}
     </script>
   </head>
-  <body class:list={{ 'has-dock': withDock }}>
+  <body class:list={{ 'has-dock': withDock }} data-ground={ground}>
     <slot />
     <p class="visually-hidden" role="status" aria-live="polite" data-app-status></p>
     <script>
@@ -50,6 +52,10 @@ const { seo, withDock = false } = Astro.props;
 </html>
 
 <style is:global>
+  body[data-ground='brand'] {
+    background: var(--action);
+  }
+
   body.has-dock {
     padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
   }

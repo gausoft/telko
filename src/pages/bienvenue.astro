@@ -19,7 +19,7 @@ const countryItems = catalog.countries.map((c) => ({ id: c.code, name: c.name, f
 const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
 ---
 
-<AppLayout seo={appPageSeo('Bienvenue sur Telko', '/bienvenue')}>
+<AppLayout seo={appPageSeo('Bienvenue sur Telko', '/bienvenue')} ground="brand">
   <main class="onboarding" data-onboarding data-default-country={DEFAULT_COUNTRY}>
     <section class="step step-welcome" data-step="bienvenue">
       <div class="keypad" aria-hidden="true">
@@ -99,6 +99,9 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
   const show = (next: number, moveFocus = true): void => {
     index = Math.max(0, Math.min(steps.length - 1, next));
     steps.forEach((s, i) => (s.hidden = i !== index));
+    // Only the welcome step is ultramarine; the status bar follows the page background.
+    if (index === 0) document.body.dataset['ground'] = 'brand';
+    else delete document.body.dataset['ground'];
     if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
   };
 
