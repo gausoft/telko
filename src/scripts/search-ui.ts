@@ -8,7 +8,7 @@ import type { SearchBrand, SearchPayload } from './search-ui-types';
 const PENCIL =
   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>';
 
-export function renderResults(): void {
+export function startSearch(): void {
   const payload = readPayload();
   const input = document.querySelector<HTMLInputElement>('#q');
   const page = document.querySelector<HTMLElement>('[data-country]');
@@ -16,7 +16,11 @@ export function renderResults(): void {
 
   const country = page.dataset['country'] ?? '';
   const update = (): void => paint(payload, search(payload.docs, input.value, country));
+  bindControls(input, update);
+}
 
+/** Field, clear button and suggestion chips all end in the same refresh. */
+function bindControls(input: HTMLInputElement, update: () => void): void {
   const clear = document.querySelector<HTMLButtonElement>('[data-clear]');
   const refresh = (): void => {
     if (clear) clear.hidden = input.value.length === 0;

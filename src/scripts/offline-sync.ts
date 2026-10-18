@@ -41,13 +41,18 @@ async function syncNow(readSelection: () => Selection | null): Promise<SyncResul
   const readyKey = `${pack.version}|${choiceKey(keep)}`;
   if ((await packVersion(selection.country)) === readyKey) return 'ready';
 
+  const worker = navigator.serviceWorker?.controller ?? null;
   const files = filesFor(pack, keep);
   if (!(await cacheFiles(files))) return 'partial';
   if (!sameSelection(selection, readSelection())) return 'stale';
 
-  await removeOtherPages(files);
+  // The new catalog is committed first: if that fails, the previous pages are all still there.
   await savePack({ ...pack, entries: pack.entries.filter((e) => keep.includes(e.operator)) }, readyKey);
-  navigator.serviceWorker?.controller?.postMessage({ type: 'telko:synced' });
+  if (!sameSelection(selection, readSelection())) return 'stale';
+
+  await removeOtherPages(files).catch(() => undefined);
+  // Old build files may go only if the worker that served this sync is still the one in charge.
+  if (worker && navigator.serviceWorker?.controller === worker) worker.postMessage({ type: 'telko:synced' });
   await navigator.storage?.persist?.().catch(() => false);
 
   return 'ready';
