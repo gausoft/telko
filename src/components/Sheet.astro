@@ -1,0 +1,128 @@
+---
+import X from '@lucide/astro/icons/x';
+
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<dialog class="sheet" id={id} aria-labelledby={`${id}-title`} data-sheet>
+  <div class="head">
+    <h2 id={`${id}-title`} tabindex="-1" autofocus>{title}</h2>
+    <button type="button" class="close" data-sheet-close aria-label="Fermer">
+      <X size={20} aria-hidden="true" />
+    </button>
+  </div>
+  <div class="body">
+    <slot />
+  </div>
+  {
+    Astro.slots.has('footer') && (
+      <div class="footer">
+        <slot name="footer" />
+      </div>
+    )
+  }
+</dialog>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-open]').forEach((button) =>
+    button.addEventListener('click', () => {
+      document.querySelector<HTMLDialogElement>(`#${button.dataset['sheetOpen'] ?? ''}`)?.showModal();
+    }),
+  );
+
+  document.querySelectorAll<HTMLDialogElement>('[data-sheet]').forEach((sheet) => {
+    sheet.querySelectorAll('[data-sheet-close]').forEach((b) => b.addEventListener('click', () => sheet.close()));
+    // A tap on the dimmed backdrop lands on the dialog itself.
+    sheet.addEventListener('click', (e) => {
+      if (e.target === sheet) sheet.close();
+    });
+  });
+</script>
+
+<style>
+  .sheet {
+    width: 100%;
+    max-width: 640px;
+    max-height: 85dvh;
+    margin: auto auto 0;
+    padding: var(--space-2) var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+    border: 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-dock);
+  }
+
+  .sheet[open] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    animation: rise 0.22s ease-out;
+  }
+
+  .sheet::backdrop {
+    background: rgba(8, 8, 14, 0.5);
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-2);
+  }
+
+  .head::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 40px;
+    height: 4px;
+    margin-left: -20px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+    outline: none;
+  }
+
+  .close {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--tag-bg);
+    color: var(--text);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .body {
+    overflow-y: auto;
+    min-height: 0;
+    margin: 0 calc(var(--space-2) * -1);
+    padding: var(--space-1) var(--space-2) var(--space-2);
+  }
+
+  @keyframes rise {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sheet[open] {
+      animation: none;
+    }
+  }
+</style>

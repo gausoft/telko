@@ -2,14 +2,14 @@
 import ArrowLeft from '@lucide/astro/icons/arrow-left';
 
 import type { Country, Operator } from '../lib/schema';
-import BrandMark from './BrandMark.astro';
+import OperatorSwitcher from './OperatorSwitcher.astro';
 
 interface Props {
   country: Country;
   back?: string | undefined;
   title?: string | undefined;
-  /** Operator switch on operator pages: each logo links to the same page for that operator. */
-  switcher?: { operators: Operator[]; current: string; section: string } | undefined;
+  /** Operator selector shown top right. `hrefTemplate` makes a pick open that URL ("{op}" is replaced). */
+  switcher?: { operators: Operator[]; current: string; hrefTemplate?: string } | undefined;
 }
 
 const { country, back, title, switcher } = Astro.props;
@@ -29,17 +29,7 @@ const { country, back, title, switcher } = Astro.props;
     )
   }
   {title && <h1 class="title">{title}</h1>}
-  {
-    switcher && switcher.operators.length > 1 && (
-      <nav class="operators" aria-label="Opérateur">
-        {switcher.operators.map((o) => (
-          <a href={`/${country.code}/${o.id}/${switcher.section}`} aria-label={o.short_name} aria-current={o.id === switcher.current ? 'page' : undefined}>
-            <BrandMark brand={o} size={30} />
-          </a>
-        ))}
-      </nav>
-    )
-  }
+  {switcher && <OperatorSwitcher operators={switcher.operators} current={switcher.current} hrefTemplate={switcher.hrefTemplate} />}
 </header>
 
 <style>
@@ -88,28 +78,5 @@ const { country, back, title, switcher } = Astro.props;
     flex: 1;
     font-size: 21px;
     font-weight: 800;
-  }
-
-  .operators {
-    display: flex;
-    gap: 2px;
-    padding: 3px;
-    border-radius: var(--radius-pill);
-    background: var(--surface-raised);
-    box-shadow: var(--shadow-card);
-  }
-
-  .operators a {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    opacity: 0.55;
-  }
-
-  .operators a[aria-current='page'] {
-    opacity: 1;
-    box-shadow: 0 0 0 2px var(--action);
   }
 </style>

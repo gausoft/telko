@@ -59,7 +59,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? 'M
 
 <AppLayout title={`${title} ${operator.short_name} · Telko`} withDock>
   <main class="page">
-    <AppHeader country={data.country} back={`/${data.country.code}`} title={title} switcher={{ operators: data.operators, current: operator.id, section: section.id }} />
+    <AppHeader country={data.country} back={`/${data.country.code}`} title={title} switcher={{ operators: data.operators, current: operator.id, hrefTemplate: `/${data.country.code}/{op}/${section.id}` }} />
 
     {
       isInternet && (

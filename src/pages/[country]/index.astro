@@ -11,7 +11,6 @@ import BrandMark from '../../components/BrandMark.astro';
 import Carousel from '../../components/Carousel.astro';
 import DialToast from '../../components/DialToast.astro';
 import Dock from '../../components/Dock.astro';
-import OperatorSwitch from '../../components/OperatorSwitch.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
 import { featuredFor, loadCatalog, shortcutsFor } from '../../lib/catalog';
 import type { CountryCatalog } from '../../lib/catalog-types';
@@ -46,8 +45,7 @@ const blocks = data.operators.map((operator) => ({
 
 <AppLayout title={`Telko · ${data.country.name}`} withDock>
   <main class="page">
-    <AppHeader country={data.country} />
-    <OperatorSwitch operators={data.operators} current={first.id} />
+    <AppHeader country={data.country} switcher={{ operators: data.operators, current: first.id }} />
 
     {
       blocks.map(({ operator, featured, shortcuts }) => (
@@ -90,18 +88,14 @@ const blocks = data.operators.map((operator) => ({
 </AppLayout>
 
 <script>
-  import { readPref, writePref } from '../../scripts/prefs';
+  import { readPref } from '../../scripts/prefs';
   import { readRecents } from '../../scripts/recents';
 
-  const switches = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-op-switch]'));
   const blocks = Array.from(document.querySelectorAll<HTMLElement>('[data-op-block]'));
-  const known = switches.map((b) => b.dataset['opSwitch'] ?? '');
+  const known = blocks.map((b) => b.dataset['opBlock'] ?? '');
 
   function select(operator: string): void {
-    switches.forEach((b) => b.setAttribute('aria-pressed', b.dataset['opSwitch'] === operator ? 'true' : 'false'));
     blocks.forEach((b) => (b.hidden = b.dataset['opBlock'] !== operator));
-    writePref('operator', operator);
-    document.dispatchEvent(new CustomEvent('telko:operator', { detail: operator }));
   }
 
   function addRecents(): void {
@@ -126,7 +120,7 @@ const blocks = data.operators.map((operator) => ({
     });
   }
 
-  switches.forEach((b) => b.addEventListener('click', () => select(b.dataset['opSwitch'] ?? '')));
+  document.addEventListener('telko:operator', (e) => select((e as CustomEvent<string>).detail));
   const saved = readPref('operator');
   if (saved && known.includes(saved)) select(saved);
   addRecents();

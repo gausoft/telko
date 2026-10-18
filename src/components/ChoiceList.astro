@@ -1,0 +1,116 @@
+---
+import Check from '@lucide/astro/icons/check';
+
+import type { ChoiceItem } from './choice-types';
+import BrandMark from './BrandMark.astro';
+
+interface Props {
+  /** Name of the choice, e.g. "country" or "operator". Scripts find the list by it. */
+  name: string;
+  items: ChoiceItem[];
+  selected: string[];
+  multiple?: boolean;
+  label: string;
+}
+
+const { name, items, selected, multiple = false, label } = Astro.props;
+---
+
+<div class="list" role="group" aria-label={label} data-choice-list={name} data-multiple={multiple ? 'true' : undefined}>
+  {
+    items.map((item) => (
+      <button type="button" class="row" data-choice={item.id} disabled={item.soon} aria-pressed={selected.includes(item.id) ? 'true' : 'false'}>
+        {item.flag ? <img class="flag" src={`/flags/${item.flag}.svg`} alt="" width="32" height="32" /> : item.brand && <BrandMark brand={item.brand} size={32} />}
+        <span class="name">{item.name}</span>
+        {item.soon ? (
+          <span class="soon">Bientôt</span>
+        ) : (
+          <span class="tick" aria-hidden="true">
+            <Check size={16} />
+          </span>
+        )}
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .row {
+    min-height: 60px;
+    padding: 0 var(--space-4);
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-align: left;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .row[aria-pressed='true'] {
+    background: var(--action);
+    color: var(--on-action);
+  }
+
+  .row:disabled {
+    cursor: default;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .flag {
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .name {
+    flex: 1;
+    min-width: 0;
+    font-size: 17px;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .row:disabled .flag,
+  .row:disabled .name {
+    opacity: 0.55;
+  }
+
+  .tick {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: var(--tag-bg);
+    color: transparent;
+  }
+
+  .row[aria-pressed='true'] .tick {
+    background: var(--on-action);
+    color: var(--action);
+  }
+
+  .soon {
+    flex-shrink: 0;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 600;
+  }
+</style>

@@ -1,0 +1,97 @@
+---
+import ChevronDown from '@lucide/astro/icons/chevron-down';
+
+import type { Operator } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
+import ChoiceList from './ChoiceList.astro';
+import Sheet from './Sheet.astro';
+
+interface Props {
+  operators: Operator[];
+  current: string;
+  /** On operator pages, e.g. "/tg/{op}/internet": picking navigates there. Without it, the page switches in place. */
+  hrefTemplate?: string | undefined;
+}
+
+const { operators, current, hrefTemplate } = Astro.props;
+const items = operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+---
+
+<div class="switcher" data-switcher data-current={current} data-href-template={hrefTemplate}>
+  <button type="button" class="chip" data-sheet-open="operator-sheet" aria-haspopup="dialog">
+    {
+      operators.map((o) => (
+        <span class="face" data-face={o.id} hidden={o.id !== current}>
+          <BrandMark brand={o} size={28} />
+          <span>{o.short_name}</span>
+        </span>
+      ))
+    }
+    <span class="visually-hidden">, changer d'opérateur</span>
+    <ChevronDown size={16} aria-hidden="true" />
+  </button>
+
+  <Sheet id="operator-sheet" title="Opérateur">
+    <ChoiceList name="current-operator" label="Opérateur" items={items} selected={[current]} />
+  </Sheet>
+</div>
+
+<script>
+  import { bindChoiceList } from '../scripts/choice-list';
+  import { readPref, writePref } from '../scripts/prefs';
+
+  const root = document.querySelector<HTMLElement>('[data-switcher]');
+  const list = root?.querySelector<HTMLElement>('[data-choice-list]');
+
+  function show(operator: string): void {
+    root?.querySelectorAll<HTMLElement>('[data-face]').forEach((f) => (f.hidden = f.dataset['face'] !== operator));
+    handle?.set([operator]);
+  }
+
+  const handle = list
+    ? bindChoiceList(list, ([operator]) => {
+        if (!root || !operator) return;
+        const template = root.dataset['hrefTemplate'];
+        writePref('operator', operator);
+        if (template) {
+          window.location.href = template.replace('{op}', operator);
+          return;
+        }
+        show(operator);
+        document.dispatchEvent(new CustomEvent('telko:operator', { detail: operator }));
+        root.querySelector<HTMLDialogElement>('dialog')?.close();
+      })
+    : null;
+
+  const saved = readPref('operator');
+  const known = root?.querySelector(`[data-face="${saved ?? ''}"]`);
+  if (root && !root.dataset['hrefTemplate'] && saved && known) show(saved);
+</script>
+
+<style>
+  .chip {
+    height: 40px;
+    padding: 0 var(--space-3) 0 5px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .face {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .face[hidden] {
+    display: none;
+  }
+</style>

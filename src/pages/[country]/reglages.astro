@@ -7,6 +7,8 @@ import SunMoon from '@lucide/astro/icons/sun-moon';
 
 import AppHeader from '../../components/AppHeader.astro';
 import BrandMark from '../../components/BrandMark.astro';
+import ChoiceList from '../../components/ChoiceList.astro';
+import Sheet from '../../components/Sheet.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
 import { loadCatalog } from '../../lib/catalog';
@@ -24,6 +26,9 @@ const { data } = Astro.props;
 const first = data.operators[0];
 if (!first) throw new Error(`${data.country.code}: no operator`);
 
+const countryItems = loadCatalog().countries.map((c) => ({ id: c.code, name: c.name, flag: c.code, soon: c.status !== 'live' }));
+const operatorItems = data.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+
 const THEMES = [
   { id: 'auto', label: 'Auto' },
   { id: 'light', label: 'Clair' },
@@ -36,21 +41,30 @@ const THEMES = [
     <AppHeader country={data.country} back={`/${data.country.code}`} title="Réglages" />
 
     <section class="group" aria-label="Mon profil">
-      <a class="row" href="/bienvenue?etape=pays">
+      <button type="button" class="row" data-sheet-open="country-sheet" aria-haspopup="dialog">
         <img class="flag" src={`/flags/${data.country.code}.svg`} alt="" width="32" height="32" />
         <span class="label">Pays</span>
         <span class="value">{data.country.name}</span>
         <ChevronRight size={18} class="chevron" aria-hidden="true" />
-      </a>
-      <a class="row" href="/bienvenue?etape=operateur">
+      </button>
+      <button type="button" class="row" data-sheet-open="operators-sheet" aria-haspopup="dialog">
         <span class="icon"><RadioTower size={18} aria-hidden="true" /></span>
         <span class="label">Mes opérateurs</span>
         <span class="value marks">
           {data.operators.map((o) => <span data-my-operator={o.id}><BrandMark brand={o} size={24} /></span>)}
         </span>
         <ChevronRight size={18} class="chevron" aria-hidden="true" />
-      </a>
+      </button>
     </section>
+
+    <Sheet id="country-sheet" title="Pays">
+      <ChoiceList name="country" label="Pays" items={countryItems} selected={[data.country.code]} />
+    </Sheet>
+
+    <Sheet id="operators-sheet" title="Mes opérateurs">
+      <ChoiceList name="operators" label="Mes opérateurs" items={operatorItems} selected={data.operators.map((o) => o.id)} multiple />
+      <button type="button" class="save" slot="footer" data-save-operators>Enregistrer</button>
+    </Sheet>
 
     <section class="group" aria-label="Affichage">
       <div class="row">
@@ -79,14 +93,46 @@ const THEMES = [
 </AppLayout>
 
 <script>
+  import { bindChoiceList } from '../../scripts/choice-list';
   import { readPref, writePref } from '../../scripts/prefs';
 
-  const mine = (readPref('operators') ?? '').split(',').filter((id) => id.length > 0);
-  if (mine.length > 0) {
-    document.querySelectorAll<HTMLElement>('[data-my-operator]').forEach((el) => {
-      el.hidden = !mine.includes(el.dataset['myOperator'] ?? '');
+  const countryList = document.querySelector<HTMLElement>('[data-choice-list="country"]');
+  const operatorList = document.querySelector<HTMLElement>('[data-choice-list="operators"]');
+  const currentCountry = window.location.pathname.split('/')[1] ?? '';
+
+  // Another country lives on other pages: save it and reopen the settings there.
+  if (countryList) {
+    bindChoiceList(countryList, ([code]) => {
+      if (!code || code === currentCountry) {
+        document.querySelector<HTMLDialogElement>('#country-sheet')?.close();
+        return;
+      }
+      writePref('country', code);
+      window.location.href = `/${code}/reglages`;
     });
   }
+
+  function showMine(ids: string[]): void {
+    document.querySelectorAll<HTMLElement>('[data-my-operator]').forEach((el) => {
+      el.hidden = !ids.includes(el.dataset['myOperator'] ?? '');
+    });
+  }
+
+  const operators = operatorList ? bindChoiceList(operatorList) : null;
+  const mine = (readPref('operators') ?? '').split(',').filter((id) => id.length > 0);
+  if (mine.length > 0) {
+    showMine(mine);
+    operators?.set(mine);
+  }
+
+  document.querySelector('[data-save-operators]')?.addEventListener('click', () => {
+    const ids = operators?.selected() ?? [];
+    if (ids.length === 0) return;
+    writePref('operators', ids.join(','));
+    if (!ids.includes(readPref('operator') ?? '')) writePref('operator', ids[0] ?? '');
+    showMine(ids);
+    document.querySelector<HTMLDialogElement>('#operators-sheet')?.close();
+  });
 
   const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-theme-choice]'));
 
@@ -125,6 +171,12 @@ const THEMES = [
   }
 
   .row {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
     min-height: 56px;
     padding: var(--space-2) var(--space-4);
     display: flex;
@@ -201,5 +253,18 @@ const THEMES = [
   .segmented button[aria-pressed='true'] {
     background: var(--action);
     color: var(--on-action);
+  }
+
+  .save {
+    width: 100%;
+    height: 52px;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--action);
+    color: var(--on-action);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
   }
 </style>
