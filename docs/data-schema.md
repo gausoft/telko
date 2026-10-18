@@ -149,7 +149,7 @@ The code assistant builds its screens from these fields alone, so a new code nee
 
 The assistant asks each box once, in code order. A box used twice (a confirmation) is filled twice.
 
-A `pin` parameter is never asked, stored, shared or prefilled. The assistant prepares the code up to the `*` before the first `pin` and the user types the secret code and `#` in the phone's own dialer.
+A `pin` parameter is never asked, stored, shared or prefilled. The assistant dials the code up to the first `pin`, closed with `#` (`*155*1*1*90000000*500#`), and the operator's menu asks for the secret code. A code ending with `*` must never be dialed: phones treat it as a phone call.
 
 ## Fees file
 

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { loadCatalog } from '../src/lib/catalog';
-import { buildCode, codeTokens, normalizePhone, planSteps, validateStep } from '../src/lib/ussd-flow';
+import { buildCode, codeTokens, dialTokens, normalizePhone, planSteps, validateStep } from '../src/lib/ussd-flow';
 
 const togo = { dialCode: '228', nationalLength: 8, homeDialCode: '228' };
 const entries = [...loadCatalog().byCountry.values()].flatMap((c) => c.entries).filter((e) => e.ussd.params.length > 0);
@@ -29,6 +29,8 @@ describe('ussd flow on every real code', () => {
 
       expect(built.complete).toBe(true);
       expect(built.code).not.toMatch(/[{}]/);
+      expect(built.code).toMatch(/#$/);
+      expect(built.code).not.toMatch(/\*#$/);
       expect(built.needsSecret).toBe(secrets.length > 0);
       for (const name of secrets) expect(built.code).not.toContain(name);
     }
@@ -36,22 +38,29 @@ describe('ussd flow on every real code', () => {
 });
 
 describe('planSteps and buildCode', () => {
-  it('cuts a Flooz transfer right before the secret code', () => {
+  it('stops a Flooz transfer before the secret code and closes it with #', () => {
     const ussd = byId('moov-mobile-money-transfert-national');
 
     expect(planSteps(ussd).map((s) => s.name)).toEqual(['phone', 'amount']);
-    expect(buildCode(ussd, { phone: '90000000', amount: '500' })).toEqual({ code: '*155*1*1*90000000*500*', needsSecret: true, complete: true });
+    expect(buildCode(ussd, { phone: '90000000', amount: '500' })).toEqual({ code: '*155*1*1*90000000*500#', needsSecret: true, complete: true });
   });
 
   it('asks a repeated box once and fills it twice', () => {
     const ussd = byId('moov-bills-canal-plus-nouvelle-carte');
 
     expect(planSteps(ussd).map((s) => s.name)).toEqual(['card_number']);
-    expect(buildCode(ussd, { card_number: '123' }).code).toBe('*155*4*8*3*2*123*123*');
+    expect(buildCode(ussd, { card_number: '123' }).code).toBe('*155*4*8*3*2*123*123#');
   });
 
   it('builds a full code with # when no secret code is needed', () => {
     expect(buildCode(byId('moov-general-moov-bip'), { phone: '90000000' })).toEqual({ code: '*108*90000000#', needsSecret: false, complete: true });
+  });
+
+  it('shows the dialed code without the secret box', () => {
+    const tokens = dialTokens(byId('moov-mobile-money-transfert-national'), { phone: '90000000', amount: '500' });
+    const text = tokens.map((t) => (t.kind === 'text' ? t.text : t.value)).join('');
+
+    expect(text).toBe('*155*1*1*90000000*500#');
   });
 
   it('reports an empty box', () => {

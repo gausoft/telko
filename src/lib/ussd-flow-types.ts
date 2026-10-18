@@ -6,9 +6,9 @@ export type CodeToken =
   | { kind: 'slot'; name: string; short: string; value: string | null; secret: boolean };
 
 export interface BuiltCode {
-  /** What to dial, or to prepare in the dialer when a secret code follows. */
+  /** What to dial, always ending with "#". */
   code: string;
-  /** True when the user still has to type a secret code and # in the dialer. */
+  /** True when the operator's menu will ask for the secret code after dialing. */
   needsSecret: boolean;
   /** False while a box before the secret code is still empty. */
   complete: boolean;

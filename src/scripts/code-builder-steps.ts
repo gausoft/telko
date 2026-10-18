@@ -94,20 +94,20 @@ function choiceView(ctx: StepContext): StepView {
   return { element: panel, focus: list.querySelector('button'), read: () => value };
 }
 
-/** Final screen: the prepared code and how to finish it. The secret code is never asked here. */
+/** Final screen: the code to dial. The secret code is never asked here; the operator asks for it. */
 export function reviewView(ctx: ReviewContext): StepView {
   const panel = el('div', 'cb-step cb-review');
   if (ctx.built.needsSecret) {
     const note = el('p', 'cb-note');
     const lock = el('span', 'cb-lock');
     lock.innerHTML = LOCK_ICON;
-    note.append(lock, text('span', 'Code secret'), text('span', '+ #', 'mono'), text('span', 'dans le clavier'));
+    note.append(lock, text('span', 'Le réseau vous demandera votre code secret'));
     panel.append(note);
   }
 
   const dial = el('a', 'cb-primary');
   dial.href = `tel:${encodeUssd(ctx.built.code)}`;
-  dial.textContent = ctx.built.needsSecret ? 'Préparer' : 'Composer';
+  dial.textContent = 'Composer';
   dial.addEventListener('click', ctx.onDial);
 
   const copy = el('button', 'cb-secondary');

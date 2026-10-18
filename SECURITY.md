@@ -10,6 +10,6 @@ Please include what you found, how to reproduce it, and its possible impact. You
 
 Telko is a static website with no server and no user accounts. The most sensitive area is **USSD codes that move money**: a wrong code in the dataset can send money to the wrong person. Report any such error as a security issue, not as a regular data fix.
 
-Telko never asks for, stores or transmits a mobile money PIN. Codes that need one are prepared up to the PIN, and the user types it in the phone's own dialer. Any code path that could expose a PIN is a vulnerability.
+Telko never asks for, stores or transmits a mobile money PIN. Codes that need one are dialed up to the PIN and closed with `#`, so the operator's own menu asks for it. Any code path that could expose a PIN is a vulnerability.
 
 The only personal data kept is the last five recipient numbers typed in the code assistant, in the browser's local storage, removable from Settings. Amounts are never kept.

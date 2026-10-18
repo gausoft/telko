@@ -35,6 +35,19 @@ const { id, title } = Astro.props;
     }),
   );
 
+  // iOS keeps the layout viewport when the keyboard opens, so a bottom sheet would sit under it.
+  // Lift the sheet by the hidden part of the visual viewport.
+  const viewport = window.visualViewport;
+  const fitKeyboard = (): void => {
+    if (!viewport) return;
+    const hidden = Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop);
+    document.documentElement.style.setProperty('--keyboard', `${Math.round(hidden)}px`);
+    document.documentElement.style.setProperty('--visible-height', `${Math.round(viewport.height)}px`);
+  };
+  viewport?.addEventListener('resize', fitKeyboard);
+  viewport?.addEventListener('scroll', fitKeyboard);
+  fitKeyboard();
+
   document.querySelectorAll<HTMLDialogElement>('[data-sheet]').forEach((sheet) => {
     sheet.querySelectorAll('[data-sheet-close]').forEach((b) => b.addEventListener('click', () => sheet.close()));
     // A tap on the dimmed backdrop lands on the dialog itself.
@@ -48,8 +61,8 @@ const { id, title } = Astro.props;
   .sheet {
     width: 100%;
     max-width: 640px;
-    max-height: 85dvh;
-    margin: auto auto 0;
+    max-height: calc(var(--visible-height, 100dvh) * 0.9);
+    margin: auto auto var(--keyboard, 0px);
     padding: var(--space-2) var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
     border: 0;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -59,6 +72,7 @@ const { id, title } = Astro.props;
   }
 
   .sheet[open] {
+    transition: margin-bottom 0.2s ease-out;
     display: flex;
     flex-direction: column;
     gap: var(--space-3);

@@ -1,5 +1,5 @@
 import type { BuilderCountry, BuilderEntry, BuilderPayload } from '../lib/builder-types';
-import { buildCode, codeTokens, planSteps, validateStep } from '../lib/ussd-flow';
+import { buildCode, codeTokens, dialTokens, planSteps, validateStep } from '../lib/ussd-flow';
 import type { Step } from '../lib/ussd-flow-types';
 import { bindChoiceList } from './choice-list';
 import { reviewView, stepView } from './code-builder-steps';
@@ -45,7 +45,8 @@ export function startCodeBuilder(): void {
 
     ui.title.textContent = s.entry.title;
     ui.progress.replaceChildren(...progressDots(s.steps.length + 1, s.index));
-    ui.code.replaceChildren(codeLineElement(codeTokens(s.entry.ussd, s.values), s.fresh));
+    const tokens = step ? codeTokens(s.entry.ussd, s.values) : dialTokens(s.entry.ussd, s.values);
+    ui.code.replaceChildren(codeLineElement(tokens, s.fresh));
     ui.error.textContent = '';
     ui.back.hidden = s.index === 0;
     ui.next.hidden = !step;

@@ -44,6 +44,19 @@ function shortOf(param: Param): string {
   return param.short ?? DEFAULT_SHORT[param.type];
 }
 
+/** The tokens actually dialed: up to the first secret code, closed with "#". */
+export function dialTokens(ussd: Ussd, values: Record<string, string>): CodeToken[] {
+  const tokens = codeTokens(ussd, values);
+  const cut = tokens.findIndex((t) => t.kind === 'slot' && t.secret);
+  if (cut === -1) return tokens;
+
+  const kept = tokens.slice(0, cut);
+  const last = kept.at(-1);
+  if (last?.kind === 'text') kept[kept.length - 1] = { kind: 'text', text: last.text.replace(/\*+$/, '') };
+
+  return [...kept, { kind: 'text', text: '#' }];
+}
+
 /** Boxes to ask for: each once, in code order, stopping at the first secret code. */
 export function planSteps(ussd: Ussd): Step[] {
   const steps: Step[] = [];
@@ -58,7 +71,10 @@ export function planSteps(ussd: Ussd): Step[] {
   return steps;
 }
 
-/** The code to dial, cut right before the first secret code (the user types it in the dialer). */
+/**
+ * The code to dial. When a secret code is needed, the code stops before it and is closed with "#":
+ * the operator's menu then asks for the secret code itself. A trailing "*" would be dialed as a phone call.
+ */
 export function buildCode(ussd: Ussd, values: Record<string, string>): BuiltCode {
   let code = '';
   let complete = true;
@@ -68,7 +84,7 @@ export function buildCode(ussd: Ussd, values: Record<string, string>): BuiltCode
       code += token.text;
       continue;
     }
-    if (token.secret) return { code, needsSecret: true, complete };
+    if (token.secret) return { code: `${code.replace(/\*+$/, '')}#`, needsSecret: true, complete };
     if (token.value === null || token.value === '') complete = false;
     code += token.value ?? '';
   }
