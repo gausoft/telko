@@ -300,6 +300,76 @@
         "verified_by": null
       },
       "notes": "Source secondaire uniquement : *145# puis 6, 1, 2 dans le menu. Frais : 1 %, plafonné à 2M (selon momocalc)."
+    },
+    {
+      "id": "yas-mobile-money-annulation-transfert",
+      "kind": "service",
+      "name": "Annuler un transfert Mixx",
+      "description": "Annuler un transfert d'argent envoyé par erreur.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*8*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "dépannage",
+        "mixx"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/YasTogo/status/1803457721091723543",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Annonce du compte officiel Yas Togo (19/06/2024). Ensuite : code secret, référence de la transaction, option 1, confirmer (source secondaire). Délai officiel non publié ; la presse de 2021-2022 parle de 6 heures, 2 essais par jour et 2 000 F minimum, non confirmé. Après le délai ou si le bénéficiaire a retiré : service client 888, option 3."
+    },
+    {
+      "id": "yas-mobile-money-code-secret-oublie",
+      "kind": "service",
+      "name": "Code secret Mixx oublié",
+      "description": "Retrouver ou réinitialiser son code secret Mixx.",
+      "price_xof": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*8*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "dépannage",
+        "mixx"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/YasTogo/status/1709161375321256133",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Annonce du compte officiel Yas Togo (03/10/2023, sous la marque TMoney) : à revérifier en priorité. Le menu *145*8# propose aussi la réinitialisation du code secret (yas.tg)."
     }
   ]
 }

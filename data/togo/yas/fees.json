@@ -755,28 +755,6 @@
       "notes": "Grille presse du 31 janvier 2025 ; pas de grille officielle trouvée ; inclusion de la TAF (10 %) non précisée."
     },
     {
-      "id": "yas-fees-mixx-vers-banque",
-      "operation": "other",
-      "min_xof": 1,
-      "max_xof": null,
-      "fee_xof": null,
-      "fee_percent": 1,
-      "label": "Mixx vers banque (Pass Mixx Orabank)",
-      "provenance": {
-        "status": "unverified",
-        "sources": [
-          {
-            "url": "https://momocalc.com/fr/togo/frais-tmoney",
-            "kind": "secondary",
-            "accessed": "2026-10-18"
-          }
-        ],
-        "verified_at": null,
-        "verified_by": null
-      },
-      "notes": "Source secondaire : « 1 % plafonné à 2M », sens du plafond non précisé."
-    },
-    {
       "id": "yas-fees-mixx-vers-flooz",
       "operation": "transfer-cross-network",
       "min_xof": 1,
@@ -787,6 +765,11 @@
       "provenance": {
         "status": "unverified",
         "sources": [
+          {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
           {
             "url": "https://www.togofirst.com/fr/gouvernance-economique/0510-20246-transferts-monetaires-interoperables-la-bceao-rend-pi-spi-obligatoire-pour-les-particuliers-des-novembre-2026",
             "kind": "secondary",
@@ -806,7 +789,381 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Frais non trouvés. Mixx a rejoint PI-SPI (annonce du 15 avril 2026, sans frais publiés). Règle BCEAO : à partir du 2 novembre 2026, transferts nationaux interopérables gratuits jusqu'à 8 000 F cumulés par jour, réception gratuite sans limite."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Frais non trouvés. Mixx a rejoint PI-SPI (annonce du 15 avril 2026, sans frais publiés). Règle BCEAO : à partir du 2 novembre 2026, transferts nationaux interopérables gratuits jusqu'à 8 000 F cumulés par jour, réception gratuite sans limite."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-200-1000",
+      "operation": "transfer-bank",
+      "min_xof": 200,
+      "max_xof": 1000,
+      "fee_xof": 50,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 200 à 1 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-1001-3000",
+      "operation": "transfer-bank",
+      "min_xof": 1001,
+      "max_xof": 3000,
+      "fee_xof": 75,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 1 001 à 3 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-3001-5000",
+      "operation": "transfer-bank",
+      "min_xof": 3001,
+      "max_xof": 5000,
+      "fee_xof": 100,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 3 001 à 5 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-5001-15000",
+      "operation": "transfer-bank",
+      "min_xof": 5001,
+      "max_xof": 15000,
+      "fee_xof": 150,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 5 001 à 15 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-15001-25000",
+      "operation": "transfer-bank",
+      "min_xof": 15001,
+      "max_xof": 25000,
+      "fee_xof": 300,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 15 001 à 25 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-25001-50000",
+      "operation": "transfer-bank",
+      "min_xof": 25001,
+      "max_xof": 50000,
+      "fee_xof": 300,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 25 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-50001-100000",
+      "operation": "transfer-bank",
+      "min_xof": 50001,
+      "max_xof": 100000,
+      "fee_xof": 600,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 50 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-100001-200000",
+      "operation": "transfer-bank",
+      "min_xof": 100001,
+      "max_xof": 200000,
+      "fee_xof": 900,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 100 001 à 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-200001-300000",
+      "operation": "transfer-bank",
+      "min_xof": 200001,
+      "max_xof": 300000,
+      "fee_xof": 900,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 200 001 à 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-300001-500000",
+      "operation": "transfer-bank",
+      "min_xof": 300001,
+      "max_xof": 500000,
+      "fee_xof": 1000,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 300 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-500001-750000",
+      "operation": "transfer-bank",
+      "min_xof": 500001,
+      "max_xof": 750000,
+      "fee_xof": 1100,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 500 001 à 750 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-750001-1000000",
+      "operation": "transfer-bank",
+      "min_xof": 750001,
+      "max_xof": 1000000,
+      "fee_xof": 1700,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 750 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-1000001-1500000",
+      "operation": "transfer-bank",
+      "min_xof": 1000001,
+      "max_xof": 1500000,
+      "fee_xof": 2200,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 1 000 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-mixx-vers-orabank-1500001-2000000",
+      "operation": "transfer-bank",
+      "min_xof": 1500001,
+      "max_xof": 2000000,
+      "fee_xof": 2200,
+      "fee_percent": null,
+      "label": "Mixx vers Orabank de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-orabank-vers-mixx",
+      "operation": "other",
+      "min_xof": 200,
+      "max_xof": 2000000,
+      "fee_xof": null,
+      "fee_percent": 1,
+      "label": "Orabank vers Mixx : 1 %",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orabank.net/sites/default/files/2025-06/20250626_OTG_DBD_GUIDE_UTILISATEUR_PASS_MIXX_0.pdf",
+            "kind": "secondary",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Guide utilisateur Pass Mixx d'Orabank du 26/06/2025, page 10 (document de la banque partenaire). Remplace une grille secondaire qui inversait le sens des frais."
+    },
+    {
+      "id": "yas-fees-pispi-national-gratuit",
+      "operation": "transfer-cross-network",
+      "min_xof": 1,
+      "max_xof": 8000,
+      "fee_xof": 0,
+      "fee_percent": null,
+      "label": "Mixx vers un autre opérateur, jusqu'à 8 000 F cumulés par jour : gratuit (dès le 02/11/2026)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer)."
+    },
+    {
+      "id": "yas-fees-pispi-national-au-dela",
+      "operation": "transfer-cross-network",
+      "min_xof": 8001,
+      "max_xof": null,
+      "fee_xof": null,
+      "fee_percent": null,
+      "label": "Mixx vers un autre opérateur, au-delà de 8 000 F par jour : 0 à 0,8 % hors taxes (dès le 02/11/2026)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié."
     }
   ]
 }

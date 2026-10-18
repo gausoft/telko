@@ -613,6 +613,11 @@
         "status": "unverified",
         "sources": [
           {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          },
+          {
             "url": "https://moov-africa.tg/moov-money/transfert-flooz/",
             "kind": "official",
             "accessed": "2026-10-18"
@@ -626,7 +631,7 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aucun frais publié par Moov. Une source tierce affirme que la plateforme de paiement instantané de la BCEAO (PI-SPI) rend gratuits les transferts entre particuliers dans l'UEMOA depuis septembre/octobre 2025 (non vérifié)."
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Aucun frais publié par Moov. Une source tierce affirme que la plateforme de paiement instantané de la BCEAO (PI-SPI) rend gratuits les transferts entre particuliers dans l'UEMOA depuis septembre/octobre 2025 (non vérifié)."
     },
     {
       "id": "moov-fees-banque-orabank-1-5000",
@@ -671,6 +676,50 @@
         "verified_by": null
       },
       "notes": "Source tierce uniquement (guide Orabank de juin 2024). La borne basse de 5 001 F est déduite de la tranche précédente."
+    },
+    {
+      "id": "moov-fees-pispi-national-gratuit",
+      "operation": "transfer-cross-network",
+      "min_xof": 1,
+      "max_xof": 8000,
+      "fee_xof": 0,
+      "fee_percent": null,
+      "label": "Flooz vers un autre opérateur, jusqu'à 8 000 F cumulés par jour : gratuit (dès le 02/11/2026)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer)."
+    },
+    {
+      "id": "moov-fees-pispi-national-au-dela",
+      "operation": "transfer-cross-network",
+      "min_xof": 8001,
+      "max_xof": null,
+      "fee_xof": null,
+      "fee_percent": null,
+      "label": "Flooz vers un autre opérateur, au-delà de 8 000 F par jour : 0 à 0,8 % hors taxes (dès le 02/11/2026)",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Règle BCEAO à partir du 02/11/2026 : transferts entre opérateurs gratuits jusqu'à 8 000 F cumulés par jour, par utilisateur et par opérateur ; au-delà, 0 à 0,8 % hors taxes selon l'opérateur ; réception gratuite. Ne vise pas les transferts au sein d'un même opérateur (lecture à confirmer). Taux exact de l'opérateur non publié."
     }
   ]
 }
