@@ -13,12 +13,17 @@ const SYNONYMS: Record<string, string[]> = {
   annuler: ['annuler', 'annulation', 'rappel'],
 };
 
+const QUANTITY = /(\d+(?:[.,]\d+)?)\s*(go|mo|min|f|fcfa)\b/g;
+
 export function normalize(text: string): string {
   return text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 }
 
+/** Splits text into search tokens; "1,5 Go" stays one token ("1.5go") so it never matches "5 go". */
 export function tokenize(text: string): string[] {
-  return normalize(text).split(/[^a-z0-9]+/).filter((t) => t.length > 0);
+  const glued = normalize(text).replace(QUANTITY, (_, n: string, unit: string) => ` ${n.replace(',', '.')}${unit === 'fcfa' ? 'f' : unit} `);
+
+  return glued.split(/[^a-z0-9.]+/).map((t) => t.replace(/^\.+|\.+$/g, '')).filter((t) => t.length > 0);
 }
 
 export function buildDocs(catalog: Catalog): SearchDoc[] {
@@ -37,16 +42,20 @@ export function buildDocs(catalog: Catalog): SearchDoc[] {
 
 function toDoc(entry: CatalogEntry, operator: Operator | undefined): SearchDoc {
   const volume = formatData(entry.allowances?.data_mb ?? null);
-  const title = volume ?? entry.name;
-  const parts = [volume ? entry.name : null, entry.validity?.label ?? null, entry.price_xof !== null ? formatXof(entry.price_xof) : null];
+  const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
+  const parts = [volume ? entry.name : null, entry.validity?.label ?? null, price];
   const brandNames = operator ? brandTerms(operator, entry) : [];
-  const text = [entry.name, entry.description, entry.category, ...entry.tags, ...brandNames, volume ?? '', entry.validity?.label ?? ''].join(' ');
+  const codeDigits = entry.ussd.template.replace(/\{[a-z_]+\}/g, ' ').replace(/[*#]/g, ' ');
+  const text = [
+    entry.name, entry.description, entry.category, ...entry.tags, ...brandNames,
+    volume ?? '', entry.validity?.label ?? '', codeDigits, price ?? '', entry.price_xof !== null ? String(entry.price_xof) : '',
+  ].join(' ');
 
   return {
     id: entry.id,
     country: entry.country,
     operator: entry.operator,
-    title,
+    title: volume ?? entry.name,
     subtitle: parts.filter((p): p is string => p !== null).join(' · '),
     code: entry.ussd.template,
     dialable: entry.ussd.params.length === 0,
@@ -81,13 +90,15 @@ export function search(docs: SearchDoc[], query: string, country: string, limit 
 }
 
 function scoreDoc(doc: SearchDoc, tokens: string[]): number {
+  const titleTokens = tokenize(doc.title);
   let score = 0;
 
   for (const token of tokens) {
+    const isQuantity = /^\d/.test(token);
     const variants = SYNONYMS[token] ?? [token];
-    const matched = variants.some((v) => doc.terms.some((t) => t.startsWith(v)));
+    const matched = variants.some((v) => doc.terms.some((t) => (isQuantity ? t === v : t.startsWith(v))));
     if (!matched) return 0;
-    score += normalize(doc.title).includes(token) ? 2 : 1;
+    score += titleTokens.includes(token) ? 2 : 1;
   }
 
   return score;

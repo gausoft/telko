@@ -23,6 +23,11 @@ export interface ShortcutItem {
   entry: CatalogEntry;
 }
 
+export interface EditorialSelection {
+  featured: FeaturedItem[];
+  shortcuts: ShortcutItem[];
+}
+
 export interface CountryCatalog {
   country: Country;
   operators: Operator[];

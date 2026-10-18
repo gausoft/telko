@@ -40,6 +40,12 @@ export const paramSchema = z.object({
 
 export const ussdSchema = z
   .object({ template: z.string().min(1), params: z.array(paramSchema) })
+  .refine((u) => !/[{}]/.test(u.template.replace(PLACEHOLDER, '')), {
+    message: 'template braces must only wrap lowercase parameter names, e.g. {phone}',
+  })
+  .refine((u) => new Set(u.params.map((p) => p.name)).size === u.params.length, {
+    message: 'parameter names must be unique',
+  })
   .refine(
     (u) => {
       const placeholders = new Set(Array.from(u.template.matchAll(PLACEHOLDER), (m) => m[1]));
@@ -75,17 +81,20 @@ export const categoryFileSchema = z.object({
   entries: z.array(entrySchema),
 });
 
-export const feeEntrySchema = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/),
-  operation: z.enum(FEE_OPERATIONS),
-  min_xof: z.number().int(),
-  max_xof: z.number().int().nullable(),
-  fee_xof: z.number().int().nullable(),
-  fee_percent: z.number().nullable(),
-  label: z.string(),
-  provenance: provenanceSchema,
-  notes: z.string().nullable(),
-});
+export const feeEntrySchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    operation: z.enum(FEE_OPERATIONS),
+    min_xof: z.number().int().nonnegative(),
+    max_xof: z.number().int().nonnegative().nullable(),
+    fee_xof: z.number().int().nonnegative().nullable(),
+    fee_percent: z.number().min(0).max(100).nullable(),
+    label: z.string().min(1),
+    provenance: provenanceSchema,
+    notes: z.string().nullable(),
+  })
+  .refine((f) => f.max_xof === null || f.max_xof >= f.min_xof, { message: 'max_xof must be >= min_xof' })
+  .refine((f) => f.fee_xof === null || f.fee_percent === null, { message: 'use either fee_xof or fee_percent, not both' });
 
 export const feesFileSchema = z.object({
   operator: z.string(),

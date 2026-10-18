@@ -35,6 +35,9 @@ function paint(payload: SearchPayload, hits: SearchHit[]): void {
   toggle('[data-other-title]', other.length > 0);
   toggle('[data-hint]', query.length === 0);
   toggle('[data-empty]', query.length > 0 && hits.length === 0);
+
+  const count = document.querySelector<HTMLElement>('[data-count]');
+  if (count) count.textContent = query.length === 0 ? '' : `${hits.length} résultat${hits.length > 1 ? 's' : ''}`;
 }
 
 function fill(selector: string, hits: SearchHit[], payload: SearchPayload): void {

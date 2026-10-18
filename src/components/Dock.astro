@@ -41,6 +41,17 @@ const items = [
   </nav>
 </div>
 
+<script>
+  import { readPref } from '../scripts/prefs';
+
+  const operator = readPref('operator');
+  if (operator && /^[a-z0-9-]+$/.test(operator)) {
+    document.querySelectorAll<HTMLAnchorElement>('[data-operator-href]').forEach((a) => {
+      a.href = (a.dataset['operatorHref'] ?? '').replace('{op}', operator);
+    });
+  }
+</script>
+
 <style>
   .dock {
     position: fixed;

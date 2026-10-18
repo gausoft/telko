@@ -1,12 +1,13 @@
 ---
 /**
- * Records dialed codes as "recents" and, on devices without a phone dialer
- * (fine pointer), shows the code instead of following the tel: link.
+ * Records dialed codes as "recents". On devices with a fine pointer (usually
+ * computers) it also shows the code, since the tel: link may open nothing.
+ * The link itself is never blocked: tablets and desktops with calling apps keep it.
  */
 ---
 
 <div class="toast" role="status" aria-live="polite" data-dial-toast hidden>
-  <span class="hint">Tapez ce code sur votre téléphone</span>
+  <span class="hint">Sur ordinateur, tapez ce code sur votre téléphone</span>
   <span class="code mono" data-dial-code></span>
 </div>
 
@@ -25,7 +26,6 @@
     rememberDial({ code: dial, label: link.dataset['label'] ?? dial, operator: link.dataset['operator'] ?? '' });
 
     if (!window.matchMedia('(pointer: fine)').matches || !toast || !code) return;
-    event.preventDefault();
     code.textContent = dial;
     toast.hidden = false;
     window.clearTimeout(timer);

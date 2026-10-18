@@ -1,6 +1,15 @@
 import type { ZodType } from 'zod';
 
-import type { Catalog, CatalogEntry, CatalogFee, CountryCatalog, FeaturedItem, ShortcutItem } from './catalog-types';
+import type {
+  Catalog,
+  CatalogEntry,
+  CatalogFee,
+  CountryCatalog,
+  EditorialSelection,
+  FeaturedItem,
+  ShortcutItem,
+} from './catalog-types';
+import { effectiveStatus, assertVerificationProof } from './freshness';
 import {
   categoryFileSchema,
   countriesFileSchema,
@@ -8,81 +17,108 @@ import {
   feesFileSchema,
   operatorsFileSchema,
   type Country,
+  type FeaturedFile,
   type Operator,
 } from './schema';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
-export function loadCatalog(files: Record<string, unknown> = RAW_FILES): Catalog {
+export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Date = new Date()): Catalog {
   const countries = parse(files, '/data/countries.json', countriesFileSchema).countries;
   const byCountry = new Map<string, CountryCatalog>();
 
   for (const country of countries.filter((c) => c.status === 'live')) {
-    byCountry.set(country.code, loadCountry(files, country));
+    byCountry.set(country.code, loadCountry(files, country, now));
   }
 
   return { countries, byCountry };
 }
 
-function loadCountry(files: Record<string, unknown>, country: Country): CountryCatalog {
+function loadCountry(files: Record<string, unknown>, country: Country, now: Date): CountryCatalog {
   const root = `/data/${country.code}/`;
   const operators = parse(files, `${root}operators.json`, operatorsFileSchema).operators;
+  const operatorIds = new Set(operators.map((o) => o.id));
   const entries: CatalogEntry[] = [];
   const fees: CatalogFee[] = [];
 
   for (const [path, raw] of Object.entries(files)) {
     if (!isOperatorFile(path, root)) continue;
+    const [folder = '', fileName = ''] = path.slice(root.length).split('/');
+    if (!operatorIds.has(folder)) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
 
-    if (path.endsWith('/fees.json')) {
-      const file = parse({ [path]: raw }, path, feesFileSchema);
-      fees.push(...file.entries.map((e) => ({ ...e, country: country.code, operator: file.operator, service: file.service })));
+    if (fileName === 'fees.json') {
+      fees.push(...loadFees(path, raw, folder, country.code));
       continue;
     }
 
-    const file = parse({ [path]: raw }, path, categoryFileSchema);
-    entries.push(...file.entries.map((e) => ({ ...e, country: country.code, operator: file.operator, category: file.category })));
+    entries.push(...loadEntries(path, raw, folder, fileName, country.code, now));
   }
 
-  const { featured, shortcuts } = loadEditorial(files, root, entries, operators);
+  const editorial = loadEditorial(files, root, entries, operators);
 
-  return { country, operators, entries, fees, featured, shortcuts };
+  return { country, operators, entries, fees, ...editorial };
 }
 
 function isOperatorFile(path: string, root: string): boolean {
-  const rest = path.slice(root.length);
-
-  return path.startsWith(root) && rest.split('/').length === 2;
+  return path.startsWith(root) && path.slice(root.length).split('/').length === 2;
 }
 
-function loadEditorial(
-  files: Record<string, unknown>,
-  root: string,
-  entries: CatalogEntry[],
-  operators: Operator[],
-): { featured: FeaturedItem[]; shortcuts: ShortcutItem[] } {
+function loadFees(path: string, raw: unknown, operator: string, country: string): CatalogFee[] {
+  const file = parse({ [path]: raw }, path, feesFileSchema);
+  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
+
+  return file.entries.map((e) => ({ ...e, country, operator, service: file.service }));
+}
+
+function loadEntries(path: string, raw: unknown, operator: string, fileName: string, country: string, now: Date): CatalogEntry[] {
+  const file = parse({ [path]: raw }, path, categoryFileSchema);
+  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
+  if (`${file.category}.json` !== fileName) throw new Error(`${path}: category "${file.category}" must match the file name`);
+
+  return file.entries.map((e) => {
+    assertVerificationProof(path, e, file.category);
+
+    return {
+      ...e,
+      provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, now) },
+      country,
+      operator,
+      category: file.category,
+    };
+  });
+}
+
+function loadEditorial(files: Record<string, unknown>, root: string, entries: CatalogEntry[], operators: Operator[]): EditorialSelection {
   const path = `${root}featured.json`;
   if (!(path in files)) return { featured: [], shortcuts: [] };
 
   const file = parse(files, path, featuredFileSchema);
+  const find = entryFinder(path, entries);
+
+  return {
+    featured: file.items.map((item) => ({ label: item.label, entry: find(item.entry_id) })),
+    shortcuts: file.shortcuts.map((item) => toShortcut(path, item, find(item.entry_id), operators)),
+  };
+}
+
+function entryFinder(path: string, entries: CatalogEntry[]): (id: string) => CatalogEntry {
   const byId = new Map(entries.map((e) => [e.id, e]));
-  const find = (id: string): CatalogEntry => {
+
+  return (id) => {
     const entry = byId.get(id);
     if (!entry) throw new Error(`${path}: unknown entry_id "${id}"`);
+    if (entry.provenance.status === 'discontinued') throw new Error(`${path}: "${id}" is discontinued and cannot be promoted`);
 
     return entry;
   };
+}
 
-  const featured = file.items.map((item) => ({ label: item.label, entry: find(item.entry_id) }));
-  const shortcuts = file.shortcuts.map((item) => {
-    const entry = find(item.entry_id);
-    const operator = operators.find((o) => o.id === entry.operator);
-    const brand = item.brand === 'mobile_money' ? operator?.mobile_money : operator;
-    if (!brand) throw new Error(`${path}: no ${item.brand} brand for "${item.entry_id}"`);
+function toShortcut(path: string, item: FeaturedFile['shortcuts'][number], entry: CatalogEntry, operators: Operator[]): ShortcutItem {
+  const operator = operators.find((o) => o.id === entry.operator);
+  const brand = item.brand === 'mobile_money' ? operator?.mobile_money : operator;
+  if (!brand) throw new Error(`${path}: no ${item.brand} brand for "${item.entry_id}"`);
 
-    return { label: item.label, brand, entry };
-  });
-
-  return { featured, shortcuts };
+  return { label: item.label, brand, entry };
 }
 
 function parse<T>(files: Record<string, unknown>, path: string, schema: ZodType<T>): T {

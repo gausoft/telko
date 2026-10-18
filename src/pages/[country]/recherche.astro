@@ -62,6 +62,7 @@ const first = data.operators[0]?.id ?? '';
       <span>Autres pays · bientôt</span>
     </div>
     <p class="empty" data-empty hidden>Aucun résultat. Essayez un autre mot.</p>
+    <p class="visually-hidden" role="status" aria-live="polite" data-count></p>
   </main>
 
   <script is:inline type="application/json" id="search-data" set:html={payload} />

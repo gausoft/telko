@@ -16,8 +16,18 @@ interface Props {
 
 const { entry, brand, badge, duration } = Astro.props;
 const volume = formatData(entry.allowances?.data_mb ?? null);
+const voice = entry.allowances?.voice_min ?? null;
+const sms = entry.allowances?.sms ?? null;
+const extras = [
+  voice === -1 ? 'Appels illimités' : voice ? `${voice} min` : null,
+  sms === -1 ? 'SMS illimités' : sms ? `${sms} SMS` : null,
+];
 const title = volume ?? entry.name;
-const meta = [volume ? entry.name : null, entry.validity?.label ?? null].filter((v): v is string => v !== null).join(' · ');
+const meta = [volume ? entry.name : null, ...extras, entry.validity?.label ?? null]
+  .filter((v): v is string => v !== null)
+  .join(' · ');
+const callOffer = entry.category === 'mixed' || entry.category === 'voice-sms';
+const description = (callOffer || (!volume && extras.every((e) => e === null))) && entry.description ? entry.description : null;
 const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
 const href = telHref(entry);
 const label = `${title}${price ? `, ${price}` : ''}`;
@@ -43,6 +53,7 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
     {badge && <span class="badge mono">{badge}</span>}
     <span class="title">{title}</span>
     {meta && <span class="meta">{meta}</span>}
+    {description && <span class="meta">{description}</span>}
     <span class="code mono">{readableCode}</span>
   </span>
   {price && <span class="price">{price}</span>}

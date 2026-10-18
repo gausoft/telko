@@ -64,3 +64,22 @@ describe('search', () => {
     expect(search(docs, '   ', 'tg')).toEqual([]);
   });
 });
+
+describe('search quantities and codes', () => {
+  const docs = buildDocs(loadCatalog());
+
+  it('keeps "1,5 Go" apart from "5 go"', () => {
+    const titles = search(docs, '5 go', 'tg').map((h) => h.doc.title);
+
+    expect(titles).toContain('5 Go');
+    expect(titles).not.toContain('1,5 Go');
+  });
+
+  it('finds an offer by its USSD code', () => {
+    expect(search(docs, '*909*232#', 'tg')[0]?.doc.code).toBe('*909*232#');
+  });
+
+  it('finds an offer by its price', () => {
+    expect(search(docs, '599', 'tg').some((h) => h.doc.code === '*909*241#')).toBe(true);
+  });
+});

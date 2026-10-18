@@ -25,7 +25,7 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
       </div>
       <div class="welcome-text">
         <span class="wordmark">telk<span class="dot" /></span>
-        <h1>Tous vos services mobiles, au même endroit.</h1>
+        <h1 tabindex="-1">Tous vos services mobiles, au même endroit.</h1>
       </div>
       <button type="button" class="cta cta-light" data-next>Commencer</button>
     </section>
@@ -108,10 +108,10 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
   let country = root?.dataset['defaultCountry'] ?? 'tg';
   let operator = document.querySelector<HTMLElement>('[data-operator][aria-pressed="true"]')?.dataset['operator'] ?? '';
 
-  const show = (next: number): void => {
+  const show = (next: number, moveFocus = true): void => {
     index = Math.max(0, Math.min(steps.length - 1, next));
     steps.forEach((s, i) => (s.hidden = i !== index));
-    if (index > 0) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+    if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
   };
 
   const pick = (attr: 'country' | 'operator', button: HTMLButtonElement): void => {
@@ -133,5 +133,5 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
     }),
   );
 
-  show(index);
+  show(index, index > 0);
 </script>

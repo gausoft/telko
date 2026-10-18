@@ -84,6 +84,9 @@ const slides = items.map((item) => {
     }));
     root.addEventListener('pointerdown', () => (paused = true));
     root.addEventListener('focusin', () => (paused = true));
+    root.addEventListener('pointerenter', (e) => {
+      if (e.pointerType === 'mouse') paused = true;
+    });
 
     if (reduced || slides.length < 2) return;
     window.setInterval(() => {
@@ -156,12 +159,13 @@ const slides = items.map((item) => {
   .dots {
     display: flex;
     justify-content: center;
-    gap: 2px;
+    gap: 0;
+    margin: calc(var(--space-2) * -1) 0;
   }
 
   .dot {
-    width: 28px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     border: 0;
     padding: 0;
     background: transparent;

@@ -1,0 +1,37 @@
+import type { Category, Entry } from './schema';
+
+const DAY_MS = 86_400_000;
+
+/** Re-verification windows from docs/verification-protocol.md, in days. */
+const WINDOW_DAYS: Record<Category, number> = {
+  'mobile-money': 90,
+  'credit-transfer': 90,
+  bills: 90,
+  internet: 60,
+  mixed: 60,
+  'voice-sms': 60,
+  weekend: 60,
+  general: 180,
+  'useful-numbers': 180,
+  roaming: 180,
+  international: 180,
+};
+
+/** Categories where money moves: only a device test counts as proof. */
+const DEVICE_ONLY: ReadonlySet<Category> = new Set(['mobile-money', 'credit-transfer', 'bills']);
+
+export function effectiveStatus(provenance: Entry['provenance'], category: Category, now: Date): Entry['provenance']['status'] {
+  if (provenance.status !== 'verified' || provenance.verified_at === null) return provenance.status;
+
+  const age = (now.getTime() - Date.parse(`${provenance.verified_at}T00:00:00Z`)) / DAY_MS;
+
+  return age > WINDOW_DAYS[category] ? 'stale' : 'verified';
+}
+
+export function assertVerificationProof(path: string, entry: Entry, category: Category): void {
+  if (entry.provenance.status !== 'verified') return;
+
+  const kinds = new Set(entry.provenance.sources.map((s) => s.kind));
+  const ok = DEVICE_ONLY.has(category) ? kinds.has('device') : kinds.has('device') || kinds.has('official');
+  if (!ok) throw new Error(`${path}: "${entry.id}" is verified without an accepted proof (see docs/verification-protocol.md)`);
+}
