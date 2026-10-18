@@ -17,6 +17,13 @@ describe('format', () => {
     expect(formatData(-1)).toBe('Illimité');
   });
 
+  it('formats data volumes in English', () => {
+    expect(formatData(5120, 'en')).toBe('5 GB');
+    expect(formatData(1536, 'en')).toBe('1.5 GB');
+    expect(formatData(45, 'en')).toBe('45 MB');
+    expect(formatData(-1, 'en')).toBe('Unlimited');
+  });
+
   it('computes the price per GB', () => {
     expect(pricePerGb(599, 5120)).toBe(120);
     expect(pricePerGb(100, null)).toBeNull();
@@ -81,5 +88,21 @@ describe('search quantities and codes', () => {
 
   it('finds an offer by its price', () => {
     expect(search(docs, '599', 'tg').some((h) => h.doc.code === '*909*241#')).toBe(true);
+  });
+});
+
+describe('search in English', () => {
+  const docs = buildDocs(loadCatalog(), 'en');
+
+  it('reads GB like Go and keeps 1.5 GB apart', () => {
+    const titles = search(docs, '5 gb', 'tg', 'en').map((h) => h.doc.title);
+
+    expect(titles).toContain('5 GB');
+    expect(titles).not.toContain('1.5 GB');
+  });
+
+  it('finds the balance code with English and French words', () => {
+    expect(search(docs, 'balance yas', 'tg', 'en')[0]?.doc.code).toBe('*909*0#');
+    expect(search(docs, 'solde yas', 'tg', 'en')[0]?.doc.code).toBe('*909*0#');
   });
 });

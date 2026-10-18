@@ -17,7 +17,25 @@ export interface BuiltCode {
 /** A box the assistant asks for, once, in the order of the code. */
 export type Step = Param & { short: string };
 
-export type Validation = { ok: true; value: string } | { ok: false; message: string };
+/** Names shown in boxes that have no label of their own, in the page language. */
+export type ShortLabels = Record<Param['type'], string>;
+
+export type FlowErrorCode =
+  | 'phone-short'
+  | 'phone-length'
+  | 'phone-country'
+  | 'amount-empty'
+  | 'amount-format'
+  | 'amount-min'
+  | 'amount-max'
+  | 'choice'
+  | 'text-chars'
+  | 'text-digits'
+  | 'text-empty'
+  | 'text-length';
+
+/** Errors are codes, worded by the page in its language; `n` fills the number in the message. */
+export type Validation = { ok: true; value: string } | { ok: false; error: { code: FlowErrorCode; n?: number } };
 
 export interface PhoneContext {
   /** Country picked in the phone step. */
