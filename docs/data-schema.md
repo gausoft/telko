@@ -32,8 +32,15 @@ The schemas in `src/lib/schema.ts` implement this document; `npm test` validates
 Hand-picked items shown in the home carousel, in order. Each `entry_id` must exist in the same country; `label` is the short line shown above the offer.
 
 ```json
-{ "country": "tg", "updated": "2026-10-18", "items": [{ "entry_id": "yas-internet-net599", "label": "Le plus demandé" }] }
+{
+  "country": "tg",
+  "updated": "2026-10-18",
+  "items": [{ "entry_id": "yas-internet-net599", "label": "Le plus demandé" }],
+  "shortcuts": [{ "entry_id": "yas-general-consulter-soldes", "label": "Solde", "brand": "operator" }]
+}
 ```
+
+`items` feed the carousel, filtered by the selected operator. `shortcuts` are the quick codes under it; `brand` picks which mark to show next to the label (`operator` or `mobile_money`). Both are edited by hand by maintainers; a dynamic source can replace this file later without changing the pages.
 
 ## operators.json
 

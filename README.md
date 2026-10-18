@@ -9,9 +9,17 @@ Telko lists the bundles, mobile money services and USSD codes of Yas Togo and Mo
 ## What is in this repository
 
 - `data/`: the dataset, one JSON file per operator and category.
+- `src/`: the website (Astro, static output). `src/lib/schema.ts` validates the dataset and types the pages.
+- `public/`: brand marks, flags and icons, each folder with its own credits.
 - `docs/`: data schema, verification protocol, disclaimer and architecture decisions.
 
-The website itself (static, built with Astro) will live in this repository too.
+## Run it locally
+
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run verify   # types, data and unit tests, production build
+```
 
 ## Contributing
 
