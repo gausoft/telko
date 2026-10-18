@@ -1,3 +1,4 @@
+import type { Lang } from '../i18n/i18n-types';
 import type { CatalogEntry } from '../lib/catalog-types';
 
 /** Catalog rows mirror the build-time catalog; they are replaced as a whole when the data version changes. */
@@ -33,10 +34,11 @@ export interface RecipientRow {
   updatedAt: number;
 }
 
-/** The offline file served at /offline/<country>.json. */
+/** The offline file served at /offline/<country>.json (French) and /offline/en/<country>.json. */
 export interface OfflinePack {
   version: string;
   country: string;
+  lang: Lang;
   operators: string[];
   /** Pages for each operator, plus the files shared by all operators (country pages, brand images). */
   pages: { shared: string[]; byOperator: Record<string, string[]> };

@@ -1,5 +1,7 @@
 import { packVersion, savePack } from '../db/catalog-store';
 import type { OfflinePack } from '../db/db-types';
+import type { Lang } from '../i18n/i18n-types';
+import { localePath } from '../i18n/paths';
 import type { Selection, SyncResult } from './offline-sync-types';
 
 export const PAGES_CACHE = 'telko-pages';
@@ -27,19 +29,31 @@ export async function syncOffline(readSelection: () => Selection | null): Promis
 export async function isOfflineReady(selection: Selection): Promise<boolean> {
   const saved = await packVersion(selection.country).catch(() => null);
 
-  return saved !== null && saved.endsWith(`|${choiceKey(selection.operators)}`) && !!navigator.serviceWorker?.controller;
+  return saved !== null && saved.endsWith(`|${selection.lang}|${choiceKey(selection.operators)}`) && !!navigator.serviceWorker?.controller;
+}
+
+/** What the device keeps: a data version, in one language, for some operators. Saved once everything is downloaded. */
+export function readyKey(version: string, lang: Lang, operators: string[]): string {
+  return `${version}|${lang}|${choiceKey(operators)}`;
+}
+
+/** Language of the catalog saved on this device, read back from its ready key. */
+export function keyLang(key: string | null): Lang | null {
+  const lang = key?.split('|')[1];
+
+  return lang === 'fr' || lang === 'en' ? lang : null;
 }
 
 async function syncNow(readSelection: () => Selection | null): Promise<SyncResult> {
   const selection = readSelection();
   if (!selection || !navigator.onLine || !('caches' in window)) return 'skipped';
 
-  const pack = await fetchPack(selection.country);
+  const pack = await fetchPack(selection.country, selection.lang);
   if (!pack) return 'skipped';
 
   const keep = chosenOperators(pack, selection.operators);
-  const readyKey = `${pack.version}|${choiceKey(keep)}`;
-  if ((await packVersion(selection.country)) === readyKey) return 'ready';
+  const key = readyKey(pack.version, selection.lang, keep);
+  if ((await packVersion(selection.country)) === key) return 'ready';
 
   const worker = navigator.serviceWorker?.controller ?? null;
   const files = filesFor(pack, keep);
@@ -47,7 +61,7 @@ async function syncNow(readSelection: () => Selection | null): Promise<SyncResul
   if (!sameSelection(selection, readSelection())) return 'stale';
 
   // The new catalog is committed first: if that fails, the previous pages are all still there.
-  await savePack({ ...pack, entries: pack.entries.filter((e) => keep.includes(e.operator)) }, readyKey);
+  await savePack({ ...pack, entries: pack.entries.filter((e) => keep.includes(e.operator)) }, key);
   if (!sameSelection(selection, readSelection())) return 'stale';
 
   await removeOtherPages(files).catch(() => undefined);
@@ -58,9 +72,9 @@ async function syncNow(readSelection: () => Selection | null): Promise<SyncResul
   return 'ready';
 }
 
-async function fetchPack(country: string): Promise<OfflinePack | null> {
+async function fetchPack(country: string, lang: Lang): Promise<OfflinePack | null> {
   try {
-    const response = await fetch(`/offline/${country}.json`, { cache: 'no-cache' });
+    const response = await fetch(`/offline${localePath(lang, `/${country}`)}.json`, { cache: 'no-cache' });
 
     return response.ok ? ((await response.json()) as OfflinePack) : null;
   } catch {
@@ -108,5 +122,5 @@ async function removeOtherPages(keep: string[]): Promise<void> {
 }
 
 function sameSelection(a: Selection, b: Selection | null): boolean {
-  return b !== null && a.country === b.country && choiceKey(a.operators) === choiceKey(b.operators);
+  return b !== null && a.country === b.country && a.lang === b.lang && choiceKey(a.operators) === choiceKey(b.operators);
 }

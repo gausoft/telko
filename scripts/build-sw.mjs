@@ -19,6 +19,7 @@ const { count, size, warnings } = await injectManifest({
     'manifest.webmanifest',
     'index.html',
     'bienvenue.html',
+    'en/bienvenue.html',
   ],
   manifestTransforms: [
     async (entries) => ({ manifest: entries.filter((e) => !(e.url.endsWith('.woff2') && OTHER_SCRIPTS.test(e.url))), warnings: [] }),
