@@ -3,6 +3,7 @@ import ArrowLeft from '@lucide/astro/icons/arrow-left';
 import Search from '@lucide/astro/icons/search';
 import Signal from '@lucide/astro/icons/signal';
 import Phone from '@lucide/astro/icons/phone';
+import Check from '@lucide/astro/icons/check';
 
 import BrandMark from '../components/BrandMark.astro';
 import AppLayout from '../layouts/AppLayout.astro';
@@ -43,14 +44,12 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
           {step === 'pays' && (
             <>
               <h1 tabindex="-1">Votre pays ?</h1>
-              <div class="grid">
+              <div class="countries">
                 {catalog.countries.map((c) => (
-                  <button type="button" class="choice" data-country={c.code} disabled={c.status !== 'live'} aria-pressed={c.code === DEFAULT_COUNTRY ? 'true' : 'false'}>
-                    <img src={`/flags/${c.code}.svg`} alt="" width="40" height="40" />
-                    <span class="choice-text">
-                      <span class="choice-name">{c.name}</span>
-                      <span class="choice-sub">{c.status === 'live' ? 'Disponible' : 'Bientôt'}</span>
-                    </span>
+                  <button type="button" class="country" data-country={c.code} disabled={c.status !== 'live'} aria-pressed={c.code === DEFAULT_COUNTRY ? 'true' : 'false'}>
+                    <img src={`/flags/${c.code}.svg`} alt="" width="32" height="32" />
+                    <span class="country-name">{c.name}</span>
+                    {c.status === 'live' ? <Check class="country-check" size={22} aria-hidden="true" /> : <span class="soon">Bientôt</span>}
                   </button>
                 ))}
               </div>
