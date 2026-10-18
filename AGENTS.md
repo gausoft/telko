@@ -1,6 +1,6 @@
 # Telko: contributor guide for agents
 
-Telko is an open dataset and static website listing mobile offers and USSD codes for operators in Togo (Yas Togo, Moov Africa Togo), with code builders that launch the dialer through `tel:` links.
+Telko is an open dataset and static website listing mobile offers, mobile money services and USSD codes across African countries, with code builders that launch the dialer through `tel:` links. Togo (Yas Togo, Moov Africa Togo) is the first live country; the data model and the pages are built for any country (`data/<country code>/`).
 
 ## Rules
 

@@ -30,6 +30,16 @@ Other sources (blogs, apps, social posts) are welcome but stay `unverified`.
 - **Never** complete a real money transfer to test a code: stop at the confirmation screen.
 - Blur phone numbers, names and balances in screenshots.
 
+## Add a country
+
+A country goes live when people who live there bring its data and can test codes on local SIMs. Open an issue first to say you are working on it.
+
+1. In `data/countries.json`, the country is listed as `soon`. Keep it so until its data is ready.
+2. Create `data/<country code>/operators.json` with each operator and its mobile money service ([schema](docs/data-schema.md#operatorsjson)). Logos are optional: a badge is shown when there is none.
+3. Create one folder per operator, `data/<country code>/<operator id>/`, with one file per category (`internet.json`, `mobile-money.json`, `fees.json`...). Copy the structure of `data/tg/`.
+4. Add sources and dates to every entry. Entries start as `unverified`.
+5. Run `npm run verify`, then switch the country to `live` in the same pull request.
+
 ## Working on the website
 
 ```bash

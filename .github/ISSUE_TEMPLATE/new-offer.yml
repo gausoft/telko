@@ -10,17 +10,18 @@ body:
   - type: dropdown
     id: operator
     attributes:
-      label: Opérateur
+      label: Pays et opérateur
       options:
         - Yas Togo
         - Moov Africa Togo
+        - Autre pays ou autre opérateur (précisez-le dans la description)
     validations:
       required: true
   - type: input
     id: name
     attributes:
       label: Nom de l'offre ou du service
-      placeholder: Net5000, transfert Flooz…
+      placeholder: Net5000, transfert Moov Money…
     validations:
       required: true
   - type: input

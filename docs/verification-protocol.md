@@ -16,7 +16,7 @@ Telko is only useful if its data is right. A wrong transfer code can send money 
 An entry becomes `verified` with at least one of:
 
 1. **Device test**: the code was dialed on a real SIM of that operator and the resulting menu or confirmation matches the entry. Attach a screenshot to the pull request, with phone numbers and balances blurred.
-2. **Official page**: the operator's own website or the regulator (ARCEP Togo) states the code, price and validity. Link it with the access date.
+2. **Official page**: the operator's own website or the national regulator (ARCEP in Togo) states the code, price and validity. Link it with the access date.
 
 Blogs, third-party apps, forums and social media posts are `secondary` sources. They can create an `unverified` entry, never a `verified` one.
 

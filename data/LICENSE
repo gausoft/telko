@@ -1,8 +1,17 @@
-Data license: to be decided.
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-The contents of this `data/` directory are not yet released under an open
-license. The license (CC BY 4.0, ODbL 1.0 or CC0 1.0) will be chosen before
-the first public release.
+The contents of this `data/` directory are licensed under CC BY 4.0.
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may copy, redistribute and adapt the data for any purpose, including
+commercially, provided that you give appropriate credit ("Telko contributors",
+with a link to https://github.com/gausoft/telko), provide a link to the
+license, and indicate if changes were made.
+
+Offer names, prices and USSD codes are published by the operators. This
+license covers the compilation, the structure, the sources and the
+verification records gathered by Telko contributors.
 
 Code in this repository is licensed separately under the MIT License (see the
-root LICENSE file).
+root LICENSE file). Brand marks in `public/brands/` belong to their owners and
+are not covered by either license.
