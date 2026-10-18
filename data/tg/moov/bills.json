@@ -35,7 +35,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Bill payment with Moov Money",
+        "description": "Bill payment menu with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-ceet-tde",
@@ -73,7 +78,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Même code pour les deux. Ensuite : référence client, montant, code secret. Code de menu : la suite se choisit à l'écran."
+      "notes": "Même code pour les deux. Ensuite : référence client, montant, code secret. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CEET and TdE bills",
+        "description": "Pay your CEET electricity or TdE water bill with Moov Money.",
+        "notes": "Same code for both. Then: customer reference, amount, PIN. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-universite-lome-ancien",
@@ -92,19 +102,29 @@
             "type": "text",
             "label": "Numéro matricule",
             "required": true,
-            "short": "Matricule"
+            "short": "Matricule",
+            "en": {
+              "label": "Student ID number",
+              "short": "Student ID"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -129,7 +149,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Ancien Etudiant » est probablement un choix de menu et non un texte à saisir (à vérifier). Le code secret apparaît deux fois."
+      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Ancien Etudiant » est probablement un choix de menu et non un texte à saisir (à vérifier). Le code secret apparaît deux fois.",
+      "en": {
+        "name": "University of Lomé, returning student",
+        "description": "Pay your University of Lomé enrolment fees (returning student).",
+        "notes": "Code copied as Moov writes it. The text \"Ancien Etudiant\" is probably a menu choice, not text to type (to be checked). The PIN appears twice."
+      }
     },
     {
       "id": "moov-bills-universite-lome-nouveau",
@@ -150,13 +175,20 @@
             "required": true,
             "short": "Année bac",
             "numeric": true,
-            "length": 4
+            "length": 4,
+            "en": {
+              "label": "Baccalaureate year",
+              "short": "Bac year"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "bac_table_number",
@@ -164,13 +196,20 @@
             "label": "Numéro de table du bac",
             "required": true,
             "short": "N° table",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Baccalaureate candidate number",
+              "short": "Cand. no."
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -195,7 +234,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Nouveaux Inscrits » est probablement un choix de menu (à vérifier). Le code secret apparaît deux fois."
+      "notes": "Code recopié tel qu'écrit par Moov. Le texte « Nouveaux Inscrits » est probablement un choix de menu (à vérifier). Le code secret apparaît deux fois.",
+      "en": {
+        "name": "University of Lomé, new student",
+        "description": "Pay your University of Lomé enrolment fees (new student).",
+        "notes": "Code copied as Moov writes it. The text \"Nouveaux Inscrits\" is probably a menu choice (to be checked). The PIN appears twice."
+      }
     },
     {
       "id": "moov-bills-grandes-ecoles",
@@ -214,26 +258,40 @@
             "type": "text",
             "label": "Identifiant de l'école",
             "required": true,
-            "short": "École"
+            "short": "École",
+            "en": {
+              "label": "School ID",
+              "short": "School"
+            }
           },
           {
             "name": "student_id",
             "type": "text",
             "label": "Numéro matricule",
             "required": true,
-            "short": "Matricule"
+            "short": "Matricule",
+            "en": {
+              "label": "Student ID number",
+              "short": "Student ID"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -257,7 +315,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Higher education schools",
+        "description": "Pay your tuition at a higher education school with Moov Money."
+      }
     },
     {
       "id": "moov-bills-assurance",
@@ -292,7 +354,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Écrit sans le # final par Moov. Ensuite : numéro de police, montant, code secret. Code de menu : la suite se choisit à l'écran."
+      "notes": "Écrit sans le # final par Moov. Ensuite : numéro de police, montant, code secret. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Insurance",
+        "description": "Pay an insurance premium with Moov Money.",
+        "notes": "Written by Moov without the final #. Then: policy number, amount, PIN. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-postpaye-mon-compte",
@@ -328,7 +395,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov postpaid bill, my account",
+        "description": "Pay your own Moov postpaid bill with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-postpaye-autre-compte",
@@ -364,7 +436,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov postpaid bill, another account",
+        "description": "Pay another customer's Moov postpaid bill with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-postpaye-facture",
@@ -400,7 +477,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Moov donne le même code pour « avec facture » et « enregistrement sans facture ». Code de menu : la suite se choisit à l'écran."
+      "notes": "Moov donne le même code pour « avec facture » et « enregistrement sans facture ». Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov postpaid bill, with or without a bill",
+        "description": "Pay with a bill, or register an account without one.",
+        "notes": "Moov gives the same code for \"with a bill\" and \"register without a bill\". Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-cash-power",
@@ -436,7 +518,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Ensuite : numéro de compteur, montant, code secret. Duplicata d'un code perdu : même menu, option 3, puis code secret. Code de menu : la suite se choisit à l'écran."
+      "notes": "Ensuite : numéro de compteur, montant, code secret. Duplicata d'un code perdu : même menu, option 3, puis code secret. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Cash Power",
+        "description": "Buy Cash Power prepaid electricity with Moov Money.",
+        "notes": "Then: meter number, amount, PIN. Duplicate of a lost code: same menu, option 3, then PIN. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canalbox-meme-offre",
@@ -471,7 +558,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CanalBox, same plan",
+        "description": "Renew your CanalBox subscription with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canalbox-changer-offre",
@@ -506,7 +598,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CanalBox, change plan",
+        "description": "Change your CanalBox plan and pay with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canalbox-enregistrer",
@@ -541,7 +638,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CanalBox, register your box",
+        "description": "Register your CanalBox number.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canal-plus-reabonnement",
@@ -577,7 +679,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Canal+, same package",
+        "description": "Renew your Canal+ subscription with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canal-plus-changer-formule",
@@ -612,7 +719,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Ce code entre en collision avec ceux de New World TV (*155*4*8*2*1#, *155*4*8*2*2#…). Code de menu : la suite se choisit à l'écran."
+      "notes": "Ce code entre en collision avec ceux de New World TV (*155*4*8*2*1#, *155*4*8*2*2#…). Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Canal+, change package",
+        "description": "Change your Canal+ package and pay with Moov Money.",
+        "notes": "This code clashes with the New World TV codes (*155*4*8*2*1#, *155*4*8*2*2#…). Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-canal-plus-modifier-carte",
@@ -632,7 +744,11 @@
             "label": "Carte à modifier",
             "required": true,
             "short": "Carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Card to edit",
+              "short": "Card"
+            }
           },
           {
             "name": "new_card_number",
@@ -640,13 +756,20 @@
             "label": "Nouveau numéro de carte",
             "required": true,
             "short": "N° carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "New card number",
+              "short": "Card no."
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -671,7 +794,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Canal+, edit a saved card",
+        "description": "Replace the number of a saved Canal+ card."
+      }
     },
     {
       "id": "moov-bills-canal-plus-nouvelle-carte",
@@ -691,13 +818,20 @@
             "label": "Numéro de carte",
             "required": true,
             "short": "N° carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Card number",
+              "short": "Card no."
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -722,7 +856,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le numéro de carte est saisi deux fois."
+      "notes": "Le numéro de carte est saisi deux fois.",
+      "en": {
+        "name": "Canal+, save a new card",
+        "description": "Save a new Canal+ card.",
+        "notes": "The card number is typed twice."
+      }
     },
     {
       "id": "moov-bills-new-world-tv-reabonnement",
@@ -757,7 +896,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran."
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "New World TV, renewal",
+        "description": "Renew your New World TV subscription with Moov Money.",
+        "notes": "Clashes with the Canal+ \"change package\" code (*155*4*8*2#). Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-new-world-tv-changer-offre",
@@ -792,7 +936,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran."
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "New World TV, change plan",
+        "description": "Change your New World TV plan and pay with Moov Money.",
+        "notes": "Clashes with the Canal+ \"change package\" code (*155*4*8*2#). Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-new-world-tv-nouvelle-carte",
@@ -812,13 +961,20 @@
             "label": "Numéro de carte",
             "required": true,
             "short": "N° carte",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Card number",
+              "short": "Card no."
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -843,7 +999,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Le numéro de carte est saisi deux fois."
+      "notes": "Entre en collision avec le code Canal+ « changement de formule » (*155*4*8*2#). Le numéro de carte est saisi deux fois.",
+      "en": {
+        "name": "New World TV, new card",
+        "description": "Save a new New World TV card.",
+        "notes": "Clashes with the Canal+ \"change package\" code (*155*4*8*2#). The card number is typed twice."
+      }
     },
     {
       "id": "moov-bills-solergie",
@@ -878,7 +1039,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Solergie",
+        "description": "Pay for your Solergie solar kit with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-cizo-bboxx-moi",
@@ -914,7 +1080,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CIZO-BBOXX, for me",
+        "description": "Pay for your CIZO-BBOXX solar kit with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-cizo-bboxx-autre",
@@ -950,7 +1121,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CIZO-BBOXX, for someone else",
+        "description": "Pay for someone else's CIZO-BBOXX solar kit with Moov Money.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-bills-cizo-bboxx-enregistrer",
@@ -986,7 +1162,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code de menu : la suite se choisit à l'écran."
+      "notes": "Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "CIZO-BBOXX, register",
+        "description": "Register your CIZO-BBOXX account.",
+        "notes": "Menu code: you choose the rest on screen."
+      }
     }
   ]
 }

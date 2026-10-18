@@ -4,6 +4,8 @@ import ChevronDown from '@lucide/astro/icons/chevron-down';
 import type { Operator } from '../lib/schema';
 import BrandMark from './BrandMark.astro';
 import ChoiceList from './ChoiceList.astro';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 import Sheet from './Sheet.astro';
 
 interface Props {
@@ -15,6 +17,7 @@ interface Props {
 
 const { operators, current, hrefTemplate } = Astro.props;
 const items = operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+const m = messages(pageLang(Astro.url));
 ---
 
 <div class="switcher" data-switcher data-current={current} data-href-template={hrefTemplate}>
@@ -27,12 +30,12 @@ const items = operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }))
         </span>
       ))
     }
-    <span class="visually-hidden">, changer d'opérateur</span>
+    <span class="visually-hidden">{m.common.changeOperator}</span>
     <ChevronDown size={16} aria-hidden="true" />
   </button>
 
-  <Sheet id="operator-sheet" title="Opérateur">
-    <ChoiceList name="current-operator" label="Opérateur" items={items} selected={[current]} />
+  <Sheet id="operator-sheet" title={m.common.operator}>
+    <ChoiceList name="current-operator" label={m.common.operator} items={items} selected={[current]} />
   </Sheet>
 </div>
 

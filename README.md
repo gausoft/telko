@@ -50,7 +50,7 @@ Install Telko from the browser. Your country and operators stay available withou
 <br>
 
 <img src="docs/readme/qr.svg" width="120" alt="QR code to telko.pages.dev"><br>
-<sub>Scan to try it on your phone. The interface is in French.</sub>
+<sub>Scan to try it on your phone. In French and English.</sub>
 
 </td>
 </tr>

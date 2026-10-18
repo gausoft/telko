@@ -33,7 +33,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Yas main menu",
+        "description": "Access to all Yas services.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-general-consulter-soldes",
@@ -77,7 +82,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le dépôt GitHub skpassegna/USSD-Togo (mai 2025) donne *444#, absent de yas.tg. Code officiel : *909*0#."
+      "notes": "Le dépôt GitHub skpassegna/USSD-Togo (mai 2025) donne *444#, absent de yas.tg. Code officiel : *909*0#.",
+      "en": {
+        "name": "Check balances",
+        "description": "Airtime and bundle balance.",
+        "notes": "The GitHub repository skpassegna/USSD-Togo (May 2025) gives *444#, which is not on yas.tg. Official code: *909*0#."
+      }
     },
     {
       "id": "yas-general-menu-forfait-net",
@@ -111,7 +121,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Net bundle",
+        "description": "Data bundle menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-general-menu-forfait-ovo",
@@ -146,7 +161,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Ancien nom « Ovo » dans la FAQ. Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Ancien nom « Ovo » dans la FAQ. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Ovo bundle",
+        "description": "Combo bundle menu.",
+        "notes": "Former name \"Ovo\" in the FAQ. Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-general-menu-forfait-lema",
@@ -180,7 +200,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Léma bundle",
+        "description": "Voice bundle menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-general-achat-forfait-pour-autrui",
@@ -214,7 +239,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le numéro du bénéficiaire se saisit dans le menu. Non vérifié : ce menu couvre-t-il tous les forfaits ?"
+      "notes": "Le numéro du bénéficiaire se saisit dans le menu. Non vérifié : ce menu couvre-t-il tous les forfaits ?",
+      "en": {
+        "name": "Buy a bundle for someone else",
+        "description": "Buy a bundle for another number.",
+        "notes": "The beneficiary's number is typed in the menu. Not checked: does this menu cover every bundle?"
+      }
     },
     {
       "id": "yas-general-mon-numero",
@@ -247,7 +277,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "On peut aussi appeler le 555."
+      "notes": "On peut aussi appeler le 555.",
+      "en": {
+        "name": "Find your number",
+        "description": "Shows your own number.",
+        "notes": "You can also call 555."
+      }
     },
     {
       "id": "yas-general-detail-consommation",
@@ -280,7 +315,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Service payant : par e-mail 500 F (7 jours) ou 1 315 F (8 à 29 jours) ; en agence 1 000 F (7 jours) ou 3 000 F (8 à 29 jours)."
+      "notes": "Service payant : par e-mail 500 F (7 jours) ou 1 315 F (8 à 29 jours) ; en agence 1 000 F (7 jours) ou 3 000 F (8 à 29 jours).",
+      "en": {
+        "name": "Usage details",
+        "description": "Request your usage details.",
+        "notes": "Paid service: by email 500 F (7 days) or 1,315 F (8 to 29 days); at a shop 1,000 F (7 days) or 3,000 F (8 to 29 days)."
+      }
     },
     {
       "id": "yas-general-sos-credit-forfait",
@@ -315,7 +355,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Menu : SOS Crédit, SOS Internet, SOS OVO, SOS Léma. Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Menu : SOS Crédit, SOS Internet, SOS OVO, SOS Léma. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "SOS Crédit & Forfait",
+        "description": "Borrow airtime or a bundle, paid back at your next top-up.",
+        "notes": "Menu: SOS Crédit, SOS Internet, SOS OVO, SOS Léma. Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-general-sos-credit",
@@ -355,7 +400,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Autre code donné par la page services : *909*5*1#. Conditions (page services) : 180 jours sur le réseau, au moins 1 200 F rechargés sur 30 jours, aucun prêt en cours, moins de 100 F sur le compte principal. La FAQ indique plutôt 6 mois d'ancienneté, 10 % de commission, aucun crédit sur le compte principal. Conflit : la FAQ présente *445# comme le « prêt de data », et une page promo l'imprime pour Léma1000+."
+      "notes": "Autre code donné par la page services : *909*5*1#. Conditions (page services) : 180 jours sur le réseau, au moins 1 200 F rechargés sur 30 jours, aucun prêt en cours, moins de 100 F sur le compte principal. La FAQ indique plutôt 6 mois d'ancienneté, 10 % de commission, aucun crédit sur le compte principal. Conflit : la FAQ présente *445# comme le « prêt de data », et une page promo l'imprime pour Léma1000+.",
+      "en": {
+        "name": "SOS Crédit",
+        "description": "Borrow airtime, paid back at your next top-up.",
+        "notes": "Another code given by the services page: *909*5*1#. Conditions (services page): 180 days on the network, at least 1,200 F topped up over 30 days, no loan in progress, less than 100 F on the main account. The FAQ instead says 6 months on the network, 10% fee, no airtime on the main account. Conflict: the FAQ presents *445# as the \"data loan\", and a promotion page prints it for Léma1000+."
+      }
     },
     {
       "id": "yas-general-activer-internet-mobile",
@@ -388,7 +438,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Ancien menu *104#, peut-être obsolète."
+      "notes": "Ancien menu *104#, peut-être obsolète.",
+      "en": {
+        "name": "Turn on mobile data",
+        "description": "Turn on internet access on the line.",
+        "notes": "Former menu *104#, possibly outdated."
+      }
     },
     {
       "id": "yas-general-alerte-appels-manques",
@@ -421,7 +476,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro à appeler. Service gratuit."
+      "notes": "Numéro à appeler. Service gratuit.",
+      "en": {
+        "name": "Missed call alert",
+        "description": "Get notified of missed calls.",
+        "notes": "Number to call. Free service."
+      }
     },
     {
       "id": "yas-general-messagerie-vocale",
@@ -454,7 +514,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro à appeler."
+      "notes": "Numéro à appeler.",
+      "en": {
+        "name": "Voicemail",
+        "description": "Open your voicemail.",
+        "notes": "Number to call."
+      }
     },
     {
       "id": "yas-general-preference",
@@ -487,7 +552,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Appeler le 777 pour les instructions. 200 F par numéro ajouté ou modifié."
+      "notes": "Appeler le 777 pour les instructions. 200 F par numéro ajouté ou modifié.",
+      "en": {
+        "name": "Préférence",
+        "description": "Choose your favourite numbers.",
+        "notes": "Call 777 for instructions. 200 F per number added or changed."
+      }
     },
     {
       "id": "yas-general-activation-sim",
@@ -521,7 +591,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source faible : article de blog yas.tg (« généralement »), qui cite aussi *909#. Un kit SIM neuf contient 1 000 F de crédit, 200 Mo, 20 SMS et 200 F de Mixx."
+      "notes": "Source faible : article de blog yas.tg (« généralement »), qui cite aussi *909#. Un kit SIM neuf contient 1 000 F de crédit, 200 Mo, 20 SMS et 200 F de Mixx.",
+      "en": {
+        "name": "SIM activation / registration",
+        "description": "Activate or register a new SIM card.",
+        "notes": "Weak source: a yas.tg blog post (\"usually\"), which also gives *909#. A new SIM kit contains 1,000 F of airtime, 200 MB, 20 SMS and 200 F of Mixx."
+      }
     },
     {
       "id": "yas-general-afreekaplay",
@@ -555,7 +630,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "À partir de 100 F (jour, semaine ou mois). Désabonnement : *909*5*4*1*2*2#."
+      "notes": "À partir de 100 F (jour, semaine ou mois). Désabonnement : *909*5*4*1*2*2#.",
+      "en": {
+        "name": "Afreekaplay",
+        "description": "Music subscription.",
+        "notes": "From 100 F (day, week or month). Unsubscribe: *909*5*4*1*2*2#."
+      }
     },
     {
       "id": "yas-general-myzik",
@@ -594,7 +674,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Prix : « à partir de 25 F » (page services) ; la FAQ dit 35 F/jour, 150 F/semaine, 400 F/mois. Désabonnement : *909*5*5*9#."
+      "notes": "Prix : « à partir de 25 F » (page services) ; la FAQ dit 35 F/jour, 150 F/semaine, 400 F/mois. Désabonnement : *909*5*5*9#.",
+      "en": {
+        "name": "MyZik",
+        "description": "Music ringback tone.",
+        "notes": "Price: \"from 25 F\" (services page); the FAQ says 35 F/day, 150 F/week, 400 F/month. Unsubscribe: *909*5*5*9#."
+      }
     },
     {
       "id": "yas-general-portail-religieux",
@@ -637,7 +722,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "25 F à la demande (page services) ; la FAQ dit 50 F/jour, 200 F/semaine, 500 F/mois. Désabonnement : *909*53# puis 99. GitHub donne *90956#."
+      "notes": "25 F à la demande (page services) ; la FAQ dit 50 F/jour, 200 F/semaine, 500 F/mois. Désabonnement : *909*53# puis 99. GitHub donne *90956#.",
+      "en": {
+        "name": "Religious portal",
+        "description": "Religious content on demand.",
+        "notes": "25 F on demand (services page); the FAQ says 50 F/day, 200 F/week, 500 F/month. Unsubscribe: *909*53# then 99. GitHub gives *90956#."
+      }
     },
     {
       "id": "yas-general-mc-plus",
@@ -676,7 +766,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "À partir de 25 F (page services) ; la FAQ dit 20 F par service. Désabonnement : envoyer STOP au *909*5*3*9#."
+      "notes": "À partir de 25 F (page services) ; la FAQ dit 20 F par service. Désabonnement : envoyer STOP au *909*5*3*9#.",
+      "en": {
+        "name": "MC+",
+        "description": "News and entertainment.",
+        "notes": "From 25 F (services page); the FAQ says 20 F per service. Unsubscribe: send STOP to *909*5*3*9#."
+      }
     },
     {
       "id": "yas-general-odo-aguea",
@@ -710,7 +805,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "100 F par SMS. Participation aussi par SMS « YAS » au 8555."
+      "notes": "100 F par SMS. Participation aussi par SMS « YAS » au 8555.",
+      "en": {
+        "name": "O'do Aguéa",
+        "description": "Quiz game with data prizes.",
+        "notes": "100 F per SMS. You can also play by SMS \"YAS\" to 8555."
+      }
     }
   ]
 }

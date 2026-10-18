@@ -1,20 +1,12 @@
 import type { Param, Ussd } from './schema';
-import type { BuiltCode, CodeToken, PhoneContext, Step, Validation } from './ussd-flow-types';
+import type { BuiltCode, CodeToken, PhoneContext, ShortLabels, Step, Validation } from './ussd-flow-types';
 
 const PLACEHOLDER = /\{([a-z_]+)\}/g;
 
-const DEFAULT_SHORT: Record<Param['type'], string> = {
-  phone: 'Numéro',
-  amount: 'Montant',
-  pin: 'Code',
-  text: 'Saisie',
-  choice: 'Choix',
-};
-
 export const DEFAULT_PRESETS = [500, 1000, 2000, 5000];
 
-/** Splits a code into fixed text and boxes; secret boxes are never filled. */
-export function codeTokens(ussd: Ussd, values: Record<string, string> = {}): CodeToken[] {
+/** Splits a code into fixed text and boxes; secret boxes are never filled. `shorts` names boxes without their own label. */
+export function codeTokens(ussd: Ussd, shorts: ShortLabels, values: Record<string, string> = {}): CodeToken[] {
   const tokens: CodeToken[] = [];
   let last = 0;
 
@@ -24,7 +16,7 @@ export function codeTokens(ussd: Ussd, values: Record<string, string> = {}): Cod
     if (match.index > last) tokens.push({ kind: 'text', text: ussd.template.slice(last, match.index) });
 
     const secret = param.type === 'pin';
-    tokens.push({ kind: 'slot', name, short: shortOf(param), value: secret ? null : (values[name] ?? null), secret });
+    tokens.push({ kind: 'slot', name, short: param.short ?? shorts[param.type], value: secret ? null : (values[name] ?? null), secret });
     last = match.index + match[0].length;
   }
 
@@ -40,13 +32,9 @@ function paramOf(ussd: Ussd, name: string): Param {
   return param;
 }
 
-function shortOf(param: Param): string {
-  return param.short ?? DEFAULT_SHORT[param.type];
-}
-
 /** The tokens actually dialed: up to the first secret code, closed with "#". */
-export function dialTokens(ussd: Ussd, values: Record<string, string>): CodeToken[] {
-  const tokens = codeTokens(ussd, values);
+export function dialTokens(ussd: Ussd, shorts: ShortLabels, values: Record<string, string>): CodeToken[] {
+  const tokens = codeTokens(ussd, shorts, values);
   const cut = tokens.findIndex((t) => t.kind === 'slot' && t.secret);
   if (cut === -1) return tokens;
 
@@ -58,10 +46,10 @@ export function dialTokens(ussd: Ussd, values: Record<string, string>): CodeToke
 }
 
 /** Boxes to ask for: each once, in code order, stopping at the first secret code. */
-export function planSteps(ussd: Ussd): Step[] {
+export function planSteps(ussd: Ussd, shorts: ShortLabels): Step[] {
   const steps: Step[] = [];
 
-  for (const token of codeTokens(ussd)) {
+  for (const token of codeTokens(ussd, shorts)) {
     if (token.kind !== 'slot') continue;
     if (token.secret) break;
     if (steps.some((s) => s.name === token.name)) continue;
@@ -71,6 +59,9 @@ export function planSteps(ussd: Ussd): Step[] {
   return steps;
 }
 
+/** Box names do not matter when only the dialed code is built. */
+const NO_SHORTS: ShortLabels = { phone: '', amount: '', pin: '', text: '', choice: '' };
+
 /**
  * The code to dial. When a secret code is needed, the code stops before it and is closed with "#":
  * the operator's menu then asks for the secret code itself. A trailing "*" would be dialed as a phone call.
@@ -79,7 +70,7 @@ export function buildCode(ussd: Ussd, values: Record<string, string>): BuiltCode
   let code = '';
   let complete = true;
 
-  for (const token of codeTokens(ussd, values)) {
+  for (const token of codeTokens(ussd, NO_SHORTS, values)) {
     if (token.kind === 'text') {
       code += token.text;
       continue;
@@ -103,12 +94,12 @@ export function validateStep(step: Step, raw: string, phone: PhoneContext): Vali
 /** Accepts "+228 90 00 00 00", "0022890000000" or "90000000" and returns what the code expects. */
 export function normalizePhone(raw: string, format: NonNullable<Param['format']>, ctx: PhoneContext): Validation {
   const digits = raw.replace(/\D/g, '').replace(/^00/, '');
-  if (format === 'any') return digits.length >= 6 ? { ok: true, value: digits } : { ok: false, message: 'Numéro trop court' };
+  if (format === 'any') return digits.length >= 6 ? { ok: true, value: digits } : { ok: false, error: { code: 'phone-short' } };
 
   const national = digits.length === ctx.dialCode.length + ctx.nationalLength && digits.startsWith(ctx.dialCode) ? digits.slice(ctx.dialCode.length) : digits;
-  if (national.length !== ctx.nationalLength) return { ok: false, message: `Le numéro doit avoir ${ctx.nationalLength} chiffres` };
+  if (national.length !== ctx.nationalLength) return { ok: false, error: { code: 'phone-length', n: ctx.nationalLength } };
   if (format === 'international') return { ok: true, value: `${ctx.dialCode}${national}` };
-  if (ctx.dialCode !== ctx.homeDialCode) return { ok: false, message: 'Ce code accepte seulement les numéros du pays' };
+  if (ctx.dialCode !== ctx.homeDialCode) return { ok: false, error: { code: 'phone-country' } };
 
   return { ok: true, value: national };
 }
@@ -118,29 +109,29 @@ const WHOLE_AMOUNT = /^\d{1,3}(?:[ \u00a0\u202f.]\d{3})+$|^\d+$/;
 /** Whole CFA francs only, with optional thousands separators ("5 000", "5.000"). Anything else is refused, never repaired. */
 function validateAmount(step: Step, raw: string): Validation {
   const trimmed = raw.trim();
-  if (!WHOLE_AMOUNT.test(trimmed)) return { ok: false, message: trimmed === '' ? 'Indiquez un montant' : 'Montant en francs entiers, sans virgule' };
+  if (!WHOLE_AMOUNT.test(trimmed)) return { ok: false, error: { code: trimmed === '' ? 'amount-empty' : 'amount-format' } };
 
   const amount = Number(trimmed.replace(/\D/g, ''));
   const value = String(amount);
-  if (!Number.isSafeInteger(amount) || amount <= 0) return { ok: false, message: 'Indiquez un montant' };
-  if (step.min !== undefined && amount < step.min) return { ok: false, message: `Minimum ${step.min} F` };
-  if (step.max !== undefined && amount > step.max) return { ok: false, message: `Maximum ${step.max} F` };
+  if (!Number.isSafeInteger(amount) || amount <= 0) return { ok: false, error: { code: 'amount-empty' } };
+  if (step.min !== undefined && amount < step.min) return { ok: false, error: { code: 'amount-min', n: step.min } };
+  if (step.max !== undefined && amount > step.max) return { ok: false, error: { code: 'amount-max', n: step.max } };
 
   return { ok: true, value };
 }
 
 function validateChoice(step: Step, raw: string): Validation {
-  return step.options?.some((o) => o.value === raw) ? { ok: true, value: raw } : { ok: false, message: 'Choisissez une option' };
+  return step.options?.some((o) => o.value === raw) ? { ok: true, value: raw } : { ok: false, error: { code: 'choice' } };
 }
 
 function validateText(step: Step, raw: string): Validation {
   const trimmed = raw.trim();
-  if (/[*#]/.test(trimmed)) return { ok: false, message: 'Les caractères * et # ne sont pas permis' };
-  if (step.numeric && /[^\d\s]/.test(trimmed)) return { ok: false, message: 'Chiffres uniquement' };
+  if (/[*#]/.test(trimmed)) return { ok: false, error: { code: 'text-chars' } };
+  if (step.numeric && /[^\d\s]/.test(trimmed)) return { ok: false, error: { code: 'text-digits' } };
 
   const value = step.numeric ? trimmed.replace(/\s/g, '') : trimmed;
-  if (value === '') return { ok: false, message: 'Champ obligatoire' };
-  if (step.length !== undefined && value.length !== step.length) return { ok: false, message: `${step.length} caractères attendus` };
+  if (value === '') return { ok: false, error: { code: 'text-empty' } };
+  if (step.length !== undefined && value.length !== step.length) return { ok: false, error: { code: 'text-length', n: step.length } };
 
   return { ok: true, value };
 }

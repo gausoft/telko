@@ -34,7 +34,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Pour connaître son propre numéro, des sources tierces donnent *106# ou *100*1*1# (contradictoires). Code de menu : la suite se choisit à l'écran."
+      "notes": "Pour connaître son propre numéro, des sources tierces donnent *106# ou *100*1*1# (contradictoires). Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Main menu *100#",
+        "description": "Info on your number, plan, benefits and offers.",
+        "notes": "To find your own number, third-party sources give *106# or *100*1*1# (they disagree). Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-general-solde-credit",
@@ -82,7 +87,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Selon une source tierce, l'option 1 affiche aussi le solde internet."
+      "notes": "Selon une source tierce, l'option 1 affiche aussi le solde internet.",
+      "en": {
+        "name": "Airtime balance",
+        "description": "Check your airtime.",
+        "notes": "According to a third-party source, option 1 also shows the data balance."
+      }
     },
     {
       "id": "moov-general-notifications-push",
@@ -120,7 +130,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Une source tierce utilise ce même code pour « acheter un pass pour un tiers », ce qui contredit le site officiel."
+      "notes": "Une source tierce utilise ce même code pour « acheter un pass pour un tiers », ce qui contredit le site officiel.",
+      "en": {
+        "name": "Turn push notifications on or off",
+        "description": "Turn promotional push messages on or off.",
+        "notes": "A third-party source uses this same code to \"buy a pass for someone else\", which contradicts the official site."
+      }
     },
     {
       "id": "moov-general-statut-identification",
@@ -153,7 +168,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le site donne aussi *848# pour le même service."
+      "notes": "Le site donne aussi *848# pour le même service.",
+      "en": {
+        "name": "SIM registration status",
+        "description": "Check that your SIM card is registered.",
+        "notes": "The site also gives *848# for the same service."
+      }
     },
     {
       "id": "moov-general-signaler-arnaque",
@@ -186,7 +206,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement, absent du site officiel."
+      "notes": "Source tierce uniquement, absent du site officiel.",
+      "en": {
+        "name": "Report a scam",
+        "description": "Report a scam attempt.",
+        "notes": "Third-party source only, not on the official site."
+      }
     },
     {
       "id": "moov-general-migration-moov-classic",
@@ -224,7 +249,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Appels nationaux 79 F/min (30 s), 50 F vers les numéros complices, SMS 20 F national / 90 F international. Coût de migration non précisé."
+      "notes": "Appels nationaux 79 F/min (30 s), 50 F vers les numéros complices, SMS 20 F national / 90 F international. Coût de migration non précisé.",
+      "en": {
+        "name": "Moov Classic",
+        "description": "Switch to the Moov Classic plan.",
+        "notes": "National calls 79 F/min (30 s), 50 F to favourite numbers, SMS 20 F national / 90 F international. Switching cost not stated."
+      }
     },
     {
       "id": "moov-general-migration-epiq-nation",
@@ -268,7 +298,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Inclut 12 Mo/jour WhatsApp + Facebook. Appels nationaux 79 F/min (30 s). Numéros complices : 50 F (30 s) sur la page du profil, 30 F/min sur la page des services à valeur ajoutée."
+      "notes": "Inclut 12 Mo/jour WhatsApp + Facebook. Appels nationaux 79 F/min (30 s). Numéros complices : 50 F (30 s) sur la page du profil, 30 F/min sur la page des services à valeur ajoutée.",
+      "en": {
+        "name": "Epiq Nation",
+        "description": "Switch to the Epiq Nation plan.",
+        "notes": "Includes 12 MB/day of WhatsApp + Facebook. National calls 79 F/min (30 s). Favourite numbers: 50 F (30 s) on the plan page, 30 F/min on the value-added services page."
+      }
     },
     {
       "id": "moov-general-migration-moov-seconde",
@@ -307,7 +342,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Appels nationaux 79 F (1,3 F/s), numéros complices 60 F (1 F/s), SMS 20 F national / 90 F international."
+      "notes": "Appels nationaux 79 F (1,3 F/s), numéros complices 60 F (1 F/s), SMS 20 F national / 90 F international.",
+      "en": {
+        "name": "Moov Seconde",
+        "description": "Switch to the Moov Seconde plan, billed per second.",
+        "notes": "National calls 79 F (1.3 F/s), favourite numbers 60 F (1 F/s), SMS 20 F national / 90 F international."
+      }
     },
     {
       "id": "moov-general-migration-moov-privilege",
@@ -345,7 +385,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Nécessite au moins 5 000 F de crédit et une consommation d'au moins 30 000 F par trimestre. Appels nationaux 60 F/min (30 s)."
+      "notes": "Nécessite au moins 5 000 F de crédit et une consommation d'au moins 30 000 F par trimestre. Appels nationaux 60 F/min (30 s).",
+      "en": {
+        "name": "Moov Privilège",
+        "description": "Switch to the Moov Privilège plan.",
+        "notes": "Needs at least 5,000 F of airtime and at least 30,000 F of use per quarter. National calls 60 F/min (30 s)."
+      }
     },
     {
       "id": "moov-general-solde-kit-aeroport",
@@ -379,7 +424,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Kits vendus uniquement à l'agence de l'aéroport : OR 5 000 F (100 min, 5 min international, 6 Go, 500 F, 30 jours) et DIAMANT 10 000 F (240 min, 10 min international, 15 Go, 1 000 F, 30 jours)."
+      "notes": "Kits vendus uniquement à l'agence de l'aéroport : OR 5 000 F (100 min, 5 min international, 6 Go, 500 F, 30 jours) et DIAMANT 10 000 F (240 min, 10 min international, 15 Go, 1 000 F, 30 jours).",
+      "en": {
+        "name": "Airport Kit balance",
+        "description": "Check your Airport Kit balance.",
+        "notes": "Kits sold only at the airport shop: OR 5,000 F (100 min, 5 min international, 6 GB, 500 F, 30 days) and DIAMANT 10,000 F (240 min, 10 min international, 15 GB, 1,000 F, 30 days)."
+      }
     },
     {
       "id": "moov-general-complices-liste",
@@ -412,7 +462,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "See my favourite numbers",
+        "description": "Show your favourite numbers."
+      }
     },
     {
       "id": "moov-general-complices-ajouter",
@@ -430,7 +484,10 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro à ajouter",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Number to add"
+            }
           }
         ]
       },
@@ -457,7 +514,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Première liste de 5 numéros gratuite, puis 300 F par numéro modifié. Appels vers les complices : 50 F/min (30 F/min pour Epiq Nation et MoovIn selon la page des services). Tous réseaux nationaux."
+      "notes": "Première liste de 5 numéros gratuite, puis 300 F par numéro modifié. Appels vers les complices : 50 F/min (30 F/min pour Epiq Nation et MoovIn selon la page des services). Tous réseaux nationaux.",
+      "en": {
+        "name": "Add a favourite number",
+        "description": "Add a number to your list of 5 favourite numbers.",
+        "notes": "First list of 5 numbers free, then 300 F per changed number. Calls to favourite numbers: 50 F/min (30 F/min for Epiq Nation and MoovIn according to the services page). All national networks."
+      }
     },
     {
       "id": "moov-general-complices-supprimer",
@@ -475,7 +537,10 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro à retirer",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Number to remove"
+            }
           }
         ]
       },
@@ -502,7 +567,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Remove a favourite number",
+        "description": "Remove a number from your favourite numbers."
+      }
     },
     {
       "id": "moov-general-moov-bip",
@@ -520,7 +589,10 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro à biper",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Number to beep"
+            }
           }
         ]
       },
@@ -547,7 +619,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "10 par jour au maximum. La page « codes utiles » l'étiquette par erreur « Voir ma liste de numéros complices »."
+      "notes": "10 par jour au maximum. La page « codes utiles » l'étiquette par erreur « Voir ma liste de numéros complices ».",
+      "en": {
+        "name": "Moov Bip",
+        "description": "Send a free \"call me back\" to a number.",
+        "notes": "10 per day at most. The \"useful codes\" page labels it \"See my favourite numbers\" by mistake."
+      }
     },
     {
       "id": "moov-general-instavoice-activer",
@@ -580,7 +657,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Activation gratuite. Écouter ses messages : *2*."
+      "notes": "Activation gratuite. Écouter ses messages : *2*.",
+      "en": {
+        "name": "InstaVoice (turn on)",
+        "description": "Turn on InstaVoice voicemail.",
+        "notes": "Free activation. To listen to your messages: *2*."
+      }
     },
     {
       "id": "moov-general-instavoice-desactiver",
@@ -613,7 +695,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "InstaVoice (turn off)",
+        "description": "Turn off InstaVoice voicemail."
+      }
     },
     {
       "id": "moov-general-moovkiosque",
@@ -646,7 +732,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "25 F par SMS reçu. Aussi par mot-clé au 3030. Code de menu : la suite se choisit à l'écran."
+      "notes": "25 F par SMS reçu. Aussi par mot-clé au 3030. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "MoovKiosque",
+        "description": "Get information by SMS.",
+        "notes": "25 F per SMS received. Also by keyword to 3030. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-general-moov-together-no-limit",
@@ -680,7 +771,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "7 000 F par ligne. Réservé aux groupes Moov Together (consommation minimale 5 000 F par mois)."
+      "notes": "7 000 F par ligne. Réservé aux groupes Moov Together (consommation minimale 5 000 F par mois).",
+      "en": {
+        "name": "Moov Together \"No limit\"",
+        "description": "Unlimited calls option for members of a Moov Together group.",
+        "notes": "7,000 F per line. Only for Moov Together groups (minimum use of 5,000 F per month)."
+      }
     },
     {
       "id": "moov-general-moov-together-free-call",
@@ -714,7 +810,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "2 000 F par ligne. Réservé aux groupes Moov Together."
+      "notes": "2 000 F par ligne. Réservé aux groupes Moov Together.",
+      "en": {
+        "name": "Moov Together \"Free call\"",
+        "description": "2 hours of calls for members of a Moov Together group.",
+        "notes": "2,000 F per line. Only for Moov Together groups."
+      }
     },
     {
       "id": "moov-general-moov-together-solde",
@@ -748,7 +849,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "Moov Together, Free call balance",
+        "description": "Check your Free call option balance."
+      }
     }
   ]
 }

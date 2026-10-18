@@ -12,23 +12,29 @@ import { DEFAULT_COUNTRY } from '../config';
       <span></span>
       <span></span>
     </span>
-    <span class="visually-hidden" role="status">Chargement de Telko</span>
+    <span class="visually-hidden" role="status">Telko</span>
     <noscript>
-      <a class="fallback" href={`/${DEFAULT_COUNTRY}`}>Ouvrir Telko</a>
+      <a class="fallback" href={`/${DEFAULT_COUNTRY}`}>Telko</a>
     </noscript>
   </main>
 </AppLayout>
 
 <script>
+  import { DEFAULT_COUNTRY } from '../config';
+  import { resolveLang } from '../i18n/detect';
+  import { localePath } from '../i18n/paths';
   import { readPref } from '../scripts/prefs';
 
   const SPLASH_MS = 500;
-  const country = readPref('country') ?? 'tg';
+  const onboarded = readPref('onboarded') !== null;
+  // A saved choice wins, then the browser language: French for fr*, English otherwise.
+  const lang = resolveLang(readPref('lang'), onboarded, navigator.languages ?? [navigator.language]);
+  const country = readPref('country') ?? DEFAULT_COUNTRY;
   const operator = readPref('operator');
   // Home screen shortcuts from the web manifest open "/?go=…".
   const shortcut: Record<string, string> = { recherche: `/${country}/recherche`, internet: operator ? `/${country}/${operator}/internet` : `/${country}` };
   const go = shortcut[new URLSearchParams(window.location.search).get('go') ?? ''];
-  const target = readPref('onboarded') ? (go ?? `/${country}`) : '/bienvenue';
+  const target = localePath(lang, onboarded ? (go ?? `/${country}`) : '/bienvenue');
 
   window.setTimeout(() => window.location.replace(target), SPLASH_MS);
 </script>

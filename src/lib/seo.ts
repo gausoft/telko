@@ -1,105 +1,144 @@
 import { DEFAULT_COUNTRY, SHOW_BRAND_LOGOS } from '../config';
+import { LANGS, SOURCE_LANG, type Lang } from '../i18n/i18n-types';
+import { localePath } from '../i18n/paths';
 import { featuredFor, sectionEntries } from './catalog';
 import type { Catalog, CatalogEntry, CountryCatalog } from './catalog-types';
 import { formatData, formatXof } from './format';
 import { fingerprint } from './hash';
+import { localizeCatalog } from './localize';
 import type { Brand, Operator } from './schema';
+import { seoCopyEn } from './seo-copy-en';
+import { seoCopyFr } from './seo-copy-fr';
+import type { SeoCopy } from './seo-copy-types';
 import { SECTIONS, type Section } from './sections';
-import type { PageSeo, SectionFacts, ShareCard } from './seo-types';
+import type { Alternate, PageSeo, SectionFacts, ShareCard } from './seo-types';
 
-const SIGNATURE = 'Tous vos services mobiles, au même endroit.';
-const DEFAULT_CARD: ShareCard = { slug: 'telko', eyebrow: 'Codes USSD · forfaits · mobile money', title: SIGNATURE, highlight: null, logos: [] };
+const COPY: Record<Lang, SeoCopy> = { fr: seoCopyFr, en: seoCopyEn };
 
 /** The splash screen has no content of its own: search engines are sent to the default country. */
 export function splashSeo(): PageSeo {
+  const copy = COPY[SOURCE_LANG];
+
   return {
-    title: `Telko · ${SIGNATURE.slice(0, -1)}`,
-    description: `${SIGNATURE} Codes USSD, forfaits et mobile money, même hors connexion.`,
+    lang: SOURCE_LANG,
+    title: `Telko · ${copy.signature.slice(0, -1)}`,
+    description: copy.splashDescription,
     path: `/${DEFAULT_COUNTRY}`,
-    image: imagePath(DEFAULT_CARD),
-    imageAlt: `Telko : ${SIGNATURE}`,
+    image: imagePath(defaultCard(SOURCE_LANG)),
+    imageAlt: copy.imageAlt(copy.signature),
     noindex: false,
     crumbs: [],
+    alternates: [],
   };
 }
 
-/** App screens with no content worth a search result (onboarding, settings, search). */
-export function appPageSeo(title: string, path: string): PageSeo {
+/** App screens with no content worth a search result (onboarding, settings, search). `path` has no language prefix. */
+export function appPageSeo(title: string, path: string, lang: Lang): PageSeo {
+  const copy = COPY[lang];
+
   return {
+    lang,
     title,
-    description: SIGNATURE,
-    path,
-    image: imagePath(DEFAULT_CARD),
-    imageAlt: `Telko : ${SIGNATURE}`,
+    description: copy.signature,
+    path: localePath(lang, path),
+    image: imagePath(defaultCard(lang)),
+    imageAlt: copy.imageAlt(copy.signature),
     noindex: true,
     crumbs: [],
+    alternates: [],
   };
 }
 
-export function countryHomeSeo(data: CountryCatalog): PageSeo {
+/** `data` is the country catalog already in `lang`. */
+export function countryHomeSeo(data: CountryCatalog, lang: Lang): PageSeo {
+  const copy = COPY[lang];
   const country = data.country.name;
-  const operators = joinFr(data.operators.map((o) => o.short_name));
+  const operators = data.operators.map((o) => o.short_name);
   const money = data.operators.flatMap((o) => (o.mobile_money ? [o.mobile_money.short_name] : []));
+  const path = `/${data.country.code}`;
 
   return {
-    title: `Codes USSD, forfaits et mobile money · ${country} · Telko`,
-    description: `Forfaits internet, appels, ${joinFr(['factures', ...money])} : tous les codes ${operators} en un tap, même hors connexion.`,
-    path: `/${data.country.code}`,
-    image: imagePath(countryCard(data)),
-    imageAlt: `Telko ${country} : codes ${operators}`,
+    lang,
+    title: copy.homeTitle(country),
+    description: copy.homeDescription(operators, money),
+    path: localePath(lang, path),
+    image: imagePath(countryCard(data, lang)),
+    imageAlt: copy.homeAlt(country, operators),
     noindex: false,
     crumbs: [],
+    alternates: alternates(path),
   };
 }
 
-export function sectionSeo(data: CountryCatalog, operator: Operator, section: Section): PageSeo {
-  const facts = sectionFacts(data, operator, section);
+export function sectionSeo(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): PageSeo {
+  const facts = sectionFacts(data, operator, section, lang);
   const code = data.country.code;
   const path = `/${code}/${operator.id}/${section.id}`;
 
   return {
+    lang,
     title: `${facts.heading} · ${data.country.name} · Telko`,
     description: facts.description,
-    path,
-    image: imagePath(sectionCard(data, operator, section)),
-    imageAlt: facts.highlight ? `${facts.heading} : ${facts.highlight}` : facts.heading,
+    path: localePath(lang, path),
+    image: imagePath(sectionCard(data, operator, section, lang)),
+    imageAlt: facts.highlight ? `${facts.heading}${lang === 'fr' ? ' : ' : ': '}${facts.highlight}` : facts.heading,
     noindex: false,
     crumbs: [
-      { name: `Telko ${data.country.name}`, path: `/${code}` },
-      { name: facts.heading, path },
+      { name: `Telko ${data.country.name}`, path: localePath(lang, `/${code}`) },
+      { name: facts.heading, path: localePath(lang, path) },
     ],
+    alternates: alternates(path),
   };
 }
 
-/** Every share image the build renders: one default, one per country home, one per section page. */
+/** Every share image the build renders, in every language: one default, one per country home, one per section page. */
 export function shareCards(catalog: Catalog): ShareCard[] {
-  const cards: ShareCard[] = [DEFAULT_CARD];
+  return LANGS.flatMap((lang) => {
+    const localized = localizeCatalog(catalog, lang);
+    const cards: ShareCard[] = [defaultCard(lang)];
 
-  for (const data of catalog.byCountry.values()) {
-    cards.push(countryCard(data));
-    for (const operator of data.operators) for (const section of SECTIONS) cards.push(sectionCard(data, operator, section));
-  }
+    for (const data of localized.byCountry.values()) {
+      cards.push(countryCard(data, lang));
+      for (const operator of data.operators) for (const section of SECTIONS) cards.push(sectionCard(data, operator, section, lang));
+    }
 
-  return cards;
+    return cards;
+  });
 }
 
-function countryCard(data: CountryCatalog): ShareCard {
+/** French, English and the default (French, the source) version of an indexed page. */
+function alternates(path: string): Alternate[] {
+  return [...LANGS.map((l) => ({ hreflang: l, path: localePath(l, path) })), { hreflang: 'x-default', path }];
+}
+
+/** French slugs keep their names so existing link previews still work; other languages get a prefix. */
+function slug(lang: Lang, base: string): string {
+  return lang === SOURCE_LANG ? base : `${lang}-${base}`;
+}
+
+function defaultCard(lang: Lang): ShareCard {
+  const copy = COPY[lang];
+
+  return { slug: slug(lang, 'telko'), eyebrow: copy.defaultEyebrow, title: copy.signature, highlight: null, logos: [] };
+}
+
+function countryCard(data: CountryCatalog, lang: Lang): ShareCard {
   const brands = data.operators.flatMap((o) => [o, ...(o.mobile_money ? [o.mobile_money] : [])]);
 
   return {
-    slug: data.country.code,
+    slug: slug(lang, data.country.code),
     eyebrow: data.country.name,
-    title: 'Codes USSD, forfaits et mobile money',
-    highlight: 'Même hors connexion',
+    title: COPY[lang].homeCardTitle,
+    highlight: COPY[lang].homeCardHighlight,
     logos: logoFiles(brands),
   };
 }
 
-function sectionCard(data: CountryCatalog, operator: Operator, section: Section): ShareCard {
-  const facts = sectionFacts(data, operator, section);
+function sectionCard(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): ShareCard {
+  const facts = sectionFacts(data, operator, section, lang);
 
   return {
-    slug: `${data.country.code}-${operator.id}-${section.id}`,
+    slug: slug(lang, `${data.country.code}-${operator.id}-${section.id}`),
     eyebrow: `${data.country.name} · ${facts.brand.name}`,
     title: facts.heading,
     highlight: facts.highlight,
@@ -108,71 +147,42 @@ function sectionCard(data: CountryCatalog, operator: Operator, section: Section)
 }
 
 /** Heading, description and selling line of a section page, written from its real offers. */
-function sectionFacts(data: CountryCatalog, operator: Operator, section: Section): SectionFacts {
+function sectionFacts(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): SectionFacts {
+  const copy = COPY[lang];
   const entries = sectionEntries(data, operator.id, section);
   const prices = entries.flatMap((e) => (e.price_xof !== null && e.price_xof > 0 ? [e.price_xof] : []));
   const from = prices.length > 0 ? formatXof(Math.min(...prices)) : null;
   const money = operator.mobile_money ?? operator;
-  const moneyName = money.former_names[0] ? `${money.name} (ex-${money.former_names[0]})` : money.name;
-  const fromText = from ? `, dès ${from}` : '';
-  const codes = entries.length > 0 ? `${entries.length} codes` : null;
-  /** "18 forfaits internet", or "Forfaits internet" when the section is still empty. */
-  const lead = (noun: string): string => (entries.length > 0 ? `${entries.length} ${noun}` : noun.charAt(0).toUpperCase() + noun.slice(1));
+  const fees = data.fees.filter((f) => f.operator === operator.id).length;
+  const ctx = {
+    count: entries.length,
+    operatorName: operator.name,
+    operatorShort: operator.short_name,
+    moneyShort: money.short_name,
+    moneyName: copy.moneyName(money.name, money.former_names[0]),
+    from,
+    fees,
+  };
+  const codes = entries.length > 0 ? copy.codes(entries.length) : null;
+  const fromLine = from ? copy.from(from) : null;
+  const highlights: Record<Section['id'], string | null> = {
+    internet: popularOffer(data, operator, entries, lang) ?? fromLine,
+    appels: fromLine ?? codes,
+    argent: codes,
+    factures: codes,
+    frais: fees > 0 ? copy.amounts(fees) : null,
+    aide: codes,
+  };
+  const brand: Brand = section.id === 'argent' || section.id === 'frais' ? money : operator;
 
-  switch (section.id) {
-    case 'internet':
-      return {
-        heading: `Forfaits internet ${operator.short_name}`,
-        description: `${lead('forfaits internet')} ${operator.name}, du jour au mois${fromText}. Le code de chaque forfait se compose en un tap.`,
-        highlight: popularOffer(data, operator, entries) ?? (from ? `Dès ${from}` : null),
-        brand: operator,
-      };
-    case 'appels':
-      return {
-        heading: `Appels et SMS ${operator.short_name}`,
-        description: `${lead('forfaits appels et SMS')} ${operator.name}${fromText}. Le code se compose en un tap.`,
-        highlight: from ? `Dès ${from}` : codes,
-        brand: operator,
-      };
-    case 'argent':
-      return {
-        heading: `Codes ${money.short_name}`,
-        description: `${lead('codes')} ${moneyName} prêts à composer. Telko ne demande jamais votre code secret.`,
-        highlight: codes,
-        brand: money,
-      };
-    case 'factures':
-      return {
-        heading: `Factures avec ${operator.short_name}`,
-        description: `${lead('codes')} pour payer vos factures avec ${operator.name}, prêts à composer.`,
-        highlight: codes,
-        brand: operator,
-      };
-    case 'frais': {
-      const fees = data.fees.filter((f) => f.operator === operator.id).length;
-
-      return {
-        heading: `Frais ${money.short_name}`,
-        description: fees > 0 ? `Les frais ${moneyName} : ${fees} montants, avec la source de chacun.` : `Les frais ${moneyName}, avec leur source.`,
-        highlight: fees > 0 ? `${fees} montants` : null,
-        brand: money,
-      };
-    }
-    default:
-      return {
-        heading: `Codes utiles ${operator.short_name}`,
-        description: `${lead('codes utiles')} ${operator.name} : solde, numéro et services, en un tap.`,
-        highlight: codes,
-        brand: operator,
-      };
-  }
+  return { heading: copy.heading(section.id, ctx), description: copy.description(section.id, ctx), highlight: highlights[section.id], brand };
 }
 
 /** The operator's most asked offer of this section, from the editorial selection, as "5 Go · 599 F". */
-function popularOffer(data: CountryCatalog, operator: Operator, entries: CatalogEntry[]): string | null {
+function popularOffer(data: CountryCatalog, operator: Operator, entries: CatalogEntry[], lang: Lang): string | null {
   const listed = new Set(entries.map((e) => e.id));
   const entry = featuredFor(data, operator.id).find((f) => listed.has(f.entry.id))?.entry;
-  const volume = formatData(entry?.allowances?.data_mb ?? null);
+  const volume = formatData(entry?.allowances?.data_mb ?? null, lang);
   if (!entry || entry.price_xof === null || !volume) return null;
 
   return `${volume} · ${formatXof(entry.price_xof)}`;
@@ -186,11 +196,4 @@ function logoFiles(brands: Brand[]): string[] {
 /** The version changes with the content, so link previews fetch the image again when a price changes. */
 function imagePath(card: ShareCard): string {
   return `/og/${card.slug}.png?v=${fingerprint(JSON.stringify(card))}`;
-}
-
-/** "Yas et Moov", "Mixx, Moov Money et factures". */
-function joinFr(items: string[]): string {
-  if (items.length <= 1) return items.join('');
-
-  return `${items.slice(0, -1).join(', ')} et ${items.at(-1) ?? ''}`;
 }

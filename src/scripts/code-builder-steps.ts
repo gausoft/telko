@@ -1,5 +1,8 @@
 import { encodeUssd } from '../lib/dial';
+import { fill } from '../i18n/format-message';
+import { formatXof } from '../lib/format';
 import { DEFAULT_PRESETS } from '../lib/ussd-flow';
+import { t } from './i18n-client';
 import type { InputOptions, ReviewContext, StepContext, StepView } from './code-builder-types';
 
 /** Lucide "lock", constant markup. */
@@ -19,7 +22,7 @@ function phoneView(ctx: StepContext): StepView {
   const field = fieldShell(ctx);
   const country = el('button', 'cb-country');
   country.type = 'button';
-  country.setAttribute('aria-label', `Pays : ${ctx.country.name}. Changer`);
+  country.setAttribute('aria-label', fill(t().builder.country, { name: ctx.country.name }));
   const flag = document.createElement('img');
   flag.src = `/flags/${ctx.country.code}.svg`;
   flag.alt = '';
@@ -50,13 +53,13 @@ export function fillRecipients(box: HTMLElement, ctx: Pick<StepContext, 'recipie
 function amountView(ctx: StepContext): StepView {
   const field = fieldShell(ctx);
   const input = inputFor(ctx, { type: 'text', inputMode: 'numeric', autocomplete: 'off', placeholder: '0' });
-  field.box.append(input, text('span', 'F CFA', 'cb-suffix'));
+  field.box.append(input, text('span', t().builder.currency, 'cb-suffix'));
 
   const presets = ctx.step.presets ?? DEFAULT_PRESETS;
   field.element.append(
     chips(
       presets.map((amount) => ({
-        label: `${amount.toLocaleString('fr-FR')} F`,
+        label: formatXof(amount),
         onClick: () => {
           input.value = String(amount);
           input.focus();
@@ -106,20 +109,20 @@ export function reviewView(ctx: ReviewContext): StepView {
     const note = el('p', 'cb-note');
     const lock = el('span', 'cb-lock');
     lock.innerHTML = LOCK_ICON;
-    note.append(lock, text('span', 'Le réseau vous demandera votre code secret'));
+    note.append(lock, text('span', t().builder.pinNotice));
     panel.append(note);
   }
 
   const dial = el('a', 'cb-primary');
   dial.href = `tel:${encodeUssd(ctx.built.code)}`;
-  dial.textContent = 'Composer';
+  dial.textContent = t().builder.dial;
   dial.addEventListener('click', ctx.onDial);
 
   const copy = el('button', 'cb-secondary');
   copy.type = 'button';
-  copy.textContent = 'Copier';
+  copy.textContent = t().builder.copy;
   copy.addEventListener('click', () => {
-    void navigator.clipboard?.writeText(ctx.built.code).then(() => (copy.textContent = 'Copié'));
+    void navigator.clipboard?.writeText(ctx.built.code).then(() => (copy.textContent = t().builder.copied));
   });
 
   panel.append(dial, copy);

@@ -5,6 +5,8 @@ import '../styles/code-line.css';
 import '../styles/field.css';
 import { builderPayload } from '../lib/builder-payload';
 import type { Catalog } from '../lib/catalog-types';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 import ChoiceList from './ChoiceList.astro';
 import Sheet from './Sheet.astro';
 
@@ -14,11 +16,13 @@ interface Props {
 }
 
 const { catalog, country } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
 const payload = builderPayload(catalog, country);
 const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name} (+${c.dial_code})`, flag: c.code }));
 ---
 
-<Sheet id="code-builder" title="Code">
+<Sheet id="code-builder" title={m.builder.title}>
   <div class="cb">
     <span class="cb-dots" aria-hidden="true" data-cb-progress></span>
     <div class="cb-code" data-cb-code></div>
@@ -26,15 +30,15 @@ const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name
     <p class="cb-error" role="alert" data-cb-error></p>
   </div>
   <div class="cb-actions" slot="footer">
-    <button type="button" class="cb-back" data-cb-back aria-label="Étape précédente" hidden>
+    <button type="button" class="cb-back" data-cb-back aria-label={m.builder.back} hidden>
       <ArrowLeft size={20} aria-hidden="true" />
     </button>
-    <button type="button" class="cb-next" data-cb-next>Suivant</button>
+    <button type="button" class="cb-next" data-cb-next>{m.client.builder.next}</button>
   </div>
 </Sheet>
 
-<Sheet id="cb-country-sheet" title="Pays du numéro">
-  <ChoiceList name="cb-country" label="Pays du numéro" items={countryItems} selected={[country]} />
+<Sheet id="cb-country-sheet" title={m.builder.countryOfNumber}>
+  <ChoiceList name="cb-country" label={m.builder.countryOfNumber} items={countryItems} selected={[country]} />
 </Sheet>
 
 <script is:inline type="application/json" id="code-builder-data" set:html={payload} />

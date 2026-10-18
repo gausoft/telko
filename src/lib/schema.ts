@@ -31,6 +31,14 @@ export const provenanceSchema = z
     message: 'verified entries need verified_at',
   });
 
+/**
+ * English text of an object whose own text is French, the source language. Every key is optional
+ * (French shows instead) and unknown keys are refused, so a typo never hides a translation.
+ */
+function translation<S extends z.ZodRawShape>(shape: S) {
+  return z.object(shape).partial().strict().optional();
+}
+
 export const PHONE_FORMATS = ['national', 'international', 'any'] as const;
 
 export const paramSchema = z.object({
@@ -50,7 +58,11 @@ export const paramSchema = z.object({
   length: z.number().int().positive().optional(),
   numeric: z.boolean().optional(),
   /** choice: allowed values. */
-  options: z.array(z.object({ value: z.string().min(1), label: z.string().min(1) })).min(2).optional(),
+  options: z
+    .array(z.object({ value: z.string().min(1), label: z.string().min(1), en: translation({ label: z.string().min(1) }) }))
+    .min(2)
+    .optional(),
+  en: translation({ label: z.string().min(1), short: z.string().min(1).max(12) }),
 });
 
 export const ussdSchema = z
@@ -80,7 +92,7 @@ export const entrySchema = z.object({
   description: z.string(),
   price_xof: z.number().int().nonnegative().nullable(),
   allowances: z.object({ data_mb: amount, voice_min: amount, sms: amount }).nullable(),
-  validity: z.object({ days: z.number().int().nullable(), label: z.string() }).nullable(),
+  validity: z.object({ days: z.number().int().nullable(), label: z.string(), en: translation({ label: z.string() }) }).nullable(),
   time_window: z.object({ from: z.string(), to: z.string() }).nullable(),
   ussd: ussdSchema,
   payment_methods: z.array(z.enum(['airtime', 'mixx', 'flooz'])),
@@ -88,6 +100,7 @@ export const entrySchema = z.object({
   tags: z.array(z.string()),
   provenance: provenanceSchema,
   notes: z.string().nullable(),
+  en: translation({ name: z.string().min(1), description: z.string(), notes: z.string() }),
 });
 
 export const categoryFileSchema = z.object({
@@ -107,6 +120,7 @@ export const feeEntrySchema = z
     label: z.string().min(1),
     provenance: provenanceSchema,
     notes: z.string().nullable(),
+    en: translation({ label: z.string().min(1), notes: z.string() }),
   })
   .refine((f) => f.max_xof === null || f.max_xof >= f.min_xof, { message: 'max_xof must be >= min_xof' })
   .refine((f) => f.fee_xof === null || f.fee_percent === null, { message: 'use either fee_xof or fee_percent, not both' });
@@ -138,6 +152,7 @@ export const operatorSchema = brandSchema.extend({
   website: z.url(),
   customer_service: z.string(),
   notes: z.string().nullable(),
+  en: translation({ notes: z.string() }),
 });
 
 export const operatorsFileSchema = z.object({
@@ -153,6 +168,7 @@ export const countrySchema = z.object({
   /** Digits of a mobile number without the country code. */
   national_length: z.number().int().min(6).max(12),
   currency: z.string().length(3),
+  en: translation({ name: z.string() }),
 });
 
 export const countriesFileSchema = z.object({ countries: z.array(countrySchema).min(1) });
@@ -160,9 +176,14 @@ export const countriesFileSchema = z.object({ countries: z.array(countrySchema).
 export const featuredFileSchema = z.object({
   country: z.string().length(2),
   updated: z.string().regex(ISO_DATE),
-  items: z.array(z.object({ entry_id: z.string(), label: z.string().min(1) })),
+  items: z.array(z.object({ entry_id: z.string(), label: z.string().min(1), en: translation({ label: z.string().min(1) }) })),
   shortcuts: z.array(
-    z.object({ entry_id: z.string(), label: z.string().min(1), brand: z.enum(['operator', 'mobile_money']) }),
+    z.object({
+      entry_id: z.string(),
+      label: z.string().min(1),
+      brand: z.enum(['operator', 'mobile_money']),
+      en: translation({ label: z.string().min(1) }),
+    }),
   ),
 });
 

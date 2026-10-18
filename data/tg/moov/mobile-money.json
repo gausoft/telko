@@ -41,7 +41,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Plafonds : compte complet 2 000 000 F par jour et 10 000 000 F par mois, « 3 transactions par jour » (tel qu'écrit, probablement une coquille) ; compte temporaire 200 000 F par jour et par mois. Code de menu : la suite se choisit à l'écran."
+      "notes": "Plafonds : compte complet 2 000 000 F par jour et 10 000 000 F par mois, « 3 transactions par jour » (tel qu'écrit, probablement une coquille) ; compte temporaire 200 000 F par jour et par mois. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov Money menu",
+        "description": "Open the Moov Money menu, which also activates the account the first time.",
+        "notes": "Limits: full account 2,000,000 F per day and 10,000,000 F per month, \"3 transactions per day\" (as written, probably a typo); temporary account 200,000 F per day and per month. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-mobile-money-transfert-national",
@@ -59,19 +64,28 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -96,7 +110,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Moov Money est inclus dans le code. « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert » : période et frais au-delà non publiés."
+      "notes": "Le code secret Moov Money est inclus dans le code. « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert » : période et frais au-delà non publiés.",
+      "en": {
+        "name": "Moov Money transfer to a Moov number",
+        "description": "Send money to a Moov number in Togo.",
+        "notes": "The Moov Money PIN is part of the code. \"All national money transfers are free up to the third transfer\": the period and the fees beyond are not published."
+      }
     },
     {
       "id": "moov-mobile-money-transfert-autre-reseau",
@@ -114,19 +133,28 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire (autre réseau)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Recipient's number (other network)"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -152,7 +180,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Même code qu'un transfert Moov. Le destinataire ne reçoit pas l'argent sur son compte Mixx : l'expéditeur lui transmet le code de retrait à 6 chiffres reçu par SMS, à encaisser dans un point Moov Money. Frais non publiés."
+      "notes": "Même code qu'un transfert Moov. Le destinataire ne reçoit pas l'argent sur son compte Mixx : l'expéditeur lui transmet le code de retrait à 6 chiffres reçu par SMS, à encaisser dans un point Moov Money. Frais non publiés.",
+      "en": {
+        "name": "Moov Money transfer to another network",
+        "description": "Send money to a number on another Togolese network (Yas).",
+        "notes": "Same code as a Moov transfer. The recipient does not get the money on their Mixx account: the sender passes on the 6-digit withdrawal code received by SMS, to cash at a Moov Money point. Fees not published."
+      }
     },
     {
       "id": "moov-mobile-money-transfert-international",
@@ -171,19 +204,28 @@
             "type": "phone",
             "label": "Numéro du destinataire",
             "required": true,
-            "format": "international"
+            "format": "international",
+            "en": {
+              "label": "Recipient's number"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -208,7 +250,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Moov Money est inclus dans le code. Pays : Bénin (Moov, MTN), Burkina (Moov, Orange), Côte d'Ivoire (Moov, MTN), Guinée-Bissau (MTN), Mali (Moov), Niger (Moov, Orange, Airtel)."
+      "notes": "Le code secret Moov Money est inclus dans le code. Pays : Bénin (Moov, MTN), Burkina (Moov, Orange), Côte d'Ivoire (Moov, MTN), Guinée-Bissau (MTN), Mali (Moov), Niger (Moov, Orange, Airtel).",
+      "en": {
+        "name": "International Moov Money transfer",
+        "description": "Send money to a country in the region.",
+        "notes": "The Moov Money PIN is part of the code. Countries: Benin (Moov, MTN), Burkina (Moov, Orange), Côte d'Ivoire (Moov, MTN), Guinea-Bissau (MTN), Mali (Moov), Niger (Moov, Orange, Airtel)."
+      }
     },
     {
       "id": "moov-mobile-money-paiement-marchand",
@@ -228,19 +275,29 @@
             "label": "Numéro du marchand",
             "required": true,
             "short": "Marchand",
-            "numeric": true
+            "numeric": true,
+            "en": {
+              "label": "Merchant number",
+              "short": "Merchant"
+            }
           },
           {
             "name": "amount",
             "type": "amount",
             "label": "Montant (FCFA)",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Amount (CFA francs)"
+            }
           },
           {
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -265,7 +322,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Moov Money est inclus dans le code. Paiement aussi possible par QR code ou accessoire NFC."
+      "notes": "Le code secret Moov Money est inclus dans le code. Paiement aussi possible par QR code ou accessoire NFC.",
+      "en": {
+        "name": "Merchant payment",
+        "description": "Pay a merchant with Moov Money.",
+        "notes": "The Moov Money PIN is part of the code. Payment also possible by QR code or NFC accessory."
+      }
     },
     {
       "id": "moov-mobile-money-retrait-confirmation",
@@ -283,7 +345,10 @@
             "name": "pin",
             "type": "pin",
             "label": "Code secret Moov Money",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Moov Money PIN"
+            }
           }
         ]
       },
@@ -308,7 +373,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "L'agent lance le retrait de son côté (*152*2*1*numéro client*montant*code agent#), puis le client confirme avec ce code."
+      "notes": "L'agent lance le retrait de son côté (*152*2*1*numéro client*montant*code agent#), puis le client confirme avec ce code.",
+      "en": {
+        "name": "Confirm a Moov Money withdrawal",
+        "description": "Approve a cash withdrawal started by a Moov Money agent.",
+        "notes": "The agent starts the withdrawal on their side (*152*2*1*customer number*amount*agent code#), then the customer confirms with this code."
+      }
     },
     {
       "id": "moov-mobile-money-annulation-transfert",
@@ -349,7 +419,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Option 1, puis identifiant de transaction, bon numéro deux fois et code secret ; option 2 pour suivre la demande. Possible de 0 à 7 jours, ensuite appeler le 777. Une source tierce donne *1551*4#. Code de menu : la suite se choisit à l'écran."
+      "notes": "Option 1, puis identifiant de transaction, bon numéro deux fois et code secret ; option 2 pour suivre la demande. Possible de 0 à 7 jours, ensuite appeler le 777. Une source tierce donne *1551*4#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Recall a transfer",
+        "description": "Cancel a Moov Money transfer sent by mistake.",
+        "notes": "Option 1, then transaction ID, the right number twice and PIN; option 2 to follow the request. Possible from 0 to 7 days, after that call 777. A third-party source gives *1551*4#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-mobile-money-bankvi",
@@ -385,7 +460,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "25 F par cotisation. Options : 1 créer, 2 cotiser, 3 demander / valider un remboursement, 4 rejeter, 6 solde administrateur, 4 solde membre (tel qu'écrit). Code de menu : la suite se choisit à l'écran."
+      "notes": "25 F par cotisation. Options : 1 créer, 2 cotiser, 3 demander / valider un remboursement, 4 rejeter, 6 solde administrateur, 4 solde membre (tel qu'écrit). Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Bank'vi",
+        "description": "Group savings (tontine) with Moov Money.",
+        "notes": "25 F per contribution. Options: 1 create, 2 contribute, 3 request / approve a payout, 4 reject, 6 admin balance, 4 member balance (as written). Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-mobile-money-zem-assur",
@@ -422,7 +502,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "75 F par jour prélevés automatiquement, ou 525 F par semaine. Code de menu : la suite se choisit à l'écran."
+      "notes": "75 F par jour prélevés automatiquement, ou 525 F par semaine. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Zem Assur",
+        "description": "Motorbike taxi driver insurance (NSIA) paid with Moov Money.",
+        "notes": "75 F per day taken automatically, or 525 F per week. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-mobile-money-solde-flooz",
@@ -462,7 +547,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Absent du site officiel. Sources tierces contradictoires : *155*6# ou *155*6*1*code secret#. Code de menu : la suite se choisit à l'écran."
+      "notes": "Absent du site officiel. Sources tierces contradictoires : *155*6# ou *155*6*1*code secret#. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov Money balance",
+        "description": "Check your Moov Money balance.",
+        "notes": "Not on the official site. Conflicting third-party sources: *155*6# or *155*6*1*PIN#. Menu code: you choose the rest on screen."
+      }
     },
     {
       "id": "moov-mobile-money-changer-code-flooz",
@@ -480,13 +570,19 @@
             "name": "old_pin",
             "type": "pin",
             "label": "Code secret actuel",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "Current PIN"
+            }
           },
           {
             "name": "new_pin",
             "type": "pin",
             "label": "Nouveau code secret",
-            "required": true
+            "required": true,
+            "en": {
+              "label": "New PIN"
+            }
           }
         ]
       },
@@ -510,7 +606,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement, absent du site officiel. Le nouveau code est saisi deux fois."
+      "notes": "Source tierce uniquement, absent du site officiel. Le nouveau code est saisi deux fois.",
+      "en": {
+        "name": "Change your Moov Money PIN",
+        "description": "Change your Moov Money PIN.",
+        "notes": "Third-party source only, not on the official site. The new code is typed twice."
+      }
     },
     {
       "id": "moov-mobile-money-simulateur-frais",
@@ -545,7 +646,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement, absent du site officiel."
+      "notes": "Source tierce uniquement, absent du site officiel.",
+      "en": {
+        "name": "Moov Money fee simulator",
+        "description": "Work out the fees of a Moov Money operation.",
+        "notes": "Third-party source only, not on the official site."
+      }
     },
     {
       "id": "moov-mobile-money-flooz-vers-banque",
@@ -581,7 +687,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source tierce uniquement : *155# puis 7, 2, 4. Frais indiqués par cette source : environ 47 F jusqu'à 5 000 F, 280 F jusqu'à 500 000 F. Code de menu : la suite se choisit à l'écran."
+      "notes": "Source tierce uniquement : *155# puis 7, 2, 4. Frais indiqués par cette source : environ 47 F jusqu'à 5 000 F, 280 F jusqu'à 500 000 F. Code de menu : la suite se choisit à l'écran.",
+      "en": {
+        "name": "Moov Money to bank (Orabank Pass Money Flooz)",
+        "description": "Move money between Moov Money and an Orabank account.",
+        "notes": "Third-party source only: *155# then 7, 2, 4. Fees given by this source: about 47 F up to 5,000 F, 280 F up to 500,000 F. Menu code: you choose the rest on screen."
+      }
     }
   ]
 }

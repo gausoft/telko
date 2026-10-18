@@ -15,7 +15,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 jour"
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -48,7 +51,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (1 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (1 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma200+",
+        "description": "1 000 F of call credit to all networks, 20 MB and 20 SMS over 1 day.",
+        "notes": "The call credit (1,000 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema250-plus",
@@ -63,7 +71,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 jour"
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -96,7 +107,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (2 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (2 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma250+",
+        "description": "2 500 F of call credit to all networks, 20 MB and 20 SMS over 1 day.",
+        "notes": "The call credit (2,500 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema300-plus",
@@ -111,7 +127,10 @@
       },
       "validity": {
         "days": 2,
-        "label": "2 jours"
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -144,7 +163,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (2 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Moins de crédit que Léma250+, tel que publié par la page et la boutique. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (2 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Moins de crédit que Léma250+, tel que publié par la page et la boutique. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma300+",
+        "description": "2 000 F of call credit to all networks, 40 MB and 40 SMS over 2 days.",
+        "notes": "The call credit (2,000 F, valid to all networks) is an amount in francs, not minutes. Less credit than Léma250+, as published by the page and the shop. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema400-plus",
@@ -159,7 +183,10 @@
       },
       "validity": {
         "days": 2,
-        "label": "2 jours"
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -192,7 +219,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (3 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (3 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma400+",
+        "description": "3 500 F of call credit to all networks, 40 MB and 40 SMS over 2 days.",
+        "notes": "The call credit (3,500 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema500-plus",
@@ -207,7 +239,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 jours"
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -240,7 +275,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (4 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (4 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma500+",
+        "description": "4 000 F of call credit to all networks, 50 MB and 50 SMS over 3 days.",
+        "notes": "The call credit (4,000 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema1000-plus",
@@ -255,7 +295,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -296,7 +339,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (7 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. La page promo « forfait-voix-lema » donne le code *909*445# et « plus de 1000 minutes » ; la FAQ présente *445# comme le prêt de data. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (7 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. La page promo « forfait-voix-lema » donne le code *909*445# et « plus de 1000 minutes » ; la FAQ présente *445# comme le prêt de data. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma1000+",
+        "description": "7 500 F of call credit to all networks, 250 MB and 250 SMS over 7 days.",
+        "notes": "The call credit (7,500 F, valid to all networks) is an amount in francs, not minutes. The \"forfait-voix-lema\" promotion page gives the code *909*445# and \"more than 1000 minutes\"; the FAQ presents *445# as the data loan. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema2000-plus",
@@ -311,7 +359,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -344,7 +395,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (20 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Le crédit d'appels (20 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Léma2000+",
+        "description": "20 000 F of call credit to all networks, 500 MB and 250 SMS over 7 days.",
+        "notes": "The call credit (20,000 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-mixed-lema5000-plus",
@@ -359,7 +415,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -392,7 +451,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (37 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Le crédit d'appels (37 500 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Léma5000+",
+        "description": "37 500 F of call credit to all networks, 1 GB and 250 SMS over 30 days.",
+        "notes": "The call credit (37,500 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-mixed-lema7500-plus",
@@ -407,7 +471,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -440,7 +507,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (75 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Le crédit d'appels (75 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Léma7500+",
+        "description": "75 000 F of call credit to all networks, 1.5 GB and 250 SMS over 30 days.",
+        "notes": "The call credit (75,000 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-mixed-lema9000-plus",
@@ -455,7 +527,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -488,7 +563,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le crédit d'appels (90 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Le crédit d'appels (90 000 F, valable vers tous les réseaux) est un montant en francs, pas des minutes. Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Léma9000+",
+        "description": "90 000 F of call credit to all networks, 2 GB and 250 SMS over 30 days.",
+        "notes": "The call credit (90,000 F, valid to all networks) is an amount in francs, not minutes. Remaining data carries over if you renew within 30 days."
+      }
     }
   ]
 }

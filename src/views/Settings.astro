@@ -1,0 +1,244 @@
+---
+import ChevronRight from '@lucide/astro/icons/chevron-right';
+import CloudCheck from '@lucide/astro/icons/cloud-check';
+import Download from '@lucide/astro/icons/download';
+import Share from '@lucide/astro/icons/share';
+import Eraser from '@lucide/astro/icons/eraser';
+import Info from '@lucide/astro/icons/info';
+import LifeBuoy from '@lucide/astro/icons/life-buoy';
+import RadioTower from '@lucide/astro/icons/radio-tower';
+import SunMoon from '@lucide/astro/icons/sun-moon';
+import Languages from '@lucide/astro/icons/languages';
+
+import AppHeader from '../components/AppHeader.astro';
+import BrandMark from '../components/BrandMark.astro';
+import ChoiceList from '../components/ChoiceList.astro';
+import Sheet from '../components/Sheet.astro';
+import Dock from '../components/Dock.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { LANGS } from '../i18n/i18n-types';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { appPageSeo } from '../lib/seo';
+import type { SettingsProps } from './view-types';
+
+type Props = SettingsProps;
+
+const { data, countries } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const first = data.operators[0];
+if (!first) throw new Error(`${data.country.code}: no operator`);
+
+const countryItems = countries.map((c) => ({ id: c.code, name: c.name, flag: c.code, soon: c.status !== 'live' }));
+const operatorItems = data.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+const THEMES = ['auto', 'light', 'dark'] as const;
+---
+
+<AppLayout seo={appPageSeo(m.settings.pageTitle, `/${data.country.code}/reglages`, lang)} withDock>
+  <main class="page">
+    <AppHeader country={data.country} back={localePath(lang, `/${data.country.code}`)} title={m.common.settings} />
+
+    <section class="group" aria-label={m.settings.profile}>
+      <button type="button" class="row" data-sheet-open="country-sheet" aria-haspopup="dialog">
+        <img class="flag" src={`/flags/${data.country.code}.svg`} alt="" width="32" height="32" />
+        <span class="label">{m.settings.country}</span>
+        <span class="value">{data.country.name}</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </button>
+      <button type="button" class="row" data-sheet-open="operators-sheet" aria-haspopup="dialog">
+        <span class="icon"><RadioTower size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.myOperators}</span>
+        <span class="value marks">
+          {data.operators.map((o) => <span data-my-operator={o.id}><BrandMark brand={o} size={24} /></span>)}
+        </span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </button>
+    </section>
+
+    <Sheet id="country-sheet" title={m.settings.country}>
+      <ChoiceList name="country" label={m.settings.country} items={countryItems} selected={[data.country.code]} />
+    </Sheet>
+
+    <Sheet id="operators-sheet" title={m.settings.myOperators}>
+      <ChoiceList name="operators" label={m.settings.myOperators} items={operatorItems} selected={data.operators.map((o) => o.id)} multiple />
+      <button type="button" class="save" slot="footer" data-save-operators>{m.settings.save}</button>
+    </Sheet>
+
+    <section class="group" aria-label={m.settings.display}>
+      <div class="row">
+        <span class="icon"><Languages size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.language}</span>
+        <span class="segmented" role="group" aria-label={m.settings.language}>
+          {LANGS.map((l) => <button type="button" data-lang-choice={l} lang={l} aria-pressed={l === lang ? 'true' : 'false'}>{m.languages[l]}</button>)}
+        </span>
+      </div>
+      <div class="row">
+        <span class="icon"><SunMoon size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.theme}</span>
+        <span class="segmented" role="group" aria-label={m.settings.theme}>
+          {THEMES.map((t) => <button type="button" data-theme-choice={t} aria-pressed={t === 'auto' ? 'true' : 'false'}>{m.settings.themes[t]}</button>)}
+        </span>
+      </div>
+      <div class="row">
+        <span class="icon"><CloudCheck size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.offline}</span>
+        <span class="value" role="status" aria-live="polite" data-offline-status>…</span>
+      </div>
+      <button type="button" class="row" data-install hidden>
+        <span class="icon"><Download size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.install}</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </button>
+      <div class="row" data-install-ios hidden>
+        <span class="icon"><Share size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.installIos}</span>
+      </div>
+    </section>
+
+    <section class="group" aria-label={m.settings.help}>
+      <a class="row" href={localePath(lang, `/${data.country.code}/${first.id}/aide`)} data-operator-href={localePath(lang, `/${data.country.code}/{op}/aide`)}>
+        <span class="icon"><LifeBuoy size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.helpRow}</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </a>
+      <button type="button" class="row" data-clear-recipients hidden>
+        <span class="icon"><Eraser size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.clearRecent}</span>
+        <span class="value" role="status" aria-live="polite" data-clear-status></span>
+      </button>
+      <div class="row">
+        <span class="icon"><Info size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.openData}</span>
+      </div>
+    </section>
+  </main>
+
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="reglages" />
+</AppLayout>
+
+<script>
+  import { startSettings } from '../scripts/settings';
+
+  startSettings();
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .group {
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  .row {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    min-height: 56px;
+    padding: var(--space-2) var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .row[hidden] {
+    display: none;
+  }
+
+  .row + .row {
+    box-shadow: 0 -1px 0 var(--tag-bg);
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: var(--icon-bg);
+    color: var(--icon-fg);
+  }
+
+  .flag {
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .label {
+    flex: 1;
+    min-width: 0;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .value {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .marks {
+    display: flex;
+    gap: 4px;
+  }
+
+  .marks [hidden] {
+    display: none;
+  }
+
+  .row :global(.chevron) {
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+
+  .segmented {
+    display: flex;
+    padding: 3px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+  }
+
+  .segmented button {
+    height: 32px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--tag-text);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .segmented button[aria-pressed='true'] {
+    background: var(--action);
+    color: var(--on-action);
+  }
+
+  .save {
+    width: 100%;
+    height: 52px;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--action);
+    color: var(--on-action);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+</style>

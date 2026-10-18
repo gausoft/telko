@@ -1,4 +1,9 @@
 ---
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
+
+const m = messages(pageLang(Astro.url));
+
 /**
  * Records each dialed code as a habit (its id only). On devices with a fine pointer (usually
  * computers) it also shows the code, since the tel: link may open nothing.
@@ -7,12 +12,13 @@
 ---
 
 <div class="toast" role="status" aria-live="polite" data-dial-toast hidden>
-  <span class="hint">Sur ordinateur, tapez ce code sur votre téléphone</span>
+  <span class="hint">{m.toast.hint}</span>
   <span class="code mono" data-dial-code></span>
 </div>
 
 <script>
   import { recordUse } from '../db/usage-store';
+  import { countryFromPath } from '../i18n/paths';
 
   const toast = document.querySelector<HTMLElement>('[data-dial-toast]');
   const code = document.querySelector<HTMLElement>('[data-dial-code]');
@@ -24,7 +30,7 @@
 
     const dial = link.dataset['dial'] ?? '';
     const entryId = link.dataset['entry'];
-    const country = window.location.pathname.split('/')[1] ?? '';
+    const country = countryFromPath(window.location.pathname);
     if (entryId) void recordUse({ entryId, country, operator: link.dataset['operator'] ?? '' }).catch(() => undefined);
 
     if (!window.matchMedia('(pointer: fine)').matches || !toast || !code) return;

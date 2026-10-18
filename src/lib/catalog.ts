@@ -20,7 +20,7 @@ import {
   type FeaturedFile,
   type Operator,
 } from './schema';
-import type { Section } from './sections';
+import { durationOf, type Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
@@ -82,6 +82,7 @@ function loadEntries(path: string, raw: unknown, operator: string, fileName: str
     return {
       ...e,
       provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, now) },
+      duration: durationOf(e.validity?.days ?? null, e.validity?.label ?? '', e.time_window !== null),
       country,
       operator,
       category: file.category,
@@ -97,7 +98,7 @@ function loadEditorial(files: Record<string, unknown>, root: string, entries: Ca
   const find = entryFinder(path, entries);
 
   return {
-    featured: file.items.map((item) => ({ label: item.label, entry: find(item.entry_id) })),
+    featured: file.items.map((item) => ({ label: item.label, en: item.en, entry: find(item.entry_id) })),
     shortcuts: file.shortcuts.map((item) => toShortcut(path, item, find(item.entry_id), operators)),
   };
 }
@@ -119,7 +120,7 @@ function toShortcut(path: string, item: FeaturedFile['shortcuts'][number], entry
   const brand = item.brand === 'mobile_money' ? operator?.mobile_money : operator;
   if (!brand) throw new Error(`${path}: no ${item.brand} brand for "${item.entry_id}"`);
 
-  return { label: item.label, brand, entry };
+  return { label: item.label, en: item.en, brand, entry };
 }
 
 function parse<T>(files: Record<string, unknown>, path: string, schema: ZodType<T>): T {

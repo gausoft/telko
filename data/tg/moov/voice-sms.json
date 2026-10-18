@@ -15,7 +15,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 Jour"
+        "label": "1 Jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -42,7 +45,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La page détaillée l'appelle par erreur « Volume Méga 11 Min »."
+      "notes": "La page détaillée l'appelle par erreur « Volume Méga 11 Min ».",
+      "en": {
+        "name": "F 150 V",
+        "description": "11 min of calls, valid 1 day.",
+        "notes": "The detail page calls it \"Volume Méga 11 Min\" by mistake."
+      }
     },
     {
       "id": "moov-voice-sms-f250-v",
@@ -57,7 +65,10 @@
       },
       "validity": {
         "days": 2,
-        "label": "2 Jours"
+        "label": "2 Jours",
+        "en": {
+          "label": "2 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -84,7 +95,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 250 V",
+        "description": "20 min of calls, valid 2 days."
+      }
     },
     {
       "id": "moov-voice-sms-f450-v",
@@ -99,7 +114,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 Jours"
+        "label": "3 Jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -126,7 +144,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "La promotion du 13 au 18/10/2026 donnait 45 min au lieu de 36 : valeur de base du catalogue retenue."
+      "notes": "La promotion du 13 au 18/10/2026 donnait 45 min au lieu de 36 : valeur de base du catalogue retenue.",
+      "en": {
+        "name": "F 450 V",
+        "description": "36 min of calls, valid 3 days.",
+        "notes": "The 13 to 18/10/2026 promotion gave 45 min instead of 36: the catalogue's base value is used."
+      }
     },
     {
       "id": "moov-voice-sms-f600-v",
@@ -141,7 +164,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 Jours"
+        "label": "3 Jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -168,7 +194,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 600 V",
+        "description": "50 min of calls, valid 3 days."
+      }
     },
     {
       "id": "moov-voice-sms-f900-v",
@@ -183,7 +213,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 Jours"
+        "label": "7 Jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -210,7 +243,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 900 V",
+        "description": "75 min of calls, valid 7 days."
+      }
     },
     {
       "id": "moov-voice-sms-f1400-v",
@@ -225,7 +262,10 @@
       },
       "validity": {
         "days": 10,
-        "label": "10 Jours"
+        "label": "10 Jours",
+        "en": {
+          "label": "10 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -252,7 +292,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 1400 V",
+        "description": "120 min of calls, valid 10 days."
+      }
     },
     {
       "id": "moov-voice-sms-f2500-v",
@@ -267,7 +311,10 @@
       },
       "validity": {
         "days": 15,
-        "label": "15 Jours"
+        "label": "15 Jours",
+        "en": {
+          "label": "15 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -294,7 +341,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 2500 V",
+        "description": "220 min of calls, valid 15 days."
+      }
     },
     {
       "id": "moov-voice-sms-f5000-v",
@@ -309,7 +360,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 Jours"
+        "label": "30 Jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -336,7 +390,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "F 5000 V",
+        "description": "450 min of calls, valid 30 days."
+      }
     },
     {
       "id": "moov-voice-sms-f7000-v",
@@ -351,7 +409,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 Jours"
+        "label": "30 Jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -383,7 +444,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Même code que la version Corporate, qui donne 680 min + 10 min."
+      "notes": "Même code que la version Corporate, qui donne 680 min + 10 min.",
+      "en": {
+        "name": "F 7000 V",
+        "description": "660 min of calls, valid 30 days.",
+        "notes": "Same code as the Corporate version, which gives 680 min + 10 min."
+      }
     },
     {
       "id": "moov-voice-sms-f9500-v",
@@ -398,7 +464,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 Jours"
+        "label": "30 Jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -430,7 +499,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Même code que la version Corporate (930 min aussi)."
+      "notes": "Même code que la version Corporate (930 min aussi).",
+      "en": {
+        "name": "F 9500 V",
+        "description": "930 min of calls, valid 30 days.",
+        "notes": "Same code as the Corporate version (930 min too)."
+      }
     },
     {
       "id": "moov-voice-sms-forfait-sms",
@@ -445,7 +519,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 jour"
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -472,7 +549,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Vérifier : *555*1*3#."
+      "notes": "Vérifier : *555*1*3#.",
+      "en": {
+        "name": "SMS bundle",
+        "description": "50 SMS, valid 1 day.",
+        "notes": "Check: *555*1*3#."
+      }
     },
     {
       "id": "moov-voice-sms-solde-sms",
@@ -510,7 +592,11 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": null
+      "notes": null,
+      "en": {
+        "name": "SMS balance",
+        "description": "Check how many SMS you have left."
+      }
     }
   ]
 }

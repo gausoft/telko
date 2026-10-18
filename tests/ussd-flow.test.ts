@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
+import { en } from '../src/i18n/en';
+import { fr } from '../src/i18n/fr';
 import { loadCatalog } from '../src/lib/catalog';
+import type { ShortLabels } from '../src/lib/ussd-flow-types';
 import { buildCode, codeTokens, dialTokens, normalizePhone, planSteps, validateStep } from '../src/lib/ussd-flow';
+
+const SHORTS: ShortLabels = fr.client.flow.shorts;
 
 const togo = { dialCode: '228', nationalLength: 8, homeDialCode: '228' };
 const entries = [...loadCatalog().byCountry.values()].flatMap((c) => c.entries).filter((e) => e.ussd.params.length > 0);
@@ -18,12 +23,12 @@ describe('ussd flow on every real code', () => {
   });
 
   it('never asks for a secret code', () => {
-    for (const e of entries) expect(planSteps(e.ussd).every((s) => s.type !== 'pin')).toBe(true);
+    for (const e of entries) expect(planSteps(e.ussd, SHORTS).every((s) => s.type !== 'pin')).toBe(true);
   });
 
   it('never puts a secret placeholder in the prepared code', () => {
     for (const e of entries) {
-      const values = Object.fromEntries(planSteps(e.ussd).map((s) => [s.name, '1']));
+      const values = Object.fromEntries(planSteps(e.ussd, SHORTS).map((s) => [s.name, '1']));
       const built = buildCode(e.ussd, values);
       const secrets = e.ussd.params.filter((p) => p.type === 'pin').map((p) => p.name);
 
@@ -36,7 +41,7 @@ describe('ussd flow on every real code', () => {
 
       const withSecret = { ...values, ...Object.fromEntries(secrets.map((n) => [n, '987654'])) };
       expect(buildCode(e.ussd, withSecret).code).not.toContain('987654');
-      expect(dialTokens(e.ussd, withSecret).some((t) => t.kind === 'slot' && t.value === '987654')).toBe(false);
+      expect(dialTokens(e.ussd, SHORTS, withSecret).some((t) => t.kind === 'slot' && t.value === '987654')).toBe(false);
     }
   });
 });
@@ -45,14 +50,14 @@ describe('planSteps and buildCode', () => {
   it('stops a Moov Money transfer before the secret code and closes it with #', () => {
     const ussd = byId('moov-mobile-money-transfert-national');
 
-    expect(planSteps(ussd).map((s) => s.name)).toEqual(['phone', 'amount']);
+    expect(planSteps(ussd, SHORTS).map((s) => s.name)).toEqual(['phone', 'amount']);
     expect(buildCode(ussd, { phone: '90000000', amount: '500' })).toEqual({ code: '*155*1*1*90000000*500#', needsSecret: true, complete: true });
   });
 
   it('asks a repeated box once and fills it twice', () => {
     const ussd = byId('moov-bills-canal-plus-nouvelle-carte');
 
-    expect(planSteps(ussd).map((s) => s.name)).toEqual(['card_number']);
+    expect(planSteps(ussd, SHORTS).map((s) => s.name)).toEqual(['card_number']);
     expect(buildCode(ussd, { card_number: '123' }).code).toBe('*155*4*8*3*2*123*123#');
   });
 
@@ -61,7 +66,7 @@ describe('planSteps and buildCode', () => {
   });
 
   it('shows the dialed code without the secret box', () => {
-    const tokens = dialTokens(byId('moov-mobile-money-transfert-national'), { phone: '90000000', amount: '500' });
+    const tokens = dialTokens(byId('moov-mobile-money-transfert-national'), SHORTS, { phone: '90000000', amount: '500' });
     const text = tokens.map((t) => (t.kind === 'text' ? t.text : t.value)).join('');
 
     expect(text).toBe('*155*1*1*90000000*500#');
@@ -71,10 +76,12 @@ describe('planSteps and buildCode', () => {
     expect(buildCode(byId('moov-general-moov-bip'), {}).complete).toBe(false);
   });
 
-  it('shows short labels in the one-line code', () => {
-    const shorts = codeTokens(byId('moov-mobile-money-transfert-national')).flatMap((t) => (t.kind === 'slot' ? [t.short] : []));
+  it('shows short labels in the one-line code, in the page language', () => {
+    const shortsIn = (labels: ShortLabels): string[] =>
+      codeTokens(byId('moov-mobile-money-transfert-national'), labels).flatMap((t) => (t.kind === 'slot' ? [t.short] : []));
 
-    expect(shorts).toEqual(['Numéro', 'Montant', 'Code']);
+    expect(shortsIn(SHORTS)).toEqual(['Numéro', 'Montant', 'Code']);
+    expect(shortsIn(en.client.flow.shorts)).toEqual(['Number', 'Amount', 'PIN']);
   });
 });
 
@@ -94,16 +101,16 @@ describe('inputs', () => {
   });
 
   it('checks amounts and text', () => {
-    const [, amount] = planSteps(byId('moov-mobile-money-transfert-national'));
+    const [, amount] = planSteps(byId('moov-mobile-money-transfert-national'), SHORTS);
     if (!amount) throw new Error('missing amount step');
 
     expect(validateStep(amount, '5 000', togo)).toEqual({ ok: true, value: '5000' });
     expect(validateStep(amount, '5.000', togo)).toEqual({ ok: true, value: '5000' });
     for (const bad of ['500.50', '-500', '500#1000', '5,5', '1e3', '50 00']) expect(validateStep(amount, bad, togo).ok).toBe(false);
     expect(validateStep(amount, '0', togo).ok).toBe(false);
-    expect(validateStep({ ...amount, min: 100 }, '50', togo).ok).toBe(false);
+    expect(validateStep({ ...amount, min: 100 }, '50', togo)).toEqual({ ok: false, error: { code: 'amount-min', n: 100 } });
 
-    const [year] = planSteps(byId('moov-bills-universite-lome-nouveau'));
+    const [year] = planSteps(byId('moov-bills-universite-lome-nouveau'), SHORTS);
     if (!year) throw new Error('missing year step');
     expect(validateStep(year, '2024', togo).ok).toBe(true);
     expect(validateStep(year, '24', togo).ok).toBe(false);

@@ -1,18 +1,22 @@
 ---
 import X from '@lucide/astro/icons/x';
 
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
+
 interface Props {
   id: string;
   title: string;
 }
 
 const { id, title } = Astro.props;
+const m = messages(pageLang(Astro.url));
 ---
 
 <dialog class="sheet" id={id} aria-labelledby={`${id}-title`} data-sheet>
   <div class="head">
     <h2 id={`${id}-title`} tabindex="-1" autofocus>{title}</h2>
-    <button type="button" class="close" data-sheet-close aria-label="Fermer">
+    <button type="button" class="close" data-sheet-close aria-label={m.common.close}>
       <X size={20} aria-hidden="true" />
     </button>
   </div>

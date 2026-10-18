@@ -56,4 +56,8 @@ Use [Conventional Commits](https://www.conventionalcommits.org/) in English: `fe
 
 ## Language
 
-Code, documentation and commit messages are in English. Offer names, descriptions and page copy are in French, as users read them.
+Code, documentation and commit messages are in English. The app is in French and English.
+
+- **Data**: French is the source text. Any object with French text also carries an `en` block with the same keys, translated (see [the schema](docs/data-schema.md#translations)). If you do not speak English, add the French only: the page shows French until someone translates it, and `npm test` lists what is missing.
+- **Interface**: texts live in `src/i18n/fr.ts` and `src/i18n/en.ts`. Add a key to both; the tests check that keys and `{placeholders}` match.
+- Product names (Net599, iZi'Moon) stay as they are. Prices stay in francs written `5 000 F` in both languages.

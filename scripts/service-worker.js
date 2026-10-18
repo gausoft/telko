@@ -83,7 +83,9 @@ async function serveSavedPageThenRevalidate(event, url) {
     return cached;
   }
 
-  return (await refresh) ?? (await savedCountryHome()) ?? offlinePage();
+  const lang = isEnglish(url.pathname) ? 'en' : 'fr';
+
+  return (await refresh) ?? (await savedCountryHome(lang)) ?? offlinePage(lang);
 }
 
 /**
@@ -117,19 +119,34 @@ function save(event, cacheName, key, response) {
   );
 }
 
-/** A page never saved, offline: show the saved home of the visitor's country rather than an error. */
-async function savedCountryHome() {
+/** @param {string} path */
+function isEnglish(path) {
+  return path === '/en' || path.startsWith('/en/');
+}
+
+/**
+ * A page never saved, offline: show the saved home of the visitor's country rather than an error,
+ * in the page's language when it is saved ("/tg" or "/en/tg"), otherwise the one the device kept.
+ * @param {'fr' | 'en'} lang
+ */
+async function savedCountryHome(lang) {
   const cache = await caches.open(PAGES_CACHE);
-  const home = (await cache.keys()).find((request) => /^\/[a-z]{2}$/.test(new URL(request.url).pathname));
+  const homes = (await cache.keys()).filter((request) => /^(\/en)?\/[a-z]{2}$/.test(new URL(request.url).pathname) && new URL(request.url).pathname !== '/en');
+  const home = homes.find((request) => isEnglish(new URL(request.url).pathname) === (lang === 'en')) ?? homes[0];
 
   return home ? cache.match(home) : undefined;
 }
 
-function offlinePage() {
+/** @param {'fr' | 'en'} lang */
+function offlinePage(lang) {
+  const text =
+    lang === 'en'
+      ? { message: 'This page is not available offline yet.', back: 'Back to Telko' }
+      : { message: 'Cette page n’est pas encore disponible hors connexion.', back: 'Revenir à Telko' };
   const html =
-    '<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+    `<!doctype html><html lang="${lang}"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">` +
     '<title>Telko</title><body style="font-family:system-ui;padding:24px;background:#F5F5FA;color:#12111F">' +
-    '<p>Cette page n’est pas encore disponible hors connexion.</p><p><a href="/" style="color:#4B3BFF">Revenir à Telko</a></p>';
+    `<p>${text.message}</p><p><a href="/" style="color:#4B3BFF">${text.back}</a></p>`;
 
   return new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 }

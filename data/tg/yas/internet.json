@@ -15,7 +15,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "24 h"
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -46,7 +49,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net100",
+        "description": "45 MB, valid 24 h.",
+        "notes": "Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net199",
@@ -61,7 +69,10 @@
       },
       "validity": {
         "days": null,
-        "label": "Nuit (22h00-6h00)"
+        "label": "Nuit (22h00-6h00)",
+        "en": {
+          "label": "Night (10 pm - 6 am)"
+        }
       },
       "time_window": {
         "from": "22:00",
@@ -100,7 +111,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Autre code publié : *909*199#. GitHub donne *909*218# (aujourd'hui Net1499)."
+      "notes": "Autre code publié : *909*199#. GitHub donne *909*218# (aujourd'hui Net1499).",
+      "en": {
+        "name": "Net199",
+        "description": "1 GB at night, from 10 pm to 6 am.",
+        "notes": "Another published code: *909*199#. GitHub gives *909*218# (now Net1499)."
+      }
     },
     {
       "id": "yas-internet-net200",
@@ -115,7 +131,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 jour"
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -146,7 +165,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Option +150 Mo pour 50 F proposée pendant l'achat. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Option +150 Mo pour 50 F proposée pendant l'achat. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net200",
+        "description": "100 MB, valid 1 day.",
+        "notes": "Option of +150 MB for 50 F offered during purchase. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net250-alez",
@@ -161,7 +185,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "1 jour"
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -202,7 +229,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Option +125 Mo pour 100 F. GitHub (ancien) : 2 jours, et une version 375 Mo / 350 F / *909*350# non officielle aujourd'hui."
+      "notes": "Option +125 Mo pour 100 F. GitHub (ancien) : 2 jours, et une version 375 Mo / 350 F / *909*350# non officielle aujourd'hui.",
+      "en": {
+        "name": "NET250 Alèz",
+        "description": "250 MB, valid 1 day.",
+        "notes": "Option of +125 MB for 100 F. GitHub (old): 2 days, and a 375 MB / 350 F / *909*350# version that is not official today."
+      }
     },
     {
       "id": "yas-internet-net350",
@@ -217,7 +249,10 @@
       },
       "validity": {
         "days": 2,
-        "label": "2 jours"
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -247,7 +282,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net350",
+        "description": "280 MB, valid 2 days.",
+        "notes": "Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net500-nuit",
@@ -262,7 +302,10 @@
       },
       "validity": {
         "days": null,
-        "label": "Nuit (22h00-6h00)"
+        "label": "Nuit (22h00-6h00)",
+        "en": {
+          "label": "Night (10 pm - 6 am)"
+        }
       },
       "time_window": {
         "from": "22:00",
@@ -296,7 +339,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aussi appelé « NET Nuit »."
+      "notes": "Aussi appelé « NET Nuit ».",
+      "en": {
+        "name": "Net500 (night)",
+        "description": "3 GB at night, from 10 pm to 6 am.",
+        "notes": "Also called \"NET Nuit\"."
+      }
     },
     {
       "id": "yas-internet-net599",
@@ -311,7 +359,10 @@
       },
       "validity": {
         "days": 1,
-        "label": "24 h"
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -352,7 +403,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Vendu comme « illimité 5Go 24H ». Connexion maintenue après épuisement du volume ; débit après épuisement non publié."
+      "notes": "Vendu comme « illimité 5Go 24H ». Connexion maintenue après épuisement du volume ; débit après épuisement non publié.",
+      "en": {
+        "name": "Net599",
+        "description": "5 GB over 24 h, then you stay connected.",
+        "notes": "Sold as \"unlimited 5GB 24H\". You stay connected once the data is used up; the speed after that is not published."
+      }
     },
     {
       "id": "yas-internet-net600",
@@ -367,7 +423,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 jours"
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -397,7 +456,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Conflit de validité : la page internet dit 2 jours, le catalogue de la boutique (plus récent) dit 3 jours. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Conflit de validité : la page internet dit 2 jours, le catalogue de la boutique (plus récent) dit 3 jours. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net600",
+        "description": "700 MB, valid 3 days.",
+        "notes": "Validity conflict: the data page says 2 days, the shop catalogue (more recent) says 3 days. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net1499",
@@ -412,7 +476,10 @@
       },
       "validity": {
         "days": 3,
-        "label": "3 jours"
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -447,7 +514,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le catalogue de la boutique le classe « spécial » et non-stop, ce que la page ne dit pas. GitHub donne *909*242#."
+      "notes": "Le catalogue de la boutique le classe « spécial » et non-stop, ce que la page ne dit pas. GitHub donne *909*242#.",
+      "en": {
+        "name": "Net1499",
+        "description": "5 GB, valid 3 days.",
+        "notes": "The shop catalogue lists it as \"special\" and non-stop, which the page does not say. GitHub gives *909*242#."
+      }
     },
     {
       "id": "yas-internet-net1000",
@@ -462,7 +534,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -493,7 +568,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 10 jours."
+      "notes": "Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net1000",
+        "description": "1.5 GB, valid 7 days.",
+        "notes": "Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net1500",
@@ -508,7 +588,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -544,7 +627,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "GitHub (ancien) indique 1,6 Go. Report du volume restant si renouvelé sous 10 jours."
+      "notes": "GitHub (ancien) indique 1,6 Go. Report du volume restant si renouvelé sous 10 jours.",
+      "en": {
+        "name": "Net1500",
+        "description": "2.5 GB, valid 7 days.",
+        "notes": "GitHub (old) says 1.6 GB. Remaining data carries over if you renew within 10 days."
+      }
     },
     {
       "id": "yas-internet-net3999",
@@ -559,7 +647,10 @@
       },
       "validity": {
         "days": 7,
-        "label": "7 jours"
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -600,7 +691,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Aussi appelé « NET_illimité_7J ». La page promo « weekly-illimite » annonce 4 900 F pour le même code ; la page internet et la boutique disent 3 999 F. Connexion maintenue après épuisement du volume ; débit après épuisement non publié."
+      "notes": "Aussi appelé « NET_illimité_7J ». La page promo « weekly-illimite » annonce 4 900 F pour le même code ; la page internet et la boutique disent 3 999 F. Connexion maintenue après épuisement du volume ; débit après épuisement non publié.",
+      "en": {
+        "name": "Net3999",
+        "description": "15 GB over 7 days, then you stay connected.",
+        "notes": "Also called \"NET_illimité_7J\". The \"weekly-illimite\" promotion page announces 4,900 F for the same code; the data page and the shop say 3,999 F. You stay connected once the data is used up; the speed after that is not published."
+      }
     },
     {
       "id": "yas-internet-net2500",
@@ -615,7 +711,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -646,7 +745,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Net2500",
+        "description": "2 GB, valid 30 days.",
+        "notes": "Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-internet-net3000",
@@ -661,7 +765,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -692,7 +799,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Net3000",
+        "description": "3 GB, valid 30 days.",
+        "notes": "Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-internet-net5000",
@@ -707,7 +819,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -743,7 +858,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "GitHub (ancien) indique 6 Go. Report du volume restant si renouvelé sous 30 jours."
+      "notes": "GitHub (ancien) indique 6 Go. Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Net5000",
+        "description": "8 GB, valid 30 days.",
+        "notes": "GitHub (old) says 6 GB. Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-internet-net10000",
@@ -758,7 +878,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -789,7 +912,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Net10000",
+        "description": "20 GB, valid 30 days.",
+        "notes": "Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-internet-air-fiber",
@@ -804,7 +932,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -836,7 +967,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Air Fiber",
+        "description": "60 GB, valid 30 days.",
+        "notes": "Remaining data carries over if you renew within 30 days."
+      }
     },
     {
       "id": "yas-internet-air-fiber-plus",
@@ -851,7 +987,10 @@
       },
       "validity": {
         "days": 30,
-        "label": "30 jours"
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
       },
       "time_window": null,
       "ussd": {
@@ -883,7 +1022,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Report du volume restant si renouvelé sous 30 jours."
+      "notes": "Report du volume restant si renouvelé sous 30 jours.",
+      "en": {
+        "name": "Air Fiber+",
+        "description": "110 GB, valid 30 days.",
+        "notes": "Remaining data carries over if you renew within 30 days."
+      }
     }
   ]
 }

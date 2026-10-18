@@ -115,8 +115,8 @@ Allowed categories: `general`, `internet`, `mixed`, `voice-sms`, `weekend`, `roa
 |---|---|---|
 | `id` | string | `<operator>-<category>-<slug>`, unique, never reused |
 | `kind` | `bundle` \| `service` | A bundle has a price and allowances; a service is an action (balance, transfer, bill payment) |
-| `name` | string | Exact commercial name, in French as the operator writes it |
-| `description` | string | One short sentence in French |
+| `name` | string | Exact commercial name, as the operator writes it |
+| `description` | string | One short sentence in French, the source language |
 | `price_xof` | integer \| null | Price in CFA francs. `null` for free or variable services |
 | `allowances` | object \| null | `data_mb`, `voice_min`, `sms` as integers, or `null`. `-1` means unlimited |
 | `validity` | object \| null | `days` (integer, or `null` for validities under a day) and `label` as written by the operator (e.g. "24 h") |
@@ -125,9 +125,10 @@ Allowed categories: `general`, `internet`, `mixed`, `voice-sms`, `weekend`, `roa
 | `ussd.params` | array | See below. Empty for fixed codes |
 | `payment_methods` | array | `airtime`, `mixx`, `flooz` |
 | `third_party` | object \| null | Same shape as `ussd`, when the bundle can be bought for someone else |
-| `tags` | array of strings | Free tags in French, used for search |
+| `tags` | array of strings | Free tags in French, used for search in both languages |
 | `provenance` | object | See below. Required |
 | `notes` | string \| null | Known caveats, in French |
+| `en` | object | English text: `name`, `description`, `notes`. See [Translations](#translations) |
 
 ## Parameters
 
@@ -148,6 +149,30 @@ The code assistant builds its screens from these fields alone, so a new code nee
 | `options` | `choice` | `[{ "value": "1", "label": "…" }]` |
 
 The assistant asks each box once, in code order. A box used twice (a confirmation) is filled twice.
+
+## Translations
+
+French is the source language. Any object that holds French text may carry an `en` object with the same keys, translated:
+
+| Where | `en` keys |
+|---|---|
+| Entry | `name`, `description`, `notes` |
+| `validity` | `label` |
+| Parameter | `label`, `short`; each option: `label` (never `value`) |
+| Fee line | `label`, `notes` |
+| Featured item, shortcut | `label` |
+| Operator | `notes` |
+| Country | `name` |
+
+```json
+{ "name": "Net599", "description": "5 Go valables 24 h.", "en": { "name": "Net599", "description": "5 GB, valid 24 h." } }
+```
+
+- Each key is optional: a missing one shows the French text. Unknown keys are refused, so a typo never hides a translation.
+- `npm test` lists every French text without its English version; the dataset ships complete.
+- Product names stay as they are (`Net599`). Write volumes as MB and GB; keep prices as `5 000 F`.
+- A fee label written `condition : amount` keeps one colon in English (`From 1 to 500 F: 50 F`): the fee table splits on it.
+- Logic never reads the English text: the period filter of data bundles uses the French `validity.label`.
 
 A `pin` parameter is never asked, stored, shared or prefilled. The assistant dials the code up to the first `pin`, closed with `#` (`*155*1*1*90000000*500#`), and the operator's menu asks for the secret code. A code ending with `*` must never be dialed: phones treat it as a phone call.
 

@@ -40,7 +40,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code PIN se saisit dans le menu. Contact e-mail Mixx : mixxbyyas@yas.tg. Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Le code PIN se saisit dans le menu. Contact e-mail Mixx : mixxbyyas@yas.tg. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mixx by Yas menu",
+        "description": "Main menu of Mixx by Yas mobile money.",
+        "notes": "The PIN is typed in the menu. Mixx email contact: mixxbyyas@yas.tg. Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-mobile-money-transfert-argent",
@@ -77,7 +82,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Bénéficiaire, montant et PIN se saisissent dans le menu ; aucune syntaxe directe publiée. Frais officiels : les 6 premiers transferts de la journée sont gratuits, 1 % à partir du 7e (tarif susceptible de changer)."
+      "notes": "Bénéficiaire, montant et PIN se saisissent dans le menu ; aucune syntaxe directe publiée. Frais officiels : les 6 premiers transferts de la journée sont gratuits, 1 % à partir du 7e (tarif susceptible de changer).",
+      "en": {
+        "name": "Money transfer",
+        "description": "Send money to another Mixx account.",
+        "notes": "Beneficiary, amount and PIN are typed in the menu; no direct syntax is published. Official fees: the first 6 transfers of the day are free, 1% from the 7th (rate subject to change)."
+      }
     },
     {
       "id": "yas-mobile-money-retrait-argent",
@@ -114,7 +124,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Agent, montant et PIN se saisissent dans le menu. Frais : voir la grille de retrait (presse, janvier 2025)."
+      "notes": "Agent, montant et PIN se saisissent dans le menu. Frais : voir la grille de retrait (presse, janvier 2025).",
+      "en": {
+        "name": "Cash withdrawal",
+        "description": "Withdraw cash from an agent or at a Togocom shop.",
+        "notes": "Agent, amount and PIN are typed in the menu. Fees: see the withdrawal table (press, January 2025)."
+      }
     },
     {
       "id": "yas-mobile-money-achat-credit-forfait",
@@ -152,7 +167,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Numéro, forfait et PIN se saisissent dans le menu. Aucun code direct en une étape publié."
+      "notes": "Numéro, forfait et PIN se saisissent dans le menu. Aucun code direct en une étape publié.",
+      "en": {
+        "name": "Buy airtime or a bundle",
+        "description": "Buy airtime or a bundle for yourself or someone close.",
+        "notes": "Number, bundle and PIN are typed in the menu. No one-step direct code is published."
+      }
     },
     {
       "id": "yas-mobile-money-paiement-factures",
@@ -190,7 +210,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bill payment",
+        "description": "Pay for electricity, water or TV.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-mobile-money-paiement-marchand",
@@ -227,7 +252,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code marchand, montant et PIN se saisissent dans le menu."
+      "notes": "Code marchand, montant et PIN se saisissent dans le menu.",
+      "en": {
+        "name": "Merchant payment",
+        "description": "Pay a merchant with Mixx.",
+        "notes": "Merchant code, amount and PIN are typed in the menu."
+      }
     },
     {
       "id": "yas-mobile-money-selfcare-mixx",
@@ -263,7 +293,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur."
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mixx self-care",
+        "description": "Reset your PIN, see the last 3 LAFIA codes, cancel a mistaken transfer.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
     },
     {
       "id": "yas-mobile-money-mixx-vers-banque",
@@ -299,7 +334,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Source secondaire uniquement : *145# puis 6, 1, 2 dans le menu. Frais : 1 %, plafonné à 2M (selon momocalc)."
+      "notes": "Source secondaire uniquement : *145# puis 6, 1, 2 dans le menu. Frais : 1 %, plafonné à 2M (selon momocalc).",
+      "en": {
+        "name": "Pass Mixx (Mixx to bank)",
+        "description": "Send money from Mixx to an Orabank account.",
+        "notes": "Secondary source only: *145# then 6, 1, 2 in the menu. Fees: 1%, capped at 2M (according to momocalc)."
+      }
     },
     {
       "id": "yas-mobile-money-annulation-transfert",
@@ -334,7 +374,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Annonce du compte officiel Yas Togo (19/06/2024). Ensuite : code secret, référence de la transaction, option 1, confirmer (source secondaire). Délai officiel non publié ; la presse de 2021-2022 parle de 6 heures, 2 essais par jour et 2 000 F minimum, non confirmé. Après le délai ou si le bénéficiaire a retiré : service client 888, option 3."
+      "notes": "Annonce du compte officiel Yas Togo (19/06/2024). Ensuite : code secret, référence de la transaction, option 1, confirmer (source secondaire). Délai officiel non publié ; la presse de 2021-2022 parle de 6 heures, 2 essais par jour et 2 000 F minimum, non confirmé. Après le délai ou si le bénéficiaire a retiré : service client 888, option 3.",
+      "en": {
+        "name": "Cancel a Mixx transfer",
+        "description": "Cancel a money transfer sent by mistake.",
+        "notes": "Announced by the official Yas Togo account (19/06/2024). Then: PIN, transaction reference, option 1, confirm (secondary source). Official time limit not published; the 2021-2022 press mentions 6 hours, 2 tries per day and 2,000 F minimum, not confirmed. After the time limit or if the beneficiary has withdrawn the money: customer service 888, option 3."
+      }
     },
     {
       "id": "yas-mobile-money-code-secret-oublie",
@@ -369,7 +414,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Annonce du compte officiel Yas Togo (03/10/2023, sous la marque TMoney) : à revérifier en priorité. Le menu *145*8# propose aussi la réinitialisation du code secret (yas.tg)."
+      "notes": "Annonce du compte officiel Yas Togo (03/10/2023, sous la marque TMoney) : à revérifier en priorité. Le menu *145*8# propose aussi la réinitialisation du code secret (yas.tg).",
+      "en": {
+        "name": "Forgotten Mixx PIN",
+        "description": "Recover or reset your Mixx PIN.",
+        "notes": "Announced by the official Yas Togo account (03/10/2023, under the TMoney brand): to be checked again first. The *145*8# menu also offers to reset the PIN (yas.tg)."
+      }
     }
   ]
 }

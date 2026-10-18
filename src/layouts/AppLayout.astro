@@ -5,6 +5,7 @@ import '@fontsource/ibm-plex-mono/600.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import SeoHead from '../components/SeoHead.astro';
+import { clientMessagesJson } from '../i18n/messages';
 import type { PageSeo } from '../lib/seo-types';
 
 interface Props {
@@ -15,10 +16,12 @@ interface Props {
 }
 
 const { seo, withDock = false, ground } = Astro.props;
+// Browser scripts read their texts here, in the page language only.
+const clientMessages = clientMessagesJson(seo.lang);
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={seo.lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
@@ -43,6 +46,7 @@ const { seo, withDock = false, ground } = Astro.props;
   <body class:list={{ 'has-dock': withDock }} data-ground={ground}>
     <slot />
     <p class="visually-hidden" role="status" aria-live="polite" data-app-status></p>
+    <script is:inline type="application/json" id="i18n-data" set:html={clientMessages} />
     <script>
       import { startPwa } from '../scripts/pwa';
 

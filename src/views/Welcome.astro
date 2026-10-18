@@ -1,0 +1,152 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+import Search from '@lucide/astro/icons/search';
+import Signal from '@lucide/astro/icons/signal';
+import Phone from '@lucide/astro/icons/phone';
+
+import ChoiceList from '../components/ChoiceList.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { appPageSeo } from '../lib/seo';
+import '../styles/onboarding.css';
+import { DEFAULT_COUNTRY } from '../config';
+import { fill } from '../i18n/format-message';
+import { LANGS } from '../i18n/i18n-types';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { loadCatalog } from '../lib/catalog';
+import { localizeCatalog } from '../lib/localize';
+
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const catalog = localizeCatalog(loadCatalog(), lang);
+const live = catalog.byCountry.get(DEFAULT_COUNTRY);
+if (!live) throw new Error(`Default country ${DEFAULT_COUNTRY} has no data`);
+const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
+const countryItems = catalog.countries.map((c) => ({ id: c.code, name: c.name, flag: c.code, soon: c.status !== 'live' }));
+const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+---
+
+<AppLayout seo={appPageSeo(m.onboarding.title, '/bienvenue', lang)} ground="brand">
+  <main class="onboarding" data-onboarding data-default-country={DEFAULT_COUNTRY}>
+    <section class="step step-welcome" data-step="bienvenue">
+      <div class="lang-switch" role="group" aria-label={m.onboarding.language}>
+        {LANGS.map((l) => <button type="button" data-lang-choice={l} lang={l} aria-pressed={l === lang ? 'true' : 'false'}>{l.toUpperCase()}</button>)}
+      </div>
+      <div class="keypad" aria-hidden="true">
+        {Array.from({ length: 9 }, () => <span />)}
+        <span class="key" />
+      </div>
+      <div class="welcome-text">
+        <span class="wordmark">telk<span class="dot" /></span>
+        <h1 tabindex="-1">{m.common.signature}</h1>
+      </div>
+      <button type="button" class="cta cta-light" data-next>{m.onboarding.start}</button>
+    </section>
+
+    {
+      steps.slice(1).map((step, i) => (
+        <section class="step" data-step={step} hidden>
+          <div class="top">
+            <button type="button" class="icon-btn" data-prev aria-label={m.common.back}>
+              <ArrowLeft size={26} aria-hidden="true" />
+            </button>
+            <a class="skip" href={localePath(lang, `/${DEFAULT_COUNTRY}`)} data-finish>{m.onboarding.skip}</a>
+          </div>
+
+          {step === 'pays' && (
+            <>
+              <h1 tabindex="-1">{m.onboarding.countryTitle}</h1>
+              <div class="scroll">
+                <ChoiceList name="country" label={m.onboarding.countryLabel} items={countryItems} selected={[DEFAULT_COUNTRY]} />
+              </div>
+            </>
+          )}
+
+          {step === 'operateur' && (
+            <>
+              <h1 tabindex="-1">{m.onboarding.operatorsTitle}</h1>
+              <ChoiceList name="operators" label={m.onboarding.operatorsLabel} items={operatorItems} selected={[live.operators[0]?.id ?? '']} multiple />
+            </>
+          )}
+
+          {step === 'pret' && (
+            <>
+              <h1 tabindex="-1">{m.onboarding.readyTitle}</h1>
+              <div class="stack">
+                <div class="feature"><span class="feature-icon"><Search size={26} aria-hidden="true" /></span>{m.onboarding.search}</div>
+                <div class="feature"><span class="feature-icon"><Signal size={26} aria-hidden="true" /></span>{m.onboarding.compare}</div>
+                <div class="feature"><span class="feature-icon feature-call"><Phone size={26} aria-hidden="true" /></span>{m.onboarding.dial}</div>
+              </div>
+            </>
+          )}
+
+          <div class="bottom">
+            <div class="progress" aria-label={fill(m.onboarding.step, { n: i + 2, total: steps.length })}>
+              {steps.map((_, j) => <span class:list={{ on: j === i + 1 }} />)}
+            </div>
+            {step === 'pret' ? (
+              <a class="cta" href={localePath(lang, `/${DEFAULT_COUNTRY}`)} data-finish>{m.onboarding.go}</a>
+            ) : (
+              <button type="button" class="cta" data-next>{m.onboarding.next}</button>
+            )}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</AppLayout>
+
+<script>
+  import { isLang } from '../i18n/detect';
+  import { localePath, pageLang, switchLang } from '../i18n/paths';
+  import { bindChoiceList } from '../scripts/choice-list';
+  import { writePref } from '../scripts/prefs';
+
+  const lang = pageLang(new URL(window.location.href));
+
+  const root = document.querySelector<HTMLElement>('[data-onboarding]');
+  const steps = Array.from(document.querySelectorAll<HTMLElement>('[data-step]'));
+  const START_STEPS: Record<string, number> = { pays: 1, operateur: 2 };
+  let index = START_STEPS[new URLSearchParams(window.location.search).get('etape') ?? ''] ?? 0;
+  let country = root?.dataset['defaultCountry'] ?? 'tg';
+
+  const show = (next: number, moveFocus = true): void => {
+    index = Math.max(0, Math.min(steps.length - 1, next));
+    steps.forEach((s, i) => (s.hidden = i !== index));
+    // Only the welcome step is ultramarine; the status bar follows the page background.
+    if (index === 0) document.body.dataset['ground'] = 'brand';
+    else delete document.body.dataset['ground'];
+    if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+  };
+
+  const countryList = document.querySelector<HTMLElement>('[data-choice-list="country"]');
+  const operatorList = document.querySelector<HTMLElement>('[data-choice-list="operators"]');
+  if (countryList) bindChoiceList(countryList, ([code]) => (country = code ?? country));
+  const operators = operatorList ? bindChoiceList(operatorList) : null;
+
+  document.querySelectorAll<HTMLButtonElement>('[data-next]').forEach((b) => b.addEventListener('click', () => show(index + 1)));
+  document.querySelectorAll<HTMLButtonElement>('[data-prev]').forEach((b) => b.addEventListener('click', () => show(index - 1)));
+  document.querySelectorAll<HTMLAnchorElement>('[data-finish]').forEach((a) =>
+    a.addEventListener('click', () => {
+      writePref('country', country);
+      const chosen = operators?.selected() ?? [];
+      if (chosen[0]) writePref('operator', chosen[0]);
+      writePref('operators', chosen.join(','));
+      writePref('onboarded', '1');
+      writePref('lang', lang);
+      a.href = localePath(lang, `/${country}`);
+    }),
+  );
+
+  // Choosing a language saves it and reopens the welcome screen in that language.
+  document.querySelectorAll<HTMLButtonElement>('[data-lang-choice]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const choice = b.dataset['langChoice'];
+      if (!isLang(choice) || choice === lang) return;
+      writePref('lang', choice);
+      window.location.replace(switchLang(window.location.pathname, choice));
+    }),
+  );
+
+  show(index, index > 0);
+</script>

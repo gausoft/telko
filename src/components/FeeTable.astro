@@ -1,6 +1,8 @@
 ---
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 import type { CatalogFee } from '../lib/catalog-types';
-import { formatXof } from '../lib/format';
+import { feeAmount, feeCondition } from '../lib/fee-text';
 import type { Operator } from '../lib/schema';
 import BrandMark from './BrandMark.astro';
 
@@ -10,16 +12,10 @@ interface Props {
 }
 
 const { fees, operator } = Astro.props;
-const TITLES: Record<string, string> = {
-  withdrawal: 'Retrait',
-  'transfer-national': 'Transfert',
-  'transfer-cross-network': 'Vers un autre opérateur',
-  'transfer-regional': 'Transfert UEMOA',
-  'transfer-bank': 'Vers la banque',
-  deposit: 'Dépôt',
-  receive: 'Réception',
-  other: 'Autres',
-};
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const TITLES: Record<string, string> = m.fees.operations;
+const decimal = lang === 'fr' ? ',' : '.';
 
 const isSecondaryOnly = (fee: CatalogFee): boolean => fee.provenance.sources.every((s) => s.kind === 'secondary');
 
@@ -31,29 +27,6 @@ const groups = Object.keys(TITLES)
     return { title: TITLES[operation] ?? operation, rows, notes, unconfirmed: rows.some(isSecondaryOnly) };
   })
   .filter((g) => g.rows.length > 0);
-
-function amount(fee: CatalogFee): string {
-  if (fee.fee_xof !== null) return fee.fee_xof === 0 ? 'Gratuit' : formatXof(fee.fee_xof);
-  if (fee.fee_percent !== null) return `${String(fee.fee_percent).replace('.', ',')} %`;
-
-  const published = fee.label.split(':')[1]?.trim();
-  if (!published || !/\d/.test(published)) return 'Non publié';
-
-  return published
-    .replace(/(\d)\s(?=\d{3}\b)/g, '$1 ')
-    .replace(/^entre\s+(.+?)\s+(?:à|et)\s+(.+)$/i, '$1 – $2');
-}
-
-const PLAIN_AMOUNT = /^(gratuit|[\d\s .,]+\s?F|entre .+)$/i;
-
-function condition(fee: CatalogFee): string {
-  const cut = fee.label.lastIndexOf(':');
-  if (cut === -1) return fee.label;
-
-  const suffix = fee.label.slice(cut + 1).trim();
-
-  return PLAIN_AMOUNT.test(suffix) ? fee.label.slice(0, cut).trim() : fee.label;
-}
 
 const brand = operator.mobile_money ?? operator;
 ---
@@ -71,25 +44,25 @@ const brand = operator.mobile_money ?? operator;
         <dl>
           {group.rows.map((fee) => (
             <div class="line">
-              <dt>{condition(fee)}</dt>
-              <dd>{amount(fee)}</dd>
+              <dt>{feeCondition(fee)}</dt>
+              <dd>{feeAmount(fee, m.fees, decimal)}</dd>
             </div>
           ))}
         </dl>
         {group.notes.length > 0 && (
           <details class="note">
-            <summary>Détails et sources</summary>
+            <summary>{m.fees.details}</summary>
             <ul>
               {group.notes.map((note) => <li>{note}</li>)}
             </ul>
           </details>
         )}
-        {group.unconfirmed && <p class="warn">Une partie de ces tarifs vient de la presse : à confirmer.</p>}
+        {group.unconfirmed && <p class="warn">{m.fees.unconfirmed}</p>}
       </section>
     ))
   }
 
-  {groups.length === 0 && <p class="empty">Aucun frais publié pour l'instant.</p>}
+  {groups.length === 0 && <p class="empty">{m.fees.empty}</p>}
 </div>
 
 <style>
