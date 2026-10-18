@@ -11,5 +11,6 @@ export const CAROUSEL_INTERVAL_MS = 4000;
 export const STORAGE_KEYS = {
   country: 'telko.country',
   operator: 'telko.operator',
+  operators: 'telko.operators',
   onboarded: 'telko.onboarded',
 } as const;

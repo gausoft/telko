@@ -58,13 +58,13 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
 
           {step === 'operateur' && (
             <>
-              <h1 tabindex="-1">Votre opérateur ?</h1>
-              <div class="stack">
+              <h1 tabindex="-1">Vos opérateurs ?</h1>
+              <div class="stack" role="group" aria-label="Plusieurs choix possibles">
                 {live.operators.map((o, index) => (
                   <button type="button" class="choice choice-wide" data-operator={o.id} aria-pressed={index === 0 ? 'true' : 'false'}>
                     <BrandMark brand={o} size={44} />
                     <span class="choice-name">{o.short_name}</span>
-                    {o.mobile_money && <BrandMark brand={o.mobile_money} size={32} />}
+                    <span class="tick" aria-hidden="true"><Check size={20} /></span>
                   </button>
                 ))}
               </div>
@@ -105,7 +105,9 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
   const steps = Array.from(document.querySelectorAll<HTMLElement>('[data-step]'));
   let index = new URLSearchParams(window.location.search).get('etape') === 'pays' ? 1 : 0;
   let country = root?.dataset['defaultCountry'] ?? 'tg';
-  let operator = document.querySelector<HTMLElement>('[data-operator][aria-pressed="true"]')?.dataset['operator'] ?? '';
+  const operatorButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-operator]'));
+  const chosenOperators = (): string[] =>
+    operatorButtons.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.dataset['operator'] ?? '');
 
   const show = (next: number, moveFocus = true): void => {
     index = Math.max(0, Math.min(steps.length - 1, next));
@@ -113,20 +115,28 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
     if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
   };
 
-  const pick = (attr: 'country' | 'operator', button: HTMLButtonElement): void => {
-    document.querySelectorAll<HTMLButtonElement>(`[data-${attr}]`).forEach((b) => b.setAttribute('aria-pressed', b === button ? 'true' : 'false'));
-    if (attr === 'country') country = button.dataset['country'] ?? country;
-    else operator = button.dataset['operator'] ?? operator;
+  const pickCountry = (button: HTMLButtonElement): void => {
+    document.querySelectorAll<HTMLButtonElement>('[data-country]').forEach((b) => b.setAttribute('aria-pressed', b === button ? 'true' : 'false'));
+    country = button.dataset['country'] ?? country;
+  };
+
+  // Several operators can be chosen (dual SIM), but never zero.
+  const toggleOperator = (button: HTMLButtonElement): void => {
+    const on = button.getAttribute('aria-pressed') === 'true';
+    if (on && chosenOperators().length === 1) return;
+    button.setAttribute('aria-pressed', on ? 'false' : 'true');
   };
 
   document.querySelectorAll<HTMLButtonElement>('[data-next]').forEach((b) => b.addEventListener('click', () => show(index + 1)));
   document.querySelectorAll<HTMLButtonElement>('[data-prev]').forEach((b) => b.addEventListener('click', () => show(index - 1)));
-  document.querySelectorAll<HTMLButtonElement>('[data-country]').forEach((b) => b.addEventListener('click', () => pick('country', b)));
-  document.querySelectorAll<HTMLButtonElement>('[data-operator]').forEach((b) => b.addEventListener('click', () => pick('operator', b)));
+  document.querySelectorAll<HTMLButtonElement>('[data-country]').forEach((b) => b.addEventListener('click', () => pickCountry(b)));
+  operatorButtons.forEach((b) => b.addEventListener('click', () => toggleOperator(b)));
   document.querySelectorAll<HTMLAnchorElement>('[data-finish]').forEach((a) =>
     a.addEventListener('click', () => {
       writePref('country', country);
-      if (operator) writePref('operator', operator);
+      const operators = chosenOperators();
+      if (operators[0]) writePref('operator', operators[0]);
+      writePref('operators', operators.join(','));
       writePref('onboarded', '1');
       a.href = `/${country}`;
     }),

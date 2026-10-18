@@ -241,6 +241,22 @@
   font-size: 26px;
 }
 
+.onboarding .tick {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: var(--tag-bg);
+  color: transparent;
+}
+
+.onboarding .choice[aria-pressed='true'] .tick {
+  background: var(--on-action);
+  color: var(--action);
+}
+
 .onboarding .choice-text {
   display: flex;
   flex-direction: column;
