@@ -48,7 +48,8 @@ const slides = items.map((item) => {
             data-label={`${s.title}, ${s.meta}`}
             data-operator={s.operator}
             data-slide={i}
-            hidden={i !== 0}
+            aria-hidden={i === 0 ? undefined : 'true'}
+            tabindex={i === 0 ? undefined : -1}
             aria-label={fill(m.home.slideAria, { label: s.label, title: s.title, meta: s.meta, code: s.code })}
           >
             <span class="text">
@@ -77,37 +78,9 @@ const slides = items.map((item) => {
 }
 
 <script>
-  function setup(root: HTMLElement): void {
-    const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-slide]'));
-    const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-dot]'));
-    const interval = Number(root.dataset['interval'] ?? 4000);
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let index = 0;
-    let paused = false;
+  import { startCarousel } from '../scripts/carousel';
 
-    const show = (next: number): void => {
-      index = (next + slides.length) % slides.length;
-      slides.forEach((s, i) => (s.hidden = i !== index));
-      dots.forEach((d, i) => d.setAttribute('aria-current', i === index ? 'true' : 'false'));
-    };
-
-    dots.forEach((d, i) => d.addEventListener('click', () => {
-      paused = true;
-      show(i);
-    }));
-    root.addEventListener('pointerdown', () => (paused = true));
-    root.addEventListener('focusin', () => (paused = true));
-    root.addEventListener('pointerenter', (e) => {
-      if (e.pointerType === 'mouse') paused = true;
-    });
-
-    if (reduced || slides.length < 2) return;
-    window.setInterval(() => {
-      if (!paused && root.offsetParent !== null && !document.hidden) show(index + 1);
-    }, interval);
-  }
-
-  document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(setup);
+  document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(startCarousel);
 </script>
 
 <style>
@@ -117,7 +90,24 @@ const slides = items.map((item) => {
     gap: var(--space-2);
   }
 
+  /* One card at a time; it follows the finger and settles on the nearest card. */
+  .track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    gap: var(--space-4);
+  }
+
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+
   .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,7 +117,6 @@ const slides = items.map((item) => {
     border-radius: var(--radius-lg);
     background: var(--action);
     color: var(--on-action);
-    box-shadow: var(--shadow-hero);
     text-decoration: none;
   }
 
@@ -185,12 +174,12 @@ const slides = items.map((item) => {
     display: flex;
     justify-content: center;
     gap: 0;
-    margin: calc(var(--space-2) * -1) 0;
+    margin: calc(var(--space-1) * -1) 0;
   }
 
   .dot {
-    width: 44px;
-    height: 44px;
+    min-width: 24px;
+    height: 32px;
     border: 0;
     padding: 0;
     background: transparent;
@@ -205,7 +194,9 @@ const slides = items.map((item) => {
     height: 8px;
     border-radius: var(--radius-pill);
     background: var(--dot);
-    transition: width 0.2s ease;
+    transition:
+      width 0.25s ease,
+      background 0.25s ease;
   }
 
   .dot[aria-current='true']::after {

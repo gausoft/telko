@@ -31,6 +31,18 @@ const m = messages(pageLang(Astro.url));
       ))
     }
     <span class="visually-hidden">{m.common.changeOperator}</span>
+    {
+      !hrefTemplate && (
+        <script is:inline>
+          // Before paint: the chip shows the saved operator, not the first one.
+          try {
+            const op = localStorage.getItem('telko.operator');
+            const faces = document.currentScript.parentElement.querySelectorAll('[data-face]');
+            if (op && Array.from(faces).some((f) => f.dataset.face === op)) faces.forEach((f) => (f.hidden = f.dataset.face !== op));
+          } catch {}
+        </script>
+      )
+    }
     <ChevronDown size={16} aria-hidden="true" />
   </button>
 

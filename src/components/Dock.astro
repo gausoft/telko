@@ -53,6 +53,23 @@ const [home, internet, money, settings] = items;
       </a>
     ))
   }
+  {
+    !pinned && (
+      <script is:inline>
+        // Before paint: links and the mobile money label follow the saved operator.
+        try {
+          const dock = document.currentScript.parentElement;
+          const op = localStorage.getItem('telko.operator');
+          const labels = JSON.parse(dock.dataset.moneyLabels || '{}');
+          if (op && op in labels) {
+            dock.querySelectorAll('[data-operator-href]').forEach((a) => (a.href = a.dataset.operatorHref.replace('{op}', op)));
+            const label = dock.querySelector('[data-money-label]');
+            if (label) label.textContent = labels[op];
+          }
+        } catch {}
+      </script>
+    )
+  }
 </nav>
 
 <script>

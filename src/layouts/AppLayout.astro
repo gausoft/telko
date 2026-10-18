@@ -4,8 +4,11 @@ import '@fontsource/ibm-plex-mono/500.css';
 import '@fontsource/ibm-plex-mono/600.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
+import '../styles/motion.css';
+import fontUrl from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2?url';
 import SeoHead from '../components/SeoHead.astro';
 import { clientMessagesJson } from '../i18n/messages';
+import { depthOf, installPageMotion, motionKind } from '../lib/motion';
 import type { PageSeo } from '../lib/seo-types';
 
 interface Props {
@@ -18,6 +21,8 @@ interface Props {
 const { seo, withDock = false, ground } = Astro.props;
 // Browser scripts read their texts here, in the page language only.
 const clientMessages = clientMessagesJson(seo.lang);
+// Must run before the page is revealed, so it is written into the <head> rather than bundled.
+const pageMotion = `${depthOf}\n${motionKind}\n(${installPageMotion})();`;
 ---
 
 <!doctype html>
@@ -32,10 +37,12 @@ const clientMessages = clientMessagesJson(seo.lang);
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Telko" />
     <SeoHead seo={seo} />
+    <script is:inline set:html={pageMotion} />
     <script is:inline>
       try {
         const theme = localStorage.getItem('telko.theme');
