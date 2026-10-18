@@ -24,7 +24,7 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -39,6 +39,7 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
   </head>
   <body class:list={{ 'has-dock': withDock }}>
     <slot />
+    <p class="visually-hidden" role="status" aria-live="polite" data-app-status></p>
     <script>
       import { startPwa } from '../scripts/pwa';
 

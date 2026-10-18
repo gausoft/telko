@@ -32,14 +32,19 @@ function phoneView(ctx: StepContext): StepView {
   field.box.prepend(country);
   field.box.append(input);
 
-  const mine = ctx.recipients.filter((r) => r.country === ctx.country.code);
-  if (mine.length > 0) {
-    field.element.append(
-      chips(mine.map((r) => ({ label: r.number.replace(/(\d{2})(?=\d)/g, '$1 '), onClick: () => ctx.onPickRecipient(r) }))),
-    );
-  }
+  const recent = el('div', 'cb-chips');
+  recent.dataset['cbRecipients'] = '';
+  fillRecipients(recent, ctx);
+  field.element.append(recent);
 
   return { element: field.element, focus: input, read: () => input.value };
+}
+
+/** Recent numbers of the selected country; refilled alone when they finish loading, so typing is never reset. */
+export function fillRecipients(box: HTMLElement, ctx: Pick<StepContext, 'recipients' | 'country' | 'onPickRecipient'>): void {
+  const mine = ctx.recipients.filter((r) => r.country === ctx.country.code);
+  box.replaceChildren(...chips(mine.map((r) => ({ label: r.number.replace(/(\d{2})(?=\d)/g, '$1 '), onClick: () => ctx.onPickRecipient(r) }))).children);
+  box.hidden = mine.length === 0;
 }
 
 function amountView(ctx: StepContext): StepView {
@@ -128,7 +133,7 @@ function fieldShell(ctx: StepContext): { element: HTMLElement; box: HTMLElement 
   const element = el('div', 'cb-step');
   const label = text('label', ctx.step.label, 'cb-label');
   label.htmlFor = `cb-${ctx.step.name}`;
-  const box = el('div', 'cb-field');
+  const box = el('div', 'field cb-field');
   element.append(label, box);
 
   return { element, box };

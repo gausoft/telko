@@ -1,4 +1,5 @@
 import { syncOffline } from './offline-sync';
+import type { Selection, SyncResult } from './offline-sync-types';
 import { readPref } from './prefs';
 
 /** Install prompt kept for the Settings page (Android, desktop Chrome). */
@@ -15,8 +16,8 @@ export function startPwa(): void {
   }
 
   showConnection();
-  window.addEventListener('online', () => {
-    showConnection();
+  window.addEventListener('online', (event) => {
+    showConnection(event);
     void syncChosen();
   });
   window.addEventListener('offline', showConnection);
@@ -37,17 +38,25 @@ export function isInstalled(): boolean {
   return window.matchMedia('(display-mode: standalone)').matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
 }
 
-export async function syncChosen(): Promise<string> {
-  const country = readPref('country');
-  if (!readPref('onboarded') || !country) return 'skipped';
-
-  const operators = (readPref('operators') ?? readPref('operator') ?? '').split(',').filter((o) => o.length > 0);
-  const result = await syncOffline(country, operators).catch(() => 'skipped' as const);
+export async function syncChosen(): Promise<SyncResult> {
+  const result = await syncOffline(currentSelection);
   document.dispatchEvent(new CustomEvent('telko:offline-sync', { detail: result }));
 
   return result;
 }
 
-function showConnection(): void {
+export function currentSelection(): Selection | null {
+  const country = readPref('country');
+  if (!readPref('onboarded') || !country) return null;
+
+  const operators = (readPref('operators') ?? readPref('operator') ?? '').split(',').filter((o) => o.length > 0);
+
+  return { country, operators };
+}
+
+/** The dot on the logo is visual; the status line tells screen reader users when the connection changes. */
+function showConnection(event?: Event): void {
   document.documentElement.toggleAttribute('data-offline', !navigator.onLine);
+  const status = document.querySelector<HTMLElement>('[data-app-status]');
+  if (status && event) status.textContent = navigator.onLine ? 'Connexion rétablie' : 'Hors connexion : Telko reste utilisable';
 }

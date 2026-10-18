@@ -1,11 +1,5 @@
 import { db } from './db';
-import type { UsageRow } from './db-types';
-
-export interface UseEvent {
-  entryId: string;
-  country: string;
-  operator: string;
-}
+import type { UsageRow, UseEvent } from './db-types';
 
 export async function recordUse(event: UseEvent, now: number = Date.now()): Promise<void> {
   await db.transaction('rw', db.usage, async () => {

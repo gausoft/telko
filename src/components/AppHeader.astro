@@ -33,7 +33,6 @@ const { country, back, title, switcher } = Astro.props;
     )
   }
   {title && <h1 class="title">{title}</h1>}
-  <span class="visually-hidden offline-label">Hors connexion</span>
   {switcher && <OperatorSwitcher operators={switcher.operators} current={switcher.current} hrefTemplate={switcher.hrefTemplate} />}
 </header>
 
@@ -115,13 +114,5 @@ const { country, back, title, switcher } = Astro.props;
 
   :global(html[data-offline]) .offline-dot {
     transform: scale(1);
-  }
-
-  .offline-label {
-    display: none;
-  }
-
-  :global(html[data-offline]) .offline-label {
-    display: inline;
   }
 </style>

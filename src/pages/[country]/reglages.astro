@@ -81,7 +81,7 @@ const THEMES = [
       <div class="row">
         <span class="icon"><CloudCheck size={18} aria-hidden="true" /></span>
         <span class="label">Hors connexion</span>
-        <span class="value" data-offline-status>…</span>
+        <span class="value" role="status" aria-live="polite" data-offline-status>…</span>
       </div>
       <button type="button" class="row" data-install hidden>
         <span class="icon"><Download size={18} aria-hidden="true" /></span>
@@ -103,7 +103,7 @@ const THEMES = [
       <button type="button" class="row" data-clear-recipients hidden>
         <span class="icon"><Eraser size={18} aria-hidden="true" /></span>
         <span class="label">Effacer les numéros récents</span>
-        <span class="value" data-clear-status></span>
+        <span class="value" role="status" aria-live="polite" data-clear-status></span>
       </button>
       <div class="row">
         <span class="icon"><Info size={18} aria-hidden="true" /></span>
@@ -116,105 +116,9 @@ const THEMES = [
 </AppLayout>
 
 <script>
-  import { bindChoiceList } from '../../scripts/choice-list';
-  import { isOfflineReady } from '../../scripts/offline-sync';
-  import { isInstalled, pendingInstall, syncChosen } from '../../scripts/pwa';
-  import { readPref, writePref } from '../../scripts/prefs';
-  import { clearRecipients, readRecipients } from '../../scripts/recipients';
+  import { startSettings } from '../../scripts/settings';
 
-  const countryList = document.querySelector<HTMLElement>('[data-choice-list="country"]');
-  const operatorList = document.querySelector<HTMLElement>('[data-choice-list="operators"]');
-  const currentCountry = window.location.pathname.split('/')[1] ?? '';
-
-  // Another country lives on other pages: save it and reopen the settings there.
-  if (countryList) {
-    bindChoiceList(countryList, ([code]) => {
-      if (!code || code === currentCountry) {
-        document.querySelector<HTMLDialogElement>('#country-sheet')?.close();
-        return;
-      }
-      writePref('country', code);
-      window.location.href = `/${code}/reglages`;
-    });
-  }
-
-  function showMine(ids: string[]): void {
-    document.querySelectorAll<HTMLElement>('[data-my-operator]').forEach((el) => {
-      el.hidden = !ids.includes(el.dataset['myOperator'] ?? '');
-    });
-  }
-
-  const operators = operatorList ? bindChoiceList(operatorList) : null;
-  const mine = (readPref('operators') ?? '').split(',').filter((id) => id.length > 0);
-  if (mine.length > 0) {
-    showMine(mine);
-    operators?.set(mine);
-  }
-
-  document.querySelector('[data-save-operators]')?.addEventListener('click', () => {
-    const ids = operators?.selected() ?? [];
-    if (ids.length === 0) return;
-    writePref('operators', ids.join(','));
-    if (!ids.includes(readPref('operator') ?? '')) writePref('operator', ids[0] ?? '');
-    showMine(ids);
-    document.querySelector<HTMLDialogElement>('#operators-sheet')?.close();
-    setOfflineStatus('…');
-    void syncChosen();
-  });
-
-  const offlineStatus = document.querySelector<HTMLElement>('[data-offline-status]');
-  const setOfflineStatus = (text: string): void => {
-    if (offlineStatus) offlineStatus.textContent = text;
-  };
-  const refreshOfflineStatus = async (): Promise<void> => setOfflineStatus((await isOfflineReady(currentCountry)) ? 'Prêt' : navigator.onLine ? '…' : 'Pas encore');
-  document.addEventListener('telko:offline-sync', () => void refreshOfflineStatus());
-  void refreshOfflineStatus();
-
-  const install = document.querySelector<HTMLButtonElement>('[data-install]');
-  const showInstall = (): void => {
-    if (install && pendingInstall() && !isInstalled()) install.hidden = false;
-  };
-  document.addEventListener('telko:installable', showInstall);
-  showInstall();
-  install?.addEventListener('click', () => {
-    const prompt = pendingInstall() as (Event & { prompt?: () => Promise<void> }) | null;
-    void prompt?.prompt?.().then(() => (install.hidden = true));
-  });
-
-  const iosHint = document.querySelector<HTMLElement>('[data-install-ios]');
-  if (iosHint && /iPhone|iPad|iPod/.test(navigator.userAgent) && !isInstalled()) iosHint.hidden = false;
-
-  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-theme-choice]'));
-
-  function applyTheme(theme: string): void {
-    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset['themeChoice'] === theme)));
-    if (theme === 'light' || theme === 'dark') document.documentElement.dataset['theme'] = theme;
-    else delete document.documentElement.dataset['theme'];
-  }
-
-  buttons.forEach((b) =>
-    b.addEventListener('click', () => {
-      const theme = b.dataset['themeChoice'] ?? 'auto';
-      writePref('theme', theme);
-      applyTheme(theme);
-    }),
-  );
-
-  applyTheme(readPref('theme') ?? 'auto');
-
-  const clear = document.querySelector<HTMLButtonElement>('[data-clear-recipients]');
-  void readRecipients().then((list) => {
-    if (!clear || list.length === 0) return;
-    clear.hidden = false;
-  });
-  if (clear) {
-    clear.addEventListener('click', () => {
-      void clearRecipients();
-      clear.disabled = true;
-      const status = clear.querySelector('[data-clear-status]');
-      if (status) status.textContent = 'Effacés';
-    });
-  }
+  startSettings();
 </script>
 
 <style>

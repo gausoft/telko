@@ -1,11 +1,13 @@
 import type { BuilderPayload } from '../lib/builder-types';
 import { buildCode, codeTokens, dialTokens, planSteps, validateStep } from '../lib/ussd-flow';
+import { brandMarkElement } from './brand-mark';
 import { bindChoiceList } from './choice-list';
-import { reviewView, stepView } from './code-builder-steps';
+import { fillRecipients, reviewView, stepView } from './code-builder-steps';
 import type { Builder, BuilderState, BuilderUi, StepView } from './code-builder-types';
 import { codeLineElement } from './code-line';
 import { recordUse } from '../db/usage-store';
 import { readRecipients, rememberRecipient } from './recipients';
+import type { Recipient } from './recipients-types';
 
 /** Opens the code assistant on any element with data-build="<entry id>". */
 export function startCodeBuilder(): void {
@@ -74,9 +76,12 @@ function open(builder: Builder, event: Event): void {
   builder.syncCountryList(builder.home.code);
   builder.ui.sheet.showModal();
   render(builder, 'none');
+  const opened = builder.state;
   void readRecipients().then((list) => {
     builder.recipients = list;
-    if (builder.state?.index === 0 && list.length > 0) render(builder, 'none');
+    const box = builder.ui.stage.querySelector<HTMLElement>('[data-cb-recipients]');
+    if (builder.state !== opened || !box || !opened) return;
+    fillRecipients(box, { recipients: list, country: opened.country, onPickRecipient: (r) => pickRecipient(builder, r) });
   });
 }
 
@@ -87,7 +92,7 @@ function render(builder: Builder, direction: 'none' | 'forward' | 'back'): void 
   const step = state.steps[state.index];
   const tokens = step ? codeTokens(state.entry.ussd, state.values) : dialTokens(state.entry.ussd, state.values);
 
-  ui.title.textContent = state.entry.title;
+  ui.title.replaceChildren(...(state.entry.brand ? [brandMarkElement(state.entry.brand, 28)] : []), state.entry.title);
   ui.progress.replaceChildren(...progressDots(state.steps.length + 1, state.index));
   ui.code.replaceChildren(codeLineElement(tokens, state.fresh));
   ui.error.textContent = '';
@@ -115,13 +120,19 @@ function viewFor(builder: Builder, state: BuilderState): StepView {
       builder.syncCountryList(state.country.code);
       builder.ui.countrySheet?.showModal();
     },
-    onPickRecipient: (r) => {
-      state.country = builder.payload.countries.find((c) => c.code === r.country) ?? state.country;
-      state.raw[step.name] = r.number;
-      render(builder, 'none');
-    },
+    onPickRecipient: (r) => pickRecipient(builder, r),
     onSubmit: () => next(builder),
   });
+}
+
+function pickRecipient(builder: Builder, recipient: Recipient): void {
+  const state = builder.state;
+  const step = state?.steps[state.index];
+  if (!state || !step) return;
+
+  state.country = builder.payload.countries.find((c) => c.code === recipient.country) ?? state.country;
+  state.raw[step.name] = recipient.number;
+  render(builder, 'none');
 }
 
 /** One dot per step plus the final screen; the current one is longer. */

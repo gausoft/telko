@@ -18,6 +18,12 @@ export interface UsageRow {
   updatedAt: number;
 }
 
+export interface UseEvent {
+  entryId: string;
+  country: string;
+  operator: string;
+}
+
 export interface RecipientRow {
   /** "<country>:<number>" */
   key: string;
