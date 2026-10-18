@@ -1,0 +1,103 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+import ChevronDown from '@lucide/astro/icons/chevron-down';
+
+import type { Country } from '../lib/schema';
+
+interface Props {
+  country: Country;
+  back?: string | undefined;
+  title?: string | undefined;
+}
+
+const { country, back, title } = Astro.props;
+---
+
+<header class="header">
+  {
+    back ? (
+      <a class="back" href={back} aria-label="Retour">
+        <ArrowLeft size={26} aria-hidden="true" />
+      </a>
+    ) : (
+      <a class="brand" href={`/${country.code}`} aria-label="Telko, accueil">
+        <img src="/telko-symbol.svg" alt="" width="32" height="32" />
+        <span class="wordmark">telk<span class="dot" /></span>
+      </a>
+    )
+  }
+  {title && <h1 class="title">{title}</h1>}
+  <a class="country" href="/bienvenue?etape=pays" aria-label={`Pays : ${country.name}. Changer de pays`}>
+    <img src={`/flags/${country.code}.svg`} alt="" width="32" height="32" />
+    <span>{country.name}</span>
+    <ChevronDown size={18} aria-hidden="true" />
+  </a>
+</header>
+
+<style>
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 56px;
+  }
+
+  .brand,
+  .back {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    min-height: var(--touch);
+  }
+
+  .back {
+    width: var(--touch);
+    justify-content: center;
+    margin-left: calc(var(--space-2) * -1);
+  }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    margin: 7px 0 0 1px;
+    border-radius: 50%;
+    background: var(--action);
+  }
+
+  .title {
+    flex: 1;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .country {
+    height: 44px;
+    padding: 0 var(--space-3) 0 6px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .country img {
+    border-radius: 50%;
+  }
+</style>

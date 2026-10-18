@@ -1,0 +1,137 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+import Search from '@lucide/astro/icons/search';
+import Signal from '@lucide/astro/icons/signal';
+import Phone from '@lucide/astro/icons/phone';
+
+import BrandMark from '../components/BrandMark.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import '../styles/onboarding.css';
+import { DEFAULT_COUNTRY } from '../config';
+import { loadCatalog } from '../lib/catalog';
+
+const catalog = loadCatalog();
+const live = catalog.byCountry.get(DEFAULT_COUNTRY);
+if (!live) throw new Error(`Default country ${DEFAULT_COUNTRY} has no data`);
+const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
+---
+
+<AppLayout title="Bienvenue sur Telko">
+  <main class="onboarding" data-onboarding data-default-country={DEFAULT_COUNTRY}>
+    <section class="step step-welcome" data-step="bienvenue">
+      <div class="keypad" aria-hidden="true">
+        {Array.from({ length: 9 }, () => <span />)}
+        <span class="key" />
+      </div>
+      <div class="welcome-text">
+        <span class="wordmark">telk<span class="dot" /></span>
+        <h1>Tous vos services mobiles, au même endroit.</h1>
+      </div>
+      <button type="button" class="cta cta-light" data-next>Commencer</button>
+    </section>
+
+    {
+      steps.slice(1).map((step, i) => (
+        <section class="step" data-step={step} hidden>
+          <div class="top">
+            <button type="button" class="icon-btn" data-prev aria-label="Retour">
+              <ArrowLeft size={26} aria-hidden="true" />
+            </button>
+            <a class="skip" href={`/${DEFAULT_COUNTRY}`} data-finish>Passer</a>
+          </div>
+
+          {step === 'pays' && (
+            <>
+              <h1 tabindex="-1">Votre pays ?</h1>
+              <div class="grid">
+                {catalog.countries.map((c) => (
+                  <button type="button" class="choice" data-country={c.code} disabled={c.status !== 'live'} aria-pressed={c.code === DEFAULT_COUNTRY ? 'true' : 'false'}>
+                    <img src={`/flags/${c.code}.svg`} alt="" width="40" height="40" />
+                    <span class="choice-text">
+                      <span class="choice-name">{c.name}</span>
+                      <span class="choice-sub">{c.status === 'live' ? 'Disponible' : 'Bientôt'}</span>
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+
+          {step === 'operateur' && (
+            <>
+              <h1 tabindex="-1">Votre opérateur ?</h1>
+              <div class="stack">
+                {live.operators.map((o, index) => (
+                  <button type="button" class="choice choice-wide" data-operator={o.id} aria-pressed={index === 0 ? 'true' : 'false'}>
+                    <BrandMark brand={o} size={44} />
+                    <span class="choice-name">{o.short_name}</span>
+                    {o.mobile_money && <BrandMark brand={o.mobile_money} size={32} />}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+
+          {step === 'pret' && (
+            <>
+              <h1 tabindex="-1">En un tap.</h1>
+              <div class="stack">
+                <div class="feature"><span class="feature-icon"><Search size={26} aria-hidden="true" /></span>Cherchez</div>
+                <div class="feature"><span class="feature-icon"><Signal size={26} aria-hidden="true" /></span>Comparez</div>
+                <div class="feature"><span class="feature-icon feature-call"><Phone size={26} aria-hidden="true" /></span>Composez</div>
+              </div>
+            </>
+          )}
+
+          <div class="bottom">
+            <div class="progress" aria-label={`Étape ${i + 2} sur 4`}>
+              {steps.map((_, j) => <span class:list={{ on: j === i + 1 }} />)}
+            </div>
+            {step === 'pret' ? (
+              <a class="cta" href={`/${DEFAULT_COUNTRY}`} data-finish>C'est parti</a>
+            ) : (
+              <button type="button" class="cta" data-next>Continuer</button>
+            )}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</AppLayout>
+
+<script>
+  import { writePref } from '../scripts/prefs';
+
+  const root = document.querySelector<HTMLElement>('[data-onboarding]');
+  const steps = Array.from(document.querySelectorAll<HTMLElement>('[data-step]'));
+  let index = new URLSearchParams(window.location.search).get('etape') === 'pays' ? 1 : 0;
+  let country = root?.dataset['defaultCountry'] ?? 'tg';
+  let operator = document.querySelector<HTMLElement>('[data-operator][aria-pressed="true"]')?.dataset['operator'] ?? '';
+
+  const show = (next: number): void => {
+    index = Math.max(0, Math.min(steps.length - 1, next));
+    steps.forEach((s, i) => (s.hidden = i !== index));
+    if (index > 0) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+  };
+
+  const pick = (attr: 'country' | 'operator', button: HTMLButtonElement): void => {
+    document.querySelectorAll<HTMLButtonElement>(`[data-${attr}]`).forEach((b) => b.setAttribute('aria-pressed', b === button ? 'true' : 'false'));
+    if (attr === 'country') country = button.dataset['country'] ?? country;
+    else operator = button.dataset['operator'] ?? operator;
+  };
+
+  document.querySelectorAll<HTMLButtonElement>('[data-next]').forEach((b) => b.addEventListener('click', () => show(index + 1)));
+  document.querySelectorAll<HTMLButtonElement>('[data-prev]').forEach((b) => b.addEventListener('click', () => show(index - 1)));
+  document.querySelectorAll<HTMLButtonElement>('[data-country]').forEach((b) => b.addEventListener('click', () => pick('country', b)));
+  document.querySelectorAll<HTMLButtonElement>('[data-operator]').forEach((b) => b.addEventListener('click', () => pick('operator', b)));
+  document.querySelectorAll<HTMLAnchorElement>('[data-finish]').forEach((a) =>
+    a.addEventListener('click', () => {
+      writePref('country', country);
+      if (operator) writePref('operator', operator);
+      writePref('onboarded', '1');
+      a.href = `/${country}`;
+    }),
+  );
+
+  show(index);
+</script>

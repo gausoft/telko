@@ -1,0 +1,39 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  withDock?: boolean;
+}
+
+const { title, description = 'Tous vos services mobiles, au même endroit.', withDock = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#4B3BFF" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    />
+    <title>{title}</title>
+  </head>
+  <body class:list={{ 'has-dock': withDock }}>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  body.has-dock {
+    padding-bottom: calc(180px + env(safe-area-inset-bottom, 0px));
+  }
+</style>

@@ -1,0 +1,131 @@
+---
+import Phone from '@lucide/astro/icons/phone';
+
+import type { CatalogEntry } from '../lib/catalog-types';
+import { telHref } from '../lib/dial';
+import { formatData, formatXof } from '../lib/format';
+import type { Brand } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
+
+interface Props {
+  entry: CatalogEntry;
+  brand: Pick<Brand, 'name' | 'badge' | 'logo'>;
+  badge?: string | undefined;
+  duration?: string | undefined;
+}
+
+const { entry, brand, badge, duration } = Astro.props;
+const volume = formatData(entry.allowances?.data_mb ?? null);
+const title = volume ?? entry.name;
+const meta = [volume ? entry.name : null, entry.validity?.label ?? null].filter((v): v is string => v !== null).join(' · ');
+const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
+const href = telHref(entry);
+const label = `${title}${price ? `, ${price}` : ''}`;
+const Tag = href ? 'a' : 'div';
+const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: string) => {
+  const param = entry.ussd.params.find((p) => p.name === name);
+
+  return `[${param?.label ?? name}]`;
+});
+---
+
+<Tag
+  class="row"
+  href={href ?? undefined}
+  data-dial={href ? entry.ussd.template : undefined}
+  data-label={href ? label : undefined}
+  data-operator={entry.operator}
+  data-duration={duration}
+  aria-label={href ? `Composer ${entry.ussd.template} : ${label}` : undefined}
+>
+  <BrandMark brand={brand} size={36} />
+  <span class="body">
+    {badge && <span class="badge mono">{badge}</span>}
+    <span class="title">{title}</span>
+    {meta && <span class="meta">{meta}</span>}
+    <span class="code mono">{readableCode}</span>
+  </span>
+  {price && <span class="price">{price}</span>}
+  {
+    href && (
+      <span class="call" aria-hidden="true">
+        <Phone size={22} />
+      </span>
+    )
+  }
+</Tag>
+
+<style>
+  .row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 76px;
+    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .row:active {
+    transform: scale(0.99);
+  }
+
+  .body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .badge {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+    color: var(--tag-text);
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .meta {
+    font-size: 15px;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+  }
+
+  .code {
+    font-size: 13px;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+  }
+
+  .price {
+    font-size: 18px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .call {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--action);
+    color: var(--on-action);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+</style>

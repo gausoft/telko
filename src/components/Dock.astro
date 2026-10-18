@@ -1,0 +1,100 @@
+---
+import House from '@lucide/astro/icons/house';
+import Search from '@lucide/astro/icons/search';
+import Signal from '@lucide/astro/icons/signal';
+import Wallet from '@lucide/astro/icons/wallet';
+import LifeBuoy from '@lucide/astro/icons/life-buoy';
+
+interface Props {
+  country: string;
+  operator: string;
+  current: 'accueil' | 'internet' | 'argent' | 'aide' | 'recherche';
+}
+
+const { country, operator, current } = Astro.props;
+const items = [
+  { id: 'accueil', label: 'Accueil', href: `/${country}`, Icon: House },
+  { id: 'internet', label: 'Internet', href: `/${country}/${operator}/internet`, Icon: Signal },
+  { id: 'argent', label: 'Argent', href: `/${country}/${operator}/argent`, Icon: Wallet },
+  { id: 'aide', label: 'Aide', href: `/${country}/${operator}/aide`, Icon: LifeBuoy },
+] as const;
+---
+
+<div class="dock">
+  {
+    current !== 'recherche' && (
+      <a class="search" href={`/${country}/recherche`}>
+        <Search size={22} aria-hidden="true" />
+        <span>Forfait, solde, frais…</span>
+      </a>
+    )
+  }
+  <nav aria-label="Navigation principale">
+    {
+      items.map(({ id, label, href, Icon }) => (
+        <a href={href} data-operator-href={href.includes(`/${operator}/`) ? href.replace(`/${operator}/`, '/{op}/') : undefined} aria-current={current === id ? 'page' : undefined}>
+          <Icon size={24} aria-hidden="true" />
+          <span>{label}</span>
+        </a>
+      ))
+    }
+  </nav>
+</div>
+
+<style>
+  .dock {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-4) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    background: var(--dock);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    box-shadow: var(--shadow-dock);
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    height: 56px;
+    padding: 0 var(--space-4);
+    border-radius: 18px;
+    background: var(--action-soft);
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .search :global(svg) {
+    color: var(--action-text);
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  nav a {
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  nav a[aria-current='page'] {
+    color: var(--action-text);
+  }
+</style>

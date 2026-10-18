@@ -1,0 +1,228 @@
+---
+import Signal from '@lucide/astro/icons/signal';
+import PhoneCall from '@lucide/astro/icons/phone-call';
+import Wallet from '@lucide/astro/icons/wallet';
+import Zap from '@lucide/astro/icons/zap';
+import ReceiptText from '@lucide/astro/icons/receipt-text';
+import LifeBuoy from '@lucide/astro/icons/life-buoy';
+
+import AppHeader from '../../components/AppHeader.astro';
+import BrandMark from '../../components/BrandMark.astro';
+import Carousel from '../../components/Carousel.astro';
+import DialToast from '../../components/DialToast.astro';
+import Dock from '../../components/Dock.astro';
+import OperatorSwitch from '../../components/OperatorSwitch.astro';
+import AppLayout from '../../layouts/AppLayout.astro';
+import { featuredFor, loadCatalog, shortcutsFor } from '../../lib/catalog';
+import type { CountryCatalog } from '../../lib/catalog-types';
+import { telHref } from '../../lib/dial';
+import { SECTIONS } from '../../lib/sections';
+
+export function getStaticPaths() {
+  const catalog = loadCatalog();
+
+  return [...catalog.byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data } }));
+}
+
+interface Props {
+  data: CountryCatalog;
+}
+
+const { data } = Astro.props;
+const first = data.operators[0];
+if (!first) throw new Error(`${data.country.code}: no operator`);
+
+const icons = { internet: Signal, appels: PhoneCall, argent: Wallet, factures: Zap, frais: ReceiptText, aide: LifeBuoy } as const;
+const blocks = data.operators.map((operator) => ({
+  operator,
+  featured: featuredFor(data, operator.id),
+  shortcuts: shortcutsFor(data, operator.id).flatMap((s) => {
+    const href = telHref(s.entry);
+
+    return href ? [{ ...s, href }] : [];
+  }),
+}));
+---
+
+<AppLayout title={`Telko · ${data.country.name}`} withDock>
+  <main class="page">
+    <AppHeader country={data.country} />
+    <OperatorSwitch operators={data.operators} current={first.id} />
+
+    {
+      blocks.map(({ operator, featured, shortcuts }) => (
+        <div class="block" data-op-block={operator.id} hidden={operator.id !== first.id}>
+          <Carousel items={featured} />
+
+          <section class="shortcuts" aria-label="Raccourcis">
+            <h2 class="section-title">Raccourcis</h2>
+            <div class="chips" data-recents={operator.id}>
+              {shortcuts.map((s) => (
+                <a class="chip" href={s.href} data-dial={s.entry.ussd.template} data-label={s.label} data-operator={operator.id}>
+                  <BrandMark brand={s.brand} size={28} />
+                  <span>{s.label}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <nav class="tiles" aria-label="Rubriques">
+            {SECTIONS.map((section) => {
+              const Icon = icons[section.id as keyof typeof icons];
+
+              return (
+                <a class="tile" href={`/${data.country.code}/${operator.id}/${section.id}`}>
+                  <span class="tile-icon">
+                    <Icon size={24} aria-hidden="true" />
+                  </span>
+                  <span>{section.label}</span>
+                </a>
+              );
+            })}
+          </nav>
+        </div>
+      ))
+    }
+  </main>
+
+  <Dock country={data.country.code} operator={first.id} current="accueil" />
+  <DialToast />
+</AppLayout>
+
+<script>
+  import { readPref, writePref } from '../../scripts/prefs';
+  import { readRecents } from '../../scripts/recents';
+
+  const switches = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-op-switch]'));
+  const blocks = Array.from(document.querySelectorAll<HTMLElement>('[data-op-block]'));
+  const known = switches.map((b) => b.dataset['opSwitch'] ?? '');
+
+  function select(operator: string): void {
+    switches.forEach((b) => b.setAttribute('aria-pressed', b.dataset['opSwitch'] === operator ? 'true' : 'false'));
+    blocks.forEach((b) => (b.hidden = b.dataset['opBlock'] !== operator));
+    document.querySelectorAll<HTMLAnchorElement>('[data-operator-href]').forEach((a) => {
+      a.href = (a.dataset['operatorHref'] ?? '').replace('{op}', operator);
+    });
+    writePref('operator', operator);
+  }
+
+  function addRecents(): void {
+    const recents = readRecents();
+    document.querySelectorAll<HTMLElement>('[data-recents]').forEach((list) => {
+      const operator = list.dataset['recents'] ?? '';
+      const existing = new Set(Array.from(list.querySelectorAll<HTMLElement>('[data-dial]'), (a) => a.dataset['dial']));
+      recents
+        .filter((r) => r.operator === operator && !existing.has(r.code))
+        .slice(0, 3)
+        .reverse()
+        .forEach((r) => {
+          const chip = document.createElement('a');
+          chip.className = 'chip chip-recent';
+          chip.href = `tel:${r.code.replace(/#/g, '%23')}`;
+          chip.dataset['dial'] = r.code;
+          chip.dataset['label'] = r.label;
+          chip.dataset['operator'] = r.operator;
+          chip.textContent = r.label;
+          list.prepend(chip);
+        });
+    });
+  }
+
+  switches.forEach((b) => b.addEventListener('click', () => select(b.dataset['opSwitch'] ?? '')));
+  const saved = readPref('operator');
+  if (saved && known.includes(saved)) select(saved);
+  addRecents();
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .section-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-muted);
+    margin-bottom: var(--space-2);
+  }
+
+  .chips {
+    display: flex;
+    gap: var(--space-2);
+    overflow-x: auto;
+    margin: calc(var(--space-3) * -1) calc(var(--space-4) * -1);
+    padding: var(--space-3) var(--space-4) var(--space-5);
+    scrollbar-width: none;
+  }
+
+  .chips :global(.chip) {
+    height: var(--touch);
+    padding: 0 var(--space-4) 0 var(--space-2);
+    border-radius: var(--radius-pill);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .chips :global(.chip-recent) {
+    padding-left: var(--space-4);
+    background: var(--action-soft);
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+
+  .tile {
+    min-height: 100px;
+    border-radius: 22px;
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .tile-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--action-soft);
+    color: var(--action-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 900px) {
+    .tiles {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+</style>

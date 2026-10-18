@@ -1,0 +1,63 @@
+---
+/**
+ * Records dialed codes as "recents" and, on devices without a phone dialer
+ * (fine pointer), shows the code instead of following the tel: link.
+ */
+---
+
+<div class="toast" role="status" aria-live="polite" data-dial-toast hidden>
+  <span class="hint">Tapez ce code sur votre téléphone</span>
+  <span class="code mono" data-dial-code></span>
+</div>
+
+<script>
+  import { rememberDial } from '../scripts/recents';
+
+  const toast = document.querySelector<HTMLElement>('[data-dial-toast]');
+  const code = document.querySelector<HTMLElement>('[data-dial-code]');
+  let timer = 0;
+
+  document.addEventListener('click', (event) => {
+    const link = (event.target as Element | null)?.closest<HTMLAnchorElement>('a[data-dial]');
+    if (!link) return;
+
+    const dial = link.dataset['dial'] ?? '';
+    rememberDial({ code: dial, label: link.dataset['label'] ?? dial, operator: link.dataset['operator'] ?? '' });
+
+    if (!window.matchMedia('(pointer: fine)').matches || !toast || !code) return;
+    event.preventDefault();
+    code.textContent = dial;
+    toast.hidden = false;
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => (toast.hidden = true), 6000);
+  });
+</script>
+
+<style>
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(196px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    z-index: 30;
+    width: min(560px, calc(100% - 32px));
+    padding: var(--space-4) var(--space-5);
+    border-radius: 18px;
+    background: var(--toast);
+    color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .hint {
+    font-size: 15px;
+  }
+
+  .code {
+    font-size: 22px;
+    font-weight: 600;
+  }
+</style>

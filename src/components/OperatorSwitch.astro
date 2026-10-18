@@ -1,0 +1,49 @@
+---
+import type { Operator } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
+
+interface Props {
+  operators: Operator[];
+  current: string;
+}
+
+const { operators, current } = Astro.props;
+---
+
+<div class="switch" role="group" aria-label="Opérateur">
+  {
+    operators.map((o) => (
+      <button type="button" data-op-switch={o.id} aria-pressed={o.id === current ? 'true' : 'false'}>
+        <BrandMark brand={o} size={32} />
+        <span>{o.short_name}</span>
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  .switch {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  button {
+    height: var(--touch);
+    padding: 0 var(--space-4) 0 var(--space-2);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  button[aria-pressed='true'] {
+    background: var(--text);
+    color: var(--surface);
+  }
+</style>

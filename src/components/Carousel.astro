@@ -1,0 +1,186 @@
+---
+import Phone from '@lucide/astro/icons/phone';
+
+import { CAROUSEL_INTERVAL_MS } from '../config';
+import type { FeaturedItem } from '../lib/catalog-types';
+import { telHref } from '../lib/dial';
+import { formatData, formatXof } from '../lib/format';
+
+interface Props {
+  items: FeaturedItem[];
+}
+
+const { items } = Astro.props;
+const slides = items.map((item) => {
+  const volume = formatData(item.entry.allowances?.data_mb ?? null);
+  const price = item.entry.price_xof !== null ? formatXof(item.entry.price_xof) : null;
+
+  return {
+    label: item.label,
+    title: volume ?? item.entry.name,
+    meta: [item.entry.validity?.label, price].filter((v): v is string => Boolean(v)).join(' · '),
+    href: telHref(item.entry),
+    code: item.entry.ussd.template,
+    operator: item.entry.operator,
+  };
+});
+---
+
+{
+  slides.length > 0 && (
+    <section class="carousel" data-carousel data-interval={CAROUSEL_INTERVAL_MS} aria-roledescription="carrousel" aria-label="À la une">
+      <div class="track">
+        {slides.map((s, i) => (
+          <a
+            class="slide"
+            href={s.href ?? undefined}
+            data-dial={s.href ? s.code : undefined}
+            data-label={`${s.title}, ${s.meta}`}
+            data-operator={s.operator}
+            data-slide={i}
+            hidden={i !== 0}
+            aria-label={`${s.label} : ${s.title}, ${s.meta}. Composer ${s.code}`}
+          >
+            <span class="text">
+              <span class="label mono">{s.label}</span>
+              <span class="title">{s.title}</span>
+              <span class="meta">{s.meta}</span>
+            </span>
+            <span class="call" aria-hidden="true">
+              <Phone size={28} />
+            </span>
+          </a>
+        ))}
+      </div>
+      {slides.length > 1 && (
+        <div class="dots" role="group" aria-label="Choisir une mise en avant">
+          {slides.map((s, i) => (
+            <button type="button" class="dot" data-dot={i} aria-label={`${s.title}, ${s.meta}`} aria-current={i === 0 ? 'true' : 'false'} />
+          ))}
+        </div>
+      )}
+    </section>
+  )
+}
+
+<script>
+  function setup(root: HTMLElement): void {
+    const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-slide]'));
+    const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-dot]'));
+    const interval = Number(root.dataset['interval'] ?? 4000);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let index = 0;
+    let paused = false;
+
+    const show = (next: number): void => {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((s, i) => (s.hidden = i !== index));
+      dots.forEach((d, i) => d.setAttribute('aria-current', i === index ? 'true' : 'false'));
+    };
+
+    dots.forEach((d, i) => d.addEventListener('click', () => {
+      paused = true;
+      show(i);
+    }));
+    root.addEventListener('pointerdown', () => (paused = true));
+    root.addEventListener('focusin', () => (paused = true));
+
+    if (reduced || slides.length < 2) return;
+    window.setInterval(() => {
+      if (!paused && root.offsetParent !== null && !document.hidden) show(index + 1);
+    }, interval);
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(setup);
+</script>
+
+<style>
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 136px;
+    padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
+    border-radius: var(--radius-lg);
+    background: var(--action);
+    color: var(--on-action);
+    box-shadow: var(--shadow-hero);
+    text-decoration: none;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--on-action-muted);
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .meta {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--on-action-muted);
+  }
+
+  .call {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #4b3bff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .dot {
+    width: 28px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dot::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-pill);
+    background: #c9c4ff;
+    transition: width 0.2s ease;
+  }
+
+  .dot[aria-current='true']::after {
+    width: 22px;
+    background: var(--action);
+  }
+</style>

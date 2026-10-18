@@ -1,0 +1,252 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+import Search from '@lucide/astro/icons/search';
+
+import DialToast from '../../components/DialToast.astro';
+import Dock from '../../components/Dock.astro';
+import AppLayout from '../../layouts/AppLayout.astro';
+import { SHOW_BRAND_LOGOS } from '../../config';
+import { loadCatalog } from '../../lib/catalog';
+import type { CountryCatalog } from '../../lib/catalog-types';
+import { buildDocs } from '../../lib/search';
+
+export function getStaticPaths() {
+  const catalog = loadCatalog();
+  const docs = buildDocs(catalog);
+  const brands = Object.fromEntries(
+    [...catalog.byCountry.values()].flatMap((c) =>
+      c.operators.map((o) => [`${c.country.code}:${o.id}`, { name: o.short_name, badge: o.badge, logo: SHOW_BRAND_LOGOS ? o.logo : null }]),
+    ),
+  );
+  const soon = catalog.countries.filter((c) => c.status === 'soon').map((c) => c.code);
+
+  return [...catalog.byCountry.values()].map((data) => ({
+    params: { country: data.country.code },
+    // "<" is escaped so contributed data can never close the script tag it is embedded in.
+    props: { data, payload: JSON.stringify({ docs, brands, soon }).replace(/</g, '\\u003c') },
+  }));
+}
+
+interface Props {
+  data: CountryCatalog;
+  payload: string;
+}
+
+const { data, payload } = Astro.props;
+const first = data.operators[0]?.id ?? '';
+---
+
+<AppLayout title={`Rechercher · Telko ${data.country.name}`} withDock>
+  <main class="page" data-country={data.country.code}>
+    <div class="bar">
+      <a class="back" href={`/${data.country.code}`} aria-label="Retour">
+        <ArrowLeft size={26} aria-hidden="true" />
+      </a>
+      <label class="field">
+        <Search size={22} aria-hidden="true" />
+        <span class="visually-hidden">Rechercher un forfait, un code ou des frais</span>
+        <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Forfait, solde, frais…" autofocus />
+      </label>
+    </div>
+
+    <p class="hint" data-hint>Essayez « 5 go », « solde », « tmoney », « illimité ».</p>
+    <h2 class="group-title" data-local-title hidden>{data.country.name}</h2>
+    <div class="results" data-local></div>
+    <h2 class="group-title" data-other-title hidden>Autres pays</h2>
+    <div class="results" data-other></div>
+    <div class="soon">
+      {/* Countries without data yet, shown so visitors know where Telko is heading. */}
+      <span class="flags">
+        {JSON.parse(payload).soon.slice(0, 4).map((code: string) => <img src={`/flags/${code}.svg`} alt={code} width="28" height="28" />)}
+      </span>
+      <span>Autres pays · bientôt</span>
+    </div>
+    <p class="empty" data-empty hidden>Aucun résultat. Essayez un autre mot.</p>
+  </main>
+
+  <script is:inline type="application/json" id="search-data" set:html={payload} />
+  <Dock country={data.country.code} operator={first} current="recherche" />
+  <DialToast />
+</AppLayout>
+
+<script>
+  import { renderResults } from '../../scripts/search-ui';
+
+  renderResults();
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .back {
+    width: var(--touch);
+    height: var(--touch);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    flex-shrink: 0;
+  }
+
+  .field {
+    flex: 1;
+    min-width: 0;
+    height: 56px;
+    padding: 0 var(--space-4);
+    border-radius: 18px;
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--action-text);
+  }
+
+  input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  .field:focus-within {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  .hint,
+  .empty {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .group-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-muted);
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .soon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .flags {
+    display: flex;
+  }
+
+  .flags img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--tag-bg);
+  }
+
+  .flags img + img {
+    margin-left: -8px;
+  }
+</style>
+
+<style is:global>
+  .search-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 76px;
+    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .search-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .search-mark-logo {
+    background: #ffffff;
+    padding: 4px;
+    box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
+  }
+
+  .search-mark-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .search-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .search-title {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .search-sub,
+  .search-code {
+    font-size: 14px;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+  }
+
+  .search-call {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--action);
+    color: var(--on-action);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+</style>

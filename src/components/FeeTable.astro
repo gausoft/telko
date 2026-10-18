@@ -1,0 +1,135 @@
+---
+import type { CatalogFee } from '../lib/catalog-types';
+import { formatXof } from '../lib/format';
+import type { Operator } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
+
+interface Props {
+  fees: CatalogFee[];
+  operator: Operator;
+}
+
+const { fees, operator } = Astro.props;
+const TITLES: Record<string, string> = {
+  withdrawal: 'Retrait',
+  'transfer-national': 'Transfert',
+  'transfer-cross-network': 'Vers un autre opérateur',
+  'transfer-regional': 'Transfert UEMOA',
+  'transfer-bank': 'Vers la banque',
+  deposit: 'Dépôt',
+  receive: 'Réception',
+  other: 'Autres',
+};
+
+const groups = Object.keys(TITLES)
+  .map((operation) => ({ title: TITLES[operation] ?? operation, rows: fees.filter((f) => f.operation === operation) }))
+  .filter((g) => g.rows.length > 0);
+
+function amount(fee: CatalogFee): string {
+  if (fee.fee_xof !== null) return fee.fee_xof === 0 ? 'Gratuit' : formatXof(fee.fee_xof);
+  if (fee.fee_percent !== null) return `${String(fee.fee_percent).replace('.', ',')} %`;
+
+  const published = fee.label.split(':')[1]?.trim();
+
+  return published && /\d/.test(published) ? published : 'Non publié';
+}
+
+function range(fee: CatalogFee): string {
+  return fee.max_xof === null ? `${formatXof(fee.min_xof)} et +` : `${formatXof(fee.min_xof)} – ${formatXof(fee.max_xof)}`;
+}
+
+const brand = operator.mobile_money ?? operator;
+const official = fees.some((f) => f.provenance.sources.some((s) => s.kind === 'official'));
+---
+
+<div class="fees">
+  <div class="intro">
+    <BrandMark brand={brand} size={40} />
+    <span class="name">{brand.short_name}</span>
+  </div>
+
+  {
+    groups.map((group) => (
+      <section class="group">
+        <h2>{group.title}</h2>
+        <dl>
+          {group.rows.map((fee) => (
+            <div class="line">
+              <dt class="mono">{range(fee)}</dt>
+              <dd>{amount(fee)}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    ))
+  }
+
+  {groups.length === 0 && <p class="empty">Aucun frais publié pour l'instant.</p>}
+  {!official && groups.length > 0 && <p class="warn">Grille relayée par la presse, à confirmer.</p>}
+</div>
+
+<style>
+  .fees {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .name {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .group {
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: var(--space-2);
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 40px;
+    align-items: center;
+    border-top: 1px solid var(--tag-bg);
+  }
+
+  .line:first-child {
+    border-top: 0;
+  }
+
+  dt {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .empty,
+  .warn {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+</style>

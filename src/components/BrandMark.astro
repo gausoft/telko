@@ -1,0 +1,59 @@
+---
+import { SHOW_BRAND_LOGOS } from '../config';
+import type { Brand } from '../lib/schema';
+
+interface Props {
+  brand: Pick<Brand, 'name' | 'badge' | 'logo'>;
+  size?: number;
+}
+
+const { brand, size = 32 } = Astro.props;
+const logo = SHOW_BRAND_LOGOS && brand.logo ? `/brands/${brand.logo}` : null;
+---
+
+{
+  logo ? (
+    <span class="mark mark-logo" style={`--size: ${size}px`}>
+      <img src={logo} alt={brand.name} width={size} height={size} loading="lazy" decoding="async" />
+    </span>
+  ) : (
+    <span
+      class="mark mark-badge"
+      role="img"
+      aria-label={brand.name}
+      style={`--size: ${size}px; background: ${brand.badge.background}; color: ${brand.badge.foreground}`}
+    >
+      {brand.badge.label}
+    </span>
+  )
+}
+
+<style>
+  .mark {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .mark-logo {
+    background: #ffffff;
+    box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
+    padding: calc(var(--size) * 0.12);
+  }
+
+  .mark-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .mark-badge {
+    font-size: calc(var(--size) * 0.42);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+</style>

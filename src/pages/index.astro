@@ -1,0 +1,30 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import { DEFAULT_COUNTRY } from '../config';
+---
+
+<AppLayout title="Telko · Tous vos services mobiles, au même endroit">
+  <main class="entry">
+    <p>Chargement…</p>
+    <noscript>
+      <a href={`/${DEFAULT_COUNTRY}`}>Ouvrir Telko</a>
+    </noscript>
+  </main>
+</AppLayout>
+
+<script>
+  import { readPref } from '../scripts/prefs';
+
+  const country = readPref('country') ?? 'tg';
+  window.location.replace(readPref('onboarded') ? `/${country}` : '/bienvenue');
+</script>
+
+<style>
+  .entry {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+  }
+</style>
