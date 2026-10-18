@@ -17,7 +17,8 @@ export function startCarousel(root: HTMLElement): void {
   });
 
   const first = slides[0];
-  const goTo = (index: number): void => track.scrollTo({ left: (slides[index]?.offsetLeft ?? 0) - (first?.offsetLeft ?? 0), behavior: 'smooth' });
+  const behavior: ScrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  const goTo = (index: number): void => track.scrollTo({ left: (slides[index]?.offsetLeft ?? 0) - (first?.offsetLeft ?? 0), behavior });
   dots.forEach((dot, i) =>
     dot.addEventListener('click', () => {
       state.paused = true;
@@ -42,7 +43,8 @@ function watchVisibleSlide(track: HTMLElement, slides: HTMLElement[], onChange: 
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
-        if (entry.isIntersecting) onChange(slides.indexOf(entry.target as HTMLElement));
+        // A card leaving the view still "intersects" for a moment: only a card mostly in view counts.
+        if (entry.intersectionRatio >= VISIBLE) onChange(slides.indexOf(entry.target as HTMLElement));
       }
     },
     { root: track, threshold: VISIBLE },

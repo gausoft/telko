@@ -117,6 +117,8 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
     else delete document.body.dataset['ground'];
   };
 
+  let latest: ViewTransition | null = null;
+
   /** Steps slide like pages: forward from the right, back from the left. */
   const show = (next: number, moveFocus = true): void => {
     const target = Math.max(0, Math.min(steps.length - 1, next));
@@ -132,7 +134,10 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
     }
     document.documentElement.dataset['motion'] = direction;
     const transition = document.startViewTransition(render);
+    latest = transition;
     void transition.finished.finally(() => {
+      // A quicker tap may have started another step meanwhile: only the last one cleans up and takes focus.
+      if (latest !== transition) return;
       delete document.documentElement.dataset['motion'];
       focus();
     });
