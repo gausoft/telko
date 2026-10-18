@@ -110,13 +110,32 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
   let index = START_STEPS[new URLSearchParams(window.location.search).get('etape') ?? ''] ?? 0;
   let country = root?.dataset['defaultCountry'] ?? 'tg';
 
-  const show = (next: number, moveFocus = true): void => {
-    index = Math.max(0, Math.min(steps.length - 1, next));
+  const render = (): void => {
     steps.forEach((s, i) => (s.hidden = i !== index));
     // Only the welcome step is ultramarine; the status bar follows the page background.
     if (index === 0) document.body.dataset['ground'] = 'brand';
     else delete document.body.dataset['ground'];
-    if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+  };
+
+  /** Steps slide like pages: forward from the right, back from the left. */
+  const show = (next: number, moveFocus = true): void => {
+    const target = Math.max(0, Math.min(steps.length - 1, next));
+    const direction = target > index ? 'forward' : 'back';
+    index = target;
+    const focus = (): void => {
+      if (moveFocus) steps[index]?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+    };
+    if (!moveFocus || !document.startViewTransition) {
+      render();
+      focus();
+      return;
+    }
+    document.documentElement.dataset['motion'] = direction;
+    const transition = document.startViewTransition(render);
+    void transition.finished.finally(() => {
+      delete document.documentElement.dataset['motion'];
+      focus();
+    });
   };
 
   const countryList = document.querySelector<HTMLElement>('[data-choice-list="country"]');

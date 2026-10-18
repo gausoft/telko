@@ -1,0 +1,91 @@
+/* Page transitions, native to the browser (View Transitions between documents).
+   Browsers without them navigate instantly, as before. */
+@view-transition {
+  navigation: auto;
+}
+
+/* The bottom bar and the header stay where they are; only the content moves. */
+.dock {
+  view-transition-name: dock;
+}
+
+.header {
+  view-transition-name: app-header;
+}
+
+::view-transition-old(dock) {
+  display: none;
+}
+
+::view-transition-new(dock) {
+  animation: none;
+}
+
+::view-transition-group(app-header) {
+  animation-duration: 180ms;
+}
+
+/* Same level (bottom bar tabs, operator, language): a soft fade. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+  animation-timing-function: ease-out;
+}
+
+/* Deeper page: it arrives from the right while the previous one drifts left. */
+html[data-motion='forward']::view-transition-old(root) {
+  animation: 280ms var(--motion-ease) both motion-out-left;
+}
+
+html[data-motion='forward']::view-transition-new(root) {
+  animation: 280ms var(--motion-ease) both motion-in-right;
+}
+
+/* Back: the reverse. */
+html[data-motion='back']::view-transition-old(root) {
+  animation: 280ms var(--motion-ease) both motion-out-right;
+}
+
+html[data-motion='back']::view-transition-new(root) {
+  animation: 280ms var(--motion-ease) both motion-in-left;
+}
+
+:root {
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes motion-out-left {
+  to {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes motion-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(28%);
+  }
+}
+
+@keyframes motion-out-right {
+  to {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+@keyframes motion-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-28%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

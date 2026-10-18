@@ -89,6 +89,14 @@ const blocks = data.operators.map((operator) => ({
         </div>
       ))
     }
+    <script is:inline>
+      // Runs while the page is being read, before it is painted: the saved operator shows at once.
+      try {
+        const op = localStorage.getItem('telko.operator');
+        const blocks = document.querySelectorAll('[data-op-block]');
+        if (op && Array.from(blocks).some((b) => b.dataset.opBlock === op)) blocks.forEach((b) => (b.hidden = b.dataset.opBlock !== op));
+      } catch {}
+    </script>
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
@@ -166,6 +174,14 @@ const blocks = data.operators.map((operator) => ({
   .chips :global(.chip-habit) {
     background: var(--action-soft);
     color: var(--action-text);
+    animation: chip-in 0.2s ease-out both;
+  }
+
+  @keyframes chip-in {
+    from {
+      opacity: 0;
+      transform: translateX(-6px);
+    }
   }
 
   .chips :global(.chip-label) {
