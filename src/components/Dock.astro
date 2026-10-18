@@ -4,6 +4,7 @@ import Search from '@lucide/astro/icons/search';
 import Signal from '@lucide/astro/icons/signal';
 import Wallet from '@lucide/astro/icons/wallet';
 import LifeBuoy from '@lucide/astro/icons/life-buoy';
+import ChevronUp from '@lucide/astro/icons/chevron-up';
 
 interface Props {
   country: string;
@@ -20,20 +21,25 @@ const items = [
 ] as const;
 ---
 
-<div class="dock">
+<div class="dock" data-dock>
   {
     current !== 'recherche' && (
-      <a class="search" href={`/${country}/recherche`}>
-        <Search size={22} aria-hidden="true" />
-        <span>Forfait, solde, frais…</span>
-      </a>
+      <>
+        <button type="button" class="handle" data-search-toggle aria-expanded="false" aria-controls="dock-search" aria-label="Rechercher">
+          <ChevronUp size={20} aria-hidden="true" />
+        </button>
+        <form id="dock-search" class="search" action={`/${country}/recherche`} method="get" role="search" hidden>
+          <Search size={20} aria-hidden="true" />
+          <input type="search" name="q" placeholder="Forfait, solde, frais…" enterkeyhint="search" autocomplete="off" aria-label="Rechercher" />
+        </form>
+      </>
     )
   }
   <nav aria-label="Navigation principale">
     {
       items.map(({ id, label, href, Icon }) => (
         <a href={href} data-operator-href={href.includes(`/${operator}/`) ? href.replace(`/${operator}/`, '/{op}/') : undefined} aria-current={current === id ? 'page' : undefined}>
-          <Icon size={24} aria-hidden="true" />
+          <Icon size={22} aria-hidden="true" />
           <span>{label}</span>
         </a>
       ))
@@ -43,6 +49,21 @@ const items = [
 
 <script>
   import { readPref } from '../scripts/prefs';
+
+  const dock = document.querySelector<HTMLElement>('[data-dock]');
+  const toggle = document.querySelector<HTMLButtonElement>('[data-search-toggle]');
+  const form = document.querySelector<HTMLFormElement>('#dock-search');
+  const input = form?.querySelector<HTMLInputElement>('input');
+
+  // Focus runs inside the tap handler so mobile browsers open the keyboard.
+  toggle?.addEventListener('click', () => {
+    if (!form || !input) return;
+    const open = form.hidden;
+    form.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    dock?.classList.toggle('is-open', open);
+    if (open) input.focus();
+  });
 
   const operator = readPref('operator');
   if (operator && /^[a-z0-9-]+$/.test(operator)) {
@@ -61,7 +82,7 @@ const items = [
     z-index: 20;
     max-width: 640px;
     margin: 0 auto;
-    padding: var(--space-3) var(--space-4) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+    padding: var(--space-2) var(--space-3) calc(var(--space-1) + env(safe-area-inset-bottom, 0px));
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
@@ -70,21 +91,65 @@ const items = [
     box-shadow: var(--shadow-dock);
   }
 
+  .handle {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 52px;
+    height: 36px;
+    margin-left: -26px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--dock);
+    box-shadow: var(--shadow-dock);
+    color: var(--text-muted);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .handle :global(svg) {
+    transition: transform 0.2s ease;
+  }
+
+  .is-open .handle :global(svg) {
+    transform: rotate(180deg);
+  }
+
   .search {
     display: flex;
     align-items: center;
-    gap: var(--space-3);
-    height: 56px;
+    gap: var(--space-2);
+    height: 48px;
+    margin-top: var(--space-3);
     padding: 0 var(--space-4);
-    border-radius: 18px;
+    border-radius: var(--radius-sm);
     background: var(--action-soft);
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 17px;
+    color: var(--action-text);
   }
 
-  .search :global(svg) {
-    color: var(--action-text);
+  .search[hidden] {
+    display: none;
+  }
+
+  .search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .search input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .search:focus-within {
+    box-shadow: 0 0 0 2px var(--focus);
   }
 
   nav {
@@ -93,16 +158,16 @@ const items = [
   }
 
   nav a {
-    min-height: 56px;
+    min-height: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 3px;
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 11px;
+    font-weight: 700;
   }
 
   nav a[aria-current='page'] {

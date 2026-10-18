@@ -59,7 +59,7 @@ const blocks = data.operators.map((operator) => ({
             <div class="chips" data-recents={operator.id}>
               {shortcuts.map((s) => (
                 <a class="chip" href={s.href} data-dial={s.entry.ussd.template} data-label={s.label} data-operator={operator.id}>
-                  <BrandMark brand={s.brand} size={28} />
+                  <BrandMark brand={s.brand} size={26} />
                   <span>{s.label}</span>
                 </a>
               ))}
@@ -73,7 +73,7 @@ const blocks = data.operators.map((operator) => ({
               return (
                 <a class="tile" href={`/${data.country.code}/${operator.id}/${section.id}`}>
                   <span class="tile-icon">
-                    <Icon size={24} aria-hidden="true" />
+                    <Icon size={20} aria-hidden="true" />
                   </span>
                   <span>{section.label}</span>
                 </a>
@@ -138,23 +138,23 @@ const blocks = data.operators.map((operator) => ({
   .page {
     max-width: 640px;
     margin: 0 auto;
-    padding: var(--space-4) var(--space-4) var(--space-6);
+    padding: var(--space-3) var(--space-4) var(--space-6);
     display: flex;
     flex-direction: column;
-    gap: var(--space-5);
+    gap: var(--space-4);
   }
 
   .block {
     display: flex;
     flex-direction: column;
-    gap: var(--space-5);
+    gap: var(--space-4);
   }
 
   .section-title {
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--text-muted);
-    margin-bottom: var(--space-2);
+    margin-bottom: var(--space-1);
   }
 
   .chips {
@@ -167,8 +167,8 @@ const blocks = data.operators.map((operator) => ({
   }
 
   .chips :global(.chip) {
-    height: var(--touch);
-    padding: 0 var(--space-4) 0 var(--space-2);
+    height: 40px;
+    padding: 0 var(--space-3) 0 6px;
     border-radius: var(--radius-pill);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
@@ -177,8 +177,8 @@ const blocks = data.operators.map((operator) => ({
     gap: var(--space-2);
     color: var(--text);
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
     white-space: nowrap;
   }
 
@@ -194,8 +194,8 @@ const blocks = data.operators.map((operator) => ({
   }
 
   .tile {
-    min-height: 100px;
-    border-radius: 22px;
+    min-height: 84px;
+    border-radius: var(--radius-md);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
     display: flex;
@@ -205,16 +205,16 @@ const blocks = data.operators.map((operator) => ({
     gap: var(--space-2);
     color: var(--text);
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 700;
   }
 
   .tile-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: var(--radius-sm);
-    background: var(--action-soft);
-    color: var(--action-text);
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: var(--icon-bg);
+    color: var(--icon-fg);
     display: flex;
     align-items: center;
     justify-content: center;

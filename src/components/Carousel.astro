@@ -47,7 +47,7 @@ const slides = items.map((item) => {
               <span class="meta">{s.meta}</span>
             </span>
             <span class="call" aria-hidden="true">
-              <Phone size={28} />
+              <Phone size={24} />
             </span>
           </a>
         ))}
@@ -109,8 +109,8 @@ const slides = items.map((item) => {
     align-items: center;
     justify-content: space-between;
     gap: var(--space-3);
-    min-height: 136px;
-    padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
+    min-height: 112px;
+    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-5);
     border-radius: var(--radius-lg);
     background: var(--action);
     color: var(--on-action);
@@ -126,27 +126,27 @@ const slides = items.map((item) => {
   }
 
   .label {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--on-action-muted);
   }
 
   .title {
-    font-size: 42px;
-    line-height: 44px;
+    font-size: 34px;
+    line-height: 38px;
     font-weight: 800;
     letter-spacing: -0.03em;
   }
 
   .meta {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--on-action-muted);
   }
 
   .call {
-    width: 68px;
-    height: 68px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background: #ffffff;
     color: #4b3bff;
@@ -179,7 +179,7 @@ const slides = items.map((item) => {
     width: 8px;
     height: 8px;
     border-radius: var(--radius-pill);
-    background: #c9c4ff;
+    background: var(--dot);
     transition: width 0.2s ease;
   }
 

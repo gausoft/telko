@@ -48,7 +48,7 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
   data-duration={duration}
   aria-label={href ? `Composer ${entry.ussd.template} : ${label}` : undefined}
 >
-  <BrandMark brand={brand} size={36} />
+  <BrandMark brand={brand} size={30} />
   <span class="body">
     {badge && <span class="badge mono">{badge}</span>}
     <span class="title">{title}</span>
@@ -60,7 +60,7 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
   {
     href && (
       <span class="call" aria-hidden="true">
-        <Phone size={22} />
+        <Phone size={20} />
       </span>
     )
   }
@@ -71,8 +71,8 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    min-height: 76px;
-    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+    min-height: 64px;
+    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
     border-radius: var(--radius-md);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
@@ -94,43 +94,44 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
 
   .badge {
     align-self: flex-start;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 2px 10px;
+    white-space: nowrap;
+    padding: 2px 8px;
     border-radius: var(--radius-pill);
     background: var(--tag-bg);
     color: var(--tag-text);
   }
 
   .title {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 800;
     letter-spacing: -0.02em;
   }
 
   .meta {
-    font-size: 15px;
-    color: var(--text-muted);
-    overflow-wrap: anywhere;
-  }
-
-  .code {
     font-size: 13px;
     color: var(--text-muted);
     overflow-wrap: anywhere;
   }
 
+  .code {
+    font-size: 12px;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+  }
+
   .price {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
 
   .call {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: var(--action);
     color: var(--on-action);

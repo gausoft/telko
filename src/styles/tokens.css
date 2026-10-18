@@ -20,6 +20,9 @@
   --focus: #4B3BFF;
   --dock: #FFFFFF;
   --toast: #12111F;
+  --icon-bg: #EEECFF;
+  --icon-fg: #4B3BFF;
+  --dot: #C9C4FF;
 
   --shadow-card: 0 8px 24px rgba(75, 59, 255, 0.08);
   --shadow-hero: 0 16px 40px rgba(75, 59, 255, 0.35);
@@ -47,27 +50,31 @@
   :root {
     color-scheme: dark;
 
-    --surface: #0D0B26;
-    --surface-raised: #1A1740;
-    --text: #F5F5FA;          /* 17.7 on surface */
-    --text-muted: #B4B1CC;    /* 9.2 on surface */
+    /* Neutral near-black, so the ultramarine is the only colour on screen. */
+    --surface: #0E0E13;
+    --surface-raised: #1B1B22;
+    --text: #F4F4F7;          /* 17.5 on surface */
+    --text-muted: #A3A3B2;    /* 7.7 on surface */
     --action: #4B3BFF;
     --action-hover: #5E50FF;
     --on-action: #FFFFFF;     /* 6.2 on action */
     --on-action-muted: #E4E1FF;
-    --action-text: #B8B0FF;   /* 9.8 on surface */
-    --action-soft: #221E52;
-    --tag-bg: #2A2650;
-    --tag-text: #E4E1FF;      /* 11.1 on tag-bg */
-    --status-unverified: #8E8CA3;
+    --action-text: #A99FFF;   /* 8.3 on surface */
+    --action-soft: #1F1D33;
+    --tag-bg: #26262F;
+    --tag-text: #E6E6EE;      /* 12.1 on tag-bg */
+    --status-unverified: #8E8E9E;
     --status-stale: #FFB86B;
     --danger: #FF8A8F;
-    --focus: #B8B0FF;
-    --dock: #1A1740;
-    --toast: #F5F5FA;
+    --focus: #A99FFF;
+    --dock: #17171D;
+    --toast: #F4F4F7;
+    --icon-bg: #2B2560;
+    --icon-fg: #DCD8FF;       /* 10.0 on icon-bg */
+    --dot: #3A3A47;
 
-    --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
-    --shadow-hero: 0 16px 40px rgba(75, 59, 255, 0.45);
-    --shadow-dock: 0 -8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 20px rgba(0, 0, 0, 0.45);
+    --shadow-hero: 0 14px 36px rgba(75, 59, 255, 0.35);
+    --shadow-dock: 0 -8px 24px rgba(0, 0, 0, 0.5);
   }
 }

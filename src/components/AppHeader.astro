@@ -17,20 +17,20 @@ const { country, back, title } = Astro.props;
   {
     back ? (
       <a class="back" href={back} aria-label="Retour">
-        <ArrowLeft size={26} aria-hidden="true" />
+        <ArrowLeft size={24} aria-hidden="true" />
       </a>
     ) : (
       <a class="brand" href={`/${country.code}`} aria-label="Telko, accueil">
-        <img src="/telko-symbol.svg" alt="" width="32" height="32" />
+        <img src="/telko-symbol.svg" alt="" width="28" height="28" />
         <span class="wordmark">telk<span class="dot" /></span>
       </a>
     )
   }
   {title && <h1 class="title">{title}</h1>}
   <a class="country" href="/bienvenue?etape=pays" aria-label={`Pays : ${country.name}. Changer de pays`}>
-    <img src={`/flags/${country.code}.svg`} alt="" width="32" height="32" />
+    <img src={`/flags/${country.code}.svg`} alt="" width="28" height="28" />
     <span>{country.name}</span>
-    <ChevronDown size={18} aria-hidden="true" />
+    <ChevronDown size={16} aria-hidden="true" />
   </a>
 </header>
 
@@ -40,7 +40,7 @@ const { country, back, title } = Astro.props;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-3);
-    min-height: 56px;
+    min-height: 48px;
   }
 
   .brand,
@@ -62,29 +62,29 @@ const { country, back, title } = Astro.props;
   .wordmark {
     display: inline-flex;
     align-items: center;
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 800;
     letter-spacing: -0.04em;
     line-height: 1;
   }
 
   .dot {
-    width: 14px;
-    height: 14px;
-    margin: 7px 0 0 1px;
+    width: 12px;
+    height: 12px;
+    margin: 6px 0 0 1px;
     border-radius: 50%;
     background: var(--action);
   }
 
   .title {
     flex: 1;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 800;
   }
 
   .country {
-    height: 44px;
-    padding: 0 var(--space-3) 0 6px;
+    height: 38px;
+    padding: 0 var(--space-2) 0 5px;
     border-radius: var(--radius-pill);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
@@ -93,8 +93,8 @@ const { country, back, title } = Astro.props;
     gap: var(--space-2);
     color: var(--text);
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .country img {

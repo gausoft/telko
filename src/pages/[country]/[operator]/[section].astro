@@ -126,18 +126,18 @@ const initialFilter: DurationFilter = 'mois';
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-1);
     padding: var(--space-1);
-    border-radius: 18px;
+    border-radius: var(--radius-sm);
     background: var(--tag-bg);
   }
 
   .filters button {
-    height: 44px;
+    height: 38px;
     border: 0;
-    border-radius: var(--radius-sm);
+    border-radius: 12px;
     background: transparent;
     color: var(--tag-text);
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .filters button[aria-pressed='true'] {
@@ -148,7 +148,7 @@ const initialFilter: DurationFilter = 'mois';
   .list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--space-2);
   }
 
   .empty,

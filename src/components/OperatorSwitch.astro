@@ -14,7 +14,7 @@ const { operators, current } = Astro.props;
   {
     operators.map((o) => (
       <button type="button" data-op-switch={o.id} aria-pressed={o.id === current ? 'true' : 'false'}>
-        <BrandMark brand={o} size={32} />
+        <BrandMark brand={o} size={28} />
         <span>{o.short_name}</span>
       </button>
     ))
@@ -29,8 +29,8 @@ const { operators, current } = Astro.props;
   }
 
   button {
-    height: var(--touch);
-    padding: 0 var(--space-4) 0 var(--space-2);
+    height: 40px;
+    padding: 0 var(--space-4) 0 6px;
     border: 0;
     border-radius: var(--radius-pill);
     background: var(--surface-raised);
@@ -38,8 +38,8 @@ const { operators, current } = Astro.props;
     display: inline-flex;
     align-items: center;
     gap: var(--space-2);
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: 700;
   }
 
   button[aria-pressed='true'] {

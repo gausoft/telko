@@ -105,9 +105,9 @@ const first = data.operators[0]?.id ?? '';
   .field {
     flex: 1;
     min-width: 0;
-    height: 56px;
-    padding: 0 var(--space-4);
-    border-radius: 18px;
+    height: 48px;
+    padding: 0 var(--space-3);
+    border-radius: var(--radius-sm);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
     display: flex;
@@ -122,7 +122,7 @@ const first = data.operators[0]?.id ?? '';
     border: 0;
     background: transparent;
     font: inherit;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--text);
   }
@@ -143,8 +143,8 @@ const first = data.operators[0]?.id ?? '';
   }
 
   .group-title {
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--text-muted);
   }
 
@@ -186,8 +186,8 @@ const first = data.operators[0]?.id ?? '';
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    min-height: 76px;
-    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+    min-height: 64px;
+    padding: var(--space-3);
     border-radius: var(--radius-md);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
@@ -196,8 +196,8 @@ const first = data.operators[0]?.id ?? '';
   }
 
   .search-mark {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     flex-shrink: 0;
     display: inline-flex;
@@ -209,7 +209,7 @@ const first = data.operators[0]?.id ?? '';
 
   .search-mark-logo {
     background: #ffffff;
-    padding: 4px;
+    padding: 3px;
     box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
   }
 
@@ -228,20 +228,21 @@ const first = data.operators[0]?.id ?? '';
   }
 
   .search-title {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 800;
   }
 
   .search-sub,
   .search-code {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-muted);
     overflow-wrap: anywhere;
   }
 
   .search-call {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: var(--action);
     color: var(--on-action);
