@@ -4,10 +4,16 @@ import { DEFAULT_COUNTRY } from '../config';
 ---
 
 <AppLayout title="Telko · Tous vos services mobiles, au même endroit">
-  <main class="entry">
-    <p>Chargement…</p>
+  <main class="splash" aria-busy="true">
+    <span class="wordmark" role="img" aria-label="Telko">telk<span class="dot"></span></span>
+    <span class="keys" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <span class="visually-hidden" role="status">Chargement de Telko</span>
     <noscript>
-      <a href={`/${DEFAULT_COUNTRY}`}>Ouvrir Telko</a>
+      <a class="fallback" href={`/${DEFAULT_COUNTRY}`}>Ouvrir Telko</a>
     </noscript>
   </main>
 </AppLayout>
@@ -15,16 +21,100 @@ import { DEFAULT_COUNTRY } from '../config';
 <script>
   import { readPref } from '../scripts/prefs';
 
+  const SPLASH_MS = 500;
   const country = readPref('country') ?? 'tg';
-  window.location.replace(readPref('onboarded') ? `/${country}` : '/bienvenue');
+  const target = readPref('onboarded') ? `/${country}` : '/bienvenue';
+
+  window.setTimeout(() => window.location.replace(target), SPLASH_MS);
 </script>
 
 <style>
-  .entry {
+  .splash {
     min-height: 100dvh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--text-muted);
+    gap: var(--space-8);
+    background: var(--action);
+    color: var(--on-action);
+  }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    animation: rise 0.5s ease-out both;
+  }
+
+  .dot {
+    width: 34px;
+    height: 34px;
+    margin: 18px 0 0 6px;
+    border-radius: 50%;
+    background: #b8b0ff;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+
+  .keys {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .keys span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0.3;
+    animation: key 1.2s ease-in-out infinite;
+  }
+
+  .keys span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .keys span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .fallback {
+    color: var(--on-action);
+    font-weight: 800;
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  @keyframes pulse {
+    50% {
+      transform: scale(1.12);
+      background: #ffffff;
+    }
+  }
+
+  @keyframes key {
+    40% {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wordmark,
+    .dot,
+    .keys span {
+      animation: none;
+    }
+
+    .keys span {
+      opacity: 1;
+    }
   }
 </style>
