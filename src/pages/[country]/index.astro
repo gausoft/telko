@@ -17,6 +17,9 @@ import { featuredFor, loadCatalog, shortcutsFor } from '../../lib/catalog';
 import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
 import { telHref } from '../../lib/dial';
 import { SECTIONS } from '../../lib/sections';
+import { SHOW_BRAND_LOGOS } from '../../config';
+import type { Brand } from '../../lib/schema';
+import type { OperatorBrands } from '../../lib/brand-types';
 
 export function getStaticPaths() {
   const catalog = loadCatalog();
@@ -32,6 +35,13 @@ interface Props {
 const { data, catalog } = Astro.props;
 const first = data.operators[0];
 if (!first) throw new Error(`${data.country.code}: no operator`);
+
+const brandView = (b: Brand) => ({ name: b.short_name, badge: b.badge, logo: SHOW_BRAND_LOGOS && b.logo ? `/brands/${b.logo}` : null });
+const brands: Record<string, OperatorBrands> = Object.fromEntries(
+  data.operators.map((o) => [o.id, { operator: brandView(o), money: o.mobile_money ? brandView(o.mobile_money) : null }]),
+);
+// "<" is escaped so data can never close the script tag it is embedded in.
+const brandsJson = JSON.stringify(brands).replace(/</g, '\\u003c');
 
 const icons = { internet: Signal, appels: PhoneCall, argent: Wallet, factures: Zap, frais: ReceiptText, aide: LifeBuoy } as const;
 const blocks = data.operators.map((operator) => ({
@@ -52,7 +62,7 @@ const blocks = data.operators.map((operator) => ({
     {
       blocks.map(({ operator, featured, shortcuts }) => (
         <div class="block" data-op-block={operator.id} hidden={operator.id !== first.id}>
-          <Carousel items={featured} />
+          <Carousel items={featured} brand={operator} />
 
           <section class="shortcuts" aria-label="Raccourcis">
             <h2 class="section-title">Raccourcis</h2>
@@ -86,6 +96,7 @@ const blocks = data.operators.map((operator) => ({
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
+  <script is:inline type="application/json" id="brand-data" set:html={brandsJson} />
   <CodeBuilder catalog={catalog} country={data.country.code} />
   <DialToast />
 </AppLayout>
@@ -158,12 +169,6 @@ const blocks = data.operators.map((operator) => ({
   .chips :global(.chip-habit) {
     background: var(--action-soft);
     color: var(--action-text);
-  }
-
-  .chips :global(.chip-icon) {
-    width: 26px;
-    display: inline-grid;
-    place-items: center;
   }
 
   .chips :global(.chip-label) {

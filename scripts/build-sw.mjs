@@ -14,6 +14,7 @@ const { count, size, warnings } = await injectManifest({
     'icons/*.png',
     'flags/*.svg',
     'favicon.{svg,ico}',
+    'apple-touch-icon.png',
     'telko-symbol.svg',
     'manifest.webmanifest',
     'index.html',

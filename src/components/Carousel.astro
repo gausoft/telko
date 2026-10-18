@@ -5,12 +5,15 @@ import { CAROUSEL_INTERVAL_MS } from '../config';
 import type { FeaturedItem } from '../lib/catalog-types';
 import { telHref } from '../lib/dial';
 import { formatData, formatXof } from '../lib/format';
+import type { Brand } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
 
 interface Props {
   items: FeaturedItem[];
+  brand: Pick<Brand, 'name' | 'badge' | 'logo'>;
 }
 
-const { items } = Astro.props;
+const { items, brand } = Astro.props;
 const slides = items.map((item) => {
   const volume = formatData(item.entry.allowances?.data_mb ?? null);
   const price = item.entry.price_xof !== null ? formatXof(item.entry.price_xof) : null;
@@ -44,7 +47,10 @@ const slides = items.map((item) => {
             aria-label={`${s.label} : ${s.title}, ${s.meta}. Composer ${s.code}`}
           >
             <span class="text">
-              <span class="label mono">{s.label}</span>
+              <span class="top">
+                <BrandMark brand={brand} size={24} />
+                <span class="label">{s.label}</span>
+              </span>
               <span class="title">{s.title}</span>
               <span class="meta">{s.meta}</span>
             </span>
@@ -127,10 +133,22 @@ const slides = items.map((item) => {
     min-width: 0;
   }
 
+  .top {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: 2px;
+  }
+
   .label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--on-action-muted);
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--on-action);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
 
   .title {

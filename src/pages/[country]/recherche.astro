@@ -1,11 +1,12 @@
 ---
-import ArrowLeft from '@lucide/astro/icons/arrow-left';
 import Search from '@lucide/astro/icons/search';
+import X from '@lucide/astro/icons/x';
 
 import CodeBuilder from '../../components/CodeBuilder.astro';
 import DialToast from '../../components/DialToast.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
+import '../../styles/field.css';
 import { SHOW_BRAND_LOGOS } from '../../config';
 import { loadCatalog } from '../../lib/catalog';
 import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
@@ -35,23 +36,25 @@ interface Props {
 }
 
 const { data, catalog, payload } = Astro.props;
+const SUGGESTIONS = ['5 go', 'solde', 'illimité', 'transfert', 'frais'];
 const first = data.operators[0]?.id ?? '';
 ---
 
 <AppLayout title={`Rechercher · Telko ${data.country.name}`} withDock>
   <main class="page" data-country={data.country.code}>
-    <div class="bar">
-      <a class="back" href={`/${data.country.code}`} aria-label="Retour">
-        <ArrowLeft size={26} aria-hidden="true" />
-      </a>
-      <label class="field">
-        <Search size={22} aria-hidden="true" />
-        <span class="visually-hidden">Rechercher un forfait, un code ou des frais</span>
-        <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Forfait, solde, frais…" autofocus />
-      </label>
-    </div>
+    <h1 class="heading">Rechercher</h1>
+    <label class="field">
+      <Search size={20} aria-hidden="true" />
+      <span class="visually-hidden">Rechercher un forfait, un code ou des frais</span>
+      <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Forfait, solde, frais…" autofocus />
+      <button type="button" class="field-clear" data-clear aria-label="Effacer" hidden>
+        <X size={16} aria-hidden="true" />
+      </button>
+    </label>
 
-    <p class="hint" data-hint>Essayez « 5 go », « solde », « tmoney », « illimité ».</p>
+    <div class="suggestions" data-hint>
+      {SUGGESTIONS.map((s) => <button type="button" class="suggestion" data-suggest={s}>{s}</button>)}
+    </div>
     <h2 class="group-title" data-local-title hidden>{data.country.name}</h2>
     <div class="results" data-local></div>
     <h2 class="group-title" data-other-title hidden>Autres pays</h2>
@@ -89,57 +92,34 @@ const first = data.operators[0]?.id ?? '';
     gap: var(--space-4);
   }
 
-  .bar {
+  .heading {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .suggestions {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: var(--space-2);
   }
 
-  .back {
-    width: var(--touch);
-    height: var(--touch);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text);
-    flex-shrink: 0;
+  .suggestions[hidden] {
+    display: none;
   }
 
-  .field {
-    flex: 1;
-    min-width: 0;
-    height: 48px;
+  .suggestion {
+    height: 36px;
     padding: 0 var(--space-3);
-    border-radius: var(--radius-sm);
-    background: var(--surface-raised);
-    box-shadow: var(--shadow-card);
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    color: var(--action-text);
-  }
-
-  input {
-    flex: 1;
-    min-width: 0;
     border: 0;
-    background: transparent;
-    font: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text);
+    border-radius: var(--radius-pill);
+    background: var(--action-soft);
+    color: var(--action-text);
+    font-size: 14px;
+    font-weight: 700;
   }
 
-  input:focus-visible {
-    outline: none;
-  }
-
-  .field:focus-within {
-    outline: 2px solid var(--focus);
-    outline-offset: 2px;
-  }
-
-  .hint,
   .empty {
     color: var(--text-muted);
     font-size: 15px;

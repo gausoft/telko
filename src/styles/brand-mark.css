@@ -1,0 +1,28 @@
+/* Operator or mobile money mark: the logo on a white disc, or a colored badge. Shared by BrandMark.astro and scripts/brand-mark.ts. */
+.brand-mark {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-mark-logo {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
+  padding: calc(var(--size) * 0.12);
+}
+
+.brand-mark-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-mark-badge {
+  font-size: calc(var(--size) * 0.42);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}

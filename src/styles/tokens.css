@@ -23,6 +23,9 @@
   --icon-bg: #EEECFF;
   --icon-fg: #4B3BFF;
   --dot: #C9C4FF;
+  --promo: #E0195F;         /* white text 4.7 */
+  --on-promo: #FFFFFF;
+  --promo-glow: rgba(224, 25, 95, 0.28);
 
   --shadow-card: 0 8px 24px rgba(75, 59, 255, 0.08);
   --shadow-hero: 0 16px 40px rgba(75, 59, 255, 0.35);
@@ -73,6 +76,9 @@
     --icon-bg: #2B2560;
     --icon-fg: #DCD8FF;       /* 10.0 on icon-bg */
     --dot: #3A3A47;
+    --promo: #E0195F;
+    --on-promo: #FFFFFF;
+    --promo-glow: rgba(255, 46, 126, 0.35);
 
     --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 20px rgba(0, 0, 0, 0.45);
     --shadow-hero: 0 14px 36px rgba(75, 59, 255, 0.35);
@@ -105,6 +111,9 @@
   --icon-bg: #2B2560;
   --icon-fg: #DCD8FF;       /* 10.0 on icon-bg */
   --dot: #3A3A47;
+  --promo: #E0195F;
+  --on-promo: #FFFFFF;
+  --promo-glow: rgba(255, 46, 126, 0.35);
 
   --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 20px rgba(0, 0, 0, 0.45);
   --shadow-hero: 0 14px 36px rgba(75, 59, 255, 0.35);

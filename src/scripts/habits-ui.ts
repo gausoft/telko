@@ -3,10 +3,8 @@ import type { EntryRow } from '../db/db-types';
 import { usageFor } from '../db/usage-store';
 import { encodeUssd } from '../lib/dial';
 import { rankHabits } from '../lib/habits';
-
-/** Lucide "history", constant markup. */
-const HISTORY_ICON =
-  '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>';
+import { brandMarkElement } from './brand-mark';
+import type { OperatorBrands } from '../lib/brand-types';
 
 /**
  * Puts the codes this device uses most at the front of each operator's shortcuts.
@@ -14,6 +12,7 @@ const HISTORY_ICON =
  */
 export async function showHabits(country: string): Promise<void> {
   const lists = Array.from(document.querySelectorAll<HTMLElement>('[data-habits]'));
+  const brands = readBrands();
 
   for (const list of lists) {
     const operator = list.dataset['habits'] ?? '';
@@ -23,7 +22,7 @@ export async function showHabits(country: string): Promise<void> {
     for (const id of [...ids].reverse()) {
       const existing = list.querySelector<HTMLElement>(`[data-entry="${CSS.escape(id)}"]`);
       const entry = entries.get(id);
-      const chip = existing ?? (entry ? habitChip(entry) : null);
+      const chip = existing ?? (entry ? habitChip(entry, brands[entry.operator]) : null);
       if (!chip) continue;
 
       chip.classList.add('chip-habit');
@@ -32,7 +31,13 @@ export async function showHabits(country: string): Promise<void> {
   }
 }
 
-function habitChip(entry: EntryRow): HTMLElement {
+function readBrands(): Record<string, OperatorBrands> {
+  const raw = document.querySelector('#brand-data')?.textContent;
+
+  return raw ? (JSON.parse(raw) as Record<string, OperatorBrands>) : {};
+}
+
+function habitChip(entry: EntryRow, brands: OperatorBrands | undefined): HTMLElement {
   const dialable = entry.ussd.params.length === 0;
   const chip = document.createElement(dialable ? 'a' : 'button');
   chip.className = 'chip';
@@ -48,13 +53,12 @@ function habitChip(entry: EntryRow): HTMLElement {
     chip.dataset['build'] = entry.id;
   }
 
-  const icon = document.createElement('span');
-  icon.className = 'chip-icon';
-  icon.innerHTML = HISTORY_ICON;
+  const brand = entry.category === 'mobile-money' ? (brands?.money ?? brands?.operator) : brands?.operator;
   const label = document.createElement('span');
   label.className = 'chip-label';
   label.textContent = entry.name;
-  chip.append(icon, label);
+  if (brand) chip.append(brandMarkElement(brand, 26));
+  chip.append(label);
 
   return chip;
 }

@@ -1,4 +1,5 @@
 ---
+import '../styles/brand-mark.css';
 import { SHOW_BRAND_LOGOS } from '../config';
 import type { Brand } from '../lib/schema';
 
@@ -13,12 +14,12 @@ const logo = SHOW_BRAND_LOGOS && brand.logo ? `/brands/${brand.logo}` : null;
 
 {
   logo ? (
-    <span class="mark mark-logo" style={`--size: ${size}px`}>
+    <span class="brand-mark brand-mark-logo" style={`--size: ${size}px`}>
       <img src={logo} alt={brand.name} width={size} height={size} loading="lazy" decoding="async" />
     </span>
   ) : (
     <span
-      class="mark mark-badge"
+      class="brand-mark brand-mark-badge"
       role="img"
       aria-label={brand.name}
       style={`--size: ${size}px; background: ${brand.badge.background}; color: ${brand.badge.foreground}`}
@@ -27,33 +28,3 @@ const logo = SHOW_BRAND_LOGOS && brand.logo ? `/brands/${brand.logo}` : null;
     </span>
   )
 }
-
-<style>
-  .mark {
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .mark-logo {
-    background: #ffffff;
-    box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
-    padding: calc(var(--size) * 0.12);
-  }
-
-  .mark-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .mark-badge {
-    font-size: calc(var(--size) * 0.42);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-</style>

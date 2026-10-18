@@ -17,10 +17,27 @@ export function renderResults(): void {
   const country = page.dataset['country'] ?? '';
   const update = (): void => paint(payload, search(payload.docs, input.value, country));
 
+  const clear = document.querySelector<HTMLButtonElement>('[data-clear]');
+  const refresh = (): void => {
+    if (clear) clear.hidden = input.value.length === 0;
+    update();
+  };
+
   const initial = new URLSearchParams(window.location.search).get('q');
   if (initial) input.value = initial;
-  input.addEventListener('input', update);
-  update();
+  input.addEventListener('input', refresh);
+  clear?.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    refresh();
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-suggest]').forEach((chip) =>
+    chip.addEventListener('click', () => {
+      input.value = chip.dataset['suggest'] ?? '';
+      refresh();
+    }),
+  );
+  refresh();
 }
 
 function readPayload(): SearchPayload | null {

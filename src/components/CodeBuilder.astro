@@ -2,6 +2,7 @@
 import ArrowLeft from '@lucide/astro/icons/arrow-left';
 
 import '../styles/code-line.css';
+import '../styles/field.css';
 import { builderPayload } from '../lib/builder-payload';
 import type { Catalog } from '../lib/catalog-types';
 import ChoiceList from './ChoiceList.astro';
@@ -45,11 +46,16 @@ const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name
 </script>
 
 <style is:global>
+  #code-builder-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .cb {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
-    overflow: hidden;
   }
 
   .cb-dots {
@@ -110,32 +116,14 @@ const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name
   }
 
   .cb-field {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
     height: 56px;
-    padding: 0 var(--space-3) 0 var(--space-2);
-    border-radius: var(--radius-sm);
-    background: var(--surface-raised);
-    box-shadow: var(--shadow-card);
-  }
-
-  .cb-field:focus-within {
-    box-shadow: 0 0 0 2px var(--focus);
+    padding-left: var(--space-2);
   }
 
   .cb-field input {
-    flex: 1;
-    min-width: 0;
-    height: 100%;
-    padding-left: var(--space-2);
-    border: 0;
-    background: transparent;
-    color: var(--text);
+    padding-left: var(--space-1);
     font-family: var(--font-mono);
     font-size: 20px;
-    font-weight: 600;
-    outline: none;
   }
 
   .cb-country {
@@ -244,6 +232,7 @@ const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name
     flex: 1;
   }
 
+  .cb-chips[hidden],
   .cb-next[hidden],
   .cb-back[hidden] {
     display: none;

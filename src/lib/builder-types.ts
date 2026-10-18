@@ -1,3 +1,4 @@
+import type { BrandView } from './brand-types';
 import type { Ussd } from './schema';
 
 export interface BuilderEntry {
@@ -5,6 +6,7 @@ export interface BuilderEntry {
   country: string;
   operator: string;
   title: string;
+  brand: BrandView | null;
   ussd: Ussd;
 }
 

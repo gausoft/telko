@@ -1,0 +1,47 @@
+---
+import Flame from '@lucide/astro/icons/flame';
+
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<span class="promo">
+  <Flame size={13} aria-hidden="true" />
+  {label}
+</span>
+
+<style>
+  .promo {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px 3px 7px;
+    border-radius: var(--radius-pill);
+    background: var(--promo);
+    color: var(--on-promo);
+    box-shadow: 0 4px 12px var(--promo-glow);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: promo-pop 0.4s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+  }
+
+  @keyframes promo-pop {
+    from {
+      transform: scale(0.6);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .promo {
+      animation: none;
+    }
+  }
+</style>
