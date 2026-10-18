@@ -1,6 +1,6 @@
 import { encodeUssd } from '../lib/dial';
 import { DEFAULT_PRESETS } from '../lib/ussd-flow';
-import type { ReviewContext, StepContext, StepView } from './code-builder-types';
+import type { InputOptions, ReviewContext, StepContext, StepView } from './code-builder-types';
 
 /** Lucide "lock", constant markup. */
 const LOCK_ICON =
@@ -119,7 +119,9 @@ export function reviewView(ctx: ReviewContext): StepView {
 
   panel.append(dial, copy);
 
-  return { element: panel, focus: null, read: () => '' };
+  panel.tabIndex = -1;
+
+  return { element: panel, focus: panel, read: () => '' };
 }
 
 function fieldShell(ctx: StepContext): { element: HTMLElement; box: HTMLElement } {
@@ -130,13 +132,6 @@ function fieldShell(ctx: StepContext): { element: HTMLElement; box: HTMLElement 
   element.append(label, box);
 
   return { element, box };
-}
-
-interface InputOptions {
-  type: string;
-  inputMode: string;
-  autocomplete: string;
-  placeholder: string;
 }
 
 function inputFor(ctx: StepContext, options: InputOptions): HTMLInputElement {

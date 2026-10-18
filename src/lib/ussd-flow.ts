@@ -113,10 +113,16 @@ export function normalizePhone(raw: string, format: NonNullable<Param['format']>
   return { ok: true, value: national };
 }
 
+const WHOLE_AMOUNT = /^\d{1,3}(?:[ \u00a0\u202f.]\d{3})+$|^\d+$/;
+
+/** Whole CFA francs only, with optional thousands separators ("5 000", "5.000"). Anything else is refused, never repaired. */
 function validateAmount(step: Step, raw: string): Validation {
-  const value = raw.replace(/\D/g, '').replace(/^0+/, '');
-  const amount = Number(value);
-  if (value === '' || amount <= 0) return { ok: false, message: 'Indiquez un montant' };
+  const trimmed = raw.trim();
+  if (!WHOLE_AMOUNT.test(trimmed)) return { ok: false, message: trimmed === '' ? 'Indiquez un montant' : 'Montant en francs entiers, sans virgule' };
+
+  const amount = Number(trimmed.replace(/\D/g, ''));
+  const value = String(amount);
+  if (!Number.isSafeInteger(amount) || amount <= 0) return { ok: false, message: 'Indiquez un montant' };
   if (step.min !== undefined && amount < step.min) return { ok: false, message: `Minimum ${step.min} F` };
   if (step.max !== undefined && amount > step.max) return { ok: false, message: `Maximum ${step.max} F` };
 
@@ -128,9 +134,12 @@ function validateChoice(step: Step, raw: string): Validation {
 }
 
 function validateText(step: Step, raw: string): Validation {
-  const value = step.numeric ? raw.replace(/\D/g, '') : raw.trim();
+  const trimmed = raw.trim();
+  if (/[*#]/.test(trimmed)) return { ok: false, message: 'Les caractères * et # ne sont pas permis' };
+  if (step.numeric && /[^\d\s]/.test(trimmed)) return { ok: false, message: 'Chiffres uniquement' };
+
+  const value = step.numeric ? trimmed.replace(/\s/g, '') : trimmed;
   if (value === '') return { ok: false, message: 'Champ obligatoire' };
-  if (/[*#]/.test(value)) return { ok: false, message: 'Les caractères * et # ne sont pas permis' };
   if (step.length !== undefined && value.length !== step.length) return { ok: false, message: `${step.length} caractères attendus` };
 
   return { ok: true, value };

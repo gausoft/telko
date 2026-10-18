@@ -33,6 +33,10 @@ describe('ussd flow on every real code', () => {
       expect(built.code).not.toMatch(/\*#$/);
       expect(built.needsSecret).toBe(secrets.length > 0);
       for (const name of secrets) expect(built.code).not.toContain(name);
+
+      const withSecret = { ...values, ...Object.fromEntries(secrets.map((n) => [n, '987654'])) };
+      expect(buildCode(e.ussd, withSecret).code).not.toContain('987654');
+      expect(dialTokens(e.ussd, withSecret).some((t) => t.kind === 'slot' && t.value === '987654')).toBe(false);
     }
   });
 });
@@ -94,6 +98,8 @@ describe('inputs', () => {
     if (!amount) throw new Error('missing amount step');
 
     expect(validateStep(amount, '5 000', togo)).toEqual({ ok: true, value: '5000' });
+    expect(validateStep(amount, '5.000', togo)).toEqual({ ok: true, value: '5000' });
+    for (const bad of ['500.50', '-500', '500#1000', '5,5', '1e3', '50 00']) expect(validateStep(amount, bad, togo).ok).toBe(false);
     expect(validateStep(amount, '0', togo).ok).toBe(false);
     expect(validateStep({ ...amount, min: 100 }, '50', togo).ok).toBe(false);
 
@@ -101,5 +107,7 @@ describe('inputs', () => {
     if (!year) throw new Error('missing year step');
     expect(validateStep(year, '2024', togo).ok).toBe(true);
     expect(validateStep(year, '24', togo).ok).toBe(false);
+    expect(validateStep(year, '20#4', togo).ok).toBe(false);
+    expect(validateStep(year, '20a4', togo).ok).toBe(false);
   });
 });
