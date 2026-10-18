@@ -1,17 +1,38 @@
 # Data schema
 
-All data lives in `data/<country>/`. Each operator has its own folder with one JSON file per category.
+All data lives in `data/`. Countries use their ISO 3166-1 alpha-2 code. Each operator has its own folder with one JSON file per category.
 
 ```
 data/
-└── togo/
+├── countries.json
+└── tg/
     ├── operators.json
+    ├── featured.json
     ├── yas/
     │   ├── general.json
     │   ├── internet.json
-    │   └── mobile-money.json
+    │   ├── mobile-money.json
+    │   └── fees.json
     └── moov/
         └── ...
+```
+
+The schemas in `src/lib/schema.ts` implement this document; `npm test` validates every file against them.
+
+## countries.json
+
+```json
+{ "countries": [{ "code": "tg", "name": "Togo", "status": "live", "dial_code": "228", "currency": "XOF" }] }
+```
+
+`status` is `live` (data available) or `soon` (listed, no data yet).
+
+## featured.json
+
+Hand-picked items shown in the home carousel, in order. Each `entry_id` must exist in the same country; `label` is the short line shown above the offer.
+
+```json
+{ "country": "tg", "updated": "2026-10-18", "items": [{ "entry_id": "yas-internet-net599", "label": "Le plus demandé" }] }
 ```
 
 ## operators.json
@@ -23,8 +44,11 @@ data/
     {
       "id": "yas",
       "name": "Yas Togo",
+      "short_name": "Yas",
       "former_names": ["Togocom", "Togocel"],
-      "mobile_money": { "name": "Mixx by Yas", "former_names": ["T-Money"] },
+      "badge": { "label": "Y", "background": "#00377D", "foreground": "#FFFFFF" },
+      "logo": "yas.svg",
+      "mobile_money": { "id": "mixx", "name": "Mixx by Yas", "short_name": "Mixx", "former_names": ["T-Money"], "badge": { "label": "Mx", "background": "#FFD100", "foreground": "#00377D" }, "logo": "mixx.svg" },
       "prefixes": [],
       "website": "https://yas.tg",
       "customer_service": "888",
@@ -35,6 +59,8 @@ data/
 ```
 
 `former_names` matter: users still search for old brand names.
+
+`badge` is the fallback shown when logos are disabled or missing: a short label on the brand color, with a foreground that keeps a 4.5:1 contrast. `logo` is a file name in `public/brands/`, or `null`.
 
 `prefixes` stays empty unless an official numbering source is cited. Mobile number portability has been in force in Togo since 3 May 2024, so a prefix does not identify the operator. Do not build operator detection on prefixes.
 

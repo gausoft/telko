@@ -1,0 +1,12 @@
+{
+  "country": "tg",
+  "updated": "2026-10-18",
+  "items": [
+    { "entry_id": "yas-internet-net599", "label": "Le plus demandé" },
+    { "entry_id": "yas-internet-net3999", "label": "Pour la semaine" },
+    { "entry_id": "yas-internet-net5000", "label": "Pour le mois" },
+    { "entry_id": "moov-internet-izi-wik", "label": "Le plus demandé" },
+    { "entry_id": "moov-internet-izi-small-2", "label": "Pour le mois" },
+    { "entry_id": "moov-internet-izi-moon", "label": "Pour la nuit" }
+  ]
+}
