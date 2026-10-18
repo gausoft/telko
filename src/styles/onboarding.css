@@ -61,13 +61,22 @@
 
 .onboarding .keypad {
   position: absolute;
-  top: 48px;
+  /* Below the language switch. */
+  top: calc(88px + env(safe-area-inset-top, 0px));
   left: 50%;
   transform: translateX(-50%);
   display: grid;
   grid-template-columns: repeat(3, 44px);
   gap: 56px;
   justify-items: center;
+}
+
+/* Short phones: a tighter keypad keeps the key clear of the wordmark. */
+@media (max-height: 760px) {
+  .onboarding .keypad {
+    top: calc(68px + env(safe-area-inset-top, 0px));
+    gap: 32px;
+  }
 }
 
 .onboarding .keypad span {
