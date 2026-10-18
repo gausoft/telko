@@ -22,6 +22,7 @@ const slides = items.map((item) => {
     href: telHref(item.entry),
     code: item.entry.ussd.template,
     operator: item.entry.operator,
+    entry: item.entry.id,
   };
 });
 ---
@@ -35,6 +36,7 @@ const slides = items.map((item) => {
             class="slide"
             href={s.href ?? undefined}
             data-dial={s.href ? s.code : undefined}
+            data-entry={s.entry}
             data-label={`${s.title}, ${s.meta}`}
             data-operator={s.operator}
             data-slide={i}

@@ -41,6 +41,7 @@ const Tag = href ? 'a' : 'button';
   class="row"
   href={href ?? undefined}
   data-dial={href ? entry.ussd.template : undefined}
+  data-entry={entry.id}
   data-label={href ? label : undefined}
   data-operator={entry.operator}
   data-duration={duration}

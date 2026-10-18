@@ -9,25 +9,27 @@ import LifeBuoy from '@lucide/astro/icons/life-buoy';
 import AppHeader from '../../components/AppHeader.astro';
 import BrandMark from '../../components/BrandMark.astro';
 import Carousel from '../../components/Carousel.astro';
+import CodeBuilder from '../../components/CodeBuilder.astro';
 import DialToast from '../../components/DialToast.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
 import { featuredFor, loadCatalog, shortcutsFor } from '../../lib/catalog';
-import type { CountryCatalog } from '../../lib/catalog-types';
+import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
 import { telHref } from '../../lib/dial';
 import { SECTIONS } from '../../lib/sections';
 
 export function getStaticPaths() {
   const catalog = loadCatalog();
 
-  return [...catalog.byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data } }));
+  return [...catalog.byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data, catalog } }));
 }
 
 interface Props {
   data: CountryCatalog;
+  catalog: Catalog;
 }
 
-const { data } = Astro.props;
+const { data, catalog } = Astro.props;
 const first = data.operators[0];
 if (!first) throw new Error(`${data.country.code}: no operator`);
 
@@ -54,9 +56,9 @@ const blocks = data.operators.map((operator) => ({
 
           <section class="shortcuts" aria-label="Raccourcis">
             <h2 class="section-title">Raccourcis</h2>
-            <div class="chips" data-recents={operator.id}>
+            <div class="chips" data-habits={operator.id}>
               {shortcuts.map((s) => (
-                <a class="chip" href={s.href} data-dial={s.entry.ussd.template} data-label={s.label} data-operator={operator.id}>
+                <a class="chip" href={s.href} data-dial={s.entry.ussd.template} data-entry={s.entry.id} data-label={s.label} data-operator={operator.id}>
                   <BrandMark brand={s.brand} size={26} />
                   <span>{s.label}</span>
                 </a>
@@ -84,12 +86,13 @@ const blocks = data.operators.map((operator) => ({
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
+  <CodeBuilder catalog={catalog} country={data.country.code} />
   <DialToast />
 </AppLayout>
 
 <script>
   import { readPref } from '../../scripts/prefs';
-  import { readRecents } from '../../scripts/recents';
+  import { showHabits } from '../../scripts/habits-ui';
 
   const blocks = Array.from(document.querySelectorAll<HTMLElement>('[data-op-block]'));
   const known = blocks.map((b) => b.dataset['opBlock'] ?? '');
@@ -98,32 +101,10 @@ const blocks = data.operators.map((operator) => ({
     blocks.forEach((b) => (b.hidden = b.dataset['opBlock'] !== operator));
   }
 
-  function addRecents(): void {
-    const recents = readRecents();
-    document.querySelectorAll<HTMLElement>('[data-recents]').forEach((list) => {
-      const operator = list.dataset['recents'] ?? '';
-      const existing = new Set(Array.from(list.querySelectorAll<HTMLElement>('[data-dial]'), (a) => a.dataset['dial']));
-      recents
-        .filter((r) => r.operator === operator && !existing.has(r.code))
-        .slice(0, 3)
-        .reverse()
-        .forEach((r) => {
-          const chip = document.createElement('a');
-          chip.className = 'chip chip-recent';
-          chip.href = `tel:${r.code.replace(/#/g, '%23')}`;
-          chip.dataset['dial'] = r.code;
-          chip.dataset['label'] = r.label;
-          chip.dataset['operator'] = r.operator;
-          chip.textContent = r.label;
-          list.prepend(chip);
-        });
-    });
-  }
-
   document.addEventListener('telko:operator', (e) => select((e as CustomEvent<string>).detail));
   const saved = readPref('operator');
   if (saved && known.includes(saved)) select(saved);
-  addRecents();
+  void showHabits(window.location.pathname.split('/')[1] ?? '').catch(() => undefined);
 </script>
 
 <style>
@@ -174,9 +155,27 @@ const blocks = data.operators.map((operator) => ({
     white-space: nowrap;
   }
 
-  .chips :global(.chip-recent) {
-    padding-left: var(--space-4);
+  .chips :global(.chip-habit) {
     background: var(--action-soft);
+    color: var(--action-text);
+  }
+
+  .chips :global(.chip-icon) {
+    width: 26px;
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .chips :global(.chip-label) {
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .chips :global(button.chip) {
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
   }
 
   .tiles {

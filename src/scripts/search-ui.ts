@@ -75,6 +75,7 @@ function row(doc: SearchDoc, brand: SearchBrand | undefined): HTMLElement {
     el.dataset['dial'] = doc.code;
     el.dataset['label'] = doc.title;
     el.dataset['operator'] = doc.operator;
+    el.dataset['entry'] = doc.id;
     el.setAttribute('aria-label', `Composer ${doc.code} : ${doc.title}`);
   } else if (el instanceof HTMLButtonElement) {
     el.type = 'button';
