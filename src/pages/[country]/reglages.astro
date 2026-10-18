@@ -1,0 +1,205 @@
+---
+import ChevronRight from '@lucide/astro/icons/chevron-right';
+import Info from '@lucide/astro/icons/info';
+import LifeBuoy from '@lucide/astro/icons/life-buoy';
+import RadioTower from '@lucide/astro/icons/radio-tower';
+import SunMoon from '@lucide/astro/icons/sun-moon';
+
+import AppHeader from '../../components/AppHeader.astro';
+import BrandMark from '../../components/BrandMark.astro';
+import Dock from '../../components/Dock.astro';
+import AppLayout from '../../layouts/AppLayout.astro';
+import { loadCatalog } from '../../lib/catalog';
+import type { CountryCatalog } from '../../lib/catalog-types';
+
+export function getStaticPaths() {
+  return [...loadCatalog().byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data } }));
+}
+
+interface Props {
+  data: CountryCatalog;
+}
+
+const { data } = Astro.props;
+const first = data.operators[0];
+if (!first) throw new Error(`${data.country.code}: no operator`);
+
+const THEMES = [
+  { id: 'auto', label: 'Auto' },
+  { id: 'light', label: 'Clair' },
+  { id: 'dark', label: 'Sombre' },
+] as const;
+---
+
+<AppLayout title="Réglages · Telko" withDock>
+  <main class="page">
+    <AppHeader country={data.country} back={`/${data.country.code}`} title="Réglages" />
+
+    <section class="group" aria-label="Mon profil">
+      <a class="row" href="/bienvenue?etape=pays">
+        <img class="flag" src={`/flags/${data.country.code}.svg`} alt="" width="32" height="32" />
+        <span class="label">Pays</span>
+        <span class="value">{data.country.name}</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </a>
+      <a class="row" href="/bienvenue?etape=operateur">
+        <span class="icon"><RadioTower size={18} aria-hidden="true" /></span>
+        <span class="label">Mes opérateurs</span>
+        <span class="value marks">
+          {data.operators.map((o) => <span data-my-operator={o.id}><BrandMark brand={o} size={24} /></span>)}
+        </span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </a>
+    </section>
+
+    <section class="group" aria-label="Affichage">
+      <div class="row">
+        <span class="icon"><SunMoon size={18} aria-hidden="true" /></span>
+        <span class="label">Thème</span>
+        <span class="segmented" role="group" aria-label="Thème">
+          {THEMES.map((t) => <button type="button" data-theme-choice={t.id} aria-pressed={t.id === 'auto' ? 'true' : 'false'}>{t.label}</button>)}
+        </span>
+      </div>
+    </section>
+
+    <section class="group" aria-label="Aide">
+      <a class="row" href={`/${data.country.code}/${first.id}/aide`} data-operator-href={`/${data.country.code}/{op}/aide`}>
+        <span class="icon"><LifeBuoy size={18} aria-hidden="true" /></span>
+        <span class="label">Aide et service client</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </a>
+      <div class="row">
+        <span class="icon"><Info size={18} aria-hidden="true" /></span>
+        <span class="label">Données ouvertes, issues des sources officielles</span>
+      </div>
+    </section>
+  </main>
+
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="reglages" />
+</AppLayout>
+
+<script>
+  import { readPref, writePref } from '../../scripts/prefs';
+
+  const mine = (readPref('operators') ?? '').split(',').filter((id) => id.length > 0);
+  if (mine.length > 0) {
+    document.querySelectorAll<HTMLElement>('[data-my-operator]').forEach((el) => {
+      el.hidden = !mine.includes(el.dataset['myOperator'] ?? '');
+    });
+  }
+
+  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-theme-choice]'));
+
+  function applyTheme(theme: string): void {
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset['themeChoice'] === theme)));
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset['theme'] = theme;
+    else delete document.documentElement.dataset['theme'];
+  }
+
+  buttons.forEach((b) =>
+    b.addEventListener('click', () => {
+      const theme = b.dataset['themeChoice'] ?? 'auto';
+      writePref('theme', theme);
+      applyTheme(theme);
+    }),
+  );
+
+  applyTheme(readPref('theme') ?? 'auto');
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .group {
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  .row {
+    min-height: 56px;
+    padding: var(--space-2) var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .row + .row {
+    box-shadow: 0 -1px 0 var(--tag-bg);
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: var(--icon-bg);
+    color: var(--icon-fg);
+  }
+
+  .flag {
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .label {
+    flex: 1;
+    min-width: 0;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .value {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .marks {
+    display: flex;
+    gap: 4px;
+  }
+
+  .marks [hidden] {
+    display: none;
+  }
+
+  .row :global(.chevron) {
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+
+  .segmented {
+    display: flex;
+    padding: 3px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+  }
+
+  .segmented button {
+    height: 32px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--tag-text);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .segmented button[aria-pressed='true'] {
+    background: var(--action);
+    color: var(--on-action);
+  }
+</style>

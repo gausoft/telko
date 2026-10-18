@@ -27,6 +27,12 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@500;600&display=swap"
     />
     <title>{title}</title>
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('telko.theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
   </head>
   <body class:list={{ 'has-dock': withDock }}>
     <slot />

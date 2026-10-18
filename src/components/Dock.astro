@@ -3,74 +3,73 @@ import House from '@lucide/astro/icons/house';
 import Search from '@lucide/astro/icons/search';
 import Signal from '@lucide/astro/icons/signal';
 import Wallet from '@lucide/astro/icons/wallet';
-import LifeBuoy from '@lucide/astro/icons/life-buoy';
-import ChevronUp from '@lucide/astro/icons/chevron-up';
+import Settings from '@lucide/astro/icons/settings';
+
+import type { Operator } from '../lib/schema';
 
 interface Props {
   country: string;
+  operators: Operator[];
+  /** Operator the links point to when the page is rendered. */
   operator: string;
-  current: 'accueil' | 'internet' | 'argent' | 'aide' | 'recherche';
+  /** True on operator pages: the page's operator wins over the saved one. */
+  pinned?: boolean;
+  current: 'accueil' | 'internet' | 'argent' | 'recherche' | 'reglages' | 'none';
 }
 
-const { country, operator, current } = Astro.props;
+const { country, operators, operator, pinned = false, current } = Astro.props;
+const moneyLabels = Object.fromEntries(operators.map((o) => [o.id, o.mobile_money?.short_name ?? 'Mobile money']));
+const opHref = (section: string): string => `/${country}/{op}/${section}`;
 const items = [
-  { id: 'accueil', label: 'Accueil', href: `/${country}`, Icon: House },
-  { id: 'internet', label: 'Internet', href: `/${country}/${operator}/internet`, Icon: Signal },
-  { id: 'argent', label: 'Argent', href: `/${country}/${operator}/argent`, Icon: Wallet },
-  { id: 'aide', label: 'Aide', href: `/${country}/${operator}/aide`, Icon: LifeBuoy },
+  { id: 'accueil', label: 'Accueil', href: `/${country}`, template: null, Icon: House },
+  { id: 'internet', label: 'Internet', href: opHref('internet').replace('{op}', operator), template: opHref('internet'), Icon: Signal },
+  { id: 'argent', label: moneyLabels[operator] ?? 'Mobile money', href: opHref('argent').replace('{op}', operator), template: opHref('argent'), Icon: Wallet },
+  { id: 'reglages', label: 'Réglages', href: `/${country}/reglages`, template: null, Icon: Settings },
 ] as const;
+const [home, internet, money, settings] = items;
 ---
 
-<div class="dock" data-dock>
+<nav class="dock" aria-label="Navigation principale" data-dock data-operator={operator} data-pinned={pinned ? 'true' : undefined} data-money-labels={JSON.stringify(moneyLabels)}>
   {
-    current !== 'recherche' && (
-      <>
-        <button type="button" class="handle" data-search-toggle aria-expanded="false" aria-controls="dock-search" aria-label="Rechercher">
-          <ChevronUp size={20} aria-hidden="true" />
-        </button>
-        <form id="dock-search" class="search" action={`/${country}/recherche`} method="get" role="search" hidden>
-          <Search size={20} aria-hidden="true" />
-          <input type="search" name="q" placeholder="Forfait, solde, frais…" enterkeyhint="search" autocomplete="off" aria-label="Rechercher" />
-        </form>
-      </>
-    )
+    [home, internet].map(({ id, label, href, template, Icon }) => (
+      <a href={href} data-operator-href={template ?? undefined} aria-current={current === id ? 'page' : undefined}>
+        <Icon size={22} aria-hidden="true" />
+        <span>{label}</span>
+      </a>
+    ))
   }
-  <nav aria-label="Navigation principale">
-    {
-      items.map(({ id, label, href, Icon }) => (
-        <a href={href} data-operator-href={href.includes(`/${operator}/`) ? href.replace(`/${operator}/`, '/{op}/') : undefined} aria-current={current === id ? 'page' : undefined}>
-          <Icon size={22} aria-hidden="true" />
-          <span>{label}</span>
-        </a>
-      ))
-    }
-  </nav>
-</div>
+  <a class="fab" href={`/${country}/recherche`} aria-label="Rechercher" aria-current={current === 'recherche' ? 'page' : undefined}>
+    <Search size={24} aria-hidden="true" />
+  </a>
+  {
+    [money, settings].map(({ id, label, href, template, Icon }) => (
+      <a href={href} data-operator-href={template ?? undefined} aria-current={current === id ? 'page' : undefined}>
+        <Icon size={22} aria-hidden="true" />
+        <span data-money-label={id === 'argent' ? '' : undefined}>{label}</span>
+      </a>
+    ))
+  }
+</nav>
 
 <script>
-  import { readPref } from '../scripts/prefs';
+  import { readPref, writePref } from '../scripts/prefs';
 
   const dock = document.querySelector<HTMLElement>('[data-dock]');
-  const toggle = document.querySelector<HTMLButtonElement>('[data-search-toggle]');
-  const form = document.querySelector<HTMLFormElement>('#dock-search');
-  const input = form?.querySelector<HTMLInputElement>('input');
+  const labels = JSON.parse(dock?.dataset['moneyLabels'] ?? '{}') as Record<string, string>;
 
-  // Focus runs inside the tap handler so mobile browsers open the keyboard.
-  toggle?.addEventListener('click', () => {
-    if (!form || !input) return;
-    const open = form.hidden;
-    form.hidden = !open;
-    toggle.setAttribute('aria-expanded', String(open));
-    dock?.classList.toggle('is-open', open);
-    if (open) input.focus();
-  });
-
-  const operator = readPref('operator');
-  if (operator && /^[a-z0-9-]+$/.test(operator)) {
+  function point(operator: string): void {
+    if (!(operator in labels)) return;
     document.querySelectorAll<HTMLAnchorElement>('[data-operator-href]').forEach((a) => {
       a.href = (a.dataset['operatorHref'] ?? '').replace('{op}', operator);
     });
+    const label = document.querySelector<HTMLElement>('[data-money-label]');
+    if (label) label.textContent = labels[operator] ?? label.textContent;
   }
+
+  if (dock?.dataset['pinned']) writePref('operator', dock.dataset['operator'] ?? '');
+  else point(readPref('operator') ?? '');
+
+  document.addEventListener('telko:operator', (e) => point((e as CustomEvent<string>).detail));
 </script>
 
 <style>
@@ -82,82 +81,16 @@ const items = [
     z-index: 20;
     max-width: 640px;
     margin: 0 auto;
-    padding: var(--space-2) var(--space-3) calc(var(--space-1) + env(safe-area-inset-bottom, 0px));
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
+    padding: var(--space-1) var(--space-2) calc(var(--space-1) + env(safe-area-inset-bottom, 0px));
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: end;
     background: var(--dock);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     box-shadow: var(--shadow-dock);
   }
 
-  .handle {
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    width: 52px;
-    height: 36px;
-    margin-left: -26px;
-    border: 0;
-    border-radius: var(--radius-pill);
-    background: var(--dock);
-    box-shadow: var(--shadow-dock);
-    color: var(--text-muted);
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-  }
-
-  .handle :global(svg) {
-    transition: transform 0.2s ease;
-  }
-
-  .is-open .handle :global(svg) {
-    transform: rotate(180deg);
-  }
-
-  .search {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    height: 48px;
-    margin-top: var(--space-3);
-    padding: 0 var(--space-4);
-    border-radius: var(--radius-sm);
-    background: var(--action-soft);
-    color: var(--action-text);
-  }
-
-  .search[hidden] {
-    display: none;
-  }
-
-  .search input {
-    flex: 1;
-    min-width: 0;
-    height: 100%;
-    border: 0;
-    background: transparent;
-    color: var(--text);
-    font: inherit;
-    font-size: 16px;
-    outline: none;
-  }
-
-  .search input::placeholder {
-    color: var(--text-muted);
-  }
-
-  .search:focus-within {
-    box-shadow: 0 0 0 2px var(--focus);
-  }
-
-  nav {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  nav a {
+  a {
     min-height: 52px;
     display: flex;
     flex-direction: column;
@@ -168,9 +101,30 @@ const items = [
     text-decoration: none;
     font-size: 11px;
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  nav a[aria-current='page'] {
+  a[aria-current='page'] {
     color: var(--action-text);
+  }
+
+  .fab {
+    justify-self: center;
+    width: 56px;
+    height: 56px;
+    min-height: 0;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background: var(--action);
+    color: var(--on-action);
+    box-shadow: var(--shadow-hero);
+    overflow: visible;
+  }
+
+  .fab[aria-current='page'] {
+    color: var(--on-action);
+    box-shadow: 0 0 0 4px var(--action-soft), var(--shadow-hero);
   }
 </style>

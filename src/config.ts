@@ -13,4 +13,5 @@ export const STORAGE_KEYS = {
   operator: 'telko.operator',
   operators: 'telko.operators',
   onboarded: 'telko.onboarded',
+  theme: 'telko.theme',
 } as const;

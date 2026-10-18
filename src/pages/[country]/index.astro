@@ -75,7 +75,7 @@ const blocks = data.operators.map((operator) => ({
                   <span class="tile-icon">
                     <Icon size={20} aria-hidden="true" />
                   </span>
-                  <span>{section.label}</span>
+                  <span>{section.id === 'argent' ? (operator.mobile_money?.short_name ?? 'Mobile money') : section.label}</span>
                 </a>
               );
             })}
@@ -85,7 +85,7 @@ const blocks = data.operators.map((operator) => ({
     }
   </main>
 
-  <Dock country={data.country.code} operator={first.id} current="accueil" />
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
   <DialToast />
 </AppLayout>
 
@@ -100,10 +100,8 @@ const blocks = data.operators.map((operator) => ({
   function select(operator: string): void {
     switches.forEach((b) => b.setAttribute('aria-pressed', b.dataset['opSwitch'] === operator ? 'true' : 'false'));
     blocks.forEach((b) => (b.hidden = b.dataset['opBlock'] !== operator));
-    document.querySelectorAll<HTMLAnchorElement>('[data-operator-href]').forEach((a) => {
-      a.href = (a.dataset['operatorHref'] ?? '').replace('{op}', operator);
-    });
     writePref('operator', operator);
+    document.dispatchEvent(new CustomEvent('telko:operator', { detail: operator }));
   }
 
   function addRecents(): void {

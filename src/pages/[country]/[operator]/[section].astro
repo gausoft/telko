@@ -54,11 +54,12 @@ for (const filter of DURATION_FILTERS) {
 
 const fees = data.fees.filter((f) => f.operator === operator.id);
 const initialFilter: DurationFilter = 'mois';
+const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? 'Mobile money') : section.label;
 ---
 
-<AppLayout title={`${section.label} ${operator.short_name} · Telko`} withDock>
+<AppLayout title={`${title} ${operator.short_name} · Telko`} withDock>
   <main class="page">
-    <AppHeader country={data.country} back={`/${data.country.code}`} title={section.label} />
+    <AppHeader country={data.country} back={`/${data.country.code}`} title={title} switcher={{ operators: data.operators, current: operator.id, section: section.id }} />
 
     {
       isInternet && (
@@ -94,7 +95,7 @@ const initialFilter: DurationFilter = 'mois';
     <p class="source mono">Données non vérifiées sur téléphone · sources officielles et publiques, 18/10/2026</p>
   </main>
 
-  <Dock country={data.country.code} operator={operator.id} current={section.id === 'internet' || section.id === 'argent' || section.id === 'aide' ? section.id : 'accueil'} />
+  <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />
   <DialToast />
 </AppLayout>
 

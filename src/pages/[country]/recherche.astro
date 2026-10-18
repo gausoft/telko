@@ -66,7 +66,7 @@ const first = data.operators[0]?.id ?? '';
   </main>
 
   <script is:inline type="application/json" id="search-data" set:html={payload} />
-  <Dock country={data.country.code} operator={first} current="recherche" />
+  <Dock country={data.country.code} operators={data.operators} operator={first} current="recherche" />
   <DialToast />
 </AppLayout>
 

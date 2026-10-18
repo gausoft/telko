@@ -1,16 +1,18 @@
 ---
 import ArrowLeft from '@lucide/astro/icons/arrow-left';
-import ChevronDown from '@lucide/astro/icons/chevron-down';
 
-import type { Country } from '../lib/schema';
+import type { Country, Operator } from '../lib/schema';
+import BrandMark from './BrandMark.astro';
 
 interface Props {
   country: Country;
   back?: string | undefined;
   title?: string | undefined;
+  /** Operator switch on operator pages: each logo links to the same page for that operator. */
+  switcher?: { operators: Operator[]; current: string; section: string } | undefined;
 }
 
-const { country, back, title } = Astro.props;
+const { country, back, title, switcher } = Astro.props;
 ---
 
 <header class="header">
@@ -27,11 +29,17 @@ const { country, back, title } = Astro.props;
     )
   }
   {title && <h1 class="title">{title}</h1>}
-  <a class="country" href="/bienvenue?etape=pays" aria-label={`Pays : ${country.name}. Changer de pays`}>
-    <img src={`/flags/${country.code}.svg`} alt="" width="28" height="28" />
-    <span>{country.name}</span>
-    <ChevronDown size={16} aria-hidden="true" />
-  </a>
+  {
+    switcher && switcher.operators.length > 1 && (
+      <nav class="operators" aria-label="Opérateur">
+        {switcher.operators.map((o) => (
+          <a href={`/${country.code}/${o.id}/${switcher.section}`} aria-label={o.short_name} aria-current={o.id === switcher.current ? 'page' : undefined}>
+            <BrandMark brand={o} size={30} />
+          </a>
+        ))}
+      </nav>
+    )
+  }
 </header>
 
 <style>
@@ -82,22 +90,26 @@ const { country, back, title } = Astro.props;
     font-weight: 800;
   }
 
-  .country {
-    height: 38px;
-    padding: 0 var(--space-2) 0 5px;
+  .operators {
+    display: flex;
+    gap: 2px;
+    padding: 3px;
     border-radius: var(--radius-pill);
     background: var(--surface-raised);
     box-shadow: var(--shadow-card);
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2);
-    color: var(--text);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
   }
 
-  .country img {
+  .operators a {
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
+    display: grid;
+    place-items: center;
+    opacity: 0.55;
+  }
+
+  .operators a[aria-current='page'] {
+    opacity: 1;
+    box-shadow: 0 0 0 2px var(--action);
   }
 </style>

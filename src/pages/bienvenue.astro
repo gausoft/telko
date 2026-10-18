@@ -103,7 +103,8 @@ const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
 
   const root = document.querySelector<HTMLElement>('[data-onboarding]');
   const steps = Array.from(document.querySelectorAll<HTMLElement>('[data-step]'));
-  let index = new URLSearchParams(window.location.search).get('etape') === 'pays' ? 1 : 0;
+  const START_STEPS: Record<string, number> = { pays: 1, operateur: 2 };
+  let index = START_STEPS[new URLSearchParams(window.location.search).get('etape') ?? ''] ?? 0;
   let country = root?.dataset['defaultCountry'] ?? 'tg';
   const operatorButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-operator]'));
   const chosenOperators = (): string[] =>
