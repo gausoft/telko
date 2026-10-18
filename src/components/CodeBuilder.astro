@@ -1,0 +1,295 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+
+import '../styles/code-line.css';
+import { builderPayload } from '../lib/builder-payload';
+import type { Catalog } from '../lib/catalog-types';
+import ChoiceList from './ChoiceList.astro';
+import Sheet from './Sheet.astro';
+
+interface Props {
+  catalog: Catalog;
+  country: string;
+}
+
+const { catalog, country } = Astro.props;
+const payload = builderPayload(catalog, country);
+const countryItems = catalog.countries.map((c) => ({ id: c.code, name: `${c.name} (+${c.dial_code})`, flag: c.code }));
+---
+
+<Sheet id="code-builder" title="Code">
+  <div class="cb">
+    <span class="cb-dots" aria-hidden="true" data-cb-progress></span>
+    <div class="cb-code" data-cb-code></div>
+    <div class="cb-stage" data-cb-stage></div>
+    <p class="cb-error" role="alert" data-cb-error></p>
+  </div>
+  <div class="cb-actions" slot="footer">
+    <button type="button" class="cb-back" data-cb-back aria-label="Étape précédente" hidden>
+      <ArrowLeft size={20} aria-hidden="true" />
+    </button>
+    <button type="button" class="cb-next" data-cb-next>Suivant</button>
+  </div>
+</Sheet>
+
+<Sheet id="cb-country-sheet" title="Pays du numéro">
+  <ChoiceList name="cb-country" label="Pays du numéro" items={countryItems} selected={[country]} />
+</Sheet>
+
+<script is:inline type="application/json" id="code-builder-data" set:html={payload} />
+
+<script>
+  import { startCodeBuilder } from '../scripts/code-builder';
+
+  startCodeBuilder();
+</script>
+
+<style is:global>
+  .cb {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    overflow: hidden;
+  }
+
+  .cb-dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .cb-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+    transition: width 0.2s ease, background 0.2s ease;
+  }
+
+  .cb-dots .on {
+    width: 18px;
+    background: var(--action);
+  }
+
+  .cb-dots .done {
+    background: var(--action);
+  }
+
+  .cb-code {
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+  }
+
+  .cb-code .code-line {
+    font-size: 15px;
+    color: var(--text);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .cb-code .code-slot {
+    font-size: 13px;
+    padding: 2px 8px;
+  }
+
+  .cb-step {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cb-label {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .cb-field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    height: 56px;
+    padding: 0 var(--space-3) 0 var(--space-2);
+    border-radius: var(--radius-sm);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+  }
+
+  .cb-field:focus-within {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  .cb-field input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding-left: var(--space-2);
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+  }
+
+  .cb-country {
+    height: 40px;
+    padding: 0 var(--space-2);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--tag-bg);
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .cb-country img {
+    border-radius: 50%;
+  }
+
+  .cb-suffix {
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  .cb-chips,
+  .cb-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .cb-chip,
+  .cb-option {
+    height: 36px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--action-soft);
+    color: var(--action-text);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .cb-option[aria-pressed='true'] {
+    background: var(--action);
+    color: var(--on-action);
+  }
+
+  .cb-note {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text-muted);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .cb-lock {
+    display: inline-flex;
+    color: var(--action-text);
+  }
+
+  .cb-note .mono {
+    color: var(--text);
+  }
+
+  .cb-primary,
+  .cb-next {
+    height: 52px;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--action);
+    color: var(--on-action);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .cb-secondary {
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--action-text);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .cb-actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .cb-next {
+    flex: 1;
+  }
+
+  .cb-next[hidden],
+  .cb-back[hidden] {
+    display: none;
+  }
+
+  .cb-back {
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--tag-bg);
+    color: var(--text);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .cb-error {
+    min-height: 20px;
+    color: var(--danger);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .cb-enter-forward {
+    animation: cb-from-right 0.22s ease-out;
+  }
+
+  .cb-enter-back {
+    animation: cb-from-left 0.22s ease-out;
+  }
+
+  @keyframes cb-from-right {
+    from {
+      transform: translateX(32px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes cb-from-left {
+    from {
+      transform: translateX(-32px);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cb-enter-forward,
+    .cb-enter-back {
+      animation: none;
+    }
+  }
+</style>

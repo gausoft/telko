@@ -2,12 +2,13 @@
 import ArrowLeft from '@lucide/astro/icons/arrow-left';
 import Search from '@lucide/astro/icons/search';
 
+import CodeBuilder from '../../components/CodeBuilder.astro';
 import DialToast from '../../components/DialToast.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
 import { SHOW_BRAND_LOGOS } from '../../config';
 import { loadCatalog } from '../../lib/catalog';
-import type { CountryCatalog } from '../../lib/catalog-types';
+import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
 import { buildDocs } from '../../lib/search';
 
 export function getStaticPaths() {
@@ -23,16 +24,17 @@ export function getStaticPaths() {
   return [...catalog.byCountry.values()].map((data) => ({
     params: { country: data.country.code },
     // "<" is escaped so contributed data can never close the script tag it is embedded in.
-    props: { data, payload: JSON.stringify({ docs, brands, soon }).replace(/</g, '\\u003c') },
+    props: { data, catalog, payload: JSON.stringify({ docs, brands, soon }).replace(/</g, '\\u003c') },
   }));
 }
 
 interface Props {
   data: CountryCatalog;
+  catalog: Catalog;
   payload: string;
 }
 
-const { data, payload } = Astro.props;
+const { data, catalog, payload } = Astro.props;
 const first = data.operators[0]?.id ?? '';
 ---
 
@@ -67,6 +69,7 @@ const first = data.operators[0]?.id ?? '';
 
   <script is:inline type="application/json" id="search-data" set:html={payload} />
   <Dock country={data.country.code} operators={data.operators} operator={first} current="recherche" />
+  <CodeBuilder catalog={catalog} country={data.country.code} />
   <DialToast />
 </AppLayout>
 
@@ -238,6 +241,19 @@ const first = data.operators[0]?.id ?? '';
     font-size: 12px;
     color: var(--text-muted);
     overflow-wrap: anywhere;
+  }
+
+  button.search-row {
+    width: 100%;
+    border: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .search-call.search-edit {
+    background: var(--action-soft);
+    color: var(--action-text);
   }
 
   .search-call {

@@ -1,6 +1,12 @@
+import type { BuilderPayload } from '../lib/builder-types';
 import { search } from '../lib/search';
 import type { SearchDoc, SearchHit } from '../lib/search-types';
+import { codeTokens } from '../lib/ussd-flow';
+import { codeLineElement } from './code-line';
 import type { SearchBrand, SearchPayload } from './search-ui-types';
+
+const PENCIL =
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>';
 
 export function renderResults(): void {
   const payload = readPayload();
@@ -23,6 +29,14 @@ function readPayload(): SearchPayload | null {
 
   return JSON.parse(raw) as SearchPayload;
 }
+
+function readBuilder(): BuilderPayload['entries'] {
+  const raw = document.querySelector('#code-builder-data')?.textContent;
+
+  return raw ? (JSON.parse(raw) as BuilderPayload).entries : {};
+}
+
+const builderEntries = readBuilder();
 
 function paint(payload: SearchPayload, hits: SearchHit[]): void {
   const local = hits.filter((h) => h.local);
@@ -53,7 +67,8 @@ function toggle(selector: string, visible: boolean): void {
 }
 
 function row(doc: SearchDoc, brand: SearchBrand | undefined): HTMLElement {
-  const el = document.createElement(doc.dialable ? 'a' : 'div');
+  const toBuild = doc.dialable ? undefined : builderEntries[doc.id];
+  const el = document.createElement(doc.dialable ? 'a' : 'button');
   el.className = 'search-row';
   if (el instanceof HTMLAnchorElement) {
     el.href = `tel:${doc.code.replace(/#/g, '%23')}`;
@@ -61,10 +76,14 @@ function row(doc: SearchDoc, brand: SearchBrand | undefined): HTMLElement {
     el.dataset['label'] = doc.title;
     el.dataset['operator'] = doc.operator;
     el.setAttribute('aria-label', `Composer ${doc.code} : ${doc.title}`);
+  } else if (el instanceof HTMLButtonElement) {
+    el.type = 'button';
+    if (toBuild) el.dataset['build'] = toBuild.id;
+    el.setAttribute('aria-label', `Compléter le code : ${doc.title}`);
   }
 
   el.append(mark(brand), text(doc));
-  if (doc.dialable) el.append(callIcon());
+  el.append(doc.dialable ? callIcon() : editIcon());
 
   return el;
 }
@@ -98,9 +117,12 @@ function text(doc: SearchDoc): HTMLElement {
   const sub = document.createElement('span');
   sub.className = 'search-sub';
   sub.textContent = doc.subtitle;
-  const code = document.createElement('span');
-  code.className = 'search-code mono';
-  code.textContent = doc.code;
+  const entry = builderEntries[doc.id];
+  const code = entry ? codeLineElement(codeTokens(entry.ussd)) : document.createElement('span');
+  if (!entry) {
+    code.className = 'search-code mono';
+    code.textContent = doc.code;
+  }
   body.append(title, sub, code);
 
   return body;
@@ -112,6 +134,14 @@ function callIcon(): HTMLElement {
   span.setAttribute('aria-hidden', 'true');
   span.innerHTML =
     '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>';
+
+  return span;
+}
+
+function editIcon(): HTMLElement {
+  const span = callIcon();
+  span.classList.add('search-edit');
+  span.innerHTML = PENCIL;
 
   return span;
 }

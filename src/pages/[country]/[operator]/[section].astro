@@ -1,12 +1,13 @@
 ---
 import AppHeader from '../../../components/AppHeader.astro';
+import CodeBuilder from '../../../components/CodeBuilder.astro';
 import DialToast from '../../../components/DialToast.astro';
 import Dock from '../../../components/Dock.astro';
 import FeeTable from '../../../components/FeeTable.astro';
 import OfferRow from '../../../components/OfferRow.astro';
 import AppLayout from '../../../layouts/AppLayout.astro';
 import { loadCatalog } from '../../../lib/catalog';
-import type { CatalogEntry, CountryCatalog } from '../../../lib/catalog-types';
+import type { Catalog, CatalogEntry, CountryCatalog } from '../../../lib/catalog-types';
 import { pricePerGb } from '../../../lib/format';
 import type { Operator } from '../../../lib/schema';
 import { DURATION_FILTERS, durationOf, SECTIONS, type DurationFilter, type Section } from '../../../lib/sections';
@@ -18,7 +19,7 @@ export function getStaticPaths() {
     data.operators.flatMap((operator) =>
       SECTIONS.map((section) => ({
         params: { country: data.country.code, operator: operator.id, section: section.id },
-        props: { data, operator, section },
+        props: { data, operator, section, catalog },
       })),
     ),
   );
@@ -28,9 +29,10 @@ interface Props {
   data: CountryCatalog;
   operator: Operator;
   section: Section;
+  catalog: Catalog;
 }
 
-const { data, operator, section } = Astro.props;
+const { data, operator, section, catalog } = Astro.props;
 const isInternet = section.id === 'internet';
 
 const entries: CatalogEntry[] = data.entries
@@ -96,6 +98,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? 'M
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />
+  {rows.some((r) => r.entry.ussd.params.length > 0) && <CodeBuilder catalog={catalog} country={data.country.code} />}
   <DialToast />
 </AppLayout>
 

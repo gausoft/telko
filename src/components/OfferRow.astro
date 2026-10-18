@@ -1,4 +1,5 @@
 ---
+import Pencil from '@lucide/astro/icons/pencil';
 import Phone from '@lucide/astro/icons/phone';
 
 import type { CatalogEntry } from '../lib/catalog-types';
@@ -6,6 +7,7 @@ import { telHref } from '../lib/dial';
 import { formatData, formatXof } from '../lib/format';
 import type { Brand } from '../lib/schema';
 import BrandMark from './BrandMark.astro';
+import CodeLine from './CodeLine.astro';
 
 interface Props {
   entry: CatalogEntry;
@@ -31,12 +33,8 @@ const description = (callOffer || (!volume && extras.every((e) => e === null))) 
 const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
 const href = telHref(entry);
 const label = `${title}${price ? `, ${price}` : ''}`;
-const Tag = href ? 'a' : 'div';
-const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: string) => {
-  const param = entry.ussd.params.find((p) => p.name === name);
-
-  return `[${param?.label ?? name}]`;
-});
+const needsInput = entry.ussd.params.length > 0;
+const Tag = href ? 'a' : 'button';
 ---
 
 <Tag
@@ -46,7 +44,9 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
   data-label={href ? label : undefined}
   data-operator={entry.operator}
   data-duration={duration}
-  aria-label={href ? `Composer ${entry.ussd.template} : ${label}` : undefined}
+  data-build={needsInput ? entry.id : undefined}
+  type={href ? undefined : 'button'}
+  aria-label={href ? `Composer ${entry.ussd.template} : ${label}` : `Compléter le code : ${title}`}
 >
   <BrandMark brand={brand} size={30} />
   <span class="body">
@@ -54,16 +54,12 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
     <span class="title">{title}</span>
     {meta && <span class="meta">{meta}</span>}
     {description && <span class="meta">{description}</span>}
-    <span class="code mono">{readableCode}</span>
+    {needsInput ? <CodeLine ussd={entry.ussd} /> : <span class="code mono">{entry.ussd.template}</span>}
   </span>
   {price && <span class="price">{price}</span>}
-  {
-    href && (
-      <span class="call" aria-hidden="true">
-        <Phone size={20} />
-      </span>
-    )
-  }
+  <span class:list={['call', { 'call-edit': needsInput }]} aria-hidden="true">
+    {needsInput ? <Pencil size={18} /> : <Phone size={20} />}
+  </span>
 </Tag>
 
 <style>
@@ -78,6 +74,11 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
     box-shadow: var(--shadow-card);
     color: var(--text);
     text-decoration: none;
+    width: 100%;
+    border: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
   }
 
   .row:active {
@@ -139,5 +140,10 @@ const readableCode = entry.ussd.template.replace(/\{([a-z_]+)\}/g, (_, name: str
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+  }
+
+  .call-edit {
+    background: var(--action-soft);
+    color: var(--action-text);
   }
 </style>

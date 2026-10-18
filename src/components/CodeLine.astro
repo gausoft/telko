@@ -1,0 +1,15 @@
+---
+import '../styles/code-line.css';
+import type { Ussd } from '../lib/schema';
+import { codeTokens } from '../lib/ussd-flow';
+
+interface Props {
+  ussd: Ussd;
+}
+
+const tokens = codeTokens(Astro.props.ussd);
+---
+
+<span class="code-line">
+  {tokens.map((t) => (t.kind === 'text' ? <span>{t.text}</span> : <span class:list={['code-slot', { 'is-secret': t.secret }]}>{t.short}</span>))}
+</span>
