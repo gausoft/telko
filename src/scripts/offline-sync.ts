@@ -37,9 +37,11 @@ export function readyKey(version: string, lang: Lang, operators: string[]): stri
   return `${version}|${lang}|${choiceKey(operators)}`;
 }
 
-/** Language of the catalog saved on this device, read back from its ready key. */
+/** Language of the catalog saved on this device, read back from its ready key. Keys saved before languages existed ("version|operators") are French. */
 export function keyLang(key: string | null): Lang | null {
-  const lang = key?.split('|')[1];
+  const parts = key?.split('|') ?? [];
+  if (parts.length === 2) return 'fr';
+  const lang = parts[1];
 
   return lang === 'fr' || lang === 'en' ? lang : null;
 }

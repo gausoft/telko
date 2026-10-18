@@ -1,11 +1,6 @@
 import type { CatalogFee } from './catalog-types';
+import type { FeeWords } from './fee-text-types';
 import { formatXof } from './format';
-
-/** Words of the page language for amounts that are not a number. */
-export interface FeeWords {
-  free: string;
-  unpublished: string;
-}
 
 /** The part after ":" in a label when it is only an amount, in French or English ("entre 5 000 et 10 000 F", "between …"). */
 const PLAIN_AMOUNT = /^(gratuit|free|[\d\s .,]+\s?F|(?:entre|between) .+)$/i;

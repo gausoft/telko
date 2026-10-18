@@ -1,8 +1,11 @@
 ---
 import Settings from '../../../views/Settings.astro';
 import { settingsPaths } from '../../../lib/routes';
+import type { SettingsProps } from '../../../views/view-types';
 
 export const getStaticPaths = () => settingsPaths('en');
+
+type Props = SettingsProps;
 ---
 
 <Settings {...Astro.props} />

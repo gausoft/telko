@@ -1,8 +1,11 @@
 ---
 import Section from '../../../views/Section.astro';
 import { sectionPaths } from '../../../lib/routes';
+import type { SectionProps } from '../../../views/view-types';
 
 export const getStaticPaths = () => sectionPaths('fr');
+
+type Props = SectionProps;
 ---
 
 <Section {...Astro.props} />

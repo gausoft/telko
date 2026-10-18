@@ -42,5 +42,6 @@ describe('offline packs per language', () => {
     expect(key).not.toBe(readyKey('v1', 'en', ['moov', 'yas']));
     expect(keyLang(key)).toBe('fr');
     expect(keyLang(null)).toBeNull();
+    expect(keyLang('v0|moov,yas')).toBe('fr');
   });
 });

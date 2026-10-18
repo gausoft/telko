@@ -1,7 +1,7 @@
 import { isLang } from '../i18n/detect';
-import { switchLang } from '../i18n/paths';
+import { splitLang, switchLang } from '../i18n/paths';
 import { t } from './i18n-client';
-import { writePref } from './prefs';
+import { readPref, writePref } from './prefs';
 
 /**
  * Language row of the settings. A change saves the choice and opens the same page in the other
@@ -22,9 +22,10 @@ export function wireLanguage(): void {
   buttons.forEach((b) =>
     b.addEventListener('click', () => {
       const choice = b.dataset['langChoice'];
-      if (!isLang(choice) || b.getAttribute('aria-pressed') === 'true' || !navigator.onLine) return;
-      writePref('lang', choice);
-      window.location.href = switchLang(window.location.pathname, choice);
+      if (!isLang(choice) || !navigator.onLine) return;
+      // The page may show a language other than the saved one (a shared link): the tap saves it either way.
+      if (readPref('lang') !== choice) writePref('lang', choice);
+      if (splitLang(window.location.pathname).lang !== choice) window.location.href = switchLang(window.location.pathname, choice);
     }),
   );
   window.addEventListener('online', follow);
