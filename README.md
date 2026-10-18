@@ -72,7 +72,7 @@ Telko puts them in one place, one country at a time:
 |---|---|---|
 | <img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags/flags/tg.svg" width="16" alt="tg"> Togo | **Live** | Yas Togo with Mixx, Moov Africa Togo with Moov Money |
 | Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal | Soon | Open to contributors |
-| Your country | [Bring it](CONTRIBUTING.md#add-a-country) | |
+| Your country | Open | [Bring it to Telko](CONTRIBUTING.md#add-a-country) |
 
 The Togo dataset holds about 200 codes and 76 fee lines, from official and public sources. **None is verified on a real phone yet** ([help us](https://github.com/gausoft/telko/issues/1)). Always check the confirmation screen before a money transfer.
 
