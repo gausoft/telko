@@ -135,6 +135,9 @@ export const featuredFileSchema = z.object({
   country: z.string().length(2),
   updated: z.string().regex(ISO_DATE),
   items: z.array(z.object({ entry_id: z.string(), label: z.string().min(1) })),
+  shortcuts: z.array(
+    z.object({ entry_id: z.string(), label: z.string().min(1), brand: z.enum(['operator', 'mobile_money']) }),
+  ),
 });
 
 export type Entry = z.infer<typeof entrySchema>;

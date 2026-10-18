@@ -5,15 +5,30 @@
       "id": "yas",
       "name": "Yas Togo",
       "short_name": "Yas",
-      "former_names": ["Togocom", "Togocel", "Togo Cellulaire"],
-      "badge": { "label": "Y", "background": "#00377D", "foreground": "#FFFFFF" },
+      "former_names": [
+        "Togocom",
+        "Togocel",
+        "Togo Cellulaire"
+      ],
+      "badge": {
+        "label": "Y",
+        "background": "#00377D",
+        "foreground": "#FFFFFF"
+      },
       "logo": "yas.svg",
       "mobile_money": {
         "id": "mixx",
         "name": "Mixx by Yas",
         "short_name": "Mixx",
-        "former_names": ["T-Money", "TMoney"],
-        "badge": { "label": "Mx", "background": "#FFD100", "foreground": "#00377D" },
+        "former_names": [
+          "T-Money",
+          "TMoney"
+        ],
+        "badge": {
+          "label": "Mx",
+          "background": "#FFD100",
+          "foreground": "#00377D"
+        },
         "logo": "mixx.svg"
       },
       "prefixes": [],
@@ -25,16 +40,26 @@
       "id": "moov",
       "name": "Moov Africa Togo",
       "short_name": "Moov",
-      "former_names": ["Moov Togo"],
-      "badge": { "label": "M", "background": "#005BA4", "foreground": "#FFFFFF" },
-      "logo": "moov.svg",
+      "former_names": [
+        "Moov Togo"
+      ],
+      "badge": {
+        "label": "M",
+        "background": "#005BA4",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "moov.png",
       "mobile_money": {
         "id": "flooz",
         "name": "Moov Money Flooz",
         "short_name": "Flooz",
         "former_names": [],
-        "badge": { "label": "Fl", "background": "#EC6707", "foreground": "#12111F" },
-        "logo": "flooz.svg"
+        "badge": {
+          "label": "Fl",
+          "background": "#EC6707",
+          "foreground": "#12111F"
+        },
+        "logo": null
       },
       "prefixes": [],
       "website": "https://moov-africa.tg",

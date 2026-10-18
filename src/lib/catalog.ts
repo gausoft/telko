@@ -1,6 +1,6 @@
 import type { ZodType } from 'zod';
 
-import type { Catalog, CatalogEntry, CatalogFee, CountryCatalog, FeaturedItem } from './catalog-types';
+import type { Catalog, CatalogEntry, CatalogFee, CountryCatalog, FeaturedItem, ShortcutItem } from './catalog-types';
 import {
   categoryFileSchema,
   countriesFileSchema,
@@ -43,9 +43,9 @@ function loadCountry(files: Record<string, unknown>, country: Country): CountryC
     entries.push(...file.entries.map((e) => ({ ...e, country: country.code, operator: file.operator, category: file.category })));
   }
 
-  const featured = loadFeatured(files, root, entries);
+  const { featured, shortcuts } = loadEditorial(files, root, entries, operators);
 
-  return { country, operators, entries, fees, featured };
+  return { country, operators, entries, fees, featured, shortcuts };
 }
 
 function isOperatorFile(path: string, root: string): boolean {
@@ -54,19 +54,35 @@ function isOperatorFile(path: string, root: string): boolean {
   return path.startsWith(root) && rest.split('/').length === 2;
 }
 
-function loadFeatured(files: Record<string, unknown>, root: string, entries: CatalogEntry[]): FeaturedItem[] {
+function loadEditorial(
+  files: Record<string, unknown>,
+  root: string,
+  entries: CatalogEntry[],
+  operators: Operator[],
+): { featured: FeaturedItem[]; shortcuts: ShortcutItem[] } {
   const path = `${root}featured.json`;
-  if (!(path in files)) return [];
+  if (!(path in files)) return { featured: [], shortcuts: [] };
 
   const file = parse(files, path, featuredFileSchema);
   const byId = new Map(entries.map((e) => [e.id, e]));
+  const find = (id: string): CatalogEntry => {
+    const entry = byId.get(id);
+    if (!entry) throw new Error(`${path}: unknown entry_id "${id}"`);
 
-  return file.items.map((item) => {
-    const entry = byId.get(item.entry_id);
-    if (!entry) throw new Error(`${path}: unknown entry_id "${item.entry_id}"`);
+    return entry;
+  };
 
-    return { label: item.label, entry };
+  const featured = file.items.map((item) => ({ label: item.label, entry: find(item.entry_id) }));
+  const shortcuts = file.shortcuts.map((item) => {
+    const entry = find(item.entry_id);
+    const operator = operators.find((o) => o.id === entry.operator);
+    const brand = item.brand === 'mobile_money' ? operator?.mobile_money : operator;
+    if (!brand) throw new Error(`${path}: no ${item.brand} brand for "${item.entry_id}"`);
+
+    return { label: item.label, brand, entry };
   });
+
+  return { featured, shortcuts };
 }
 
 function parse<T>(files: Record<string, unknown>, path: string, schema: ZodType<T>): T {
@@ -93,4 +109,8 @@ export function entriesFor(catalog: CountryCatalog, operator: string, category: 
 
 export function featuredFor(catalog: CountryCatalog, operator: string): FeaturedItem[] {
   return catalog.featured.filter((f) => f.entry.operator === operator);
+}
+
+export function shortcutsFor(catalog: CountryCatalog, operator: string): ShortcutItem[] {
+  return catalog.shortcuts.filter((s) => s.entry.operator === operator);
 }

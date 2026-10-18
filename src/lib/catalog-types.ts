@@ -1,4 +1,4 @@
-import type { Category, Country, Entry, FeeEntry, Operator } from './schema';
+import type { Brand, Category, Country, Entry, FeeEntry, Operator } from './schema';
 
 export interface CatalogEntry extends Entry {
   country: string;
@@ -17,12 +17,19 @@ export interface FeaturedItem {
   entry: CatalogEntry;
 }
 
+export interface ShortcutItem {
+  label: string;
+  brand: Brand;
+  entry: CatalogEntry;
+}
+
 export interface CountryCatalog {
   country: Country;
   operators: Operator[];
   entries: CatalogEntry[];
   fees: CatalogFee[];
   featured: FeaturedItem[];
+  shortcuts: ShortcutItem[];
 }
 
 export interface Catalog {
