@@ -44,7 +44,7 @@ describe('dataset', () => {
   });
 
   it('rejects a file that breaks the schema, naming the file', () => {
-    const broken = { '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', currency: 'XOF' }] }, '/data/tg/operators.json': { country: 'tg', operators: [] }, '/data/tg/x/internet.json': { operator: 'x', category: 'internet', entries: [{ id: 'BAD ID' }] } };
+    const broken = { '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF' }] }, '/data/tg/operators.json': { country: 'tg', operators: [] }, '/data/tg/x/internet.json': { operator: 'x', category: 'internet', entries: [{ id: 'BAD ID' }] } };
 
     expect(() => loadCatalog(broken)).toThrow(/\/data\/tg\/x\/internet\.json/);
   });
@@ -52,7 +52,7 @@ describe('dataset', () => {
 
 describe('data rules', () => {
   const base = {
-    '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', currency: 'XOF' }] },
+    '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF' }] },
     '/data/tg/operators.json': {
       country: 'tg',
       operators: [{ id: 'yas', name: 'Yas', short_name: 'Yas', former_names: [], badge: { label: 'Y', background: '#00377D', foreground: '#FFFFFF' }, logo: null, mobile_money: null, prefixes: [], website: 'https://yas.tg', customer_service: '888', notes: null }],

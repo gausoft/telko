@@ -170,7 +170,8 @@
             "name": "phone",
             "type": "phone",
             "label": "Numéro du destinataire",
-            "required": true
+            "required": true,
+            "format": "international"
           },
           {
             "name": "amount",
@@ -225,7 +226,9 @@
             "name": "merchant_number",
             "type": "text",
             "label": "Numéro du marchand",
-            "required": true
+            "required": true,
+            "short": "Marchand",
+            "numeric": true
           },
           {
             "name": "amount",

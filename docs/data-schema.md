@@ -22,7 +22,7 @@ The schemas in `src/lib/schema.ts` implement this document; `npm test` validates
 ## countries.json
 
 ```json
-{ "countries": [{ "code": "tg", "name": "Togo", "status": "live", "dial_code": "228", "currency": "XOF" }] }
+{ "countries": [{ "code": "tg", "name": "Togo", "status": "live", "dial_code": "228", "national_length": 8, "currency": "XOF" }] }
 ```
 
 `status` is `live` (data available) or `soon` (listed, no data yet).
@@ -137,7 +137,19 @@ Allowed categories: `general`, `internet`, `mixed`, `voice-sms`, `weekend`, `roa
 
 `type` is one of `phone`, `amount`, `pin`, `text`, `choice`.
 
-A `pin` parameter is never stored, never included in a share link, never written to history and never prefilled. When an operator flow allows it, the UI should prefer leaving the PIN to the operator's own prompt.
+The code assistant builds its screens from these fields alone, so a new code needs no new UI. Optional hints:
+
+| Field | Applies to | Meaning |
+|---|---|---|
+| `short` | all | Few words shown inside the one-line code (default by type: Numéro, Montant, Code) |
+| `format` | `phone` | `national` (default, country digits only), `international` (country code + number), `any` (digits as typed) |
+| `min`, `max`, `presets` | `amount` | Bounds in CFA francs and quick picks (default 500, 1 000, 2 000, 5 000) |
+| `length`, `numeric` | `text` | Exact length and digits-only keyboard |
+| `options` | `choice` | `[{ "value": "1", "label": "…" }]` |
+
+The assistant asks each box once, in code order. A box used twice (a confirmation) is filled twice.
+
+A `pin` parameter is never asked, stored, shared or prefilled. The assistant prepares the code up to the `*` before the first `pin` and the user types the secret code and `#` in the phone's own dialer.
 
 ## Fees file
 

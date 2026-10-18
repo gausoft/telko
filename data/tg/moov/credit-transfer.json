@@ -122,7 +122,9 @@
             "name": "card_code",
             "type": "text",
             "label": "Code de la carte de recharge",
-            "required": true
+            "required": true,
+            "short": "Carte",
+            "numeric": true
           },
           {
             "name": "phone",
@@ -174,7 +176,10 @@
             "name": "card_code",
             "type": "text",
             "label": "Code de la carte (12 chiffres)",
-            "required": true
+            "required": true,
+            "short": "Carte",
+            "numeric": true,
+            "length": 12
           }
         ]
       },

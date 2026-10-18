@@ -31,11 +31,26 @@ export const provenanceSchema = z
     message: 'verified entries need verified_at',
   });
 
+export const PHONE_FORMATS = ['national', 'international', 'any'] as const;
+
 export const paramSchema = z.object({
   name: z.string().regex(/^[a-z_]+$/),
   type: z.enum(['phone', 'amount', 'pin', 'text', 'choice']),
   label: z.string().min(1),
   required: z.boolean(),
+  /** Few words shown inside the one-line code, e.g. "Matricule". Defaults by type. */
+  short: z.string().min(1).max(12).optional(),
+  /** phone: national number (default), with the country code, or digits as typed. */
+  format: z.enum(PHONE_FORMATS).optional(),
+  /** amount: bounds in CFA francs and quick picks. */
+  min: z.number().int().positive().optional(),
+  max: z.number().int().positive().optional(),
+  presets: z.array(z.number().int().positive()).max(6).optional(),
+  /** text: exact length and digits-only keyboard. */
+  length: z.number().int().positive().optional(),
+  numeric: z.boolean().optional(),
+  /** choice: allowed values. */
+  options: z.array(z.object({ value: z.string().min(1), label: z.string().min(1) })).min(2).optional(),
 });
 
 export const ussdSchema = z
@@ -135,6 +150,8 @@ export const countrySchema = z.object({
   name: z.string(),
   status: z.enum(['live', 'soon']),
   dial_code: z.string().regex(/^\d+$/),
+  /** Digits of a mobile number without the country code. */
+  national_length: z.number().int().min(6).max(12),
   currency: z.string().length(3),
 });
 
@@ -150,6 +167,8 @@ export const featuredFileSchema = z.object({
 });
 
 export type Entry = z.infer<typeof entrySchema>;
+export type Param = z.infer<typeof paramSchema>;
+export type Ussd = z.infer<typeof ussdSchema>;
 export type CategoryFile = z.infer<typeof categoryFileSchema>;
 export type FeeEntry = z.infer<typeof feeEntrySchema>;
 export type FeesFile = z.infer<typeof feesFileSchema>;

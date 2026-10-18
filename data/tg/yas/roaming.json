@@ -170,13 +170,16 @@
             "name": "country_code",
             "type": "text",
             "label": "Indicatif du pays",
-            "required": true
+            "required": true,
+            "short": "Indicatif",
+            "numeric": true
           },
           {
             "name": "phone",
             "type": "phone",
             "label": "Numéro à appeler",
-            "required": true
+            "required": true,
+            "format": "any"
           }
         ]
       },

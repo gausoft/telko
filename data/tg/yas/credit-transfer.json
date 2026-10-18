@@ -155,7 +155,9 @@
             "name": "voucher_code",
             "type": "text",
             "label": "Code de la carte de recharge",
-            "required": true
+            "required": true,
+            "short": "Carte",
+            "numeric": true
           },
           {
             "name": "phone",
