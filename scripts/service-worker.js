@@ -135,11 +135,11 @@ function offlinePage() {
 }
 
 /**
- * "tg/index.html" -> "/tg", "index.html" -> "/", "/tg/" -> "/tg": one key per page.
+ * "bienvenue.html" -> "/bienvenue", "index.html" -> "/", "/tg/" -> "/tg": one key per page.
  * @param {string} path
  */
 function toPath(path) {
-  const clean = `/${path.replace(/^\/+/, '')}`.replace(/\/index\.html$/, '').replace(/\/+$/, '');
+  const clean = `/${path.replace(/^\/+/, '')}`.replace(/(\/index)?\.html$/, '').replace(/\/+$/, '');
 
   return clean === '' ? '/' : clean;
 }

@@ -18,7 +18,7 @@ const { count, size, warnings } = await injectManifest({
     'telko-symbol.svg',
     'manifest.webmanifest',
     'index.html',
-    'bienvenue/index.html',
+    'bienvenue.html',
   ],
   manifestTransforms: [
     async (entries) => ({ manifest: entries.filter((e) => !(e.url.endsWith('.woff2') && OTHER_SCRIPTS.test(e.url))), warnings: [] }),
