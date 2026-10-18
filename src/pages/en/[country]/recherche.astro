@@ -1,0 +1,8 @@
+---
+import Search from '../../../views/Search.astro';
+import { searchPaths } from '../../../lib/routes';
+
+export const getStaticPaths = () => searchPaths('en');
+---
+
+<Search {...Astro.props} />

@@ -5,6 +5,8 @@ import Signal from '@lucide/astro/icons/signal';
 import Wallet from '@lucide/astro/icons/wallet';
 import Settings from '@lucide/astro/icons/settings';
 
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
 import type { Operator } from '../lib/schema';
 
 interface Props {
@@ -18,18 +20,20 @@ interface Props {
 }
 
 const { country, operators, operator, pinned = false, current } = Astro.props;
-const moneyLabels = Object.fromEntries(operators.map((o) => [o.id, o.mobile_money?.short_name ?? 'Mobile money']));
-const opHref = (section: string): string => `/${country}/{op}/${section}`;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const moneyLabels = Object.fromEntries(operators.map((o) => [o.id, o.mobile_money?.short_name ?? m.common.mobileMoney]));
+const opHref = (section: string): string => localePath(lang, `/${country}/{op}/${section}`);
 const items = [
-  { id: 'accueil', label: 'Accueil', href: `/${country}`, template: null, Icon: House },
-  { id: 'internet', label: 'Internet', href: opHref('internet').replace('{op}', operator), template: opHref('internet'), Icon: Signal },
-  { id: 'argent', label: moneyLabels[operator] ?? 'Mobile money', href: opHref('argent').replace('{op}', operator), template: opHref('argent'), Icon: Wallet },
-  { id: 'reglages', label: 'Réglages', href: `/${country}/reglages`, template: null, Icon: Settings },
+  { id: 'accueil', label: m.common.home, href: localePath(lang, `/${country}`), template: null, Icon: House },
+  { id: 'internet', label: m.sections.internet, href: opHref('internet').replace('{op}', operator), template: opHref('internet'), Icon: Signal },
+  { id: 'argent', label: moneyLabels[operator] ?? m.common.mobileMoney, href: opHref('argent').replace('{op}', operator), template: opHref('argent'), Icon: Wallet },
+  { id: 'reglages', label: m.common.settings, href: localePath(lang, `/${country}/reglages`), template: null, Icon: Settings },
 ] as const;
 const [home, internet, money, settings] = items;
 ---
 
-<nav class="dock" aria-label="Navigation principale" data-dock data-operator={operator} data-pinned={pinned ? 'true' : undefined} data-money-labels={JSON.stringify(moneyLabels)}>
+<nav class="dock" aria-label={m.common.mainNav} data-dock data-operator={operator} data-pinned={pinned ? 'true' : undefined} data-money-labels={JSON.stringify(moneyLabels)}>
   {
     [home, internet].map(({ id, label, href, template, Icon }) => (
       <a href={href} data-operator-href={template ?? undefined} aria-current={current === id ? 'page' : undefined}>
@@ -38,7 +42,7 @@ const [home, internet, money, settings] = items;
       </a>
     ))
   }
-  <a class="fab" href={`/${country}/recherche`} aria-label="Rechercher" aria-current={current === 'recherche' ? 'page' : undefined}>
+  <a class="fab" href={localePath(lang, `/${country}/recherche`)} aria-label={m.common.search} aria-current={current === 'recherche' ? 'page' : undefined}>
     <Search size={24} aria-hidden="true" />
   </a>
   {

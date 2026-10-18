@@ -1,12 +1,15 @@
 import { syncOffline } from './offline-sync';
 import type { Selection, SyncResult } from './offline-sync-types';
-import { readPref } from './prefs';
+import { isLang } from '../i18n/detect';
+import { t } from './i18n-client';
+import { readPref, writePref } from './prefs';
 
 /** Install prompt kept for the Settings page (Android, desktop Chrome). */
 let installPrompt: Event | null = null;
 
 /** Runs on every page: service worker, offline indicator, and keeping the chosen country available offline. */
 export function startPwa(): void {
+  ensureLangPref();
   if ('serviceWorker' in navigator && window.isSecureContext) {
     void navigator.serviceWorker.register('/sw.js').catch(() => undefined);
     // A new version was installed: refresh the saved pages so they match the new files.
@@ -51,12 +54,19 @@ export function currentSelection(): Selection | null {
 
   const operators = (readPref('operators') ?? readPref('operator') ?? '').split(',').filter((o) => o.length > 0);
 
-  return { country, operators };
+  const pref = readPref('lang');
+
+  return { country, operators, lang: isLang(pref) ? pref : 'fr' };
+}
+
+/** Visitors onboarded before languages existed did it in French: their choice is written down once. */
+function ensureLangPref(): void {
+  if (readPref('onboarded') && !isLang(readPref('lang'))) writePref('lang', 'fr');
 }
 
 /** The dot on the logo is visual; the status line tells screen reader users when the connection changes. */
 function showConnection(event?: Event): void {
   document.documentElement.toggleAttribute('data-offline', !navigator.onLine);
   const status = document.querySelector<HTMLElement>('[data-app-status]');
-  if (status && event) status.textContent = navigator.onLine ? 'Connexion rétablie' : 'Hors connexion : Telko reste utilisable';
+  if (status && event) status.textContent = navigator.onLine ? t().pwa.online : t().pwa.offline;
 }

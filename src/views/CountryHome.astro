@@ -1,0 +1,221 @@
+---
+import Signal from '@lucide/astro/icons/signal';
+import PhoneCall from '@lucide/astro/icons/phone-call';
+import Wallet from '@lucide/astro/icons/wallet';
+import Zap from '@lucide/astro/icons/zap';
+import ReceiptText from '@lucide/astro/icons/receipt-text';
+import LifeBuoy from '@lucide/astro/icons/life-buoy';
+
+import AppHeader from '../components/AppHeader.astro';
+import BrandMark from '../components/BrandMark.astro';
+import Carousel from '../components/Carousel.astro';
+import CodeBuilder from '../components/CodeBuilder.astro';
+import DialToast from '../components/DialToast.astro';
+import Dock from '../components/Dock.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { featuredFor, shortcutsFor } from '../lib/catalog';
+import { countryHomeSeo } from '../lib/seo';
+import { telHref } from '../lib/dial';
+import { SECTIONS } from '../lib/sections';
+import { SHOW_BRAND_LOGOS } from '../config';
+import type { Brand } from '../lib/schema';
+import type { OperatorBrands } from '../lib/brand-types';
+import type { CountryHomeProps } from './view-types';
+
+type Props = CountryHomeProps;
+
+const { data, catalog } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const first = data.operators[0];
+if (!first) throw new Error(`${data.country.code}: no operator`);
+
+const brandView = (b: Brand) => ({ name: b.short_name, badge: b.badge, logo: SHOW_BRAND_LOGOS && b.logo ? `/brands/${b.logo}` : null });
+const brands: Record<string, OperatorBrands> = Object.fromEntries(
+  data.operators.map((o) => [o.id, { operator: brandView(o), money: o.mobile_money ? brandView(o.mobile_money) : null }]),
+);
+// "<" is escaped so data can never close the script tag it is embedded in.
+const brandsJson = JSON.stringify(brands).replace(/</g, '\\u003c');
+
+const icons = { internet: Signal, appels: PhoneCall, argent: Wallet, factures: Zap, frais: ReceiptText, aide: LifeBuoy } as const;
+const blocks = data.operators.map((operator) => ({
+  operator,
+  featured: featuredFor(data, operator.id),
+  shortcuts: shortcutsFor(data, operator.id).flatMap((s) => {
+    const href = telHref(s.entry);
+
+    return href ? [{ ...s, href }] : [];
+  }),
+}));
+---
+
+<AppLayout seo={countryHomeSeo(data, lang)} withDock>
+  <main class="page">
+    <AppHeader country={data.country} switcher={{ operators: data.operators, current: first.id }} />
+
+    {
+      blocks.map(({ operator, featured, shortcuts }) => (
+        <div class="block" data-op-block={operator.id} hidden={operator.id !== first.id}>
+          <Carousel items={featured} brand={operator} />
+
+          <section class="shortcuts" aria-label={m.home.shortcuts}>
+            <h2 class="section-title">{m.home.shortcuts}</h2>
+            <div class="chips" data-habits={operator.id}>
+              {shortcuts.map((s) => (
+                <a class="chip" href={s.href} data-dial={s.entry.ussd.template} data-entry={s.entry.id} data-label={s.label} data-operator={operator.id}>
+                  <BrandMark brand={s.brand} size={26} />
+                  <span>{s.label}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <nav class="tiles" aria-label={m.home.sections}>
+            {SECTIONS.map((section) => {
+              const Icon = icons[section.id as keyof typeof icons];
+
+              return (
+                <a class="tile" href={localePath(lang, `/${data.country.code}/${operator.id}/${section.id}`)}>
+                  <span class="tile-icon">
+                    <Icon size={20} aria-hidden="true" />
+                  </span>
+                  <span>{section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id]}</span>
+                </a>
+              );
+            })}
+          </nav>
+        </div>
+      ))
+    }
+  </main>
+
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
+  <script is:inline type="application/json" id="brand-data" set:html={brandsJson} />
+  <CodeBuilder catalog={catalog} country={data.country.code} />
+  <DialToast />
+</AppLayout>
+
+<script>
+  import { countryFromPath } from '../i18n/paths';
+  import { readPref } from '../scripts/prefs';
+  import { showHabits } from '../scripts/habits-ui';
+
+  const blocks = Array.from(document.querySelectorAll<HTMLElement>('[data-op-block]'));
+  const known = blocks.map((b) => b.dataset['opBlock'] ?? '');
+
+  function select(operator: string): void {
+    blocks.forEach((b) => (b.hidden = b.dataset['opBlock'] !== operator));
+  }
+
+  document.addEventListener('telko:operator', (e) => select((e as CustomEvent<string>).detail));
+  const saved = readPref('operator');
+  if (saved && known.includes(saved)) select(saved);
+  void showHabits(countryFromPath(window.location.pathname)).catch(() => undefined);
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: var(--space-1);
+  }
+
+  .chips {
+    display: flex;
+    gap: var(--space-2);
+    overflow-x: auto;
+    margin: calc(var(--space-3) * -1) calc(var(--space-4) * -1);
+    padding: var(--space-3) var(--space-4) var(--space-5);
+    scrollbar-width: none;
+  }
+
+  .chips :global(.chip) {
+    height: 40px;
+    padding: 0 var(--space-3) 0 6px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .chips :global(.chip-habit) {
+    background: var(--action-soft);
+    color: var(--action-text);
+  }
+
+  .chips :global(.chip-label) {
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .chips :global(button.chip) {
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+
+  .tile {
+    min-height: 84px;
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .tile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: var(--icon-bg);
+    color: var(--icon-fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 900px) {
+    .tiles {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+</style>

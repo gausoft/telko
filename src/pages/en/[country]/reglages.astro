@@ -1,0 +1,8 @@
+---
+import Settings from '../../../views/Settings.astro';
+import { settingsPaths } from '../../../lib/routes';
+
+export const getStaticPaths = () => settingsPaths('en');
+---
+
+<Settings {...Astro.props} />

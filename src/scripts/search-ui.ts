@@ -2,7 +2,9 @@ import type { BuilderPayload } from '../lib/builder-types';
 import { search } from '../lib/search';
 import type { SearchDoc, SearchHit } from '../lib/search-types';
 import { codeTokens } from '../lib/ussd-flow';
+import { fill as fillText, plural } from '../i18n/format-message';
 import { codeLineElement } from './code-line';
+import { pageLangOf, t } from './i18n-client';
 import type { SearchBrand, SearchPayload } from './search-ui-types';
 
 const PENCIL =
@@ -15,7 +17,7 @@ export function startSearch(): void {
   if (!payload || !input || !page) return;
 
   const country = page.dataset['country'] ?? '';
-  const update = (): void => paint(payload, search(payload.docs, input.value, country));
+  const update = (): void => paint(payload, search(payload.docs, input.value, country, pageLangOf()));
   bindControls(input, update);
 }
 
@@ -72,7 +74,7 @@ function paint(payload: SearchPayload, hits: SearchHit[]): void {
   toggle('[data-empty]', query.length > 0 && hits.length === 0);
 
   const count = document.querySelector<HTMLElement>('[data-count]');
-  if (count) count.textContent = query.length === 0 ? '' : `${hits.length} résultat${hits.length > 1 ? 's' : ''}`;
+  if (count) count.textContent = query.length === 0 ? '' : plural(pageLangOf(), hits.length, t().search.results);
 }
 
 function fill(selector: string, hits: SearchHit[], payload: SearchPayload): void {
@@ -97,11 +99,11 @@ function row(doc: SearchDoc, brand: SearchBrand | undefined): HTMLElement {
     el.dataset['label'] = doc.title;
     el.dataset['operator'] = doc.operator;
     el.dataset['entry'] = doc.id;
-    el.setAttribute('aria-label', `Composer ${doc.code} : ${doc.title}`);
+    el.setAttribute('aria-label', fillText(t().search.dialAria, { code: doc.code, label: doc.title }));
   } else if (el instanceof HTMLButtonElement) {
     el.type = 'button';
     if (toBuild) el.dataset['build'] = toBuild.id;
-    el.setAttribute('aria-label', `Compléter le code : ${doc.title}`);
+    el.setAttribute('aria-label', fillText(t().search.completeAria, { title: doc.title }));
   }
 
   el.append(mark(brand), text(doc));
@@ -140,7 +142,7 @@ function text(doc: SearchDoc): HTMLElement {
   sub.className = 'search-sub';
   sub.textContent = doc.subtitle;
   const entry = builderEntries[doc.id];
-  const code = entry ? codeLineElement(codeTokens(entry.ussd)) : document.createElement('span');
+  const code = entry ? codeLineElement(codeTokens(entry.ussd, t().flow.shorts)) : document.createElement('span');
   if (!entry) {
     code.className = 'search-code mono';
     code.textContent = doc.code;

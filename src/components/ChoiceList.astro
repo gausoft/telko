@@ -3,6 +3,8 @@ import Check from '@lucide/astro/icons/check';
 
 import type { ChoiceItem } from './choice-types';
 import BrandMark from './BrandMark.astro';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 
 interface Props {
   /** Name of the choice, e.g. "country" or "operator". Scripts find the list by it. */
@@ -14,6 +16,7 @@ interface Props {
 }
 
 const { name, items, selected, multiple = false, label } = Astro.props;
+const m = messages(pageLang(Astro.url));
 ---
 
 <div class="list" role="group" aria-label={label} data-choice-list={name} data-multiple={multiple ? 'true' : undefined}>
@@ -23,7 +26,7 @@ const { name, items, selected, multiple = false, label } = Astro.props;
         {item.flag ? <img class="flag" src={`/flags/${item.flag}.svg`} alt="" width="32" height="32" /> : item.brand && <BrandMark brand={item.brand} size={32} />}
         <span class="name">{item.name}</span>
         {item.soon ? (
-          <span class="soon">Bientôt</span>
+          <span class="soon">{m.common.soon}</span>
         ) : (
           <span class="tick" aria-hidden="true">
             <Check size={16} />

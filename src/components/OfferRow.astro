@@ -5,6 +5,9 @@ import Phone from '@lucide/astro/icons/phone';
 import type { CatalogEntry } from '../lib/catalog-types';
 import { telHref } from '../lib/dial';
 import { formatData, formatXof } from '../lib/format';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 import type { Brand } from '../lib/schema';
 import BrandMark from './BrandMark.astro';
 import CodeLine from './CodeLine.astro';
@@ -18,12 +21,14 @@ interface Props {
 }
 
 const { entry, brand, badge, duration } = Astro.props;
-const volume = formatData(entry.allowances?.data_mb ?? null);
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const volume = formatData(entry.allowances?.data_mb ?? null, lang);
 const voice = entry.allowances?.voice_min ?? null;
 const sms = entry.allowances?.sms ?? null;
 const extras = [
-  voice === -1 ? 'Appels illimités' : voice ? `${voice} min` : null,
-  sms === -1 ? 'SMS illimités' : sms ? `${sms} SMS` : null,
+  voice === -1 ? m.section.unlimitedCalls : voice ? fill(m.section.minutes, { n: voice }) : null,
+  sms === -1 ? m.section.unlimitedSms : sms ? fill(m.section.sms, { n: sms }) : null,
 ];
 const title = volume ?? entry.name;
 const meta = [volume ? entry.name : null, ...extras, entry.validity?.label ?? null]
@@ -48,7 +53,7 @@ const Tag = href ? 'a' : 'button';
   data-duration={duration}
   data-build={needsInput ? entry.id : undefined}
   type={href ? undefined : 'button'}
-  aria-label={href ? `Composer ${entry.ussd.template} : ${label}` : `Compléter le code : ${title}`}
+  aria-label={href ? fill(m.common.dialAria, { code: entry.ussd.template, label }) : fill(m.common.completeAria, { title })}
 >
   <BrandMark brand={brand} size={30} />
   <span class="body">

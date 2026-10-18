@@ -1,6 +1,8 @@
 ---
 import ArrowLeft from '@lucide/astro/icons/arrow-left';
 
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
 import type { Country, Operator } from '../lib/schema';
 import OperatorSwitcher from './OperatorSwitcher.astro';
 
@@ -13,17 +15,19 @@ interface Props {
 }
 
 const { country, back, title, switcher } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
 ---
 
 <header class="header">
   {
     back ? (
-      <a class="back" href={back} aria-label="Retour">
+      <a class="back" href={back} aria-label={m.common.back}>
         <ArrowLeft size={24} aria-hidden="true" />
         <span class="offline-dot" aria-hidden="true" />
       </a>
     ) : (
-      <a class="brand" href={`/${country.code}`} aria-label="Telko, accueil">
+      <a class="brand" href={localePath(lang, `/${country.code}`)} aria-label={m.common.telkoHome}>
         <span class="symbol">
           <img src="/telko-symbol.svg" alt="" width="28" height="28" />
           <span class="offline-dot" aria-hidden="true" />

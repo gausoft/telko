@@ -6,6 +6,8 @@ import { fillRecipients, reviewView, stepView } from './code-builder-steps';
 import type { Builder, BuilderState, BuilderUi, StepView } from './code-builder-types';
 import { codeLineElement } from './code-line';
 import { recordUse } from '../db/usage-store';
+import { fill } from '../i18n/format-message';
+import { t } from './i18n-client';
 import { readRecipients, rememberRecipient } from './recipients';
 import type { Recipient } from './recipients-types';
 
@@ -72,7 +74,7 @@ function open(builder: Builder, event: Event): void {
   const entry = builder.payload.entries[trigger?.dataset['build'] ?? ''];
   if (!entry) return;
 
-  builder.state = { entry, steps: planSteps(entry.ussd), index: 0, values: {}, raw: {}, country: builder.home, fresh: null };
+  builder.state = { entry, steps: planSteps(entry.ussd, t().flow.shorts), index: 0, values: {}, raw: {}, country: builder.home, fresh: null };
   builder.syncCountryList(builder.home.code);
   builder.ui.sheet.showModal();
   render(builder, 'none');
@@ -90,7 +92,8 @@ function render(builder: Builder, direction: 'none' | 'forward' | 'back'): void 
   if (!state) return;
 
   const step = state.steps[state.index];
-  const tokens = step ? codeTokens(state.entry.ussd, state.values) : dialTokens(state.entry.ussd, state.values);
+  const shorts = t().flow.shorts;
+  const tokens = step ? codeTokens(state.entry.ussd, shorts, state.values) : dialTokens(state.entry.ussd, shorts, state.values);
 
   ui.title.replaceChildren(...(state.entry.brand ? [brandMarkElement(state.entry.brand, 28)] : []), state.entry.title);
   ui.progress.replaceChildren(...progressDots(state.steps.length + 1, state.index));
@@ -98,7 +101,7 @@ function render(builder: Builder, direction: 'none' | 'forward' | 'back'): void 
   ui.error.textContent = '';
   ui.back.hidden = state.index === 0;
   ui.next.hidden = !step;
-  ui.next.textContent = state.index === state.steps.length - 1 ? 'Vérifier' : 'Suivant';
+  ui.next.textContent = state.index === state.steps.length - 1 ? t().builder.verify : t().builder.next;
 
   builder.view = viewFor(builder, state);
   builder.view.element.classList.add(`cb-enter-${direction}`);
@@ -155,7 +158,7 @@ function next(builder: Builder): void {
   const result = validateStep(step, raw, { dialCode: state.country.dialCode, nationalLength: state.country.nationalLength, homeDialCode: builder.home.dialCode });
   state.raw[step.name] = raw;
   if (!result.ok) {
-    builder.ui.error.textContent = result.message;
+    builder.ui.error.textContent = fill(t().flow.errors[result.error.code], { n: result.error.n ?? '' });
     return;
   }
 

@@ -1,13 +1,15 @@
 ---
 import '../styles/code-line.css';
 import type { Ussd } from '../lib/schema';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
 import { codeTokens } from '../lib/ussd-flow';
 
 interface Props {
   ussd: Ussd;
 }
 
-const tokens = codeTokens(Astro.props.ussd);
+const tokens = codeTokens(Astro.props.ussd, messages(pageLang(Astro.url)).client.flow.shorts);
 ---
 
 <span class="code-line">

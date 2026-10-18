@@ -1,0 +1,151 @@
+---
+import AppHeader from '../components/AppHeader.astro';
+import CodeBuilder from '../components/CodeBuilder.astro';
+import DialToast from '../components/DialToast.astro';
+import Dock from '../components/Dock.astro';
+import FeeTable from '../components/FeeTable.astro';
+import OfferRow from '../components/OfferRow.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { sectionEntries } from '../lib/catalog';
+import type { CatalogEntry } from '../lib/catalog-types';
+import { pricePerGb } from '../lib/format';
+import { sectionSeo } from '../lib/seo';
+import { DURATION_FILTERS, type DurationFilter } from '../lib/sections';
+import type { SectionProps } from './view-types';
+
+type Props = SectionProps;
+
+const { data, operator, section, catalog } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+/** Date the dataset was last collected; shown under every list. */
+const SOURCE_DATE = lang === 'fr' ? '18/10/2026' : '18 Oct 2026';
+const isInternet = section.id === 'internet';
+
+const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price_xof === null) - Number(b.price_xof === null) || (a.price_xof ?? 0) - (b.price_xof ?? 0));
+
+const rows = entries.map((entry) => {
+  const usesMobileMoney = entry.category === 'mobile-money';
+  const brand = usesMobileMoney && operator.mobile_money ? operator.mobile_money : operator;
+  const duration: DurationFilter = entry.duration;
+
+  return { entry, brand, duration, perGb: pricePerGb(entry.price_xof, entry.allowances?.data_mb ?? null) };
+});
+
+const bestByDuration = new Map<DurationFilter, string>();
+for (const filter of DURATION_FILTERS) {
+  const candidates = rows.filter((r) => r.duration === filter && r.perGb !== null);
+  const best = candidates.sort((a, b) => (a.perGb ?? 0) - (b.perGb ?? 0))[0];
+  if (best) bestByDuration.set(filter, best.entry.id);
+}
+
+const fees = data.fees.filter((f) => f.operator === operator.id);
+const initialFilter: DurationFilter = 'mois';
+const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id];
+---
+
+<AppLayout seo={sectionSeo(data, operator, section, lang)} withDock>
+  <main class="page">
+    <AppHeader country={data.country} back={localePath(lang, `/${data.country.code}`)} title={title} switcher={{ operators: data.operators, current: operator.id, hrefTemplate: localePath(lang, `/${data.country.code}/{op}/${section.id}`) }} />
+
+    {
+      isInternet && (
+        <div class="filters" role="group" aria-label={m.section.duration}>
+          {DURATION_FILTERS.map((f) => (
+            <button type="button" data-filter={f} aria-pressed={f === initialFilter ? 'true' : 'false'}>
+              {m.durations[f]}
+            </button>
+          ))}
+        </div>
+      )
+    }
+
+    {section.id === 'frais' && <FeeTable fees={fees} operator={operator} />}
+
+    {
+      section.id !== 'frais' && (
+        <div class="list">
+          {rows.map((r) => (
+            <div data-duration-row={isInternet ? r.duration : undefined} hidden={isInternet && r.duration !== initialFilter}>
+              <OfferRow
+                entry={r.entry}
+                brand={r.brand}
+                badge={isInternet && bestByDuration.get(r.duration) === r.entry.id ? m.section.bestPrice : undefined}
+              />
+            </div>
+          ))}
+          {rows.length === 0 && <p class="empty">{m.section.empty}</p>}
+        </div>
+      )
+    }
+
+    <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>
+  </main>
+
+  <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />
+  {rows.some((r) => r.entry.ussd.params.length > 0) && <CodeBuilder catalog={catalog} country={data.country.code} />}
+  <DialToast />
+</AppLayout>
+
+<script>
+  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('[data-duration-row]'));
+
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      const id = button.dataset['filter'];
+      buttons.forEach((b) => b.setAttribute('aria-pressed', b === button ? 'true' : 'false'));
+      rows.forEach((row) => (row.hidden = row.dataset['durationRow'] !== id));
+    }),
+  );
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-1);
+    padding: var(--space-1);
+    border-radius: var(--radius-sm);
+    background: var(--tag-bg);
+  }
+
+  .filters button {
+    height: 38px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--tag-text);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .filters button[aria-pressed='true'] {
+    background: var(--action);
+    color: var(--on-action);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .empty,
+  .source {
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+</style>

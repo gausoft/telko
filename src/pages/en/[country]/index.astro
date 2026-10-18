@@ -1,0 +1,8 @@
+---
+import CountryHome from '../../../views/CountryHome.astro';
+import { countryHomePaths } from '../../../lib/routes';
+
+export const getStaticPaths = () => countryHomePaths('en');
+---
+
+<CountryHome {...Astro.props} />

@@ -1,18 +1,22 @@
+import { countryFromPath, localePath, splitLang } from '../i18n/paths';
 import { bindChoiceList } from './choice-list';
+import { t } from './i18n-client';
 import { isOfflineReady } from './offline-sync';
 import { currentSelection, isInstalled, pendingInstall, syncChosen } from './pwa';
 import { readPref, writePref } from './prefs';
 import { clearRecipients, readRecipients } from './recipients';
+import { wireLanguage } from './settings-language';
 
 interface InstallPromptEvent extends Event {
   prompt(): Promise<void>;
 }
 
-/** Settings page: country and operators sheets, offline status, install, theme, recent numbers. */
+/** Settings page: country and operators sheets, language, offline status, install, theme, recent numbers. */
 export function startSettings(): void {
-  const country = window.location.pathname.split('/')[1] ?? '';
+  const country = countryFromPath(window.location.pathname);
 
   wireCountry(country);
+  wireLanguage();
   wireOperators();
   wireOfflineStatus();
   wireInstall();
@@ -31,7 +35,7 @@ function wireCountry(current: string): void {
       return;
     }
     writePref('country', code);
-    window.location.href = `/${code}/reglages`;
+    window.location.href = localePath(splitLang(window.location.pathname).lang, `/${code}/reglages`);
   });
 }
 
@@ -67,7 +71,7 @@ function wireOfflineStatus(): void {
   const refresh = async (): Promise<void> => {
     const selection = currentSelection();
     const ready = selection ? await isOfflineReady(selection) : false;
-    setOfflineStatus(ready ? 'Prêt' : navigator.onLine ? '…' : 'Pas encore');
+    setOfflineStatus(ready ? t().settings.ready : navigator.onLine ? '…' : t().settings.notYet);
   };
 
   document.addEventListener('telko:offline-sync', () => void refresh());
@@ -120,7 +124,7 @@ function wireTheme(): void {
   apply(readPref('theme') ?? 'auto');
 }
 
-/** "Effacés" is shown only once the numbers are really gone; a failure leaves the button usable. */
+/** "Cleared" is shown only once the numbers are really gone; a failure leaves the button usable. */
 function wireRecipients(): void {
   const clear = document.querySelector<HTMLButtonElement>('[data-clear-recipients]');
   if (!clear) return;
@@ -131,10 +135,10 @@ function wireRecipients(): void {
     clear.disabled = true;
     clearRecipients()
       .then(() => {
-        if (status) status.textContent = 'Effacés';
+        if (status) status.textContent = t().settings.cleared;
       })
       .catch(() => {
-        if (status) status.textContent = 'Échec, réessayez';
+        if (status) status.textContent = t().settings.failed;
         clear.disabled = false;
       });
   });

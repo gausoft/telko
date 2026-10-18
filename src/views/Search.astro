@@ -1,0 +1,231 @@
+---
+import Search from '@lucide/astro/icons/search';
+import X from '@lucide/astro/icons/x';
+
+import CodeBuilder from '../components/CodeBuilder.astro';
+import DialToast from '../components/DialToast.astro';
+import Dock from '../components/Dock.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import '../styles/field.css';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
+import { appPageSeo } from '../lib/seo';
+import type { SearchProps } from './view-types';
+
+type Props = SearchProps;
+
+const { data, catalog, payload } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const first = data.operators[0]?.id ?? '';
+---
+
+<AppLayout seo={appPageSeo(fill(m.search.pageTitle, { country: data.country.name }), `/${data.country.code}/recherche`, lang)} withDock>
+  <main class="page" data-country={data.country.code}>
+    <h1 class="heading">{m.common.search}</h1>
+    <label class="field">
+      <Search size={20} aria-hidden="true" />
+      <span class="visually-hidden">{m.search.fieldLabel}</span>
+      <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder={m.search.placeholder} autofocus />
+      <button type="button" class="field-clear" data-clear aria-label={m.search.clear} hidden>
+        <X size={16} aria-hidden="true" />
+      </button>
+    </label>
+
+    <div class="suggestions" data-hint>
+      {m.search.suggestions.map((s) => <button type="button" class="suggestion" data-suggest={s}>{s}</button>)}
+    </div>
+    <h2 class="group-title" data-local-title hidden>{data.country.name}</h2>
+    <div class="results" data-local></div>
+    <h2 class="group-title" data-other-title hidden>{m.search.otherCountries}</h2>
+    <div class="results" data-other></div>
+    <div class="soon">
+      {/* Countries without data yet, shown so visitors know where Telko is heading. */}
+      <span class="flags">
+        {JSON.parse(payload).soon.slice(0, 4).map((code: string) => <img src={`/flags/${code}.svg`} alt={code} width="28" height="28" />)}
+      </span>
+      <span>{m.search.soon}</span>
+    </div>
+    <p class="empty" data-empty hidden>{m.search.empty}</p>
+    <p class="visually-hidden" role="status" aria-live="polite" data-count></p>
+  </main>
+
+  <script is:inline type="application/json" id="search-data" set:html={payload} />
+  <Dock country={data.country.code} operators={data.operators} operator={first} current="recherche" />
+  <CodeBuilder catalog={catalog} country={data.country.code} />
+  <DialToast />
+</AppLayout>
+
+<script>
+  import { startSearch } from '../scripts/search-ui';
+
+  startSearch();
+</script>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .suggestions[hidden] {
+    display: none;
+  }
+
+  .suggestion {
+    height: 36px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--action-soft);
+    color: var(--action-text);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .empty {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .group-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .soon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .flags {
+    display: flex;
+  }
+
+  .flags img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--tag-bg);
+  }
+
+  .flags img + img {
+    margin-left: -8px;
+  }
+</style>
+
+<style is:global>
+  .search-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 64px;
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .search-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .search-mark-logo {
+    background: #ffffff;
+    padding: 3px;
+    box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
+  }
+
+  .search-mark-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .search-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .search-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 800;
+  }
+
+  .search-sub,
+  .search-code {
+    font-size: 12px;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+  }
+
+  button.search-row {
+    width: 100%;
+    border: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .search-call.search-edit {
+    background: var(--action-soft);
+    color: var(--action-text);
+  }
+
+  .search-call {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--action);
+    color: var(--on-action);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+</style>
