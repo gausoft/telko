@@ -12,14 +12,14 @@ What Telko does today and what comes next. Dates are not promised: priorities fo
 
 ## Next
 
-1. **Verify codes on real phones**, starting with the codes that move money. Each confirmed code switches from "unverified" to "verified" with its proof.
-2. **Fee calculator**: type an amount, see the transfer and withdrawal fees of each mobile money service.
-3. **Help pages** for frequent problems: cancel a transfer, forgotten or blocked secret code, money sent to the wrong number.
-4. **Interoperable transfers**: a page on PI-SPI, the regional instant payment system, and how it changes fees between services.
-5. **Desktop layout** of every screen.
+1. **Verify codes on real phones** ([#1](https://github.com/gausoft/telko/issues/1)), starting with the codes that move money. Each confirmed code switches from "unverified" to "verified" with its proof.
+2. **Fee calculator** ([#2](https://github.com/gausoft/telko/issues/2)): type an amount, see the transfer and withdrawal fees of each mobile money service.
+3. **Help pages** ([#3](https://github.com/gausoft/telko/issues/3)) for frequent problems: cancel a transfer, forgotten or blocked secret code, money sent to the wrong number.
+4. **Interoperable transfers** ([#4](https://github.com/gausoft/telko/issues/4)): a page on PI-SPI, the regional instant payment system, and how it changes fees between services.
+5. **Desktop layout** ([#5](https://github.com/gausoft/telko/issues/5)) of every screen.
 
 ## Later
 
-- **Other WAEMU countries** (Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal). A country goes live when contributors from that country bring and check its data. See [Add a country](CONTRIBUTING.md#add-a-country).
+- **Other WAEMU countries** ([#6](https://github.com/gausoft/telko/issues/6)) (Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal). A country goes live when contributors from that country bring and check its data. See [Add a country](CONTRIBUTING.md#add-a-country).
 - One page per offer, shareable on its own.
 - Change history of prices and codes.
