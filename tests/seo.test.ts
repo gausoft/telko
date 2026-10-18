@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { LANGS } from '../src/i18n/i18n-types';
 import { loadCatalog } from '../src/lib/catalog';
 import { localizeCatalog } from '../src/lib/localize';
+import { GET as sitemap } from '../src/pages/sitemap.xml';
 import { sectionSeo, shareCards } from '../src/lib/seo';
 import { SECTIONS } from '../src/lib/sections';
 
@@ -59,5 +60,17 @@ describe('page SEO', () => {
         expect(slug && slugs.has(slug)).toBe(true);
       }
     }
+  });
+});
+
+describe('sitemap', () => {
+  it('lists both languages and links them to each other', async () => {
+    const response = await sitemap({ site: new URL('https://telko.pages.dev') } as Parameters<typeof sitemap>[0]);
+    const xml = await response.text();
+
+    expect(xml).toContain('<loc>https://telko.pages.dev/tg/yas/internet</loc>');
+    expect(xml).toContain('<loc>https://telko.pages.dev/en/tg/yas/internet</loc>');
+    expect(xml).toContain('hreflang="en" href="https://telko.pages.dev/en/tg/yas/internet"');
+    expect(xml).toContain('hreflang="x-default" href="https://telko.pages.dev/tg/yas/internet"');
   });
 });

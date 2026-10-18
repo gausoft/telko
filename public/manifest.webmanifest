@@ -3,6 +3,7 @@
   "name": "Telko",
   "short_name": "Telko",
   "description": "Tous vos services mobiles, au même endroit.",
+  "description_localized": { "en": "All your mobile services, in one place." },
   "lang": "fr",
   "start_url": "/",
   "scope": "/",
@@ -18,7 +19,7 @@
     { "src": "/icons/maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
-    { "name": "Rechercher", "url": "/?go=recherche", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] },
-    { "name": "Internet", "url": "/?go=internet", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] }
+    { "name": "Rechercher", "name_localized": { "en": "Search" }, "url": "/?go=recherche", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] },
+    { "name": "Internet", "name_localized": { "en": "Data" }, "url": "/?go=internet", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] }
   ]
 }
