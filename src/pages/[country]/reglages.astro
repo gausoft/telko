@@ -15,6 +15,7 @@ import ChoiceList from '../../components/ChoiceList.astro';
 import Sheet from '../../components/Sheet.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
+import { appPageSeo } from '../../lib/seo';
 import { loadCatalog } from '../../lib/catalog';
 import type { CountryCatalog } from '../../lib/catalog-types';
 
@@ -40,7 +41,7 @@ const THEMES = [
 ] as const;
 ---
 
-<AppLayout title="Réglages · Telko" withDock>
+<AppLayout seo={appPageSeo('Réglages · Telko', `/${data.country.code}/reglages`)} withDock>
   <main class="page">
     <AppHeader country={data.country} back={`/${data.country.code}`} title="Réglages" />
 

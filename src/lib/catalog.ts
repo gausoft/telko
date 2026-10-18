@@ -20,6 +20,7 @@ import {
   type FeaturedFile,
   type Operator,
 } from './schema';
+import type { Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
@@ -141,6 +142,13 @@ export function entriesFor(catalog: CountryCatalog, operator: string, category: 
   return catalog.entries
     .filter((e) => e.operator === operator && e.category === category && e.provenance.status !== 'discontinued')
     .sort((a, b) => (a.price_xof ?? 0) - (b.price_xof ?? 0));
+}
+
+/** Offers listed on a section page: same operator, matching categories, still sold. */
+export function sectionEntries(catalog: CountryCatalog, operator: string, section: Section): CatalogEntry[] {
+  return catalog.entries.filter(
+    (e) => e.operator === operator && section.categories.includes(e.category) && e.provenance.status !== 'discontinued',
+  );
 }
 
 export function featuredFor(catalog: CountryCatalog, operator: string): FeaturedItem[] {

@@ -11,6 +11,7 @@ import { SHOW_BRAND_LOGOS } from '../../config';
 import { loadCatalog } from '../../lib/catalog';
 import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
 import { buildDocs } from '../../lib/search';
+import { appPageSeo } from '../../lib/seo';
 
 export function getStaticPaths() {
   const catalog = loadCatalog();
@@ -40,7 +41,7 @@ const SUGGESTIONS = ['5 go', 'solde', 'illimité', 'transfert', 'frais'];
 const first = data.operators[0]?.id ?? '';
 ---
 
-<AppLayout title={`Rechercher · Telko ${data.country.name}`} withDock>
+<AppLayout seo={appPageSeo(`Rechercher · Telko ${data.country.name}`, `/${data.country.code}/recherche`)} withDock>
   <main class="page" data-country={data.country.code}>
     <h1 class="heading">Rechercher</h1>
     <label class="field">

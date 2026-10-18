@@ -1,9 +1,10 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
+import { splashSeo } from '../lib/seo';
 import { DEFAULT_COUNTRY } from '../config';
 ---
 
-<AppLayout title="Telko · Tous vos services mobiles, au même endroit">
+<AppLayout seo={splashSeo()}>
   <main class="splash" aria-busy="true">
     <span class="wordmark" role="img" aria-label="Telko">telk<span class="dot"></span></span>
     <span class="keys" aria-hidden="true">

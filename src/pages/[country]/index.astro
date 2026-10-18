@@ -14,6 +14,7 @@ import DialToast from '../../components/DialToast.astro';
 import Dock from '../../components/Dock.astro';
 import AppLayout from '../../layouts/AppLayout.astro';
 import { featuredFor, loadCatalog, shortcutsFor } from '../../lib/catalog';
+import { countryHomeSeo } from '../../lib/seo';
 import type { Catalog, CountryCatalog } from '../../lib/catalog-types';
 import { telHref } from '../../lib/dial';
 import { SECTIONS } from '../../lib/sections';
@@ -55,7 +56,7 @@ const blocks = data.operators.map((operator) => ({
 }));
 ---
 
-<AppLayout title={`Telko · ${data.country.name}`} withDock>
+<AppLayout seo={countryHomeSeo(data)} withDock>
   <main class="page">
     <AppHeader country={data.country} switcher={{ operators: data.operators, current: first.id }} />
 

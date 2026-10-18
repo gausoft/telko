@@ -6,9 +6,10 @@ import Dock from '../../../components/Dock.astro';
 import FeeTable from '../../../components/FeeTable.astro';
 import OfferRow from '../../../components/OfferRow.astro';
 import AppLayout from '../../../layouts/AppLayout.astro';
-import { loadCatalog } from '../../../lib/catalog';
+import { loadCatalog, sectionEntries } from '../../../lib/catalog';
 import type { Catalog, CatalogEntry, CountryCatalog } from '../../../lib/catalog-types';
 import { pricePerGb } from '../../../lib/format';
+import { sectionSeo } from '../../../lib/seo';
 import type { Operator } from '../../../lib/schema';
 import { DURATION_FILTERS, durationOf, SECTIONS, type DurationFilter, type Section } from '../../../lib/sections';
 
@@ -35,9 +36,7 @@ interface Props {
 const { data, operator, section, catalog } = Astro.props;
 const isInternet = section.id === 'internet';
 
-const entries: CatalogEntry[] = data.entries
-  .filter((e) => e.operator === operator.id && section.categories.includes(e.category) && e.provenance.status !== 'discontinued')
-  .sort((a, b) => Number(a.price_xof === null) - Number(b.price_xof === null) || (a.price_xof ?? 0) - (b.price_xof ?? 0));
+const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price_xof === null) - Number(b.price_xof === null) || (a.price_xof ?? 0) - (b.price_xof ?? 0));
 
 const rows = entries.map((entry) => {
   const usesMobileMoney = entry.category === 'mobile-money';
@@ -59,7 +58,7 @@ const initialFilter: DurationFilter = 'mois';
 const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? 'Mobile money') : section.label;
 ---
 
-<AppLayout title={`${title} ${operator.short_name} · Telko`} withDock>
+<AppLayout seo={sectionSeo(data, operator, section)} withDock>
   <main class="page">
     <AppHeader country={data.country} back={`/${data.country.code}`} title={title} switcher={{ operators: data.operators, current: operator.id, hrefTemplate: `/${data.country.code}/{op}/${section.id}` }} />
 

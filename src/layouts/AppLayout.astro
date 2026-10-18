@@ -4,14 +4,15 @@ import '@fontsource/ibm-plex-mono/500.css';
 import '@fontsource/ibm-plex-mono/600.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
+import SeoHead from '../components/SeoHead.astro';
+import type { PageSeo } from '../lib/seo-types';
 
 interface Props {
-  title: string;
-  description?: string;
+  seo: PageSeo;
   withDock?: boolean;
 }
 
-const { title, description = 'Tous vos services mobiles, au même endroit.', withDock = false } = Astro.props;
+const { seo, withDock = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,7 +20,6 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
-    <meta name="description" content={description} />
     <meta name="theme-color" content="#4B3BFF" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -29,7 +29,7 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Telko" />
-    <title>{title}</title>
+    <SeoHead seo={seo} />
     <script is:inline>
       try {
         const theme = localStorage.getItem('telko.theme');
