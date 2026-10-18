@@ -761,7 +761,7 @@
       "max_xof": null,
       "fee_xof": null,
       "fee_percent": null,
-      "label": "Transfert Mixx vers Flooz (Moov)",
+      "label": "Transfert Mixx vers Moov Money (Moov)",
       "provenance": {
         "status": "unverified",
         "sources": [

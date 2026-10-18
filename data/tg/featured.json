@@ -14,7 +14,7 @@
     { "entry_id": "yas-mobile-money-menu-mixx", "label": "Mixx", "brand": "mobile_money" },
     { "entry_id": "yas-general-mon-numero", "label": "Mon numéro", "brand": "operator" },
     { "entry_id": "moov-general-solde-credit", "label": "Solde", "brand": "operator" },
-    { "entry_id": "moov-mobile-money-solde-flooz", "label": "Solde Flooz", "brand": "mobile_money" },
+    { "entry_id": "moov-mobile-money-solde-flooz", "label": "Solde Moov Money", "brand": "mobile_money" },
     { "entry_id": "moov-internet-solde-izi", "label": "Solde internet", "brand": "operator" }
   ]
 }

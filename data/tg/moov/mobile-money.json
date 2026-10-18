@@ -5,8 +5,8 @@
     {
       "id": "moov-mobile-money-menu-flooz",
       "kind": "service",
-      "name": "Menu Moov Money Flooz",
-      "description": "Ouvrir le menu Flooz, qui active aussi le compte à la première utilisation.",
+      "name": "Menu Moov Money",
+      "description": "Ouvrir le menu Moov Money, qui active aussi le compte à la première utilisation.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -46,7 +46,7 @@
     {
       "id": "moov-mobile-money-transfert-national",
       "kind": "service",
-      "name": "Transfert Flooz vers un numéro Moov",
+      "name": "Transfert Moov Money vers un numéro Moov",
       "description": "Envoyer de l'argent à un numéro Moov au Togo.",
       "price_xof": null,
       "allowances": null,
@@ -70,7 +70,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -96,12 +96,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Flooz est inclus dans le code. « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert » : période et frais au-delà non publiés."
+      "notes": "Le code secret Moov Money est inclus dans le code. « Tous les transferts d'argent nationaux sont gratuits jusqu'au troisième transfert » : période et frais au-delà non publiés."
     },
     {
       "id": "moov-mobile-money-transfert-autre-reseau",
       "kind": "service",
-      "name": "Transfert Flooz vers un autre réseau",
+      "name": "Transfert Moov Money vers un autre réseau",
       "description": "Envoyer de l'argent à un numéro d'un autre réseau togolais (Yas).",
       "price_xof": null,
       "allowances": null,
@@ -125,7 +125,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -152,12 +152,12 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Même code qu'un transfert Moov. Le destinataire ne reçoit pas l'argent sur son compte Mixx : l'expéditeur lui transmet le code de retrait à 6 chiffres reçu par SMS, à encaisser dans un point Flooz. Frais non publiés."
+      "notes": "Même code qu'un transfert Moov. Le destinataire ne reçoit pas l'argent sur son compte Mixx : l'expéditeur lui transmet le code de retrait à 6 chiffres reçu par SMS, à encaisser dans un point Moov Money. Frais non publiés."
     },
     {
       "id": "moov-mobile-money-transfert-international",
       "kind": "service",
-      "name": "Transfert Flooz international",
+      "name": "Transfert Moov Money international",
       "description": "Envoyer de l'argent vers un pays de la sous-région.",
       "price_xof": null,
       "allowances": null,
@@ -182,7 +182,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -208,13 +208,13 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Flooz est inclus dans le code. Pays : Bénin (Moov, MTN), Burkina (Moov, Orange), Côte d'Ivoire (Moov, MTN), Guinée-Bissau (MTN), Mali (Moov), Niger (Moov, Orange, Airtel)."
+      "notes": "Le code secret Moov Money est inclus dans le code. Pays : Bénin (Moov, MTN), Burkina (Moov, Orange), Côte d'Ivoire (Moov, MTN), Guinée-Bissau (MTN), Mali (Moov), Niger (Moov, Orange, Airtel)."
     },
     {
       "id": "moov-mobile-money-paiement-marchand",
       "kind": "service",
       "name": "Paiement marchand",
-      "description": "Payer un commerçant avec Flooz.",
+      "description": "Payer un commerçant avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -239,7 +239,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -265,13 +265,13 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Flooz est inclus dans le code. Paiement aussi possible par QR code ou accessoire NFC."
+      "notes": "Le code secret Moov Money est inclus dans le code. Paiement aussi possible par QR code ou accessoire NFC."
     },
     {
       "id": "moov-mobile-money-retrait-confirmation",
       "kind": "service",
-      "name": "Confirmer un retrait Flooz",
-      "description": "Valider le retrait d'argent lancé par l'agent Flooz.",
+      "name": "Confirmer un retrait Moov Money",
+      "description": "Valider le retrait d'argent lancé par l'agent Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -282,7 +282,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -314,7 +314,7 @@
       "id": "moov-mobile-money-annulation-transfert",
       "kind": "service",
       "name": "Rappel de fonds",
-      "description": "Annuler un transfert Flooz envoyé par erreur.",
+      "description": "Annuler un transfert Moov Money envoyé par erreur.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -355,7 +355,7 @@
       "id": "moov-mobile-money-bankvi",
       "kind": "service",
       "name": "Bank'vi",
-      "description": "Épargne de groupe (tontine) avec Flooz.",
+      "description": "Épargne de groupe (tontine) avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -391,7 +391,7 @@
       "id": "moov-mobile-money-zem-assur",
       "kind": "service",
       "name": "Zem Assur",
-      "description": "Assurance des conducteurs de moto-taxi (NSIA) payée avec Flooz.",
+      "description": "Assurance des conducteurs de moto-taxi (NSIA) payée avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -427,8 +427,8 @@
     {
       "id": "moov-mobile-money-solde-flooz",
       "kind": "service",
-      "name": "Solde Flooz",
-      "description": "Consulter le solde de son compte Flooz.",
+      "name": "Solde Moov Money",
+      "description": "Consulter le solde de son compte Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -467,8 +467,8 @@
     {
       "id": "moov-mobile-money-changer-code-flooz",
       "kind": "service",
-      "name": "Changer son code secret Flooz",
-      "description": "Remplacer son code secret Flooz.",
+      "name": "Changer son code secret Moov Money",
+      "description": "Remplacer son code secret Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -515,8 +515,8 @@
     {
       "id": "moov-mobile-money-simulateur-frais",
       "kind": "service",
-      "name": "Simulateur de frais Flooz",
-      "description": "Calculer les frais d'une opération Flooz.",
+      "name": "Simulateur de frais Moov Money",
+      "description": "Calculer les frais d'une opération Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -550,8 +550,8 @@
     {
       "id": "moov-mobile-money-flooz-vers-banque",
       "kind": "service",
-      "name": "Flooz vers banque (Orabank Pass Money Flooz)",
-      "description": "Transférer de l'argent entre Flooz et un compte Orabank.",
+      "name": "Moov Money vers banque (Orabank Pass Money Flooz)",
+      "description": "Transférer de l'argent entre Moov Money et un compte Orabank.",
       "price_xof": null,
       "allowances": null,
       "validity": null,

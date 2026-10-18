@@ -51,20 +51,22 @@
       "logo": "moov.png",
       "mobile_money": {
         "id": "flooz",
-        "name": "Moov Money Flooz",
-        "short_name": "Flooz",
-        "former_names": [],
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [
+          "Flooz"
+        ],
         "badge": {
-          "label": "Fl",
+          "label": "MM",
           "background": "#EC6707",
           "foreground": "#12111F"
         },
-        "logo": null
+        "logo": "moov-money.png"
       },
       "prefixes": [],
       "website": "https://moov-africa.tg",
       "customer_service": "+228 99 99 00 00",
-      "notes": "Préfixes non publiés : la portabilité des numéros est en vigueur depuis le 3 mai 2024, un préfixe ne garantit pas l'opérateur. Centre d'appels Flooz : 777."
+      "notes": "Préfixes non publiés : la portabilité des numéros est en vigueur depuis le 3 mai 2024, un préfixe ne garantit pas l'opérateur. Centre d'appels Moov Money : 777."
     }
   ]
 }

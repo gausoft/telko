@@ -640,7 +640,7 @@
       "max_xof": 5000,
       "fee_xof": 47,
       "fee_percent": null,
-      "label": "Flooz vers Orabank jusqu'à 5 000 F : environ 47 F",
+      "label": "Moov Money vers Orabank jusqu'à 5 000 F : environ 47 F",
       "provenance": {
         "status": "unverified",
         "sources": [
@@ -662,7 +662,7 @@
       "max_xof": 500000,
       "fee_xof": 280,
       "fee_percent": null,
-      "label": "Flooz vers Orabank jusqu'à 500 000 F : 280 F",
+      "label": "Moov Money vers Orabank jusqu'à 500 000 F : 280 F",
       "provenance": {
         "status": "unverified",
         "sources": [
@@ -684,7 +684,7 @@
       "max_xof": 8000,
       "fee_xof": 0,
       "fee_percent": null,
-      "label": "Flooz vers un autre opérateur, jusqu'à 8 000 F cumulés par jour : gratuit (dès le 02/11/2026)",
+      "label": "Moov Money vers un autre opérateur, jusqu'à 8 000 F cumulés par jour : gratuit (dès le 02/11/2026)",
       "provenance": {
         "status": "unverified",
         "sources": [
@@ -706,7 +706,7 @@
       "max_xof": null,
       "fee_xof": null,
       "fee_percent": null,
-      "label": "Flooz vers un autre opérateur, au-delà de 8 000 F par jour : 0 à 0,8 % hors taxes (dès le 02/11/2026)",
+      "label": "Moov Money vers un autre opérateur, au-delà de 8 000 F par jour : 0 à 0,8 % hors taxes (dès le 02/11/2026)",
       "provenance": {
         "status": "unverified",
         "sources": [

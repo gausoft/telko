@@ -5,8 +5,8 @@
     {
       "id": "moov-bills-menu-factures",
       "kind": "service",
-      "name": "Paiement de factures Flooz",
-      "description": "Menu de paiement des factures avec Flooz.",
+      "name": "Paiement de factures Moov Money",
+      "description": "Menu de paiement des factures avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -41,7 +41,7 @@
       "id": "moov-bills-ceet-tde",
       "kind": "service",
       "name": "Facture CEET et TdE",
-      "description": "Payer sa facture d'électricité CEET ou d'eau TdE avec Flooz.",
+      "description": "Payer sa facture d'électricité CEET ou d'eau TdE avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -103,7 +103,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -169,7 +169,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -201,7 +201,7 @@
       "id": "moov-bills-grandes-ecoles",
       "kind": "service",
       "name": "Grandes écoles",
-      "description": "Payer ses frais de scolarité dans une grande école avec Flooz.",
+      "description": "Payer ses frais de scolarité dans une grande école avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -232,7 +232,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -263,7 +263,7 @@
       "id": "moov-bills-assurance",
       "kind": "service",
       "name": "Assurance",
-      "description": "Payer une prime d'assurance avec Flooz.",
+      "description": "Payer une prime d'assurance avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -298,7 +298,7 @@
       "id": "moov-bills-postpaye-mon-compte",
       "kind": "service",
       "name": "Facture Moov postpayé, mon compte",
-      "description": "Payer sa propre facture Moov postpayée avec Flooz.",
+      "description": "Payer sa propre facture Moov postpayée avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -334,7 +334,7 @@
       "id": "moov-bills-postpaye-autre-compte",
       "kind": "service",
       "name": "Facture Moov postpayé, autre compte",
-      "description": "Payer la facture Moov postpayée d'un autre client avec Flooz.",
+      "description": "Payer la facture Moov postpayée d'un autre client avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -406,7 +406,7 @@
       "id": "moov-bills-cash-power",
       "kind": "service",
       "name": "Cash Power",
-      "description": "Acheter de l'électricité prépayée Cash Power avec Flooz.",
+      "description": "Acheter de l'électricité prépayée Cash Power avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -442,7 +442,7 @@
       "id": "moov-bills-canalbox-meme-offre",
       "kind": "service",
       "name": "CanalBox, même offre",
-      "description": "Renouveler son abonnement CanalBox avec Flooz.",
+      "description": "Renouveler son abonnement CanalBox avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -477,7 +477,7 @@
       "id": "moov-bills-canalbox-changer-offre",
       "kind": "service",
       "name": "CanalBox, changer d'offre",
-      "description": "Changer d'offre CanalBox et payer avec Flooz.",
+      "description": "Changer d'offre CanalBox et payer avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -547,7 +547,7 @@
       "id": "moov-bills-canal-plus-reabonnement",
       "kind": "service",
       "name": "Canal+, même formule",
-      "description": "Renouveler son abonnement Canal+ avec Flooz.",
+      "description": "Renouveler son abonnement Canal+ avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -583,7 +583,7 @@
       "id": "moov-bills-canal-plus-changer-formule",
       "kind": "service",
       "name": "Canal+, changement de formule",
-      "description": "Changer de formule Canal+ et payer avec Flooz.",
+      "description": "Changer de formule Canal+ et payer avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -645,7 +645,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -696,7 +696,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -728,7 +728,7 @@
       "id": "moov-bills-new-world-tv-reabonnement",
       "kind": "service",
       "name": "New World TV, réabonnement",
-      "description": "Renouveler son abonnement New World TV avec Flooz.",
+      "description": "Renouveler son abonnement New World TV avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -763,7 +763,7 @@
       "id": "moov-bills-new-world-tv-changer-offre",
       "kind": "service",
       "name": "New World TV, changer d'offre",
-      "description": "Changer d'offre New World TV et payer avec Flooz.",
+      "description": "Changer d'offre New World TV et payer avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -817,7 +817,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -849,7 +849,7 @@
       "id": "moov-bills-solergie",
       "kind": "service",
       "name": "Solergie",
-      "description": "Payer son kit solaire Solergie avec Flooz.",
+      "description": "Payer son kit solaire Solergie avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -884,7 +884,7 @@
       "id": "moov-bills-cizo-bboxx-moi",
       "kind": "service",
       "name": "CIZO-BBOXX, pour moi",
-      "description": "Payer son kit solaire CIZO-BBOXX avec Flooz.",
+      "description": "Payer son kit solaire CIZO-BBOXX avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -920,7 +920,7 @@
       "id": "moov-bills-cizo-bboxx-autre",
       "kind": "service",
       "name": "CIZO-BBOXX, pour un autre",
-      "description": "Payer le kit solaire CIZO-BBOXX d'une autre personne avec Flooz.",
+      "description": "Payer le kit solaire CIZO-BBOXX d'une autre personne avec Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,

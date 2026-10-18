@@ -188,7 +188,7 @@ function imagePath(card: ShareCard): string {
   return `/og/${card.slug}.png?v=${fingerprint(JSON.stringify(card))}`;
 }
 
-/** "Yas et Moov", "Mixx, Flooz et factures". */
+/** "Yas et Moov", "Mixx, Moov Money et factures". */
 function joinFr(items: string[]): string {
   if (items.length <= 1) return items.join('');
 

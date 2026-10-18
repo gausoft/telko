@@ -72,8 +72,8 @@
     {
       "id": "moov-useful-numbers-centre-appel-flooz",
       "kind": "service",
-      "name": "Centre d'appel Flooz",
-      "description": "Joindre l'assistance Moov Money Flooz.",
+      "name": "Centre d'appel Moov Money",
+      "description": "Joindre l'assistance Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,

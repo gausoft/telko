@@ -206,8 +206,8 @@
     {
       "id": "moov-credit-transfer-achat-credit-flooz",
       "kind": "service",
-      "name": "Acheter du crédit avec Flooz",
-      "description": "Acheter du crédit pour soi avec son compte Flooz.",
+      "name": "Acheter du crédit avec Moov Money",
+      "description": "Acheter du crédit pour soi avec son compte Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -224,7 +224,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -255,13 +255,13 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Flooz est inclus dans le code. À partir de 200 F. Une autre page écrit *155*3*1# (entrée de menu)."
+      "notes": "Le code secret Moov Money est inclus dans le code. À partir de 200 F. Une autre page écrit *155*3*1# (entrée de menu)."
     },
     {
       "id": "moov-credit-transfer-achat-credit-flooz-tiers",
       "kind": "service",
-      "name": "Acheter du crédit avec Flooz pour un autre numéro",
-      "description": "Acheter du crédit pour un autre numéro avec son compte Flooz.",
+      "name": "Acheter du crédit avec Moov Money pour un autre numéro",
+      "description": "Acheter du crédit pour un autre numéro avec son compte Moov Money.",
       "price_xof": null,
       "allowances": null,
       "validity": null,
@@ -284,7 +284,7 @@
           {
             "name": "pin",
             "type": "pin",
-            "label": "Code secret Flooz",
+            "label": "Code secret Moov Money",
             "required": true
           }
         ]
@@ -310,7 +310,7 @@
         "verified_at": null,
         "verified_by": null
       },
-      "notes": "Le code secret Flooz est inclus dans le code."
+      "notes": "Le code secret Moov Money est inclus dans le code."
     },
     {
       "id": "moov-credit-transfer-moovcredit-secours",

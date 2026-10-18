@@ -42,7 +42,7 @@ describe('ussd flow on every real code', () => {
 });
 
 describe('planSteps and buildCode', () => {
-  it('stops a Flooz transfer before the secret code and closes it with #', () => {
+  it('stops a Moov Money transfer before the secret code and closes it with #', () => {
     const ussd = byId('moov-mobile-money-transfert-national');
 
     expect(planSteps(ussd).map((s) => s.name)).toEqual(['phone', 'amount']);
