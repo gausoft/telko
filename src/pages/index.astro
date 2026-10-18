@@ -23,7 +23,11 @@ import { DEFAULT_COUNTRY } from '../config';
 
   const SPLASH_MS = 500;
   const country = readPref('country') ?? 'tg';
-  const target = readPref('onboarded') ? `/${country}` : '/bienvenue';
+  const operator = readPref('operator');
+  // Home screen shortcuts from the web manifest open "/?go=…".
+  const shortcut: Record<string, string> = { recherche: `/${country}/recherche`, internet: operator ? `/${country}/${operator}/internet` : `/${country}` };
+  const go = shortcut[new URLSearchParams(window.location.search).get('go') ?? ''];
+  const target = readPref('onboarded') ? (go ?? `/${country}`) : '/bienvenue';
 
   window.setTimeout(() => window.location.replace(target), SPLASH_MS);
 </script>

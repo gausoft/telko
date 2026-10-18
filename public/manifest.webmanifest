@@ -1,0 +1,24 @@
+{
+  "id": "/",
+  "name": "Telko",
+  "short_name": "Telko",
+  "description": "Tous vos services mobiles, au même endroit.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#4B3BFF",
+  "theme_color": "#4B3BFF",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "/icons/pwa-64x64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/icons/pwa-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/pwa-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Rechercher", "url": "/?go=recherche", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] },
+    { "name": "Internet", "url": "/?go=internet", "icons": [{ "src": "/icons/pwa-192x192.png", "sizes": "192x192" }] }
+  ]
+}

@@ -1,4 +1,7 @@
 ---
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource/ibm-plex-mono/500.css';
+import '@fontsource/ibm-plex-mono/600.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
 
@@ -20,12 +23,12 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
     <meta name="theme-color" content="#4B3BFF" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@500;600&display=swap"
-    />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180x180.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Telko" />
     <title>{title}</title>
     <script is:inline>
       try {
@@ -36,6 +39,11 @@ const { title, description = 'Tous vos services mobiles, au même endroit.', wit
   </head>
   <body class:list={{ 'has-dock': withDock }}>
     <slot />
+    <script>
+      import { startPwa } from '../scripts/pwa';
+
+      startPwa();
+    </script>
   </body>
 </html>
 

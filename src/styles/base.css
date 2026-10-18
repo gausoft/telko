@@ -17,6 +17,26 @@ body {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* Feels like an app: no double-tap zoom delay, no text selection on controls. */
+a,
+button,
+input,
+label,
+summary {
+  touch-action: manipulation;
+}
+
+button,
+nav,
+.chip,
+[data-dial],
+[data-build] {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 h1,
