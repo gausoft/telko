@@ -9,7 +9,7 @@ import AppLayout from '../layouts/AppLayout.astro';
 import '../styles/field.css';
 import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
-import { pageLang } from '../i18n/paths';
+import { localePath, pageLang } from '../i18n/paths';
 import { appPageSeo } from '../lib/seo';
 import type { SearchProps } from './view-types';
 
@@ -19,6 +19,8 @@ const { data, catalog, payload } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
 const first = data.operators[0]?.id ?? '';
+/** Countries Telko is heading to: each one has a page saying where its data stands. */
+const soon = catalog.countries.filter((country) => country.status === 'soon');
 ---
 
 <AppLayout seo={appPageSeo(fill(m.search.pageTitle, { country: data.country.name }), `/${data.country.code}/recherche`, lang)} withDock>
@@ -41,9 +43,13 @@ const first = data.operators[0]?.id ?? '';
     <h2 class="group-title" data-other-title hidden>{m.search.otherCountries}</h2>
     <div class="results" data-other></div>
     <div class="soon">
-      {/* Countries without data yet, shown so visitors know where Telko is heading. */}
+      {/* Countries without data yet, each linking to the page that says where Telko stands. */}
       <span class="flags">
-        {JSON.parse(payload).soon.slice(0, 4).map((code: string) => <img src={`/flags/${code}.svg`} alt={code} width="28" height="28" />)}
+        {soon.map((c) => (
+          <a class="flag" href={localePath(lang, `/${c.code}`)}>
+            <img src={`/flags/${c.code}.svg`} alt={c.name} width="32" height="32" />
+          </a>
+        ))}
       </span>
       <span>{m.search.soon}</span>
     </div>
@@ -122,6 +128,7 @@ const first = data.operators[0]?.id ?? '';
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: var(--space-3);
     padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-md);
@@ -133,6 +140,13 @@ const first = data.operators[0]?.id ?? '';
 
   .flags {
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+
+  .flag {
+    display: inline-flex;
+    border-radius: 50%;
   }
 
   .flags img {

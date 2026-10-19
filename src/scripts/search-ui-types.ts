@@ -10,5 +10,4 @@ export interface SearchBrand {
 export interface SearchPayload {
   docs: SearchDoc[];
   brands: Record<string, SearchBrand>;
-  soon: string[];
 }

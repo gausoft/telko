@@ -14,6 +14,8 @@ export const seoCopyEn: SeoCopy = {
   homeAlt: (country, operators) => `Telko ${country}: ${joinList(operators)} codes`,
   homeCardTitle: 'USSD codes, bundles and mobile money',
   homeCardHighlight: 'Even offline',
+  soonTitle,
+  soonDescription,
   heading,
   description,
   moneyName: (name, former) => (former ? `${name} (formerly ${former})` : name),
@@ -21,6 +23,17 @@ export const seoCopyEn: SeoCopy = {
   codes: (n) => `${n} codes`,
   amounts: (n) => `${n} amounts`,
 };
+
+/** A country still listed as `soon`: no bundle page exists yet, so the title promises nothing it cannot show. */
+function soonTitle(country: string): string {
+  return `${country}: coming to Telko · USSD codes and bundles`;
+}
+
+function soonDescription(country: string, operators: string[]): string {
+  const listed = operators.length > 0 ? `Telko is listing ${joinList(operators)} for ${country}` : `Telko is preparing ${country}`;
+
+  return `${listed}: bundles, USSD codes and mobile money, each with its source. Help us check them.`;
+}
 
 function heading(id: SectionId, c: SectionCopyContext): string {
   const headings: Record<SectionId, string> = {

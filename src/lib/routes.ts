@@ -1,6 +1,6 @@
 import { SHOW_BRAND_LOGOS } from '../config';
 import type { Lang } from '../i18n/i18n-types';
-import type { CountryHomeProps, SearchProps, SectionProps, SettingsProps } from '../views/view-types';
+import type { CountryPageProps, SearchProps, SectionProps, SettingsProps } from '../views/view-types';
 import { loadCatalog } from './catalog';
 import type { Catalog } from './catalog-types';
 import type { Badge } from './schema';
@@ -9,20 +9,32 @@ import { buildDocs } from './search';
 import { SECTIONS } from './sections';
 
 /**
- * Static paths of the country pages for one language. French and English pages share these
- * builders, so both languages always list the same pages with the same data.
+ * Static paths of the country home pages for one language: the live countries with their data,
+ * then every country still listed as `soon`. French and English pages share these builders, so
+ * both languages always list the same pages with the same data.
  */
-export function countryHomePaths(lang: Lang): { params: { country: string }; props: CountryHomeProps }[] {
+export function countryPaths(lang: Lang): { params: { country: string }; props: CountryPageProps }[] {
   const catalog = localizeCatalog(loadCatalog(), lang);
 
-  return [...catalog.byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data, catalog } }));
+  return [
+    ...[...catalog.byCountry.values()].map((data) => ({
+      params: { country: data.country.code },
+      props: { view: 'home' as const, data, catalog },
+    })),
+    ...catalog.countries
+      .filter((country) => country.status === 'soon')
+      .map((country) => ({
+        params: { country: country.code },
+        props: { view: 'soon' as const, country, operators: catalog.pending.get(country.code)?.operators ?? [] },
+      })),
+  ];
 }
 
 export function searchPaths(lang: Lang): { params: { country: string }; props: SearchProps }[] {
   const source = loadCatalog();
   const catalog = localizeCatalog(source, lang);
   // "<" is escaped so contributed data can never close the script tag it is embedded in.
-  const payload = JSON.stringify({ docs: buildDocs(source, lang), brands: searchBrands(catalog), soon: soonCountries(catalog) }).replace(/</g, '\\u003c');
+  const payload = JSON.stringify({ docs: buildDocs(source, lang), brands: searchBrands(catalog) }).replace(/</g, '\\u003c');
 
   return [...catalog.byCountry.values()].map((data) => ({ params: { country: data.country.code }, props: { data, catalog, payload } }));
 }
@@ -52,8 +64,4 @@ function searchBrands(catalog: Catalog): Record<string, { name: string; badge: B
       c.operators.map((o) => [`${c.country.code}:${o.id}`, { name: o.short_name, badge: o.badge, logo: SHOW_BRAND_LOGOS ? o.logo : null }]),
     ),
   );
-}
-
-function soonCountries(catalog: Catalog): string[] {
-  return catalog.countries.filter((c) => c.status === 'soon').map((c) => c.code);
 }

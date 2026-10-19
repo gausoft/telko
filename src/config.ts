@@ -4,6 +4,9 @@ export const SHOW_BRAND_LOGOS = true;
 /** Country used when the visitor has not picked one yet. */
 export const DEFAULT_COUNTRY = 'tg';
 
+/** Public repository, where contributions and sources live. */
+export const REPO_URL = 'https://github.com/gausoft/telko';
+
 /** Delay between two slides of the featured carousel, in milliseconds. */
 export const CAROUSEL_INTERVAL_MS = 4000;
 

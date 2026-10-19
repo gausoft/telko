@@ -1,0 +1,335 @@
+---
+import PhoneCall from '@lucide/astro/icons/phone-call';
+
+import AppHeader from '../components/AppHeader.astro';
+import BrandMark from '../components/BrandMark.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { DEFAULT_COUNTRY, REPO_URL } from '../config';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { countrySoonSeo } from '../lib/seo';
+import type { Provenance } from '../lib/schema';
+import type { CountrySoonProps } from './view-types';
+
+type Props = CountrySoonProps;
+
+const { country, operators } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+
+/** Day the operator pages were last read, taken from the provenance of the data itself. */
+const readOn = (provenance: Provenance): string | null => provenance.sources.map((s) => s.accessed).sort().at(-1) ?? null;
+const day = (iso: string | null): string | null =>
+  iso === null
+    ? null
+    : new Intl.DateTimeFormat(lang === 'fr' ? 'fr-FR' : 'en-GB', {
+        day: '2-digit',
+        month: lang === 'fr' ? '2-digit' : 'short',
+        year: 'numeric',
+        timeZone: 'UTC',
+      }).format(new Date(`${iso}T00:00:00Z`));
+
+const rows = operators.map((operator) => ({
+  operator,
+  sources: operator.provenance.sources.map((source) => ({ ...source, host: new URL(source.url).host })),
+  read: day(readOn(operator.provenance)),
+}));
+const lastRead = day(
+  operators
+    .flatMap((o) => o.provenance.sources.map((s) => s.accessed))
+    .sort()
+    .at(-1) ?? null,
+);
+---
+
+<AppLayout seo={countrySoonSeo(country, operators, lang)}>
+  <main class="page">
+    <AppHeader country={country} />
+
+    <section class="hero">
+      <img class="flag" src={`/flags/${country.code}.svg`} alt="" width="44" height="44" loading="eager" />
+      <h1>{fill(m.soon.title, { country: country.name })}</h1>
+      <p class="lead">{m.soon.lead}</p>
+    </section>
+
+    <section class="operators">
+      <h2 class="section-title">{m.soon.operatorsTitle}</h2>
+      {
+        rows.length === 0 ? (
+          <p class="empty">{m.soon.operatorsEmpty}</p>
+        ) : (
+          <>
+            <ul class="list">
+              {rows.map(({ operator }) => (
+                <li class="row">
+                  <BrandMark brand={operator} size={38} />
+                  <span class="body">
+                    <span class="name">{operator.name}</span>
+                    {operator.mobile_money && (
+                      <span class="money">
+                        <BrandMark brand={operator.mobile_money} size={18} />
+                        {operator.mobile_money.name}
+                      </span>
+                    )}
+                  </span>
+                  {operator.customer_service !== null && (
+                    <a class="call" href={`tel:${operator.customer_service}`} aria-label={`${m.soon.serviceNumber} ${operator.customer_service}`}>
+                      <PhoneCall size={16} aria-hidden="true" />
+                      {operator.customer_service}
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <details class="sources">
+              <summary>{m.fees.details}</summary>
+              <ul>
+                {rows.map(({ operator, sources, read }) => (
+                  <li>
+                    <span class="who">{operator.short_name}</span>
+                    {sources.map((source) => (
+                      <a href={source.url} target="_blank" rel="noreferrer">
+                        {source.host}
+                      </a>
+                    ))}
+                    {read && <span class="read">{fill(m.soon.readOn, { date: read })}</span>}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </>
+        )
+      }
+      {lastRead && <p class="source mono">{fill(m.section.source, { date: lastRead })}</p>}
+    </section>
+
+    <section class="next">
+      <h2 class="section-title">{m.soon.next}</h2>
+      <ul class="bullets">
+        {m.soon.nextItems.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+
+    <section class="help">
+      <h2>{m.soon.helpTitle}</h2>
+      <p>{m.soon.helpText}</p>
+      <a class="cta" href={`${REPO_URL}/issues/new?template=new-country.yml`} target="_blank" rel="noreferrer">{m.soon.helpCta}</a>
+      <a class="doc" href={`${REPO_URL}/blob/main/docs/adding-a-country.md`} target="_blank" rel="noreferrer">{m.soon.helpDoc}</a>
+    </section>
+
+    <p class="live">
+      <a href={localePath(lang, `/${DEFAULT_COUNTRY}`)}>{m.soon.live}</a>
+    </p>
+  </main>
+</AppLayout>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .flag {
+    border-radius: 50%;
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-1);
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .lead {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    list-style: none;
+  }
+
+  .row {
+    min-height: var(--touch);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .name {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .money {
+    color: var(--text-muted);
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .call {
+    min-height: var(--touch);
+    padding: 0 var(--space-3);
+    border-radius: var(--radius-pill);
+    background: var(--action-soft);
+    color: var(--action-text);
+    font-weight: 700;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .empty {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .sources {
+    margin-top: var(--space-2);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .sources summary {
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sources ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding-top: var(--space-2);
+  }
+
+  .sources li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .sources .who {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .sources a {
+    color: var(--action-text);
+  }
+
+  .source {
+    margin-top: var(--space-3);
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+
+  .bullets {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding-left: var(--space-5);
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .help {
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+    background: var(--action-soft);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .help h2 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .help p {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .cta {
+    min-height: var(--touch);
+    margin-top: var(--space-2);
+    border-radius: var(--radius-pill);
+    background: var(--action);
+    color: var(--on-action);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--space-5);
+  }
+
+  .doc {
+    min-height: 32px;
+    color: var(--action-text);
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .live {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .live a {
+    color: var(--action-text);
+  }
+</style>

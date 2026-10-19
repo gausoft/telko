@@ -6,7 +6,7 @@ import type { Catalog, CatalogEntry, CountryCatalog } from './catalog-types';
 import { formatAmount, formatData } from './format';
 import { fingerprint } from './hash';
 import { localizeCatalog } from './localize';
-import type { Brand, Operator } from './schema';
+import type { Brand, Country, Operator } from './schema';
 import { seoCopyEn } from './seo-copy-en';
 import { seoCopyFr } from './seo-copy-fr';
 import type { SeoCopy } from './seo-copy-types';
@@ -67,6 +67,28 @@ export function countryHomeSeo(data: CountryCatalog, lang: Lang): PageSeo {
     noindex: false,
     crumbs: [],
     alternates: alternates(path),
+  };
+}
+
+/**
+ * A country still listed as `soon`. Its page answers "when does Telko arrive here", so it stays
+ * out of the index: thin pages repeated for every country would be doorway pages. It becomes
+ * indexable the day the country goes live.
+ */
+export function countrySoonSeo(country: Country, operators: Operator[], lang: Lang): PageSeo {
+  const copy = COPY[lang];
+  const path = `/${country.code}`;
+
+  return {
+    lang,
+    title: copy.soonTitle(country.name),
+    description: copy.soonDescription(country.name, operators.map((o) => o.short_name)),
+    path: localePath(lang, path),
+    image: imagePath(defaultCard(lang)),
+    imageAlt: copy.imageAlt(copy.signature),
+    noindex: true,
+    crumbs: [],
+    alternates: [],
   };
 }
 

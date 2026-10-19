@@ -4,7 +4,7 @@ import { LANGS } from '../src/i18n/i18n-types';
 import { loadCatalog } from '../src/lib/catalog';
 import { localizeCatalog } from '../src/lib/localize';
 import { GET as sitemap } from '../src/pages/sitemap.xml';
-import { sectionSeo, shareCards } from '../src/lib/seo';
+import { countrySoonSeo, sectionSeo, shareCards } from '../src/lib/seo';
 import { SECTIONS } from '../src/lib/sections';
 
 const catalog = loadCatalog();
@@ -58,6 +58,28 @@ describe('page SEO', () => {
       for (const section of SECTIONS) {
         const slug = /^\/og\/([a-z-]+)\.png\?v=\w+$/.exec(sectionSeo(togo, operator, section, 'fr').image)?.[1];
         expect(slug && slugs.has(slug)).toBe(true);
+      }
+    }
+  });
+
+  it('keeps the page of a country still soon out of the index, with a full description', () => {
+    const soon = catalog.countries.filter((c) => c.status === 'soon');
+    expect(soon.length).toBeGreaterThan(0);
+
+    for (const lang of LANGS) {
+      const localized = localizeCatalog(catalog, lang);
+
+      for (const country of localized.countries.filter((c) => c.status === 'soon')) {
+        const operators = localized.pending.get(country.code)?.operators ?? [];
+        const seo = countrySoonSeo(country, operators, lang);
+
+        expect(seo.noindex).toBe(true);
+        expect(seo.alternates).toEqual([]);
+        expect(seo.path).toBe(lang === 'fr' ? `/${country.code}` : `/en/${country.code}`);
+        expect(seo.description).not.toMatch(/\b0 (codes|forfaits|montants|amounts|data|call|useful)/);
+        expect(seo.description.length).toBeGreaterThan(80);
+        expect(seo.description.length).toBeLessThanOrEqual(160);
+        expect(seo.title).toContain(country.name);
       }
     }
   });
