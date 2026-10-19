@@ -42,12 +42,22 @@ interface FileContext {
 export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Date = new Date()): Catalog {
   const countries = parse(files, '/data/countries.json', countriesFileSchema).countries;
   const byCountry = new Map<string, CountryCatalog>();
+  const pending = new Map<string, CountryCatalog>();
 
-  for (const country of countries.filter((c) => c.status === 'live')) {
-    byCountry.set(country.code, loadCountry(files, country, now));
+  for (const country of countries) {
+    // A country still listed as `soon` is read as soon as it has a folder, so its data is checked
+    // before maintainers flip it to `live`; its pages wait.
+    if (country.status === 'soon' && !hasFolder(files, country.code)) continue;
+
+    const data = loadCountry(files, country, now);
+    (country.status === 'live' ? byCountry : pending).set(country.code, data);
   }
 
-  return { countries, byCountry };
+  return { countries, byCountry, pending };
+}
+
+function hasFolder(files: Record<string, unknown>, code: string): boolean {
+  return `/data/${code}/operators.json` in files;
 }
 
 function loadCountry(files: Record<string, unknown>, country: Country, now: Date): CountryCatalog {

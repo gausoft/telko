@@ -128,4 +128,33 @@ describe('data rules', () => {
 
     expect(loadCatalog(files).byCountry.get('tg')?.entries[0]?.payment_methods).toEqual(['airtime', 'mixx']);
   });
+
+  it('refuses a country marked live without a data folder', () => {
+    expect(() => loadCatalog({ '/data/countries.json': base['/data/countries.json'] })).toThrow(/Missing data file \/data\/tg\/operators\.json/);
+  });
+
+  it('reads a country still soon once it has a folder, without building its pages', () => {
+    const benin = { ...country, code: 'bj', name: 'Bénin', dial_code: '229', national_length: 10, status: 'soon' };
+    const files = {
+      ...base,
+      '/data/countries.json': { countries: [country, benin] },
+      '/data/bj/operators.json': { country: 'bj', operators: [{ ...yas, id: 'mtn', website: 'https://mtn.bj' }] },
+    };
+    const loaded = loadCatalog(files);
+
+    expect(loaded.byCountry.has('bj')).toBe(false);
+    expect(loaded.pending.get('bj')?.operators[0]?.id).toBe('mtn');
+  });
+
+  it('names the faulty file of a country still soon', () => {
+    const benin = { ...country, code: 'bj', name: 'Bénin', dial_code: '229', national_length: 10, status: 'soon' };
+    const files = {
+      ...base,
+      '/data/countries.json': { countries: [country, benin] },
+      '/data/bj/operators.json': { country: 'bj', operators: [{ ...yas, id: 'mtn' }] },
+      '/data/bj/mtn/internet.json': { operator: 'yat', category: 'internet', entries: [] },
+    };
+
+    expect(() => loadCatalog(files)).toThrow(/\/data\/bj\/mtn\/internet\.json: operator "yat" must match its folder "mtn"/);
+  });
 });

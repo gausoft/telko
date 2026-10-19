@@ -51,5 +51,8 @@ export interface CountryCatalog {
 
 export interface Catalog {
   countries: Country[];
+  /** Countries a page is built for: those marked `live`, with their data. */
   byCountry: Map<string, CountryCatalog>;
+  /** Countries that already have a data folder but are still `soon`: checked, but no page is built from them. */
+  pending: Map<string, CountryCatalog>;
 }
