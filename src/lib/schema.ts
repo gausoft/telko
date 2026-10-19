@@ -50,7 +50,7 @@ export const paramSchema = z.object({
   short: z.string().min(1).max(12).optional(),
   /** phone: national number (default), with the country code, or digits as typed. */
   format: z.enum(PHONE_FORMATS).optional(),
-  /** amount: bounds in CFA francs and quick picks. */
+  /** amount: bounds in the country currency and quick picks. */
   min: z.number().int().positive().optional(),
   max: z.number().int().positive().optional(),
   presets: z.array(z.number().int().positive()).max(6).optional(),
@@ -90,12 +90,13 @@ export const entrySchema = z.object({
   kind: z.enum(['bundle', 'service']),
   name: z.string().min(1),
   description: z.string(),
-  price_xof: z.number().int().nonnegative().nullable(),
+  /** In the currency of the country, written as `country.amount_label`. */
+  price: z.number().int().nonnegative().nullable(),
   allowances: z.object({ data_mb: amount, voice_min: amount, sms: amount }).nullable(),
   validity: z.object({ days: z.number().int().nullable(), label: z.string(), en: translation({ label: z.string() }) }).nullable(),
   time_window: z.object({ from: z.string(), to: z.string() }).nullable(),
   ussd: ussdSchema,
-  payment_methods: z.array(z.enum(['airtime', 'mixx', 'flooz'])),
+  payment_methods: z.array(z.string().regex(/^[a-z0-9-]+$/)),
   third_party: ussdSchema.nullable(),
   tags: z.array(z.string()),
   provenance: provenanceSchema,
@@ -113,17 +114,17 @@ export const feeEntrySchema = z
   .object({
     id: z.string().regex(/^[a-z0-9-]+$/),
     operation: z.enum(FEE_OPERATIONS),
-    min_xof: z.number().int().nonnegative(),
-    max_xof: z.number().int().nonnegative().nullable(),
-    fee_xof: z.number().int().nonnegative().nullable(),
+    min: z.number().int().nonnegative(),
+    max: z.number().int().nonnegative().nullable(),
+    fee: z.number().int().nonnegative().nullable(),
     fee_percent: z.number().min(0).max(100).nullable(),
     label: z.string().min(1),
     provenance: provenanceSchema,
     notes: z.string().nullable(),
     en: translation({ label: z.string().min(1), notes: z.string() }),
   })
-  .refine((f) => f.max_xof === null || f.max_xof >= f.min_xof, { message: 'max_xof must be >= min_xof' })
-  .refine((f) => f.fee_xof === null || f.fee_percent === null, { message: 'use either fee_xof or fee_percent, not both' });
+  .refine((f) => f.max === null || f.max >= f.min, { message: 'max must be >= min' })
+  .refine((f) => f.fee === null || f.fee_percent === null, { message: 'use either fee or fee_percent, not both' });
 
 export const feesFileSchema = z.object({
   operator: z.string(),
@@ -167,7 +168,12 @@ export const countrySchema = z.object({
   dial_code: z.string().regex(/^\d+$/),
   /** Digits of a mobile number without the country code. */
   national_length: z.number().int().min(6).max(12),
+  /** ISO 4217 code of the currency every amount of this country is written in. */
   currency: z.string().length(3),
+  /** How an amount is written after the figure, as on the operator's receipts: "F", "GH₵", "KSh". */
+  amount_label: z.string().min(1).max(4),
+  /** Quick amounts offered by the code assistant, in the country currency. Empty means the app default. */
+  amount_presets: z.array(z.number().int().positive()).max(6),
   en: translation({ name: z.string() }),
 });
 

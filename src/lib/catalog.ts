@@ -24,6 +24,16 @@ import { durationOf, type Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
+/** One data file being read, with the country and operator it belongs to. */
+interface FileContext {
+  path: string;
+  raw: unknown;
+  operator: string;
+  fileName: string;
+  country: Country;
+  now: Date;
+}
+
 export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Date = new Date()): Catalog {
   const countries = parse(files, '/data/countries.json', countriesFileSchema).countries;
   const byCountry = new Map<string, CountryCatalog>();
@@ -47,12 +57,13 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
     const [folder = '', fileName = ''] = path.slice(root.length).split('/');
     if (!operatorIds.has(folder)) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
 
+    const context: FileContext = { path, raw, operator: folder, fileName, country, now };
     if (fileName === 'fees.json') {
-      fees.push(...loadFees(path, raw, folder, country.code));
+      fees.push(...loadFees(context));
       continue;
     }
 
-    entries.push(...loadEntries(path, raw, folder, fileName, country.code, now));
+    entries.push(...loadEntries(context));
   }
 
   const editorial = loadEditorial(files, root, entries, operators);
@@ -64,28 +75,29 @@ function isOperatorFile(path: string, root: string): boolean {
   return path.startsWith(root) && path.slice(root.length).split('/').length === 2;
 }
 
-function loadFees(path: string, raw: unknown, operator: string, country: string): CatalogFee[] {
-  const file = parse({ [path]: raw }, path, feesFileSchema);
-  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
+function loadFees(ctx: FileContext): CatalogFee[] {
+  const file = parse({ [ctx.path]: ctx.raw }, ctx.path, feesFileSchema);
+  if (file.operator !== ctx.operator) throw new Error(`${ctx.path}: operator "${file.operator}" must match its folder "${ctx.operator}"`);
 
-  return file.entries.map((e) => ({ ...e, country, operator, service: file.service }));
+  return file.entries.map((e) => ({ ...e, country: ctx.country.code, operator: ctx.operator, service: file.service, amountLabel: ctx.country.amount_label }));
 }
 
-function loadEntries(path: string, raw: unknown, operator: string, fileName: string, country: string, now: Date): CatalogEntry[] {
-  const file = parse({ [path]: raw }, path, categoryFileSchema);
-  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
-  if (`${file.category}.json` !== fileName) throw new Error(`${path}: category "${file.category}" must match the file name`);
+function loadEntries(ctx: FileContext): CatalogEntry[] {
+  const file = parse({ [ctx.path]: ctx.raw }, ctx.path, categoryFileSchema);
+  if (file.operator !== ctx.operator) throw new Error(`${ctx.path}: operator "${file.operator}" must match its folder "${ctx.operator}"`);
+  if (`${file.category}.json` !== ctx.fileName) throw new Error(`${ctx.path}: category "${file.category}" must match the file name`);
 
   return file.entries.map((e) => {
-    assertVerificationProof(path, e, file.category);
+    assertVerificationProof(ctx.path, e, file.category);
 
     return {
       ...e,
-      provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, now) },
+      provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, ctx.now) },
       duration: durationOf(e.validity?.days ?? null, e.validity?.label ?? '', e.time_window !== null),
-      country,
-      operator,
+      country: ctx.country.code,
+      operator: ctx.operator,
       category: file.category,
+      amountLabel: ctx.country.amount_label,
     };
   });
 }
@@ -142,7 +154,7 @@ export function operatorById(catalog: CountryCatalog, id: string): Operator | un
 export function entriesFor(catalog: CountryCatalog, operator: string, category: string): CatalogEntry[] {
   return catalog.entries
     .filter((e) => e.operator === operator && e.category === category && e.provenance.status !== 'discontinued')
-    .sort((a, b) => (a.price_xof ?? 0) - (b.price_xof ?? 0));
+    .sort((a, b) => (a.price ?? 0) - (b.price ?? 0));
 }
 
 /** Offers listed on a section page: same operator, matching categories, still sold. */

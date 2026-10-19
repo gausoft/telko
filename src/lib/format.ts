@@ -6,13 +6,17 @@ const UNITS: Record<Lang, { unlimited: string; mb: string; gb: string; decimal: 
   en: { unlimited: 'Unlimited', mb: 'MB', gb: 'GB', decimal: '.' },
 };
 
-export function formatXof(amount: number): string {
+/**
+ * An amount as the operator's receipt writes it: "5 000 F" in the CFA franc zone, "5 000 GH₵" elsewhere.
+ * `amountLabel` comes from the country file, so a new currency needs no code change.
+ */
+export function formatAmount(amount: number, amountLabel: string): string {
   const digits = String(Math.abs(Math.round(amount))).replace(/\B(?=(\d{3})+(?!\d))/g, THIN_SPACE);
 
-  return `${amount < 0 ? '-' : ''}${digits} F`;
+  return `${amount < 0 ? '-' : ''}${digits} ${amountLabel}`;
 }
 
-/** Prices stay in francs written "5 000 F" in every language, as on the operators' receipts. */
+/** Prices stay in the currency of the country, grouped the same way in every language. */
 export function formatData(mb: number | null, lang: Lang = 'fr'): string | null {
   const units = UNITS[lang];
   if (mb === null) return null;
@@ -25,8 +29,8 @@ export function formatData(mb: number | null, lang: Lang = 'fr'): string | null 
   return `${text} ${units.gb}`;
 }
 
-export function pricePerGb(priceXof: number | null, mb: number | null): number | null {
-  if (priceXof === null || mb === null || mb <= 0) return null;
+export function pricePerGb(price: number | null, mb: number | null): number | null {
+  if (price === null || mb === null || mb <= 0) return null;
 
-  return Math.round((priceXof / mb) * 1024);
+  return Math.round((price / mb) * 1024);
 }

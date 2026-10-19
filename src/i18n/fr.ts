@@ -106,7 +106,6 @@ export const fr = {
     pwa: { online: 'Connexion rétablie', offline: 'Hors connexion : Telko reste utilisable' },
     builder: {
       country: 'Pays : {name}. Changer',
-      currency: 'F CFA',
       pinNotice: 'Le réseau vous demandera votre code secret',
       dial: 'Composer',
       copy: 'Copier',

@@ -25,14 +25,14 @@ const m = messages(lang);
 const SOURCE_DATE = lang === 'fr' ? '18/10/2026' : '18 Oct 2026';
 const isInternet = section.id === 'internet';
 
-const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price_xof === null) - Number(b.price_xof === null) || (a.price_xof ?? 0) - (b.price_xof ?? 0));
+const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price === null) - Number(b.price === null) || (a.price ?? 0) - (b.price ?? 0));
 
 const rows = entries.map((entry) => {
   const usesMobileMoney = entry.category === 'mobile-money';
   const brand = usesMobileMoney && operator.mobile_money ? operator.mobile_money : operator;
   const duration: DurationFilter = entry.duration;
 
-  return { entry, brand, duration, perGb: pricePerGb(entry.price_xof, entry.allowances?.data_mb ?? null) };
+  return { entry, brand, duration, perGb: pricePerGb(entry.price, entry.allowances?.data_mb ?? null) };
 });
 
 const bestByDuration = new Map<DurationFilter, string>();

@@ -7,7 +7,7 @@
       "kind": "bundle",
       "name": "F 150 V",
       "description": "11 min d'appels valables 1 jour.",
-      "price_xof": 150,
+      "price": 150,
       "allowances": {
         "data_mb": null,
         "voice_min": 11,
@@ -57,7 +57,7 @@
       "kind": "bundle",
       "name": "F 250 V",
       "description": "20 min d'appels valables 2 jours.",
-      "price_xof": 250,
+      "price": 250,
       "allowances": {
         "data_mb": null,
         "voice_min": 20,
@@ -106,7 +106,7 @@
       "kind": "bundle",
       "name": "F 450 V",
       "description": "36 min d'appels valables 3 jours.",
-      "price_xof": 450,
+      "price": 450,
       "allowances": {
         "data_mb": null,
         "voice_min": 36,
@@ -156,7 +156,7 @@
       "kind": "bundle",
       "name": "F 600 V",
       "description": "50 min d'appels valables 3 jours.",
-      "price_xof": 600,
+      "price": 600,
       "allowances": {
         "data_mb": null,
         "voice_min": 50,
@@ -205,7 +205,7 @@
       "kind": "bundle",
       "name": "F 900 V",
       "description": "75 min d'appels valables 7 jours.",
-      "price_xof": 900,
+      "price": 900,
       "allowances": {
         "data_mb": null,
         "voice_min": 75,
@@ -254,7 +254,7 @@
       "kind": "bundle",
       "name": "F 1400 V",
       "description": "120 min d'appels valables 10 jours.",
-      "price_xof": 1400,
+      "price": 1400,
       "allowances": {
         "data_mb": null,
         "voice_min": 120,
@@ -303,7 +303,7 @@
       "kind": "bundle",
       "name": "F 2500 V",
       "description": "220 min d'appels valables 15 jours.",
-      "price_xof": 2500,
+      "price": 2500,
       "allowances": {
         "data_mb": null,
         "voice_min": 220,
@@ -352,7 +352,7 @@
       "kind": "bundle",
       "name": "F 5000 V",
       "description": "450 min d'appels valables 30 jours.",
-      "price_xof": 5000,
+      "price": 5000,
       "allowances": {
         "data_mb": null,
         "voice_min": 450,
@@ -401,7 +401,7 @@
       "kind": "bundle",
       "name": "F 7000 V",
       "description": "660 min d'appels valables 30 jours.",
-      "price_xof": 7000,
+      "price": 7000,
       "allowances": {
         "data_mb": null,
         "voice_min": 660,
@@ -456,7 +456,7 @@
       "kind": "bundle",
       "name": "F 9500 V",
       "description": "930 min d'appels valables 30 jours.",
-      "price_xof": 9500,
+      "price": 9500,
       "allowances": {
         "data_mb": null,
         "voice_min": 930,
@@ -511,7 +511,7 @@
       "kind": "bundle",
       "name": "Forfait SMS",
       "description": "50 SMS valables 1 jour.",
-      "price_xof": 150,
+      "price": 150,
       "allowances": {
         "data_mb": null,
         "voice_min": null,
@@ -561,7 +561,7 @@
       "kind": "service",
       "name": "Solde SMS",
       "description": "Consulter le nombre de SMS restants.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,

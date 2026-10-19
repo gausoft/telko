@@ -2,12 +2,17 @@ import { describe, expect, it } from 'vitest';
 
 import { loadCatalog } from '../src/lib/catalog';
 import { encodeUssd, telHref } from '../src/lib/dial';
-import { formatData, formatXof, pricePerGb } from '../src/lib/format';
+import { formatAmount, formatData, pricePerGb } from '../src/lib/format';
 import { buildDocs, normalize, search } from '../src/lib/search';
 
 describe('format', () => {
-  it('formats CFA francs with a thin space', () => {
-    expect(formatXof(50600)).toBe('50 600 F');
+  it('writes CFA francs with a thin space, as on the receipts', () => {
+    expect(formatAmount(50600, 'F')).toBe('50 600 F');
+  });
+
+  it('writes an amount in the currency of its country', () => {
+    expect(formatAmount(5000, 'GH₵')).toBe('5 000 GH₵');
+    expect(formatAmount(0, '₦')).toBe('0 ₦');
   });
 
   it('formats data volumes', () => {

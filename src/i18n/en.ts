@@ -108,7 +108,6 @@ export const en: Messages = {
     pwa: { online: 'Back online', offline: 'Offline: Telko still works' },
     builder: {
       country: 'Country: {name}. Change',
-      currency: 'F CFA',
       pinNotice: 'The network will ask for your PIN',
       dial: 'Dial',
       copy: 'Copy',

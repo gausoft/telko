@@ -7,7 +7,7 @@
       "kind": "service",
       "name": "Menu international",
       "description": "Menu des forfaits d'appels internationaux.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -51,7 +51,7 @@
       "kind": "bundle",
       "name": "Forfait Inter 500",
       "description": "10 min vers le Canada, les USA, le Gabon et l'Inde.",
-      "price_xof": 500,
+      "price": 500,
       "allowances": {
         "data_mb": null,
         "voice_min": 10,
@@ -108,7 +108,7 @@
       "kind": "bundle",
       "name": "Forfait Inter 800",
       "description": "10 min vers le Bénin, Moov Côte d'Ivoire et Yas Sénégal.",
-      "price_xof": 800,
+      "price": 800,
       "allowances": {
         "data_mb": null,
         "voice_min": 10,
@@ -164,7 +164,7 @@
       "kind": "bundle",
       "name": "Forfait Inter 750",
       "description": "5 min vers Orange Burkina Faso, le Ghana et Moov Mali.",
-      "price_xof": 750,
+      "price": 750,
       "allowances": {
         "data_mb": null,
         "voice_min": 5,

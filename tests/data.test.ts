@@ -38,29 +38,35 @@ describe('dataset', () => {
   it('sorts offers by price', () => {
     const tg = catalog.byCountry.get('tg');
     if (!tg) throw new Error('tg missing');
-    const prices = entriesFor(tg, 'yas', 'internet').map((e) => e.price_xof ?? 0);
+    const prices = entriesFor(tg, 'yas', 'internet').map((e) => e.price ?? 0);
 
     expect(prices).toEqual([...prices].sort((a, b) => a - b));
   });
 
+  it('labels every amount with the currency of its country', () => {
+    const tg = catalog.byCountry.get('tg');
+    if (!tg) throw new Error('tg missing');
+
+    expect([...tg.entries, ...tg.fees].every((e) => e.amountLabel === 'F')).toBe(true);
+  });
+
   it('rejects a file that breaks the schema, naming the file', () => {
-    const broken = { '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF' }] }, '/data/tg/operators.json': { country: 'tg', operators: [] }, '/data/tg/x/internet.json': { operator: 'x', category: 'internet', entries: [{ id: 'BAD ID' }] } };
+    const broken = { '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF', amount_label: 'F', amount_presets: [500, 1000] }] }, '/data/tg/operators.json': { country: 'tg', operators: [] }, '/data/tg/x/internet.json': { operator: 'x', category: 'internet', entries: [{ id: 'BAD ID' }] } };
 
     expect(() => loadCatalog(broken)).toThrow(/\/data\/tg\/x\/internet\.json/);
   });
 });
 
 describe('data rules', () => {
+  const country = { code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF', amount_label: 'F', amount_presets: [500, 1000] };
+  const yas = { id: 'yas', name: 'Yas', short_name: 'Yas', former_names: [], badge: { label: 'Y', background: '#00377D', foreground: '#FFFFFF' }, logo: null, mobile_money: null, prefixes: [], website: 'https://yas.tg', customer_service: '888', notes: null };
   const base = {
-    '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF' }] },
-    '/data/tg/operators.json': {
-      country: 'tg',
-      operators: [{ id: 'yas', name: 'Yas', short_name: 'Yas', former_names: [], badge: { label: 'Y', background: '#00377D', foreground: '#FFFFFF' }, logo: null, mobile_money: null, prefixes: [], website: 'https://yas.tg', customer_service: '888', notes: null }],
-    },
+    '/data/countries.json': { countries: [country] },
+    '/data/tg/operators.json': { country: 'tg', operators: [yas] },
   };
   const source = { url: 'https://example.org', kind: 'secondary', accessed: '2026-10-18' };
   const entry = (over: Record<string, unknown>) => ({
-    id: 'yas-internet-x', kind: 'bundle', name: 'X', description: '', price_xof: 100,
+    id: 'yas-internet-x', kind: 'bundle', name: 'X', description: '', price: 100,
     allowances: null, validity: null, time_window: null, ussd: { template: '*1#', params: [] },
     payment_methods: [], third_party: null, tags: [],
     provenance: { status: 'unverified', sources: [source], verified_at: null, verified_by: null }, notes: null, ...over,
@@ -91,9 +97,20 @@ describe('data rules', () => {
   });
 
   it('rejects a fee with both a flat amount and a percentage', () => {
-    const fee = { id: 'yas-fees-x', operation: 'withdrawal', min_xof: 1, max_xof: 10, fee_xof: 0, fee_percent: 1, label: 'x', provenance: { status: 'unverified', sources: [source], verified_at: null, verified_by: null }, notes: null };
+    const fee = { id: 'yas-fees-x', operation: 'withdrawal', min: 1, max: 10, fee: 0, fee_percent: 1, label: 'x', provenance: { status: 'unverified', sources: [source], verified_at: null, verified_by: null }, notes: null };
     const files = { ...base, '/data/tg/yas/fees.json': { operator: 'yas', service: 'mixx', entries: [fee] } };
 
-    expect(() => loadCatalog(files)).toThrow(/either fee_xof or fee_percent/);
+    expect(() => loadCatalog(files)).toThrow(/either fee or fee_percent/);
+  });
+
+  it('reads a country in its own currency', () => {
+    const ghana = { ...country, code: 'gh', name: 'Ghana', dial_code: '233', currency: 'GHS', amount_label: 'GH₵' };
+    const files = {
+      '/data/countries.json': { countries: [ghana] },
+      '/data/gh/operators.json': { country: 'gh', operators: [{ ...yas, id: 'mtn', website: 'https://mtn.com.gh' }] },
+      '/data/gh/mtn/internet.json': { operator: 'mtn', category: 'internet', entries: [entry({ id: 'mtn-internet-x', price: 25 })] },
+    };
+
+    expect(loadCatalog(files).byCountry.get('gh')?.entries[0]?.amountLabel).toBe('GH₵');
   });
 });

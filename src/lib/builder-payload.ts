@@ -14,7 +14,14 @@ export function builderPayload(catalog: Catalog, home: string): string {
 
   const payload: BuilderPayload = {
     home,
-    countries: catalog.countries.map((c) => ({ code: c.code, name: c.name, dialCode: c.dial_code, nationalLength: c.national_length })),
+    countries: catalog.countries.map((c) => ({
+      code: c.code,
+      name: c.name,
+      dialCode: c.dial_code,
+      nationalLength: c.national_length,
+      amountLabel: c.amount_label,
+      amountPresets: c.amount_presets,
+    })),
     entries: Object.fromEntries(entries),
   };
 

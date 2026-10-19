@@ -7,7 +7,7 @@
       "kind": "service",
       "name": "Inscription SoWe",
       "description": "S'inscrire au programme jeunes SoWe (15 à 34 ans).",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,

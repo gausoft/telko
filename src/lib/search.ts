@@ -1,6 +1,6 @@
 import type { Lang } from '../i18n/i18n-types';
 import type { Catalog, CatalogEntry } from './catalog-types';
-import { formatData, formatXof } from './format';
+import { formatAmount, formatData } from './format';
 import { localizeEntry } from './localize';
 import type { Operator } from './schema';
 import type { SearchDoc, SearchHit } from './search-types';
@@ -64,14 +64,14 @@ export function buildDocs(catalog: Catalog, lang: Lang = 'fr'): SearchDoc[] {
 function toDoc(source: CatalogEntry, operator: Operator | undefined, lang: Lang): SearchDoc {
   const entry = localizeEntry(source, lang);
   const volume = formatData(entry.allowances?.data_mb ?? null, lang);
-  const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
+  const price = entry.price !== null ? formatAmount(entry.price, entry.amountLabel) : null;
   const parts = [volume ? entry.name : null, entry.validity?.label ?? null, price];
   const brandNames = operator ? brandTerms(operator, entry) : [];
   const codeDigits = entry.ussd.template.replace(/\{[a-z_]+\}/g, ' ').replace(/[*#]/g, ' ');
   const french = lang === 'fr' ? [] : [source.name, source.description, source.validity?.label ?? ''];
   const text = [
     entry.name, entry.description, entry.category, ...entry.tags, ...brandNames, ...french,
-    volume ?? '', entry.validity?.label ?? '', codeDigits, price ?? '', entry.price_xof !== null ? String(entry.price_xof) : '',
+    volume ?? '', entry.validity?.label ?? '', codeDigits, price ?? '', entry.price !== null ? String(entry.price) : '',
   ].join(' ');
 
   return {

@@ -3,7 +3,7 @@ import { LANGS, SOURCE_LANG, type Lang } from '../i18n/i18n-types';
 import { localePath } from '../i18n/paths';
 import { featuredFor, sectionEntries } from './catalog';
 import type { Catalog, CatalogEntry, CountryCatalog } from './catalog-types';
-import { formatData, formatXof } from './format';
+import { formatAmount, formatData } from './format';
 import { fingerprint } from './hash';
 import { localizeCatalog } from './localize';
 import type { Brand, Operator } from './schema';
@@ -150,8 +150,8 @@ function sectionCard(data: CountryCatalog, operator: Operator, section: Section,
 function sectionFacts(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): SectionFacts {
   const copy = COPY[lang];
   const entries = sectionEntries(data, operator.id, section);
-  const prices = entries.flatMap((e) => (e.price_xof !== null && e.price_xof > 0 ? [e.price_xof] : []));
-  const from = prices.length > 0 ? formatXof(Math.min(...prices)) : null;
+  const prices = entries.flatMap((e) => (e.price !== null && e.price > 0 ? [e.price] : []));
+  const from = prices.length > 0 ? formatAmount(Math.min(...prices), data.country.amount_label) : null;
   const money = operator.mobile_money ?? operator;
   const fees = data.fees.filter((f) => f.operator === operator.id).length;
   const ctx = {
@@ -183,9 +183,9 @@ function popularOffer(data: CountryCatalog, operator: Operator, entries: Catalog
   const listed = new Set(entries.map((e) => e.id));
   const entry = featuredFor(data, operator.id).find((f) => listed.has(f.entry.id))?.entry;
   const volume = formatData(entry?.allowances?.data_mb ?? null, lang);
-  if (!entry || entry.price_xof === null || !volume) return null;
+  if (!entry || entry.price === null || !volume) return null;
 
-  return `${volume} · ${formatXof(entry.price_xof)}`;
+  return `${volume} · ${formatAmount(entry.price, entry.amountLabel)}`;
 }
 
 /** Logos follow the same switch as the app, pending legal review. */

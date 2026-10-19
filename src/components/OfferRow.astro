@@ -4,7 +4,7 @@ import Phone from '@lucide/astro/icons/phone';
 
 import type { CatalogEntry } from '../lib/catalog-types';
 import { telHref } from '../lib/dial';
-import { formatData, formatXof } from '../lib/format';
+import { formatAmount, formatData } from '../lib/format';
 import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
 import { pageLang } from '../i18n/paths';
@@ -36,7 +36,7 @@ const meta = [volume ? entry.name : null, ...extras, entry.validity?.label ?? nu
   .join(' · ');
 const callOffer = entry.category === 'mixed' || entry.category === 'voice-sms';
 const description = (callOffer || (!volume && extras.every((e) => e === null))) && entry.description ? entry.description : null;
-const price = entry.price_xof !== null ? formatXof(entry.price_xof) : null;
+const price = entry.price !== null ? formatAmount(entry.price, entry.amountLabel) : null;
 const href = telHref(entry);
 const label = `${title}${price ? `, ${price}` : ''}`;
 const needsInput = entry.ussd.params.length > 0;
