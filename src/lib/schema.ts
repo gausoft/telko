@@ -152,6 +152,8 @@ export const operatorSchema = brandSchema.extend({
   prefixes: z.array(z.string()),
   website: z.url(),
   customer_service: z.string(),
+  /** Where the operator name, its service number and its website come from. An official page is accepted. */
+  provenance: provenanceSchema,
   notes: z.string().nullable(),
   en: translation({ notes: z.string() }),
 });
@@ -204,4 +206,5 @@ export type Brand = z.infer<typeof brandSchema>;
 export type Operator = z.infer<typeof operatorSchema>;
 export type Country = z.infer<typeof countrySchema>;
 export type FeaturedFile = z.infer<typeof featuredFileSchema>;
+export type Provenance = z.infer<typeof provenanceSchema>;
 export type Category = (typeof CATEGORIES)[number];

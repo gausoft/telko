@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
+import { existsSync } from 'node:fs';
+
 import { entriesFor, featuredFor, loadCatalog } from '../src/lib/catalog';
 
 const catalog = loadCatalog();
@@ -50,6 +52,18 @@ describe('dataset', () => {
     expect([...tg.entries, ...tg.fees].every((e) => e.amountLabel === 'F')).toBe(true);
   });
 
+  it('has a flag for every country, live or soon', () => {
+    const missing = catalog.countries.filter((c) => !existsSync(`public/flags/${c.code}.svg`)).map((c) => c.code);
+
+    expect(missing).toEqual([]);
+  });
+
+  it('publishes no country without an operator', () => {
+    const empty = [...catalog.byCountry.values()].filter((data) => data.operators.length === 0).map((data) => data.country.code);
+
+    expect(empty).toEqual([]);
+  });
+
   it('rejects a file that breaks the schema, naming the file', () => {
     const broken = { '/data/countries.json': { countries: [{ code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF', amount_label: 'F', amount_presets: [500, 1000] }] }, '/data/tg/operators.json': { country: 'tg', operators: [] }, '/data/tg/x/internet.json': { operator: 'x', category: 'internet', entries: [{ id: 'BAD ID' }] } };
 
@@ -59,7 +73,11 @@ describe('dataset', () => {
 
 describe('data rules', () => {
   const country = { code: 'tg', name: 'Togo', status: 'live', dial_code: '228', national_length: 8, currency: 'XOF', amount_label: 'F', amount_presets: [500, 1000] };
-  const yas = { id: 'yas', name: 'Yas', short_name: 'Yas', former_names: [], badge: { label: 'Y', background: '#00377D', foreground: '#FFFFFF' }, logo: null, mobile_money: null, prefixes: [], website: 'https://yas.tg', customer_service: '888', notes: null };
+  const yas = {
+    id: 'yas', name: 'Yas', short_name: 'Yas', former_names: [], badge: { label: 'Y', background: '#00377D', foreground: '#FFFFFF' }, logo: null, mobile_money: null, prefixes: [], website: 'https://yas.tg', customer_service: '888',
+    provenance: { status: 'unverified', sources: [{ url: 'https://yas.tg/particulier/assistance/', kind: 'official', accessed: '2026-10-18' }], verified_at: null, verified_by: null },
+    notes: null,
+  };
   const base = {
     '/data/countries.json': { countries: [country] },
     '/data/tg/operators.json': { country: 'tg', operators: [yas] },
@@ -127,6 +145,12 @@ describe('data rules', () => {
     };
 
     expect(loadCatalog(files).byCountry.get('tg')?.entries[0]?.payment_methods).toEqual(['airtime', 'mixx']);
+  });
+
+  it('refuses an operator verified without an accepted proof', () => {
+    const verified = { ...yas, provenance: { status: 'verified', sources: [source], verified_at: '2026-10-18', verified_by: 'someone' } };
+
+    expect(() => loadCatalog({ ...base, '/data/tg/operators.json': { country: 'tg', operators: [verified] } })).toThrow(/accepted proof/);
   });
 
   it('refuses a country marked live without a data folder', () => {

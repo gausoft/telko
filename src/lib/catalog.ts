@@ -9,7 +9,7 @@ import type {
   FeaturedItem,
   ShortcutItem,
 } from './catalog-types';
-import { effectiveStatus, assertVerificationProof } from './freshness';
+import { effectiveStatus, assertVerificationProof, hasAcceptedProof } from './freshness';
 import {
   categoryFileSchema,
   countriesFileSchema,
@@ -68,6 +68,8 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   const entries: CatalogEntry[] = [];
   const fees: CatalogFee[] = [];
 
+  for (const operator of operators) assertOperatorProof(`${root}operators.json`, operator);
+
   for (const [path, raw] of Object.entries(files)) {
     if (!isOperatorFile(path, root)) continue;
     const [folder = '', fileName = ''] = path.slice(root.length).split('/');
@@ -85,6 +87,12 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   const editorial = loadEditorial(files, root, entries, operators);
 
   return { country, operators, entries, fees, ...editorial };
+}
+
+function assertOperatorProof(path: string, operator: Operator): void {
+  if (operator.provenance.status === 'verified' && !hasAcceptedProof(operator.provenance, false)) {
+    throw new Error(`${path}: "${operator.id}" is verified without an accepted proof (see docs/verification-protocol.md)`);
+  }
 }
 
 function isOperatorFile(path: string, root: string): boolean {

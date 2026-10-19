@@ -66,6 +66,7 @@ Hand-picked items shown in the home carousel, in order. Each `entry_id` must exi
       "prefixes": [],
       "website": "https://yas.tg",
       "customer_service": "888",
+      "provenance": { "status": "unverified", "sources": [{ "url": "https://yas.tg/particulier/assistance/", "kind": "official", "accessed": "2026-10-18" }], "verified_at": null, "verified_by": null },
       "notes": "..."
     }
   ]
@@ -73,6 +74,8 @@ Hand-picked items shown in the home carousel, in order. Each `entry_id` must exi
 ```
 
 `former_names` matter: users still search for old brand names.
+
+`provenance` follows the same shape as on entries: the operator name, its service number and its website are published data, so they carry their source and date like everything else. An official page is enough, a device test always counts.
 
 `badge` is the fallback shown when logos are disabled or missing: a short label on the brand color, with a foreground that keeps a 4.5:1 contrast. `logo` is a file name in `public/brands/`, or `null`.
 

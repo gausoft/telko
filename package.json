@@ -13,6 +13,7 @@
     "build": "astro build && node scripts/build-sw.mjs",
     "preview": "astro preview",
     "check": "astro check",
+    "new-country": "node scripts/new-country.mjs",
     "test": "vitest run",
     "verify": "npm run check && npm test && npm run build"
   },
