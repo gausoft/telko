@@ -1,0 +1,150 @@
+{
+  "country": "bj",
+  "operators": [
+    {
+      "id": "mtn",
+      "name": "MTN Bénin",
+      "short_name": "MTN",
+      "former_names": [
+        "Spacetel Bénin"
+      ],
+      "badge": {
+        "label": "MTN",
+        "background": "#FFCB05",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "momo",
+        "name": "MoMo",
+        "short_name": "MoMo",
+        "former_names": [],
+        "badge": {
+          "label": "M",
+          "background": "#FFCB05",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.mtn.bj",
+      "customer_service": "111",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://arcep.bj/suivi-de-la-qos-mobile-les-indicateurs-du-12-au-18-septembre-2026/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          },
+          {
+            "url": "https://www.mtn.bj/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          },
+          {
+            "url": "https://www.mtn.bj/momo/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov",
+      "name": "Moov Africa Bénin",
+      "short_name": "Moov",
+      "former_names": [],
+      "badge": {
+        "label": "MM",
+        "background": "#EC6707",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "moov-money",
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [],
+        "badge": {
+          "label": "MM",
+          "background": "#EC6707",
+          "foreground": "#FFFFFF"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.moov-africa.bj",
+      "customer_service": null,
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://arcep.bj/suivi-de-la-qos-mobile-les-indicateurs-du-12-au-18-septembre-2026/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          },
+          {
+            "url": "https://www.moov-africa.bj/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel ne publie aucun numéro de service client : à compléter depuis le Bénin.",
+      "en": {
+        "notes": "The official site publishes no customer service number: to be filled in from Benin."
+      }
+    },
+    {
+      "id": "celtiis",
+      "name": "Celtiis",
+      "short_name": "Celtiis",
+      "former_names": [],
+      "badge": {
+        "label": "C",
+        "background": "#1C3B72",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "celtiis-cash",
+        "name": "Celtiis Cash",
+        "short_name": "Celtiis Cash",
+        "former_names": [],
+        "badge": {
+          "label": "CC",
+          "background": "#1C3B72",
+          "foreground": "#FFFFFF"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://celtiis.bj",
+      "customer_service": "7373",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://arcep.bj/suivi-de-la-qos-mobile-les-indicateurs-du-12-au-18-septembre-2026/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          },
+          {
+            "url": "https://celtiis.bj/",
+            "kind": "official",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

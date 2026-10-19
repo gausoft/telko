@@ -151,7 +151,8 @@ export const operatorSchema = brandSchema.extend({
   mobile_money: brandSchema.nullable(),
   prefixes: z.array(z.string()),
   website: z.url(),
-  customer_service: z.string(),
+  /** Published service number, or null when the operator publishes none. */
+  customer_service: z.string().nullable(),
   /** Where the operator name, its service number and its website come from. An official page is accepted. */
   provenance: provenanceSchema,
   notes: z.string().nullable(),
