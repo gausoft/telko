@@ -24,6 +24,9 @@ import { durationOf, type Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
+/** Payment by airtime; every other method must be a mobile money service of the country. */
+const AIRTIME = 'airtime';
+
 /** One data file being read, with the country and operator it belongs to. */
 interface FileContext {
   path: string;
@@ -31,6 +34,8 @@ interface FileContext {
   operator: string;
   fileName: string;
   country: Country;
+  /** Ids of the mobile money services of the country, from its operators. */
+  services: string[];
   now: Date;
 }
 
@@ -49,6 +54,7 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   const root = `/data/${country.code}/`;
   const operators = parse(files, `${root}operators.json`, operatorsFileSchema).operators;
   const operatorIds = new Set(operators.map((o) => o.id));
+  const services = operators.flatMap((o) => (o.mobile_money ? [o.mobile_money.id] : []));
   const entries: CatalogEntry[] = [];
   const fees: CatalogFee[] = [];
 
@@ -57,7 +63,7 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
     const [folder = '', fileName = ''] = path.slice(root.length).split('/');
     if (!operatorIds.has(folder)) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
 
-    const context: FileContext = { path, raw, operator: folder, fileName, country, now };
+    const context: FileContext = { path, raw, operator: folder, fileName, country, services, now };
     if (fileName === 'fees.json') {
       fees.push(...loadFees(context));
       continue;
@@ -89,6 +95,7 @@ function loadEntries(ctx: FileContext): CatalogEntry[] {
 
   return file.entries.map((e) => {
     assertVerificationProof(ctx.path, e, file.category);
+    assertPaymentMethods(ctx, e.id, e.payment_methods);
 
     return {
       ...e,
@@ -100,6 +107,11 @@ function loadEntries(ctx: FileContext): CatalogEntry[] {
       amountLabel: ctx.country.amount_label,
     };
   });
+}
+
+function assertPaymentMethods(ctx: FileContext, id: string, methods: string[]): void {
+  const unknown = methods.find((method) => method !== AIRTIME && !ctx.services.includes(method));
+  if (unknown) throw new Error(`${ctx.path}: "${id}" is paid with "${unknown}", not a mobile money service of ${ctx.country.code}`);
 }
 
 function loadEditorial(files: Record<string, unknown>, root: string, entries: CatalogEntry[], operators: Operator[]): EditorialSelection {

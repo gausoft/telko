@@ -113,4 +113,19 @@ describe('data rules', () => {
 
     expect(loadCatalog(files).byCountry.get('gh')?.entries[0]?.amountLabel).toBe('GH₵');
   });
+
+  it('rejects a payment method the country does not offer', () => {
+    expect(() => loadCatalog(withEntry(entry({ payment_methods: ['orange-money'] })))).toThrow(/not a mobile money service of tg/);
+  });
+
+  it('accepts airtime and the mobile money services of the country', () => {
+    const money = { id: 'mixx', name: 'Mixx by Yas', short_name: 'Mixx', former_names: [], badge: { label: 'Mx', background: '#FFD100', foreground: '#00377D' }, logo: null };
+    const files = {
+      '/data/countries.json': base['/data/countries.json'],
+      '/data/tg/operators.json': { country: 'tg', operators: [{ ...yas, mobile_money: money }] },
+      '/data/tg/yas/internet.json': { operator: 'yas', category: 'internet', entries: [entry({ payment_methods: ['airtime', 'mixx'] })] },
+    };
+
+    expect(loadCatalog(files).byCountry.get('tg')?.entries[0]?.payment_methods).toEqual(['airtime', 'mixx']);
+  });
 });
