@@ -31,7 +31,7 @@ The schemas in `src/lib/schema.ts` implement this document; `npm test` validates
 |---|---|
 | `currency` | ISO 4217 code of the currency every amount of this country is written in |
 | `amount_label` | How an amount is written after the figure, as on the operator's receipts: `F`, `GH₵`, `KSh`. One to four characters |
-| `amount_presets` | Quick amounts of the code assistant, in that currency. Six at most |
+| `amount_presets` | Quick amounts of the code assistant, in that currency. One at least, six at most |
 | `national_length` | Digits of a mobile number, without the country code |
 
 ## featured.json
@@ -80,6 +80,8 @@ Hand-picked items shown in the home carousel, in order. Each `entry_id` must exi
 `badge` is the fallback shown when logos are disabled or missing: a short label on the brand color, with a foreground that keeps a 4.5:1 contrast. `logo` is a file name in `public/brands/`, or `null`.
 
 `prefixes` stays empty unless an official numbering source is cited. Mobile number portability has been in force in Togo since 3 May 2024, so a prefix does not identify the operator. Do not build operator detection on prefixes.
+
+`customer_service` is shown and dialled as it is, so it accepts digits, spaces and an optional leading `+`, nothing else: a USSD code would carry a menu and could ask for a PIN. `null` when the operator publishes no number.
 
 ## Category file
 
@@ -133,7 +135,7 @@ Allowed categories: `general`, `internet`, `mixed`, `voice-sms`, `weekend`, `roa
 | `time_window` | object \| null | e.g. `{ "from": "22:00", "to": "06:00" }` for night bundles |
 | `ussd.template` | string | The code with `{param}` placeholders, e.g. `*155*1*1*{phone}*{amount}*{pin}#` |
 | `ussd.params` | array | See below. Empty for fixed codes |
-| `payment_methods` | array | `airtime`, or the `id` of a mobile money service of the country |
+| `payment_methods` | array | `airtime`, or the `id` of a mobile money service of the same operator. Never another operator's service |
 | `third_party` | object \| null | Same shape as `ussd`, when the bundle can be bought for someone else |
 | `tags` | array of strings | Free tags in French, used for search in both languages |
 | `provenance` | object | See below. Required |

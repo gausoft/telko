@@ -1,6 +1,11 @@
 import type { Lang } from '../i18n/i18n-types';
 
 const THIN_SPACE = ' ';
+const DAY_FORMAT: Record<Lang, Intl.DateTimeFormatOptions> = {
+  fr: { day: '2-digit', month: '2-digit', year: 'numeric' },
+  en: { day: '2-digit', month: 'short', year: 'numeric' },
+};
+const LOCALE: Record<Lang, string> = { fr: 'fr-FR', en: 'en-GB' };
 const UNITS: Record<Lang, { unlimited: string; mb: string; gb: string; decimal: string }> = {
   fr: { unlimited: 'Illimité', mb: 'Mo', gb: 'Go', decimal: ',' },
   en: { unlimited: 'Unlimited', mb: 'MB', gb: 'GB', decimal: '.' },
@@ -33,4 +38,9 @@ export function pricePerGb(price: number | null, mb: number | null): number | nu
   if (price === null || mb === null || mb <= 0) return null;
 
   return Math.round((price / mb) * 1024);
+}
+
+/** An ISO day as the reader of that language writes it: "18/10/2026" in French, "18 Oct 2026" in English. */
+export function formatDay(iso: string, lang: Lang): string {
+  return new Intl.DateTimeFormat(LOCALE[lang], { ...DAY_FORMAT[lang], timeZone: 'UTC' }).format(Date.parse(`${iso}T00:00:00Z`));
 }

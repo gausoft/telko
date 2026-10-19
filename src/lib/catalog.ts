@@ -24,7 +24,7 @@ import { durationOf, type Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
-/** Payment by airtime; every other method must be a mobile money service of the country. */
+/** Payment by airtime. Every other method must be a mobile money service of the same operator. */
 const AIRTIME = 'airtime';
 
 /** One data file being read, with the country and operator it belongs to. */
@@ -34,7 +34,7 @@ interface FileContext {
   operator: string;
   fileName: string;
   country: Country;
-  /** Ids of the mobile money services of the country, from its operators. */
+  /** What the operator accepts as payment: airtime, plus its own mobile money service. */
   services: string[];
   now: Date;
 }
@@ -56,15 +56,20 @@ export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Dat
   return { countries, byCountry, pending };
 }
 
+/**
+ * A country still listed as `soon` is read as soon as it has files, so its data is checked before
+ * maintainers flip it to `live`; its pages wait. `operators.json` is the entry point: a folder
+ * without it fails loudly, with the missing path, rather than being ignored.
+ */
 function hasFolder(files: Record<string, unknown>, code: string): boolean {
-  return `/data/${code}/operators.json` in files;
+  const root = `/data/${code}/`;
+
+  return Object.keys(files).some((path) => path.startsWith(root));
 }
 
 function loadCountry(files: Record<string, unknown>, country: Country, now: Date): CountryCatalog {
   const root = `/data/${country.code}/`;
   const operators = parse(files, `${root}operators.json`, operatorsFileSchema).operators;
-  const operatorIds = new Set(operators.map((o) => o.id));
-  const services = operators.flatMap((o) => (o.mobile_money ? [o.mobile_money.id] : []));
   const entries: CatalogEntry[] = [];
   const fees: CatalogFee[] = [];
 
@@ -73,9 +78,10 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   for (const [path, raw] of Object.entries(files)) {
     if (!isOperatorFile(path, root)) continue;
     const [folder = '', fileName = ''] = path.slice(root.length).split('/');
-    if (!operatorIds.has(folder)) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
+    const operator = operators.find((o) => o.id === folder);
+    if (!operator) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
 
-    const context: FileContext = { path, raw, operator: folder, fileName, country, services, now };
+    const context: FileContext = { path, raw, operator: folder, fileName, country, services: servicesOf(operator), now };
     if (fileName === 'fees.json') {
       fees.push(...loadFees(context));
       continue;
@@ -87,6 +93,10 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   const editorial = loadEditorial(files, root, entries, operators);
 
   return { country, operators, entries, fees, ...editorial };
+}
+
+function servicesOf(operator: Operator): string[] {
+  return operator.mobile_money ? [AIRTIME, operator.mobile_money.id] : [AIRTIME];
 }
 
 function assertOperatorProof(path: string, operator: Operator): void {
@@ -128,8 +138,8 @@ function loadEntries(ctx: FileContext): CatalogEntry[] {
 }
 
 function assertPaymentMethods(ctx: FileContext, id: string, methods: string[]): void {
-  const unknown = methods.find((method) => method !== AIRTIME && !ctx.services.includes(method));
-  if (unknown) throw new Error(`${ctx.path}: "${id}" is paid with "${unknown}", not a mobile money service of ${ctx.country.code}`);
+  const unknown = methods.find((method) => !ctx.services.includes(method));
+  if (unknown) throw new Error(`${ctx.path}: "${id}" is paid with "${unknown}", which ${ctx.operator} does not offer (${ctx.services.join(', ')})`);
 }
 
 function loadEditorial(files: Record<string, unknown>, root: string, entries: CatalogEntry[], operators: Operator[]): EditorialSelection {

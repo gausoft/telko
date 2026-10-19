@@ -42,3 +42,13 @@ export function hasAcceptedProof(provenance: Provenance, deviceOnly: boolean): b
 
   return deviceOnly ? kinds.has('device') : kinds.has('device') || kinds.has('official');
 }
+
+/**
+ * The day a set of sources was last read, as an ISO date, or null when there is none. Dates are
+ * ISO, so the lexicographic maximum is the latest one.
+ */
+export function lastReadOn(provenances: readonly Provenance[]): string | null {
+  const days = provenances.flatMap((provenance) => provenance.sources.map((source) => source.accessed));
+
+  return days.length === 0 ? null : days.reduce((latest, day) => (day > latest ? day : latest));
+}

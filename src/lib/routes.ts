@@ -9,9 +9,9 @@ import { buildDocs } from './search';
 import { SECTIONS } from './sections';
 
 /**
- * Static paths of the country home pages for one language: the live countries with their data,
- * then every country still listed as `soon`. French and English pages share these builders, so
- * both languages always list the same pages with the same data.
+ * Static paths of the country pages for one language: the live countries with their data, then
+ * every country still listed as `soon`. French and English pages share these builders, so both
+ * languages always list the same pages with the same data.
  */
 export function countryPaths(lang: Lang): { params: { country: string }; props: CountryPageProps }[] {
   const catalog = localizeCatalog(loadCatalog(), lang);

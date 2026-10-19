@@ -61,7 +61,7 @@ export const fr = {
     helpText: "C'est ce qui manque : une personne sur place, un téléphone local, un code composé. Chaque donnée apportée cite sa source.",
     helpCta: 'Apporter les données',
     helpDoc: 'Comment ajouter un pays',
-    live: 'Déjà en direct : Togo',
+    live: 'Voir un pays déjà en direct',
     readOn: 'lu le {date}',
   },
   section: {

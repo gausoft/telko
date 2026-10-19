@@ -3,6 +3,8 @@ import { z } from 'zod';
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const HEX_COLOR = /^#[0-9A-Fa-f]{6}$/;
 const PLACEHOLDER = /\{([a-z_]+)\}/g;
+/** A number a visitor can dial as it is published: digits, spaces and an optional leading "+". */
+const DIALABLE_NUMBER = /^\+?\d[\d ]{0,18}\d$/;
 
 export const CATEGORIES = [
   'general', 'internet', 'mixed', 'voice-sms', 'weekend', 'roaming',
@@ -151,8 +153,11 @@ export const operatorSchema = brandSchema.extend({
   mobile_money: brandSchema.nullable(),
   prefixes: z.array(z.string()),
   website: z.url(),
-  /** Published service number, or null when the operator publishes none. */
-  customer_service: z.string().nullable(),
+  /**
+   * Published service number, or null when the operator publishes none. It is shown and dialled
+   * as it is, so it must be a plain number: a USSD code would carry a menu, and could ask for a PIN.
+   */
+  customer_service: z.string().regex(DIALABLE_NUMBER, 'must be a diallable number: digits, spaces and an optional leading "+"').nullable(),
   /** Where the operator name, its service number and its website come from. An official page is accepted. */
   provenance: provenanceSchema,
   notes: z.string().nullable(),
@@ -175,8 +180,8 @@ export const countrySchema = z.object({
   currency: z.string().length(3),
   /** How an amount is written after the figure, as on the operator's receipts: "F", "GH₵", "KSh". */
   amount_label: z.string().min(1).max(4),
-  /** Quick amounts offered by the code assistant, in the country currency. Empty means the app default. */
-  amount_presets: z.array(z.number().int().positive()).max(6),
+  /** Quick amounts offered by the code assistant, in the country currency. At least one. */
+  amount_presets: z.array(z.number().int().positive()).min(1).max(6),
   en: translation({ name: z.string() }),
 });
 

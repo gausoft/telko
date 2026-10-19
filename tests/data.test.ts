@@ -132,11 +132,23 @@ describe('data rules', () => {
     expect(loadCatalog(files).byCountry.get('gh')?.entries[0]?.amountLabel).toBe('GH₵');
   });
 
-  it('rejects a payment method the country does not offer', () => {
-    expect(() => loadCatalog(withEntry(entry({ payment_methods: ['orange-money'] })))).toThrow(/not a mobile money service of tg/);
+  it('rejects a payment method the operator does not offer', () => {
+    expect(() => loadCatalog(withEntry(entry({ payment_methods: ['orange-money'] })))).toThrow(/which yas does not offer/);
   });
 
-  it('accepts airtime and the mobile money services of the country', () => {
+  it('rejects a payment method of another operator', () => {
+    const money = { id: 'flooz', name: 'Flooz', short_name: 'Flooz', former_names: [], badge: { label: 'F', background: '#0055A5', foreground: '#FFFFFF' }, logo: null };
+    const moov = { ...yas, id: 'moov', name: 'Moov', website: 'https://moov.tg', mobile_money: money };
+    const files = {
+      '/data/countries.json': base['/data/countries.json'],
+      '/data/tg/operators.json': { country: 'tg', operators: [yas, moov] },
+      '/data/tg/yas/internet.json': { operator: 'yas', category: 'internet', entries: [entry({ payment_methods: ['flooz'] })] },
+    };
+
+    expect(() => loadCatalog(files)).toThrow(/which yas does not offer/);
+  });
+
+  it('accepts airtime and the mobile money service of the operator itself', () => {
     const money = { id: 'mixx', name: 'Mixx by Yas', short_name: 'Mixx', former_names: [], badge: { label: 'Mx', background: '#FFD100', foreground: '#00377D' }, logo: null };
     const files = {
       '/data/countries.json': base['/data/countries.json'],
@@ -145,6 +157,28 @@ describe('data rules', () => {
     };
 
     expect(loadCatalog(files).byCountry.get('tg')?.entries[0]?.payment_methods).toEqual(['airtime', 'mixx']);
+  });
+
+  it('refuses a service number a visitor cannot dial as it is', () => {
+    const withNumber = (customer_service: unknown) => ({ ...base, '/data/tg/operators.json': { country: 'tg', operators: [{ ...yas, customer_service }] } });
+
+    expect(() => loadCatalog(withNumber('*155#'))).toThrow(/customer_service must be a diallable number/);
+    expect(() => loadCatalog(withNumber('*155*1#'))).toThrow(/customer_service must be a diallable number/);
+    expect(() => loadCatalog(withNumber('Service client'))).toThrow(/customer_service must be a diallable number/);
+  });
+
+  it('accepts a service number written with spaces, or no number at all', () => {
+    const digits = loadCatalog({ ...base, '/data/tg/operators.json': { country: 'tg', operators: [{ ...yas, customer_service: '+228 99 99 00 00' }] } });
+    const none = loadCatalog({ ...base, '/data/tg/operators.json': { country: 'tg', operators: [{ ...yas, customer_service: null }] } });
+
+    expect(digits.byCountry.get('tg')?.operators[0]?.customer_service).toBe('+228 99 99 00 00');
+    expect(none.byCountry.get('tg')?.operators[0]?.customer_service).toBeNull();
+  });
+
+  it('refuses a country without a single quick amount', () => {
+    const empty = { ...country, amount_presets: [] };
+
+    expect(() => loadCatalog({ ...base, '/data/countries.json': { countries: [empty] } })).toThrow(/amount_presets/);
   });
 
   it('refuses an operator verified without an accepted proof', () => {
@@ -168,6 +202,17 @@ describe('data rules', () => {
 
     expect(loaded.byCountry.has('bj')).toBe(false);
     expect(loaded.pending.get('bj')?.operators[0]?.id).toBe('mtn');
+  });
+
+  it('refuses a soon folder without operators.json, rather than ignoring it', () => {
+    const benin = { ...country, code: 'bj', name: 'Bénin', dial_code: '229', national_length: 10, status: 'soon' };
+    const files = {
+      ...base,
+      '/data/countries.json': { countries: [country, benin] },
+      '/data/bj/mtn/internet.json': { operator: 'mtn', category: 'internet', entries: [entry({ id: 'mtn-internet-x' })] },
+    };
+
+    expect(() => loadCatalog(files)).toThrow(/Missing data file \/data\/bj\/operators\.json/);
   });
 
   it('names the faulty file of a country still soon', () => {

@@ -24,15 +24,15 @@ export const seoCopyEn: SeoCopy = {
   amounts: (n) => `${n} amounts`,
 };
 
-/** A country still listed as `soon`: no bundle page exists yet, so the title promises nothing it cannot show. */
+/** A country still listed as `soon`: only its operators are on the page yet, so nothing else is promised. */
 function soonTitle(country: string): string {
-  return `${country}: coming to Telko · USSD codes and bundles`;
+  return `${country}: coming soon to Telko`;
 }
 
 function soonDescription(country: string, operators: string[]): string {
-  const listed = operators.length > 0 ? `Telko is listing ${joinList(operators)} for ${country}` : `Telko is preparing ${country}`;
+  const listed = operators.length > 0 ? `${country}: Telko already lists ${joinList(operators)}` : `${country}: its operators and their services are coming to Telko`;
 
-  return `${listed}: bundles, USSD codes and mobile money, each with its source. Help us check them.`;
+  return `${listed}. Bundles, USSD codes and mobile money, each with its source. Help us check them.`;
 }
 
 function heading(id: SectionId, c: SectionCopyContext): string {

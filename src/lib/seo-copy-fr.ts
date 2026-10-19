@@ -24,15 +24,18 @@ export const seoCopyFr: SeoCopy = {
   amounts: (n) => `${n} montants`,
 };
 
-/** A country still listed as `soon`: no bundle page exists yet, so the title promises nothing it cannot show. */
+/** A country still listed as `soon`: only its operators are on the page yet, so nothing else is promised. */
 function soonTitle(country: string): string {
-  return `${country} : bientôt sur Telko · codes USSD et forfaits`;
+  return `${country} : bientôt sur Telko`;
 }
 
 function soonDescription(country: string, operators: string[]): string {
-  const listed = operators.length > 0 ? `Telko liste déjà ${joinList(operators)} pour ${country}` : `Telko prépare ${country}`;
+  const listed =
+    operators.length > 0
+      ? `${country} : Telko liste déjà ${joinList(operators)}`
+      : `${country} : ses opérateurs et leurs services arrivent sur Telko`;
 
-  return `${listed} : forfaits, codes USSD et mobile money, chacun avec sa source. Aidez-nous à les vérifier.`;
+  return `${listed}. Forfaits, codes USSD et mobile money, chacun avec sa source. Aidez-nous à les vérifier.`;
 }
 
 function heading(id: SectionId, c: SectionCopyContext): string {

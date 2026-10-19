@@ -11,7 +11,8 @@ import { messages } from '../i18n/messages';
 import { localePath, pageLang } from '../i18n/paths';
 import { sectionEntries } from '../lib/catalog';
 import type { CatalogEntry } from '../lib/catalog-types';
-import { pricePerGb } from '../lib/format';
+import { formatDay, pricePerGb } from '../lib/format';
+import { lastReadOn } from '../lib/freshness';
 import { sectionSeo } from '../lib/seo';
 import { DURATION_FILTERS, type DurationFilter } from '../lib/sections';
 import type { SectionProps } from './view-types';
@@ -21,8 +22,6 @@ type Props = SectionProps;
 const { data, operator, section, catalog } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
-/** Date the dataset was last collected; shown under every list. */
-const SOURCE_DATE = lang === 'fr' ? '18/10/2026' : '18 Oct 2026';
 const isInternet = section.id === 'internet';
 
 const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price === null) - Number(b.price === null) || (a.price ?? 0) - (b.price ?? 0));
@@ -43,6 +42,9 @@ for (const filter of DURATION_FILTERS) {
 }
 
 const fees = data.fees.filter((f) => f.operator === operator.id);
+/** Day the data shown on this page was last read, taken from its own sources; shown under the list. */
+const readOn = lastReadOn([operator, ...entries, ...fees].map((item) => item.provenance));
+const SOURCE_DATE = readOn === null ? null : formatDay(readOn, lang);
 const initialFilter: DurationFilter = 'mois';
 const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id];
 ---
@@ -82,7 +84,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
       )
     }
 
-    <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>
+    {SOURCE_DATE && <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>}
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />

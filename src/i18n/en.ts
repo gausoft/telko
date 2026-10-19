@@ -63,7 +63,7 @@ export const en: Messages = {
     helpText: 'That is what is missing: someone there, a local phone, a code dialled. Every piece of data carries its source.',
     helpCta: 'Bring the data',
     helpDoc: 'How to add a country',
-    live: 'Already live: Togo',
+    live: 'See a country already live',
     readOn: 'read on {date}',
   },
   section: {

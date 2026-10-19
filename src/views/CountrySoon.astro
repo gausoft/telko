@@ -9,38 +9,47 @@ import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
 import { localePath, pageLang } from '../i18n/paths';
 import { countrySoonSeo } from '../lib/seo';
-import type { Provenance } from '../lib/schema';
+import { formatDay } from '../lib/format';
+import { lastReadOn } from '../lib/freshness';
+import type { Operator, Provenance } from '../lib/schema';
 import type { CountrySoonProps } from './view-types';
 
 type Props = CountrySoonProps;
+type Source = Operator['provenance']['sources'][number];
 
 const { country, operators } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
 
+/**
+ * Links of one operator, labelled by their host. Two pages of the same host are told apart by their
+ * path, so no two links of a row read the same and a reader knows which page backs which claim.
+ */
+const sourceLinks = (sources: readonly Source[]): { url: string; label: string }[] => {
+  const hosts = sources.map((source) => new URL(source.url).host);
+
+  return sources.map(({ url }) => {
+    const parsed = new URL(url);
+    const path = parsed.pathname.replace(/\/$/, '');
+    const repeats = hosts.filter((host) => host === parsed.host).length > 1;
+
+    return { url, label: repeats && path !== '' ? `${parsed.host}${path}` : parsed.host };
+  });
+};
+
 /** Day the operator pages were last read, taken from the provenance of the data itself. */
-const readOn = (provenance: Provenance): string | null => provenance.sources.map((s) => s.accessed).sort().at(-1) ?? null;
-const day = (iso: string | null): string | null =>
-  iso === null
-    ? null
-    : new Intl.DateTimeFormat(lang === 'fr' ? 'fr-FR' : 'en-GB', {
-        day: '2-digit',
-        month: lang === 'fr' ? '2-digit' : 'short',
-        year: 'numeric',
-        timeZone: 'UTC',
-      }).format(new Date(`${iso}T00:00:00Z`));
+const readOn = (provenances: readonly Provenance[]): string | null => {
+  const iso = lastReadOn(provenances);
+
+  return iso === null ? null : formatDay(iso, lang);
+};
 
 const rows = operators.map((operator) => ({
   operator,
-  sources: operator.provenance.sources.map((source) => ({ ...source, host: new URL(source.url).host })),
-  read: day(readOn(operator.provenance)),
+  sources: sourceLinks(operator.provenance.sources),
+  read: readOn([operator.provenance]),
 }));
-const lastRead = day(
-  operators
-    .flatMap((o) => o.provenance.sources.map((s) => s.accessed))
-    .sort()
-    .at(-1) ?? null,
-);
+const lastRead = readOn(operators.map((operator) => operator.provenance));
 ---
 
 <AppLayout seo={countrySoonSeo(country, operators, lang)}>
@@ -89,8 +98,8 @@ const lastRead = day(
                   <li>
                     <span class="who">{operator.short_name}</span>
                     {sources.map((source) => (
-                      <a href={source.url} target="_blank" rel="noreferrer">
-                        {source.host}
+                      <a href={source.url} target="_blank" rel="noreferrer" title={source.url}>
+                        {source.label}
                       </a>
                     ))}
                     {read && <span class="read">{fill(m.soon.readOn, { date: read })}</span>}

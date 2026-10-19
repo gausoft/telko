@@ -6,6 +6,10 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// Read and write from the repository, whatever directory the command was typed in.
+process.chdir(fileURLToPath(new URL('..', import.meta.url)));
 
 const ROOT = 'data';
 const COUNTRIES = join(ROOT, 'countries.json');
