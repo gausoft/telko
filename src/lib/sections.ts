@@ -21,6 +21,9 @@ export const DURATION_FILTERS = ['jour', 'semaine', 'mois', 'nuit'] as const;
 
 export type DurationFilter = (typeof DURATION_FILTERS)[number];
 
+/** Tabs of the calls page: an offer goes under the tab of its category, so calls-only bundles never sit among combo ones. */
+export const CALL_TABS = ['voice-sms', 'mixed'] as const satisfies readonly Category[];
+
 /** Reads the French validity label, the source text: translations never change an offer's period. */
 export function durationOf(days: number | null, label: string, hasTimeWindow: boolean): DurationFilter {
   if (hasTimeWindow || /nuit/i.test(label)) return 'nuit';

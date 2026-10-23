@@ -19,6 +19,7 @@ export const fr = {
   languages: { fr: 'Français', en: 'English' },
   sections: { internet: 'Internet', appels: 'Appels', argent: 'Argent', factures: 'Factures', frais: 'Frais', aide: 'Aide' },
   durations: { jour: 'Jour', semaine: 'Semaine', mois: 'Mois', nuit: 'Nuit' },
+  callTabs: { 'voice-sms': 'Appels seuls', mixed: 'Mixtes' },
   splash: { loading: 'Chargement de Telko', open: 'Ouvrir Telko' },
   onboarding: {
     title: 'Bienvenue sur Telko',
@@ -66,6 +67,7 @@ export const fr = {
   },
   section: {
     duration: 'Durée',
+    callTab: 'Type de forfait',
     bestPrice: 'Meilleur prix au Go',
     empty: "Rien pour l'instant dans cette rubrique.",
     source: 'Données non vérifiées sur téléphone · sources officielles et publiques, {date}',

@@ -21,6 +21,7 @@ export const en: Messages = {
   languages: { fr: 'Français', en: 'English' },
   sections: { internet: 'Data', appels: 'Calls', argent: 'Money', factures: 'Bills', frais: 'Fees', aide: 'Help' },
   durations: { jour: 'Day', semaine: 'Week', mois: 'Month', nuit: 'Night' },
+  callTabs: { 'voice-sms': 'Calls only', mixed: 'Combo' },
   splash: { loading: 'Loading Telko', open: 'Open Telko' },
   onboarding: {
     title: 'Welcome to Telko',
@@ -68,6 +69,7 @@ export const en: Messages = {
   },
   section: {
     duration: 'Duration',
+    callTab: 'Bundle type',
     bestPrice: 'Best price per GB',
     empty: 'Nothing in this section yet.',
     source: 'Not yet verified on a phone · official and public sources, {date}',
