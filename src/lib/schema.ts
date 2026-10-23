@@ -17,7 +17,7 @@ export const FEE_OPERATIONS = [
 ] as const;
 
 export const sourceSchema = z.object({
-  url: z.url(),
+  url: z.url({ protocol: /^https?$/ }),
   kind: z.enum(['official', 'device', 'secondary']),
   accessed: z.string().regex(ISO_DATE),
 });
@@ -152,7 +152,7 @@ export const brandSchema = z.object({
 export const operatorSchema = brandSchema.extend({
   mobile_money: brandSchema.nullable(),
   prefixes: z.array(z.string()),
-  website: z.url(),
+  website: z.url({ protocol: /^https?$/ }),
   /**
    * Published service number, or null when the operator publishes none. It is shown and dialled
    * as it is, so it must be a plain number: a USSD code would carry a menu, and could ask for a PIN.
