@@ -7,7 +7,7 @@
       "kind": "bundle",
       "name": "F 150 M",
       "description": "7 min, 10 SMS et 10 Mo valables 1 jour.",
-      "price_xof": 150,
+      "price": 150,
       "allowances": {
         "data_mb": 10,
         "voice_min": 7,
@@ -58,7 +58,7 @@
       "kind": "bundle",
       "name": "F 250 M",
       "description": "15 min, 20 SMS et 20 Mo valables 2 jours.",
-      "price_xof": 250,
+      "price": 250,
       "allowances": {
         "data_mb": 20,
         "voice_min": 15,
@@ -110,7 +110,7 @@
       "kind": "bundle",
       "name": "F 450 M",
       "description": "25 min, 50 SMS et 50 Mo valables 3 jours.",
-      "price_xof": 450,
+      "price": 450,
       "allowances": {
         "data_mb": 50,
         "voice_min": 25,
@@ -161,7 +161,7 @@
       "kind": "bundle",
       "name": "F 600 M",
       "description": "40 min, 50 SMS et 50 Mo valables 3 jours.",
-      "price_xof": 600,
+      "price": 600,
       "allowances": {
         "data_mb": 50,
         "voice_min": 40,
@@ -212,7 +212,7 @@
       "kind": "bundle",
       "name": "F 900 M",
       "description": "60 min, 100 SMS et 100 Mo valables 7 jours.",
-      "price_xof": 900,
+      "price": 900,
       "allowances": {
         "data_mb": 100,
         "voice_min": 60,
@@ -263,7 +263,7 @@
       "kind": "bundle",
       "name": "F 1400 M",
       "description": "100 min, 160 SMS et 160 Mo valables 10 jours.",
-      "price_xof": 1400,
+      "price": 1400,
       "allowances": {
         "data_mb": 160,
         "voice_min": 100,
@@ -314,7 +314,7 @@
       "kind": "bundle",
       "name": "F 2500 M",
       "description": "150 min, 200 SMS et 350 Mo valables 15 jours.",
-      "price_xof": 2500,
+      "price": 2500,
       "allowances": {
         "data_mb": 350,
         "voice_min": 150,
@@ -371,7 +371,7 @@
       "kind": "bundle",
       "name": "F 5000 M",
       "description": "330 min, 200 SMS et 1000 Mo valables 30 jours.",
-      "price_xof": 5000,
+      "price": 5000,
       "allowances": {
         "data_mb": 1000,
         "voice_min": 330,
@@ -428,7 +428,7 @@
       "kind": "bundle",
       "name": "F 7000 M",
       "description": "540 min, 100 SMS et 1500 Mo valables 30 jours.",
-      "price_xof": 7000,
+      "price": 7000,
       "allowances": {
         "data_mb": 1500,
         "voice_min": 540,
@@ -485,7 +485,7 @@
       "kind": "bundle",
       "name": "F 9500 M",
       "description": "700 min, 200 SMS et 2000 Mo valables 30 jours.",
-      "price_xof": 9500,
+      "price": 9500,
       "allowances": {
         "data_mb": 2000,
         "voice_min": 700,
@@ -542,7 +542,7 @@
       "kind": "bundle",
       "name": "All Days After Work",
       "description": "60 min, 50 SMS et 600 Mo utilisables de 15h à 23h59, valables 3 jours.",
-      "price_xof": 600,
+      "price": 600,
       "allowances": {
         "data_mb": 600,
         "voice_min": 60,
@@ -596,7 +596,7 @@
       "kind": "bundle",
       "name": "Mini Flexi",
       "description": "120 min tous réseaux, 15 min vers l'international, 100 SMS et 1,5 Go.",
-      "price_xof": 10000,
+      "price": 10000,
       "allowances": {
         "data_mb": 1536,
         "voice_min": 120,
@@ -640,7 +640,7 @@
       "kind": "bundle",
       "name": "Flexi+",
       "description": "390 min, 100 SMS et 1,5 Go valables 30 jours.",
-      "price_xof": 5000,
+      "price": 5000,
       "allowances": {
         "data_mb": 1536,
         "voice_min": 390,
@@ -690,7 +690,7 @@
       "kind": "service",
       "name": "Solde des forfaits mixtes",
       "description": "Consulter le reste de ses forfaits mixtes.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -727,7 +727,7 @@
       "kind": "service",
       "name": "Validité Plus",
       "description": "Prolonger la validité de son forfait mixte de 1 ou 3 jours.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,

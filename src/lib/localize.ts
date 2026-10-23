@@ -18,6 +18,7 @@ export function localizeCatalog(catalog: Catalog, lang: Lang): Catalog {
   const localized: Catalog = {
     countries: catalog.countries.map((c) => localizeCountry(c, lang)),
     byCountry: new Map([...catalog.byCountry].map(([code, data]) => [code, localizeCountryCatalog(data, lang)])),
+    pending: new Map([...catalog.pending].map(([code, data]) => [code, localizeCountryCatalog(data, lang)])),
   };
   byLang.set(lang, localized);
 

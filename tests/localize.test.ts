@@ -54,14 +54,21 @@ describe('fee labels', () => {
     expect(feeAmount(fee('Withdrawal: between 100 and 500 F'), words, '.')).toBe('100 – 500 F');
     expect(feeAmount(fee('Withdrawal: varies'), words, '.')).toBe('Not published');
   });
+
+  it('reads a published amount in the currency of the country', () => {
+    const cedi = { ...fee('Retrait : 25 GH₵'), amountLabel: 'GH₵' };
+
+    expect(feeCondition(cedi)).toBe('Retrait');
+    expect(feeAmount({ ...cedi, fee: 25 }, words, '.')).toBe('25 GH₵');
+  });
 });
 
 const feeFixture: CatalogFee = {
   id: 'x',
   operation: 'withdrawal',
-  min_xof: 0,
-  max_xof: null,
-  fee_xof: null,
+  min: 0,
+  max: null,
+  fee: null,
   fee_percent: null,
   label: 'x',
   provenance: { status: 'unverified', sources: [{ url: 'https://example.com', kind: 'official', accessed: '2026-10-18' }], verified_at: null, verified_by: null },
@@ -69,4 +76,5 @@ const feeFixture: CatalogFee = {
   country: 'tg',
   operator: 'yas',
   service: 'x',
+  amountLabel: 'F',
 };

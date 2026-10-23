@@ -9,7 +9,7 @@ import type {
   FeaturedItem,
   ShortcutItem,
 } from './catalog-types';
-import { effectiveStatus, assertVerificationProof } from './freshness';
+import { effectiveStatus, assertVerificationProof, hasAcceptedProof } from './freshness';
 import {
   categoryFileSchema,
   countriesFileSchema,
@@ -24,35 +24,70 @@ import { durationOf, type Section } from './sections';
 
 const RAW_FILES = import.meta.glob<unknown>('/data/**/*.json', { eager: true, import: 'default' });
 
+/** Payment by airtime. Every other method must be a mobile money service of the same operator. */
+const AIRTIME = 'airtime';
+
+/** One data file being read, with the country and operator it belongs to. */
+interface FileContext {
+  path: string;
+  raw: unknown;
+  operator: string;
+  fileName: string;
+  country: Country;
+  /** What the operator accepts as payment: airtime, plus its own mobile money service. */
+  services: string[];
+  now: Date;
+}
+
 export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Date = new Date()): Catalog {
   const countries = parse(files, '/data/countries.json', countriesFileSchema).countries;
   const byCountry = new Map<string, CountryCatalog>();
+  const pending = new Map<string, CountryCatalog>();
 
-  for (const country of countries.filter((c) => c.status === 'live')) {
-    byCountry.set(country.code, loadCountry(files, country, now));
+  for (const country of countries) {
+    // A country still listed as `soon` is read as soon as it has a folder, so its data is checked
+    // before maintainers flip it to `live`; its pages wait.
+    if (country.status === 'soon' && !hasFolder(files, country.code)) continue;
+
+    const data = loadCountry(files, country, now);
+    (country.status === 'live' ? byCountry : pending).set(country.code, data);
   }
 
-  return { countries, byCountry };
+  return { countries, byCountry, pending };
+}
+
+/**
+ * A country still listed as `soon` is read as soon as it has files, so its data is checked before
+ * maintainers flip it to `live`; its pages wait. `operators.json` is the entry point: a folder
+ * without it fails loudly, with the missing path, rather than being ignored.
+ */
+function hasFolder(files: Record<string, unknown>, code: string): boolean {
+  const root = `/data/${code}/`;
+
+  return Object.keys(files).some((path) => path.startsWith(root));
 }
 
 function loadCountry(files: Record<string, unknown>, country: Country, now: Date): CountryCatalog {
   const root = `/data/${country.code}/`;
   const operators = parse(files, `${root}operators.json`, operatorsFileSchema).operators;
-  const operatorIds = new Set(operators.map((o) => o.id));
   const entries: CatalogEntry[] = [];
   const fees: CatalogFee[] = [];
+
+  for (const operator of operators) assertOperatorProof(`${root}operators.json`, operator);
 
   for (const [path, raw] of Object.entries(files)) {
     if (!isOperatorFile(path, root)) continue;
     const [folder = '', fileName = ''] = path.slice(root.length).split('/');
-    if (!operatorIds.has(folder)) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
+    const operator = operators.find((o) => o.id === folder);
+    if (!operator) throw new Error(`${path}: folder "${folder}" is not an operator of ${country.code}`);
 
+    const context: FileContext = { path, raw, operator: folder, fileName, country, services: servicesOf(operator), now };
     if (fileName === 'fees.json') {
-      fees.push(...loadFees(path, raw, folder, country.code));
+      fees.push(...loadFees(context));
       continue;
     }
 
-    entries.push(...loadEntries(path, raw, folder, fileName, country.code, now));
+    entries.push(...loadEntries(context));
   }
 
   const editorial = loadEditorial(files, root, entries, operators);
@@ -60,34 +95,51 @@ function loadCountry(files: Record<string, unknown>, country: Country, now: Date
   return { country, operators, entries, fees, ...editorial };
 }
 
+function servicesOf(operator: Operator): string[] {
+  return operator.mobile_money ? [AIRTIME, operator.mobile_money.id] : [AIRTIME];
+}
+
+function assertOperatorProof(path: string, operator: Operator): void {
+  if (operator.provenance.status === 'verified' && !hasAcceptedProof(operator.provenance, false)) {
+    throw new Error(`${path}: "${operator.id}" is verified without an accepted proof (see docs/verification-protocol.md)`);
+  }
+}
+
 function isOperatorFile(path: string, root: string): boolean {
   return path.startsWith(root) && path.slice(root.length).split('/').length === 2;
 }
 
-function loadFees(path: string, raw: unknown, operator: string, country: string): CatalogFee[] {
-  const file = parse({ [path]: raw }, path, feesFileSchema);
-  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
+function loadFees(ctx: FileContext): CatalogFee[] {
+  const file = parse({ [ctx.path]: ctx.raw }, ctx.path, feesFileSchema);
+  if (file.operator !== ctx.operator) throw new Error(`${ctx.path}: operator "${file.operator}" must match its folder "${ctx.operator}"`);
 
-  return file.entries.map((e) => ({ ...e, country, operator, service: file.service }));
+  return file.entries.map((e) => ({ ...e, country: ctx.country.code, operator: ctx.operator, service: file.service, amountLabel: ctx.country.amount_label }));
 }
 
-function loadEntries(path: string, raw: unknown, operator: string, fileName: string, country: string, now: Date): CatalogEntry[] {
-  const file = parse({ [path]: raw }, path, categoryFileSchema);
-  if (file.operator !== operator) throw new Error(`${path}: operator "${file.operator}" must match its folder "${operator}"`);
-  if (`${file.category}.json` !== fileName) throw new Error(`${path}: category "${file.category}" must match the file name`);
+function loadEntries(ctx: FileContext): CatalogEntry[] {
+  const file = parse({ [ctx.path]: ctx.raw }, ctx.path, categoryFileSchema);
+  if (file.operator !== ctx.operator) throw new Error(`${ctx.path}: operator "${file.operator}" must match its folder "${ctx.operator}"`);
+  if (`${file.category}.json` !== ctx.fileName) throw new Error(`${ctx.path}: category "${file.category}" must match the file name`);
 
   return file.entries.map((e) => {
-    assertVerificationProof(path, e, file.category);
+    assertVerificationProof(ctx.path, e, file.category);
+    assertPaymentMethods(ctx, e.id, e.payment_methods);
 
     return {
       ...e,
-      provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, now) },
+      provenance: { ...e.provenance, status: effectiveStatus(e.provenance, file.category, ctx.now) },
       duration: durationOf(e.validity?.days ?? null, e.validity?.label ?? '', e.time_window !== null),
-      country,
-      operator,
+      country: ctx.country.code,
+      operator: ctx.operator,
       category: file.category,
+      amountLabel: ctx.country.amount_label,
     };
   });
+}
+
+function assertPaymentMethods(ctx: FileContext, id: string, methods: string[]): void {
+  const unknown = methods.find((method) => !ctx.services.includes(method));
+  if (unknown) throw new Error(`${ctx.path}: "${id}" is paid with "${unknown}", which ${ctx.operator} does not offer (${ctx.services.join(', ')})`);
 }
 
 function loadEditorial(files: Record<string, unknown>, root: string, entries: CatalogEntry[], operators: Operator[]): EditorialSelection {
@@ -142,7 +194,7 @@ export function operatorById(catalog: CountryCatalog, id: string): Operator | un
 export function entriesFor(catalog: CountryCatalog, operator: string, category: string): CatalogEntry[] {
   return catalog.entries
     .filter((e) => e.operator === operator && e.category === category && e.provenance.status !== 'discontinued')
-    .sort((a, b) => (a.price_xof ?? 0) - (b.price_xof ?? 0));
+    .sort((a, b) => (a.price ?? 0) - (b.price ?? 0));
 }
 
 /** Offers listed on a section page: same operator, matching categories, still sold. */

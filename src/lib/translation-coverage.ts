@@ -13,7 +13,7 @@ export function missingTranslations(catalog: Catalog): string[] {
 
   for (const country of catalog.countries) need(`countries/${country.code}`, 'name', country.name, country.en?.name);
 
-  for (const data of catalog.byCountry.values()) {
+  for (const data of [...catalog.byCountry.values(), ...catalog.pending.values()]) {
     const code = data.country.code;
     for (const o of data.operators) need(`${code}/${o.id}`, 'notes', o.notes, o.en?.notes);
     for (const e of data.entries) missing.push(...missingInEntry(`${code}/${e.id}`, e));

@@ -34,6 +34,18 @@
       "prefixes": [],
       "website": "https://yas.tg",
       "customer_service": "888",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/particulier/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
       "notes": "Préfixes non publiés : la portabilité des numéros est en vigueur depuis le 3 mai 2024, un préfixe ne garantit pas l'opérateur.",
       "en": {
         "notes": "Prefixes not published: number portability has applied since 3 May 2024, so a prefix does not tell you the operator."
@@ -69,6 +81,18 @@
       "prefixes": [],
       "website": "https://moov-africa.tg",
       "customer_service": "+228 99 99 00 00",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.tg/contactez-nous/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
       "notes": "Préfixes non publiés : la portabilité des numéros est en vigueur depuis le 3 mai 2024, un préfixe ne garantit pas l'opérateur. Centre d'appels Moov Money : 777.",
       "en": {
         "notes": "Prefixes not published: number portability has applied since 3 May 2024, so a prefix does not tell you the operator. Moov Money call centre: 777."

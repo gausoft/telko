@@ -3,8 +3,6 @@ import type { BuiltCode, CodeToken, PhoneContext, ShortLabels, Step, Validation 
 
 const PLACEHOLDER = /\{([a-z_]+)\}/g;
 
-export const DEFAULT_PRESETS = [500, 1000, 2000, 5000];
-
 /** Splits a code into fixed text and boxes; secret boxes are never filled. `shorts` names boxes without their own label. */
 export function codeTokens(ussd: Ussd, shorts: ShortLabels, values: Record<string, string> = {}): CodeToken[] {
   const tokens: CodeToken[] = [];

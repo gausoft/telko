@@ -1,4 +1,4 @@
-import type { Category, Entry } from './schema';
+import type { Category, Entry, Provenance } from './schema';
 
 const DAY_MS = 86_400_000;
 
@@ -31,7 +31,24 @@ export function effectiveStatus(provenance: Entry['provenance'], category: Categ
 export function assertVerificationProof(path: string, entry: Entry, category: Category): void {
   if (entry.provenance.status !== 'verified') return;
 
-  const kinds = new Set(entry.provenance.sources.map((s) => s.kind));
-  const ok = DEVICE_ONLY.has(category) ? kinds.has('device') : kinds.has('device') || kinds.has('official');
-  if (!ok) throw new Error(`${path}: "${entry.id}" is verified without an accepted proof (see docs/verification-protocol.md)`);
+  if (!hasAcceptedProof(entry.provenance, DEVICE_ONLY.has(category))) {
+    throw new Error(`${path}: "${entry.id}" is verified without an accepted proof (see docs/verification-protocol.md)`);
+  }
+}
+
+/** A device test always counts; an official page counts everywhere except where money moves. */
+export function hasAcceptedProof(provenance: Provenance, deviceOnly: boolean): boolean {
+  const kinds = new Set(provenance.sources.map((s) => s.kind));
+
+  return deviceOnly ? kinds.has('device') : kinds.has('device') || kinds.has('official');
+}
+
+/**
+ * The day a set of sources was last read, as an ISO date, or null when there is none. Dates are
+ * ISO, so the lexicographic maximum is the latest one.
+ */
+export function lastReadOn(provenances: readonly Provenance[]): string | null {
+  const days = provenances.flatMap((provenance) => provenance.sources.map((source) => source.accessed));
+
+  return days.length === 0 ? null : days.reduce((latest, day) => (day > latest ? day : latest));
 }

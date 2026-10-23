@@ -1,11 +1,14 @@
 ---
 import CountryHome from '../../views/CountryHome.astro';
-import { countryHomePaths } from '../../lib/routes';
-import type { CountryHomeProps } from '../../views/view-types';
+import CountrySoon from '../../views/CountrySoon.astro';
+import { countryPaths } from '../../lib/routes';
+import type { CountryPageProps } from '../../views/view-types';
 
-export const getStaticPaths = () => countryHomePaths('fr');
+export const getStaticPaths = () => countryPaths('fr');
 
-type Props = CountryHomeProps;
+type Props = CountryPageProps;
+
+const props = Astro.props;
 ---
 
-<CountryHome {...Astro.props} />
+{props.view === 'soon' ? <CountrySoon {...props} /> : <CountryHome {...props} />}

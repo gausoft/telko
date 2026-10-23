@@ -1,0 +1,61 @@
+name: Apporter un pays
+description: Proposer d'ouvrir un nouveau pays dans Telko, avec ses données
+title: "[Pays] "
+labels: ["new-country"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Un pays s'ouvre quand des personnes qui y vivent apportent ses données. Indiquez ce que vous pouvez apporter et d'où il vient.
+        Ne partagez **jamais** votre code secret, et n'allez pas jusqu'au bout d'un transfert d'argent.
+  - type: input
+    id: country
+    attributes:
+      label: Pays
+      description: Nom et code à deux lettres s'il est connu (Bénin = BJ).
+      placeholder: Bénin (BJ)
+    validations:
+      required: true
+  - type: input
+    id: operators
+    attributes:
+      label: Opérateurs mobiles
+      description: Les opérateurs du pays, et le nom de leur service de mobile money s'il y en a un.
+      placeholder: MTN (MoMo), Moov Africa (Moov Money), Celtiis (Celtiis Cash)
+    validations:
+      required: true
+  - type: dropdown
+    id: sim
+    attributes:
+      label: Avez-vous une carte SIM locale ?
+      description: C'est ce qui permet de tester un code sur un vrai téléphone et de le marquer comme vérifié.
+      options:
+        - Oui, je vis dans ce pays et j'ai une ou plusieurs SIM locales
+        - Oui, j'y vais régulièrement
+        - Non, mais je peux rassembler les sources officielles
+    validations:
+      required: true
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Ce que vous pouvez apporter
+      options:
+        - label: Forfaits internet, appels et SMS, avec leur code
+        - label: Codes mobile money et tarifs des transferts et retraits
+        - label: Codes utiles (solde, numéro, service client)
+        - label: Test des codes sur un téléphone local
+        - label: Traduction des textes en anglais
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Liens des pages officielles des opérateurs ou du régulateur, et la date à laquelle vous les avez lues.
+      placeholder: |
+        https://exemple.operateur/forfaits (lu le 2026-10-19)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Autres précisions
+      description: Ce qui est difficile à trouver, ce que vous avez déjà commencé, ce sur quoi vous voulez de l'aide.

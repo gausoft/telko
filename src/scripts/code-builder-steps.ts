@@ -1,7 +1,6 @@
 import { encodeUssd } from '../lib/dial';
 import { fill } from '../i18n/format-message';
-import { formatXof } from '../lib/format';
-import { DEFAULT_PRESETS } from '../lib/ussd-flow';
+import { formatAmount } from '../lib/format';
 import { t } from './i18n-client';
 import type { InputOptions, ReviewContext, StepContext, StepView } from './code-builder-types';
 
@@ -53,13 +52,13 @@ export function fillRecipients(box: HTMLElement, ctx: Pick<StepContext, 'recipie
 function amountView(ctx: StepContext): StepView {
   const field = fieldShell(ctx);
   const input = inputFor(ctx, { type: 'text', inputMode: 'numeric', autocomplete: 'off', placeholder: '0' });
-  field.box.append(input, text('span', t().builder.currency, 'cb-suffix'));
+  field.box.append(input, text('span', ctx.country.amountLabel, 'cb-suffix'));
 
-  const presets = ctx.step.presets ?? DEFAULT_PRESETS;
+  const presets = ctx.step.presets ?? ctx.country.amountPresets;
   field.element.append(
     chips(
       presets.map((amount) => ({
-        label: formatXof(amount),
+        label: formatAmount(amount, ctx.country.amountLabel),
         onClick: () => {
           input.value = String(amount);
           input.focus();

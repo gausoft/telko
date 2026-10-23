@@ -7,7 +7,7 @@
       "kind": "bundle",
       "name": "Léma200+",
       "description": "1 000 F de crédit d'appels tous réseaux, 20 Mo et 20 SMS sur 1 jour.",
-      "price_xof": 200,
+      "price": 200,
       "allowances": {
         "data_mb": 20,
         "voice_min": null,
@@ -63,7 +63,7 @@
       "kind": "bundle",
       "name": "Léma250+",
       "description": "2 500 F de crédit d'appels tous réseaux, 20 Mo et 20 SMS sur 1 jour.",
-      "price_xof": 250,
+      "price": 250,
       "allowances": {
         "data_mb": 20,
         "voice_min": null,
@@ -119,7 +119,7 @@
       "kind": "bundle",
       "name": "Léma300+",
       "description": "2 000 F de crédit d'appels tous réseaux, 40 Mo et 40 SMS sur 2 jours.",
-      "price_xof": 300,
+      "price": 300,
       "allowances": {
         "data_mb": 40,
         "voice_min": null,
@@ -175,7 +175,7 @@
       "kind": "bundle",
       "name": "Léma400+",
       "description": "3 500 F de crédit d'appels tous réseaux, 40 Mo et 40 SMS sur 2 jours.",
-      "price_xof": 400,
+      "price": 400,
       "allowances": {
         "data_mb": 40,
         "voice_min": null,
@@ -231,7 +231,7 @@
       "kind": "bundle",
       "name": "Léma500+",
       "description": "4 000 F de crédit d'appels tous réseaux, 50 Mo et 50 SMS sur 3 jours.",
-      "price_xof": 500,
+      "price": 500,
       "allowances": {
         "data_mb": 50,
         "voice_min": null,
@@ -287,7 +287,7 @@
       "kind": "bundle",
       "name": "Léma1000+",
       "description": "7 500 F de crédit d'appels tous réseaux, 250 Mo et 250 SMS sur 7 jours.",
-      "price_xof": 1000,
+      "price": 1000,
       "allowances": {
         "data_mb": 250,
         "voice_min": null,
@@ -351,7 +351,7 @@
       "kind": "bundle",
       "name": "Léma2000+",
       "description": "20 000 F de crédit d'appels tous réseaux, 500 Mo et 250 SMS sur 7 jours.",
-      "price_xof": 2000,
+      "price": 2000,
       "allowances": {
         "data_mb": 500,
         "voice_min": null,
@@ -407,7 +407,7 @@
       "kind": "bundle",
       "name": "Léma5000+",
       "description": "37 500 F de crédit d'appels tous réseaux, 1 Go et 250 SMS sur 30 jours.",
-      "price_xof": 5000,
+      "price": 5000,
       "allowances": {
         "data_mb": 1024,
         "voice_min": null,
@@ -463,7 +463,7 @@
       "kind": "bundle",
       "name": "Léma7500+",
       "description": "75 000 F de crédit d'appels tous réseaux, 1,5 Go et 250 SMS sur 30 jours.",
-      "price_xof": 7500,
+      "price": 7500,
       "allowances": {
         "data_mb": 1536,
         "voice_min": null,
@@ -519,7 +519,7 @@
       "kind": "bundle",
       "name": "Léma9000+",
       "description": "90 000 F de crédit d'appels tous réseaux, 2 Go et 250 SMS sur 30 jours.",
-      "price_xof": 9000,
+      "price": 9000,
       "allowances": {
         "data_mb": 2048,
         "voice_min": null,

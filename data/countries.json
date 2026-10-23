@@ -1,12 +1,12 @@
 {
   "countries": [
-    { "code": "tg", "name": "Togo", "status": "live", "dial_code": "228", "national_length": 8, "currency": "XOF", "en": { "name": "Togo" } },
-    { "code": "bj", "name": "Bénin", "status": "soon", "dial_code": "229", "national_length": 10, "currency": "XOF", "en": { "name": "Benin" } },
-    { "code": "bf", "name": "Burkina Faso", "status": "soon", "dial_code": "226", "national_length": 8, "currency": "XOF", "en": { "name": "Burkina Faso" } },
-    { "code": "ci", "name": "Côte d'Ivoire", "status": "soon", "dial_code": "225", "national_length": 10, "currency": "XOF", "en": { "name": "Côte d'Ivoire" } },
-    { "code": "gw", "name": "Guinée-Bissau", "status": "soon", "dial_code": "245", "national_length": 9, "currency": "XOF", "en": { "name": "Guinea-Bissau" } },
-    { "code": "ml", "name": "Mali", "status": "soon", "dial_code": "223", "national_length": 8, "currency": "XOF", "en": { "name": "Mali" } },
-    { "code": "ne", "name": "Niger", "status": "soon", "dial_code": "227", "national_length": 8, "currency": "XOF", "en": { "name": "Niger" } },
-    { "code": "sn", "name": "Sénégal", "status": "soon", "dial_code": "221", "national_length": 9, "currency": "XOF", "en": { "name": "Senegal" } }
+    { "code": "tg", "name": "Togo", "status": "live", "dial_code": "228", "national_length": 8, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Togo" } },
+    { "code": "bj", "name": "Bénin", "status": "soon", "dial_code": "229", "national_length": 10, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Benin" } },
+    { "code": "bf", "name": "Burkina Faso", "status": "soon", "dial_code": "226", "national_length": 8, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Burkina Faso" } },
+    { "code": "ci", "name": "Côte d'Ivoire", "status": "soon", "dial_code": "225", "national_length": 10, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Côte d'Ivoire" } },
+    { "code": "gw", "name": "Guinée-Bissau", "status": "soon", "dial_code": "245", "national_length": 9, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Guinea-Bissau" } },
+    { "code": "ml", "name": "Mali", "status": "soon", "dial_code": "223", "national_length": 8, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Mali" } },
+    { "code": "ne", "name": "Niger", "status": "soon", "dial_code": "227", "national_length": 8, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Niger" } },
+    { "code": "sn", "name": "Sénégal", "status": "soon", "dial_code": "221", "national_length": 9, "currency": "XOF", "amount_label": "F", "amount_presets": [500, 1000, 2000, 5000], "en": { "name": "Senegal" } }
   ]
 }

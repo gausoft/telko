@@ -5,6 +5,8 @@ export interface CatalogEntry extends Entry {
   country: string;
   operator: string;
   category: Category;
+  /** `amount_label` of the country, copied here so every view formats a price the same way. */
+  amountLabel: string;
   /** Period filter of the Data page, read from the French validity label so translations never move an offer. */
   duration: DurationFilter;
 }
@@ -18,6 +20,8 @@ export interface CatalogFee extends FeeEntry {
   country: string;
   operator: string;
   service: string;
+  /** `amount_label` of the country, as on entries. */
+  amountLabel: string;
 }
 
 export interface FeaturedItem extends LabelTranslation {
@@ -47,5 +51,8 @@ export interface CountryCatalog {
 
 export interface Catalog {
   countries: Country[];
+  /** Countries a page is built for: those marked `live`, with their data. */
   byCountry: Map<string, CountryCatalog>;
+  /** Countries that already have a data folder but are still `soon`: checked, but no page is built from them. */
+  pending: Map<string, CountryCatalog>;
 }

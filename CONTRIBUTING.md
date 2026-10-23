@@ -32,13 +32,13 @@ Other sources (blogs, apps, social posts) are welcome but stay `unverified`.
 
 ## Add a country
 
-A country goes live when people who live there bring its data and can test codes on local SIMs. Open an issue first to say you are working on it.
+A country goes live when people who live there bring its data and can test codes on local SIMs.
 
-1. In `data/countries.json`, the country is listed as `soon`. Keep it so until its data is ready.
-2. Create `data/<country code>/operators.json` with each operator and its mobile money service ([schema](docs/data-schema.md#operatorsjson)). Logos are optional: a badge is shown when there is none.
-3. Create one folder per operator, `data/<country code>/<operator id>/`, with one file per category (`internet.json`, `mobile-money.json`, `fees.json`...). Copy the structure of `data/tg/`.
-4. Add sources and dates to every entry. Entries start as `unverified`.
-5. Run `npm run verify`, then switch the country to `live` in the same pull request.
+1. Open a [Bring your country](https://github.com/gausoft/telko/issues/new?template=new-country.yml) issue, so no one duplicates the work.
+2. Follow [docs/adding-a-country.md](docs/adding-a-country.md): list the country in `data/countries.json` as `soon`, run `npm run new-country <code>`, fill the operators, the flag and the category files.
+3. Run `npm run verify`, then switch the country to `live` in the same pull request.
+
+While a country is `soon`, the app already gives it a page at `/<country code>` with the operators it knows and their sources. The page becomes indexable the day the country goes live.
 
 ## Working on the website
 

@@ -71,8 +71,11 @@ Telko puts them in one place, one country at a time:
 | Country | Status | Operators |
 |---|---|---|
 | <img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags/flags/tg.svg" width="16" alt="tg"> Togo | **Live** | Yas Togo with Mixx, Moov Africa Togo with Moov Money |
-| Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal | Soon | Open to contributors |
-| Your country | Open | [Bring it to Telko](CONTRIBUTING.md#add-a-country) |
+| <img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags/flags/bj.svg" width="16" alt="bj"> Benin | Soon, operators listed | MTN with MoMo, Moov Africa with Moov Money, Celtiis with Celtiis Cash |
+| Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal | Soon | Open to contributors |
+| Your country | Open | [Bring it to Telko](https://github.com/gausoft/telko/issues/new?template=new-country.yml) |
+
+Every country listed here already has its page (`telko.pages.dev/bj`), with the operators it knows and their sources. A country turns live, with its bundles and its codes, when contributors who live there bring and test the data ([how](docs/adding-a-country.md)).
 
 The Togo dataset holds about 200 codes and 76 fee lines, from official and public sources. **None is verified on a real phone yet** ([help us](https://github.com/gausoft/telko/issues/1)). Always check the confirmation screen before a money transfer.
 
@@ -85,7 +88,7 @@ Most contributions need no code.
 | Report a code that does not work | Open a [Broken code](https://github.com/gausoft/telko/issues/new?template=broken-code.yml) issue |
 | Add an offer or fix a price | Open a [New offer](https://github.com/gausoft/telko/issues/new?template=new-offer.yml) issue, or edit the JSON in `data/` |
 | Confirm a code on your phone | Follow the [verification protocol](docs/verification-protocol.md) |
-| Bring your country | See [Add a country](CONTRIBUTING.md#add-a-country) |
+| Bring your country | Open a [Bring your country](https://github.com/gausoft/telko/issues/new?template=new-country.yml) issue, then follow [Add a country](docs/adding-a-country.md) |
 | Improve the app | Read [CONTRIBUTING.md](CONTRIBUTING.md), then pick a [`good first issue`](https://github.com/gausoft/telko/labels/good%20first%20issue) |
 
 Never share your PIN, and never complete a real transfer to test a code.

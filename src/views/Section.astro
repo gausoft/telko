@@ -11,9 +11,10 @@ import { messages } from '../i18n/messages';
 import { localePath, pageLang } from '../i18n/paths';
 import { sectionEntries } from '../lib/catalog';
 import type { CatalogEntry } from '../lib/catalog-types';
-import { pricePerGb } from '../lib/format';
+import { formatDay, pricePerGb } from '../lib/format';
+import { lastReadOn } from '../lib/freshness';
 import { sectionSeo } from '../lib/seo';
-import { DURATION_FILTERS, type DurationFilter } from '../lib/sections';
+import { CALL_TABS, DURATION_FILTERS, type DurationFilter } from '../lib/sections';
 import type { SectionProps } from './view-types';
 
 type Props = SectionProps;
@@ -21,19 +22,28 @@ type Props = SectionProps;
 const { data, operator, section, catalog } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
-/** Date the dataset was last collected; shown under every list. */
-const SOURCE_DATE = lang === 'fr' ? '18/10/2026' : '18 Oct 2026';
 const isInternet = section.id === 'internet';
+const isCalls = section.id === 'appels';
 
-const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price_xof === null) - Number(b.price_xof === null) || (a.price_xof ?? 0) - (b.price_xof ?? 0));
+const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price === null) - Number(b.price === null) || (a.price ?? 0) - (b.price ?? 0));
 
 const rows = entries.map((entry) => {
   const usesMobileMoney = entry.category === 'mobile-money';
   const brand = usesMobileMoney && operator.mobile_money ? operator.mobile_money : operator;
   const duration: DurationFilter = entry.duration;
 
-  return { entry, brand, duration, perGb: pricePerGb(entry.price_xof, entry.allowances?.data_mb ?? null) };
+  const tab: string | undefined = isInternet ? duration : isCalls ? entry.category : undefined;
+
+  return { entry, brand, duration, tab, perGb: pricePerGb(entry.price, entry.allowances?.data_mb ?? null) };
 });
+
+/** Internet is split by duration, calls by kind of bundle; other sections show one list. */
+const tabs: { id: string; label: string }[] = isInternet
+  ? DURATION_FILTERS.map((f) => ({ id: f, label: m.durations[f] }))
+  : isCalls
+    ? CALL_TABS.map((c) => ({ id: c, label: m.callTabs[c] }))
+    : [];
+const tabsLabel = isInternet ? m.section.duration : m.section.callTab;
 
 const bestByDuration = new Map<DurationFilter, string>();
 for (const filter of DURATION_FILTERS) {
@@ -43,7 +53,10 @@ for (const filter of DURATION_FILTERS) {
 }
 
 const fees = data.fees.filter((f) => f.operator === operator.id);
-const initialFilter: DurationFilter = 'mois';
+/** Day the data shown on this page was last read, taken from its own sources; shown under the list. */
+const readOn = lastReadOn([operator, ...entries, ...fees].map((item) => item.provenance));
+const SOURCE_DATE = readOn === null ? null : formatDay(readOn, lang);
+const initialTab: string = isInternet ? 'mois' : CALL_TABS[0];
 const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id];
 ---
 
@@ -52,11 +65,11 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
     <AppHeader country={data.country} back={localePath(lang, `/${data.country.code}`)} title={title} switcher={{ operators: data.operators, current: operator.id, hrefTemplate: localePath(lang, `/${data.country.code}/{op}/${section.id}`) }} />
 
     {
-      isInternet && (
-        <div class="filters" role="group" aria-label={m.section.duration}>
-          {DURATION_FILTERS.map((f) => (
-            <button type="button" data-filter={f} aria-pressed={f === initialFilter ? 'true' : 'false'}>
-              {m.durations[f]}
+      tabs.length > 0 && (
+        <div class="filters" role="group" aria-label={tabsLabel} style={`--tab-count: ${tabs.length}`}>
+          {tabs.map((t) => (
+            <button type="button" data-filter={t.id} aria-pressed={t.id === initialTab ? 'true' : 'false'}>
+              {t.label}
             </button>
           ))}
         </div>
@@ -69,7 +82,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
       section.id !== 'frais' && (
         <div class="list">
           {rows.map((r) => (
-            <div data-duration-row={isInternet ? r.duration : undefined} hidden={isInternet && r.duration !== initialFilter}>
+            <div data-tab-row={r.tab} hidden={r.tab !== undefined && r.tab !== initialTab}>
               <OfferRow
                 entry={r.entry}
                 brand={r.brand}
@@ -82,7 +95,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
       )
     }
 
-    <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>
+    {SOURCE_DATE && <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>}
   </main>
 
   <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />
@@ -92,13 +105,13 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
 
 <script>
   const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter]'));
-  const rows = Array.from(document.querySelectorAll<HTMLElement>('[data-duration-row]'));
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('[data-tab-row]'));
 
   buttons.forEach((button) =>
     button.addEventListener('click', () => {
       const id = button.dataset['filter'];
       buttons.forEach((b) => b.setAttribute('aria-pressed', b === button ? 'true' : 'false'));
-      rows.forEach((row) => (row.hidden = row.dataset['durationRow'] !== id));
+      rows.forEach((row) => (row.hidden = row.dataset['tabRow'] !== id));
     }),
   );
 </script>
@@ -115,7 +128,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
 
   .filters {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(var(--tab-count), minmax(0, 1fr));
     gap: var(--space-1);
     padding: var(--space-1);
     border-radius: var(--radius-sm);

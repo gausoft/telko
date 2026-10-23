@@ -7,7 +7,7 @@
       "kind": "service",
       "name": "Menu Mixx by Yas",
       "description": "Menu principal du mobile money Mixx by Yas.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -52,7 +52,7 @@
       "kind": "service",
       "name": "Transfert d'argent",
       "description": "Envoyer de l'argent à un autre compte Mixx.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -94,7 +94,7 @@
       "kind": "service",
       "name": "Retrait d'argent",
       "description": "Retirer de l'argent chez un agent ou en agence Togocom.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -136,7 +136,7 @@
       "kind": "service",
       "name": "Achat de crédit/forfait",
       "description": "Acheter du crédit ou un forfait pour vous ou un proche.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -175,54 +175,11 @@
       }
     },
     {
-      "id": "yas-mobile-money-paiement-factures",
-      "kind": "service",
-      "name": "Paiement de factures",
-      "description": "Payer électricité, eau ou télévision.",
-      "price_xof": null,
-      "allowances": null,
-      "validity": null,
-      "time_window": null,
-      "ussd": {
-        "template": "*145*4#",
-        "params": []
-      },
-      "payment_methods": [
-        "mixx"
-      ],
-      "third_party": null,
-      "tags": [
-        "mixx",
-        "facture",
-        "électricité",
-        "eau",
-        "télé"
-      ],
-      "provenance": {
-        "status": "unverified",
-        "sources": [
-          {
-            "url": "https://yas.tg/mixx-by-yas/",
-            "kind": "official",
-            "accessed": "2026-10-18"
-          }
-        ],
-        "verified_at": null,
-        "verified_by": null
-      },
-      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
-      "en": {
-        "name": "Bill payment",
-        "description": "Pay for electricity, water or TV.",
-        "notes": "Menu code: you choose the rest in the operator's menu."
-      }
-    },
-    {
       "id": "yas-mobile-money-paiement-marchand",
       "kind": "service",
       "name": "Paiement marchand",
       "description": "Payer un commerçant avec Mixx.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -264,7 +221,7 @@
       "kind": "service",
       "name": "Selfcare Mixx",
       "description": "Réinitialiser le PIN, revoir les 3 derniers codes LAFIA, annuler un transfert erroné.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -305,7 +262,7 @@
       "kind": "service",
       "name": "Pass Mixx (Mixx vers banque)",
       "description": "Envoyer de l'argent de Mixx vers un compte Orabank.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -346,7 +303,7 @@
       "kind": "service",
       "name": "Annuler un transfert Mixx",
       "description": "Annuler un transfert d'argent envoyé par erreur.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -386,7 +343,7 @@
       "kind": "service",
       "name": "Code secret Mixx oublié",
       "description": "Retrouver ou réinitialiser son code secret Mixx.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,

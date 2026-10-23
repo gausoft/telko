@@ -7,7 +7,7 @@
       "kind": "service",
       "name": "Pass internationaux",
       "description": "Menu des pass d'appels vers l'international.",
-      "price_xof": null,
+      "price": null,
       "allowances": null,
       "validity": null,
       "time_window": null,
@@ -45,7 +45,7 @@
       "kind": "bundle",
       "name": "Pass Filiales Voisins",
       "description": "5 min vers Moov Bénin et Moov Côte d'Ivoire, valables 1 jour.",
-      "price_xof": 400,
+      "price": 400,
       "allowances": {
         "data_mb": null,
         "voice_min": 5,
@@ -101,7 +101,7 @@
       "kind": "bundle",
       "name": "Pass Diaspora",
       "description": "5 min vers les USA, la Chine, le Liban, le Canada, le Nigeria et l'Inde, valables 1 jour.",
-      "price_xof": 300,
+      "price": 300,
       "allowances": {
         "data_mb": null,
         "voice_min": 5,

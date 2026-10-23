@@ -1,0 +1,49 @@
+{
+  "operator": "yas",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "yas-bills-menu-factures",
+      "kind": "service",
+      "name": "Paiement de factures Mixx",
+      "description": "Menu de paiement des factures avec Mixx : électricité, eau ou télévision.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*145*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "mixx"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "mixx",
+        "électricité",
+        "eau",
+        "télé"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.tg/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-18"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mixx bill payment",
+        "description": "Bill payment menu with Mixx: electricity, water or TV.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

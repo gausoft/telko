@@ -7,7 +7,7 @@
       "kind": "bundle",
       "name": "Illimités voix hebdo",
       "description": "Appels illimités vers tous les réseaux nationaux pendant 7 jours.",
-      "price_xof": 4500,
+      "price": 4500,
       "allowances": {
         "data_mb": null,
         "voice_min": -1,
@@ -62,7 +62,7 @@
       "kind": "bundle",
       "name": "Illimités voix mensuel",
       "description": "Appels illimités nationaux et 30 min vers l'international pendant 30 jours.",
-      "price_xof": 15000,
+      "price": 15000,
       "allowances": {
         "data_mb": null,
         "voice_min": -1,

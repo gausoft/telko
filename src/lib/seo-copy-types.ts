@@ -26,6 +26,9 @@ export interface SeoCopy {
   homeAlt(country: string, operators: string[]): string;
   homeCardTitle: string;
   homeCardHighlight: string;
+  /** Page of a country listed as `soon`. */
+  soonTitle(country: string): string;
+  soonDescription(country: string, operators: string[]): string;
   heading(id: SectionId, ctx: SectionCopyContext): string;
   description(id: SectionId, ctx: SectionCopyContext): string;
   moneyName(name: string, former: string | undefined): string;

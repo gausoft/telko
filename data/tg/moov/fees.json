@@ -5,9 +5,9 @@
     {
       "id": "moov-fees-retrait-1-500",
       "operation": "withdrawal",
-      "min_xof": 1,
-      "max_xof": 500,
-      "fee_xof": 50,
+      "min": 1,
+      "max": 500,
+      "fee": 50,
       "fee_percent": null,
       "label": "Retrait de 1 à 500 F : 50 F",
       "provenance": {
@@ -30,9 +30,9 @@
     {
       "id": "moov-fees-retrait-501-1000",
       "operation": "withdrawal",
-      "min_xof": 501,
-      "max_xof": 1000,
-      "fee_xof": 75,
+      "min": 501,
+      "max": 1000,
+      "fee": 75,
       "fee_percent": null,
       "label": "Retrait de 501 à 1 000 F : 75 F",
       "provenance": {
@@ -55,9 +55,9 @@
     {
       "id": "moov-fees-retrait-1001-5000",
       "operation": "withdrawal",
-      "min_xof": 1001,
-      "max_xof": 5000,
-      "fee_xof": 100,
+      "min": 1001,
+      "max": 5000,
+      "fee": 100,
       "fee_percent": null,
       "label": "Retrait de 1 001 à 5 000 F : 100 F",
       "provenance": {
@@ -80,9 +80,9 @@
     {
       "id": "moov-fees-retrait-5001-15000",
       "operation": "withdrawal",
-      "min_xof": 5001,
-      "max_xof": 15000,
-      "fee_xof": 280,
+      "min": 5001,
+      "max": 15000,
+      "fee": 280,
       "fee_percent": null,
       "label": "Retrait de 5 001 à 15 000 F : 280 F",
       "provenance": {
@@ -105,9 +105,9 @@
     {
       "id": "moov-fees-retrait-15001-20000",
       "operation": "withdrawal",
-      "min_xof": 15001,
-      "max_xof": 20000,
-      "fee_xof": 320,
+      "min": 15001,
+      "max": 20000,
+      "fee": 320,
       "fee_percent": null,
       "label": "Retrait de 15 001 à 20 000 F : 320 F",
       "provenance": {
@@ -130,9 +130,9 @@
     {
       "id": "moov-fees-retrait-20001-50000",
       "operation": "withdrawal",
-      "min_xof": 20001,
-      "max_xof": 50000,
-      "fee_xof": 600,
+      "min": 20001,
+      "max": 50000,
+      "fee": 600,
       "fee_percent": null,
       "label": "Retrait de 20 001 à 50 000 F : 600 F",
       "provenance": {
@@ -155,9 +155,9 @@
     {
       "id": "moov-fees-retrait-50001-100000",
       "operation": "withdrawal",
-      "min_xof": 50001,
-      "max_xof": 100000,
-      "fee_xof": 1000,
+      "min": 50001,
+      "max": 100000,
+      "fee": 1000,
       "fee_percent": null,
       "label": "Retrait de 50 001 à 100 000 F : 1 000 F",
       "provenance": {
@@ -180,9 +180,9 @@
     {
       "id": "moov-fees-retrait-100001-200000",
       "operation": "withdrawal",
-      "min_xof": 100001,
-      "max_xof": 200000,
-      "fee_xof": null,
+      "min": 100001,
+      "max": 200000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 100 001 à 200 000 F : entre 3 169 à 3 356 F",
       "provenance": {
@@ -206,9 +206,9 @@
     {
       "id": "moov-fees-retrait-200001-300000",
       "operation": "withdrawal",
-      "min_xof": 200001,
-      "max_xof": 300000,
-      "fee_xof": null,
+      "min": 200001,
+      "max": 300000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 200 001 à 300 000 F : entre 3 729 à 4 195 F",
       "provenance": {
@@ -232,9 +232,9 @@
     {
       "id": "moov-fees-retrait-300001-500000",
       "operation": "withdrawal",
-      "min_xof": 300001,
-      "max_xof": 500000,
-      "fee_xof": null,
+      "min": 300001,
+      "max": 500000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 300 001 à 500 000 F : entre 4 195 à 4 381 F",
       "provenance": {
@@ -258,9 +258,9 @@
     {
       "id": "moov-fees-retrait-500001-850000",
       "operation": "withdrawal",
-      "min_xof": 500001,
-      "max_xof": 850000,
-      "fee_xof": null,
+      "min": 500001,
+      "max": 850000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 500 001 à 850 000 F : entre 4 381 à 4 568 F",
       "provenance": {
@@ -284,9 +284,9 @@
     {
       "id": "moov-fees-retrait-850001-1000000",
       "operation": "withdrawal",
-      "min_xof": 850001,
-      "max_xof": 1000000,
-      "fee_xof": null,
+      "min": 850001,
+      "max": 1000000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 850 001 à 1 000 000 F : entre 4 568 à 5 407 F",
       "provenance": {
@@ -310,9 +310,9 @@
     {
       "id": "moov-fees-retrait-1000001-1500000",
       "operation": "withdrawal",
-      "min_xof": 1000001,
-      "max_xof": 1500000,
-      "fee_xof": null,
+      "min": 1000001,
+      "max": 1500000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 1 000 001 à 1 500 000 F : entre 5 407 à 8 110 F",
       "provenance": {
@@ -336,9 +336,9 @@
     {
       "id": "moov-fees-retrait-1500001-2000000",
       "operation": "withdrawal",
-      "min_xof": 1500001,
-      "max_xof": 2000000,
-      "fee_xof": null,
+      "min": 1500001,
+      "max": 2000000,
+      "fee": null,
       "fee_percent": null,
       "label": "Retrait de 1 500 001 à 2 000 000 F : entre 8 110 à 9 788 F",
       "provenance": {
@@ -362,9 +362,9 @@
     {
       "id": "moov-fees-transfert-regional-500-5000",
       "operation": "transfer-regional",
-      "min_xof": 500,
-      "max_xof": 5000,
-      "fee_xof": 200,
+      "min": 500,
+      "max": 5000,
+      "fee": 200,
       "fee_percent": null,
       "label": "Transfert international de 500 à 5 000 F : 200 F",
       "provenance": {
@@ -387,9 +387,9 @@
     {
       "id": "moov-fees-transfert-regional-5001-15000",
       "operation": "transfer-regional",
-      "min_xof": 5001,
-      "max_xof": 15000,
-      "fee_xof": 250,
+      "min": 5001,
+      "max": 15000,
+      "fee": 250,
       "fee_percent": null,
       "label": "Transfert international de 5 001 à 15 000 F : 250 F",
       "provenance": {
@@ -412,9 +412,9 @@
     {
       "id": "moov-fees-transfert-regional-15001-20000",
       "operation": "transfer-regional",
-      "min_xof": 15001,
-      "max_xof": 20000,
-      "fee_xof": 500,
+      "min": 15001,
+      "max": 20000,
+      "fee": 500,
       "fee_percent": null,
       "label": "Transfert international de 15 001 à 20 000 F : 500 F",
       "provenance": {
@@ -437,9 +437,9 @@
     {
       "id": "moov-fees-transfert-regional-20001-50000",
       "operation": "transfer-regional",
-      "min_xof": 20001,
-      "max_xof": 50000,
-      "fee_xof": 500,
+      "min": 20001,
+      "max": 50000,
+      "fee": 500,
       "fee_percent": null,
       "label": "Transfert international de 20 001 à 50 000 F : 500 F",
       "provenance": {
@@ -462,9 +462,9 @@
     {
       "id": "moov-fees-transfert-regional-50001-100000",
       "operation": "transfer-regional",
-      "min_xof": 50001,
-      "max_xof": 100000,
-      "fee_xof": 1000,
+      "min": 50001,
+      "max": 100000,
+      "fee": 1000,
       "fee_percent": null,
       "label": "Transfert international de 50 001 à 100 000 F : 1 000 F",
       "provenance": {
@@ -487,9 +487,9 @@
     {
       "id": "moov-fees-transfert-regional-100001-200000",
       "operation": "transfer-regional",
-      "min_xof": 100001,
-      "max_xof": 200000,
-      "fee_xof": 1500,
+      "min": 100001,
+      "max": 200000,
+      "fee": 1500,
       "fee_percent": null,
       "label": "Transfert international de 100 001 à 200 000 F : 1 500 F",
       "provenance": {
@@ -512,9 +512,9 @@
     {
       "id": "moov-fees-transfert-regional-200001-300000",
       "operation": "transfer-regional",
-      "min_xof": 200001,
-      "max_xof": 300000,
-      "fee_xof": 2000,
+      "min": 200001,
+      "max": 300000,
+      "fee": 2000,
       "fee_percent": null,
       "label": "Transfert international de 200 001 à 300 000 F : 2 000 F",
       "provenance": {
@@ -537,9 +537,9 @@
     {
       "id": "moov-fees-transfert-regional-300001-500000",
       "operation": "transfer-regional",
-      "min_xof": 300001,
-      "max_xof": 500000,
-      "fee_xof": 2500,
+      "min": 300001,
+      "max": 500000,
+      "fee": 2500,
       "fee_percent": null,
       "label": "Transfert international de 300 001 à 500 000 F : 2 500 F",
       "provenance": {
@@ -562,9 +562,9 @@
     {
       "id": "moov-fees-transfert-regional-500001-850000",
       "operation": "transfer-regional",
-      "min_xof": 500001,
-      "max_xof": 850000,
-      "fee_xof": 2500,
+      "min": 500001,
+      "max": 850000,
+      "fee": 2500,
       "fee_percent": null,
       "label": "Transfert international de 500 001 à 850 000 F : 2 500 F",
       "provenance": {
@@ -587,9 +587,9 @@
     {
       "id": "moov-fees-transfert-regional-850001-1000000",
       "operation": "transfer-regional",
-      "min_xof": 850001,
-      "max_xof": 1000000,
-      "fee_xof": 3000,
+      "min": 850001,
+      "max": 1000000,
+      "fee": 3000,
       "fee_percent": null,
       "label": "Transfert international de 850 001 à 1 000 000 F : 3 000 F",
       "provenance": {
@@ -612,9 +612,9 @@
     {
       "id": "moov-fees-transfert-regional-1000001-1500000",
       "operation": "transfer-regional",
-      "min_xof": 1000001,
-      "max_xof": 1500000,
-      "fee_xof": 3500,
+      "min": 1000001,
+      "max": 1500000,
+      "fee": 3500,
       "fee_percent": null,
       "label": "Transfert international de 1 000 001 à 1 500 000 F : 3 500 F",
       "provenance": {
@@ -637,9 +637,9 @@
     {
       "id": "moov-fees-transfert-regional-1500001-2000000",
       "operation": "transfer-regional",
-      "min_xof": 1500001,
-      "max_xof": 2000000,
-      "fee_xof": 3500,
+      "min": 1500001,
+      "max": 2000000,
+      "fee": 3500,
       "fee_percent": null,
       "label": "Transfert international de 1 500 001 à 2 000 000 F : 3 500 F",
       "provenance": {
@@ -662,9 +662,9 @@
     {
       "id": "moov-fees-transfert-national",
       "operation": "transfer-national",
-      "min_xof": 1,
-      "max_xof": null,
-      "fee_xof": null,
+      "min": 1,
+      "max": null,
+      "fee": null,
       "fee_percent": null,
       "label": "Transfert national : gratuit jusqu'au 3e transfert",
       "provenance": {
@@ -693,9 +693,9 @@
     {
       "id": "moov-fees-transfert-autre-reseau",
       "operation": "transfer-cross-network",
-      "min_xof": 1,
-      "max_xof": null,
-      "fee_xof": null,
+      "min": 1,
+      "max": null,
+      "fee": null,
       "fee_percent": null,
       "label": "Transfert vers un autre réseau : frais non publiés",
       "provenance": {
@@ -729,9 +729,9 @@
     {
       "id": "moov-fees-banque-orabank-1-5000",
       "operation": "other",
-      "min_xof": 1,
-      "max_xof": 5000,
-      "fee_xof": 47,
+      "min": 1,
+      "max": 5000,
+      "fee": 47,
       "fee_percent": null,
       "label": "Moov Money vers Orabank jusqu'à 5 000 F : environ 47 F",
       "provenance": {
@@ -755,9 +755,9 @@
     {
       "id": "moov-fees-banque-orabank-5001-500000",
       "operation": "other",
-      "min_xof": 5001,
-      "max_xof": 500000,
-      "fee_xof": 280,
+      "min": 5001,
+      "max": 500000,
+      "fee": 280,
       "fee_percent": null,
       "label": "Moov Money vers Orabank jusqu'à 500 000 F : 280 F",
       "provenance": {
@@ -781,9 +781,9 @@
     {
       "id": "moov-fees-pispi-national-gratuit",
       "operation": "transfer-cross-network",
-      "min_xof": 1,
-      "max_xof": 8000,
-      "fee_xof": 0,
+      "min": 1,
+      "max": 8000,
+      "fee": 0,
       "fee_percent": null,
       "label": "Moov Money vers un autre opérateur, jusqu'à 8 000 F cumulés par jour : gratuit (dès le 02/11/2026)",
       "provenance": {
@@ -807,9 +807,9 @@
     {
       "id": "moov-fees-pispi-national-au-dela",
       "operation": "transfer-cross-network",
-      "min_xof": 8001,
-      "max_xof": null,
-      "fee_xof": null,
+      "min": 8001,
+      "max": null,
+      "fee": null,
       "fee_percent": null,
       "label": "Moov Money vers un autre opérateur, au-delà de 8 000 F par jour : 0 à 0,8 % hors taxes (dès le 02/11/2026)",
       "provenance": {
