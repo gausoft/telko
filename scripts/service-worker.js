@@ -14,6 +14,8 @@ const PAGES_CACHE = 'telko-pages';
 const PREVIOUS_ASSETS_CACHE = 'telko-assets';
 /** Requests carrying this header always go to the network: the app is refreshing its saved pages. */
 const REFRESH_HEADER = 'X-Telko-Refresh';
+/** How long a page waits for the network before the saved copy is shown: slow networks still get an answer. */
+const NETWORK_TIMEOUT_MS = 3000;
 
 sw.addEventListener('install', (event) => {
   event.waitUntil(
@@ -44,7 +46,7 @@ sw.addEventListener('fetch', (event) => {
   if (request.method !== 'GET' || url.origin !== sw.location.origin) return;
   if (url.pathname.startsWith('/offline/') || request.headers.has(REFRESH_HEADER)) return;
 
-  event.respondWith(request.mode === 'navigate' ? serveSavedPageThenRevalidate(event, url) : serveSavedFileOrFetch(event, url));
+  event.respondWith(request.mode === 'navigate' ? servePageFromNetworkFirst(event, url) : serveSavedFileOrFetch(event, url));
 });
 
 /** Old shell files move to the previous-assets cache before their cache is deleted. */
@@ -64,28 +66,41 @@ async function keepPreviousShells() {
 }
 
 /**
+ * Online, a page always comes from the network, so a new deploy shows on the next visit. The saved
+ * copy is shown offline, or when the network has not answered in time; a late answer is still saved.
  * @param {FetchEvent} event
  * @param {URL} url
  */
-async function serveSavedPageThenRevalidate(event, url) {
+async function servePageFromNetworkFirst(event, url) {
   const key = toPath(url.pathname);
-  const cached = await caches.match(key, { ignoreSearch: true });
-  const refresh = fetch(event.request)
+  const network = fetch(event.request)
     .then((response) => {
       if (response.ok && !response.redirected && response.type === 'basic') save(event, PAGES_CACHE, key, response.clone());
 
       return response;
     })
     .catch(() => null);
+  event.waitUntil(network);
 
-  if (cached) {
-    event.waitUntil(refresh);
-    return cached;
-  }
+  const fresh = await Promise.race([network, wait(NETWORK_TIMEOUT_MS)]);
+  if (fresh?.ok) return fresh;
+
+  // A server error is worth less than the saved copy, a missing page more than the offline notice.
+  const cached = await caches.match(key, { ignoreSearch: true });
+  if (cached) return cached;
 
   const lang = isEnglish(url.pathname) ? 'en' : 'fr';
 
-  return (await refresh) ?? (await savedCountryHome(lang)) ?? offlinePage(lang);
+  return fresh ?? (await network) ?? (await savedCountryHome(lang)) ?? offlinePage(lang);
+}
+
+/**
+ * Resolves with nothing once the delay is over.
+ * @param {number} ms
+ * @returns {Promise<null>}
+ */
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(() => resolve(null), ms));
 }
 
 /**

@@ -13,6 +13,8 @@ Telko works without a connection once a device has visited it online.
 
 Pages of operators the visitor did not choose are never downloaded in advance; one opened online is kept.
 
+Online, a page always comes from the network, so a new deploy shows on the next visit or refresh. The saved copy is shown offline, or when the network has not answered within 3 seconds.
+
 ## Files
 
 - `scripts/service-worker.js`: the service worker. `scripts/build-sw.mjs` injects the shell list after `astro build`.
