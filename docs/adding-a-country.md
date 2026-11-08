@@ -67,6 +67,8 @@ Rules that apply to every file:
 npm run verify   # types, data checks, unit tests, production build
 ```
 
+To browse a `soon` country in the app before it goes live, start the dev server with `TELKO_PREVIEW_COUNTRIES=1 npm run dev`. Every `soon` country that has a folder then shows as live, on your machine only. Never set it for a build that is published.
+
 ## 7. Go live
 
 In the same pull request, switch the country to `"status": "live"` in `data/countries.json`. From then on the app builds its operator and section pages, its share images, and lists it in the sitemap and in search.

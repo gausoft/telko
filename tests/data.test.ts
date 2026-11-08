@@ -121,6 +121,23 @@ describe('data rules', () => {
     expect(() => loadCatalog(files)).toThrow(/either fee or fee_percent/);
   });
 
+  it('previews a soon country that has data, and only then', () => {
+    const benin = { ...country, code: 'bj', status: 'soon' };
+    const mali = { ...country, code: 'ml', status: 'soon' };
+    const files = {
+      ...base,
+      '/data/countries.json': { countries: [country, benin, mali] },
+      '/data/bj/operators.json': { country: 'bj', operators: [] },
+    };
+
+    expect(loadCatalog(files, new Date(), false).byCountry.has('bj')).toBe(false);
+
+    const previewed = loadCatalog(files, new Date(), true);
+
+    expect([...previewed.byCountry.keys()]).toEqual(['tg', 'bj']);
+    expect(previewed.countries.find((c) => c.code === 'ml')?.status).toBe('soon');
+  });
+
   it('reads a country in its own currency', () => {
     const ghana = { ...country, code: 'gh', name: 'Ghana', dial_code: '233', currency: 'GHS', amount_label: 'GH₵' };
     const files = {

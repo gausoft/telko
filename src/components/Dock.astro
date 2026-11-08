@@ -104,7 +104,8 @@ const [home, internet, money, settings] = items;
     margin: 0 auto;
     padding: var(--space-1) var(--space-2) calc(var(--space-1) + env(safe-area-inset-bottom, 0px));
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /* The mobile money column gets more room: "Orange Money" is the longest label of the dock. */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 64px minmax(0, 1.4fr) minmax(0, 1fr);
     align-items: end;
     background: var(--dock);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -120,8 +121,12 @@ const [home, internet, money, settings] = items;
     gap: 3px;
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 11px;
+    font-size: min(11px, 3.1vw);
     font-weight: 700;
+  }
+
+  a > span {
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
