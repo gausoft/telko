@@ -1,0 +1,652 @@
+{
+  "operator": "moov",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "moov-mobile-money-menu-moov-money",
+      "kind": "service",
+      "name": "Menu Moov Money",
+      "description": "Menu principal du mobile money Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "menu",
+        "mobile money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu.",
+      "en": {
+        "name": "Moov Money menu",
+        "description": "Main menu of Moov Money mobile money.",
+        "notes": "The PIN is typed in the menu."
+      }
+    },
+    {
+      "id": "moov-mobile-money-menu-transfert",
+      "kind": "service",
+      "name": "Menu transfert d'argent",
+      "description": "Envoyer de l'argent à un abonné Moov ou d'un autre réseau.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "transfert",
+        "envoyer"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Bénéficiaire, montant et code secret se saisissent dans le menu.",
+      "en": {
+        "name": "Money transfer menu",
+        "description": "Send money to a Moov subscriber or to another network.",
+        "notes": "Recipient, amount and PIN are typed in the menu."
+      }
+    },
+    {
+      "id": "moov-mobile-money-transfert-autre-reseau",
+      "kind": "service",
+      "name": "Transfert vers un autre réseau",
+      "description": "Envoyer de l'argent à un abonné d'un autre réseau, qui le retire chez un agent.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "transfert",
+        "autre réseau"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prénom et nom du destinataire, numéro, montant et code secret se saisissent dans le menu. Frais de retrait à la charge du destinataire, voir les frais.",
+      "en": {
+        "name": "Transfer to another network",
+        "description": "Send money to a subscriber of another network, who withdraws it at an agent.",
+        "notes": "Recipient first and last name, number, amount and PIN are typed in the menu. Withdrawal fees apply, see the fees."
+      }
+    },
+    {
+      "id": "moov-mobile-money-retrait-gab-uba",
+      "kind": "service",
+      "name": "Retrait au distributeur UBA",
+      "description": "Générer un code pour retirer de l'argent à un distributeur UBA.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*2*1*3*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "retrait",
+        "uba",
+        "distributeur"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Choisir « Retrait au GAB » dans le menu, puis saisir le code reçu au distributeur.",
+      "en": {
+        "name": "UBA ATM withdrawal",
+        "description": "Generate a code to withdraw cash at a UBA ATM.",
+        "notes": "Choose \"Retrait au GAB\" in the menu, then enter the code you receive at the ATM."
+      }
+    },
+    {
+      "id": "moov-mobile-money-achat-credit-soi",
+      "kind": "service",
+      "name": "Acheter du crédit pour soi",
+      "description": "Recharger son crédit depuis Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*3*1*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "crédit",
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/achat-de-credit-et-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit ensuite dans le menu.",
+      "en": {
+        "name": "Buy airtime for yourself",
+        "description": "Top up your airtime from Moov Money.",
+        "notes": "The PIN is typed afterwards in the menu."
+      }
+    },
+    {
+      "id": "moov-mobile-money-achat-credit-tiers",
+      "kind": "service",
+      "name": "Acheter du crédit pour un proche",
+      "description": "Recharger le crédit d'un autre abonné Moov depuis Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*3*1*2*{phone}*{amount}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du bénéficiaire",
+            "required": true,
+            "en": {
+              "label": "Recipient number"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "crédit",
+        "recharge",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/achat-de-credit-et-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit ensuite dans le menu.",
+      "en": {
+        "name": "Buy airtime for someone else",
+        "description": "Top up another Moov subscriber's airtime from Moov Money.",
+        "notes": "The PIN is typed afterwards in the menu."
+      }
+    },
+    {
+      "id": "moov-mobile-money-achat-forfait",
+      "kind": "service",
+      "name": "Acheter un forfait avec Moov Money",
+      "description": "Activer un forfait en payant avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "forfait",
+        "achat"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/achat-de-credit-et-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Buy a bundle with Moov Money",
+        "description": "Activate a bundle by paying with Moov Money.",
+        "notes": "You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-kwabo",
+      "kind": "service",
+      "name": "Pack KWABO",
+      "description": "Activer un Pack KWABO : transferts, code SBEE et transferts sous-régionaux offerts pendant 30 jours.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "kwabo",
+        "pack",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-kwabo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offert aux nouveaux abonnés pendant 30 jours. La page ne donne pas de prix d'achat.",
+      "en": {
+        "name": "KWABO pack",
+        "description": "Activate a KWABO pack: transfers, SBEE codes and sub-regional transfers free for 30 days.",
+        "notes": "Free for new subscribers for 30 days. The page gives no purchase price."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-saphir",
+      "kind": "bundle",
+      "name": "Pack Moov Money Saphir",
+      "description": "7 transferts entre clients et 3 retraits jusqu'à 10 000 F offerts pendant 30 jours.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "saphir"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Saphir pack",
+        "description": "7 transfers between customers and 3 withdrawals up to 10,000 F free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-bronze",
+      "kind": "bundle",
+      "name": "Pack Moov Money Bronze",
+      "description": "25 transferts, 3 retraits jusqu'à 20 000 F, 1 facture SBEE postpayée et 3 codes SBEE prépayés offerts pendant 30 jours.",
+      "price": 999,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "bronze"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Bronze pack",
+        "description": "25 transfers, 3 withdrawals up to 20,000 F, 1 postpaid SBEE bill and 3 prepaid SBEE codes free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-argent",
+      "kind": "bundle",
+      "name": "Pack Moov Money Argent",
+      "description": "10 transferts, 3 retraits jusqu'à 20 000 F et 3 transferts internationaux offerts pendant 30 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "argent"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Argent pack",
+        "description": "10 transfers, 3 withdrawals up to 20,000 F and 3 international transfers free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-or",
+      "kind": "bundle",
+      "name": "Pack Moov Money Or",
+      "description": "30 transferts, 3 retraits jusqu'à 50 000 F, 2 factures SBEE postpayées, 3 codes SBEE prépayés et 4 transferts internationaux offerts pendant 30 jours.",
+      "price": 1500,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "or"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Or pack",
+        "description": "30 transfers, 3 withdrawals up to 50,000 F, 2 postpaid SBEE bills, 3 prepaid SBEE codes and 4 international transfers free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-platinium",
+      "kind": "bundle",
+      "name": "Pack Moov Money Platinium",
+      "description": "30 transferts, 4 retraits jusqu'à 50 000 F, 2 factures SBEE postpayées, 5 codes SBEE prépayés et 5 transferts internationaux offerts pendant 30 jours.",
+      "price": 2000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "platinium"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Platinium pack",
+        "description": "30 transfers, 4 withdrawals up to 50,000 F, 2 postpaid SBEE bills, 5 prepaid SBEE codes and 5 international transfers free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    },
+    {
+      "id": "moov-mobile-money-pack-diamant",
+      "kind": "bundle",
+      "name": "Pack Moov Money Diamant",
+      "description": "30 transferts, 7 retraits jusqu'à 100 000 F, 5 transferts internationaux et 7 paiements de facture SBEE offerts pendant 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*855*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "pack",
+        "moov money",
+        "diamant"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/les-packs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le pack se choisit dans le menu d'activation. Un client ne peut pas cumuler deux formules différentes ; les avantages non utilisés sont perdus à l'expiration.",
+      "en": {
+        "name": "Moov Money Diamant pack",
+        "description": "30 transfers, 7 withdrawals up to 100,000 F, 5 international transfers and 7 SBEE bill payments free for 30 days.",
+        "notes": "You pick the pack in the activation menu. A customer cannot combine two different packs; unused benefits are lost on expiry."
+      }
+    }
+  ]
+}

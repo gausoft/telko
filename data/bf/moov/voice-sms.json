@@ -1,0 +1,663 @@
+{
+  "operator": "moov",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "moov-voice-sms-10min",
+      "kind": "bundle",
+      "name": "10 min",
+      "description": "10 minutes d'appel pendant 24 h.",
+      "price": 105,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*10#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "10 min",
+        "description": "10 minutes of calls for 24 hours."
+      }
+    },
+    {
+      "id": "moov-voice-sms-sms-10",
+      "kind": "bundle",
+      "name": "10 SMS",
+      "description": "10 SMS pendant 24 h.",
+      "price": 11,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 10
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*210#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "10 SMS",
+        "description": "10 SMS for 24 hours."
+      }
+    },
+    {
+      "id": "moov-voice-sms-sms-50",
+      "kind": "bundle",
+      "name": "50 SMS",
+      "description": "50 SMS.",
+      "price": 27,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 50
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*125#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "50 SMS",
+        "description": "50 SMS.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-voice-sms-sms-100",
+      "kind": "bundle",
+      "name": "100 SMS",
+      "description": "100 SMS pendant 2 jours.",
+      "price": 53,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 100
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*150#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "100 SMS",
+        "description": "100 SMS for 2 days."
+      }
+    },
+    {
+      "id": "moov-voice-sms-sms-200",
+      "kind": "bundle",
+      "name": "200 SMS",
+      "description": "200 SMS pendant 3 jours.",
+      "price": 105,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 200
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "200 SMS",
+        "description": "200 SMS for 3 days."
+      }
+    },
+    {
+      "id": "moov-voice-sms-nuit-60min",
+      "kind": "bundle",
+      "name": "60 min de nuit",
+      "description": "60 minutes utilisables de 23h à 5h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 nuit",
+        "en": {
+          "label": "1 night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*146*300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "60 min de nuit",
+        "description": "60 minutes usable from 23:00 to 05:00."
+      }
+    },
+    {
+      "id": "moov-voice-sms-20min",
+      "kind": "service",
+      "name": "Minutes vers Moov Côte d'Ivoire et Mali",
+      "description": "Minutes vers Moov Côte d'Ivoire et Mali pendant 2 jours.",
+      "price": 315,
+      "allowances": null,
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*20#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue donne 40 min dans le nom et 20 min dans la description : volume laissé vide.",
+      "en": {
+        "name": "Minutes vers Moov Côte d'Ivoire et Mali",
+        "description": "Minutes to Moov Cote d'Ivoire and Mali for 2 days.",
+        "notes": "The catalogue says 40 min in the name and 20 min in the description: volume left empty."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-1h",
+      "kind": "bundle",
+      "name": "Pass 1 h",
+      "description": "1 heure de communication pendant 7 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*609#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Nature exacte de l'offre non détaillée dans le catalogue.",
+      "en": {
+        "name": "Pass 1 h",
+        "description": "1 hour of calls for 7 days.",
+        "notes": "Exact nature of the offer not detailed in the catalogue."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-2h",
+      "kind": "bundle",
+      "name": "Pass 2 h",
+      "description": "2 heures de communication pendant 7 jours.",
+      "price": 1550,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 120,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*602#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Nature exacte de l'offre non détaillée dans le catalogue.",
+      "en": {
+        "name": "Pass 2 h",
+        "description": "2 hours of calls for 7 days.",
+        "notes": "Exact nature of the offer not detailed in the catalogue."
+      }
+    },
+    {
+      "id": "moov-voice-sms-numero-chic-jour",
+      "kind": "service",
+      "name": "Numéro chic 1 jour",
+      "description": "Appels illimités vers un numéro de votre choix pendant 1 jour.",
+      "price": 315,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*2*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix par numéro.",
+      "en": {
+        "name": "Numéro chic 1 jour",
+        "description": "Unlimited calls to a number of your choice for 1 day.",
+        "notes": "Price per number."
+      }
+    },
+    {
+      "id": "moov-voice-sms-numero-chic-semaine",
+      "kind": "service",
+      "name": "Numéro chic 7 jours",
+      "description": "Appels illimités vers un numéro de votre choix pendant 7 jours.",
+      "price": 1575,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*7*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix par numéro.",
+      "en": {
+        "name": "Numéro chic 7 jours",
+        "description": "Unlimited calls to a number of your choice for 7 days.",
+        "notes": "Price per number."
+      }
+    },
+    {
+      "id": "moov-voice-sms-numero-chic-mois",
+      "kind": "service",
+      "name": "Numéro chic 30 jours",
+      "description": "Appels illimités vers un numéro de votre choix pendant 30 jours.",
+      "price": 5250,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*9*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix par numéro.",
+      "en": {
+        "name": "Numéro chic 30 jours",
+        "description": "Unlimited calls to a number of your choice for 30 days.",
+        "notes": "Price per number."
+      }
+    },
+    {
+      "id": "moov-voice-sms-numero-favori",
+      "kind": "service",
+      "name": "Numéro favori",
+      "description": "Appels à 1 F la seconde vers votre numéro favori.",
+      "price": 53,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*125*3*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro favori",
+            "required": true,
+            "en": {
+              "label": "Favourite number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Numéro favori",
+        "description": "Calls at 1 F per second to your favourite number."
+      }
+    }
+  ]
+}

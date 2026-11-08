@@ -1,0 +1,49 @@
+{
+  "operator": "telecel",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "telecel-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Telecel Money",
+      "description": "Ouvrir le menu Telecel Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*808#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "telecel money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://burkina24.com/?p=391112",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue officiel donne le service 808 en code *808#. Aucun frais publié.",
+      "en": {
+        "name": "Menu Telecel Money",
+        "description": "Open the Telecel Money menu.",
+        "notes": "The official catalogue lists service 808 with code *808#. No fees published."
+      }
+    }
+  ]
+}

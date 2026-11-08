@@ -1,0 +1,88 @@
+{
+  "operator": "airtel",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "airtel-mobile-money-menu-airtel-money",
+      "kind": "service",
+      "name": "Menu Airtel Money",
+      "description": "Menu principal d'Airtel Money : factures, transferts, recharge de crédit et plus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*436#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtel-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "airtel money",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelmoney_ne/status/1752663055408746587",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu. Code menu : le reste se choisit à l'écran.",
+      "en": {
+        "name": "Airtel Money menu",
+        "description": "Main Airtel Money menu: bills, transfers, airtime top-up and more.",
+        "notes": "The PIN is typed in the menu. Menu code: you choose the rest on screen."
+      }
+    },
+    {
+      "id": "airtel-mobile-money-transfert-international",
+      "kind": "service",
+      "name": "Transfert d'argent à l'international",
+      "description": "Envoyer de l'argent vers Moov Bénin, Orange Burkina, Orange et Free Sénégal, Moov et MTN Côte d'Ivoire.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*436*1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtel-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "airtel money",
+        "transfert",
+        "international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelmoney_ne/status/1900562591815962899",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Réseaux de destination cités dans un message de mars 2025 : la liste a pu changer. Frais non publiés dans la source.",
+      "en": {
+        "name": "International money transfer",
+        "description": "Send money to Moov Benin, Orange Burkina, Orange and Free Senegal, Moov and MTN Côte d'Ivoire.",
+        "notes": "Destination networks quoted in a March 2025 post: the list may have changed. Fees not published in the source."
+      }
+    }
+  ]
+}

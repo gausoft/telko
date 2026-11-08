@@ -1,0 +1,46 @@
+{
+  "operator": "yas",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "yas-bills-factures-mixx",
+      "kind": "service",
+      "name": "Payer une facture avec Mixx",
+      "description": "Paiement des factures Senelec et SEN'EAU depuis le menu Mixx by Yas.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#150#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "senelec",
+        "sen'eau",
+        "mixx"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pay a bill with Mixx",
+        "description": "Pay Senelec and SEN'EAU bills from the Mixx by Yas menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "operator": "mtn",
+  "category": "general",
+  "entries": [
+    {
+      "id": "mtn-general-menu-offres",
+      "kind": "service",
+      "name": "Menu des offres MTN",
+      "description": "Activer, résilier ou vérifier un forfait internet, voix ou mixte.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "forfait",
+        "activation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code sert à activer, résilier et vérifier le statut d'un forfait : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "MTN offers menu",
+        "description": "Activate, cancel or check an internet, voice or mixed bundle.",
+        "notes": "The same code activates, cancels and checks the status of a bundle: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-general-menu-internet",
+      "kind": "service",
+      "name": "Menu forfaits internet",
+      "description": "Activer, résilier ou vérifier un forfait internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "internet",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code publié pour les forfaits internet : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundles menu",
+        "description": "Activate, cancel or check an internet bundle.",
+        "notes": "Code published for internet bundles: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-general-menu-maxi",
+      "kind": "service",
+      "name": "Menu forfaits Maxi",
+      "description": "Activer, résilier ou vérifier un forfait Maxi ou Maxi Appel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "maxi",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Maxi bundles menu",
+        "description": "Activate, cancel or check a Maxi or Maxi Appel bundle.",
+        "notes": "You choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

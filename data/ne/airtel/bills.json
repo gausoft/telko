@@ -1,0 +1,48 @@
+{
+  "operator": "airtel",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "airtel-bills-nigelec-compteur-prepaye",
+      "kind": "service",
+      "name": "Recharge compteur prépayé NIGELEC",
+      "description": "Recharger votre compteur d'électricité prépayé NIGELEC avec Airtel Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*436*4*1*2*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtel-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "électricité",
+        "nigelec",
+        "airtel money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelmoney_ne/status/1818300565929005341",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source : message de juillet 2024 du compte officiel Airtel Money Niger. Le compteur et le montant se saisissent dans le menu.",
+      "en": {
+        "name": "NIGELEC prepaid meter top-up",
+        "description": "Top up your NIGELEC prepaid electricity meter with Airtel Money.",
+        "notes": "Source: July 2024 post of the official Airtel Money Niger account. The meter and amount are typed in the menu."
+      }
+    }
+  ]
+}

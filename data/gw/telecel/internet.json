@@ -1,0 +1,104 @@
+{
+  "operator": "telecel",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "telecel-internet-140-megas",
+      "kind": "bundle",
+      "name": "Internet 140 Mo",
+      "description": "Internet 140 Mo, valable 1 jour.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*638#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page affiche 70 Mo, avec 140 Mo en payant par TeleTaku : volume exact à confirmer. Code du menu internet.",
+      "en": {
+        "name": "Internet 140 MB",
+        "description": "Internet 140 MB, valid 1 day.",
+        "notes": "The page shows 70 MB, with 140 MB when paying with TeleTaku: exact volume to be confirmed. Internet menu code."
+      }
+    },
+    {
+      "id": "telecel-internet-650-megas",
+      "kind": "bundle",
+      "name": "Internet 650 Mo",
+      "description": "Internet 650 Mo, valable 1 jour.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*638#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page affiche 220 Mo, avec 650 Mo en payant par TeleTaku : volume exact à confirmer. Code du menu internet.",
+      "en": {
+        "name": "Internet 650 MB",
+        "description": "Internet 650 MB, valid 1 day.",
+        "notes": "The page shows 220 MB, with 650 MB when paying with TeleTaku: exact volume to be confirmed. Internet menu code."
+      }
+    }
+  ]
+}

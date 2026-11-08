@@ -1,0 +1,617 @@
+{
+  "operator": "zamani",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "zamani-voice-sms-zam-50",
+      "kind": "bundle",
+      "name": "Forfait Zam 50 F",
+      "description": "15 min d'appel, 24 h.",
+      "price": 50,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#216#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 50 F",
+        "description": "15 min of calls, 24 h."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-zam-100",
+      "kind": "bundle",
+      "name": "Forfait Zam 100 F",
+      "description": "25 min d'appel et 25 SMS, 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 25,
+        "sms": 25
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 100 F",
+        "description": "25 min of calls and 25 SMS, 24 h."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-zam-200",
+      "kind": "bundle",
+      "name": "Forfait Zam 200 F",
+      "description": "50 min d'appel et 50 SMS, 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#212#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 200 F",
+        "description": "50 min of calls and 50 SMS, 24 h."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-zam-500",
+      "kind": "bundle",
+      "name": "Forfait Zam 500 F",
+      "description": "150 min d'appel et 150 SMS, 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 150,
+        "sms": 150
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#213#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 500 F",
+        "description": "150 min of calls and 150 SMS, 3 days."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-zam-1500",
+      "kind": "bundle",
+      "name": "Forfait Zam 1 500 F",
+      "description": "500 min d'appel, 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 500,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#214#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 1 500 F",
+        "description": "500 min of calls, 7 days."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-zam-5000",
+      "kind": "bundle",
+      "name": "Forfait Zam 5 000 F",
+      "description": "1 200 min d'appel et 1 200 SMS, 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 1200,
+        "sms": 1200
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#215#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "zam",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Zam bundle 5 000 F",
+        "description": "1,200 min of calls and 1,200 SMS, 30 days."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-50",
+      "kind": "bundle",
+      "name": "Forfait 50F TR (Albarka tous réseaux)",
+      "description": "7 min tous réseaux et 10 SMS, 24 h.",
+      "price": 50,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 7,
+        "sms": 10
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#224#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "50F TR bundle (Albarka all networks)",
+        "description": "7 min to all networks and 10 SMS, 24 h."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-100",
+      "kind": "bundle",
+      "name": "Forfait 100F TR (Albarka tous réseaux)",
+      "description": "20 min d'appel dont 10 min tous réseaux, et 20 SMS, 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#225#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes tous réseaux sont comprises dans le total d'appels.",
+      "en": {
+        "name": "100F TR bundle (Albarka all networks)",
+        "description": "20 min of calls including 10 min to all networks, and 20 SMS, 24 h.",
+        "notes": "The all-network minutes are part of the total call minutes."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-200",
+      "kind": "bundle",
+      "name": "Forfait 200F TR (Albarka tous réseaux)",
+      "description": "50 min d'appel dont 25 min tous réseaux, et 50 SMS, 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#226#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes tous réseaux sont comprises dans le total d'appels.",
+      "en": {
+        "name": "200F TR bundle (Albarka all networks)",
+        "description": "50 min of calls including 25 min to all networks, and 50 SMS, 24 h.",
+        "notes": "The all-network minutes are part of the total call minutes."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-300",
+      "kind": "bundle",
+      "name": "Forfait 300 TR (Albarka tous réseaux)",
+      "description": "65 min d'appel dont 50 min tous réseaux, et 50 SMS, 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 65,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#221#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes tous réseaux sont comprises dans le total d'appels.",
+      "en": {
+        "name": "300 TR bundle (Albarka all networks)",
+        "description": "65 min of calls including 50 min to all networks, and 50 SMS, 24 h.",
+        "notes": "The all-network minutes are part of the total call minutes."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-500",
+      "kind": "bundle",
+      "name": "Forfait 500F TR (Albarka tous réseaux)",
+      "description": "100 min d'appel dont 60 min tous réseaux, et 100 SMS, 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 100,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#222#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes tous réseaux sont comprises dans le total d'appels.",
+      "en": {
+        "name": "500F TR bundle (Albarka all networks)",
+        "description": "100 min of calls including 60 min to all networks, and 100 SMS, 7 days.",
+        "notes": "The all-network minutes are part of the total call minutes."
+      }
+    },
+    {
+      "id": "zamani-voice-sms-albarka-tous-reseaux-1000",
+      "kind": "bundle",
+      "name": "Forfait 1000F TR (Albarka tous réseaux)",
+      "description": "250 min d'appel dont 200 min tous réseaux, et 200 SMS, 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 250,
+        "sms": 200
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#223#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka",
+        "tous réseaux",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes tous réseaux sont comprises dans le total d'appels.",
+      "en": {
+        "name": "1000F TR bundle (Albarka all networks)",
+        "description": "250 min of calls including 200 min to all networks, and 200 SMS, 7 days.",
+        "notes": "The all-network minutes are part of the total call minutes."
+      }
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "operator": "orange",
+  "category": "international",
+  "entries": [
+    {
+      "id": "orange-international-pass-intl-5",
+      "kind": "bundle",
+      "name": "Pass International 5 + 5 min",
+      "description": "5 min vers Orange Côte d'Ivoire et Orange France, plus 5 min nationales, 2 jours.",
+      "price": 263,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International 5 + 5 min",
+        "description": "5 min to Orange Cote d'Ivoire and Orange France, plus 5 national minutes, 2 days."
+      }
+    },
+    {
+      "id": "orange-international-pass-intl-10",
+      "kind": "bundle",
+      "name": "Pass International 10 + 10 min",
+      "description": "10 min vers Orange Côte d'Ivoire et Orange France, plus 10 min nationales, 3 jours.",
+      "price": 552,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International 10 + 10 min",
+        "description": "10 min to Orange Cote d'Ivoire and Orange France, plus 10 national minutes, 3 days."
+      }
+    },
+    {
+      "id": "orange-international-pass-intl-20",
+      "kind": "bundle",
+      "name": "Pass International 20 + 20 min",
+      "description": "20 min vers Orange Côte d'Ivoire et Orange France, plus 20 min nationales, 7 jours.",
+      "price": 1077,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 40,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International 20 + 20 min",
+        "description": "20 min to Orange Cote d'Ivoire and Orange France, plus 20 national minutes, 7 days."
+      }
+    },
+    {
+      "id": "orange-international-pass-intl-orange-5",
+      "kind": "bundle",
+      "name": "Pass International 5 min Orange",
+      "description": "5 min vers Orange Côte d'Ivoire, France, Libéria et Sénégal, 3 jours.",
+      "price": 525,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue abrège les pays en OCI, OFR, OLIB, OSEN ; lecture à confirmer (OLIB lu comme Libéria).",
+      "en": {
+        "name": "Pass International 5 min Orange",
+        "description": "5 min to Orange Cote d'Ivoire, France, Liberia and Senegal, 3 days.",
+        "notes": "The catalogue abbreviates countries as OCI, OFR, OLIB, OSEN; reading to be confirmed (OLIB read as Liberia)."
+      }
+    },
+    {
+      "id": "orange-international-pass-intl-20min",
+      "kind": "bundle",
+      "name": "Pass International 20 min",
+      "description": "20 min vers la France, la Côte d'Ivoire, les États-Unis et le Canada, 3 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*4*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International 20 min",
+        "description": "20 min to France, Cote d'Ivoire, USA and Canada, 3 days."
+      }
+    },
+    {
+      "id": "orange-international-pass-intl-10min",
+      "kind": "bundle",
+      "name": "Pass International 10 min",
+      "description": "10 min vers l'Italie, le Ghana, le Niger, le Togo et le Bénin, 3 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*3*4*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International 10 min",
+        "description": "10 min to Italy, Ghana, Niger, Togo and Benin, 3 days."
+      }
+    },
+    {
+      "id": "orange-international-pass-sahel",
+      "kind": "bundle",
+      "name": "Pass International Sahel",
+      "description": "10 min vers le Mali et le Niger, 3 jours.",
+      "price": 900,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*152*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix",
+        "sahel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass International Sahel",
+        "description": "10 min to Mali and Niger, 3 days."
+      }
+    }
+  ]
+}

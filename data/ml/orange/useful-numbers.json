@@ -1,0 +1,122 @@
+{
+  "operator": "orange",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "orange-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Orange",
+      "description": "Service client Orange Mali.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "7400",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/assistance.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Orange customer service",
+        "description": "Orange Mali customer service."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-service-client-om",
+      "kind": "service",
+      "name": "Service client Orange Money",
+      "description": "Assistance Orange Money, 7 jours sur 7.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "37070",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/isago.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orangemali.com/fr/infos-utiles-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Orange Money customer service",
+        "description": "Orange Money support, 7 days a week."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-wimo",
+      "kind": "service",
+      "name": "Service Wimo",
+      "description": "Assistance de la clé 4G Wimo.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "7414",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "wimo",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/wimo.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Wimo service",
+        "description": "Support for the Wimo 4G modem."
+      }
+    }
+  ]
+}

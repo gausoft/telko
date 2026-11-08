@@ -1,0 +1,153 @@
+{
+  "country": "sn",
+  "operators": [
+    {
+      "id": "orange",
+      "name": "Orange Sénégal",
+      "short_name": "Orange",
+      "former_names": [
+        "Sonatel"
+      ],
+      "badge": {
+        "label": "OR",
+        "background": "#FF7900",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "orange-money",
+        "name": "Orange Money",
+        "short_name": "Orange Money",
+        "former_names": [],
+        "badge": {
+          "label": "OM",
+          "background": "#FF7900",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.orange.sn",
+      "customer_service": null,
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.sn/actualite/les-services-orange",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro du service client n'a pas été trouvé sur le site officiel.",
+      "en": {
+        "notes": "The customer service number was not found on the official site."
+      }
+    },
+    {
+      "id": "yas",
+      "name": "Yas Sénégal",
+      "short_name": "Yas",
+      "former_names": [
+        "Free Sénégal"
+      ],
+      "badge": {
+        "label": "YAS",
+        "background": "#FFDD00",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "mixx",
+        "name": "Mixx by Yas",
+        "short_name": "Mixx",
+        "former_names": [
+          "Free Money"
+        ],
+        "badge": {
+          "label": "MX",
+          "background": "#FFDD00",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://yas.sn",
+      "customer_service": "1677",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "expresso",
+      "name": "Expresso Sénégal",
+      "short_name": "Expresso",
+      "former_names": [],
+      "badge": {
+        "label": "EXP",
+        "background": "#D71920",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": null,
+      "prefixes": [],
+      "website": "https://www.expressotelecom.sn",
+      "customer_service": "70 100 11 11",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.expressotelecom.sn/contact/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

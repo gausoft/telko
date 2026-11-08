@@ -1,0 +1,806 @@
+{
+  "operator": "mtn",
+  "category": "international",
+  "entries": [
+    {
+      "id": "mtn-international-amerique-asie-500",
+      "kind": "bundle",
+      "name": "Pack Amérique / Asie 500 F",
+      "description": "20 min internationales + 10 min locales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "amerique"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "America / Asia pack 500 F",
+        "description": "20 international min + 10 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-amerique-asie-1000",
+      "kind": "bundle",
+      "name": "Pack Amérique / Asie 1 000 F",
+      "description": "45 min internationales + 20 min locales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 65,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "amerique"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "America / Asia pack 1,000 F",
+        "description": "45 international min + 20 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-amerique-asie-2000",
+      "kind": "bundle",
+      "name": "Pack Amérique / Asie 2 000 F",
+      "description": "100 min internationales + 30 min locales, valables 10 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 130,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "amerique"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "America / Asia pack 2,000 F",
+        "description": "100 international min + 30 local min, valid 10 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-burkina-650",
+      "kind": "bundle",
+      "name": "Pack Burkina Faso 650 F",
+      "description": "5 min internationales + 5 min locales + 200 Mo, valables 3 jours.",
+      "price": 650,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "burkina"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Burkina Faso pack 650 F",
+        "description": "5 international min + 5 local min + 200 MB, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-burkina-1200",
+      "kind": "bundle",
+      "name": "Pack Burkina Faso 1 200 F",
+      "description": "10 min internationales + 10 min locales + 300 Mo, valables 7 jours.",
+      "price": 1200,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "burkina"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Burkina Faso pack 1,200 F",
+        "description": "10 international min + 10 local min + 300 MB, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-burkina-2000",
+      "kind": "bundle",
+      "name": "Pack Burkina Faso 2 000 F",
+      "description": "17 min internationales + 17 min locales + 500 Mo, valables 20 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 34,
+        "sms": null
+      },
+      "validity": {
+        "days": 20,
+        "label": "20 jours",
+        "en": {
+          "label": "20 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "burkina"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Burkina Faso pack 2,000 F",
+        "description": "17 international min + 17 local min + 500 MB, valid 20 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-ghana-nigeria-450",
+      "kind": "bundle",
+      "name": "Pack Ghana / Nigéria 450 F",
+      "description": "3 min internationales + 3 min locales, valables 3 jours.",
+      "price": 450,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 6,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Ghana / Nigeria pack 450 F",
+        "description": "3 international min + 3 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-ghana-nigeria-600",
+      "kind": "bundle",
+      "name": "Pack Ghana / Nigéria 600 F",
+      "description": "4 min internationales + 4 min locales, valables 3 jours.",
+      "price": 600,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 8,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Ghana / Nigeria pack 600 F",
+        "description": "4 international min + 4 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-ghana-nigeria-1100",
+      "kind": "bundle",
+      "name": "Pack Ghana / Nigéria 1 100 F",
+      "description": "7 min internationales + 7 min locales, valables 7 jours.",
+      "price": 1100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 14,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Ghana / Nigeria pack 1,100 F",
+        "description": "7 international min + 7 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-ghana-nigeria-2000",
+      "kind": "bundle",
+      "name": "Pack Ghana / Nigéria 2 000 F",
+      "description": "19 min internationales + 19 min locales, valables 15 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 38,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Ghana / Nigeria pack 2,000 F",
+        "description": "19 international min + 19 local min, valid 15 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-mali-500",
+      "kind": "bundle",
+      "name": "Pack Mali 500 F",
+      "description": "5 min internationales + 5 min locales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "mali"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Mali pack 500 F",
+        "description": "5 international min + 5 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-mali-1000",
+      "kind": "bundle",
+      "name": "Pack Mali 1 000 F",
+      "description": "10 min internationales + 10 min locales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "mali"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Mali pack 1,000 F",
+        "description": "10 international min + 10 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-benin-togo-500",
+      "kind": "bundle",
+      "name": "Pack Bénin / Togo 500 F",
+      "description": "3 min internationales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 3,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "benin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo pack 500 F",
+        "description": "3 international min, valid 3 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-benin-togo-1000",
+      "kind": "bundle",
+      "name": "Pack Bénin / Togo 1 000 F",
+      "description": "6 min internationales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 6,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "benin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo pack 1,000 F",
+        "description": "6 international min, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-benin-togo-1500",
+      "kind": "bundle",
+      "name": "Pack Bénin / Togo 1 500 F",
+      "description": "10 min internationales, valables 10 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "benin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo pack 1,500 F",
+        "description": "10 international min, valid 10 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    },
+    {
+      "id": "mtn-international-europe-asie-750",
+      "kind": "bundle",
+      "name": "Pack Europe / Asie 750 F",
+      "description": "10 min internationales, valables 7 jours.",
+      "price": 750,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "europe"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internationaux/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total. Activation par *105*4# ou l'appli MyMTN : le pack se choisit dans le menu.",
+      "en": {
+        "name": "Europe / Asia pack 750 F",
+        "description": "10 international min, valid 7 days.",
+        "notes": "International and local minutes are added in the total. Activation with *105*4# or the MyMTN app: you pick the pack in the menu."
+      }
+    }
+  ]
+}

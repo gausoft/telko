@@ -1,0 +1,959 @@
+{
+  "operator": "moov",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-100",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 100 F",
+      "description": "Pour 100 F, 165 unités appel et internet valables 24 h.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 100 F",
+        "description": "For 100 F, 165 call and internet units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-150",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 150 F",
+      "description": "Pour 150 F, 250 unités appel et internet valables 24 h.",
+      "price": 150,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 150 F",
+        "description": "For 150 F, 250 call and internet units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-200",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 200 F",
+      "description": "Pour 200 F, 335 unités appel et internet valables 24 h.",
+      "price": 200,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 200 F",
+        "description": "For 200 F, 335 call and internet units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-500",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 500 F",
+      "description": "Pour 500 F, 840 unités appel et internet valables 3 jours.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 500 F",
+        "description": "For 500 F, 840 call and internet units valid 3 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-1000",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 1 000 F",
+      "description": "Pour 1 000 F, 1 660 unités appel et internet valables 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 1 000 F",
+        "description": "For 1 000 F, 1 660 call and internet units valid 7 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-2500",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 2 500 F",
+      "description": "Pour 2 500 F, 4 150 unités appel et internet valables 15 jours.",
+      "price": 2500,
+      "allowances": null,
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 2 500 F",
+        "description": "For 2 500 F, 4 150 call and internet units valid 15 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-pass-bonus-appel-internet-5000",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel + Internet 5 000 F",
+      "description": "Pour 5 000 F, 8 400 unités appel et internet valables 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel + internet) se choisit dans le menu. Le titre annonce jusqu'à 125 % du montant, ce que les chiffres du tableau ne confirment pas.",
+      "en": {
+        "name": "Pass Bonus Call + Internet 5 000 F",
+        "description": "For 5 000 F, 8 400 call and internet units valid 30 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (call + internet) is chosen in the menu. The headline says up to 125% of the amount, which the table figures do not confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-100",
+      "kind": "bundle",
+      "name": "Moov Combo 100 F",
+      "description": "3 min d'appel, 3 Mo et 3 SMS valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 3,
+        "voice_min": 3,
+        "sms": 3
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 100 F",
+        "description": "3 call minutes, 3 MB and 3 SMS valid 24 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-150",
+      "kind": "bundle",
+      "name": "Moov Combo 150 F",
+      "description": "5 min d'appel, 5 Mo et 5 SMS valables 24 h.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 5,
+        "voice_min": 5,
+        "sms": 5
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*150#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 150 F",
+        "description": "5 call minutes, 5 MB and 5 SMS valid 24 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-200",
+      "kind": "bundle",
+      "name": "Moov Combo 200 F",
+      "description": "7 min d'appel, 7 Mo et 7 SMS valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 7,
+        "voice_min": 7,
+        "sms": 7
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 200 F",
+        "description": "7 call minutes, 7 MB and 7 SMS valid 24 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-300",
+      "kind": "bundle",
+      "name": "Moov Combo 300 F",
+      "description": "11 min d'appel, 11 Mo et 11 SMS valables 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 11,
+        "voice_min": 11,
+        "sms": 11
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 300 F",
+        "description": "11 call minutes, 11 MB and 11 SMS valid 24 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-500",
+      "kind": "bundle",
+      "name": "Moov Combo 500 F",
+      "description": "19 min d'appel, 19 Mo valables 48 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 19,
+        "voice_min": 19,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "48 h",
+        "en": {
+          "label": "48 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 500 F",
+        "description": "19 call minutes, 19 MB valid 48 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-750",
+      "kind": "bundle",
+      "name": "Moov Combo 750 F",
+      "description": "28 min d'appel, 28 Mo valables 48 h.",
+      "price": 750,
+      "allowances": {
+        "data_mb": 28,
+        "voice_min": 28,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "48 h",
+        "en": {
+          "label": "48 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*750#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 750 F",
+        "description": "28 call minutes, 28 MB valid 48 h.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-1000",
+      "kind": "bundle",
+      "name": "Moov Combo 1 000 F",
+      "description": "35 min d'appel, 35 Mo valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 35,
+        "voice_min": 35,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 1 000 F",
+        "description": "35 call minutes, 35 MB valid 7 days.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-2500",
+      "kind": "bundle",
+      "name": "Moov Combo 2 500 F",
+      "description": "80 min d'appel, 80 Mo et 80 SMS valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 80,
+        "voice_min": 80,
+        "sms": 80
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*2500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 2 500 F",
+        "description": "80 call minutes, 80 MB and 80 SMS valid 30 days.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-combo-5000",
+      "kind": "bundle",
+      "name": "Moov Combo 5 000 F",
+      "description": "175 min d'appel, 175 Mo et 175 SMS valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 175,
+        "voice_min": 175,
+        "sms": 175
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*5000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "combo",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux tableaux de la page se contredisent (offres et valeurs différentes pour 500 F et 1 000 F) : ce sont les valeurs du tableau qui donne les codes. À vérifier.",
+      "en": {
+        "name": "Moov Combo 5 000 F",
+        "description": "175 call minutes, 175 MB and 175 SMS valid 30 days.",
+        "notes": "Two tables on the page contradict each other (different offers and values for 500 F and 1,000 F): these are the values of the table that gives the codes. To be checked."
+      }
+    }
+  ]
+}

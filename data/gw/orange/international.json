@@ -1,0 +1,933 @@
+{
+  "operator": "orange",
+  "category": "international",
+  "entries": [
+    {
+      "id": "orange-mundo-uemoa-500",
+      "kind": "bundle",
+      "name": "Orange Mundo UEMOA 500 F",
+      "description": "4 min, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 4,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "uemoa",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-uemoa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo UEMOA 500 F",
+        "description": "4 min, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-uemoa-1800",
+      "kind": "bundle",
+      "name": "Orange Mundo UEMOA 1800 F",
+      "description": "15 min, 10 SMS, valables 7 jours.",
+      "price": 1800,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 10
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "uemoa",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-uemoa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo UEMOA 1800 F",
+        "description": "15 min, 10 SMS, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-uemoa-3500",
+      "kind": "bundle",
+      "name": "Orange Mundo UEMOA 3500 F",
+      "description": "30 min, 20 SMS, valables 30 jours.",
+      "price": 3500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": 20
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "uemoa",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-uemoa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo UEMOA 3500 F",
+        "description": "30 min, 20 SMS, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-europe-amerique-750",
+      "kind": "bundle",
+      "name": "Orange Mundo Europe et Amériques 750 F",
+      "description": "5 min, valables 3 jours.",
+      "price": 750,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "europe",
+        "amériques"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-europa-americas.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Europe and Americas 750 F",
+        "description": "5 min, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-europe-amerique-2200",
+      "kind": "bundle",
+      "name": "Orange Mundo Europe et Amériques 2200 F",
+      "description": "15 min, 10 SMS, valables 7 jours.",
+      "price": 2200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 10
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "europe",
+        "amériques"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-europa-americas.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Europe and Americas 2200 F",
+        "description": "15 min, 10 SMS, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-europe-amerique-4300",
+      "kind": "bundle",
+      "name": "Orange Mundo Europe et Amériques 4300 F",
+      "description": "30 min, 20 SMS, valables 30 jours.",
+      "price": 4300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": 20
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "europe",
+        "amériques"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-europa-americas.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Europe and Americas 4300 F",
+        "description": "30 min, 20 SMS, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-asie-350",
+      "kind": "bundle",
+      "name": "Orange Mundo Asie 350 F",
+      "description": "5 min, valables 3 jours.",
+      "price": 350,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "asie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-asia.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Asia 350 F",
+        "description": "5 min, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-asie-1200",
+      "kind": "bundle",
+      "name": "Orange Mundo Asie 1200 F",
+      "description": "20 min, valables 7 jours.",
+      "price": 1200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "asie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-asia.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Asia 1200 F",
+        "description": "20 min, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-asie-3000",
+      "kind": "bundle",
+      "name": "Orange Mundo Asie 3000 F",
+      "description": "60 min, valables 30 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "asie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-asia.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Asia 3000 F",
+        "description": "60 min, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-pays-arabes-1500",
+      "kind": "bundle",
+      "name": "Orange Mundo Pays arabes 1500 F",
+      "description": "5 min, 25 Mo, valables 3 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 25,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "pays arabes"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-paises-arabes.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Arab countries 1500 F",
+        "description": "5 min, 25 MB, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-pays-arabes-4400",
+      "kind": "bundle",
+      "name": "Orange Mundo Pays arabes 4400 F",
+      "description": "20 min, 100 Mo, valables 7 jours.",
+      "price": 4400,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "pays arabes"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-paises-arabes.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Arab countries 4400 F",
+        "description": "20 min, 100 MB, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-pays-arabes-8400",
+      "kind": "bundle",
+      "name": "Orange Mundo Pays arabes 8400 F",
+      "description": "30 min, 300 Mo, valables 30 jours.",
+      "price": 8400,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "pays arabes"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-paises-arabes.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Arab countries 8400 F",
+        "description": "30 min, 300 MB, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-guinee-mauritanie-1400",
+      "kind": "bundle",
+      "name": "Orange Mundo Guinée-Conakry et Mauritanie 1400 F",
+      "description": "5 min, 50 Mo, valables 3 jours.",
+      "price": 1400,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "guinée",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-guine-conacri-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Guinea-Conakry and Mauritania 1400 F",
+        "description": "5 min, 50 MB, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-guinee-mauritanie-2600",
+      "kind": "bundle",
+      "name": "Orange Mundo Guinée-Conakry et Mauritanie 2600 F",
+      "description": "10 min, 5 SMS, 150 Mo, valables 7 jours.",
+      "price": 2600,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": 10,
+        "sms": 5
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "guinée",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-guine-conacri-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Guinea-Conakry and Mauritania 2600 F",
+        "description": "10 min, 5 SMS, 150 MB, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-guinee-mauritanie-7500",
+      "kind": "bundle",
+      "name": "Orange Mundo Guinée-Conakry et Mauritanie 7500 F",
+      "description": "30 min, 10 SMS, 500 Mo, valables 30 jours.",
+      "price": 7500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 30,
+        "sms": 10
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "guinée",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-guine-conacri-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Guinea-Conakry and Mauritania 7500 F",
+        "description": "30 min, 10 SMS, 500 MB, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-gambie-1400",
+      "kind": "bundle",
+      "name": "Orange Mundo Gambie 1400 F",
+      "description": "5 min, 50 Mo, valables 3 jours.",
+      "price": 1400,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-gambie.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Gambia 1400 F",
+        "description": "5 min, 50 MB, valid 3 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-gambie-2600",
+      "kind": "bundle",
+      "name": "Orange Mundo Gambie 2600 F",
+      "description": "10 min, 150 Mo, valables 7 jours.",
+      "price": 2600,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-gambie.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Gambia 2600 F",
+        "description": "10 min, 150 MB, valid 7 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    },
+    {
+      "id": "orange-mundo-gambie-7500",
+      "kind": "bundle",
+      "name": "Orange Mundo Gambie 7500 F",
+      "description": "30 min, 500 Mo, valables 30 jours.",
+      "price": 7500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#565#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-mundo/pass-gambie.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Mundo : le pass se choisit dans le menu. Consommation : #565# option 2.",
+      "en": {
+        "name": "Orange Mundo Gambia 7500 F",
+        "description": "30 min, 500 MB, valid 30 days.",
+        "notes": "Orange Mundo portal code: you pick the pass in the menu. Usage: #565# option 2."
+      }
+    }
+  ]
+}

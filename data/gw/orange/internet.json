@@ -1,0 +1,1004 @@
+{
+  "operator": "orange",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "orange-internet-pass-jour-100",
+      "kind": "bundle",
+      "name": "Pass Jour 60 Mo",
+      "description": "60 Mo valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 60,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Daily Pass 60 MB",
+        "description": "60 MB, valid 24 h.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-200",
+      "kind": "bundle",
+      "name": "Pass Jour 200 Mo",
+      "description": "200 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Daily Pass 200 MB",
+        "description": "200 MB, valid 24 h.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-500",
+      "kind": "bundle",
+      "name": "Pass Jour 1 Go",
+      "description": "1 Go valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Daily Pass 1 GB",
+        "description": "1 GB, valid 24 h.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-1000",
+      "kind": "bundle",
+      "name": "Pass Semaine 1,2 Go",
+      "description": "1,2 Go valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1229,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#. Le texte de la page parle aussi d'un pass hebdomadaire « à partir de 500 F pour 1 Go » : à vérifier.",
+      "en": {
+        "name": "Weekly Pass 1.2 GB",
+        "description": "1.2 GB, valid 7 days.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#. The page text also mentions a weekly pass \"from 500 F for 1 GB\": to be checked."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-2500",
+      "kind": "bundle",
+      "name": "Pass Mois 3,2 Go",
+      "description": "3,2 Go valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 3277,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Monthly Pass 3.2 GB",
+        "description": "3.2 GB, valid 30 days.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-5000",
+      "kind": "bundle",
+      "name": "Pass Mois 8 Go",
+      "description": "8 Go valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 8192,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Monthly Pass 8 GB",
+        "description": "8 GB, valid 30 days.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-10000",
+      "kind": "bundle",
+      "name": "Pass Mois 20 Go",
+      "description": "20 Go valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/internet-movel.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des pass Internet : le choix du pass se fait dans le menu. Achat aussi sur pass.orange-bissau.com. Solde internet : #5234#4#.",
+      "en": {
+        "name": "Monthly Pass 20 GB",
+        "description": "20 GB, valid 30 days.",
+        "notes": "Internet pass menu code: you pick the pass in the menu. Also available on pass.orange-bissau.com. Internet balance: #5234#4#."
+      }
+    },
+    {
+      "id": "orange-internet-pass-1h",
+      "kind": "bundle",
+      "name": "Pass 1 Heure",
+      "description": "Internet illimité, 1 heure.",
+      "price": 200,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "1 heure",
+        "en": {
+          "label": "1 hour"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "heure"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/passes-internet-ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans #5234#, choisir « Outros Passes Internet » puis « Passes Ilimitados ».",
+      "en": {
+        "name": "1 Hour Pass",
+        "description": "Unlimited internet, 1 hour.",
+        "notes": "In #5234#, choose \"Outros Passes Internet\" then \"Passes Ilimitados\"."
+      }
+    },
+    {
+      "id": "orange-internet-pass-3h",
+      "kind": "bundle",
+      "name": "Pass 3 Heures",
+      "description": "Internet illimité, 3 heures.",
+      "price": 400,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "3 heures",
+        "en": {
+          "label": "3 hours"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "heure"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/passes-internet-ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans #5234#, choisir « Outros Passes Internet » puis « Passes Ilimitados ».",
+      "en": {
+        "name": "3 Hours Pass",
+        "description": "Unlimited internet, 3 hours.",
+        "notes": "In #5234#, choose \"Outros Passes Internet\" then \"Passes Ilimitados\"."
+      }
+    },
+    {
+      "id": "orange-internet-pass-8h",
+      "kind": "bundle",
+      "name": "Pass 8 Heures",
+      "description": "Internet illimité, 8 heures.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "8 heures",
+        "en": {
+          "label": "8 hours"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "heure"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/passes-internet-ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans #5234#, choisir « Outros Passes Internet » puis « Passes Ilimitados ».",
+      "en": {
+        "name": "8 Hours Pass",
+        "description": "Unlimited internet, 8 hours.",
+        "notes": "In #5234#, choose \"Outros Passes Internet\" then \"Passes Ilimitados\"."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit",
+      "kind": "bundle",
+      "name": "Pass Nuit",
+      "description": "Internet illimité, nuit, de 0 h à 6 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit, de 0 h à 6 h",
+        "en": {
+          "label": "Night, 0:00 to 6:00"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/passes-internet-ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans #5234#, choisir « Outros Passes Internet » puis « Passes Ilimitados ».",
+      "en": {
+        "name": "Night Pass",
+        "description": "Unlimited internet, night, 0:00 to 6:00.",
+        "notes": "In #5234#, choose \"Outros Passes Internet\" then \"Passes Ilimitados\"."
+      }
+    },
+    {
+      "id": "orange-internet-pass-dimanche",
+      "kind": "bundle",
+      "name": "Pass Dimanche",
+      "description": "Internet illimité, toute la journée du dimanche.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Toute la journée du dimanche",
+        "en": {
+          "label": "All day Sunday"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#5234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "illimité",
+        "dimanche"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/internet-movel/passes-internet-ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans #5234#, choisir « Outros Passes Internet » puis « Passes Ilimitados ».",
+      "en": {
+        "name": "Sunday Pass",
+        "description": "Unlimited internet, all day sunday.",
+        "notes": "In #5234#, choose \"Outros Passes Internet\" then \"Passes Ilimitados\"."
+      }
+    },
+    {
+      "id": "orange-internet-djudan-30",
+      "kind": "bundle",
+      "name": "Djudan na Internet 30 Mo",
+      "description": "Avance de 30 Mo, valable 24 h, à rembourser.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 30,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#119#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Avance de données : 100 F à rembourser plus 10 F de frais, prélevés à la prochaine recharge. Le même service apparaît aussi via #1234# et #111#.",
+      "en": {
+        "name": "Djudan na Internet 30 MB",
+        "description": "Advance of 30 MB, valid 24 h, to be repaid.",
+        "notes": "Data advance: 100 F to be repaid plus 10 F fee, taken at the next top-up. The same service also appears via #1234# and #111#."
+      }
+    },
+    {
+      "id": "orange-internet-djudan-75",
+      "kind": "bundle",
+      "name": "Djudan na Internet 75 Mo",
+      "description": "Avance de 75 Mo, valable 24 h, à rembourser.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 75,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#119#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Avance de données : 200 F à rembourser plus 20 F de frais, prélevés à la prochaine recharge. Le même service apparaît aussi via #1234# et #111#.",
+      "en": {
+        "name": "Djudan na Internet 75 MB",
+        "description": "Advance of 75 MB, valid 24 h, to be repaid.",
+        "notes": "Data advance: 200 F to be repaid plus 20 F fee, taken at the next top-up. The same service also appears via #1234# and #111#."
+      }
+    },
+    {
+      "id": "orange-internet-djudan-150",
+      "kind": "bundle",
+      "name": "Djudan na Internet 150 Mo",
+      "description": "Avance de 150 Mo, valable 24 h, à rembourser.",
+      "price": 350,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#119#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Avance de données : 350 F à rembourser plus 30 F de frais, prélevés à la prochaine recharge. Le même service apparaît aussi via #1234# et #111#.",
+      "en": {
+        "name": "Djudan na Internet 150 MB",
+        "description": "Advance of 150 MB, valid 24 h, to be repaid.",
+        "notes": "Data advance: 350 F to be repaid plus 30 F fee, taken at the next top-up. The same service also appears via #1234# and #111#."
+      }
+    },
+    {
+      "id": "orange-internet-djudan-250",
+      "kind": "bundle",
+      "name": "Djudan na Internet 250 Mo",
+      "description": "Avance de 250 Mo, valable 3 jours, à rembourser.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#119#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Avance de données : 500 F à rembourser plus 40 F de frais, prélevés à la prochaine recharge. Le même service apparaît aussi via #1234# et #111#.",
+      "en": {
+        "name": "Djudan na Internet 250 MB",
+        "description": "Advance of 250 MB, valid 3 days, to be repaid.",
+        "notes": "Data advance: 500 F to be repaid plus 40 F fee, taken at the next top-up. The same service also appears via #1234# and #111#."
+      }
+    },
+    {
+      "id": "orange-internet-djudan-600",
+      "kind": "bundle",
+      "name": "Djudan na Internet 600 Mo",
+      "description": "Avance de 600 Mo, valable 7 jours, à rembourser.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#119#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Avance de données : 1000 F à rembourser plus 80 F de frais, prélevés à la prochaine recharge. Le même service apparaît aussi via #1234# et #111#.",
+      "en": {
+        "name": "Djudan na Internet 600 MB",
+        "description": "Advance of 600 MB, valid 7 days, to be repaid.",
+        "notes": "Data advance: 1000 F to be repaid plus 80 F fee, taken at the next top-up. The same service also appears via #1234# and #111#."
+      }
+    },
+    {
+      "id": "orange-internet-facebook-1-jour",
+      "kind": "bundle",
+      "name": "Facebook USSD 1 jour",
+      "description": "Facebook sans connexion internet, 1 jour.",
+      "price": 30,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "facebook",
+        "réseaux sociaux",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/diverso/facebook-ussd.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Accès à Facebook par USSD, sans forfait internet.",
+      "en": {
+        "name": "Facebook USSD 1 day",
+        "description": "Facebook without an internet connection, 1 day.",
+        "notes": "Facebook access over USSD, no data plan needed."
+      }
+    },
+    {
+      "id": "orange-internet-facebook-1-semaine",
+      "kind": "bundle",
+      "name": "Facebook USSD 1 semaine",
+      "description": "Facebook sans connexion internet, 7 jours.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "facebook",
+        "réseaux sociaux",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/diverso/facebook-ussd.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page annonce un jour bonus en plus des 7 jours.",
+      "en": {
+        "name": "Facebook USSD 1 week",
+        "description": "Facebook without an internet connection, 7 days.",
+        "notes": "The page announces one bonus day on top of the 7 days."
+      }
+    }
+  ]
+}

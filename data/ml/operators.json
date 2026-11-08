@@ -1,0 +1,138 @@
+{
+  "country": "ml",
+  "operators": [
+    {
+      "id": "orange",
+      "name": "Orange Mali",
+      "short_name": "Orange",
+      "former_names": [],
+      "badge": {
+        "label": "O",
+        "background": "#FF7900",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "orange-money",
+        "name": "Orange Money",
+        "short_name": "Orange Money",
+        "former_names": [],
+        "badge": {
+          "label": "OM",
+          "background": "#FF7900",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.orangemali.com",
+      "customer_service": "7400",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/assistance.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orangemali.com/fr/orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov",
+      "name": "Moov Africa Malitel",
+      "short_name": "Moov",
+      "former_names": [
+        "Malitel",
+        "Sotelma"
+      ],
+      "badge": {
+        "label": "M",
+        "background": "#0066B3",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "moov-money",
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [],
+        "badge": {
+          "label": "MM",
+          "background": "#0066B3",
+          "foreground": "#FFFFFF"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.moov-africa.ml",
+      "customer_service": null,
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site affiche 222 depuis un mobile et 6700 : non repris car aucun des deux n'est présenté comme numéro du service client sur une page lue. Aucun code Moov Money n'a pu être lu (pages en images).",
+      "en": {
+        "notes": "The site shows 222 from a mobile and 6700: not used because neither is presented as the customer service number on a page read. No Moov Money code could be read (pages are images)."
+      }
+    },
+    {
+      "id": "telecel",
+      "name": "Telecel Mali",
+      "short_name": "Telecel",
+      "former_names": [],
+      "badge": {
+        "label": "T",
+        "background": "#E60000",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": null,
+      "prefixes": [],
+      "website": "https://www.telecelmali.com",
+      "customer_service": "40505050",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelmali.com/produits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Site officiel récent (nouvelles agences annoncées en septembre 2026). Aucun mobile money identifié sur le site.",
+      "en": {
+        "notes": "Recent official site (new agencies announced in September 2026). No mobile money identified on the site."
+      }
+    }
+  ]
+}

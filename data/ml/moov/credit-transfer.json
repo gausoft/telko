@@ -1,0 +1,124 @@
+{
+  "operator": "moov",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "moov-credit-recharger-carte",
+      "kind": "service",
+      "name": "Recharger une carte",
+      "description": "Recharger votre numéro avec une carte de recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#1#1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Top up with a card",
+        "description": "Top up your number with a recharge card."
+      }
+    },
+    {
+      "id": "moov-credit-hokkam",
+      "kind": "service",
+      "name": "Envoyer du crédit (Hokkam)",
+      "description": "Transférer du crédit à un autre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#1#5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ml/particulier/mobile/Prepayes/Pages/Hokkam.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Montants et frais publiés en image, non lus. Numéro et montant se saisissent dans le menu.",
+      "en": {
+        "name": "Send credit (Hokkam)",
+        "description": "Transfer credit to another Moov number.",
+        "notes": "Amounts and fees published as images, not read. Number and amount are typed in the menu."
+      }
+    },
+    {
+      "id": "moov-credit-deme-credit",
+      "kind": "service",
+      "name": "Dèmè Crédit (crédit à rembourser)",
+      "description": "Empruntez jusqu'à 1 000 F de crédit, remboursés à vos prochaines recharges.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#444#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "emprunt",
+        "dèmè"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Composer #444# puis choisir 1, puis le montant.",
+      "en": {
+        "name": "Dèmè Credit (credit to repay)",
+        "description": "Borrow up to 1,000 F of credit, repaid with your next top-ups.",
+        "notes": "Dial #444# then choose 1, then the amount."
+      }
+    }
+  ]
+}

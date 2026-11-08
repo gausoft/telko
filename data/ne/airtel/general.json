@@ -1,0 +1,45 @@
+{
+  "operator": "airtel",
+  "category": "general",
+  "entries": [
+    {
+      "id": "airtel-general-consulter-solde",
+      "kind": "service",
+      "name": "Consulter le solde",
+      "description": "Voir le solde de votre crédit, de votre bonus et de votre forfait internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*121#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelniger/status/1044255179745431552",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source : message publié sur le compte officiel en 2018 : à vérifier, le code a pu changer.",
+      "en": {
+        "name": "Check balance",
+        "description": "See your credit, bonus and internet bundle balance.",
+        "notes": "Source: a 2018 post on the official account: to check, the code may have changed."
+      }
+    }
+  ]
+}

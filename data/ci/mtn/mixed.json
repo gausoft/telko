@@ -1,0 +1,600 @@
+{
+  "operator": "mtn",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "mtn-mixed-free-plus-200",
+      "kind": "bundle",
+      "name": "Pack Free Plus 200 F",
+      "description": "17 min tous réseaux + 25 SMS + 25 Mo.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 25,
+        "voice_min": 17,
+        "sms": 25
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 200 F",
+        "description": "17 min all networks + 25 SMS + 25 MB.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-300",
+      "kind": "bundle",
+      "name": "Pack Free Plus 300 F",
+      "description": "30 min tous réseaux + 100 SMS + 100 Mo.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 30,
+        "sms": 100
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 300 F",
+        "description": "30 min all networks + 100 SMS + 100 MB.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-500",
+      "kind": "bundle",
+      "name": "Pack Free Plus 500 F",
+      "description": "55 min tous réseaux + 100 SMS + 300 Mo + appels illimités vers 5 numéros complices.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": 55,
+        "sms": 100
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 500 F",
+        "description": "55 min all networks + 100 SMS + 300 MB + unlimited calls to 5 buddy numbers.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-700",
+      "kind": "bundle",
+      "name": "Pack Free Plus 700 F",
+      "description": "70 min tous réseaux + 100 SMS + 700 Mo + appels illimités vers 5 numéros complices.",
+      "price": 700,
+      "allowances": {
+        "data_mb": 700,
+        "voice_min": 70,
+        "sms": 100
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 700 F",
+        "description": "70 min all networks + 100 SMS + 700 MB + unlimited calls to 5 buddy numbers.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-1000",
+      "kind": "bundle",
+      "name": "Pack Free Plus 1 000 F",
+      "description": "100 min tous réseaux + 100 SMS + 1 Go + appels illimités vers 5 numéros complices.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": 100,
+        "sms": 100
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 1,000 F",
+        "description": "100 min all networks + 100 SMS + 1 GB + unlimited calls to 5 buddy numbers.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-1500",
+      "kind": "bundle",
+      "name": "Pack Free Plus 1 500 F",
+      "description": "200 min tous réseaux + 150 SMS + 1,5 Go + appels illimités vers 5 numéros complices.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": 200,
+        "sms": 150
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 1,500 F",
+        "description": "200 min all networks + 150 SMS + 1.5 GB + unlimited calls to 5 buddy numbers.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-2500",
+      "kind": "bundle",
+      "name": "Pack Free Plus 2 500 F",
+      "description": "250 min tous réseaux + 250 SMS + 2,5 Go + appels illimités vers 5 numéros complices + MTN TV.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 250,
+        "sms": 250
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 2,500 F",
+        "description": "250 min all networks + 250 SMS + 2.5 GB + unlimited calls to 5 buddy numbers + MTN TV.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-5000",
+      "kind": "bundle",
+      "name": "Pack Free Plus 5 000 F",
+      "description": "500 min tous réseaux + 500 SMS + 5 Go + appels illimités vers 5 numéros complices + MTN TV.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": 500,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 5,000 F",
+        "description": "500 min all networks + 500 SMS + 5 GB + unlimited calls to 5 buddy numbers + MTN TV.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-10000",
+      "kind": "bundle",
+      "name": "Pack Free Plus 10 000 F",
+      "description": "830 min tous réseaux + 500 SMS + 10 Go + appels illimités vers 5 numéros complices + MTN TV.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": 830,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 10,000 F",
+        "description": "830 min all networks + 500 SMS + 10 GB + unlimited calls to 5 buddy numbers + MTN TV.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-free-plus-20000",
+      "kind": "bundle",
+      "name": "Pack Free Plus 20 000 F",
+      "description": "1665 min tous réseaux + 1000 SMS + 20 Go + appels illimités vers 5 numéros complices + MTN TV.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": 1665,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "free plus",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/les-packs-free/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs Free Plus (option 1). La page donne le volume en Go : converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Free Plus pack 20,000 F",
+        "description": "1665 min all networks + 1000 SMS + 20 GB + unlimited calls to 5 buddy numbers + MTN TV.",
+        "notes": "Code of the Free Plus packs menu (option 1). The page gives the volume in GB: converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-mixed-magik",
+      "kind": "service",
+      "name": "MTN Magik : composer son forfait",
+      "description": "Choisir soi-même son volume internet et ses minutes, ou un budget.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*105*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "magik",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-magik/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix selon le contenu choisi : un bonus (appels illimités vers les numéros complices et SMS) est offert selon le montant.",
+      "en": {
+        "name": "MTN Magik: build your bundle",
+        "description": "Choose your own internet volume and minutes, or a budget.",
+        "notes": "Price depends on the content chosen: a bonus (unlimited calls to buddy numbers and SMS) is given depending on the amount."
+      }
+    },
+    {
+      "id": "mtn-mixed-majestic-2000",
+      "kind": "bundle",
+      "name": "Plan Majestic 2 000 F",
+      "description": "2 Go + 2 tickets Majestic.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*500*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "c'chic",
+        "majestic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page indique « *500*3# option 2 » ; la validité n'est pas donnée.",
+      "en": {
+        "name": "Majestic plan 2,000 F",
+        "description": "2 GB + 2 Majestic tickets.",
+        "notes": "The page says \"*500*3# option 2\"; the validity is not given."
+      }
+    }
+  ]
+}

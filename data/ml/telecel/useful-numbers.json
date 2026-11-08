@@ -1,0 +1,43 @@
+{
+  "operator": "telecel",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "telecel-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Telecel",
+      "description": "Service client Telecel Mali.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "40505050",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro publié « 40 50 50 50 » sur le site.",
+      "en": {
+        "name": "Telecel customer service",
+        "description": "Telecel Mali customer service.",
+        "notes": "Number published as '40 50 50 50' on the site."
+      }
+    }
+  ]
+}

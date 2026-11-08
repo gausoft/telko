@@ -1,0 +1,43 @@
+{
+  "operator": "moov",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "moov-credit-transfer-sos-credit",
+      "kind": "service",
+      "name": "SOS crédit",
+      "description": "Emprunter du crédit ou des mégas ; à rembourser avec 10 % en plus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*445#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "dépannage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "SOS crédit",
+        "description": "Borrow credit or data; repay with 10% extra."
+      }
+    }
+  ]
+}

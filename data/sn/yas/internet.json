@@ -1,0 +1,618 @@
+{
+  "operator": "yas",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "yas-internet-pass-jour-100",
+      "kind": "bundle",
+      "name": "Pass Internet jour 100 F",
+      "description": "100 Mo valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 100 F",
+        "description": "100 MB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-jour-200",
+      "kind": "bundle",
+      "name": "Pass Internet jour 200 F",
+      "description": "400 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 200 F",
+        "description": "400 MB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-jour-500",
+      "kind": "bundle",
+      "name": "Pass Internet jour 500 F",
+      "description": "2 Go valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 500 F",
+        "description": "2 GB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-jour-1000",
+      "kind": "bundle",
+      "name": "Pass Internet jour 1000 F",
+      "description": "5 Go valables 24 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 1000 F",
+        "description": "5 GB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-semaine-500",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 500 F",
+      "description": "600 Mo valables 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 500 F",
+        "description": "600 MB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-semaine-1000",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 1000 F",
+      "description": "2560 Mo valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 1000 F",
+        "description": "2560 MB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-semaine-1500",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 1500 F",
+      "description": "4 Go valables 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 1500 F",
+        "description": "4 GB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-semaine-2000",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 2000 F",
+      "description": "9 Go valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 9216,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 2000 F",
+        "description": "9 GB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-mois-2000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 2000 F",
+      "description": "7 Go valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 7168,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 2000 F",
+        "description": "7 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-mois-5000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 5000 F",
+      "description": "12800 Mo valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 12800,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 5000 F",
+        "description": "12800 MB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-mois-10000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 10000 F",
+      "description": "40 Go valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 40960,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 10000 F",
+        "description": "40 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-internet-pass-mois-15000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 15000 F",
+      "description": "65 Go valables 30 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 66560,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 15000 F",
+        "description": "65 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

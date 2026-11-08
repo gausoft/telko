@@ -1,0 +1,465 @@
+{
+  "operator": "orange",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "orange-internet-nuit-100",
+      "kind": "bundle",
+      "name": "Pass Nuit 100",
+      "description": "100 Mo et 50 SMS utilisables la nuit, de 0h à 5h.",
+      "price": 105,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*506*105#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Horaire de 0h à 5h d'après le catalogue ; le code est celui du catalogue officiel.",
+      "en": {
+        "name": "Pass Nuit 100",
+        "description": "100 MB and 50 SMS usable at night, from 0:00 to 5:00.",
+        "notes": "Hours 0:00 to 5:00 per the catalogue; code is the one in the official catalogue."
+      }
+    },
+    {
+      "id": "orange-internet-nuit-200",
+      "kind": "bundle",
+      "name": "Pass Nuit 200",
+      "description": "200 Mo et 50 SMS utilisables la nuit, de 0h à 5h.",
+      "price": 210,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*506*210#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Nuit 200",
+        "description": "200 MB and 50 SMS usable at night, from 0:00 to 5:00."
+      }
+    },
+    {
+      "id": "orange-internet-nuit-1000",
+      "kind": "bundle",
+      "name": "Pass Nuit 1000",
+      "description": "1 000 Mo et 100 SMS utilisables la nuit, de 0h à 5h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1000,
+        "voice_min": null,
+        "sms": 100
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*506*525#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue donne le même code pour une offre nuit illimitée à 1 050 F : cette dernière n'est pas reprise faute de code distinct.",
+      "en": {
+        "name": "Pass Nuit 1000",
+        "description": "1,000 MB and 100 SMS usable at night, from 0:00 to 5:00.",
+        "notes": "The catalogue gives the same code for an unlimited night offer at 1,050 F: it is not listed because it has no distinct code."
+      }
+    },
+    {
+      "id": "orange-internet-tiktok-1000",
+      "kind": "bundle",
+      "name": "Pass TikTok 1 Go",
+      "description": "1 000 Mo pour TikTok, valables 2 jours.",
+      "price": 405,
+      "allowances": {
+        "data_mb": 1000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*103*500*10#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "tiktok"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass TikTok 1 Go",
+        "description": "1,000 MB for TikTok, valid 2 days."
+      }
+    },
+    {
+      "id": "orange-internet-tiktok-4go",
+      "kind": "bundle",
+      "name": "Pass TikTok 4 Go",
+      "description": "4 Go pour TikTok, valables 30 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*103*1050*10#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "tiktok"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue indique 4 Go sans préciser la valeur en Mo.",
+      "en": {
+        "name": "Pass TikTok 4 Go",
+        "description": "4 GB for TikTok, valid 30 days.",
+        "notes": "The catalogue says 4 GB without giving the figure in MB."
+      }
+    },
+    {
+      "id": "orange-internet-tiktok-illimite",
+      "kind": "bundle",
+      "name": "Pass TikTok illimité",
+      "description": "TikTok en illimité pendant 24 h.",
+      "price": 750,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*103*750*24#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "tiktok"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue indique aussi le code *206# pour cette offre.",
+      "en": {
+        "name": "Pass TikTok illimité",
+        "description": "Unlimited TikTok for 24 hours.",
+        "notes": "The catalogue also gives the code *206# for this offer."
+      }
+    },
+    {
+      "id": "orange-internet-etudiant-5go",
+      "kind": "bundle",
+      "name": "Pass Étudiant 5 Go",
+      "description": "5 Go pour les étudiants, achetés avec Orange Money.",
+      "price": 2121,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*144*5*1*{phone}*7#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Votre numéro Orange",
+            "required": true,
+            "en": {
+              "label": "Your Orange number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "étudiant"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue ne précise pas la durée de validité de façon exploitable ; '7' est la valeur du code. À confirmer sur un téléphone.",
+      "en": {
+        "name": "Pass Étudiant 5 Go",
+        "description": "5 GB for students, bought with Orange Money.",
+        "notes": "The catalogue does not state the validity clearly; 7 is the value in the code. To be confirmed on a phone."
+      }
+    },
+    {
+      "id": "orange-internet-transfert-megas",
+      "kind": "service",
+      "name": "Transfert de mégas",
+      "description": "Envoyer des mégas à un autre client Orange (5, 10 ou 30 Mo).",
+      "price": 32,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "transfert",
+        "mégas"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais de 32 F par transfert d'après le catalogue.",
+      "en": {
+        "name": "Transfert de mégas",
+        "description": "Send data to another Orange customer (5, 10 or 30 MB).",
+        "notes": "32 F fee per transfer per the catalogue."
+      }
+    },
+    {
+      "id": "orange-internet-menu",
+      "kind": "service",
+      "name": "Menu internet",
+      "description": "Menu pour acheter un forfait internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*103#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Menu internet",
+        "description": "Menu to buy an internet bundle."
+      }
+    }
+  ]
+}

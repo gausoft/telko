@@ -1,0 +1,500 @@
+{
+  "operator": "orange",
+  "service": "orange-money",
+  "entries": [
+    {
+      "id": "orange-fees-om-1-1000",
+      "operation": "withdrawal",
+      "min": 1,
+      "max": 1000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Retrait de 1 à 1 000 F : 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 1 to 1,000 F: 100 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-1001-2000",
+      "operation": "withdrawal",
+      "min": 1001,
+      "max": 2000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Retrait de 1 001 à 2 000 F : 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 1,001 to 2,000 F: 200 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-2001-10000",
+      "operation": "withdrawal",
+      "min": 2001,
+      "max": 10000,
+      "fee": 250,
+      "fee_percent": null,
+      "label": "Retrait de 2 001 à 10 000 F : 250 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 2,001 to 10,000 F: 250 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-10001-25000",
+      "operation": "withdrawal",
+      "min": 10001,
+      "max": 25000,
+      "fee": 500,
+      "fee_percent": null,
+      "label": "Retrait de 10 001 à 25 000 F : 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 10,001 to 25,000 F: 500 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-25001-50000",
+      "operation": "withdrawal",
+      "min": 25001,
+      "max": 50000,
+      "fee": 750,
+      "fee_percent": null,
+      "label": "Retrait de 25 001 à 50 000 F : 750 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 25,001 to 50,000 F: 750 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-50001-75000",
+      "operation": "withdrawal",
+      "min": 50001,
+      "max": 75000,
+      "fee": 1200,
+      "fee_percent": null,
+      "label": "Retrait de 50 001 à 75 000 F : 1200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 50,001 to 75,000 F: 1200 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-75001-100000",
+      "operation": "withdrawal",
+      "min": 75001,
+      "max": 100000,
+      "fee": 1500,
+      "fee_percent": null,
+      "label": "Retrait de 75 001 à 100 000 F : 1500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 75,001 to 100,000 F: 1500 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-100001-150000",
+      "operation": "withdrawal",
+      "min": 100001,
+      "max": 150000,
+      "fee": 2250,
+      "fee_percent": null,
+      "label": "Retrait de 100 001 à 150 000 F : 2250 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 100,001 to 150,000 F: 2250 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-150001-200000",
+      "operation": "withdrawal",
+      "min": 150001,
+      "max": 200000,
+      "fee": 3000,
+      "fee_percent": null,
+      "label": "Retrait de 150 001 à 200 000 F : 3000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 150,001 to 200,000 F: 3000 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-200001-250000",
+      "operation": "withdrawal",
+      "min": 200001,
+      "max": 250000,
+      "fee": 3750,
+      "fee_percent": null,
+      "label": "Retrait de 200 001 à 250 000 F : 3750 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 200,001 to 250,000 F: 3750 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-250001-1000000",
+      "operation": "withdrawal",
+      "min": 250001,
+      "max": 1000000,
+      "fee": null,
+      "fee_percent": 1.5,
+      "label": "Retrait de 250 001 à 1 000 000 F : 1.5 %",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange.",
+      "en": {
+        "label": "Withdrawal of 250,001 to 1,000,000 F: 1.5%",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange."
+      }
+    },
+    {
+      "id": "orange-fees-om-tr-1-10000",
+      "operation": "transfer-national",
+      "min": 1,
+      "max": 10000,
+      "fee": 50,
+      "fee_percent": null,
+      "label": "Transfert vers un client Orange Money de 1 à 10 000 F : 50 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to an Orange Money customer of 1 to 10,000 F: 50 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-tr-10001-75000",
+      "operation": "transfer-national",
+      "min": 10001,
+      "max": 75000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Transfert vers un client Orange Money de 10 001 à 75 000 F : 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to an Orange Money customer of 10,001 to 75,000 F: 100 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-1-10000",
+      "operation": "transfer-cross-network",
+      "min": 1,
+      "max": 10000,
+      "fee": 400,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 1 à 10 000 F : 400 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 1 to 10,000 F: 400 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-10001-25000",
+      "operation": "transfer-cross-network",
+      "min": 10001,
+      "max": 25000,
+      "fee": 750,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 10 001 à 25 000 F : 750 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 10,001 to 25,000 F: 750 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-25001-50000",
+      "operation": "transfer-cross-network",
+      "min": 25001,
+      "max": 50000,
+      "fee": 1000,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 25 001 à 50 000 F : 1000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 25,001 to 50,000 F: 1000 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-50001-100000",
+      "operation": "transfer-cross-network",
+      "min": 50001,
+      "max": 100000,
+      "fee": 2000,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 50 001 à 100 000 F : 2000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 50,001 to 100,000 F: 2000 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-100001-150000",
+      "operation": "transfer-cross-network",
+      "min": 100001,
+      "max": 150000,
+      "fee": 3000,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 100 001 à 150 000 F : 3000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 100,001 to 150,000 F: 3000 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    },
+    {
+      "id": "orange-fees-om-nt-150001-200000",
+      "operation": "transfer-cross-network",
+      "min": 150001,
+      "max": 200000,
+      "fee": 4000,
+      "fee_percent": null,
+      "label": "Transfert vers un numéro sans Orange Money de 150 001 à 200 000 F : 4000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://temovision.com/grille-tarifaire-orange-money-burkina-faso/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source secondaire (mise à jour le 1er mars 2026), à confirmer auprès d'Orange. Les tranches au-dessus ne sont pas reprises car le tableau est ambigu.",
+      "en": {
+        "label": "Transfer to a number without Orange Money from 150,001 to 200,000 F: 4000 F",
+        "notes": "Secondary source (updated 1 March 2026), to be confirmed with Orange. Higher bands are not listed because the table is ambiguous."
+      }
+    }
+  ]
+}

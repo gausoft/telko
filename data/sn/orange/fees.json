@@ -1,0 +1,57 @@
+{
+  "operator": "orange",
+  "service": "orange-money",
+  "entries": [
+    {
+      "id": "orange-fees-factures",
+      "operation": "other",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.0,
+      "label": "Paiement de factures Senelec, SEN'EAU, Woyofal et Rapido",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gratuit pour les factures Sonatel, Teranga et Canal+.",
+      "en": {
+        "label": "Payment of Senelec, SEN'EAU, Woyofal and Rapido bills",
+        "notes": "Free for Sonatel, Teranga and Canal+ bills."
+      }
+    },
+    {
+      "id": "orange-fees-factures-sonatel-canal",
+      "operation": "other",
+      "min": 1,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Paiement de factures Sonatel, Teranga et Canal+",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Payment of Sonatel, Teranga and Canal+ bills"
+      }
+    }
+  ]
+}

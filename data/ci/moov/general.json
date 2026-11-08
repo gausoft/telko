@@ -1,0 +1,367 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-codes-utiles-izy-avantages",
+      "kind": "service",
+      "name": "Consulter mes avantages Izy heures+",
+      "description": "Voir les avantages de votre profil Izy heures+.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*505*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "izy",
+        "avantages"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check my Izy heures+ benefits",
+        "description": "See the benefits of your Izy heures+ profile."
+      }
+    },
+    {
+      "id": "moov-general-connaitre-profil",
+      "kind": "service",
+      "name": "Connaître mon profil",
+      "description": "Afficher le profil de votre ligne.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*505*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "profil"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check my profile",
+        "description": "Show the profile of your line."
+      }
+    },
+    {
+      "id": "moov-general-numeros-preferes",
+      "kind": "service",
+      "name": "Gérer mes numéros préférés",
+      "description": "Ajouter ou modifier vos numéros préférés.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*107#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "favoris",
+        "numéros préférés"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Manage my favorite numbers",
+        "description": "Add or change your favorite numbers."
+      }
+    },
+    {
+      "id": "moov-general-code-puk",
+      "kind": "service",
+      "name": "Connaître mon code PUK",
+      "description": "Afficher le code PUK de votre carte SIM.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*388#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "puk",
+        "sim"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Get my PUK code",
+        "description": "Show the PUK code of your SIM card."
+      }
+    },
+    {
+      "id": "moov-general-statut-identification",
+      "kind": "service",
+      "name": "Connaître mon statut d'identification",
+      "description": "Savoir si votre ligne est bien identifiée.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*338#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "identification",
+        "sim"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check my identification status",
+        "description": "Find out whether your line is properly identified."
+      }
+    },
+    {
+      "id": "moov-general-connaitre-numero",
+      "kind": "service",
+      "name": "Connaître mon numéro",
+      "description": "Afficher votre propre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*106#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Show my number",
+        "description": "Show your own Moov number."
+      }
+    },
+    {
+      "id": "moov-general-rappelle-moi",
+      "kind": "service",
+      "name": "Rappelle-moi",
+      "description": "Envoyer un message gratuit pour demander à un proche de vous rappeler.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*108*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro",
+            "required": true,
+            "short": "Numéro",
+            "en": {
+              "label": "Phone number",
+              "short": "Number"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "rappel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne la syntaxe « *108*numéro# » sans préciser si le message est gratuit : à vérifier.",
+      "en": {
+        "name": "Call me back",
+        "description": "Send a message asking someone to call you back.",
+        "notes": "The page gives the syntax \"*108*number#\" without saying whether the message is free: to be checked."
+      }
+    },
+    {
+      "id": "moov-general-se-depanner",
+      "kind": "service",
+      "name": "Se dépanner",
+      "description": "Accéder au menu de dépannage Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*444#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "dépannage",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Get help",
+        "description": "Open the Moov help menu."
+      }
+    },
+    {
+      "id": "moov-general-volume-internet",
+      "kind": "service",
+      "name": "Consulter mon volume internet",
+      "description": "Voir le volume internet restant (numéro, pocket wifi ou box 4G).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check my internet balance",
+        "description": "See the remaining internet volume (number, pocket wifi or 4G box)."
+      }
+    }
+  ]
+}

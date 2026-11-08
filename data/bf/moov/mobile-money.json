@@ -1,0 +1,44 @@
+{
+  "operator": "moov",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "moov-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Moov Money",
+      "description": "Ouvrir le menu Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*555#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/moov-money2/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Page officielle : dépôts, retraits, transferts nationaux et internationaux, factures, paiements marchands, crédit, forfaits. Aucun frais publié.",
+      "en": {
+        "name": "Menu Moov Money",
+        "description": "Open the Moov Money menu.",
+        "notes": "Official page: deposits, withdrawals, national and international transfers, bills, merchant payments, airtime, bundles. No fees published."
+      }
+    }
+  ]
+}

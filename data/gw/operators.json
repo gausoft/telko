@@ -1,0 +1,109 @@
+{
+  "country": "gw",
+  "operators": [
+    {
+      "id": "orange",
+      "name": "Orange Bissau",
+      "short_name": "Orange",
+      "former_names": [],
+      "badge": {
+        "label": "O",
+        "background": "#FF7900",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "orange-money",
+        "name": "Orange Money",
+        "short_name": "Orange Money",
+        "former_names": [],
+        "badge": {
+          "label": "OM",
+          "background": "#FF7900",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.orange-bissau.com",
+      "customer_service": "500",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/contacte-nos.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {}
+    },
+    {
+      "id": "telecel",
+      "name": "Telecel Guiné-Bissau",
+      "short_name": "Telecel",
+      "former_names": [
+        "MTN Guiné-Bissau",
+        "Spacetel"
+      ],
+      "badge": {
+        "label": "T",
+        "background": "#FF383C",
+        "foreground": "#000000"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "teletaku",
+        "name": "TeleTaku",
+        "short_name": "TeleTaku",
+        "former_names": [
+          "Telecel Cash"
+        ],
+        "badge": {
+          "label": "TT",
+          "background": "#FF383C",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://telecel.gw",
+      "customer_service": "+245 966666671",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://telecelglobal.com/?p=3022",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.com/joint-statement-telecel-group-mobile-completed-the-acquisition-of-mtn-guinea-bissau-from-mtn/",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ancien MTN Guiné-Bissau, repris par Telecel Group en 2024. Le numéro de contact affiché sur le site n'est pas présenté comme un service client.",
+      "en": {
+        "notes": "Former MTN Guinea-Bissau, acquired by Telecel Group in 2024. The contact number shown on the site is not presented as a customer service line."
+      }
+    }
+  ]
+}

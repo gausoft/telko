@@ -1,0 +1,702 @@
+{
+  "operator": "orange",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "orange-internet-pass-jour-200",
+      "kind": "bundle",
+      "name": "Pass Internet jour 200 F",
+      "description": "300 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 200 F",
+        "description": "300 MB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-500",
+      "kind": "bundle",
+      "name": "Pass Internet jour 500 F",
+      "description": "1536 Mo valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 500 F",
+        "description": "1536 MB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-1000",
+      "kind": "bundle",
+      "name": "Pass Internet jour 1000 F",
+      "description": "5 Go valables 24 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass jour 1000 F",
+        "description": "5 GB, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-500",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 500 F",
+      "description": "600 Mo valables 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 500 F",
+        "description": "600 MB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-1000",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 1000 F",
+      "description": "2 Go valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 1000 F",
+        "description": "2 GB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-2500",
+      "kind": "bundle",
+      "name": "Pass Internet semaine 2500 F",
+      "description": "10 Go valables 7 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass semaine 2500 F",
+        "description": "10 GB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-2000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 2000 F",
+      "description": "6 Go valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 2000 F",
+        "description": "6 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-3000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 3000 F",
+      "description": "12 Go valables 30 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 12288,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Achat exclusivement avec Orange Money d'après la page officielle. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 3000 F",
+        "description": "12 GB, valid 30 days.",
+        "notes": "Purchase only with Orange Money according to the official page. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-5000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 5000 F",
+      "description": "25 Go valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 25600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 5000 F",
+        "description": "25 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-10000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 10000 F",
+      "description": "60 Go valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 61440,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 10000 F",
+        "description": "60 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-15000",
+      "kind": "bundle",
+      "name": "Pass Internet mois 15000 F",
+      "description": "100 Go valables 30 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 102400,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet pass mois 15000 F",
+        "description": "100 GB, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-edu-100",
+      "kind": "bundle",
+      "name": "Pass Edu 100 F",
+      "description": "1 Go valable 7 jours.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "edu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Edu 100 F",
+        "description": "1 GB, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit-500",
+      "kind": "bundle",
+      "name": "Pass Nuit 500 F",
+      "description": "5 Go utilisables de 23 h à 6 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": {
+        "from": "23:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/pass-internet",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne précise pas la durée de validité : à contrôler. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Nuit 500 F",
+        "description": "5 GB usable from 11 pm to 6 am.",
+        "notes": "The page does not state the validity: to be checked. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-internet-sos-pass-internet",
+      "kind": "service",
+      "name": "SOS Pass Internet",
+      "description": "Pass de secours quand votre pass est épuisé, déduit de votre prochain rechargement.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#1234#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/jamono-new-s-cool-mod-15",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option Mes services Internet du menu #1234#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "SOS Pass Internet",
+        "description": "Emergency pass when your pass runs out, deducted from your next top-up.",
+        "notes": "Mes services Internet option of the #1234# menu. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

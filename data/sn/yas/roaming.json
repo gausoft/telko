@@ -1,0 +1,1263 @@
+{
+  "operator": "yas",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "yas-roaming-cedeao-1000",
+      "kind": "bundle",
+      "name": "Forfait CEDEAO 1000 F",
+      "description": "5 minutes et 100 Mo en voyage (Mali, Côte d'Ivoire, Togo, Bénin), valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait CEDEAO 1000 F",
+        "description": "5 minutes and 100 MB when travelling (Mali, Côte d'Ivoire, Togo, Benin), valid 7 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-cedeao-2500",
+      "kind": "bundle",
+      "name": "Forfait CEDEAO 2500 F",
+      "description": "30 minutes et 250 Mo en voyage (Mali, Côte d'Ivoire, Togo, Bénin), valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait CEDEAO 2500 F",
+        "description": "30 minutes and 250 MB when travelling (Mali, Côte d'Ivoire, Togo, Benin), valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-cedeao-5000",
+      "kind": "bundle",
+      "name": "Forfait CEDEAO 5000 F",
+      "description": "60 minutes et 750 Mo en voyage (Mali, Côte d'Ivoire, Togo, Bénin), valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait CEDEAO 5000 F",
+        "description": "60 minutes and 750 MB when travelling (Mali, Côte d'Ivoire, Togo, Benin), valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-cedeao-1000",
+      "kind": "bundle",
+      "name": "Pass Internet CEDEAO 1000 F",
+      "description": "250 Mo d'internet en voyage dans la zone CEDEAO, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet CEDEAO 1000 F",
+        "description": "250 MB of data when travelling in the ECOWAS zone, valid 7 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-cedeao-2500",
+      "kind": "bundle",
+      "name": "Pass Internet CEDEAO 2500 F",
+      "description": "750 Mo d'internet en voyage dans la zone CEDEAO, valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet CEDEAO 2500 F",
+        "description": "750 MB of data when travelling in the ECOWAS zone, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-cedeao-5000",
+      "kind": "bundle",
+      "name": "Pass Internet CEDEAO 5000 F",
+      "description": "2 Go d'internet en voyage dans la zone CEDEAO, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cedeao",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet CEDEAO 5000 F",
+        "description": "2 GB of data when travelling in the ECOWAS zone, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-gambie-1000",
+      "kind": "bundle",
+      "name": "Forfait Gambie 1000 F",
+      "description": "10 minutes, 10 SMS et 100 Mo en Gambie, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 10,
+        "sms": 10
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait Gambie 1000 F",
+        "description": "10 minutes, 10 SMS and 100 MB in The Gambia, valid 7 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-gambie-5000",
+      "kind": "bundle",
+      "name": "Forfait Gambie 5000 F",
+      "description": "30 minutes, 15 SMS et 250 Mo en Gambie, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": 30,
+        "sms": 15
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait Gambie 5000 F",
+        "description": "30 minutes, 15 SMS and 250 MB in The Gambia, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-gambie-10000",
+      "kind": "bundle",
+      "name": "Forfait Gambie 10000 F",
+      "description": "60 minutes, 30 SMS et 750 Mo en Gambie, valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": 60,
+        "sms": 30
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Forfait Gambie 10000 F",
+        "description": "60 minutes, 30 SMS and 750 MB in The Gambia, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-gambie-1000",
+      "kind": "bundle",
+      "name": "Pass Internet Gambie 1000 F",
+      "description": "250 Mo d'internet en Gambie, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet Gambie 1000 F",
+        "description": "250 MB of data in The Gambia, valid 7 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-gambie-5000",
+      "kind": "bundle",
+      "name": "Pass Internet Gambie 5000 F",
+      "description": "1 Go d'internet en Gambie, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet Gambie 5000 F",
+        "description": "1 GB of data in The Gambia, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-pass-internet-gambie-10000",
+      "kind": "bundle",
+      "name": "Pass Internet Gambie 10000 F",
+      "description": "3 Go d'internet en Gambie, valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "gambie",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les fiches de l'offre citent le #707#, le texte de la page cite le #155*5#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pass Internet Gambie 10000 F",
+        "description": "3 GB of data in The Gambia, valid 30 days.",
+        "notes": "The offer cards give #707#, the page text gives #155*5#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-mauritanie-gambie-5000",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie et Gambie 5000 F",
+      "description": "10 min entrantes, 5 min sortantes et 10 SMS, valables 30 jours (Mauritanie et Gambie).",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 10
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie-gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mauritania and The Gambia bundle 5000 F",
+        "description": "10 incoming min, 5 outgoing min and 10 SMS, valid 30 days (Mauritania and The Gambia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-mauritanie-gambie-10000",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie et Gambie 10000 F",
+      "description": "25 min entrantes, 10 min sortantes et 15 SMS, valables 30 jours (Mauritanie et Gambie).",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 15
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie-gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mauritania and The Gambia bundle 10000 F",
+        "description": "25 incoming min, 10 outgoing min and 15 SMS, valid 30 days (Mauritania and The Gambia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-mauritanie-gambie-20000",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie et Gambie 20000 F",
+      "description": "50 min entrantes, 20 min sortantes et 30 SMS, valables 30 jours (Mauritanie et Gambie).",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 30
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie-gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mauritania and The Gambia bundle 20000 F",
+        "description": "50 incoming min, 20 outgoing min and 30 SMS, valid 30 days (Mauritania and The Gambia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-maroc-5000",
+      "kind": "bundle",
+      "name": "Forfait Maroc 5000 F",
+      "description": "10 min entrantes, 5 min sortantes et 10 SMS, valables 30 jours (Maroc).",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 10
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Morocco bundle 5000 F",
+        "description": "10 incoming min, 5 outgoing min and 10 SMS, valid 30 days (Morocco).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-maroc-10000",
+      "kind": "bundle",
+      "name": "Forfait Maroc 10000 F",
+      "description": "25 min entrantes, 10 min sortantes et 30 SMS, valables 30 jours (Maroc).",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 30
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Morocco bundle 10000 F",
+        "description": "25 incoming min, 10 outgoing min and 30 SMS, valid 30 days (Morocco).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-maroc-20000",
+      "kind": "bundle",
+      "name": "Forfait Maroc 20000 F",
+      "description": "50 min entrantes, 20 min sortantes et 60 SMS, valables 30 jours (Maroc).",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 60
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Morocco bundle 20000 F",
+        "description": "50 incoming min, 20 outgoing min and 60 SMS, valid 30 days (Morocco).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-eau-arabie-5000",
+      "kind": "bundle",
+      "name": "Forfait Émirats arabes unis et Arabie saoudite 5000 F",
+      "description": "10 min entrantes, 10 min sortantes et 15 SMS, valables 30 jours (Émirats arabes unis et Arabie saoudite).",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 15
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "eau-arabie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "United Arab Emirates and Saudi Arabia bundle 5000 F",
+        "description": "10 incoming min, 10 outgoing min and 15 SMS, valid 30 days (United Arab Emirates and Saudi Arabia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-eau-arabie-10000",
+      "kind": "bundle",
+      "name": "Forfait Émirats arabes unis et Arabie saoudite 10000 F",
+      "description": "20 min entrantes, 25 min sortantes et 30 SMS, valables 30 jours (Émirats arabes unis et Arabie saoudite).",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 30
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "eau-arabie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "United Arab Emirates and Saudi Arabia bundle 10000 F",
+        "description": "20 incoming min, 25 outgoing min and 30 SMS, valid 30 days (United Arab Emirates and Saudi Arabia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-eau-arabie-20000",
+      "kind": "bundle",
+      "name": "Forfait Émirats arabes unis et Arabie saoudite 20000 F",
+      "description": "40 min entrantes, 60 min sortantes et 60 SMS, valables 30 jours (Émirats arabes unis et Arabie saoudite).",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 60
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "eau-arabie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "United Arab Emirates and Saudi Arabia bundle 20000 F",
+        "description": "40 incoming min, 60 outgoing min and 60 SMS, valid 30 days (United Arab Emirates and Saudi Arabia).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-qatar-5000",
+      "kind": "bundle",
+      "name": "Forfait Qatar 5000 F",
+      "description": "15 min entrantes, 15 min sortantes et 15 SMS, valables 30 jours (Qatar).",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 15
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "qatar"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Qatar bundle 5000 F",
+        "description": "15 incoming min, 15 outgoing min and 15 SMS, valid 30 days (Qatar).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-qatar-10000",
+      "kind": "bundle",
+      "name": "Forfait Qatar 10000 F",
+      "description": "35 min entrantes, 35 min sortantes et 35 SMS, valables 30 jours (Qatar).",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 35
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "qatar"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Qatar bundle 10000 F",
+        "description": "35 incoming min, 35 outgoing min and 35 SMS, valid 30 days (Qatar).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-qatar-20000",
+      "kind": "bundle",
+      "name": "Forfait Qatar 20000 F",
+      "description": "70 min entrantes, 30 min sortantes et 100 SMS, valables 30 jours (Qatar).",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "qatar"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Qatar bundle 20000 F",
+        "description": "70 incoming min, 30 outgoing min and 100 SMS, valid 30 days (Qatar).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-roaming-france-italie-10000",
+      "kind": "bundle",
+      "name": "Forfait France et Italie 10000 F",
+      "description": "60 minutes en réception et 1 Go, valables 30 jours (France, Italie).",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "france",
+        "italie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "France and Italy bundle 10000 F",
+        "description": "60 minutes of incoming calls and 1 GB, valid 30 days (France, Italy).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

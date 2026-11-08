@@ -1,0 +1,475 @@
+{
+  "operator": "moov",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-100",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 100 F",
+      "description": "Pour 100 F, 357 unités d'appel valables 24 h.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 100 F",
+        "description": "For 100 F, 357 call units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-150",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 150 F",
+      "description": "Pour 150 F, 536 unités d'appel valables 24 h.",
+      "price": 150,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 150 F",
+        "description": "For 150 F, 536 call units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-200",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 200 F",
+      "description": "Pour 200 F, 714 unités d'appel valables 24 h.",
+      "price": 200,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 200 F",
+        "description": "For 200 F, 714 call units valid 24 h.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-500",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 500 F",
+      "description": "Pour 500 F, 1 786 unités d'appel valables 3 jours.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 500 F",
+        "description": "For 500 F, 1 786 call units valid 3 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-1000",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 1 000 F",
+      "description": "Pour 1 000 F, 3 571 unités d'appel valables 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 1 000 F",
+        "description": "For 1 000 F, 3 571 call units valid 7 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-2500",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 2 500 F",
+      "description": "Pour 2 500 F, 8 929 unités d'appel valables 15 jours.",
+      "price": 2500,
+      "allowances": null,
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 2 500 F",
+        "description": "For 2 500 F, 8 929 call units valid 15 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    },
+    {
+      "id": "moov-voice-sms-pass-bonus-appel-5000",
+      "kind": "bundle",
+      "name": "Pass Bonus Appel 5 000 F",
+      "description": "Pour 5 000 F, 17 857 unités d'appel valables 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173*1*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "min": 100,
+            "max": 5000,
+            "presets": [
+              100,
+              150,
+              200,
+              500,
+              1000,
+              5000
+            ]
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne définit pas la colonne « Unité ». Le code de souscription prend le montant du pass ; le type (appel seul) se choisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus Call 5 000 F",
+        "description": "For 5 000 F, 17 857 call units valid 30 days.",
+        "notes": "The page does not define the \"Unit\" column. The subscription code takes the pass amount; the type (calls only) is chosen in the menu."
+      }
+    }
+  ]
+}

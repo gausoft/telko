@@ -1,0 +1,283 @@
+{
+  "operator": "yas",
+  "category": "general",
+  "entries": [
+    {
+      "id": "yas-general-solde-numero",
+      "kind": "service",
+      "name": "Afficher mon numéro et mon solde",
+      "description": "Affiche votre numéro et votre solde.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#176#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Show my number and balance",
+        "description": "Shows your number and your balance."
+      }
+    },
+    {
+      "id": "yas-general-menu-forfaits",
+      "kind": "service",
+      "name": "Menu des forfaits",
+      "description": "Menu principal pour activer internet, appels, Illimax, Bougna et les offres voyage.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "forfaits"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bundles menu",
+        "description": "Main menu to activate internet, calls, Illimax, Bougna and travel offers.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-general-activer-forfait-internet",
+      "kind": "service",
+      "name": "Activer un forfait internet",
+      "description": "Menu d'activation des forfaits internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#100#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "forfaits"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Activate an internet bundle",
+        "description": "Menu to activate internet bundles.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-general-bougna",
+      "kind": "service",
+      "name": "Bougna",
+      "description": "Menu de l'offre Bougna (crédit bonus).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#400#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna",
+        "description": "Bougna menu (bonus credit).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-general-xalamal",
+      "kind": "service",
+      "name": "Activer Xalamal",
+      "description": "Active le service Xalamal.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#112#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ indique le 21112 par SMS pour le désactiver.",
+      "en": {
+        "name": "Activate Xalamal",
+        "description": "Activates the Xalamal service.",
+        "notes": "The FAQ says to text 21112 to deactivate it."
+      }
+    },
+    {
+      "id": "yas-general-yasfoot",
+      "kind": "service",
+      "name": "YasFoot",
+      "description": "Menu du service YasFoot : l'option 1 active, l'option 8 désactive.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#777#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "foot",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "YasFoot",
+        "description": "YasFoot service menu: option 1 activates, option 8 deactivates.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-general-appelle-moi",
+      "kind": "service",
+      "name": "Appelle-moi",
+      "description": "Envoie un message demandant à une personne de vous rappeler.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#170*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro de la personne à faire rappeler",
+            "required": true,
+            "en": {
+              "label": "Number of the person to ask to call back"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "appelle-moi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Call me back",
+        "description": "Sends a message asking someone to call you back."
+      }
+    }
+  ]
+}

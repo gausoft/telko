@@ -1,0 +1,48 @@
+{
+  "operator": "celtiis",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "celtiis-mobile-money-ouvrir-compte",
+      "kind": "service",
+      "name": "Ouvrir un compte Celtiis Cash",
+      "description": "Ouvrir soi-même son compte Celtiis Cash, sans passer par l'application.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*889#",
+        "params": []
+      },
+      "payment_methods": [
+        "celtiis-cash"
+      ],
+      "third_party": null,
+      "tags": [
+        "celtiis cash",
+        "compte",
+        "inscription",
+        "mobile money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis-cash",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ouvert quel que soit l'opérateur mobile du client au Bénin, selon le site. Le menu du portefeuille n'est pas publié.",
+      "en": {
+        "name": "Open a Celtiis Cash account",
+        "description": "Open your own Celtiis Cash account, without using the app.",
+        "notes": "Open whichever mobile operator the customer uses in Benin, according to the site. The wallet menu is not published."
+      }
+    }
+  ]
+}

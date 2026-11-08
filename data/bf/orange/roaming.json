@@ -1,0 +1,51 @@
+{
+  "operator": "orange",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "orange-roaming-menu",
+      "kind": "service",
+      "name": "Pass Roaming internet",
+      "description": "Menu des pass internet à l'étranger : 100 Mo à 1 050 F (15 jours), 1 Go à 5 250 F (30 jours), 2,1 Go à 10 500 F, 5 Go à 23 100 F.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*119#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les validités des deux plus gros pass ne sont pas lisibles dans le catalogue. Une offre Roaming AES (Mali, Niger) 1 Go à 2 000 F existe, sans code distinct publié.",
+      "en": {
+        "name": "Pass Roaming internet",
+        "description": "Menu of internet passes abroad: 100 MB for 1,050 F (15 days), 1 GB for 5,250 F (30 days), 2.1 GB for 10,500 F, 5 GB for 23,100 F.",
+        "notes": "Validities of the two largest passes are not readable in the catalogue. A Roaming AES offer (Mali, Niger) 1 GB for 2,000 F exists, with no distinct published code."
+      }
+    }
+  ]
+}

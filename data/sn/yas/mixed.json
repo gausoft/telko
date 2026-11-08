@@ -1,0 +1,776 @@
+{
+  "operator": "yas",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "yas-mixed-600",
+      "kind": "bundle",
+      "name": "Illimax 600",
+      "description": "60 min d'appel, 2 Go et 30 SMS, valables 3 jours.",
+      "price": 600,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": 60,
+        "sms": 30
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax 600",
+        "description": "60 call minutes, 2 GB and 30 SMS, valid 3 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-1200",
+      "kind": "bundle",
+      "name": "Illimax 1200",
+      "description": "120 min d'appel, 4 Go et 50 SMS, valables 10 jours.",
+      "price": 1200,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": 120,
+        "sms": 50
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax 1200",
+        "description": "120 call minutes, 4 GB and 50 SMS, valid 10 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-jour-100",
+      "kind": "bundle",
+      "name": "Illimax jour 100 F",
+      "description": "20 min d'appel, 40 Mo et 20 SMS, valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": 20,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax jour 100 F",
+        "description": "20 call minutes, 40 MB and 20 SMS, valid 24 h.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-jour-200",
+      "kind": "bundle",
+      "name": "Illimax jour 200 F",
+      "description": "40 min d'appel, 70 Mo et 20 SMS, valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 70,
+        "voice_min": 40,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax jour 200 F",
+        "description": "40 call minutes, 70 MB and 20 SMS, valid 24 h.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-jour-300",
+      "kind": "bundle",
+      "name": "Illimax jour 300 F",
+      "description": "60 min d'appel, 150 Mo et 20 SMS, valables 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": 60,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax jour 300 F",
+        "description": "60 call minutes, 150 MB and 20 SMS, valid 24 h.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-jour-500",
+      "kind": "bundle",
+      "name": "Illimax jour 500 F",
+      "description": "150 min d'appel, 700 Mo et 20 SMS, valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 700,
+        "voice_min": 150,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax jour 500 F",
+        "description": "150 call minutes, 700 MB and 20 SMS, valid 24 h.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-semaine-500",
+      "kind": "bundle",
+      "name": "Illimax semaine 500 F",
+      "description": "50 min d'appel, 400 Mo et 50 SMS, valables 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": 50,
+        "sms": 50
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax semaine 500 F",
+        "description": "50 call minutes, 400 MB and 50 SMS, valid 7 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-semaine-1000",
+      "kind": "bundle",
+      "name": "Illimax semaine 1000 F",
+      "description": "300 min d'appel, 1536 Mo et 50 SMS, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": 300,
+        "sms": 50
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax semaine 1000 F",
+        "description": "300 call minutes, 1536 MB and 50 SMS, valid 7 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-semaine-2000",
+      "kind": "bundle",
+      "name": "Illimax semaine 2000 F",
+      "description": "275 min d'appel, 4608 Mo et 50 SMS, valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 4608,
+        "voice_min": 275,
+        "sms": 50
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax semaine 2000 F",
+        "description": "275 call minutes, 4608 MB and 50 SMS, valid 7 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-mois-2000",
+      "kind": "bundle",
+      "name": "Illimax mois 2000 F",
+      "description": "300 min d'appel, 2560 Mo et 100 SMS, valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax mois 2000 F",
+        "description": "300 call minutes, 2560 MB and 100 SMS, valid 30 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-mois-4000",
+      "kind": "bundle",
+      "name": "Illimax mois 4000 F",
+      "description": "600 min d'appel, 24 Go et 100 SMS, valables 30 jours.",
+      "price": 4000,
+      "allowances": {
+        "data_mb": 24576,
+        "voice_min": 600,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax mois 4000 F",
+        "description": "600 call minutes, 24 GB and 100 SMS, valid 30 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-mois-5000",
+      "kind": "bundle",
+      "name": "Illimax mois 5000 F",
+      "description": "300 min d'appel, 24 Go et 100 SMS, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 24576,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax mois 5000 F",
+        "description": "300 call minutes, 24 GB and 100 SMS, valid 30 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-mois-6000",
+      "kind": "bundle",
+      "name": "Illimax mois 6000 F",
+      "description": "900 min d'appel, 18 Go et 100 SMS, valables 30 jours.",
+      "price": 6000,
+      "allowances": {
+        "data_mb": 18432,
+        "voice_min": 900,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax mois 6000 F",
+        "description": "900 call minutes, 18 GB and 100 SMS, valid 30 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-mixed-mois-10000",
+      "kind": "bundle",
+      "name": "Illimax mois 10000 F",
+      "description": "2000 min d'appel, 30 Go et 100 SMS, valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": 2000,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimax",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/promo-illimax-24go/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Option 3 du menu #155#. Certaines valeurs de la grille sont inhabituelles : à contrôler sur un téléphone. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax mois 10000 F",
+        "description": "2000 call minutes, 30 GB and 100 SMS, valid 30 days.",
+        "notes": "Option 3 of the #155# menu. Some values in the price grid look unusual: to be checked on a phone. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

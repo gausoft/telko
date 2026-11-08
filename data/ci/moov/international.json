@@ -1,0 +1,567 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-benin-togo-500",
+      "kind": "bundle",
+      "name": "Forfait Bénin / Togo 500 F",
+      "description": "7 min internationales + 3 min locales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "bénin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo bundle 500 F",
+        "description": "7 international min + 3 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-benin-togo-1000",
+      "kind": "bundle",
+      "name": "Forfait Bénin / Togo 1 000 F",
+      "description": "15 min internationales + 5 min locales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "bénin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo bundle 1,000 F",
+        "description": "15 international min + 5 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-benin-togo-2000",
+      "kind": "bundle",
+      "name": "Forfait Bénin / Togo 2 000 F",
+      "description": "40 min internationales + 10 min locales, valables 10 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "bénin"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Benin / Togo bundle 2,000 F",
+        "description": "40 international min + 10 local min, valid 10 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-ghana-senegal-2100",
+      "kind": "bundle",
+      "name": "Forfait Ghana / Sénégal 2 100 F",
+      "description": "12 min internationales + 12 min locales, valables 7 jours.",
+      "price": 2100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 24,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "ghana"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Ghana / Senegal bundle 2,100 F",
+        "description": "12 international min + 12 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-amerique-asie-europe-900",
+      "kind": "bundle",
+      "name": "Forfait Amérique / Asie / Europe 900 F",
+      "description": "12 min internationales + 12 min locales, valables 7 jours.",
+      "price": 900,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 24,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "europe"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "America / Asia / Europe bundle 900 F",
+        "description": "12 international min + 12 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-maroc-500",
+      "kind": "bundle",
+      "name": "Forfait Maroc 500 F",
+      "description": "7 min internationales + 7 min locales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 14,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*8#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Morocco bundle 500 F",
+        "description": "7 international min + 7 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-maroc-1000",
+      "kind": "bundle",
+      "name": "Forfait Maroc 1 000 F",
+      "description": "15 min internationales + 15 min locales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*8#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Morocco bundle 1,000 F",
+        "description": "15 international min + 15 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-maroc-2000",
+      "kind": "bundle",
+      "name": "Forfait Maroc 2 000 F",
+      "description": "50 min internationales + 30 min locales, valables 10 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 80,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*8#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "maroc"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Morocco bundle 2,000 F",
+        "description": "50 international min + 30 local min, valid 10 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-mauritanie-500",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie 500 F",
+      "description": "3 min internationales + 3 min locales, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 6,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Mauritania bundle 500 F",
+        "description": "3 international min + 3 local min, valid 3 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-mauritanie-1000",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie 1 000 F",
+      "description": "7 min internationales + 7 min locales, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 14,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Mauritania bundle 1,000 F",
+        "description": "7 international min + 7 local min, valid 7 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-international-mauritanie-2000",
+      "kind": "bundle",
+      "name": "Forfait Mauritanie 2 000 F",
+      "description": "15 min internationales + 15 min locales, valables 10 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*5*1*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-inter/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes internationales et locales additionnées dans le total ; la page ne donne pas de code propre à chaque forfait, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Mauritania bundle 2,000 F",
+        "description": "15 international min + 15 local min, valid 10 days.",
+        "notes": "International and local minutes are added in the total; the page gives no dedicated code per bundle, you pick the bundle in the menu."
+      }
+    }
+  ]
+}

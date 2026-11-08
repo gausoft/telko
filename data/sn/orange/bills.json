@@ -1,0 +1,160 @@
+{
+  "operator": "orange",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "orange-bills-canal-reconduction",
+      "kind": "service",
+      "name": "Canal+ : reconduction",
+      "description": "Réabonnement Canal+ avec Orange Money, sans frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#3*5*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "tv"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Canal+ renewal",
+        "description": "Canal+ renewal with Orange Money, free of charge.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-bills-canal-regularisation",
+      "kind": "service",
+      "name": "Canal+ : régularisation",
+      "description": "Régularisation d'un abonnement Canal+ avec Orange Money, sans frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#3*5*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "tv"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Canal+ regularisation",
+        "description": "Canal+ regularisation with Orange Money, free of charge.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-bills-woyofal",
+      "kind": "service",
+      "name": "Recharge compteur Woyofal",
+      "description": "Achat d'un code de recharge Woyofal (de 1 000 F à 1 500 000 F).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#342#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "woyofal",
+        "électricité",
+        "senelec"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Woyofal meter top-up",
+        "description": "Woyofal meter top-up code purchase (1,000 F to 1,500,000 F).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-bills-factures-orange-money",
+      "kind": "service",
+      "name": "Payer une facture avec Orange Money",
+      "description": "Factures Senelec, SEN'EAU, Sonatel, Teranga et recharge Rapido depuis le menu Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "senelec",
+        "sen'eau"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Pay a bill with Orange Money",
+        "description": "Senelec, SEN'EAU, Sonatel, Teranga bills and Rapido top-up from the Orange Money menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

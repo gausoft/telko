@@ -1,0 +1,720 @@
+{
+  "operator": "zamani",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "zamani-internet-jour-100",
+      "kind": "bundle",
+      "name": "Pass jour 35 Mo 100 F",
+      "description": "35 Mo pour 100 F, durée : 1 jour.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 35,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#411#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass jour 35 MB 100 F",
+        "description": "35 MB for 100 F, duration: 1 day.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-jour-150",
+      "kind": "bundle",
+      "name": "Pass jour 40 Mo 150 F",
+      "description": "40 Mo pour 150 F, durée : 1 jour.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#412#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass jour 40 MB 150 F",
+        "description": "40 MB for 150 F, duration: 1 day.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-jour-200",
+      "kind": "bundle",
+      "name": "Pass jour 75 Mo 200 F",
+      "description": "75 Mo pour 200 F, durée : 1 jour.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 75,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#413#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass jour 75 MB 200 F",
+        "description": "75 MB for 200 F, duration: 1 day.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-jour-300",
+      "kind": "bundle",
+      "name": "Pass jour 125 Mo 300 F",
+      "description": "125 Mo pour 300 F, durée : 1 jour.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 125,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#414#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass jour 125 MB 300 F",
+        "description": "125 MB for 300 F, duration: 1 day.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-jour-500",
+      "kind": "bundle",
+      "name": "Pass jour 600 Mo 500 F",
+      "description": "600 Mo pour 500 F, durée : 1 jour.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#415#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass jour 600 MB 500 F",
+        "description": "600 MB for 500 F, duration: 1 day.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-semaine-500",
+      "kind": "bundle",
+      "name": "Pass Semaine 500 Mo 500 F",
+      "description": "500 Mo pour 500 F, durée : 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#421#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Semaine 500 MB 500 F",
+        "description": "500 MB for 500 F, duration: 7 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-semaine-plus-1000",
+      "kind": "bundle",
+      "name": "Pass Semaine + 1 Go 1 000 F",
+      "description": "1 Go pour 1 000 F, durée : 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#422#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Semaine + 1 GB 1 000 F",
+        "description": "1 GB for 1 000 F, duration: 7 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-semaine-intense-2000",
+      "kind": "bundle",
+      "name": "Pass Semaine Intense 3 Go 2 000 F",
+      "description": "3 Go pour 2 000 F, durée : 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#423#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Semaine Intense 3 GB 2 000 F",
+        "description": "3 GB for 2 000 F, duration: 7 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-semaine-3000",
+      "kind": "bundle",
+      "name": "Pass Semaine 5 Go 3 000 F",
+      "description": "5 Go pour 3 000 F, durée : 7 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#424#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Semaine 5 GB 3 000 F",
+        "description": "5 GB for 3 000 F, duration: 7 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-mois-2000",
+      "kind": "bundle",
+      "name": "Pass Mois 2 Go 2 000 F",
+      "description": "2 Go pour 2 000 F, durée : 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#431#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Mois 2 GB 2 000 F",
+        "description": "2 GB for 2 000 F, duration: 30 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-mois-5000",
+      "kind": "bundle",
+      "name": "Pass Mois 6 Go 5 000 F",
+      "description": "6 Go pour 5 000 F, durée : 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#432#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Mois 6 GB 5 000 F",
+        "description": "6 GB for 5 000 F, duration: 30 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-mois-10000",
+      "kind": "bundle",
+      "name": "Pass Mois 16 Go 10 000 F",
+      "description": "16 Go pour 10 000 F, durée : 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 16384,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#433#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Mois 16 GB 10 000 F",
+        "description": "16 GB for 10 000 F, duration: 30 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-mois-20000",
+      "kind": "bundle",
+      "name": "Pass Mois 40 Go 20 000 F",
+      "description": "40 Go pour 20 000 F, durée : 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 40960,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#434#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass Mois 40 GB 20 000 F",
+        "description": "40 GB for 20 000 F, duration: 30 days.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    },
+    {
+      "id": "zamani-internet-6-mois-50000",
+      "kind": "bundle",
+      "name": "Pass 6 Mois 60 Go 50 000 F",
+      "description": "60 Go pour 50 000 F, durée : 6 mois.",
+      "price": 50000,
+      "allowances": {
+        "data_mb": 61440,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 180,
+        "label": "6 mois",
+        "en": {
+          "label": "6 months"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#435#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La durée est déduite du nom du pass (jour, semaine, mois, 6 mois) : la page ne la détaille pas.",
+      "en": {
+        "name": "Pass 6 Mois 60 GB 50 000 F",
+        "description": "60 GB for 50 000 F, duration: 6 months.",
+        "notes": "The duration is taken from the pass name (day, week, month, 6 months): the page does not detail it."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1323 @@
+{
+  "operator": "moov",
+  "service": "moov-money",
+  "entries": [
+    {
+      "id": "moov-fees-transfert-usdd-1-1000",
+      "operation": "transfer-national",
+      "min": 1,
+      "max": 1000,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Transfert Moov vers Moov par USSD, de 1 à 1 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page indique les 3 premières transactions de la journée à ce tarif ; la ligne de la 4e transaction est ambiguë. À vérifier.",
+      "en": {
+        "label": "Moov to Moov transfer by USSD, from 1 to 1,000 F",
+        "notes": "The page gives the first 3 transactions of the day at this rate; the 4th transaction line is ambiguous. To be checked."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-ussd-1001-2000000",
+      "operation": "transfer-national",
+      "min": 1001,
+      "max": 2000000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Transfert Moov vers Moov par USSD, de 1 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Moov to Moov transfer by USSD, from 1,001 to 2,000,000 F"
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-1-10000",
+      "operation": "transfer-cross-network",
+      "min": 1,
+      "max": 10000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 1 à 10 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 1 to 10 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-10001-25000",
+      "operation": "transfer-cross-network",
+      "min": 10001,
+      "max": 25000,
+      "fee": 500,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 10 001 à 25 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 10 001 to 25 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-25001-50000",
+      "operation": "transfer-cross-network",
+      "min": 25001,
+      "max": 50000,
+      "fee": 800,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 25 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 25 001 to 50 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-50001-100000",
+      "operation": "transfer-cross-network",
+      "min": 50001,
+      "max": 100000,
+      "fee": 1100,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 50 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 50 001 to 100 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-100001-200000",
+      "operation": "transfer-cross-network",
+      "min": 100001,
+      "max": 200000,
+      "fee": 1600,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 100 001 à 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 100 001 to 200 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-200001-270000",
+      "operation": "transfer-cross-network",
+      "min": 200001,
+      "max": 270000,
+      "fee": 2100,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 200 001 à 270 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 200 001 to 270 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-270001-300000",
+      "operation": "transfer-cross-network",
+      "min": 270001,
+      "max": 300000,
+      "fee": 3100,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 270 001 à 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 270 001 to 300 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-300001-400000",
+      "operation": "transfer-cross-network",
+      "min": 300001,
+      "max": 400000,
+      "fee": 3600,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 300 001 à 400 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 300 001 to 400 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-400001-500000",
+      "operation": "transfer-cross-network",
+      "min": 400001,
+      "max": 500000,
+      "fee": 3600,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 400 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 400 001 to 500 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-500001-600000",
+      "operation": "transfer-cross-network",
+      "min": 500001,
+      "max": 600000,
+      "fee": 5600,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 500 001 à 600 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 500 001 to 600 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-600001-750000",
+      "operation": "transfer-cross-network",
+      "min": 600001,
+      "max": 750000,
+      "fee": 7500,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 600 001 à 750 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 600 001 to 750 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-750001-1000000",
+      "operation": "transfer-cross-network",
+      "min": 750001,
+      "max": 1000000,
+      "fee": 7500,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 750 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 750 001 to 1 000 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-1000001-1500000",
+      "operation": "transfer-cross-network",
+      "min": 1000001,
+      "max": 1500000,
+      "fee": 11500,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 1 000 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 1 000 001 to 1 500 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-transfert-autre-reseau-1500001-2000000",
+      "operation": "transfer-cross-network",
+      "min": 1500001,
+      "max": 2000000,
+      "fee": 15000,
+      "fee_percent": null,
+      "label": "Transfert vers un autre réseau de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais présentés par la page comme des frais de retrait pour le destinataire d'un autre réseau.",
+      "en": {
+        "label": "Transfer to another network from 1 500 001 to 2 000 000 F",
+        "notes": "Fees shown by the page as withdrawal fees for a recipient on another network."
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-100-500",
+      "operation": "withdrawal",
+      "min": 100,
+      "max": 500,
+      "fee": 50,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 100 à 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page publie d'autres tableaux de retrait sans dire lequel s'applique à quelle opération. À vérifier.",
+      "en": {
+        "label": "Withdrawal at an agent from 100 to 500 F",
+        "notes": "The page publishes other withdrawal tables without saying which applies to which transaction. To be checked."
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-501-5000",
+      "operation": "withdrawal",
+      "min": 501,
+      "max": 5000,
+      "fee": 125,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 501 à 5 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 501 to 5 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-5001-10000",
+      "operation": "withdrawal",
+      "min": 5001,
+      "max": 10000,
+      "fee": 225,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 5 001 à 10 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 5 001 to 10 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-10001-20000",
+      "operation": "withdrawal",
+      "min": 10001,
+      "max": 20000,
+      "fee": 375,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 10 001 à 20 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 10 001 to 20 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-20001-50000",
+      "operation": "withdrawal",
+      "min": 20001,
+      "max": 50000,
+      "fee": 700,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 20 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 20 001 to 50 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-50001-75000",
+      "operation": "withdrawal",
+      "min": 50001,
+      "max": 75000,
+      "fee": 1000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 50 001 à 75 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 50 001 to 75 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-75001-100000",
+      "operation": "withdrawal",
+      "min": 75001,
+      "max": 100000,
+      "fee": 1000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 75 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 75 001 to 100 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-100001-200000",
+      "operation": "withdrawal",
+      "min": 100001,
+      "max": 200000,
+      "fee": 2000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 100 001 à 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 100 001 to 200 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-200001-300000",
+      "operation": "withdrawal",
+      "min": 200001,
+      "max": 300000,
+      "fee": 3000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 200 001 à 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 200 001 to 300 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-300001-400000",
+      "operation": "withdrawal",
+      "min": 300001,
+      "max": 400000,
+      "fee": 3500,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 300 001 à 400 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 300 001 to 400 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-400001-500000",
+      "operation": "withdrawal",
+      "min": 400001,
+      "max": 500000,
+      "fee": 3500,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 400 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 400 001 to 500 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-500001-750000",
+      "operation": "withdrawal",
+      "min": 500001,
+      "max": 750000,
+      "fee": 5000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 500 001 à 750 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 500 001 to 750 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-750001-1000000",
+      "operation": "withdrawal",
+      "min": 750001,
+      "max": 1000000,
+      "fee": 6000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 750 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 750 001 to 1 000 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-1000001-1500000",
+      "operation": "withdrawal",
+      "min": 1000001,
+      "max": 1500000,
+      "fee": 8000,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 1 000 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 1 000 001 to 1 500 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-agent-1500001-2000000",
+      "operation": "withdrawal",
+      "min": 1500001,
+      "max": 2000000,
+      "fee": 9900,
+      "fee_percent": null,
+      "label": "Retrait chez un agent de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/retrait-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal at an agent from 1 500 001 to 2 000 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-depot-200-2000000",
+      "operation": "deposit",
+      "min": 200,
+      "max": 2000000,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Dépôt chez un agent de 200 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/depot-dargent/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Lecture d'un tableau peu détaillé ; la page ne dit pas explicitement que le dépôt est gratuit.",
+      "en": {
+        "label": "Deposit at an agent from 200 to 2,000,000 F",
+        "notes": "Reading of a sparse table; the page does not state explicitly that deposits are free."
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-1-2500",
+      "operation": "transfer-regional",
+      "min": 1,
+      "max": 2500,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 1 à 2 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 1 to 2 500 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-2501-5000",
+      "operation": "transfer-regional",
+      "min": 2501,
+      "max": 5000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 2 501 à 5 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 2 501 to 5 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-5001-10000",
+      "operation": "transfer-regional",
+      "min": 5001,
+      "max": 10000,
+      "fee": 400,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 5 001 à 10 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 5 001 to 10 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-10001-20000",
+      "operation": "transfer-regional",
+      "min": 10001,
+      "max": 20000,
+      "fee": 450,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 10 001 à 20 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 10 001 to 20 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-20001-25000",
+      "operation": "transfer-regional",
+      "min": 20001,
+      "max": 25000,
+      "fee": 500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 20 001 à 25 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 20 001 to 25 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-25001-50000",
+      "operation": "transfer-regional",
+      "min": 25001,
+      "max": 50000,
+      "fee": 950,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 25 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 25 001 to 50 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-50001-75000",
+      "operation": "transfer-regional",
+      "min": 50001,
+      "max": 75000,
+      "fee": 1500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 50 001 à 75 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 50 001 to 75 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-75001-100000",
+      "operation": "transfer-regional",
+      "min": 75001,
+      "max": 100000,
+      "fee": 1550,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 75 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 75 001 to 100 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-100001-150000",
+      "operation": "transfer-regional",
+      "min": 100001,
+      "max": 150000,
+      "fee": 2500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 100 001 à 150 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 100 001 to 150 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-150001-200000",
+      "operation": "transfer-regional",
+      "min": 150001,
+      "max": 200000,
+      "fee": 2550,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 150 001 à 200 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 150 001 to 200 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-200001-270000",
+      "operation": "transfer-regional",
+      "min": 200001,
+      "max": 270000,
+      "fee": 3800,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 200 001 à 270 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 200 001 to 270 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-270001-300000",
+      "operation": "transfer-regional",
+      "min": 270001,
+      "max": 300000,
+      "fee": 3800,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 270 001 à 300 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 270 001 to 300 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-300001-400000",
+      "operation": "transfer-regional",
+      "min": 300001,
+      "max": 400000,
+      "fee": 5000,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 300 001 à 400 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 300 001 to 400 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-400001-500000",
+      "operation": "transfer-regional",
+      "min": 400001,
+      "max": 500000,
+      "fee": 6200,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 400 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 400 001 to 500 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-500001-600000",
+      "operation": "transfer-regional",
+      "min": 500001,
+      "max": 600000,
+      "fee": 7000,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 500 001 à 600 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 500 001 to 600 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-600001-850000",
+      "operation": "transfer-regional",
+      "min": 600001,
+      "max": 850000,
+      "fee": 10000,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 600 001 à 850 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 600 001 to 850 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-850001-1000000",
+      "operation": "transfer-regional",
+      "min": 850001,
+      "max": 1000000,
+      "fee": 10000,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 850 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 850 001 to 1 000 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-1000001-1250000",
+      "operation": "transfer-regional",
+      "min": 1000001,
+      "max": 1250000,
+      "fee": 12500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 1 000 001 à 1 250 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 1 000 001 to 1 250 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-1250001-1500000",
+      "operation": "transfer-regional",
+      "min": 1250001,
+      "max": 1500000,
+      "fee": 12500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 1 250 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 1 250 001 to 1 500 000 F"
+      }
+    },
+    {
+      "id": "moov-fees-envoi-international-1500001-2000000",
+      "operation": "transfer-regional",
+      "min": 1500001,
+      "max": 2000000,
+      "fee": 12500,
+      "fee_percent": null,
+      "label": "Envoi vers un autre pays de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending to another country from 1 500 001 to 2 000 000 F"
+      }
+    }
+  ]
+}

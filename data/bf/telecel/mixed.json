@@ -1,0 +1,256 @@
+{
+  "operator": "telecel",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "telecel-mixed-magic-1",
+      "kind": "bundle",
+      "name": "Magic 1",
+      "description": "12 min pendant 24 h.",
+      "price": 105,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 12,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*112#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "magic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Magic 1",
+        "description": "12 min for 24 hours.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-mixed-magic-2",
+      "kind": "bundle",
+      "name": "Magic 2",
+      "description": "15 min et 50 SMS pendant 24 h.",
+      "price": 150,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*112#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "magic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Magic 2",
+        "description": "15 min and 50 SMS for 24 hours.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-mixed-magic-3",
+      "kind": "bundle",
+      "name": "Magic 3",
+      "description": "25 min, 100 SMS et 55 Mo pendant 24 h.",
+      "price": 310,
+      "allowances": {
+        "data_mb": 55,
+        "voice_min": 25,
+        "sms": 100
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*112#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "magic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Magic 3",
+        "description": "25 min, 100 SMS and 55 Mo for 24 hours.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-mixed-magic-4",
+      "kind": "bundle",
+      "name": "Magic 4",
+      "description": "40 min, 200 SMS et 100 Mo pendant 24 h.",
+      "price": 525,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 40,
+        "sms": 200
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*112#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "magic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Magic 4",
+        "description": "40 min, 200 SMS and 100 Mo for 24 hours.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-mixed-magic-5",
+      "kind": "bundle",
+      "name": "Magic 5",
+      "description": "60 min, 250 SMS et 150 Mo pendant 24 h.",
+      "price": 725,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": 60,
+        "sms": 250
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*112#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "magic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Magic 5",
+        "description": "60 min, 250 SMS and 150 Mo for 24 hours.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    }
+  ]
+}

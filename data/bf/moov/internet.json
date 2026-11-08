@@ -1,0 +1,1179 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-50mo",
+      "kind": "bundle",
+      "name": "Pass 50 Mo",
+      "description": "50 Mo valables 2 jours.",
+      "price": 105,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*111#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 50 Mo",
+        "description": "50 MB valid 2 days."
+      }
+    },
+    {
+      "id": "moov-internet-125mo",
+      "kind": "bundle",
+      "name": "Pass 125 Mo",
+      "description": "125 Mo valables 2 jours.",
+      "price": 210,
+      "allowances": {
+        "data_mb": 125,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*35#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 125 Mo",
+        "description": "125 MB valid 2 days."
+      }
+    },
+    {
+      "id": "moov-internet-250mo",
+      "kind": "bundle",
+      "name": "Pass 250 Mo",
+      "description": "250 Mo valables 2 jours.",
+      "price": 315,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*551#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 250 Mo",
+        "description": "250 MB valid 2 days."
+      }
+    },
+    {
+      "id": "moov-internet-500mo",
+      "kind": "bundle",
+      "name": "Pass 500 Mo",
+      "description": "500 Mo valables 3 jours.",
+      "price": 525,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*525#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 500 Mo",
+        "description": "500 MB valid 3 days."
+      }
+    },
+    {
+      "id": "moov-internet-750mo",
+      "kind": "bundle",
+      "name": "Pass 750 Mo",
+      "description": "750 Mo valables 5 jours.",
+      "price": 735,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*735#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 750 Mo",
+        "description": "750 MB valid 5 days."
+      }
+    },
+    {
+      "id": "moov-internet-1000mo",
+      "kind": "bundle",
+      "name": "Pass 1 000 Mo",
+      "description": "1 000 Mo.",
+      "price": 950,
+      "allowances": {
+        "data_mb": 1000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*955#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue indique une validité de 0 jour : durée non exploitable, laissée vide.",
+      "en": {
+        "name": "Pass 1 000 Mo",
+        "description": "1,000 MB.",
+        "notes": "The catalogue gives a validity of 0 days: not usable, left empty."
+      }
+    },
+    {
+      "id": "moov-internet-1go",
+      "kind": "bundle",
+      "name": "Pass 1 Go",
+      "description": "1 Go valable 30 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*1002#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 1 Go",
+        "description": "1 GB valid 30 days."
+      }
+    },
+    {
+      "id": "moov-internet-2go",
+      "kind": "bundle",
+      "name": "Pass 2 Go",
+      "description": "2 Go valables 30 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*2002#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 2 Go",
+        "description": "2 GB valid 30 days."
+      }
+    },
+    {
+      "id": "moov-internet-4go",
+      "kind": "bundle",
+      "name": "Pass 4 Go",
+      "description": "4 Go.",
+      "price": 3150,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*4002#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 4 Go",
+        "description": "4 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-5-5go",
+      "kind": "bundle",
+      "name": "Pass 5,5 Go",
+      "description": "5,5 Go.",
+      "price": 4200,
+      "allowances": {
+        "data_mb": 5632,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*5002#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 5,5 Go",
+        "description": "5.5 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-15go",
+      "kind": "bundle",
+      "name": "Pass 15 Go",
+      "description": "15 Go.",
+      "price": 10500,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*10500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 15 Go",
+        "description": "15 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-990mo",
+      "kind": "bundle",
+      "name": "Pass 990 Mo",
+      "description": "990 Mo valables 2 jours.",
+      "price": 525,
+      "allowances": {
+        "data_mb": 990,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*530#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 990 Mo",
+        "description": "990 MB valid 2 days."
+      }
+    },
+    {
+      "id": "moov-internet-1-5go",
+      "kind": "bundle",
+      "name": "Pass 1,5 Go",
+      "description": "1,5 Go valable 30 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*1502#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 1,5 Go",
+        "description": "1.5 GB valid 30 days."
+      }
+    },
+    {
+      "id": "moov-internet-3go",
+      "kind": "bundle",
+      "name": "Pass 3 Go",
+      "description": "3 Go.",
+      "price": 1850,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*3000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 3 Go",
+        "description": "3 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-5go",
+      "kind": "bundle",
+      "name": "Pass 5 Go",
+      "description": "5 Go.",
+      "price": 2625,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*2625#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 5 Go",
+        "description": "5 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-25go",
+      "kind": "bundle",
+      "name": "Pass 25 Go",
+      "description": "25 Go.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 25600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*25000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass 25 Go",
+        "description": "25 GB.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-papo-300mo",
+      "kind": "bundle",
+      "name": "Papo 300 Mo",
+      "description": "300 Mo valables 2 jours.",
+      "price": 315,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*16#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Papo 300 Mo",
+        "description": "300 MB valid 2 days."
+      }
+    },
+    {
+      "id": "moov-internet-papo-1-5go",
+      "kind": "bundle",
+      "name": "Papo 1,5 Go",
+      "description": "1,5 Go valable 30 jours.",
+      "price": 990,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*17#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Papo 1,5 Go",
+        "description": "1.5 GB valid 30 days."
+      }
+    },
+    {
+      "id": "moov-internet-tiktok-1-2go",
+      "kind": "bundle",
+      "name": "Pass TikTok 1,2 Go",
+      "description": "1,2 Go pour TikTok.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1229,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*50#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue écrit le code avec un espace avant le dièse ; corrigé en *146*50#. Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass TikTok 1,2 Go",
+        "description": "1.2 GB for TikTok.",
+        "notes": "The catalogue writes the code with a space before the hash; corrected to *146*50#. Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-tiktok-4go",
+      "kind": "bundle",
+      "name": "Pass TikTok 4 Go",
+      "description": "4 Go pour TikTok.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*51#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue écrit le code avec un espace avant le dièse ; corrigé en *146*51#. Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Pass TikTok 4 Go",
+        "description": "4 GB for TikTok.",
+        "notes": "The catalogue writes the code with a space before the hash; corrected to *146*51#. Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-tiktok-illimite",
+      "kind": "bundle",
+      "name": "Pass TikTok illimité",
+      "description": "TikTok en illimité pendant 24 h.",
+      "price": 750,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*750#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass TikTok illimité",
+        "description": "Unlimited TikTok for 24 hours."
+      }
+    },
+    {
+      "id": "moov-internet-etudiant-5go",
+      "kind": "bundle",
+      "name": "Forfait Étudiant 5 Go",
+      "description": "5 Go pour les étudiants.",
+      "price": 2625,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*3005#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Forfait Étudiant 5 Go",
+        "description": "5 GB for students.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-etudiant-2go",
+      "kind": "bundle",
+      "name": "Forfait Étudiant 2 Go",
+      "description": "2 Go pour les étudiants.",
+      "price": 1155,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*146*1501#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée de validité non lisible dans le catalogue.",
+      "en": {
+        "name": "Forfait Étudiant 2 Go",
+        "description": "2 GB for students.",
+        "notes": "Validity not readable in the catalogue."
+      }
+    },
+    {
+      "id": "moov-internet-bac-2026",
+      "kind": "bundle",
+      "name": "Forfait Data BAC 2026",
+      "description": "3 000 Mo dont 1 000 Mo pour Facebook et WhatsApp, 30 jours.",
+      "price": 950,
+      "allowances": {
+        "data_mb": 3000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*3001#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Forfait Data BAC 2026",
+        "description": "3,000 MB including 1,000 MB for Facebook and WhatsApp, 30 days."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-1000mo",
+      "kind": "bundle",
+      "name": "Pass Nuit 1 000 Mo",
+      "description": "1 000 Mo utilisables de 23h à 5h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 1000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 nuit",
+        "en": {
+          "label": "1 night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*146*301#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Nuit 1 000 Mo",
+        "description": "1,000 MB usable from 23:00 to 05:00."
+      }
+    }
+  ]
+}

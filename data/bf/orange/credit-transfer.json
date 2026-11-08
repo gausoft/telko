@@ -1,0 +1,229 @@
+{
+  "operator": "orange",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "orange-credit-transfer-solde",
+      "kind": "service",
+      "name": "Solde du crédit",
+      "description": "Voir votre crédit et votre volume internet restant.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Solde du crédit",
+        "description": "Check your credit and remaining data."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-solde-postpaye",
+      "kind": "service",
+      "name": "Consommation postpayée",
+      "description": "Voir la consommation d'une ligne postpayée.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*121*1*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "postpayé"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Consommation postpayée",
+        "description": "Check usage on a postpaid line."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-sos-credit",
+      "kind": "service",
+      "name": "SOS crédit",
+      "description": "Emprunter du crédit quand vous n'en avez plus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*800#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "dépannage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "SOS crédit",
+        "description": "Borrow credit when you have none left."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-recharge-carte",
+      "kind": "service",
+      "name": "Recharge par carte",
+      "description": "Recharger avec le code d'une carte de recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*130*{card_code}#",
+        "params": [
+          {
+            "name": "card_code",
+            "type": "text",
+            "label": "Code de la carte de recharge",
+            "required": true,
+            "short": "Carte",
+            "numeric": true,
+            "en": {
+              "label": "Top-up card code",
+              "short": "Card"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Recharge par carte",
+        "description": "Top up with the code of a scratch card."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-transfert-bonus",
+      "kind": "service",
+      "name": "Transfert de bonus",
+      "description": "Envoyer du bonus à un autre client Orange (jusqu'à 10 000 F, 4 fois par jour).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*147*{amount}*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant à envoyer",
+            "required": true,
+            "en": {
+              "label": "Amount to send"
+            },
+            "max": 10000
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais de 52,5 F par transfert d'après le catalogue.",
+      "en": {
+        "name": "Transfert de bonus",
+        "description": "Send bonus to another Orange customer (up to 10,000 F, 4 times a day).",
+        "notes": "Fee of 52.5 F per transfer per the catalogue."
+      }
+    }
+  ]
+}

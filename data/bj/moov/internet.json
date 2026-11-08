@@ -1,0 +1,837 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-volume-100",
+      "kind": "bundle",
+      "name": "Forfait internet 100 F",
+      "description": "166 Mo valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 166,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 100 F",
+        "description": "166 MB valid 24 h.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-150",
+      "kind": "bundle",
+      "name": "Forfait internet 150 F",
+      "description": "250 Mo valables 24 h.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 150 F",
+        "description": "250 MB valid 24 h.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-200",
+      "kind": "bundle",
+      "name": "Forfait internet 200 F",
+      "description": "333 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 333,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 200 F",
+        "description": "333 MB valid 24 h.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-300",
+      "kind": "bundle",
+      "name": "Forfait internet 300 F",
+      "description": "500 Mo valables 48 h avec WhatsApp illimité.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "48 h",
+        "en": {
+          "label": "48 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 300 F",
+        "description": "500 MB valid 48 h with unlimited WhatsApp.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-500",
+      "kind": "bundle",
+      "name": "Forfait internet 500 F",
+      "description": "1 Go valables 24 h avec réseaux sociaux illimités (Facebook, TikTok, WhatsApp, YouTube, Snapchat).",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 500 F",
+        "description": "1 GB valid 24 h with unlimited social networks (Facebook, TikTok, WhatsApp, YouTube, Snapchat).",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-550",
+      "kind": "bundle",
+      "name": "Forfait internet 550 F",
+      "description": "917 Mo valables 72 h.",
+      "price": 550,
+      "allowances": {
+        "data_mb": 917,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "72 h",
+        "en": {
+          "label": "72 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 550 F",
+        "description": "917 MB valid 72 h.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-1000",
+      "kind": "bundle",
+      "name": "Forfait internet 1 000 F",
+      "description": "1,62 Go valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1659,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 1 000 F",
+        "description": "1.62 GB valid 7 days.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-volume-2500",
+      "kind": "bundle",
+      "name": "Forfait internet 2 500 F",
+      "description": "4 Go valables 15 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de nom ni de code propre à chaque forfait : code général d'activation, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 2 500 F",
+        "description": "4 GB valid 15 days.",
+        "notes": "The page gives no name or dedicated code per bundle: general activation code, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "moov-internet-illimite-15000",
+      "kind": "bundle",
+      "name": "Forfait internet illimité 15 000 F",
+      "description": "24,41 Go puis internet à 2 Mbit/s jusqu'à la fin des 30 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 24996,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "illimité",
+        "5g",
+        "4g",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le tarif de la première ligne s'affiche « 15 o00 FCFA » sur la page (lu comme 15 000). Le débit après le volume est lu dans le libellé « Go plus / Mbps ». Le code *123*5# est celui publié pour la catégorie.",
+      "en": {
+        "name": "Unlimited internet bundle 15 000 F",
+        "description": "24.41 GB then internet at 2 Mbps for the rest of the 30 days.",
+        "notes": "The first row price shows as \"15 o00 FCFA\" on the page (read as 15,000). The speed after the volume is read from the \"GoPlus / Mbps\" label. Code *123*5# is the one published for the category."
+      }
+    },
+    {
+      "id": "moov-internet-illimite-20000",
+      "kind": "bundle",
+      "name": "Forfait internet illimité 20 000 F",
+      "description": "32,55 Go puis internet à 3 Mbit/s jusqu'à la fin des 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 33331,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "illimité",
+        "5g",
+        "4g",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le tarif de la première ligne s'affiche « 15 o00 FCFA » sur la page (lu comme 15 000). Le débit après le volume est lu dans le libellé « Go plus / Mbps ». Le code *123*5# est celui publié pour la catégorie.",
+      "en": {
+        "name": "Unlimited internet bundle 20 000 F",
+        "description": "32.55 GB then internet at 3 Mbps for the rest of the 30 days.",
+        "notes": "The first row price shows as \"15 o00 FCFA\" on the page (read as 15,000). The speed after the volume is read from the \"GoPlus / Mbps\" label. Code *123*5# is the one published for the category."
+      }
+    },
+    {
+      "id": "moov-internet-illimite-25000",
+      "kind": "bundle",
+      "name": "Forfait internet illimité 25 000 F",
+      "description": "40,69 Go puis internet à 5 Mbit/s jusqu'à la fin des 30 jours.",
+      "price": 25000,
+      "allowances": {
+        "data_mb": 41667,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "illimité",
+        "5g",
+        "4g",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le tarif de la première ligne s'affiche « 15 o00 FCFA » sur la page (lu comme 15 000). Le débit après le volume est lu dans le libellé « Go plus / Mbps ». Le code *123*5# est celui publié pour la catégorie.",
+      "en": {
+        "name": "Unlimited internet bundle 25 000 F",
+        "description": "40.69 GB then internet at 5 Mbps for the rest of the 30 days.",
+        "notes": "The first row price shows as \"15 o00 FCFA\" on the page (read as 15,000). The speed after the volume is read from the \"GoPlus / Mbps\" label. Code *123*5# is the one published for the category."
+      }
+    },
+    {
+      "id": "moov-internet-illimite-30000",
+      "kind": "bundle",
+      "name": "Forfait internet illimité 30 000 F",
+      "description": "48,83 Go puis internet à 10 Mbit/s jusqu'à la fin des 30 jours.",
+      "price": 30000,
+      "allowances": {
+        "data_mb": 50002,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "illimité",
+        "5g",
+        "4g",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le tarif de la première ligne s'affiche « 15 o00 FCFA » sur la page (lu comme 15 000). Le débit après le volume est lu dans le libellé « Go plus / Mbps ». Le code *123*5# est celui publié pour la catégorie.",
+      "en": {
+        "name": "Unlimited internet bundle 30 000 F",
+        "description": "48.83 GB then internet at 10 Mbps for the rest of the 30 days.",
+        "notes": "The first row price shows as \"15 o00 FCFA\" on the page (read as 15,000). The speed after the volume is read from the \"GoPlus / Mbps\" label. Code *123*5# is the one published for the category."
+      }
+    },
+    {
+      "id": "moov-internet-illimite-50000",
+      "kind": "bundle",
+      "name": "Forfait internet illimité 50 000 F",
+      "description": "81,38 Go puis internet à 10 Mbit/s jusqu'à la fin des 30 jours.",
+      "price": 50000,
+      "allowances": {
+        "data_mb": 83333,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "illimité",
+        "5g",
+        "4g",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le tarif de la première ligne s'affiche « 15 o00 FCFA » sur la page (lu comme 15 000). Le débit après le volume est lu dans le libellé « Go plus / Mbps ». Le code *123*5# est celui publié pour la catégorie.",
+      "en": {
+        "name": "Unlimited internet bundle 50 000 F",
+        "description": "81.38 GB then internet at 10 Mbps for the rest of the 30 days.",
+        "notes": "The first row price shows as \"15 o00 FCFA\" on the page (read as 15,000). The speed after the volume is read from the \"GoPlus / Mbps\" label. Code *123*5# is the one published for the category."
+      }
+    },
+    {
+      "id": "moov-internet-secours-75",
+      "kind": "bundle",
+      "name": "Internet secours 75 Mo",
+      "description": "Emprunter 75 Mo (soit 238 Mo reçus au total), à rembourser 100 F au prochain rechargement.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 238,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*9#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "secours",
+        "emprunt",
+        "internet",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-forfaits-internet-secours/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix indiqué est le montant à rembourser.",
+      "en": {
+        "name": "Emergency internet 75 MB",
+        "description": "Borrow 75 MB (238 MB received in total), to repay 100 F at your next top-up.",
+        "notes": "The price shown is the amount to repay."
+      }
+    },
+    {
+      "id": "moov-internet-secours-170",
+      "kind": "bundle",
+      "name": "Internet secours 170 Mo",
+      "description": "Emprunter 170 Mo (soit 357 Mo reçus au total), à rembourser 220 F au prochain rechargement.",
+      "price": 220,
+      "allowances": {
+        "data_mb": 357,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*9#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "secours",
+        "emprunt",
+        "internet",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-forfaits-internet-secours/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix indiqué est le montant à rembourser.",
+      "en": {
+        "name": "Emergency internet 170 MB",
+        "description": "Borrow 170 MB (357 MB received in total), to repay 220 F at your next top-up.",
+        "notes": "The price shown is the amount to repay."
+      }
+    },
+    {
+      "id": "moov-internet-secours-450",
+      "kind": "bundle",
+      "name": "Internet secours 450 Mo",
+      "description": "Emprunter 450 Mo (soit 476 Mo reçus au total), à rembourser 550 F au prochain rechargement.",
+      "price": 550,
+      "allowances": {
+        "data_mb": 476,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*123*9#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "secours",
+        "emprunt",
+        "internet",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-forfaits-internet-secours/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix indiqué est le montant à rembourser.",
+      "en": {
+        "name": "Emergency internet 450 MB",
+        "description": "Borrow 450 MB (476 MB received in total), to repay 550 F at your next top-up.",
+        "notes": "The price shown is the amount to repay."
+      }
+    }
+  ]
+}

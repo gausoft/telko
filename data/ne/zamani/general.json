@@ -1,0 +1,203 @@
+{
+  "operator": "zamani",
+  "category": "general",
+  "entries": [
+    {
+      "id": "zamani-general-menu-zamani",
+      "kind": "service",
+      "name": "Menu Zamani",
+      "description": "Accéder à la liste des offres et services Zamani.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#225#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "services",
+        "offres"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/liste-des-codes-ussd",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page de la liste des codes affiche « #225# » sans description ; tous les codes d'offres publiés commencent par ce préfixe. Code menu : le reste se choisit à l'écran.",
+      "en": {
+        "name": "Zamani menu",
+        "description": "Access the list of Zamani offers and services.",
+        "notes": "The USSD code list page shows \"#225#\" with no description; every published offer code starts with this prefix. Menu code: you choose the rest on screen."
+      }
+    },
+    {
+      "id": "zamani-general-conservation-numero",
+      "kind": "service",
+      "name": "Conservation de numéro",
+      "description": "Garder et protéger votre numéro jusqu'à 12 mois en cas d'absence ou de non-utilisation.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#225#11#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "conservation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/services-a-valeur-ajoutee",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Number keeping",
+        "description": "Keep and protect your number for up to 12 months if absent or unused."
+      }
+    },
+    {
+      "id": "zamani-general-friendzchat",
+      "kind": "service",
+      "name": "Friendzchat",
+      "description": "Discuter et rencontrer des correspondants de votre choix.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#244#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "friendzchat",
+        "service",
+        "chat"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/services-a-valeur-ajoutee",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif indiqué : 100 F par semaine ou 300 F par mois.",
+      "en": {
+        "name": "Friendzchat",
+        "description": "Chat and meet correspondents of your choice.",
+        "notes": "Rate shown: 100 F per week or 300 F per month."
+      }
+    },
+    {
+      "id": "zamani-general-celebrites",
+      "kind": "service",
+      "name": "Célébrités",
+      "description": "Suivre l'actualité de vos stars ou de vos clubs de football préférés.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*205#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "célébrités",
+        "actualités",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/services-a-valeur-ajoutee",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif indiqué : 50 F par actualité.",
+      "en": {
+        "name": "Celebrities",
+        "description": "Follow news about your favourite stars or football clubs.",
+        "notes": "Rate shown: 50 F per news item."
+      }
+    },
+    {
+      "id": "zamani-general-game-it",
+      "kind": "service",
+      "name": "Game IT",
+      "description": "Accéder à un catalogue de plus de 1 000 jeux mobiles.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#125#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "jeux",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/services-a-valeur-ajoutee",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aucun tarif publié sur la page.",
+      "en": {
+        "name": "Game IT",
+        "description": "Access a catalogue of over 1,000 mobile games.",
+        "notes": "No price published on the page."
+      }
+    }
+  ]
+}

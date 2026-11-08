@@ -1,0 +1,251 @@
+{
+  "operator": "orange",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "orange-credit-transfert",
+      "kind": "service",
+      "name": "Transférer du crédit",
+      "description": "Envoyer du crédit à un autre numéro Orange (de 500 à 5 000 F).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*116*{phone}*{amount}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/transfert-de-credit.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Il faut au moins 2 000 F avant et en garder 1 000 F après. Maximum 10 transferts par semaine. Validité du crédit reçu : 4 jours (500 à 1 999 F), 10 jours (2 000 à 5 000 F). Autre code : #101#42#. Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "Transfer credit",
+        "description": "Send credit to another Orange number (500 to 5,000 F).",
+        "notes": "You need at least 2,000 F before and keep 1,000 F after. Maximum 10 transfers per week. Received credit validity: 4 days (500-1,999 F), 10 days (2,000-5,000 F). Other code: #101#42#. The PIN is typed on screen."
+      }
+    },
+    {
+      "id": "orange-credit-transfert-menu",
+      "kind": "service",
+      "name": "Transférer du crédit (menu)",
+      "description": "Menu de transfert de crédit du portail Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#42#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "transfert",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/transfert-de-credit.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Transfer credit (menu)",
+        "description": "Credit transfer menu in the Orange portal."
+      }
+    },
+    {
+      "id": "orange-credit-djiguiya-voix",
+      "kind": "service",
+      "name": "Djiguiya Voix (crédit de secours)",
+      "description": "Empruntez 100, 200, 500 ou 1 000 F de crédit avec 10 % de frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#170#2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "emprunt",
+        "djiguiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/sos-credit-djiguiya-voix.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Remboursement au prochain crédit : 110, 220, 550 ou 1 100 F. Solde de 33 F ou moins. Validité 5 jours.",
+      "en": {
+        "name": "Djiguiya Voice (SOS credit)",
+        "description": "Borrow 100, 200, 500 or 1,000 F of credit with a 10% fee.",
+        "notes": "Repaid at next top-up: 110, 220, 550 or 1,100 F. Balance of 33 F or less. Validity 5 days."
+      }
+    },
+    {
+      "id": "orange-credit-acheter-credit-om",
+      "kind": "service",
+      "name": "Acheter du crédit avec Orange Money",
+      "description": "Recharger votre propre numéro depuis Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#2*1*{amount}*1#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "recharge",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/achat-de-credit-telphonique/recharger-mon-compte.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "De 100 à 105 000 F, sans frais. Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "Buy credit with Orange Money",
+        "description": "Top up your own number from Orange Money.",
+        "notes": "From 100 to 105,000 F, free. The PIN is typed on screen."
+      }
+    },
+    {
+      "id": "orange-credit-recharger-autre-om",
+      "kind": "service",
+      "name": "Recharger un autre numéro avec Orange Money",
+      "description": "Envoyer du crédit à un autre numéro depuis Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#2*2*{phone}*{amount}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "recharge",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/achat-de-credit-telphonique/recharger-un-autre-numero.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "Top up another number with Orange Money",
+        "description": "Send credit to another number from Orange Money.",
+        "notes": "The PIN is typed on screen."
+      }
+    }
+  ]
+}

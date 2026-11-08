@@ -1,0 +1,325 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-600mo-500f",
+      "kind": "bundle",
+      "name": "Forfait Internet 600 Mo",
+      "description": "600 Mo d'Internet valables 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/PublishingImages/offres/Nouveaux%20tarifs.jpg",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code ouvre le menu des forfaits Internet : choisir le forfait à l'écran. Prix lus sur une affiche du site (image), à confirmer.",
+      "en": {
+        "name": "Internet pack 600 MB",
+        "description": "600 MB of data, valid 7 days.",
+        "notes": "The same code opens the Internet packs menu: choose the pack on screen. Prices read from a site poster (image), to confirm."
+      }
+    },
+    {
+      "id": "moov-internet-1900mo-1200f",
+      "kind": "bundle",
+      "name": "Forfait Internet 1,9 Go",
+      "description": "1,9 Go d'Internet valables 7 jours.",
+      "price": 1200,
+      "allowances": {
+        "data_mb": 1900,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/PublishingImages/offres/Nouveaux%20tarifs.jpg",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code ouvre le menu des forfaits Internet : choisir le forfait à l'écran. Prix lus sur une affiche du site (image), à confirmer.",
+      "en": {
+        "name": "Internet pack 1.9 GB",
+        "description": "1.9 GB of data, valid 7 days.",
+        "notes": "The same code opens the Internet packs menu: choose the pack on screen. Prices read from a site poster (image), to confirm."
+      }
+    },
+    {
+      "id": "moov-internet-16000mo-4500f",
+      "kind": "bundle",
+      "name": "Forfait Internet 16 Go",
+      "description": "16 Go d'Internet valables 30 jours.",
+      "price": 4500,
+      "allowances": {
+        "data_mb": 16000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/PublishingImages/offres/Nouveaux%20tarifs.jpg",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code ouvre le menu des forfaits Internet : choisir le forfait à l'écran. Prix lus sur une affiche du site (image), à confirmer.",
+      "en": {
+        "name": "Internet pack 16 GB",
+        "description": "16 GB of data, valid 30 days.",
+        "notes": "The same code opens the Internet packs menu: choose the pack on screen. Prices read from a site poster (image), to confirm."
+      }
+    },
+    {
+      "id": "moov-internet-data-nuit",
+      "kind": "service",
+      "name": "Forfaits Data nuit",
+      "description": "Menu des forfaits Internet de nuit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Volumes et prix non lus (publiés en image).",
+      "en": {
+        "name": "Night data packs",
+        "description": "Night Internet packs menu.",
+        "notes": "Volumes and prices not read (published as images)."
+      }
+    },
+    {
+      "id": "moov-internet-angata-souscrire",
+      "kind": "service",
+      "name": "Souscrire à Angata",
+      "description": "Activer le service Angata.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#3#1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "angata"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Détail du service non publié sur cette page.",
+      "en": {
+        "name": "Subscribe to Angata",
+        "description": "Activate the Angata service.",
+        "notes": "Service details not published on this page."
+      }
+    },
+    {
+      "id": "moov-internet-angata-desinscrire",
+      "kind": "service",
+      "name": "Se désinscrire d'Angata",
+      "description": "Désactiver le service Angata.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#3#3#2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "angata"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Unsubscribe from Angata",
+        "description": "Deactivate the Angata service."
+      }
+    },
+    {
+      "id": "moov-internet-deme-internet",
+      "kind": "service",
+      "name": "Dèmè Internet (Internet à crédit)",
+      "description": "Empruntez jusqu'à 438 Mo, remboursés à vos prochaines recharges.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#444#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "emprunt",
+        "dèmè"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Composer #444# puis choisir 2, puis le forfait à emprunter.",
+      "en": {
+        "name": "Dèmè Internet (data on credit)",
+        "description": "Borrow up to 438 MB, repaid with your next top-ups.",
+        "notes": "Dial #444# then choose 2, then the pack to borrow."
+      }
+    }
+  ]
+}

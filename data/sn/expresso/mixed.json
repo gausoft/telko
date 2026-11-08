@@ -1,0 +1,741 @@
+{
+  "operator": "expresso",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "expresso-mixed-buur-100-24h",
+      "kind": "bundle",
+      "name": "Buur 100 F (24 h)",
+      "description": "20 min d'appel, 50 Mo d'internet, 2 SMS, valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": 20,
+        "sms": 2
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*20#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 100 F (24 h)",
+        "description": "20 call minutes, 50 MB of data, 2 SMS, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-200-24h",
+      "kind": "bundle",
+      "name": "Buur 200 F (24 h)",
+      "description": "50 min d'appel, 150 Mo d'internet, 10 SMS, valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": 50,
+        "sms": 10
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 200 F (24 h)",
+        "description": "50 call minutes, 150 MB of data, 10 SMS, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-500-24h",
+      "kind": "bundle",
+      "name": "Buur 500 F (24 h)",
+      "description": "100 min d'appel, 750 Mo d'internet, 50 SMS, valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": 100,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 500 F (24 h)",
+        "description": "100 call minutes, 750 MB of data, 50 SMS, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-700-7j",
+      "kind": "bundle",
+      "name": "Buur 700 F (7 jours)",
+      "description": "100 min d'appel, 1536 Mo d'internet, 50 SMS, valables 7 jours.",
+      "price": 700,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": 100,
+        "sms": 50
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 700 F (7 jours)",
+        "description": "100 call minutes, 1536 MB of data, 50 SMS, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-1000-3j",
+      "kind": "bundle",
+      "name": "Buur 1000 F (3 jours)",
+      "description": "100 min d'appel, 3 Go d'internet, 50 SMS, valables 3 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": 100,
+        "sms": 50
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*1000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 1000 F (3 jours)",
+        "description": "100 call minutes, 3 GB of data, 50 SMS, valid 3 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-1000-7j",
+      "kind": "bundle",
+      "name": "Buur 1000 F (7 jours)",
+      "description": "200 min d'appel, 2560 Mo d'internet, 100 SMS, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 200,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*990#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 1000 F (7 jours)",
+        "description": "200 call minutes, 2560 MB of data, 100 SMS, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-1500-10j",
+      "kind": "bundle",
+      "name": "Buur 1500 F (10 jours)",
+      "description": "150 min d'appel, 7 Go d'internet, 50 SMS, valables 10 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 7168,
+        "voice_min": 150,
+        "sms": 50
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*1500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 1500 F (10 jours)",
+        "description": "150 call minutes, 7 GB of data, 50 SMS, valid 10 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-2000-7j",
+      "kind": "bundle",
+      "name": "Buur 2000 F (7 jours)",
+      "description": "400 min d'appel, 6 Go d'internet, 100 SMS, valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": 400,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 2000 F (7 jours)",
+        "description": "400 call minutes, 6 GB of data, 100 SMS, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-2000-30j",
+      "kind": "bundle",
+      "name": "Buur 2000 F (30 jours)",
+      "description": "300 min d'appel, 4 Go d'internet, 100 SMS, valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*2000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 2000 F (30 jours)",
+        "description": "300 call minutes, 4 GB of data, 100 SMS, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-2500-15j",
+      "kind": "bundle",
+      "name": "Buur 2500 F (15 jours)",
+      "description": "250 min d'appel, 20 Go d'internet, 50 SMS, valables 15 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": 250,
+        "sms": 50
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*2500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 2500 F (15 jours)",
+        "description": "250 call minutes, 20 GB of data, 50 SMS, valid 15 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-3000-30j",
+      "kind": "bundle",
+      "name": "Buur 3000 F (30 jours)",
+      "description": "300 min d'appel, 30 Go d'internet, 100 SMS, valables 30 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*30#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 3000 F (30 jours)",
+        "description": "300 call minutes, 30 GB of data, 100 SMS, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-3500-30j",
+      "kind": "bundle",
+      "name": "Buur 3500 F (30 jours)",
+      "description": "300 min d'appel, 50 Go d'internet, 100 SMS, valables 30 jours.",
+      "price": 3500,
+      "allowances": {
+        "data_mb": 51200,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*3500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 3500 F (30 jours)",
+        "description": "300 call minutes, 50 GB of data, 100 SMS, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-buur-9500-30j",
+      "kind": "bundle",
+      "name": "Buur 9500 F (30 jours)",
+      "description": "1500 min d'appel, 90 Go d'internet, 100 SMS, valables 30 jours.",
+      "price": 9500,
+      "allowances": {
+        "data_mb": 92160,
+        "voice_min": 1500,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*10*9500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "buur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buur 9500 F (30 jours)",
+        "description": "1500 call minutes, 90 GB of data, 100 SMS, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-garmi-2000",
+      "kind": "bundle",
+      "name": "Garmi 2000 F",
+      "description": "150 min d'appel, 12 Go d'internet, 50 SMS, valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 12288,
+        "voice_min": 150,
+        "sms": 50
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*22*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garmi",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Garmi 2000 F",
+        "description": "150 call minutes, 12 GB of data, 50 SMS, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-mixed-garmi-5000",
+      "kind": "bundle",
+      "name": "Garmi 5000 F",
+      "description": "500 min d'appel, 50 Go d'internet, 100 SMS, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 51200,
+        "voice_min": 500,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*22#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garmi",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Garmi 5000 F",
+        "description": "500 call minutes, 50 GB of data, 100 SMS, valid 30 days."
+      }
+    }
+  ]
+}

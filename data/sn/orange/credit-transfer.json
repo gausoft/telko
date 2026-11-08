@@ -1,0 +1,145 @@
+{
+  "operator": "orange",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "orange-credit-transfer-sos-credit",
+      "kind": "service",
+      "name": "SOS Crédit",
+      "description": "Avance de crédit : vous saisissez le montant dans le code. Il est déduit de votre prochain rechargement.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*77*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/actualite/les-services-orange",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.sn/offres-mobiles/jamono-new-s-cool-mod-15",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page Jamono cite aussi *770*montant# pour certains téléphones.",
+      "en": {
+        "name": "SOS Credit",
+        "description": "Credit advance: you type the amount in the code. It is deducted from your next top-up.",
+        "notes": "The Jamono page also gives *770*amount# for some phones."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-transfert-bonus",
+      "kind": "service",
+      "name": "Transfert Bonus",
+      "description": "Service Transfert Bonus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#999#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/actualite/les-services-orange",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Transfert Bonus",
+        "description": "Transfer Bonus service.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-credit-transfer-recharge-carte",
+      "kind": "service",
+      "name": "Recharger avec une carte de crédit",
+      "description": "Recharge avec le code d'une carte de crédit, ou appel du 606.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*123*{code}#",
+        "params": [
+          {
+            "name": "code",
+            "type": "text",
+            "label": "Code de la carte",
+            "required": true,
+            "numeric": true,
+            "en": {
+              "label": "Card code"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "carte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/actualite/les-services-orange",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Top up with a scratch card",
+        "description": "Top up with a scratch card code, or call 606."
+      }
+    }
+  ]
+}

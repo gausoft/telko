@@ -1,0 +1,44 @@
+{
+  "operator": "orange",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "orange-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Orange Money",
+      "description": "Accéder à votre compte Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/assistance/orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page propose aussi les applications Max it et OM Pay.",
+      "en": {
+        "name": "Orange Money menu",
+        "description": "Access your Orange Money account.",
+        "notes": "The page also offers the Max it and OM Pay apps."
+      }
+    }
+  ]
+}
