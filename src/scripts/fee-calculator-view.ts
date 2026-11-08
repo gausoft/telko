@@ -22,16 +22,17 @@ function card(entry: NamedQuote, data: FeeCalculatorData): HTMLElement {
   if (entry.quote.groups.length === 0) section.append(el('p', 'fq-none', data.text.noBand));
 
   for (const { operation, rows } of entry.quote.groups) {
-    const list = el('dl', '');
-    list.append(el('dt', 'fq-op', data.operations[operation] ?? operation));
+    const group = el('div', 'fq-group');
+    const list = el('ul', '');
+    group.append(el('p', 'fq-op', data.operations[operation] ?? operation), list);
 
     for (const row of rows) {
-      const line = el('div', 'fq-line');
-      line.append(el('dd', '', row.condition), el('dd', 'fq-fee', row.amount));
+      const line = el('li', 'fq-line');
+      line.append(el('span', 'fq-cond', row.condition), el('span', 'fq-fee', row.amount));
       list.append(line);
     }
 
-    section.append(list);
+    section.append(group);
   }
 
   return section;

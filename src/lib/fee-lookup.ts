@@ -23,8 +23,11 @@ function covers(row: FeeRow, amount: number): boolean {
 
 /** Reads what a visitor typed ("50 000", "50000 F"): a whole amount in range, otherwise null. */
 export function parseAmount(text: string): number | null {
-  const digits = text.replace(/\s|[.,]/g, '').replace(/f(cfa)?$/i, '');
-  if (!/^\d+$/.test(digits)) return null;
+  const compact = text.replace(/\s/g, '').replace(/f(cfa)?$/i, '');
+  const grouped = /^\d{1,3}([.,]\d{3})+$/.test(compact);
+  if (!grouped && !/^\d+$/.test(compact)) return null;
+
+  const digits = compact.replace(/[.,]/g, '');
 
   const amount = Number(digits);
 

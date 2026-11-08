@@ -3,6 +3,7 @@ import AppHeader from '../components/AppHeader.astro';
 import Dock from '../components/Dock.astro';
 import FeeCalculator from '../components/FeeCalculator.astro';
 import AppLayout from '../layouts/AppLayout.astro';
+import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
 import { localePath, pageLang } from '../i18n/paths';
 import { FEE_PAGE_AMOUNTS } from '../lib/fee-lookup';
@@ -23,7 +24,7 @@ const base = localePath(lang, `/${code}/${operator.id}`);
 
 <AppLayout seo={feeAmountSeo(data, operator, amount, lang)} withDock>
   <main class="page">
-    <AppHeader country={data.country} back={`${base}/frais`} title={m.sections.frais} />
+    <AppHeader country={data.country} back={`${base}/frais`} title={fill(m.fees.calc.pageHeading, { amount: formatAmount(amount, data.country.amount_label), money: (operator.mobile_money ?? operator).short_name })} />
 
     <FeeCalculator rows={rows} operators={data.operators} country={data.country} initial={amount} />
 

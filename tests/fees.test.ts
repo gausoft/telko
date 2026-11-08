@@ -46,6 +46,9 @@ describe('fee lookup', () => {
     expect(parseAmount('0')).toBeNull();
     expect(parseAmount('2000001')).toBeNull();
     expect(parseAmount('abc')).toBeNull();
+    expect(parseAmount('1,5')).toBeNull();
+    expect(parseAmount('50,5')).toBeNull();
+    expect(parseAmount('50.000')).toBe(50000);
     expect(parseAmount('')).toBeNull();
   });
 });

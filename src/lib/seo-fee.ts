@@ -46,9 +46,9 @@ function description(data: CountryCatalog, amount: number, lang: Lang): string {
   const decimal = lang === 'fr' ? ',' : '.';
   const rows = toFeeRows(data.fees, m.fees, decimal);
   const parts = data.operators.flatMap((o) => {
-    const found = quoteFor(rows, o.id, amount, ['withdrawal']).groups[0]?.rows[0];
+    const found = quoteFor(rows, o.id, amount, ['withdrawal']).groups[0]?.rows ?? [];
 
-    return found ? [`${(o.mobile_money ?? o).short_name} ${found.amount}`] : [];
+    return found.length > 0 ? [`${(o.mobile_money ?? o).short_name} ${found.map((r) => r.amount).join(' / ')}`] : [];
   });
   const lead = `${m.fees.operations.withdrawal} ${formatAmount(amount, data.country.amount_label)}`;
 

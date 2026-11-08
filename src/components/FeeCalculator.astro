@@ -55,15 +55,17 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
           <h3>{card.name}</h3>
           {card.quote.groups.length === 0 && <p class="fq-none">{m.fees.calc.noBand}</p>}
           {card.quote.groups.map((group) => (
-            <dl>
-              <dt class="fq-op">{m.fees.operations[group.operation as keyof typeof m.fees.operations]}</dt>
-              {group.rows.map((row) => (
-                <div class="fq-line">
-                  <dd>{row.condition}</dd>
-                  <dd class="fq-fee">{row.amount}</dd>
-                </div>
-              ))}
-            </dl>
+            <div class="fq-group">
+              <p class="fq-op">{m.fees.operations[group.operation as keyof typeof m.fees.operations]}</p>
+              <ul>
+                {group.rows.map((row) => (
+                  <li class="fq-line">
+                    <span class="fq-cond">{row.condition}</span>
+                    <span class="fq-fee">{row.amount}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </section>
       ))
@@ -157,7 +159,7 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
   }
 
   .fq-presets button {
-    min-height: 40px;
+    min-height: 44px;
     padding: 0 var(--space-3);
     border: 0;
     border-radius: 999px;
@@ -197,8 +199,19 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     margin-bottom: var(--space-2);
   }
 
-  .fq-card dl {
+  .fq-group {
     margin: 0 0 var(--space-2);
+  }
+
+  .fq-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fq-cond {
+    flex: 1 1 140px;
+    min-width: 0;
   }
 
   .fq-op {
@@ -212,13 +225,13 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     display: flex;
     justify-content: space-between;
     gap: var(--space-3);
+    flex-wrap: wrap;
     align-items: center;
     min-height: 44px;
     border-top: 1px solid var(--tag-bg);
   }
 
-  .fq-line dd {
-    margin: 0;
+  .fq-line {
     font-size: 14px;
   }
 
