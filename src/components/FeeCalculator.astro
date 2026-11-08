@@ -1,0 +1,230 @@
+---
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
+import type { Country, Operator } from '../lib/schema';
+import { FEE_PAGE_AMOUNTS, quoteFor } from '../lib/fee-lookup';
+import type { FeeRow } from '../lib/fee-lookup-types';
+import { formatAmount } from '../lib/format';
+import type { FeeCalculatorData } from '../lib/fee-calculator-types';
+
+interface Props {
+  rows: FeeRow[];
+  operators: Operator[];
+  country: Country;
+  /** Amount shown on first render (a fee page for one amount); empty on the general fees page. */
+  initial?: number;
+}
+
+const { rows, operators, country, initial } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const operations = Object.keys(m.fees.operations);
+const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name }));
+const payload: FeeCalculatorData = {
+  rows,
+  names,
+  operations: m.fees.operations,
+  amountLabel: country.amount_label,
+  text: { invalid: m.fees.calc.invalid, noBand: m.fees.calc.noBand, resultFor: m.fees.calc.resultFor },
+};
+const json = JSON.stringify(payload).replace(/</g, '\\u003c');
+const first = initial === undefined ? null : initial;
+const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(rows, n.id, first, operations) }));
+---
+
+<section class="fq" data-fq>
+  <h2 class="fq-title">{m.fees.calc.title}</h2>
+
+  <form class="fq-form" novalidate>
+    <label for="fq-input">{m.fees.calc.label}</label>
+    <input id="fq-input" name="amount" inputmode="numeric" autocomplete="off" placeholder={m.fees.calc.placeholder} value={first ?? ''} />
+  </form>
+
+  <div class="fq-presets" role="group" aria-label={m.fees.calc.otherAmounts}>
+    {FEE_PAGE_AMOUNTS.map((amount) => <button type="button" data-amount={amount}>{formatAmount(amount, country.amount_label)}</button>)}
+  </div>
+
+  <p class="fq-error" role="alert" hidden></p>
+
+  <div class="fq-result" aria-live="polite">
+    {first !== null && <p class="fq-for">{fill(m.fees.calc.resultFor, { amount: formatAmount(first, country.amount_label) })}</p>}
+    {
+      cards.map((card) => (
+        <section class="fq-card">
+          <h3>{card.name}</h3>
+          {card.quote.groups.length === 0 && <p class="fq-none">{m.fees.calc.noBand}</p>}
+          {card.quote.groups.map((group) => (
+            <dl>
+              <dt class="fq-op">{m.fees.operations[group.operation as keyof typeof m.fees.operations]}</dt>
+              {group.rows.map((row) => (
+                <div class="fq-line">
+                  <dd>{row.condition}</dd>
+                  <dd class="fq-fee">{row.amount}</dd>
+                </div>
+              ))}
+            </dl>
+          ))}
+        </section>
+      ))
+    }
+  </div>
+
+  <script type="application/json" id="fq-data" set:html={json} />
+</section>
+
+<script>
+  import { parseAmount, quoteFor } from '../lib/fee-lookup';
+  import type { FeeCalculatorData } from '../lib/fee-calculator-types';
+  import { renderQuotes } from '../scripts/fee-calculator-view';
+
+  const root = document.querySelector<HTMLElement>('[data-fq]');
+  const raw = document.getElementById('fq-data')?.textContent;
+
+  if (root && raw) {
+    const data = JSON.parse(raw) as FeeCalculatorData;
+    const input = root.querySelector<HTMLInputElement>('#fq-input');
+    const error = root.querySelector<HTMLElement>('.fq-error');
+    const result = root.querySelector<HTMLElement>('.fq-result');
+    const operations = Object.keys(data.operations);
+
+    const update = (): void => {
+      if (!input || !error || !result) return;
+
+      const text = input.value.trim();
+      const amount = parseAmount(text);
+
+      error.hidden = text === '' || amount !== null;
+      error.textContent = data.text.invalid;
+      if (amount === null) return result.replaceChildren();
+
+      const quotes = data.names.map((n) => ({ name: n.name, quote: quoteFor(data.rows, n.id, amount, operations) }));
+      renderQuotes(result, quotes, amount, data);
+    };
+
+    input?.addEventListener('input', update);
+    root.querySelector('form')?.addEventListener('submit', (event) => event.preventDefault());
+    root.querySelectorAll<HTMLButtonElement>('[data-amount]').forEach((button) =>
+      button.addEventListener('click', () => {
+        if (input) input.value = button.dataset['amount'] ?? '';
+        update();
+      }),
+    );
+  }
+</script>
+
+<style is:global>
+  .fq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .fq-title {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .fq-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .fq-form input {
+    height: 52px;
+    padding: 0 var(--space-4);
+    border: 2px solid var(--tag-bg);
+    border-radius: var(--radius-sm);
+    background: var(--surface-raised);
+    color: inherit;
+    font: inherit;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .fq-form input:focus-visible {
+    outline: 3px solid var(--action);
+    outline-offset: 2px;
+  }
+
+  .fq-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .fq-presets button {
+    min-height: 40px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: 999px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .fq-error,
+  .fq-none {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .fq-result {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .fq-for {
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .fq-card {
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-card);
+  }
+
+  .fq-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: var(--space-2);
+  }
+
+  .fq-card dl {
+    margin: 0 0 var(--space-2);
+  }
+
+  .fq-op {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-top: var(--space-2);
+  }
+
+  .fq-line {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    align-items: center;
+    min-height: 44px;
+    border-top: 1px solid var(--tag-bg);
+  }
+
+  .fq-line dd {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .fq-fee {
+    font-weight: 800;
+    text-align: right;
+    white-space: nowrap;
+  }
+</style>

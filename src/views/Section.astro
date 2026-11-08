@@ -3,6 +3,7 @@ import AppHeader from '../components/AppHeader.astro';
 import CodeBuilder from '../components/CodeBuilder.astro';
 import DialToast from '../components/DialToast.astro';
 import Dock from '../components/Dock.astro';
+import FeeCalculator from '../components/FeeCalculator.astro';
 import FeeTable from '../components/FeeTable.astro';
 import OfferRow from '../components/OfferRow.astro';
 import AppLayout from '../layouts/AppLayout.astro';
@@ -11,6 +12,7 @@ import { messages } from '../i18n/messages';
 import { localePath, pageLang } from '../i18n/paths';
 import { sectionEntries } from '../lib/catalog';
 import type { CatalogEntry } from '../lib/catalog-types';
+import { toFeeRows } from '../lib/fee-rows';
 import { formatDay, pricePerGb } from '../lib/format';
 import { lastReadOn } from '../lib/freshness';
 import { sectionSeo } from '../lib/seo';
@@ -76,6 +78,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
       )
     }
 
+    {section.id === 'frais' && <FeeCalculator rows={toFeeRows(data.fees, m.fees, lang === 'fr' ? ',' : '.')} operators={data.operators} country={data.country} />}
     {section.id === 'frais' && <FeeTable fees={fees} operator={operator} />}
 
     {

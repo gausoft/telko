@@ -92,6 +92,18 @@ export const fr = {
     details: 'Détails et sources',
     unconfirmed: 'Une partie de ces tarifs vient de la presse : à confirmer.',
     empty: "Aucun frais publié pour l'instant.",
+    calc: {
+      title: 'Calculer les frais',
+      label: 'Montant en F',
+      placeholder: 'Ex. 50 000',
+      invalid: 'Entrez un montant entre 1 et 2 000 000 F.',
+      noBand: 'Aucun frais publié pour ce montant.',
+      resultFor: 'Pour {amount}',
+      pageTitle: 'Frais pour {amount} · {money}',
+      pageHeading: 'Frais pour {amount} avec {money}',
+      otherAmounts: 'Autres montants',
+      allFees: 'Voir tous les frais',
+    },
   },
   search: {
     pageTitle: 'Rechercher · Telko {country}',

@@ -94,6 +94,18 @@ export const en: Messages = {
     details: 'Details and sources',
     unconfirmed: 'Some of these fees come from the press: to be confirmed.',
     empty: 'No fees published yet.',
+    calc: {
+      title: 'Calculate fees',
+      label: 'Amount in F',
+      placeholder: 'E.g. 50,000',
+      invalid: 'Enter an amount between 1 and 2,000,000 F.',
+      noBand: 'No fee published for this amount.',
+      resultFor: 'For {amount}',
+      pageTitle: 'Fees for {amount} · {money}',
+      pageHeading: 'Fees for {amount} with {money}',
+      otherAmounts: 'Other amounts',
+      allFees: 'See all fees',
+    },
   },
   search: {
     pageTitle: 'Search · Telko {country}',
