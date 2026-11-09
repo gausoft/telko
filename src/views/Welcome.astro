@@ -23,7 +23,14 @@ const live = catalog.byCountry.get(DEFAULT_COUNTRY);
 if (!live) throw new Error(`Default country ${DEFAULT_COUNTRY} has no data`);
 const steps = ['welcome', 'country', 'operator', 'ready'] as const;
 const countryItems = catalog.countries.map((c) => ({ id: c.code, name: c.name, flag: c.code, soon: c.status !== 'live' }));
-const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
+// One operator list per country that has data: the list shown follows the country picked just before.
+const operatorSets = catalog.countries
+  .filter((c) => c.status === 'live')
+  .flatMap((c) => {
+    const operators = catalog.byCountry.get(c.code)?.operators ?? [];
+
+    return operators.length === 0 ? [] : [{ code: c.code, operators, items: operators.map((o) => ({ id: o.id, name: o.short_name, brand: o })) }];
+  });
 ---
 
 <AppLayout seo={appPageSeo(m.onboarding.title, '/welcome', lang)} ground="brand">
@@ -65,7 +72,11 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
           {step === 'operator' && (
             <>
               <h1 tabindex="-1">{m.onboarding.operatorsTitle}</h1>
-              <ChoiceList name="operators" label={m.onboarding.operatorsLabel} items={operatorItems} selected={[live.operators[0]?.id ?? '']} multiple />
+              {operatorSets.map((set) => (
+                <div data-operators-for={set.code} hidden={set.code !== DEFAULT_COUNTRY}>
+                  <ChoiceList name={`operators-${set.code}`} label={m.onboarding.operatorsLabel} items={set.items} selected={[set.operators[0]?.id ?? '']} multiple />
+                </div>
+              ))}
             </>
           )}
 
@@ -145,16 +156,30 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
   };
 
   const countryList = document.querySelector<HTMLElement>('[data-choice-list="country"]');
-  const operatorList = document.querySelector<HTMLElement>('[data-choice-list="operators"]');
-  if (countryList) bindChoiceList(countryList, ([code]) => (country = code ?? country));
-  const operators = operatorList ? bindChoiceList(operatorList) : null;
+  const operatorLists = new Map(
+    Array.from(document.querySelectorAll<HTMLElement>('[data-operators-for]')).map((box) => {
+      const list = box.querySelector<HTMLElement>('[data-choice-list]');
+
+      return [box.dataset['operatorsFor'] ?? '', { box, handle: list ? bindChoiceList(list) : null }] as const;
+    }),
+  );
+
+  /** Only the operators of the country picked are shown. */
+  const showOperators = (): void => operatorLists.forEach(({ box }, code) => (box.hidden = code !== country));
+  if (countryList) {
+    bindChoiceList(countryList, ([code]) => {
+      country = code ?? country;
+      showOperators();
+    });
+  }
+  showOperators();
 
   document.querySelectorAll<HTMLButtonElement>('[data-next]').forEach((b) => b.addEventListener('click', () => show(index + 1)));
   document.querySelectorAll<HTMLButtonElement>('[data-prev]').forEach((b) => b.addEventListener('click', () => show(index - 1)));
   document.querySelectorAll<HTMLAnchorElement>('[data-finish]').forEach((a) =>
     a.addEventListener('click', () => {
       writePref('country', country);
-      const chosen = operators?.selected() ?? [];
+      const chosen = operatorLists.get(country)?.handle?.selected() ?? [];
       if (chosen[0]) writePref('operator', chosen[0]);
       writePref('operators', chosen.join(','));
       writePref('onboarded', '1');
