@@ -6,7 +6,7 @@ Telko is only useful if its data is right. A wrong transfer code can send money 
 
 | Status | Meaning | Shown to users as |
 |---|---|---|
-| `unverified` | Found in a source, not confirmed | "Non vérifié", with the source date |
+| `unverified` | Found in a source, not confirmed | Recorded on every entry; shown to users once at first launch and in Settings, and in the details of an entry, not on each page |
 | `verified` | Confirmed by an accepted proof within the freshness window | "Vérifié le <date>" |
 | `stale` | Was verified, but the freshness window has passed | "À revérifier" |
 | `discontinued` | Confirmed withdrawn by the operator | Hidden from listings, page kept with a notice |

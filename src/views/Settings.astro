@@ -111,6 +111,10 @@ const THEMES = ['auto', 'light', 'dark'] as const;
         <span class="icon"><Info size={18} aria-hidden="true" /></span>
         <span class="label">{m.settings.openData}</span>
       </div>
+      <details class="row reliability">
+        <summary class="label">{m.settings.reliability}</summary>
+        <p>{m.onboarding.notice}</p>
+      </details>
     </section>
   </main>
 
@@ -185,6 +189,23 @@ const THEMES = ['auto', 'light', 'dark'] as const;
     min-width: 0;
     font-size: 15px;
     font-weight: 700;
+  }
+
+  .reliability {
+    display: block;
+  }
+
+  .reliability summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .reliability p {
+    margin: 0 0 var(--space-3);
+    font-size: 14px;
+    color: var(--text-muted);
   }
 
   .value {
