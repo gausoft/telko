@@ -3,7 +3,7 @@ import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
 import { pageLang } from '../i18n/paths';
 import type { Country, Operator } from '../lib/schema';
-import { FEE_PAGE_AMOUNTS, quoteFor } from '../lib/fee-lookup';
+import { FEE_PAGE_AMOUNTS, quoteFor, splitQuote } from '../lib/fee-lookup';
 import type { FeeRow } from '../lib/fee-lookup-types';
 import { formatAmount } from '../lib/format';
 import type { FeeCalculatorData } from '../lib/fee-calculator-types';
@@ -20,55 +20,79 @@ const { rows, operators, country, initial } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
 const operations = Object.keys(m.fees.operations);
-const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name }));
+const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name, badge: (o.mobile_money ?? o).badge }));
 const payload: FeeCalculatorData = {
   rows,
   names,
   operations: m.fees.operations,
   amountLabel: country.amount_label,
-  text: { invalid: m.fees.calc.invalid, noBand: m.fees.calc.noBand, resultFor: m.fees.calc.resultFor },
+  text: { invalid: m.fees.calc.invalid, noBand: m.fees.calc.noBand, resultFor: m.fees.calc.resultFor, more: m.fees.calc.more },
 };
 const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 const first = initial === undefined ? null : initial;
-const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(rows, n.id, first, operations) }));
+const cards = first === null ? [] : names.map((n) => ({ ...n, ...splitQuote(quoteFor(rows, n.id, first, operations)) }));
+const opName = (op: string): string => m.fees.operations[op as keyof typeof m.fees.operations];
+const isLong = (text: string): boolean => text.length > 9;
+const anyMore = cards.some((c) => c.rest.length > 0);
 ---
 
 <section class="fq" data-fq>
-  <h2 class="fq-title">{m.fees.calc.title}</h2>
+  <header class="fq-hero">
+    <h2 class="fq-title">{m.fees.calc.title}</h2>
+    <p class="fq-sub">{m.fees.calc.subtitle}</p>
+  </header>
 
   <form class="fq-form" novalidate>
     <label for="fq-input">{m.fees.calc.label}</label>
-    <input id="fq-input" name="amount" inputmode="numeric" autocomplete="off" placeholder={m.fees.calc.placeholder} value={first ?? ''} />
+    <input id="fq-input" name="amount" inputmode="numeric" autocomplete="off" aria-describedby="fq-error" placeholder={m.fees.calc.placeholder} value={first ?? ''} />
   </form>
 
   <div class="fq-presets" role="group" aria-label={m.fees.calc.otherAmounts}>
     {FEE_PAGE_AMOUNTS.map((amount) => <button type="button" data-amount={amount}>{formatAmount(amount, country.amount_label)}</button>)}
   </div>
 
-  <p class="fq-error" role="alert" hidden></p>
+  <p class="fq-error" id="fq-error" role="alert" hidden></p>
 
   <div class="fq-result" aria-live="polite">
     {first !== null && <p class="fq-for">{fill(m.fees.calc.resultFor, { amount: formatAmount(first, country.amount_label) })}</p>}
     {
-      cards.map((card) => (
-        <section class="fq-card">
-          <h3>{card.name}</h3>
-          {card.quote.groups.length === 0 && <p class="fq-none">{m.fees.calc.noBand}</p>}
-          {card.quote.groups.map((group) => (
-            <div class="fq-group">
-              <p class="fq-op">{m.fees.operations[group.operation as keyof typeof m.fees.operations]}</p>
-              <ul>
-                {group.rows.map((row) => (
-                  <li class="fq-line">
-                    <span class="fq-cond">{row.condition}</span>
-                    <span class="fq-fee">{row.amount}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      first !== null && (
+        <div class="fq-cards">
+          {cards.map((card) => (
+            <section class="fq-card">
+              <h3 class="fq-who"><span class="fq-badge" style={`background: ${card.badge.background}; color: ${card.badge.foreground}`}>{card.badge.label}</span>{card.name}</h3>
+              {card.head === null && <p class="fq-none">{m.fees.calc.noBand}</p>}
+              {card.head && <p class="fq-op">{opName(card.head.operation)}</p>}
+              {card.head?.rows.map((row) => <p class:list={['fq-big', { 'fq-long': isLong(row.amount) }]}>{row.amount}</p>)}
+            </section>
           ))}
-        </section>
-      ))
+        </div>
+      )
+    }
+    {
+      anyMore && (
+        <details class="fq-more">
+          <summary>{m.fees.calc.more}</summary>
+          {cards.filter((c) => c.rest.length > 0).map((card) => (
+            <section class="fq-rest">
+              <h3>{card.name}</h3>
+              {card.rest.map((group) => (
+                <div class="fq-group">
+                  <p class="fq-op">{opName(group.operation)}</p>
+                  <ul>
+                    {group.rows.map((row) => (
+                      <li class="fq-line">
+                        <span class="fq-cond">{row.condition}</span>
+                        <span class="fq-fee">{row.amount}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </section>
+          ))}
+        </details>
+      )
     }
   </div>
 
@@ -100,7 +124,7 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
       error.textContent = data.text.invalid;
       if (amount === null) return result.replaceChildren();
 
-      const quotes = data.names.map((n) => ({ name: n.name, quote: quoteFor(data.rows, n.id, amount, operations) }));
+      const quotes = data.names.map((n) => ({ name: n.name, badge: n.badge, quote: quoteFor(data.rows, n.id, amount, operations) }));
       renderQuotes(result, quotes, amount, data);
     };
 
@@ -120,11 +144,21 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
+    padding: var(--space-5) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--action);
+    color: #fff;
   }
 
   .fq-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 800;
+  }
+
+  .fq-sub {
+    margin-top: var(--space-1);
+    font-size: 14px;
+    opacity: 0.85;
   }
 
   .fq-form {
@@ -136,19 +170,19 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
   }
 
   .fq-form input {
-    height: 52px;
+    height: 64px;
     padding: 0 var(--space-4);
-    border: 2px solid var(--tag-bg);
+    border: 0;
     border-radius: var(--radius-sm);
-    background: var(--surface-raised);
-    color: inherit;
+    background: #fff;
+    color: #0d0b26;
     font: inherit;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800;
   }
 
   .fq-form input:focus-visible {
-    outline: 3px solid var(--action);
+    outline: 3px solid #fff;
     outline-offset: 2px;
   }
 
@@ -163,16 +197,15 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     padding: 0 var(--space-3);
     border: 0;
     border-radius: 999px;
-    background: var(--tag-bg);
-    color: var(--tag-text);
+    background: rgb(255 255 255 / 0.2);
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
   }
 
-  .fq-error,
-  .fq-none {
-    color: var(--text-muted);
+  .fq-error {
     font-size: 14px;
+    font-weight: 600;
   }
 
   .fq-result {
@@ -186,17 +219,83 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     font-weight: 800;
   }
 
-  .fq-card {
-    padding: var(--space-4) var(--space-5);
-    border-radius: var(--radius-md);
-    background: var(--surface-raised);
-    box-shadow: var(--shadow-card);
+  .fq-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+    gap: var(--space-2);
   }
 
-  .fq-card h3 {
-    font-size: 17px;
+  .fq-card {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    color: var(--text);
+  }
+
+  .fq-who {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 15px;
     font-weight: 800;
     margin-bottom: var(--space-2);
+  }
+
+  .fq-badge {
+    display: inline-grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 800;
+    flex: none;
+  }
+
+  .fq-op {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  .fq-big {
+    margin-top: var(--space-1);
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+  }
+
+  .fq-long {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .fq-none {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .fq-more {
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    color: var(--text);
+    padding: 0 var(--space-4);
+  }
+
+  .fq-more summary {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .fq-rest h3 {
+    font-size: 15px;
+    font-weight: 800;
+    margin: var(--space-2) 0 var(--space-1);
   }
 
   .fq-group {
@@ -209,30 +308,20 @@ const cards = first === null ? [] : names.map((n) => ({ ...n, quote: quoteFor(ro
     padding: 0;
   }
 
-  .fq-cond {
-    flex: 1 1 140px;
-    min-width: 0;
-  }
-
-  .fq-op {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text-muted);
-    margin-top: var(--space-2);
-  }
-
   .fq-line {
     display: flex;
     justify-content: space-between;
-    gap: var(--space-3);
     flex-wrap: wrap;
+    gap: var(--space-3);
     align-items: center;
     min-height: 44px;
     border-top: 1px solid var(--tag-bg);
+    font-size: 14px;
   }
 
-  .fq-line {
-    font-size: 14px;
+  .fq-cond {
+    flex: 1 1 140px;
+    min-width: 0;
   }
 
   .fq-fee {

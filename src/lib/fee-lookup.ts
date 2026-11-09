@@ -17,6 +17,13 @@ export function quoteFor(rows: FeeRow[], operator: string, amount: number, opera
   return { operator, groups };
 }
 
+/** The answer people came for (the withdrawal fee, else the first group) and everything else for the amount. */
+export function splitQuote(quote: FeeQuote): { head: FeeQuote['groups'][number] | null; rest: FeeQuote['groups'] } {
+  const head = quote.groups.find((group) => group.operation === 'withdrawal') ?? quote.groups[0] ?? null;
+
+  return { head, rest: quote.groups.filter((group) => group !== head) };
+}
+
 function covers(row: FeeRow, amount: number): boolean {
   return amount >= row.min && (row.max === null || amount <= row.max);
 }

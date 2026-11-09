@@ -103,6 +103,9 @@ export const fr = {
       pageHeading: 'Frais pour {amount} avec {money}',
       otherAmounts: 'Autres montants',
       allFees: 'Voir tous les frais',
+      allBands: 'Voir toutes les tranches',
+      more: 'Autres frais pour ce montant',
+      subtitle: "Tapez un montant, voyez les frais de chaque service.",
     },
   },
   search: {

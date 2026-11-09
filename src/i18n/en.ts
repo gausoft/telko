@@ -105,6 +105,9 @@ export const en: Messages = {
       pageHeading: 'Fees for {amount} with {money}',
       otherAmounts: 'Other amounts',
       allFees: 'See all fees',
+      allBands: 'See all bands',
+      more: 'Other fees for this amount',
+      subtitle: "Type an amount, see each service's fees.",
     },
   },
   search: {
