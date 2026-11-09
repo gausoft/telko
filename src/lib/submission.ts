@@ -1,4 +1,4 @@
-import { checkCode } from './contribution';
+import { PROOF_LABELS, checkCode } from './contribution';
 import type { ContributionDraft, ContributionProof } from './contribution-types';
 import type { Submission, SubmissionContext, SubmissionParse } from './submission-types';
 
@@ -81,16 +81,26 @@ export function parseSubmission(input: unknown): SubmissionParse {
   };
 }
 
-/** One readable line per field, for destinations that show plain text. */
+/** The message the owner reads: French, one labelled line per field, flagged as unverified. */
 export function submissionText(submission: Submission): string {
   const lines = [
+    'Nouvelle proposition (non vérifiée)',
     `${submission.operator}, ${submission.service} (${submission.country})`,
-    `${submission.name}: ${submission.code}`,
-    submission.details,
-    `Proof: ${submission.proof}${submission.sourceUrl ? `, ${submission.sourceUrl}` : ''}`,
-    `Date: ${submission.date}`,
+    `Nom : ${submission.name}`,
+    `Code : ${submission.code}`,
+    `Détails : ${submission.details}`,
+    `Preuve : ${PROOF_LABELS[submission.proof]}`,
   ];
-  if (submission.contact) lines.push(`Contact: ${submission.contact}`);
+  if (submission.sourceUrl) lines.push(`Source : ${submission.sourceUrl}`);
+  lines.push(`Date : ${frenchDate(submission.date)}`);
+  if (submission.contact) lines.push(`Contact : ${submission.contact}`);
 
   return lines.join('\n');
+}
+
+/** 2026-11-09 becomes 09/11/2026. */
+function frenchDate(iso: string): string {
+  const [year, month, day] = iso.split('-');
+
+  return `${day}/${month}/${year}`;
 }
