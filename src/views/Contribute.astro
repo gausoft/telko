@@ -1,0 +1,186 @@
+---
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+
+import '../styles/contribute.css';
+import BrandMark from '../components/BrandMark.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { REPO_URL, SUBMISSION_ENDPOINT, TURNSTILE_SITEKEY } from '../config';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { PROOF_LABELS } from '../lib/contribution';
+import type { ContributionProof } from '../lib/contribution-types';
+import { appPageSeo } from '../lib/seo';
+import type { Operator } from '../lib/schema';
+import type { SettingsProps } from './view-types';
+
+type Props = SettingsProps;
+
+const { data } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const c = m.contribute;
+const proofs = Object.keys(PROOF_LABELS) as ContributionProof[];
+const markOf = (b: { short_name: string; badge: Operator['badge']; logo: string | null }) => ({ name: b.short_name, badge: b.badge, logo: b.logo });
+const operatorChoices = data.operators.map((o) => ({
+  id: o.id,
+  label: `${o.short_name} ${data.country.name}`,
+  brand: markOf(o),
+  services: [
+    { key: 'communication', brand: markOf(o), text: c.services.communication },
+    ...(o.mobile_money ? [{ key: 'money', brand: markOf(o.mobile_money), text: `${c.services.money} · ${o.mobile_money.short_name}` }] : []),
+    { key: 'other', brand: markOf(o), text: c.services.other },
+  ] as { key: 'communication' | 'money' | 'other'; brand: ReturnType<typeof markOf>; text: string }[],
+}));
+const TOTAL = 5;
+const payload = JSON.stringify({
+  repoUrl: REPO_URL,
+  endpoint: SUBMISSION_ENDPOINT,
+  siteKey: TURNSTILE_SITEKEY,
+  country: data.country.code,
+  lang,
+  text: { sending: c.sending, send: c.sendDirect },
+  template: 'new-offer.yml',
+  errors: c.errors,
+  partKinds: c.partKinds,
+  proofs: c.proofs,
+}).replace(/</g, '\\u003c');
+const stepOf = (n: number): string => fill(c.step, { n, total: TOTAL });
+---
+
+<AppLayout seo={appPageSeo(c.pageTitle, `/${data.country.code}/contribute`, lang)}>
+  <main class="contribute" data-contribute data-back={localePath(lang, `/${data.country.code}/settings`)}>
+    <section class="step" data-step>
+      <button type="button" class="icon-btn" data-prev aria-label={m.common.back}><ArrowLeft size={26} aria-hidden="true" /></button>
+      <p class="eyebrow">{stepOf(1)}</p>
+      <h1 tabindex="-1">{c.operatorTitle}</h1>
+      <fieldset class="choices">
+        <legend class="visually-hidden">{c.operatorTitle}</legend>
+        {operatorChoices.map(({ id, label, brand }, i) => (
+          <label class="choice"><input type="radio" name="operator" value={label} data-id={id} checked={i === 0} /><BrandMark brand={brand} size={32} /><span>{label}</span></label>
+        ))}
+      </fieldset>
+      <p class="error" role="alert" hidden data-error></p>
+      <button type="button" class="cta" data-next>{c.next}</button>
+    </section>
+
+    <section class="step" data-step hidden>
+      <button type="button" class="icon-btn" data-prev aria-label={m.common.back}><ArrowLeft size={26} aria-hidden="true" /></button>
+      <p class="eyebrow">{stepOf(2)}</p>
+      <h1 tabindex="-1">{c.serviceTitle}</h1>
+      {operatorChoices.map(({ id, services }) => (
+        <fieldset class="choices" data-services={id} hidden>
+          <legend class="visually-hidden">{c.serviceTitle}</legend>
+          {services.map(({ key, brand, text }, i) => (
+            <label class="choice"><input type="radio" name={`service-${id}`} value={key} data-text={text} checked={i === 0} /><BrandMark brand={brand} size={32} /><span class="choice-text">{text}<small>{c.serviceHints[key]}</small></span></label>
+          ))}
+        </fieldset>
+      ))}
+      <p class="error" role="alert" hidden data-error></p>
+      <button type="button" class="cta" data-next>{c.next}</button>
+    </section>
+
+    <section class="step" data-step hidden>
+      <button type="button" class="icon-btn" data-prev aria-label={m.common.back}><ArrowLeft size={26} aria-hidden="true" /></button>
+      <p class="eyebrow">{stepOf(3)}</p>
+      <h1 tabindex="-1">{c.codeTitle}</h1>
+      <label class="field">{c.nameLabel}<input name="name" autocomplete="off" placeholder={c.namePlaceholder} /></label>
+      <label class="field">{c.codeLabel}<input name="code" class="mono" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder={c.codePlaceholder} aria-describedby="ct-code-hint" /></label>
+      <p class="hint" id="ct-code-hint">{c.codeHint}</p>
+      <fieldset class="choices" data-varies hidden>
+        <legend>{c.variesLabel}</legend>
+        <label class="choice"><input type="radio" name="varies" value="no" checked /><span>{c.variesNo}</span></label>
+        <label class="choice"><input type="radio" name="varies" value="yes" /><span>{c.variesYes}</span></label>
+      </fieldset>
+      <div class="parts" data-parts hidden>
+        <p class="hint">{c.partsHint}</p>
+        <div data-parts-list></div>
+      </div>
+      <p class="warn">{c.pinWarning}</p>
+      <p class="error" role="alert" hidden data-error></p>
+      <button type="button" class="cta" data-next>{c.next}</button>
+    </section>
+
+    <section class="step" data-step hidden>
+      <button type="button" class="icon-btn" data-prev aria-label={m.common.back}><ArrowLeft size={26} aria-hidden="true" /></button>
+      <p class="eyebrow">{stepOf(4)}</p>
+      <h1 tabindex="-1">{c.detailsTitle}</h1>
+      <label class="field">{c.detailsLabel}<textarea name="details" rows="3" placeholder={c.detailsPlaceholder}></textarea></label>
+      <fieldset class="choices">
+        <legend>{c.proofLabel}</legend>
+        {proofs.map((proof, i) => (
+          <label class="choice"><input type="radio" name="proof" value={proof} checked={i === 0} /><span>{c.proofs[proof]}</span></label>
+        ))}
+      </fieldset>
+      <label class="field">{c.sourceLabel}<input name="sourceUrl" type="url" inputmode="url" autocomplete="off" /></label>
+      {SUBMISSION_ENDPOINT !== '' && (
+        <label class="field">{c.contactLabel}<input name="contact" autocomplete="off" aria-describedby="ct-contact-hint" /><span class="hint" id="ct-contact-hint">{c.contactHint}</span></label>
+      )}
+      <p class="error" role="alert" hidden data-error></p>
+      <button type="button" class="cta" data-next>{c.next}</button>
+    </section>
+
+    <section class="step" data-step hidden>
+      <button type="button" class="icon-btn" data-prev aria-label={m.common.back}><ArrowLeft size={26} aria-hidden="true" /></button>
+      <p class="eyebrow">{stepOf(5)}</p>
+      <h1 tabindex="-1">{c.reviewTitle}</h1>
+
+      <div class="recap">
+        <div class="recap-block">
+          <div class="recap-line">
+            <p class="recap-label">{c.recap.operator}</p>
+            <button type="button" class="edit" data-edit="0" aria-label={`${c.edit} : ${c.recap.operator}`}>{c.edit}</button>
+          </div>
+          <p class="recap-value recap-operator"><span data-r-mark></span><span data-r="operator"></span></p>
+          <p class="recap-proof" data-r="service"></p>
+        </div>
+
+        <div class="recap-block">
+          <div class="recap-line">
+            <p class="recap-label">{c.recap.name}</p>
+            <button type="button" class="edit" data-edit="2" aria-label={`${c.edit} : ${c.recap.name}`}>{c.edit}</button>
+          </div>
+          <p class="recap-value" data-r="name"></p>
+          <p class="recap-code mono" data-r="code"></p>
+        </div>
+
+        <div class="recap-block">
+          <div class="recap-line">
+            <p class="recap-label">{c.recap.details}</p>
+            <button type="button" class="edit" data-edit="3" aria-label={`${c.edit} : ${c.recap.details}`}>{c.edit}</button>
+          </div>
+          <p class="recap-value" data-r="details"></p>
+          <p class="recap-proof" data-r="proof"></p>
+        </div>
+      </div>
+
+      {SUBMISSION_ENDPOINT !== '' ? (
+        <>
+          {TURNSTILE_SITEKEY !== '' && <div data-turnstile></div>}
+          <p class="error" role="alert" hidden data-send-error></p>
+          <button type="button" class="cta" data-submit>{c.sendDirect}</button>
+          <p class="hint center">{c.sendNoteDirect}</p>
+        </>
+      ) : (
+        <>
+          <a class="cta" data-send href={REPO_URL} target="_blank" rel="noreferrer">{c.send}</a>
+          <p class="hint center">{c.sendNote}</p>
+        </>
+      )}
+    </section>
+
+    <section class="step" data-done hidden>
+      <h1 tabindex="-1">{c.thanksTitle}</h1>
+      <p>{c.thanksText}</p>
+      <a class="cta" href={localePath(lang, `/${data.country.code}/contribute`)}>{c.again}</a>
+    </section>
+
+    <script type="application/json" id="ct-data" set:html={payload} />
+  </main>
+</AppLayout>
+
+<script>
+  import { startContribute } from '../scripts/contribute';
+
+  startContribute();
+</script>

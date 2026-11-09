@@ -1,0 +1,96 @@
+import { checkCode } from './contribution';
+import type { ContributionDraft, ContributionProof } from './contribution-types';
+import type { Submission, SubmissionContext, SubmissionParse } from './submission-types';
+
+const PROOFS: ContributionProof[] = ['device', 'official', 'other'];
+const SHORT = 200;
+const LONG = 1000;
+
+export function submissionOf(draft: ContributionDraft, context: SubmissionContext): Submission {
+  return {
+    country: context.country,
+    lang: context.lang,
+    operator: draft.operator,
+    service: draft.service,
+    name: draft.name,
+    code: draft.code,
+    details: draft.details,
+    proof: draft.proof,
+    sourceUrl: draft.sourceUrl,
+    contact: draft.contact,
+    date: draft.date,
+  };
+}
+
+/** Decodes untrusted JSON into a submission, or names the first field that is wrong. */
+export function parseSubmission(input: unknown): SubmissionParse {
+  if (typeof input !== 'object' || input === null) return { ok: false, field: 'body' };
+  const raw = input as Record<string, unknown>;
+
+  const text = (key: string, max: number, required: boolean): string | null => {
+    const value = raw[key];
+    if (typeof value !== 'string') return required ? null : '';
+    const trimmed = value.trim();
+
+    return trimmed.length > max || (required && trimmed === '') ? null : trimmed;
+  };
+
+  const country = text('country', 2, true);
+  const operator = text('operator', SHORT, true);
+  const service = text('service', SHORT, true);
+  const name = text('name', SHORT, true);
+  const code = text('code', SHORT, true);
+  const details = text('details', LONG, true);
+  const sourceUrl = text('sourceUrl', SHORT, false);
+  const contact = text('contact', SHORT, false);
+  const date = text('date', 10, true);
+  const proof = raw['proof'];
+  const lang = raw['lang'];
+
+  const checks: [string, boolean][] = [
+    ['country', country !== null && /^[a-z]{2}$/.test(country)],
+    ['lang', lang === 'fr' || lang === 'en'],
+    ['operator', operator !== null],
+    ['service', service !== null],
+    ['name', name !== null],
+    ['code', code !== null && checkCode(code) === null],
+    ['details', details !== null],
+    ['proof', typeof proof === 'string' && (PROOFS as string[]).includes(proof)],
+    ['sourceUrl', sourceUrl !== null && (sourceUrl === '' || /^https?:\/\//.test(sourceUrl))],
+    ['contact', contact !== null],
+    ['date', date !== null && /^\d{4}-\d{2}-\d{2}$/.test(date)],
+  ];
+  const bad = checks.find(([, valid]) => !valid);
+  if (bad) return { ok: false, field: bad[0] };
+
+  return {
+    ok: true,
+    submission: {
+      country: country as string,
+      lang: lang as Submission['lang'],
+      operator: operator as string,
+      service: service as string,
+      name: name as string,
+      code: code as string,
+      details: details as string,
+      proof: proof as ContributionProof,
+      sourceUrl: sourceUrl as string,
+      contact: contact as string,
+      date: date as string,
+    },
+  };
+}
+
+/** One readable line per field, for destinations that show plain text. */
+export function submissionText(submission: Submission): string {
+  const lines = [
+    `${submission.operator}, ${submission.service} (${submission.country})`,
+    `${submission.name}: ${submission.code}`,
+    submission.details,
+    `Proof: ${submission.proof}${submission.sourceUrl ? `, ${submission.sourceUrl}` : ''}`,
+    `Date: ${submission.date}`,
+  ];
+  if (submission.contact) lines.push(`Contact: ${submission.contact}`);
+
+  return lines.join('\n');
+}

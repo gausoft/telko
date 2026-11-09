@@ -8,6 +8,7 @@ import Info from '@lucide/astro/icons/info';
 import LifeBuoy from '@lucide/astro/icons/life-buoy';
 import RadioTower from '@lucide/astro/icons/radio-tower';
 import SunMoon from '@lucide/astro/icons/sun-moon';
+import PlusCircle from '@lucide/astro/icons/circle-plus';
 import Languages from '@lucide/astro/icons/languages';
 
 import AppHeader from '../components/AppHeader.astro';
@@ -35,7 +36,7 @@ const operatorItems = data.operators.map((o) => ({ id: o.id, name: o.short_name,
 const THEMES = ['auto', 'light', 'dark'] as const;
 ---
 
-<AppLayout seo={appPageSeo(m.settings.pageTitle, `/${data.country.code}/reglages`, lang)} withDock>
+<AppLayout seo={appPageSeo(m.settings.pageTitle, `/${data.country.code}/settings`, lang)} withDock>
   <main class="page">
     <AppHeader country={data.country} back={localePath(lang, `/${data.country.code}`)} title={m.common.settings} />
 
@@ -97,9 +98,14 @@ const THEMES = ['auto', 'light', 'dark'] as const;
     </section>
 
     <section class="group" aria-label={m.settings.help}>
-      <a class="row" href={localePath(lang, `/${data.country.code}/${first.id}/aide`)} data-operator-href={localePath(lang, `/${data.country.code}/{op}/aide`)}>
+      <a class="row" href={localePath(lang, `/${data.country.code}/${first.id}/help`)} data-operator-href={localePath(lang, `/${data.country.code}/{op}/help`)}>
         <span class="icon"><LifeBuoy size={18} aria-hidden="true" /></span>
         <span class="label">{m.settings.helpRow}</span>
+        <ChevronRight size={18} class="chevron" aria-hidden="true" />
+      </a>
+      <a class="row" href={localePath(lang, `/${data.country.code}/contribute`)}>
+        <span class="icon"><PlusCircle size={18} aria-hidden="true" /></span>
+        <span class="label">{m.settings.contribute}</span>
         <ChevronRight size={18} class="chevron" aria-hidden="true" />
       </a>
       <button type="button" class="row" data-clear-recipients hidden>
@@ -118,7 +124,7 @@ const THEMES = ['auto', 'light', 'dark'] as const;
     </section>
   </main>
 
-  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="reglages" />
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="settings" />
 </AppLayout>
 
 <script>

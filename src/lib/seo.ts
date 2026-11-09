@@ -194,13 +194,13 @@ function sectionFacts(data: CountryCatalog, operator: Operator, section: Section
   const fromLine = from ? copy.from(from) : null;
   const highlights: Record<Section['id'], string | null> = {
     internet: popularOffer(data, operator, entries, lang) ?? fromLine,
-    appels: fromLine ?? codes,
-    argent: codes,
-    factures: codes,
-    frais: fees > 0 ? copy.amounts(fees) : null,
-    aide: codes,
+    calls: fromLine ?? codes,
+    money: codes,
+    bills: codes,
+    fees: fees > 0 ? copy.amounts(fees) : null,
+    help: codes,
   };
-  const brand: Brand = section.id === 'argent' || section.id === 'frais' ? money : operator;
+  const brand: Brand = section.id === 'money' || section.id === 'fees' ? money : operator;
 
   return { heading: copy.heading(section.id, ctx), description: copy.description(section.id, ctx), highlight: highlights[section.id], brand };
 }

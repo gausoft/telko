@@ -23,7 +23,7 @@ export function offlinePack(data: CountryCatalog, lang: Lang, stamp: string): Of
     operators: data.operators.map((o) => o.id),
     pages: {
       // Brand images of every operator are shared: the operator switcher always shows them all.
-      shared: [page(`/${code}`), page(`/${code}/recherche`), page(`/${code}/reglages`), ...data.operators.flatMap(brandImages)],
+      shared: [page(`/${code}`), page(`/${code}/search`), page(`/${code}/settings`), ...data.operators.flatMap(brandImages)],
       byOperator: Object.fromEntries(data.operators.map((o) => [o.id, SECTIONS.map((s) => page(`/${code}/${o.id}/${s.id}`))])),
     },
     entries,

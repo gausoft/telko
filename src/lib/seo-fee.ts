@@ -17,10 +17,10 @@ export function feeAmountSeo(data: CountryCatalog, operator: Operator, amount: n
   const m = messages(lang);
   const money = operator.mobile_money ?? operator;
   const code = data.country.code;
-  const path = `/${code}/${operator.id}/frais/${amount}`;
+  const path = `/${code}/${operator.id}/fees/${amount}`;
   const shown = formatAmount(amount, data.country.amount_label);
   const heading = fill(m.fees.calc.pageHeading, { amount: shown, money: money.short_name });
-  const section = SECTIONS.find((s) => s.id === 'frais');
+  const section = SECTIONS.find((s) => s.id === 'fees');
   if (!section) throw new Error('the fees section is missing');
 
   return {
@@ -33,7 +33,7 @@ export function feeAmountSeo(data: CountryCatalog, operator: Operator, amount: n
     noindex: false,
     crumbs: [
       { name: `Telko ${data.country.name}`, path: localePath(lang, `/${code}`) },
-      { name: m.sections.frais, path: localePath(lang, `/${code}/${operator.id}/frais`) },
+      { name: m.sections.fees, path: localePath(lang, `/${code}/${operator.id}/fees`) },
       { name: shown, path: localePath(lang, path) },
     ],
     alternates: alternates(path),

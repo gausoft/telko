@@ -38,11 +38,11 @@ function soonDescription(country: string, operators: string[]): string {
 function heading(id: SectionId, c: SectionCopyContext): string {
   const headings: Record<SectionId, string> = {
     internet: `${c.operatorShort} data bundles`,
-    appels: `${c.operatorShort} calls and SMS`,
-    argent: `${c.moneyShort} codes`,
-    factures: `Pay bills with ${c.operatorShort}`,
-    frais: `${c.moneyShort} fees`,
-    aide: `${c.operatorShort} useful codes`,
+    calls: `${c.operatorShort} calls and SMS`,
+    money: `${c.moneyShort} codes`,
+    bills: `Pay bills with ${c.operatorShort}`,
+    fees: `${c.moneyShort} fees`,
+    help: `${c.operatorShort} useful codes`,
   };
 
   return headings[id];
@@ -54,11 +54,11 @@ function description(id: SectionId, c: SectionCopyContext): string {
   const lead = (noun: string): string => (c.count > 0 ? `${c.count} ${noun}` : noun.charAt(0).toUpperCase() + noun.slice(1));
   const descriptions: Record<SectionId, string> = {
     internet: `${lead('data bundles')} from ${c.operatorName}, daily to monthly${from}. Dial each bundle's code in one tap.`,
-    appels: `${lead('call and SMS bundles')} from ${c.operatorName}${from}. Dial the code in one tap.`,
-    argent: `${lead('codes')} for ${c.moneyName}, ready to dial. Telko never asks for your PIN.`,
-    factures: `${lead('codes')} to pay your bills with ${c.operatorName}, ready to dial.`,
-    frais: c.fees > 0 ? `${c.moneyName} fees: ${c.fees} amounts, each with its source.` : `${c.moneyName} fees, with their source.`,
-    aide: `${lead('useful codes')} from ${c.operatorName}: balance, number and services, in one tap.`,
+    calls: `${lead('call and SMS bundles')} from ${c.operatorName}${from}. Dial the code in one tap.`,
+    money: `${lead('codes')} for ${c.moneyName}, ready to dial. Telko never asks for your PIN.`,
+    bills: `${lead('codes')} to pay your bills with ${c.operatorName}, ready to dial.`,
+    fees: c.fees > 0 ? `${c.moneyName} fees: ${c.fees} amounts, each with its source.` : `${c.moneyName} fees, with their source.`,
+    help: `${lead('useful codes')} from ${c.operatorName}: balance, number and services, in one tap.`,
   };
 
   return descriptions[id];

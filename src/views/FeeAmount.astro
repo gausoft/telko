@@ -24,16 +24,16 @@ const base = localePath(lang, `/${code}/${operator.id}`);
 
 <AppLayout seo={feeAmountSeo(data, operator, amount, lang)} withDock>
   <main class="page">
-    <AppHeader country={data.country} back={`${base}/frais`} title={fill(m.fees.calc.pageHeading, { amount: formatAmount(amount, data.country.amount_label), money: (operator.mobile_money ?? operator).short_name })} />
+    <AppHeader country={data.country} back={`${base}/fees`} title={fill(m.fees.calc.pageHeading, { amount: formatAmount(amount, data.country.amount_label), money: (operator.mobile_money ?? operator).short_name })} />
 
     <FeeCalculator rows={rows} operators={data.operators} country={data.country} initial={amount} />
 
     <nav class="others" aria-label={m.fees.calc.otherAmounts}>
       <h2>{m.fees.calc.otherAmounts}</h2>
       <ul>
-        {FEE_PAGE_AMOUNTS.filter((a) => a !== amount).map((a) => <li><a href={`${base}/frais/${a}`}>{formatAmount(a, data.country.amount_label)}</a></li>)}
+        {FEE_PAGE_AMOUNTS.filter((a) => a !== amount).map((a) => <li><a href={`${base}/fees/${a}`}>{formatAmount(a, data.country.amount_label)}</a></li>)}
       </ul>
-      <a class="all" href={`${base}/frais`}>{m.fees.calc.allFees}</a>
+      <a class="all" href={`${base}/fees`}>{m.fees.calc.allFees}</a>
     </nav>
   </main>
 

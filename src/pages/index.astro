@@ -32,9 +32,9 @@ import { DEFAULT_COUNTRY } from '../config';
   const country = readPref('country') ?? DEFAULT_COUNTRY;
   const operator = readPref('operator');
   // Home screen shortcuts from the web manifest open "/?go=…".
-  const shortcut: Record<string, string> = { recherche: `/${country}/recherche`, internet: operator ? `/${country}/${operator}/internet` : `/${country}` };
+  const shortcut: Record<string, string> = { search: `/${country}/search`, internet: operator ? `/${country}/${operator}/internet` : `/${country}` };
   const go = shortcut[new URLSearchParams(window.location.search).get('go') ?? ''];
-  const target = localePath(lang, onboarded ? (go ?? `/${country}`) : '/bienvenue');
+  const target = localePath(lang, onboarded ? (go ?? `/${country}`) : '/welcome');
 
   window.setTimeout(() => window.location.replace(target), SPLASH_MS);
 </script>

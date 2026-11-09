@@ -167,7 +167,7 @@ function offlinePage(lang) {
 }
 
 /**
- * "bienvenue.html" -> "/bienvenue", "index.html" -> "/", "/tg/" -> "/tg": one key per page.
+ * "welcome.html" -> "/welcome", "index.html" -> "/", "/tg/" -> "/tg": one key per page.
  * @param {string} path
  */
 function toPath(path) {

@@ -65,7 +65,7 @@ describe('fee pages', () => {
       const seo = feeAmountSeo(data, operator, 50000, lang);
       expect(seo.description).toMatch(/600 F/);
       expect(seo.description.length).toBeLessThanOrEqual(160);
-      expect(seo.path).toContain(`/tg/${operator.id}/frais/50000`);
+      expect(seo.path).toContain(`/tg/${operator.id}/fees/50000`);
     }
   });
 });

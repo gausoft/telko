@@ -21,14 +21,14 @@ const m = messages(lang);
 const catalog = localizeCatalog(loadCatalog(), lang);
 const live = catalog.byCountry.get(DEFAULT_COUNTRY);
 if (!live) throw new Error(`Default country ${DEFAULT_COUNTRY} has no data`);
-const steps = ['bienvenue', 'pays', 'operateur', 'pret'] as const;
+const steps = ['welcome', 'country', 'operator', 'ready'] as const;
 const countryItems = catalog.countries.map((c) => ({ id: c.code, name: c.name, flag: c.code, soon: c.status !== 'live' }));
 const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name, brand: o }));
 ---
 
-<AppLayout seo={appPageSeo(m.onboarding.title, '/bienvenue', lang)} ground="brand">
+<AppLayout seo={appPageSeo(m.onboarding.title, '/welcome', lang)} ground="brand">
   <main class="onboarding" data-onboarding data-default-country={DEFAULT_COUNTRY}>
-    <section class="step step-welcome" data-step="bienvenue">
+    <section class="step step-welcome" data-step="welcome">
       <div class="lang-switch" role="group" aria-label={m.onboarding.language}>
         {LANGS.map((l) => <button type="button" data-lang-choice={l} lang={l} aria-pressed={l === lang ? 'true' : 'false'}>{l.toUpperCase()}</button>)}
       </div>
@@ -53,7 +53,7 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
             <a class="skip" href={localePath(lang, `/${DEFAULT_COUNTRY}`)} data-finish>{m.onboarding.skip}</a>
           </div>
 
-          {step === 'pays' && (
+          {step === 'country' && (
             <>
               <h1 tabindex="-1">{m.onboarding.countryTitle}</h1>
               <div class="scroll">
@@ -62,14 +62,14 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
             </>
           )}
 
-          {step === 'operateur' && (
+          {step === 'operator' && (
             <>
               <h1 tabindex="-1">{m.onboarding.operatorsTitle}</h1>
               <ChoiceList name="operators" label={m.onboarding.operatorsLabel} items={operatorItems} selected={[live.operators[0]?.id ?? '']} multiple />
             </>
           )}
 
-          {step === 'pret' && (
+          {step === 'ready' && (
             <>
               <h1 tabindex="-1">{m.onboarding.readyTitle}</h1>
               <div class="stack">
@@ -85,7 +85,7 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
             <div class="progress" aria-label={fill(m.onboarding.step, { n: i + 2, total: steps.length })}>
               {steps.map((_, j) => <span class:list={{ on: j === i + 1 }} />)}
             </div>
-            {step === 'pret' ? (
+            {step === 'ready' ? (
               <a class="cta" href={localePath(lang, `/${DEFAULT_COUNTRY}`)} data-finish>{m.onboarding.go}</a>
             ) : (
               <button type="button" class="cta" data-next>{m.onboarding.next}</button>
@@ -108,7 +108,7 @@ const operatorItems = live.operators.map((o) => ({ id: o.id, name: o.short_name,
   const root = document.querySelector<HTMLElement>('[data-onboarding]');
   const steps = Array.from(document.querySelectorAll<HTMLElement>('[data-step]'));
   const START_STEPS: Record<string, number> = { pays: 1, operateur: 2 };
-  let index = START_STEPS[new URLSearchParams(window.location.search).get('etape') ?? ''] ?? 0;
+  let index = START_STEPS[new URLSearchParams(window.location.search).get('step') ?? ''] ?? 0;
   let country = root?.dataset['defaultCountry'] ?? 'tg';
 
   const render = (): void => {
