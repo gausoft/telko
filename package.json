@@ -14,6 +14,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "new-country": "node scripts/new-country.mjs",
+    "add-submission": "node scripts/add-submission.mjs",
     "test": "vitest run",
     "verify": "npm run check && npm test && npm run build"
   },
