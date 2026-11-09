@@ -1,4 +1,5 @@
 ---
+import '../styles/fold.css';
 import AppHeader from '../components/AppHeader.astro';
 import CodeBuilder from '../components/CodeBuilder.astro';
 import DialToast from '../components/DialToast.astro';
@@ -81,7 +82,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
     {section.id === 'frais' && <FeeCalculator rows={toFeeRows(data.fees, m.fees, lang === 'fr' ? ',' : '.')} operators={data.operators} country={data.country} />}
     {
       section.id === 'frais' && (
-        <details class="all-bands">
+        <details class="fold all-bands">
           <summary>{m.fees.calc.allBands}</summary>
           <FeeTable fees={fees} operator={operator} />
         </details>
@@ -134,15 +135,6 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
-  }
-
-  .all-bands summary {
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
   }
 
   .filters {

@@ -1,11 +1,14 @@
 ---
+import '../styles/fold.css';
+import { SHOW_BRAND_LOGOS } from '../config';
+import BrandMark from './BrandMark.astro';
 import { fill } from '../i18n/format-message';
 import { messages } from '../i18n/messages';
 import { pageLang } from '../i18n/paths';
-import type { Country, Operator } from '../lib/schema';
+import type { Brand, Country, Operator } from '../lib/schema';
 import { FEE_PAGE_AMOUNTS, quoteFor, splitQuote } from '../lib/fee-lookup';
 import type { FeeRow } from '../lib/fee-lookup-types';
-import { formatAmount } from '../lib/format';
+import { formatAmount, splitUnit } from '../lib/format';
 import type { FeeCalculatorData } from '../lib/fee-calculator-types';
 
 interface Props {
@@ -20,7 +23,8 @@ const { rows, operators, country, initial } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
 const operations = Object.keys(m.fees.operations);
-const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name, badge: (o.mobile_money ?? o).badge }));
+const brandOf = (b: { short_name: string; badge: Brand['badge']; logo: string | null }) => ({ name: b.short_name, badge: b.badge, logo: SHOW_BRAND_LOGOS && b.logo ? `/brands/${b.logo}` : null });
+const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name, brand: brandOf(o.mobile_money ?? o) }));
 const payload: FeeCalculatorData = {
   rows,
   names,
@@ -60,10 +64,10 @@ const anyMore = cards.some((c) => c.rest.length > 0);
         <div class="fq-cards">
           {cards.map((card) => (
             <section class="fq-card">
-              <h3 class="fq-who"><span class="fq-badge" style={`background: ${card.badge.background}; color: ${card.badge.foreground}`}>{card.badge.label}</span>{card.name}</h3>
+              <h3 class="fq-who"><BrandMark brand={{ name: card.brand.name, badge: card.brand.badge, logo: card.brand.logo === null ? null : card.brand.logo.replace('/brands/', '') }} size={28} />{card.name}</h3>
               {card.head === null && <p class="fq-none">{m.fees.calc.noBand}</p>}
               {card.head && <p class="fq-op">{opName(card.head.operation)}</p>}
-              {card.head?.rows.map((row) => <p class:list={['fq-big', { 'fq-long': isLong(row.amount) }]}>{row.amount}</p>)}
+              {card.head?.rows.map((row) => <p class:list={['fq-big', { 'fq-long': isLong(row.amount) }]}>{splitUnit(row.amount, country.amount_label) ? <>{splitUnit(row.amount, country.amount_label)?.value}<span class="fq-unit"> {country.amount_label}</span></> : row.amount}</p>)}
             </section>
           ))}
         </div>
@@ -71,7 +75,7 @@ const anyMore = cards.some((c) => c.rest.length > 0);
     }
     {
       anyMore && (
-        <details class="fq-more">
+        <details class="fold fq-more">
           <summary>{m.fees.calc.more}</summary>
           {cards.filter((c) => c.rest.length > 0).map((card) => (
             <section class="fq-rest">
@@ -124,7 +128,7 @@ const anyMore = cards.some((c) => c.rest.length > 0);
       error.textContent = data.text.invalid;
       if (amount === null) return result.replaceChildren();
 
-      const quotes = data.names.map((n) => ({ name: n.name, badge: n.badge, quote: quoteFor(data.rows, n.id, amount, operations) }));
+      const quotes = data.names.map((n) => ({ name: n.name, brand: n.brand, quote: quoteFor(data.rows, n.id, amount, operations) }));
       renderQuotes(result, quotes, amount, data);
     };
 
@@ -241,15 +245,11 @@ const anyMore = cards.some((c) => c.rest.length > 0);
     margin-bottom: var(--space-2);
   }
 
-  .fq-badge {
-    display: inline-grid;
-    place-items: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    font-size: 12px;
-    font-weight: 800;
-    flex: none;
+  .fq-unit {
+    font-size: 0.5em;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
   }
 
   .fq-op {
@@ -274,22 +274,6 @@ const anyMore = cards.some((c) => c.rest.length > 0);
   .fq-none {
     color: var(--text-muted);
     font-size: 14px;
-  }
-
-  .fq-more {
-    border-radius: var(--radius-md);
-    background: var(--surface-raised);
-    color: var(--text);
-    padding: 0 var(--space-4);
-  }
-
-  .fq-more summary {
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
   }
 
   .fq-rest h3 {

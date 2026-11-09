@@ -21,6 +21,13 @@ export function formatAmount(amount: number, amountLabel: string): string {
   return `${amount < 0 ? '-' : ''}${digits} ${amountLabel}`;
 }
 
+/** "600 F" -> the figure and its currency, so the currency can be drawn smaller; null when the text does not end with it. */
+export function splitUnit(text: string, unit: string): { value: string; unit: string } | null {
+  const end = ` ${unit}`;
+
+  return text.endsWith(end) ? { value: text.slice(0, -end.length), unit } : null;
+}
+
 /** Prices stay in the currency of the country, grouped the same way in every language. */
 export function formatData(mb: number | null, lang: Lang = 'fr'): string | null {
   const units = UNITS[lang];

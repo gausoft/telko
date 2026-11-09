@@ -1,11 +1,13 @@
+import { brandMarkElement } from './brand-mark';
+import type { BrandView } from '../lib/brand-types';
 import type { FeeCalculatorData } from '../lib/fee-calculator-types';
 import { splitQuote } from '../lib/fee-lookup';
 import type { FeeQuote } from '../lib/fee-lookup-types';
-import { formatAmount } from '../lib/format';
+import { formatAmount, splitUnit } from '../lib/format';
 
 export interface NamedQuote {
   name: string;
-  badge: FeeCalculatorData['names'][number]['badge'];
+  brand: BrandView;
   quote: FeeQuote;
 }
 
@@ -28,23 +30,30 @@ export function renderQuotes(target: HTMLElement, quotes: NamedQuote[], amount: 
 function card(entry: NamedQuote, head: FeeQuote['groups'][number] | null, data: FeeCalculatorData): HTMLElement {
   const section = el('section', 'fq-card');
   const who = el('h3', 'fq-who');
-  const badge = el('span', 'fq-badge', entry.badge.label);
-  badge.style.background = entry.badge.background;
-  badge.style.color = entry.badge.foreground;
-  who.append(badge, entry.name);
+  who.append(brandMarkElement(entry.brand, 28), entry.name);
   section.append(who);
 
   if (head === null) section.append(el('p', 'fq-none', data.text.noBand));
   if (head === null) return section;
 
   section.append(el('p', 'fq-op', data.operations[head.operation] ?? head.operation));
-  for (const row of head.rows) section.append(el('p', row.amount.length > LONG_AMOUNT ? 'fq-big fq-long' : 'fq-big', row.amount));
+  for (const row of head.rows) section.append(big(row.amount, data.amountLabel));
 
   return section;
 }
 
+function big(amount: string, unit: string): HTMLElement {
+  const node = el('p', amount.length > LONG_AMOUNT ? 'fq-big fq-long' : 'fq-big');
+  const parts = splitUnit(amount, unit);
+  if (parts === null) return Object.assign(node, { textContent: amount });
+
+  node.append(parts.value, el('span', 'fq-unit', ` ${parts.unit}`));
+
+  return node;
+}
+
 function more(items: { entry: NamedQuote; rest: FeeQuote['groups'] }[], data: FeeCalculatorData): HTMLElement {
-  const details = el('details', 'fq-more');
+  const details = el('details', 'fold fq-more');
   details.append(el('summary', '', data.text.more));
 
   for (const { entry, rest } of items) {
