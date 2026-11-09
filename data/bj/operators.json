@@ -13,7 +13,7 @@
         "background": "#FFCB05",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "mtn.svg",
       "mobile_money": {
         "id": "momo",
         "name": "MoMo",
@@ -63,7 +63,7 @@
         "background": "#EC6707",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "moov.png",
       "mobile_money": {
         "id": "moov-money",
         "name": "Moov Money",
@@ -74,7 +74,7 @@
           "background": "#EC6707",
           "foreground": "#FFFFFF"
         },
-        "logo": null
+        "logo": "moov-money.png"
       },
       "prefixes": [],
       "website": "https://www.moov-africa.bj",
@@ -111,7 +111,7 @@
         "background": "#1C3B72",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "celtiis.svg",
       "mobile_money": {
         "id": "celtiis-cash",
         "name": "Celtiis Cash",
@@ -122,7 +122,7 @@
           "background": "#1C3B72",
           "foreground": "#FFFFFF"
         },
-        "logo": null
+        "logo": "celtiis.svg"
       },
       "prefixes": [],
       "website": "https://celtiis.bj",

@@ -13,7 +13,7 @@
         "background": "#FF7900",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "orange.svg",
       "mobile_money": {
         "id": "orange-money",
         "name": "Orange Money",
@@ -24,7 +24,7 @@
           "background": "#FF7900",
           "foreground": "#000000"
         },
-        "logo": null
+        "logo": "orange-money.svg"
       },
       "prefixes": [],
       "website": "https://www.orange.sn",
@@ -68,7 +68,7 @@
         "background": "#FFDD00",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "yas.svg",
       "mobile_money": {
         "id": "mixx",
         "name": "Mixx by Yas",
@@ -81,7 +81,7 @@
           "background": "#FFDD00",
           "foreground": "#000000"
         },
-        "logo": null
+        "logo": "mixx.svg"
       },
       "prefixes": [],
       "website": "https://yas.sn",
@@ -120,7 +120,7 @@
         "background": "#D71920",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "expresso.png",
       "mobile_money": null,
       "prefixes": [],
       "website": "https://www.expressotelecom.sn",

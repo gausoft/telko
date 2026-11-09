@@ -63,7 +63,7 @@
         "background": "#EC6707",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "moov.png",
       "mobile_money": {
         "id": "moov-money",
         "name": "Moov Money",
@@ -74,7 +74,7 @@
           "background": "#EC6707",
           "foreground": "#FFFFFF"
         },
-        "logo": null
+        "logo": "moov-money.png"
       },
       "prefixes": [],
       "website": "https://www.moov-africa.ne",
@@ -118,7 +118,7 @@
         "background": "#007A3D",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "zamani.png",
       "mobile_money": {
         "id": "zamani-cash",
         "name": "Zamani Cash",
@@ -129,7 +129,7 @@
           "background": "#007A3D",
           "foreground": "#FFFFFF"
         },
-        "logo": null
+        "logo": "zamani.png"
       },
       "prefixes": [],
       "website": "https://www.zamanitelecom.com",

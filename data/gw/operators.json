@@ -11,7 +11,7 @@
         "background": "#FF7900",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "orange.svg",
       "mobile_money": {
         "id": "orange-money",
         "name": "Orange Money",
@@ -22,7 +22,7 @@
           "background": "#FF7900",
           "foreground": "#000000"
         },
-        "logo": null
+        "logo": "orange-money.svg"
       },
       "prefixes": [],
       "website": "https://www.orange-bissau.com",
@@ -60,7 +60,7 @@
         "background": "#FF383C",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "telecel.png",
       "mobile_money": {
         "id": "teletaku",
         "name": "TeleTaku",

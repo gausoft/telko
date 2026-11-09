@@ -11,7 +11,7 @@
         "background": "#FF7900",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "orange.svg",
       "mobile_money": {
         "id": "orange-money",
         "name": "Orange Money",
@@ -22,7 +22,7 @@
           "background": "#FF7900",
           "foreground": "#000000"
         },
-        "logo": null
+        "logo": "orange-money.svg"
       },
       "prefixes": [],
       "website": "https://www.orange.ci",
@@ -64,7 +64,7 @@
         "background": "#FFCB05",
         "foreground": "#000000"
       },
-      "logo": null,
+      "logo": "mtn.svg",
       "mobile_money": {
         "id": "momo",
         "name": "MoMo",
@@ -114,7 +114,7 @@
         "background": "#EC6707",
         "foreground": "#FFFFFF"
       },
-      "logo": null,
+      "logo": "moov.png",
       "mobile_money": {
         "id": "moov-money",
         "name": "Moov Money",
@@ -125,7 +125,7 @@
           "background": "#EC6707",
           "foreground": "#FFFFFF"
         },
-        "logo": null
+        "logo": "moov-money.png"
       },
       "prefixes": [],
       "website": "https://www.moov-africa.ci/",
