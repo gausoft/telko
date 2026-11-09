@@ -1,0 +1,393 @@
+{
+  "operator": "moov",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "moov-mixed-25min",
+      "kind": "bundle",
+      "name": "25 min + 80 SMS + 50 Mo",
+      "description": "25 min, 80 SMS et 50 Mo pendant 2 jours.",
+      "price": 315,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": 25,
+        "sms": 80
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*15#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "25 min + 80 SMS + 50 Mo",
+        "description": "25 min, 80 SMS and 50 MB for 2 days."
+      }
+    },
+    {
+      "id": "moov-mixed-40min",
+      "kind": "bundle",
+      "name": "40 min + 120 SMS + 100 Mo",
+      "description": "40 min, 120 SMS et 100 Mo pendant 3 jours.",
+      "price": 552,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 40,
+        "sms": 120
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*315#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "40 min + 120 SMS + 100 Mo",
+        "description": "40 min, 120 SMS and 100 MB for 3 days."
+      }
+    },
+    {
+      "id": "moov-mixed-60min",
+      "kind": "bundle",
+      "name": "60 min + 150 SMS + 140 Mo",
+      "description": "60 min, 150 SMS et 140 Mo pendant 4 jours.",
+      "price": 735,
+      "allowances": {
+        "data_mb": 140,
+        "voice_min": 60,
+        "sms": 150
+      },
+      "validity": {
+        "days": 4,
+        "label": "4 jours",
+        "en": {
+          "label": "4 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*522#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue écrit le code avec un espace avant le dièse ; corrigé en *146*522#.",
+      "en": {
+        "name": "60 min + 150 SMS + 140 Mo",
+        "description": "60 min, 150 SMS and 140 MB for 4 days.",
+        "notes": "The catalogue writes the code with a space before the hash; corrected to *146*522#."
+      }
+    },
+    {
+      "id": "moov-mixed-90min",
+      "kind": "bundle",
+      "name": "90 min + 200 SMS + 200 Mo",
+      "description": "90 min, 200 SMS et 200 Mo pendant 5 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": 90,
+        "sms": 200
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*700#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "90 min + 200 SMS + 200 Mo",
+        "description": "90 min, 200 SMS and 200 MB for 5 days."
+      }
+    },
+    {
+      "id": "moov-mixed-120min",
+      "kind": "bundle",
+      "name": "120 min + 300 Mo",
+      "description": "120 min et 300 Mo pendant 7 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": 120,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*90#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le volume de SMS est incohérent dans le catalogue (200 ou 20) : laissé vide.",
+      "en": {
+        "name": "120 min + 300 Mo",
+        "description": "120 min and 300 MB for 7 days.",
+        "notes": "The SMS volume is inconsistent in the catalogue (200 or 20): left empty."
+      }
+    },
+    {
+      "id": "moov-mixed-150min",
+      "kind": "bundle",
+      "name": "150 min + 300 SMS + 400 Mo",
+      "description": "150 min, 300 SMS et 400 Mo pendant 10 jours.",
+      "price": 2100,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": 150,
+        "sms": 300
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*1500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "150 min + 300 SMS + 400 Mo",
+        "description": "150 min, 300 SMS and 400 MB for 10 days."
+      }
+    },
+    {
+      "id": "moov-mixed-200min",
+      "kind": "bundle",
+      "name": "200 min + 200 SMS + 900 Mo",
+      "description": "200 min, 200 SMS et 900 Mo pendant 15 jours.",
+      "price": 3100,
+      "allowances": {
+        "data_mb": 900,
+        "voice_min": 200,
+        "sms": 200
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*2000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "200 min + 200 SMS + 900 Mo",
+        "description": "200 min, 200 SMS and 900 MB for 15 days."
+      }
+    },
+    {
+      "id": "moov-mixed-300min",
+      "kind": "bundle",
+      "name": "300 min + 2 560 Mo",
+      "description": "300 min et 2 560 Mo pendant 30 jours.",
+      "price": 5250,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 300,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*3100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le volume de SMS du catalogue est incohérent : laissé vide.",
+      "en": {
+        "name": "300 min + 2 560 Mo",
+        "description": "300 min and 2,560 MB for 30 days.",
+        "notes": "The SMS volume in the catalogue is inconsistent: left empty."
+      }
+    }
+  ]
+}

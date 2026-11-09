@@ -1,0 +1,93 @@
+{
+  "operator": "zamani",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "zamani-mobile-money-menu-zamani-cash",
+      "kind": "service",
+      "name": "Menu Zamani Cash",
+      "description": "Menu principal du mobile money Zamani Cash (dépôt, retrait, transfert, factures, achat de crédit).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [
+        "zamani-cash"
+      ],
+      "third_party": null,
+      "tags": [
+        "zamani cash",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/zamani-cash",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.zamanitelecom.com/zamani-cash/presentation",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu. Code menu : le reste se choisit à l'écran.",
+      "en": {
+        "name": "Zamani Cash menu",
+        "description": "Main menu of Zamani Cash mobile money (deposit, withdrawal, transfer, bills, airtime purchase).",
+        "notes": "The PIN is typed in the menu. Menu code: you choose the rest on screen."
+      }
+    },
+    {
+      "id": "zamani-mobile-money-activation-zamani-cash",
+      "kind": "service",
+      "name": "Activer son compte Zamani Cash",
+      "description": "Activer le compte et choisir son code secret.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#61#",
+        "params": []
+      },
+      "payment_methods": [
+        "zamani-cash"
+      ],
+      "third_party": null,
+      "tags": [
+        "zamani cash",
+        "activation",
+        "code secret"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/zamani-cash/comment-sinscrire",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "À faire après l'ouverture du compte en boutique ou chez un distributeur agréé. Le code secret initial et le nouveau code se saisissent dans le menu : Telko ne les demande ni ne les conserve.",
+      "en": {
+        "name": "Activate your Zamani Cash account",
+        "description": "Activate the account and choose your PIN.",
+        "notes": "To be done after opening the account in a shop or with an approved distributor. The initial PIN and the new PIN are typed in the menu: Telko neither asks for nor keeps them."
+      }
+    }
+  ]
+}

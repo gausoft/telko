@@ -1,0 +1,79 @@
+{
+  "operator": "telecel",
+  "category": "general",
+  "entries": [
+    {
+      "id": "telecel-general-solde",
+      "kind": "service",
+      "name": "Consulter son solde",
+      "description": "Voir votre crédit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*505#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check your balance",
+        "description": "See your credit."
+      }
+    },
+    {
+      "id": "telecel-general-mon-numero",
+      "kind": "service",
+      "name": "Connaître son numéro",
+      "description": "Afficher votre propre numéro Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*520#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Know your number",
+        "description": "Show your own Telecel number."
+      }
+    }
+  ]
+}

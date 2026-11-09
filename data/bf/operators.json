@@ -1,0 +1,159 @@
+{
+  "country": "bf",
+  "operators": [
+    {
+      "id": "orange",
+      "name": "Orange Burkina",
+      "short_name": "Orange",
+      "former_names": [],
+      "badge": {
+        "label": "O",
+        "background": "#FF7900",
+        "foreground": "#000000"
+      },
+      "logo": "orange.svg",
+      "mobile_money": {
+        "id": "orange-money",
+        "name": "Orange Money",
+        "short_name": "Orange Money",
+        "former_names": [],
+        "badge": {
+          "label": "OM",
+          "background": "#FF7900",
+          "foreground": "#000000"
+        },
+        "logo": "orange-money.svg"
+      },
+      "prefixes": [],
+      "website": "https://www.orange.bf",
+      "customer_service": "121",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le 121 est le service client indiqué sur la page des codes utiles. Orange Money est aussi intégré à l'application Max it.",
+      "en": {
+        "notes": "The 121 is the customer service listed on the useful codes page. Orange Money is also integrated in the Max it app."
+      }
+    },
+    {
+      "id": "moov",
+      "name": "Moov Africa Burkina",
+      "short_name": "Moov",
+      "former_names": [],
+      "badge": {
+        "label": "M",
+        "background": "#EC6707",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "moov.png",
+      "mobile_money": {
+        "id": "moov-money",
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [],
+        "badge": {
+          "label": "MM",
+          "background": "#EC6707",
+          "foreground": "#FFFFFF"
+        },
+        "logo": "moov-money.png"
+      },
+      "prefixes": [],
+      "website": "https://moov-africa.bf",
+      "customer_service": "+226 25 33 40 01",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/catalogues-des-offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://moov-africa.bf/moov-money2/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Un second numéro est publié : +226 02 30 30 30.",
+      "en": {
+        "notes": "A second number is published: +226 02 30 30 30."
+      }
+    },
+    {
+      "id": "telecel",
+      "name": "Telecel Faso",
+      "short_name": "Telecel",
+      "former_names": [],
+      "badge": {
+        "label": "T",
+        "background": "#E4002B",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "telecel.png",
+      "mobile_money": {
+        "id": "telecel-money",
+        "name": "Telecel Money",
+        "short_name": "Telecel Money",
+        "former_names": [],
+        "badge": {
+          "label": "TM",
+          "background": "#E4002B",
+          "foreground": "#FFFFFF"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.telecelfaso.bf",
+      "customer_service": "888",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Telecel Money a été lancé fin 2024. Le site officiel ne publie pas son code : il vient du catalogue officiel (*808#).",
+      "en": {
+        "notes": "Telecel Money launched in late 2024. The official website does not publish its code: it comes from the official catalogue (*808#)."
+      }
+    }
+  ]
+}

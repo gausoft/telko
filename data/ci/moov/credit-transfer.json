@@ -1,0 +1,67 @@
+{
+  "operator": "moov",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "moov-credit-transfer-transfert-unites",
+      "kind": "service",
+      "name": "Transférer des unités",
+      "description": "Envoyer du crédit à un autre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*102*{amount}*{phone}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "short": "Montant",
+            "min": 1,
+            "en": {
+              "label": "Amount",
+              "short": "Amount"
+            }
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro",
+            "required": true,
+            "short": "Numéro",
+            "en": {
+              "label": "Phone number",
+              "short": "Number"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "transfert de crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code complet publié se termine par le code secret : Telko s'arrête avant et ne le demande jamais.",
+      "en": {
+        "name": "Transfer airtime",
+        "description": "Send airtime to another Moov number.",
+        "notes": "The full published code ends with the secret code: Telko stops before it and never asks for it."
+      }
+    }
+  ]
+}

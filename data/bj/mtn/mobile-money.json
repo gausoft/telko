@@ -1,0 +1,55 @@
+{
+  "operator": "mtn",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "mtn-mobile-money-menu-momo",
+      "kind": "service",
+      "name": "Menu MoMo",
+      "description": "Menu du mobile money MTN MoMo.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*880#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "momo",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.bj/momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://help.taptapsend.com/en/receiving-countries/how-can-i-send-money-to-benin",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel cite *880# comme canal d'activation des forfaits par MoMo ; le menu du portefeuille vient d'une source secondaire. Le code secret se saisit dans le menu.",
+      "en": {
+        "name": "MoMo menu",
+        "description": "Menu of MTN MoMo mobile money.",
+        "notes": "The official site lists *880# as the MoMo channel to activate bundles; the wallet menu comes from a secondary source. The PIN is typed in the menu."
+      }
+    }
+  ]
+}

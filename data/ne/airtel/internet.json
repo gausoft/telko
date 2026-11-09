@@ -1,0 +1,142 @@
+{
+  "operator": "airtel",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "airtel-internet-menu-forfaits-internet",
+      "kind": "service",
+      "name": "Menu des forfaits internet",
+      "description": "Acheter un forfait internet depuis le menu Airtel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*141*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "forfait",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelniger/status/2057869152778359133",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://x.com/airtelniger/status/2048718872061132970",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code cité dans des messages promotionnels du compte officiel (bonus internet). Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundles menu",
+        "description": "Buy an internet bundle from the Airtel menu.",
+        "notes": "Code quoted in promotional posts of the official account (internet bonus). Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "airtel-internet-pass-hebdo-1000",
+      "kind": "bundle",
+      "name": "Pass internet hebdomadaire 1 000 F",
+      "description": "1 Go valable 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*141*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.facebook.com/airtelniger/videos/achetez-d%C3%A9sormais-votre-pass-internet-hebdomadaire-de-1000-fcfa-en-composant-141/1441789226254644/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Source : vidéo publiée sur la page officielle, sans date visible : prix et volume à confirmer.",
+      "en": {
+        "name": "Weekly internet pass 1,000 F",
+        "description": "1 GB valid 7 days.",
+        "notes": "Source: video posted on the official page, no visible date: price and volume to confirm."
+      }
+    },
+    {
+      "id": "airtel-internet-pocket-wifi-4g",
+      "kind": "service",
+      "name": "Pocket Wifi 4G : enregistrement ou recharge",
+      "description": "Enregistrer ou recharger votre Pocket Wifi 4G.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*141*3*5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "pocket wifi",
+        "4g",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelniger/status/1758853853011701820",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Message de février 2024 : appareil à 15 000 F avec 3 Go offerts. L'offre a pu changer. Possible aussi depuis l'application My Airtel.",
+      "en": {
+        "name": "Pocket Wifi 4G: registration or top-up",
+        "description": "Register or top up your Pocket Wifi 4G.",
+        "notes": "February 2024 post: device at 15,000 F with 3 GB offered. The offer may have changed. Also possible from the My Airtel app."
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "operator": "moov",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "moov-roaming-activation-internet",
+      "kind": "service",
+      "name": "Activer le roaming internet",
+      "description": "Activer l'internet à l'étranger avant de partir.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199*5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "internet",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/roaming-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Service disponible dans 43 pays, répartis en deux zones.",
+      "en": {
+        "name": "Activate internet roaming",
+        "description": "Activate internet abroad before you travel.",
+        "notes": "Service available in 43 countries, split into two zones."
+      }
+    },
+    {
+      "id": "moov-roaming-achat-internet",
+      "kind": "service",
+      "name": "Acheter un pass roaming internet",
+      "description": "Acheter un pass internet à l'étranger, valable 7 jours.",
+      "price": null,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant du pass",
+            "required": true,
+            "en": {
+              "label": "Pass amount"
+            },
+            "presets": [
+              2800,
+              5000,
+              5500,
+              9500,
+              13500,
+              23500
+            ]
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "internet",
+        "étranger"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/roaming-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Montants publiés : 2 800, 5 000, 5 500, 9 500, 13 500 et 23 500 F (prépayé et postpayé). Tarif au Ko : 0,03 F en zone 1, 0,05 F en zone 2, facturé par tranches de 30 Ko. La page ne donne pas de volume par montant.",
+      "en": {
+        "name": "Buy an internet roaming pass",
+        "description": "Buy an internet pass abroad, valid 7 days.",
+        "notes": "Published amounts: 2,800, 5,000, 5,500, 9,500, 13,500 and 23,500 F (prepaid and postpaid). Rate per KB: 0.03 F in zone 1, 0.05 F in zone 2, billed in 30 KB steps. The page gives no volume per amount."
+      }
+    },
+    {
+      "id": "moov-roaming-consultation-internet",
+      "kind": "service",
+      "name": "Consulter le roaming internet",
+      "description": "Consulter son pass internet à l'étranger.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199*0#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "internet",
+        "consultation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/roaming-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check internet roaming",
+        "description": "Check your internet pass abroad."
+      }
+    }
+  ]
+}

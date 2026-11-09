@@ -1,0 +1,516 @@
+{
+  "operator": "orange",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "orange-mixed-illimix-jour-300",
+      "kind": "bundle",
+      "name": "Illimix 300 F (24 h)",
+      "description": "45 min d'appel, 60 Mo et 20 SMS, valables 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 60,
+        "voice_min": 45,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 300 F (24 h)",
+        "description": "45 call minutes, 60 MB and 20 SMS, valid 24 h.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-jour-500",
+      "kind": "bundle",
+      "name": "Illimix 500 F (24 h)",
+      "description": "120 min d'appel, 500 Mo et 100 SMS, valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 120,
+        "sms": 100
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 500 F (24 h)",
+        "description": "120 call minutes, 500 MB and 100 SMS, valid 24 h.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-semaine-1300-a",
+      "kind": "bundle",
+      "name": "Illimix 1300 F (7 jours)",
+      "description": "300 min d'appel, 1 Go et 100 SMS, valables 7 jours.",
+      "price": 1300,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 1300 F (7 jours)",
+        "description": "300 call minutes, 1 GB and 100 SMS, valid 7 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-semaine-1300-b",
+      "kind": "bundle",
+      "name": "Illimix 1300 F (7 jours)",
+      "description": "120 min d'appel, 2560 Mo et 100 SMS, valables 7 jours.",
+      "price": 1300,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 120,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 1300 F (7 jours)",
+        "description": "120 call minutes, 2560 MB and 100 SMS, valid 7 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-semaine-1500",
+      "kind": "bundle",
+      "name": "Illimix 1500 F (7 jours)",
+      "description": "300 min d'appel, 3584 Mo et 100 SMS, valables 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 3584,
+        "voice_min": 300,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 1500 F (7 jours)",
+        "description": "300 call minutes, 3584 MB and 100 SMS, valid 7 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-semaine-2500",
+      "kind": "bundle",
+      "name": "Illimix 2500 F (7 jours)",
+      "description": "450 min d'appel, 10 Go et 100 SMS, valables 7 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": 450,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 2500 F (7 jours)",
+        "description": "450 call minutes, 10 GB and 100 SMS, valid 7 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-mois-2500",
+      "kind": "bundle",
+      "name": "Illimix 2500 F (30 jours)",
+      "description": "330 min d'appel, 5 Go et 500 SMS, valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": 330,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 2500 F (30 jours)",
+        "description": "330 call minutes, 5 GB and 500 SMS, valid 30 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-mois-4500",
+      "kind": "bundle",
+      "name": "Illimix 4500 F (30 jours)",
+      "description": "600 min d'appel, 16 Go et 500 SMS, valables 30 jours.",
+      "price": 4500,
+      "allowances": {
+        "data_mb": 16384,
+        "voice_min": 600,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 4500 F (30 jours)",
+        "description": "600 call minutes, 16 GB and 500 SMS, valid 30 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-mois-7500",
+      "kind": "bundle",
+      "name": "Illimix 7500 F (30 jours)",
+      "description": "1200 min d'appel, 30 Go et 1000 SMS, valables 30 jours.",
+      "price": 7500,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": 1200,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 7500 F (30 jours)",
+        "description": "1200 call minutes, 30 GB and 1000 SMS, valid 30 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mixed-illimix-mois-14900",
+      "kind": "bundle",
+      "name": "Illimix 14900 F (30 jours)",
+      "description": "3000 min d'appel, 60 Go et 1000 SMS, valables 30 jours.",
+      "price": 14900,
+      "allowances": {
+        "data_mb": 61440,
+        "voice_min": 3000,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#250#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "illimix",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/illimix",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gamme Illimix standard de la page. Les gammes S'cool, Max et Allo ont d'autres grilles non reprises. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimix 14900 F (30 jours)",
+        "description": "3000 call minutes, 60 GB and 1000 SMS, valid 30 days.",
+        "notes": "Standard Illimix range from the page. The S'cool, Max and Allo ranges have other grids that are not included. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

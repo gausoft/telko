@@ -1,0 +1,185 @@
+{
+  "operator": "yas",
+  "service": "mixx",
+  "entries": [
+    {
+      "id": "yas-fees-transfert-national-emission",
+      "operation": "transfer-national",
+      "min": 1,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Émission d'un transfert national",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Sending a national transfer"
+      }
+    },
+    {
+      "id": "yas-fees-paiement-marchand",
+      "operation": "other",
+      "min": 1,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Paiement chez un marchand",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Payment at a merchant"
+      }
+    },
+    {
+      "id": "yas-fees-transfert-international",
+      "operation": "transfer-regional",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.5,
+      "label": "Transfert international",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais incluant 0,5 % de taxe TTA.",
+      "en": {
+        "label": "International transfer",
+        "notes": "Fee including 0.5% TTA tax."
+      }
+    },
+    {
+      "id": "yas-fees-reception-30-premiers",
+      "operation": "receive",
+      "min": 1,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Réception d'un transfert national, 30 premiers du mois",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Receiving a national transfer, first 30 of the month"
+      }
+    },
+    {
+      "id": "yas-fees-reception-au-dela",
+      "operation": "receive",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 0.5,
+      "label": "Réception d'un transfert national, au-delà de 30 par mois",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais incluant 0,5 % de taxe TTA.",
+      "en": {
+        "label": "Receiving a national transfer, beyond 30 per month",
+        "notes": "Fee including 0.5% TTA tax."
+      }
+    },
+    {
+      "id": "yas-fees-retrait-canal-mixx",
+      "operation": "withdrawal",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.0,
+      "label": "Retrait via Canal Mixx",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais incluant 0,5 % de taxe TTA.",
+      "en": {
+        "label": "Withdrawal via Canal Mixx",
+        "notes": "Fee including 0.5% TTA tax."
+      }
+    },
+    {
+      "id": "yas-fees-paiement-frais-marchand",
+      "operation": "other",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.0,
+      "label": "Paiement, frais supportés par le marchand",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais incluant 0,5 % de taxe TTA.",
+      "en": {
+        "label": "Payment, fee borne by the merchant",
+        "notes": "Fee including 0.5% TTA tax."
+      }
+    }
+  ]
+}

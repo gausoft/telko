@@ -35,6 +35,9 @@ function wireCountry(current: string): void {
       return;
     }
     writePref('country', code);
+    // The operators remembered belong to the country left: the new country starts from its own.
+    writePref('operators', '');
+    writePref('operator', '');
     window.location.href = localePath(splitLang(window.location.pathname).lang, `/${code}/settings`);
   });
 }

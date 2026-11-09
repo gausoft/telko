@@ -1,0 +1,155 @@
+{
+  "operator": "orange",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "orange-useful-numbers-500",
+      "kind": "service",
+      "name": "Service client Orange",
+      "description": "Service client grand public, 7 jours sur 7, de 8 h à minuit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "500",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/contacte-nos.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Deux appels gratuits par jour, puis 25 F.",
+      "en": {
+        "name": "Orange customer service",
+        "description": "Customer service for individuals, 7 days a week, 8:00 to midnight.",
+        "notes": "Two free calls a day, then 25 F."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-501",
+      "kind": "service",
+      "name": "Service client entreprises",
+      "description": "Service client pour les entreprises.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "501",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/contacte-nos.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Business customer service",
+        "description": "Customer service for businesses."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-508",
+      "kind": "service",
+      "name": "Service client internet résidentiel",
+      "description": "Assistance Casa Box et internet à la maison.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "508",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/contacte-nos.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Home internet customer service",
+        "description": "Support for Casa Box and home internet."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-509",
+      "kind": "service",
+      "name": "Service distribution",
+      "description": "Service distribution Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "509",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/contacte-nos.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Distribution service",
+        "description": "Orange distribution service."
+      }
+    }
+  ]
+}

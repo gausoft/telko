@@ -1,0 +1,44 @@
+{
+  "operator": "moov",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "moov-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Moov Africa",
+      "description": "Joindre le service client par appel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "1010",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro est donné par le message d'indisponibilité du site.",
+      "en": {
+        "name": "Moov Africa customer service",
+        "description": "Reach customer service by phone.",
+        "notes": "The number is given by the site's unavailability message."
+      }
+    }
+  ]
+}

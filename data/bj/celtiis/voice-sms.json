@@ -1,0 +1,52 @@
+{
+  "operator": "celtiis",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "celtiis-voice-sms-mes-numeros-preferes",
+      "kind": "bundle",
+      "name": "Mes numéros préférés",
+      "description": "Appels et SMS illimités vers 2 numéros Celtiis, jusqu'à minuit.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": -1
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "numéros préférés",
+        "illimité",
+        "appel",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Débité du compte principal. Le service se choisit dans le menu.",
+      "en": {
+        "name": "Favorite numbers",
+        "description": "Unlimited calls and SMS to 2 Celtiis numbers, until midnight.",
+        "notes": "Debited from the main account. You pick the service in the menu."
+      }
+    }
+  ]
+}

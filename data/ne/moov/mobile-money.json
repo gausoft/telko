@@ -1,0 +1,53 @@
+{
+  "operator": "moov",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "moov-mobile-money-transfert-argent",
+      "kind": "service",
+      "name": "Transfert d'argent Moov Money",
+      "description": "Envoyer de l'argent, en national ou à l'international, avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*157*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "transfert",
+        "envoyer",
+        "argent"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais indiqués sur la page : 1,8 % du montant. Bénéficiaire, montant et code secret se saisissent dans le menu.",
+      "en": {
+        "name": "Moov Money money transfer",
+        "description": "Send money, nationally or internationally, with Moov Money.",
+        "notes": "Fee shown on the page: 1.8% of the amount. Beneficiary, amount and PIN are typed in the menu."
+      }
+    }
+  ]
+}

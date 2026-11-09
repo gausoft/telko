@@ -1,0 +1,49 @@
+{
+  "operator": "yas",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "yas-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Yas",
+      "description": "Service client mobile, appel gratuit depuis un numéro Yas.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "1677",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/particulier/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Mixx by Yas : 201123. Fixe : +221 32 824 00 24. Numéros publiés sur le site officiel.",
+      "en": {
+        "name": "Yas customer service",
+        "description": "Mobile customer service, free call from a Yas number.",
+        "notes": "Mixx by Yas: 201123. Landline: +221 32 824 00 24. Numbers published on the official site."
+      }
+    }
+  ]
+}

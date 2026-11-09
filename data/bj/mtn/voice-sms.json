@@ -1,0 +1,335 @@
+{
+  "operator": "mtn",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-100",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 100 F",
+      "description": "357 F de crédit pour appeler vers tous les réseaux, valables 24 h.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 100 F",
+        "description": "357 F of credit to call all networks, valid 24 h.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-150",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 150 F",
+      "description": "536 F de crédit pour appeler vers tous les réseaux, valables 24 h.",
+      "price": 150,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 150 F",
+        "description": "536 F of credit to call all networks, valid 24 h.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-200",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 200 F",
+      "description": "714 F de crédit pour appeler vers tous les réseaux, valables 24 h.",
+      "price": 200,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 200 F",
+        "description": "714 F of credit to call all networks, valid 24 h.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-500",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 500 F",
+      "description": "1 786 F de crédit pour appeler vers tous les réseaux, valables 72 h.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 3,
+        "label": "72 h",
+        "en": {
+          "label": "72 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 500 F",
+        "description": "1 786 F of credit to call all networks, valid 72 h.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-1000",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 1 000 F",
+      "description": "3 571 F de crédit pour appeler vers tous les réseaux, valables 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 1 000 F",
+        "description": "3 571 F of credit to call all networks, valid 7 days.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-2500",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 2 500 F",
+      "description": "8 929 F de crédit pour appeler vers tous les réseaux, valables 15 jours.",
+      "price": 2500,
+      "allowances": null,
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 2 500 F",
+        "description": "8 929 F of credit to call all networks, valid 15 days.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-forfait-maxi-appel-5000",
+      "kind": "bundle",
+      "name": "Forfait Maxi Appel 5 000 F",
+      "description": "17 857 F de crédit pour appeler vers tous les réseaux, valables 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi appel",
+        "appel",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi-appel/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarif après activation : 1 F par seconde. Autres codes publiés : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi Appel bundle 5 000 F",
+        "description": "17 857 F of credit to call all networks, valid 30 days.",
+        "notes": "Rate once active: 1 F per second. Other published codes: *199# and *880#. You pick the bundle in the menu."
+      }
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "operator": "mtn",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "mtn-roaming-data-mtn",
+      "kind": "bundle",
+      "name": "Data roaming réseau MTN 3 250 F",
+      "description": "500 Mo, uniquement sur les réseaux MTN.",
+      "price": 3250,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "MTN network data roaming 3 250 F",
+        "description": "500 MB, on MTN networks only.",
+        "notes": "Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-data-mini",
+      "kind": "bundle",
+      "name": "Data roaming monde Mini 1 950 F",
+      "description": "30 Mo sur les réseaux partenaires et MTN.",
+      "price": 1950,
+      "allowances": {
+        "data_mb": 30,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "World data roaming Mini 1 950 F",
+        "description": "30 MB on partner and MTN networks.",
+        "notes": "Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-data-liberte",
+      "kind": "bundle",
+      "name": "Data roaming Liberté 3 150 F",
+      "description": "50 Mo sur les réseaux partenaires et MTN.",
+      "price": 3150,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "Data roaming Liberté 3 150 F",
+        "description": "50 MB on partner and MTN networks.",
+        "notes": "Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-data-extra",
+      "kind": "bundle",
+      "name": "Data roaming Extra 11 850 F",
+      "description": "200 Mo sur les réseaux partenaires et MTN.",
+      "price": 11850,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "Data roaming Extra 11 850 F",
+        "description": "200 MB on partner and MTN networks.",
+        "notes": "Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-data-maxi",
+      "kind": "bundle",
+      "name": "Data roaming Maxi 25 850 F",
+      "description": "500 Mo sur les réseaux partenaires et MTN.",
+      "price": 25850,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "Data roaming Maxi 25 850 F",
+        "description": "500 MB on partner and MTN networks.",
+        "notes": "Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-voix-mini",
+      "kind": "bundle",
+      "name": "Roaming monde voix Mini 5 600 F",
+      "description": "10 min d'appels émis + 10 min d'appels reçus + 25 SMS, valables 10 jours.",
+      "price": 5600,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": 25
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes émises et reçues additionnées dans le total. Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "World voice roaming Mini 5 600 F",
+        "description": "10 min of outgoing calls + 10 min of incoming calls + 25 SMS, valid 10 days.",
+        "notes": "Outgoing and incoming minutes are added in the total. Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-voix-medium",
+      "kind": "bundle",
+      "name": "Roaming monde voix Medium 15 000 F",
+      "description": "30 min d'appels émis + 30 min d'appels reçus + 50 SMS, valables 15 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": 50
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes émises et reçues additionnées dans le total. Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "World voice roaming Medium 15 000 F",
+        "description": "30 min of outgoing calls + 30 min of incoming calls + 50 SMS, valid 15 days.",
+        "notes": "Outgoing and incoming minutes are added in the total. Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    },
+    {
+      "id": "mtn-roaming-voix-maxi",
+      "kind": "bundle",
+      "name": "Roaming monde voix Maxi 29 000 F",
+      "description": "60 min d'appels émis + 60 min d'appels reçus + 100 SMS, valables 30 jours.",
+      "price": 29000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 120,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/bundle-roaming-internet-sms-et-voix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Minutes émises et reçues additionnées dans le total. Activation par *105*4#, *501# ou *121*2*1#, ou l'appli MyMTN.",
+      "en": {
+        "name": "World voice roaming Maxi 29 000 F",
+        "description": "60 min of outgoing calls + 60 min of incoming calls + 100 SMS, valid 30 days.",
+        "notes": "Outgoing and incoming minutes are added in the total. Activation with *105*4#, *501# or *121*2*1#, or the MyMTN app."
+      }
+    }
+  ]
+}

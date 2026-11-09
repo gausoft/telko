@@ -1,0 +1,44 @@
+{
+  "operator": "orange",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "orange-roaming-voyage-roaming",
+      "kind": "service",
+      "name": "Pass Voyage (roaming)",
+      "description": "Pass Voyage pour gérer le roaming.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "voyage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/jamono-new-s-cool-mod-15",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Travel passes (roaming)",
+        "description": "Travel passes to manage roaming.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "operator": "moov",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "moov-bills-nigelec",
+      "kind": "service",
+      "name": "Facture NIGELEC (Moov Money)",
+      "description": "Payer une facture d'électricité NIGELEC avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*157*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais indiqués : à partir de 50 F. La page publie le même code pour la recharge du compteur prépayé Haské : à vérifier sur un téléphone.",
+      "en": {
+        "name": "NIGELEC bill (Moov Money)",
+        "description": "Pay a NIGELEC electricity bill with Moov Money.",
+        "notes": "Fee shown: from 50 F. The page publishes the same code for the Haské prepaid meter top-up: to check on a phone."
+      }
+    },
+    {
+      "id": "moov-bills-seen",
+      "kind": "service",
+      "name": "Facture SEEN (Moov Money)",
+      "description": "Payer une facture d'eau SEEN avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*157*4*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais indiqués : à partir de 50 F.",
+      "en": {
+        "name": "SEEN bill (Moov Money)",
+        "description": "Pay a SEEN water bill with Moov Money.",
+        "notes": "Fee shown: from 50 F."
+      }
+    },
+    {
+      "id": "moov-bills-canal-plus",
+      "kind": "service",
+      "name": "Réabonnement Canal+ (Moov Money)",
+      "description": "Renouveler votre abonnement Canal+ avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*157*4*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais indiqués : gratuit.",
+      "en": {
+        "name": "Canal+ renewal (Moov Money)",
+        "description": "Renew your Canal+ subscription with Moov Money.",
+        "notes": "Fee shown: free."
+      }
+    },
+    {
+      "id": "moov-bills-telestar",
+      "kind": "service",
+      "name": "Réabonnement Telestar (Moov Money)",
+      "description": "Renouveler votre abonnement Telestar avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*157*4*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais indiqués : gratuit.",
+      "en": {
+        "name": "Telestar renewal (Moov Money)",
+        "description": "Renew your Telestar subscription with Moov Money.",
+        "notes": "Fee shown: free."
+      }
+    }
+  ]
+}

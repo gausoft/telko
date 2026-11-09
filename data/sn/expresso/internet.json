@@ -1,0 +1,656 @@
+{
+  "operator": "expresso",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "expresso-internet-net-100-24h",
+      "kind": "bundle",
+      "name": "NET 100 F (24 h)",
+      "description": "100 Mo d'internet, valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 100 F (24 h)",
+        "description": "100 MB of data, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-internet-net-200-24h",
+      "kind": "bundle",
+      "name": "NET 200 F (24 h)",
+      "description": "500 Mo d'internet, valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 200 F (24 h)",
+        "description": "500 MB of data, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-internet-net-300-24h",
+      "kind": "bundle",
+      "name": "NET 300 F (24 h)",
+      "description": "700 Mo d'internet, valables 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 700,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 300 F (24 h)",
+        "description": "700 MB of data, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-internet-net-500-24h",
+      "kind": "bundle",
+      "name": "NET 500 F (24 h)",
+      "description": "5 Go d'internet, valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 500 F (24 h)",
+        "description": "5 GB of data, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-internet-net-1000-24h",
+      "kind": "bundle",
+      "name": "NET 1000 F (24 h)",
+      "description": "11 Go d'internet, valables 24 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 11264,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*11#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 1000 F (24 h)",
+        "description": "11 GB of data, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-internet-net-1000-3j",
+      "kind": "bundle",
+      "name": "NET 1000 F (3 jours)",
+      "description": "5 Go d'internet, valables 3 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 1000 F (3 jours)",
+        "description": "5 GB of data, valid 3 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-1000-7j",
+      "kind": "bundle",
+      "name": "NET 1000 F (7 jours)",
+      "description": "3 Go d'internet, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*1000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 1000 F (7 jours)",
+        "description": "3 GB of data, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-1300-7j",
+      "kind": "bundle",
+      "name": "NET 1300 F (7 jours)",
+      "description": "7 Go d'internet, valables 7 jours.",
+      "price": 1300,
+      "allowances": {
+        "data_mb": 7168,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*1300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 1300 F (7 jours)",
+        "description": "7 GB of data, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-2000-7j",
+      "kind": "bundle",
+      "name": "NET 2000 F (7 jours)",
+      "description": "11 Go d'internet, valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 11264,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*2000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 2000 F (7 jours)",
+        "description": "11 GB of data, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-2500-15j",
+      "kind": "bundle",
+      "name": "NET 2500 F (15 jours)",
+      "description": "15 Go d'internet, valables 15 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*25#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 2500 F (15 jours)",
+        "description": "15 GB of data, valid 15 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-3500-30j",
+      "kind": "bundle",
+      "name": "NET 3500 F (30 jours)",
+      "description": "40 Go d'internet, valables 30 jours.",
+      "price": 3500,
+      "allowances": {
+        "data_mb": 40960,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*3500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 3500 F (30 jours)",
+        "description": "40 GB of data, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-5000-30j",
+      "kind": "bundle",
+      "name": "NET 5000 F (30 jours)",
+      "description": "60 Go d'internet, valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 61440,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*5000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 5000 F (30 jours)",
+        "description": "60 GB of data, valid 30 days."
+      }
+    },
+    {
+      "id": "expresso-internet-net-10000-30j",
+      "kind": "bundle",
+      "name": "NET 10000 F (30 jours)",
+      "description": "100 Go d'internet, valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 102400,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*19*10000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "net",
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "NET 10000 F (30 jours)",
+        "description": "100 GB of data, valid 30 days."
+      }
+    }
+  ]
+}

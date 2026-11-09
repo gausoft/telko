@@ -1,0 +1,202 @@
+{
+  "operator": "telecel",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "telecel-mixed-idiya-5",
+      "kind": "bundle",
+      "name": "Idiya 5",
+      "description": "5 min d'appel, 10 SMS et 10 Mo, valables 1 jour.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 10,
+        "voice_min": 5,
+        "sms": 10
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*540*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "idiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/forfaits-idiya/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Idiya 5",
+        "description": "5 call minutes, 10 SMS and 10 MB, valid 1 day."
+      }
+    },
+    {
+      "id": "telecel-mixed-idiya-15",
+      "kind": "bundle",
+      "name": "Idiya 15",
+      "description": "15 min d'appel, 50 SMS et 50 Mo, valables 3 jours.",
+      "price": 450,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": 15,
+        "sms": 50
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*540*15#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "idiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/forfaits-idiya/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Idiya 15",
+        "description": "15 call minutes, 50 SMS and 50 MB, valid 3 days."
+      }
+    },
+    {
+      "id": "telecel-mixed-idiya-30",
+      "kind": "bundle",
+      "name": "Idiya 30",
+      "description": "30 min d'appel, 60 SMS et 60 Mo, valables 4 jours.",
+      "price": 750,
+      "allowances": {
+        "data_mb": 60,
+        "voice_min": 30,
+        "sms": 60
+      },
+      "validity": {
+        "days": 4,
+        "label": "4 jours",
+        "en": {
+          "label": "4 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*540*30#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "idiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/forfaits-idiya/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Idiya 30",
+        "description": "30 call minutes, 60 SMS and 60 MB, valid 4 days."
+      }
+    },
+    {
+      "id": "telecel-mixed-idiya-60",
+      "kind": "bundle",
+      "name": "Idiya 60",
+      "description": "60 min d'appel, 100 SMS et 100 Mo, valables 7 jours.",
+      "price": 1250,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 60,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*540*60#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "idiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/forfaits-idiya/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Idiya 60",
+        "description": "60 call minutes, 100 SMS and 100 MB, valid 7 days."
+      }
+    }
+  ]
+}

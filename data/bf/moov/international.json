@@ -1,0 +1,464 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-5min-6dest",
+      "kind": "bundle",
+      "name": "5 min vers 6 destinations",
+      "description": "5 minutes vers 6 destinations, 3 jours.",
+      "price": 840,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*505#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "5 min vers 6 destinations",
+        "description": "5 minutes to 6 destinations, 3 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-10min-6dest",
+      "kind": "bundle",
+      "name": "10 min vers 6 destinations",
+      "description": "10 minutes vers 6 destinations, 3 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*101#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "10 min vers 6 destinations",
+        "description": "10 minutes to 6 destinations, 3 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-10min-10dest",
+      "kind": "bundle",
+      "name": "10 min vers 10 destinations",
+      "description": "10 minutes vers 10 destinations, 3 jours.",
+      "price": 735,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*510#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "10 min vers 10 destinations",
+        "description": "10 minutes to 10 destinations, 3 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-30min-10dest",
+      "kind": "bundle",
+      "name": "30 min vers 10 destinations",
+      "description": "30 minutes vers 10 destinations, 7 jours.",
+      "price": 1995,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*502#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "30 min vers 10 destinations",
+        "description": "30 minutes to 10 destinations, 7 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-1h-10dest",
+      "kind": "bundle",
+      "name": "1 h vers 10 destinations",
+      "description": "1 heure vers 10 destinations, 15 jours.",
+      "price": 3780,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*503#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "1 h vers 10 destinations",
+        "description": "1 hour to 10 destinations, 15 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-sonma-5",
+      "kind": "bundle",
+      "name": "SONMA 5 min",
+      "description": "5 minutes, 1 jour.",
+      "price": 263,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*606#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "SONMA 5 min",
+        "description": "5 minutes, 1 day.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-sonma-10",
+      "kind": "bundle",
+      "name": "SONMA 10 min",
+      "description": "10 minutes, 3 jours.",
+      "price": 551,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*607#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "SONMA 10 min",
+        "description": "10 minutes, 3 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-sonma-20",
+      "kind": "bundle",
+      "name": "SONMA 20 min",
+      "description": "20 minutes, 7 jours.",
+      "price": 1076,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*146*608#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pays concernés ne sont pas détaillés dans le catalogue lu.",
+      "en": {
+        "name": "SONMA 20 min",
+        "description": "20 minutes, 7 days.",
+        "notes": "The countries concerned are not detailed in the catalogue read."
+      }
+    },
+    {
+      "id": "moov-international-chic-international",
+      "kind": "service",
+      "name": "Chic International",
+      "description": "Appels à tarif réduit vers un numéro à l'étranger pendant 24 h.",
+      "price": 525,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*5*{number}#",
+        "params": [
+          {
+            "name": "number",
+            "type": "text",
+            "label": "Indicatif du pays et numéro",
+            "required": true,
+            "short": "Numéro",
+            "numeric": true,
+            "en": {
+              "label": "Country code and number",
+              "short": "Number"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Chic International",
+        "description": "Reduced-rate calls to a number abroad for 24 hours."
+      }
+    }
+  ]
+}

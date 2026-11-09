@@ -1,0 +1,81 @@
+{
+  "operator": "moov",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "moov-useful-numbers-liste-sva",
+      "kind": "service",
+      "name": "Liste des services activés",
+      "description": "Voir la liste des services à valeur ajoutée activés sur votre ligne.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "1110",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Liste des services activés",
+        "description": "List the value-added services active on your line."
+      }
+    },
+    {
+      "id": "moov-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Moov Africa",
+      "description": "Service client Moov Africa Burkina.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+226 25 33 40 01",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Un second numéro est publié : +226 02 30 30 30. Adresse : moovafrica@moov-africa.bf.",
+      "en": {
+        "name": "Service client Moov Africa",
+        "description": "Moov Africa Burkina customer service.",
+        "notes": "A second number is published: +226 02 30 30 30. Email: moovafrica@moov-africa.bf."
+      }
+    }
+  ]
+}

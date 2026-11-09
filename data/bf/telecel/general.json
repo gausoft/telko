@@ -1,0 +1,265 @@
+{
+  "operator": "telecel",
+  "category": "general",
+  "entries": [
+    {
+      "id": "telecel-general-garder-numero-6",
+      "kind": "service",
+      "name": "Garder son numéro 6 mois",
+      "description": "Conserver votre numéro actif pendant 6 mois.",
+      "price": 1575,
+      "allowances": null,
+      "validity": {
+        "days": 180,
+        "label": "6 mois",
+        "en": {
+          "label": "6 months"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "abonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page assistance indique 2 500 F : prix du catalogue conservé.",
+      "en": {
+        "name": "Garder son numéro 6 mois",
+        "description": "Keep your number active for 6 months.",
+        "notes": "The support page says 2,500 F: catalogue price kept."
+      }
+    },
+    {
+      "id": "telecel-general-garder-numero-12",
+      "kind": "service",
+      "name": "Garder son numéro 12 mois",
+      "description": "Conserver votre numéro actif pendant 12 mois.",
+      "price": 3150,
+      "allowances": null,
+      "validity": {
+        "days": 365,
+        "label": "12 mois",
+        "en": {
+          "label": "12 months"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*12#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "abonnement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page assistance indique 5 000 F : prix du catalogue conservé.",
+      "en": {
+        "name": "Garder son numéro 12 mois",
+        "description": "Keep your number active for 12 months.",
+        "notes": "The support page says 5,000 F: catalogue price kept."
+      }
+    },
+    {
+      "id": "telecel-general-verifier-identification",
+      "kind": "service",
+      "name": "Vérifier mon identification",
+      "description": "Vérifier l'identification de votre numéro.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*148#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "identification"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Vérifier mon identification",
+        "description": "Check the identification of your number."
+      }
+    },
+    {
+      "id": "telecel-general-liste-services",
+      "kind": "service",
+      "name": "Liste des services activés",
+      "description": "Voir les services à valeur ajoutée actifs sur votre numéro.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*633#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Liste des services activés",
+        "description": "List value-added services active on your number."
+      }
+    },
+    {
+      "id": "telecel-general-pubs",
+      "kind": "service",
+      "name": "Messages publicitaires",
+      "description": "Activer ou couper la réception des messages publicitaires.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*622#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "publicité",
+        "réglage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Messages publicitaires",
+        "description": "Turn advertising messages on or off."
+      }
+    },
+    {
+      "id": "telecel-general-mon-numero",
+      "kind": "service",
+      "name": "Connaître mon numéro",
+      "description": "Afficher votre numéro Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*99#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Connaître mon numéro",
+        "description": "Show your Telecel number."
+      }
+    }
+  ]
+}

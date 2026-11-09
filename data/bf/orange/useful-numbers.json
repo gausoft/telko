@@ -1,0 +1,80 @@
+{
+  "operator": "orange",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "orange-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Orange",
+      "description": "Service client Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "121",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Service client Orange",
+        "description": "Orange customer service."
+      }
+    },
+    {
+      "id": "orange-useful-numbers-service-client-money",
+      "kind": "service",
+      "name": "Service client Orange Money",
+      "description": "Service client Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "127",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Service client Orange Money",
+        "description": "Orange Money customer service."
+      }
+    }
+  ]
+}

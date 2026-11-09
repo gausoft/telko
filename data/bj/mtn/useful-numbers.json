@@ -1,0 +1,121 @@
+{
+  "operator": "mtn",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "mtn-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client MTN Bénin",
+      "description": "Joindre le service client par appel ou SMS.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "111",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Courriel : serviceclient@mtn.bj.",
+      "en": {
+        "name": "MTN Benin customer service",
+        "description": "Reach customer service by call or SMS.",
+        "notes": "Email: serviceclient@mtn.bj."
+      }
+    },
+    {
+      "id": "mtn-useful-numbers-service-client-business",
+      "kind": "service",
+      "name": "Service client MTN Business",
+      "description": "Joindre le service client des entreprises, par appel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "01 97 97 00 07",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "entreprise",
+        "business",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro 01 97 97 00 07 publié pour l'appel et WhatsApp Business. Courriel : business.bj@mtn.com.",
+      "en": {
+        "name": "MTN Business customer service",
+        "description": "Reach the business customer service by call.",
+        "notes": "Number 01 97 97 00 07 is published for calls and WhatsApp Business. Email: business.bj@mtn.com."
+      }
+    },
+    {
+      "id": "mtn-useful-numbers-centre-appels-business",
+      "kind": "service",
+      "name": "Centre d'appels MTN Business",
+      "description": "Réservé aux entreprises déjà clientes de MTN Business Bénin.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "120",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "entreprise",
+        "business",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "MTN Business call center",
+        "description": "For companies that are already MTN Business Benin customers."
+      }
+    }
+  ]
+}

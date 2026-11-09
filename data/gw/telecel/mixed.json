@@ -1,0 +1,245 @@
+{
+  "operator": "telecel",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "telecel-mixed-boss-15-gigas",
+      "kind": "bundle",
+      "name": "Telecel Boss 15 Go",
+      "description": "15 Go (2,1 Go par jour) et appels illimités vers tous les réseaux, 7 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*638*7#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "boss",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code *638*7# est affiché pour Boss 15 Go et Boss 50 Go : à vérifier.",
+      "en": {
+        "name": "Telecel Boss 15 GB",
+        "description": "15 GB (2.1 GB a day) and unlimited calls to all networks, 7 days.",
+        "notes": "The same code *638*7# is shown for Boss 15 GB and Boss 50 GB: to be checked."
+      }
+    },
+    {
+      "id": "telecel-mixed-boss-50-gigas",
+      "kind": "bundle",
+      "name": "Telecel Boss 50 Go",
+      "description": "50 Go (1,6 Go par jour) et appels illimités vers tous les réseaux, 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 51200,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*638*7#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "boss",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le même code *638*7# est affiché pour Boss 15 Go et Boss 50 Go : à vérifier.",
+      "en": {
+        "name": "Telecel Boss 50 GB",
+        "description": "50 GB (1.6 GB a day) and unlimited calls to all networks, 30 days.",
+        "notes": "The same code *638*7# is shown for Boss 15 GB and Boss 50 GB: to be checked."
+      }
+    },
+    {
+      "id": "telecel-mixed-waasaa-7-jours",
+      "kind": "bundle",
+      "name": "WaaSaa 7 jours",
+      "description": "WhatsApp illimité et appels illimités de 23 h à 18 h le lendemain, 7 jours.",
+      "price": 250,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*650*0#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "waasaa",
+        "whatsapp",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "WaaSaa 7 days",
+        "description": "Unlimited WhatsApp and unlimited calls from 23:00 to 18:00 the next day, 7 days."
+      }
+    },
+    {
+      "id": "telecel-mixed-waasaa-30-jours",
+      "kind": "bundle",
+      "name": "WaaSaa 30 jours",
+      "description": "WhatsApp illimité et appels illimités de 23 h à 18 h le lendemain, 30 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*650*0#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "waasaa",
+        "whatsapp",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "WaaSaa 30 days",
+        "description": "Unlimited WhatsApp and unlimited calls from 23:00 to 18:00 the next day, 30 days."
+      }
+    },
+    {
+      "id": "telecel-mixed-bombastico",
+      "kind": "bundle",
+      "name": "Bombástico",
+      "description": "5 Go et 500 minutes Telecel vers Telecel, 1 jour.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": 500,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*618*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "bombastico",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Bombástico",
+        "description": "5 GB and 500 minutes Telecel to Telecel, 1 day."
+      }
+    }
+  ]
+}

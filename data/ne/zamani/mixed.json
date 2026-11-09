@@ -1,0 +1,162 @@
+{
+  "operator": "zamani",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "zamani-mixed-albarka-mix-500",
+      "kind": "bundle",
+      "name": "Forfait Mix 500 F (Albarka Mix)",
+      "description": "Appels illimités vers Zamani, 10 min tous réseaux et 100 Mo, 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#241#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka mix",
+        "appels illimités",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les appels vers Zamani sont illimités en plus des minutes tous réseaux.",
+      "en": {
+        "name": "Mix bundle 500 F (Albarka Mix)",
+        "description": "Unlimited calls to Zamani, 10 min to all networks and 100 MB, 24 h.",
+        "notes": "Calls to Zamani are unlimited on top of the all-network minutes."
+      }
+    },
+    {
+      "id": "zamani-mixed-albarka-mix-1000",
+      "kind": "bundle",
+      "name": "Forfait Mix 1 000 F (Albarka Mix)",
+      "description": "Appels illimités vers Zamani, 20 min tous réseaux, 20 SMS et 600 Mo, 72 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": 20,
+        "sms": 20
+      },
+      "validity": {
+        "days": 3,
+        "label": "72 h",
+        "en": {
+          "label": "72 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#242#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka mix",
+        "appels illimités",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les appels vers Zamani sont illimités en plus des minutes tous réseaux.",
+      "en": {
+        "name": "Mix bundle 1 000 F (Albarka Mix)",
+        "description": "Unlimited calls to Zamani, 20 min to all networks, 20 SMS and 600 MB, 72 h.",
+        "notes": "Calls to Zamani are unlimited on top of the all-network minutes."
+      }
+    },
+    {
+      "id": "zamani-mixed-albarka-mix-3000",
+      "kind": "bundle",
+      "name": "Forfait Mix 3 000 F (Albarka Mix)",
+      "description": "Appels illimités vers Zamani, 60 min tous réseaux et 2,5 Go, 15 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#225#243#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "albarka mix",
+        "appels illimités",
+        "internet",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/particuliers/forfaits-appels",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les appels vers Zamani sont illimités en plus des minutes tous réseaux.",
+      "en": {
+        "name": "Mix bundle 3 000 F (Albarka Mix)",
+        "description": "Unlimited calls to Zamani, 60 min to all networks and 2.5 GB, 15 days.",
+        "notes": "Calls to Zamani are unlimited on top of the all-network minutes."
+      }
+    }
+  ]
+}

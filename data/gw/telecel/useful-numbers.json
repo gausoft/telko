@@ -1,0 +1,49 @@
+{
+  "operator": "telecel",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "telecel-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Contact Telecel",
+      "description": "Numéro de contact publié sur le site Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+245966666671",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/lojas",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://telecel.gw/pacotes",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro de contact du site et des boutiques ; le site ne le présente pas explicitement comme un service client. Adresse e-mail : info@telecel.gw.",
+      "en": {
+        "name": "Telecel contact",
+        "description": "Contact number published on the Telecel website.",
+        "notes": "Contact number of the website and shops; the site does not explicitly present it as a customer service line. Email: info@telecel.gw."
+      }
+    }
+  ]
+}

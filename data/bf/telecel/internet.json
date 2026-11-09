@@ -1,0 +1,949 @@
+{
+  "operator": "telecel",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "telecel-internet-jour-50mo",
+      "kind": "bundle",
+      "name": "Pass 50 Mo",
+      "description": "50 Mo valables 2 jours.",
+      "price": 105,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 50 Mo",
+        "description": "50 MB valid 2 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-jour-125mo",
+      "kind": "bundle",
+      "name": "Pass 125 Mo",
+      "description": "125 Mo valables 2 jours.",
+      "price": 210,
+      "allowances": {
+        "data_mb": 125,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 125 Mo",
+        "description": "125 MB valid 2 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-jour-250mo",
+      "kind": "bundle",
+      "name": "Pass 250 Mo",
+      "description": "250 Mo valables 2 jours.",
+      "price": 315,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 250 Mo",
+        "description": "250 MB valid 2 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-1go",
+      "kind": "bundle",
+      "name": "Pass 1 Go",
+      "description": "1 Go valable 30 jours.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 1 Go",
+        "description": "1 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-2go",
+      "kind": "bundle",
+      "name": "Pass 2 Go",
+      "description": "2 Go valables 30 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 2 Go",
+        "description": "2 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-4go",
+      "kind": "bundle",
+      "name": "Pass 4 Go",
+      "description": "4 Go valables 30 jours.",
+      "price": 3150,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 4 Go",
+        "description": "4 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-5-5go",
+      "kind": "bundle",
+      "name": "Pass 5,5 Go",
+      "description": "5,5 Go valables 30 jours.",
+      "price": 4200,
+      "allowances": {
+        "data_mb": 5632,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 5,5 Go",
+        "description": "5.5 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-7-5go",
+      "kind": "bundle",
+      "name": "Pass 7,5 Go",
+      "description": "7,5 Go valables 30 jours.",
+      "price": 5250,
+      "allowances": {
+        "data_mb": 7680,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 7,5 Go",
+        "description": "7.5 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-mois-15go",
+      "kind": "bundle",
+      "name": "Pass 15 Go",
+      "description": "15 Go valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Ce code ouvre un menu : choisissez ensuite l'offre indiquée.",
+      "en": {
+        "name": "Pass 15 Go",
+        "description": "15 GB valid 30 days.",
+        "notes": "This code opens a menu: then choose the offer shown."
+      }
+    },
+    {
+      "id": "telecel-internet-nuit-2go",
+      "kind": "bundle",
+      "name": "Pass Nuit 2 Go",
+      "description": "2 Go utilisables la nuit.",
+      "price": 525,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*4*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site donne la nuit de 0h à 7h, le catalogue de 0h à 6h ; la validité est de 7 ou 30 jours selon la page : horaire et durée laissés vides.",
+      "en": {
+        "name": "Pass Nuit 2 Go",
+        "description": "2 GB usable at night.",
+        "notes": "The website says night from 0:00 to 7:00, the catalogue from 0:00 to 6:00; validity is 7 or 30 days depending on the page: hours and duration left empty."
+      }
+    },
+    {
+      "id": "telecel-internet-nuit-4go",
+      "kind": "bundle",
+      "name": "Pass Nuit 4 Go",
+      "description": "4 Go utilisables la nuit.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*4*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site donne la nuit de 0h à 7h, le catalogue de 0h à 6h ; la validité est de 7 ou 30 jours selon la page : horaire et durée laissés vides.",
+      "en": {
+        "name": "Pass Nuit 4 Go",
+        "description": "4 GB usable at night.",
+        "notes": "The website says night from 0:00 to 7:00, the catalogue from 0:00 to 6:00; validity is 7 or 30 days depending on the page: hours and duration left empty."
+      }
+    },
+    {
+      "id": "telecel-internet-telecel-money-2go",
+      "kind": "bundle",
+      "name": "Pass 2 Go Telecel Money",
+      "description": "2 Go valables 30 jours, achetés avec Telecel Money.",
+      "price": 1050,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*808*5*1*1*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "telecel-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 2 Go Telecel Money",
+        "description": "2 GB valid 30 days, bought with Telecel Money."
+      }
+    },
+    {
+      "id": "telecel-internet-choc-2go",
+      "kind": "bundle",
+      "name": "Internet Choc 2 Go",
+      "description": "2 Go valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Menu : choisissez ensuite l'offre. Activez d'abord la 4G avec *344*1#.",
+      "en": {
+        "name": "Internet Choc 2 Go",
+        "description": "2 GB valid 7 days.",
+        "notes": "Menu: then choose the offer. First activate 4G with *344*1#."
+      }
+    },
+    {
+      "id": "telecel-internet-choc-8go",
+      "kind": "bundle",
+      "name": "Internet Choc 8 Go",
+      "description": "8 Go valables 30 jours.",
+      "price": 4000,
+      "allowances": {
+        "data_mb": 8192,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Menu : choisissez ensuite l'offre. Activez d'abord la 4G avec *344*1#.",
+      "en": {
+        "name": "Internet Choc 8 Go",
+        "description": "8 GB valid 30 days.",
+        "notes": "Menu: then choose the offer. First activate 4G with *344*1#."
+      }
+    },
+    {
+      "id": "telecel-internet-choc-10go",
+      "kind": "bundle",
+      "name": "Internet Choc 10 Go",
+      "description": "10 Go valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Menu : choisissez ensuite l'offre. Activez d'abord la 4G avec *344*1#.",
+      "en": {
+        "name": "Internet Choc 10 Go",
+        "description": "10 GB valid 30 days.",
+        "notes": "Menu: then choose the offer. First activate 4G with *344*1#."
+      }
+    },
+    {
+      "id": "telecel-internet-choc-20go",
+      "kind": "bundle",
+      "name": "Internet Choc 20 Go",
+      "description": "20 Go valables 30 jours.",
+      "price": 9500,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*160*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Menu : choisissez ensuite l'offre. Activez d'abord la 4G avec *344*1#.",
+      "en": {
+        "name": "Internet Choc 20 Go",
+        "description": "20 GB valid 30 days.",
+        "notes": "Menu: then choose the offer. First activate 4G with *344*1#."
+      }
+    },
+    {
+      "id": "telecel-internet-menu",
+      "kind": "service",
+      "name": "Menu internet",
+      "description": "Menu pour acheter un forfait internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Menu internet",
+        "description": "Menu to buy an internet bundle."
+      }
+    },
+    {
+      "id": "telecel-internet-autre-numero",
+      "kind": "service",
+      "name": "Acheter pour un autre numéro",
+      "description": "Acheter un forfait internet pour un autre numéro.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Une page du site indique plutôt *160# : à confirmer.",
+      "en": {
+        "name": "Acheter pour un autre numéro",
+        "description": "Buy an internet bundle for another number.",
+        "notes": "A page on the website says *160# instead: to be confirmed."
+      }
+    },
+    {
+      "id": "telecel-internet-solde-data",
+      "kind": "service",
+      "name": "Solde internet",
+      "description": "Voir le volume internet restant.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*160*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue indique aussi l'envoi du mot data par SMS au 190.",
+      "en": {
+        "name": "Solde internet",
+        "description": "Check your remaining data.",
+        "notes": "The catalogue also mentions texting the word data to 190."
+      }
+    },
+    {
+      "id": "telecel-internet-vitesse",
+      "kind": "service",
+      "name": "Choisir la vitesse de connexion",
+      "description": "Choisir la vitesse de connexion (2G, 3G, 4G).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*344*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "réglage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Lecture du libellé à confirmer sur un téléphone.",
+      "en": {
+        "name": "Choisir la vitesse de connexion",
+        "description": "Choose the connection speed (2G, 3G, 4G).",
+        "notes": "Label reading to be confirmed on a phone."
+      }
+    }
+  ]
+}

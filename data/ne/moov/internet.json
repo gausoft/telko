@@ -1,0 +1,994 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-jour-100",
+      "kind": "bundle",
+      "name": "Internet 100 F, 24 h",
+      "description": "35 Mo valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 35,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 100 F, 24 h",
+        "description": "35 MB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-jour-150",
+      "kind": "bundle",
+      "name": "Internet 150 F, 24 h",
+      "description": "55 Mo valables 24 h.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 55,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 150 F, 24 h",
+        "description": "55 MB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-jour-200",
+      "kind": "bundle",
+      "name": "Internet 200 F, 24 h",
+      "description": "100 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 200 F, 24 h",
+        "description": "100 MB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-jour-300",
+      "kind": "bundle",
+      "name": "Internet 300 F, 24 h",
+      "description": "150 Mo valables 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 300 F, 24 h",
+        "description": "150 MB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-jour-500",
+      "kind": "bundle",
+      "name": "Internet 500 F, 24 h",
+      "description": "650 Mo valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 650,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 500 F, 24 h",
+        "description": "650 MB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-jour-1000",
+      "kind": "bundle",
+      "name": "Internet 1 000 F, 24 h",
+      "description": "1,5 Go valables 24 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*1*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 1 000 F, 24 h",
+        "description": "1.5 GB, valid 24 h.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-semaine-500",
+      "kind": "bundle",
+      "name": "Internet 500 F, 7 jours",
+      "description": "600 Mo valables 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*2*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 500 F, 7 days",
+        "description": "600 MB, valid 7 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-semaine-1000",
+      "kind": "bundle",
+      "name": "Internet 1 000 F, 7 jours",
+      "description": "1,2 Go valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1229,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*2*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 1 000 F, 7 days",
+        "description": "1.2 GB, valid 7 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-semaine-2000",
+      "kind": "bundle",
+      "name": "Internet 2 000 F, 7 jours",
+      "description": "3 Go valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*2*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 2 000 F, 7 days",
+        "description": "3 GB, valid 7 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-semaine-3000",
+      "kind": "bundle",
+      "name": "Internet 3 000 F, 7 jours",
+      "description": "5,2 Go valables 7 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 5325,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*2*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 3 000 F, 7 days",
+        "description": "5.2 GB, valid 7 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-mois-2000",
+      "kind": "bundle",
+      "name": "Internet 2 000 F, 30 jours",
+      "description": "2 Go valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*3*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 2 000 F, 30 days",
+        "description": "2 GB, valid 30 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-mois-5000",
+      "kind": "bundle",
+      "name": "Internet 5 000 F, 30 jours",
+      "description": "6,2 Go valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 6349,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*3*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 5 000 F, 30 days",
+        "description": "6.2 GB, valid 30 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-mois-10000",
+      "kind": "bundle",
+      "name": "Internet 10 000 F, 30 jours",
+      "description": "17 Go valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 17408,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*3*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 10 000 F, 30 days",
+        "description": "17 GB, valid 30 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-mois-20000",
+      "kind": "bundle",
+      "name": "Internet 20 000 F, 30 jours",
+      "description": "42 Go valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 43008,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*888*1*1*3*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "mois",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 20 000 F, 30 days",
+        "description": "42 GB, valid 30 days.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-100",
+      "kind": "bundle",
+      "name": "Internet 100 F, nuit",
+      "description": "300 Mo la nuit, de 00h00 à 06h00.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (00h00-06h00)",
+        "en": {
+          "label": "Night (12 am - 6 am)"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*888*1*1*4*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 100 F, night",
+        "description": "300 MB at night, from 12 am to 6 am.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-200",
+      "kind": "bundle",
+      "name": "Internet 200 F, nuit",
+      "description": "750 Mo la nuit, de 00h00 à 06h00.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (00h00-06h00)",
+        "en": {
+          "label": "Night (12 am - 6 am)"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*888*1*1*4*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 200 F, night",
+        "description": "750 MB at night, from 12 am to 6 am.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-500",
+      "kind": "bundle",
+      "name": "Internet 500 F, nuit",
+      "description": "3 Go la nuit, de 00h00 à 06h00.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (00h00-06h00)",
+        "en": {
+          "label": "Night (12 am - 6 am)"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*888*1*1*4*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 500 F, night",
+        "description": "3 GB at night, from 12 am to 6 am.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-1000",
+      "kind": "bundle",
+      "name": "Internet 1 000 F, nuit",
+      "description": "7 Go la nuit, de 00h00 à 06h00.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 7168,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (00h00-06h00)",
+        "en": {
+          "label": "Night (12 am - 6 am)"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*888*1*1*4*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 1 000 F, night",
+        "description": "7 GB at night, from 12 am to 6 am.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    },
+    {
+      "id": "moov-internet-nuit-1500",
+      "kind": "bundle",
+      "name": "Internet 1 500 F, nuit",
+      "description": "12 Go la nuit, de 00h00 à 06h00.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 12288,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": null,
+        "label": "Nuit (00h00-06h00)",
+        "en": {
+          "label": "Night (12 am - 6 am)"
+        }
+      },
+      "time_window": {
+        "from": "00:00",
+        "to": "06:00"
+      },
+      "ussd": {
+        "template": "*888*1*1*4*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site ne donne pas de nom commercial : le nom est composé du prix et de la durée.",
+      "en": {
+        "name": "Internet 1 500 F, night",
+        "description": "12 GB at night, from 12 am to 6 am.",
+        "notes": "The site gives no commercial name: the name is built from the price and the duration."
+      }
+    }
+  ]
+}

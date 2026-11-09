@@ -1,0 +1,79 @@
+{
+  "operator": "telecel",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "telecel-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Telecel Faso",
+      "description": "Service client Telecel Faso.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "888",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/assistance/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Service client Telecel Faso",
+        "description": "Telecel Faso customer service."
+      }
+    },
+    {
+      "id": "telecel-useful-numbers-premier-appel",
+      "kind": "service",
+      "name": "Premier appel",
+      "description": "Appel gratuit pour découvrir les avantages du kit de démarrage.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "333",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelfaso.bf/wp-content/uploads/2026/10/Catalogue_detail_Octobre_2026_-V2.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Premier appel",
+        "description": "Free call to learn about the starter kit benefits."
+      }
+    }
+  ]
+}

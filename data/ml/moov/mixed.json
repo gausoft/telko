@@ -1,0 +1,382 @@
+{
+  "operator": "moov",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "moov-mixed-forfait-mensuel-1",
+      "kind": "bundle",
+      "name": "Forfait mensuel 1",
+      "description": "2 h 30 d'appel, 200 Mo et 100 SMS pour un mois.",
+      "price": 2900,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": 150,
+        "sms": 100
+      },
+      "validity": {
+        "days": 30,
+        "label": "1 mois",
+        "en": {
+          "label": "1 month"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#7#2#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée « mois » lue sur une affiche du site, à confirmer.",
+      "en": {
+        "name": "Monthly pack 1",
+        "description": "2 h 30 min of calls, 200 MB and 100 SMS for a month.",
+        "notes": "'Month' duration read from a site poster, to confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-forfait-mensuel-2",
+      "kind": "bundle",
+      "name": "Forfait mensuel 2",
+      "description": "5 h d'appel, 400 Mo et 200 SMS pour un mois.",
+      "price": 4900,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": 300,
+        "sms": 200
+      },
+      "validity": {
+        "days": 30,
+        "label": "1 mois",
+        "en": {
+          "label": "1 month"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#555#7#2#2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Durée « mois » lue sur une affiche du site, à confirmer.",
+      "en": {
+        "name": "Monthly pack 2",
+        "description": "5 h of calls, 400 MB and 200 SMS for a month.",
+        "notes": "'Month' duration read from a site poster, to confirm."
+      }
+    },
+    {
+      "id": "moov-mixed-flex-500",
+      "kind": "bundle",
+      "name": "Moov Flex 500 F",
+      "description": "Forfait mixte Moov Flex pour 500 F.",
+      "price": 500,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#8#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "moov flex"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Contenu (minutes, SMS, Internet) et durée non lus : publiés en image.",
+      "en": {
+        "name": "Moov Flex 500 F",
+        "description": "Moov Flex mixed pack for 500 F.",
+        "notes": "Content (minutes, SMS, data) and duration not read: published as images."
+      }
+    },
+    {
+      "id": "moov-mixed-flex-1000",
+      "kind": "bundle",
+      "name": "Moov Flex 1 000 F",
+      "description": "Forfait mixte Moov Flex pour 1 000 F.",
+      "price": 1000,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#8#2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "moov flex"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Contenu (minutes, SMS, Internet) et durée non lus : publiés en image.",
+      "en": {
+        "name": "Moov Flex 1,000 F",
+        "description": "Moov Flex mixed pack for 1,000 F.",
+        "notes": "Content (minutes, SMS, data) and duration not read: published as images."
+      }
+    },
+    {
+      "id": "moov-mixed-flex-2000",
+      "kind": "bundle",
+      "name": "Moov Flex 2 000 F",
+      "description": "Forfait mixte Moov Flex pour 2 000 F.",
+      "price": 2000,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#8#3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "moov flex"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Contenu (minutes, SMS, Internet) et durée non lus : publiés en image.",
+      "en": {
+        "name": "Moov Flex 2,000 F",
+        "description": "Moov Flex mixed pack for 2,000 F.",
+        "notes": "Content (minutes, SMS, data) and duration not read: published as images."
+      }
+    },
+    {
+      "id": "moov-mixed-flex-5000",
+      "kind": "bundle",
+      "name": "Moov Flex 5 000 F",
+      "description": "Forfait mixte Moov Flex pour 5 000 F.",
+      "price": 5000,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#8#4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "moov flex"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Contenu (minutes, SMS, Internet) et durée non lus : publiés en image.",
+      "en": {
+        "name": "Moov Flex 5,000 F",
+        "description": "Moov Flex mixed pack for 5,000 F.",
+        "notes": "Content (minutes, SMS, data) and duration not read: published as images."
+      }
+    },
+    {
+      "id": "moov-mixed-damou",
+      "kind": "service",
+      "name": "Forfaits Damou",
+      "description": "Forfaits mixtes à partir de 250 F : jusqu'à 4 h d'appel, SMS illimités et 1 Go.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#2#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "damou"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque forfait n'est pas publié en texte : choisir à l'écran.",
+      "en": {
+        "name": "Damou packs",
+        "description": "Mixed packs from 250 F: up to 4 h of calls, unlimited SMS and 1 GB.",
+        "notes": "The price of each pack is not published as text: choose on screen."
+      }
+    },
+    {
+      "id": "moov-mixed-grati-kura",
+      "kind": "service",
+      "name": "Forfaits Grati+ Koura",
+      "description": "Menu des forfaits Grati+ Koura.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#2#2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "grati"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Détail des forfaits non lu.",
+      "en": {
+        "name": "Grati+ Koura packs",
+        "description": "Grati+ Koura packs menu.",
+        "notes": "Pack details not read."
+      }
+    },
+    {
+      "id": "moov-mixed-nwelle",
+      "kind": "service",
+      "name": "N'wéllé (Rappelle-moi)",
+      "description": "Demander à être rappelé.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "rappel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "N'wéllé (Call me)",
+        "description": "Ask to be called back."
+      }
+    }
+  ]
+}

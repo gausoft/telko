@@ -1,0 +1,121 @@
+{
+  "operator": "moov",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "moov-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Moov Africa Niger",
+      "description": "Joindre un conseiller Moov Africa Niger.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "888",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance",
+        "contact"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro lu dans le bouton « Besoin d'aide ? » du site (lien d'appel).",
+      "en": {
+        "name": "Moov Africa Niger customer service",
+        "description": "Reach a Moov Africa Niger advisor.",
+        "notes": "Number read from the site's \"Besoin d'aide ?\" button (call link)."
+      }
+    },
+    {
+      "id": "moov-useful-numbers-moovtones",
+      "kind": "service",
+      "name": "Moovtones",
+      "description": "Appeler le 1111 pour accéder au menu Moovtones.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "1111",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moovtones",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moovtones",
+        "description": "Call 1111 to reach the Moovtones menu."
+      }
+    },
+    {
+      "id": "moov-useful-numbers-mia-assistant",
+      "kind": "service",
+      "name": "MIA, assistant Moov",
+      "description": "Appeler le 108 pour poser vos questions à MIA.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "108",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mia",
+        "intelligence artificielle",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page indique qu'un forfait actif est nécessaire.",
+      "en": {
+        "name": "MIA, Moov assistant",
+        "description": "Call 108 to ask MIA your questions.",
+        "notes": "The page says an active bundle is needed."
+      }
+    }
+  ]
+}

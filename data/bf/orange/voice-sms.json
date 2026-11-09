@@ -1,0 +1,525 @@
+{
+  "operator": "orange",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "orange-voice-sms-pass-voix-10",
+      "kind": "bundle",
+      "name": "Pass Voix 10 min",
+      "description": "10 minutes d'appel pendant 1 jour.",
+      "price": 105,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Voix 10 min",
+        "description": "10 minutes of calls for 1 day."
+      }
+    },
+    {
+      "id": "orange-voice-sms-pass-15min-50sms",
+      "kind": "bundle",
+      "name": "Pass 15 min + 50 SMS",
+      "description": "15 min et 50 SMS pendant 1 jour.",
+      "price": 158,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*150#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "sms",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass 15 min + 50 SMS",
+        "description": "15 min and 50 SMS for 1 day."
+      }
+    },
+    {
+      "id": "orange-voice-sms-pass-naafa-90",
+      "kind": "bundle",
+      "name": "Pass NAAFA 90 min",
+      "description": "90 min et 100 SMS pendant 5 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 90,
+        "sms": 100
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*15*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "sms",
+        "naafa"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass NAAFA 90 min",
+        "description": "90 min and 100 SMS for 5 days."
+      }
+    },
+    {
+      "id": "orange-voice-sms-pass-naafa-120",
+      "kind": "bundle",
+      "name": "Pass NAAFA 120 min",
+      "description": "120 min et 200 SMS pendant 7 jours.",
+      "price": 2100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 120,
+        "sms": 200
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*15*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "sms",
+        "naafa"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass NAAFA 120 min",
+        "description": "120 min and 200 SMS for 7 days."
+      }
+    },
+    {
+      "id": "orange-voice-sms-pass-sms",
+      "kind": "service",
+      "name": "Pass SMS",
+      "description": "Menu des Pass SMS : 10 SMS à 11 F, 50 à 27 F, 100 à 53 F, 200 à 105 F.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*101#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "sms",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Validités d'après le catalogue : 1 jour, 1 jour, 2 jours, 3 jours.",
+      "en": {
+        "name": "Pass SMS",
+        "description": "SMS pass menu: 10 SMS for 11 F, 50 for 27 F, 100 for 53 F, 200 for 105 F.",
+        "notes": "Validities per the catalogue: 1 day, 1 day, 2 days, 3 days."
+      }
+    },
+    {
+      "id": "orange-voice-sms-numero-magique-jour",
+      "kind": "service",
+      "name": "Numéro magique 1 jour",
+      "description": "Appels à tarif réduit vers un numéro de votre choix pendant 1 jour.",
+      "price": 315,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*{phone}*1#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix du catalogue : 315 F (la page des codes utiles indique 300 F).",
+      "en": {
+        "name": "Numéro magique 1 jour",
+        "description": "Reduced-rate calls to a number of your choice for 1 day.",
+        "notes": "Catalogue price: 315 F (the useful codes page says 300 F)."
+      }
+    },
+    {
+      "id": "orange-voice-sms-numero-magique-semaine",
+      "kind": "service",
+      "name": "Numéro magique 7 jours",
+      "description": "Appels à tarif réduit vers un numéro de votre choix pendant 7 jours.",
+      "price": 1575,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*{phone}*7#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix du catalogue : 1 575 F (la page des codes utiles indique 1 500 F).",
+      "en": {
+        "name": "Numéro magique 7 jours",
+        "description": "Reduced-rate calls to a number of your choice for 7 days.",
+        "notes": "Catalogue price: 1,575 F (the useful codes page says 1,500 F)."
+      }
+    },
+    {
+      "id": "orange-voice-sms-numero-magique-mois",
+      "kind": "service",
+      "name": "Numéro magique 30 jours",
+      "description": "Appels à tarif réduit vers un numéro de votre choix pendant 30 jours.",
+      "price": 5250,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*125*{phone}*30#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro choisi",
+            "required": true,
+            "en": {
+              "label": "Chosen number",
+              "short": "Number"
+            },
+            "short": "Numéro"
+          }
+        ]
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix du catalogue : 5 250 F (la page des codes utiles indique 5 000 F).",
+      "en": {
+        "name": "Numéro magique 30 jours",
+        "description": "Reduced-rate calls to a number of your choice for 30 days.",
+        "notes": "Catalogue price: 5,250 F (the useful codes page says 5,000 F)."
+      }
+    },
+    {
+      "id": "orange-voice-sms-famille-amis",
+      "kind": "service",
+      "name": "Famille et amis",
+      "description": "Gérer vos numéros préférés (Famille et amis).",
+      "price": 105,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*102#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "numéro favori",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code *102*numéro# permet d'enregistrer un numéro préféré (page des codes utiles).",
+      "en": {
+        "name": "Famille et amis",
+        "description": "Manage your favourite numbers (Family and friends).",
+        "notes": "The code *102*number# registers a favourite number (useful codes page)."
+      }
+    },
+    {
+      "id": "orange-voice-sms-orange-choco",
+      "kind": "service",
+      "name": "Orange Choco",
+      "description": "Service Orange Choco.",
+      "price": 105,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*109#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Désinscription par *109*4# (page des codes utiles).",
+      "en": {
+        "name": "Orange Choco",
+        "description": "Orange Choco service.",
+        "notes": "Unsubscribe with *109*4# (useful codes page)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "operator": "orange",
+  "service": "orange-money",
+  "entries": [
+    {
+      "id": "orange-fees-transfert-orange-national",
+      "operation": "transfer-national",
+      "min": 1,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Envoi vers un numéro Orange Money : 0 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Texte de la page : « Transfert national vers Orange : frais d'envoi 0 FCFA ». La grille complète est une image non lue.",
+      "en": {
+        "label": "Transfer to an Orange Money number: 0 F",
+        "notes": "Page text: \"National transfer to Orange: sending fee 0 FCFA\". The full grid is an image that was not read."
+      }
+    },
+    {
+      "id": "orange-fees-retrait-national",
+      "operation": "withdrawal",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1,
+      "label": "Retrait national : 1 %",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Texte de la page : « 1% sur tous vos retraits ». La grille par tranches est une image non lue.",
+      "en": {
+        "label": "National withdrawal: 1%",
+        "notes": "Page text: \"1% on all your withdrawals\". The grid by bracket is an image that was not read."
+      }
+    },
+    {
+      "id": "orange-fees-facture-cie-sodeci-200-2000",
+      "operation": "other",
+      "min": 200,
+      "max": 2000,
+      "fee": 150,
+      "fee_percent": null,
+      "label": "Facture CIE / SODECI  de 200 à 2 000 F : 150 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE / SODECI bill, from 200 to 2,000 F: 150 F"
+      }
+    },
+    {
+      "id": "orange-fees-facture-cie-sodeci-2005-500000",
+      "operation": "other",
+      "min": 2005,
+      "max": 500000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Facture CIE / SODECI  de 2 005 à 500 000 F : 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE / SODECI bill, from 2,005 to 500,000 F: 200 F"
+      }
+    },
+    {
+      "id": "orange-fees-cie-prepaye-100-1000",
+      "operation": "other",
+      "min": 100,
+      "max": 1000,
+      "fee": 50,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 100 à 1 000 F : 50 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 100 to 1,000 F: 50 F"
+      }
+    },
+    {
+      "id": "orange-fees-cie-prepaye-1005-10000",
+      "operation": "other",
+      "min": 1005,
+      "max": 10000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 1 005 à 10 000 F : 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 1,005 to 10,000 F: 100 F"
+      }
+    },
+    {
+      "id": "orange-fees-cie-prepaye-10005-20000",
+      "operation": "other",
+      "min": 10005,
+      "max": 20000,
+      "fee": 150,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 10 005 à 20 000 F : 150 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 10,005 to 20,000 F: 150 F"
+      }
+    },
+    {
+      "id": "orange-fees-cie-prepaye-20005-500000",
+      "operation": "other",
+      "min": 20005,
+      "max": 500000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 20 005 à 500 000 F : 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 20,005 to 500,000 F: 200 F"
+      }
+    },
+    {
+      "id": "orange-fees-duplicata-cie-sodeci",
+      "operation": "other",
+      "min": 0,
+      "max": null,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Duplicata de facture CIE ou SODECI : 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE or SODECI invoice duplicate: 100 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-100-10000",
+      "operation": "withdrawal",
+      "min": 100,
+      "max": 10000,
+      "fee": 300,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 100 à 10 000 F : 300 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Intitulé de la page : « Grille France (frais de retraits) ».",
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 100 to 10,000 F: 300 F",
+        "notes": "Page heading: \"France grid (withdrawal fees)\"."
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-10001-25000",
+      "operation": "withdrawal",
+      "min": 10001,
+      "max": 25000,
+      "fee": 600,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 10 001 à 25 000 F : 600 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 10,001 to 25,000 F: 600 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-25001-50000",
+      "operation": "withdrawal",
+      "min": 25001,
+      "max": 50000,
+      "fee": 1000,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 25 001 à 50 000 F : 1 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 25,001 to 50,000 F: 1,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-50001-75000",
+      "operation": "withdrawal",
+      "min": 50001,
+      "max": 75000,
+      "fee": 1250,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 50 001 à 75 000 F : 1 250 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 50,001 to 75,000 F: 1,250 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-75001-100000",
+      "operation": "withdrawal",
+      "min": 75001,
+      "max": 100000,
+      "fee": 1500,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 75 001 à 100 000 F : 1 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 75,001 to 100,000 F: 1,500 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-100001-150000",
+      "operation": "withdrawal",
+      "min": 100001,
+      "max": 150000,
+      "fee": 2100,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 100 001 à 150 000 F : 2 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 100,001 to 150,000 F: 2,100 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-150001-250000",
+      "operation": "withdrawal",
+      "min": 150001,
+      "max": 250000,
+      "fee": 3200,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 150 001 à 250 000 F : 3 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 150,001 to 250,000 F: 3,200 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-250001-600000",
+      "operation": "withdrawal",
+      "min": 250001,
+      "max": 600000,
+      "fee": 7000,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 250 001 à 600 000 F : 7 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 250,001 to 600,000 F: 7,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-france-600001-1500000",
+      "operation": "withdrawal",
+      "min": 600001,
+      "max": 1500000,
+      "fee": 15000,
+      "fee_percent": null,
+      "label": "Retrait d'un transfert venu de France  de 600 001 à 1 500 000 F : 15 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal of a transfer from France, from 600,001 to 1,500,000 F: 15,000 F"
+      }
+    }
+  ]
+}

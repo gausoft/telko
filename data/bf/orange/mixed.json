@@ -1,0 +1,362 @@
+{
+  "operator": "orange",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "orange-mixed-pass-mix-126",
+      "kind": "bundle",
+      "name": "Pass Mix 126",
+      "description": "5 min, 5 SMS et 10 Mo pendant 1 jour.",
+      "price": 126,
+      "allowances": {
+        "data_mb": 10,
+        "voice_min": 5,
+        "sms": 5
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*120#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Mix 126",
+        "description": "5 min, 5 SMS and 10 MB for 1 day."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-mix-420",
+      "kind": "bundle",
+      "name": "Pass Mix 420",
+      "description": "30 min, 20 SMS et 20 Mo pendant 1 jour.",
+      "price": 420,
+      "allowances": {
+        "data_mb": 20,
+        "voice_min": 30,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*400#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Mix 420",
+        "description": "30 min, 20 SMS and 20 MB for 1 day."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-mix-1575",
+      "kind": "bundle",
+      "name": "Pass Mix 1575",
+      "description": "120 min, 120 SMS et 120 Mo pendant 7 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": 120,
+        "voice_min": 120,
+        "sms": 120
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*1500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Mix 1575",
+        "description": "120 min, 120 SMS and 120 MB for 7 days."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-mix-tous-reseaux-237",
+      "kind": "bundle",
+      "name": "Pass Mix tous réseaux 237",
+      "description": "10 min, 15 SMS et 40 Mo vers tous les réseaux, 1 jour.",
+      "price": 237,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": 10,
+        "sms": 15
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*225#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Mix tous réseaux 237",
+        "description": "10 min, 15 SMS and 40 MB to all networks, 1 day."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-mix-tous-reseaux-552",
+      "kind": "bundle",
+      "name": "Pass Mix tous réseaux 552",
+      "description": "30 min, 60 SMS et 100 Mo vers tous les réseaux, 3 jours.",
+      "price": 552,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 30,
+        "sms": 60
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*525#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Mix tous réseaux 552",
+        "description": "30 min, 60 SMS and 100 MB to all networks, 3 days."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-naafa-60",
+      "kind": "bundle",
+      "name": "Pass NAAFA 60 min",
+      "description": "60 min, 100 SMS et 500 Mo pendant 5 jours.",
+      "price": 1575,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 60,
+        "sms": 100
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*106*15*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "naafa"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass NAAFA 60 min",
+        "description": "60 min, 100 SMS and 500 MB for 5 days."
+      }
+    },
+    {
+      "id": "orange-mixed-pass-mix-illimite-500",
+      "kind": "bundle",
+      "name": "Pass Mix Illimité 500",
+      "description": "Appels gratuits vers Orange et internet illimité de 13h à 18h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": -1,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Plage de 13h à 18h",
+        "en": {
+          "label": "13:00 to 18:00 window"
+        }
+      },
+      "time_window": {
+        "from": "13:00",
+        "to": "18:00"
+      },
+      "ussd": {
+        "template": "*206#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "mixte",
+        "illimité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/burkina_pages/uploads/1/other/CANEVAS_catalogue_offres_commerciales_detail_reseaux_mobiles.pdf",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le catalogue cite aussi une version à 250 F de 16h à 18h avec le même code, non reprise séparément.",
+      "en": {
+        "name": "Pass Mix Illimité 500",
+        "description": "Free calls to Orange and unlimited internet from 13:00 to 18:00.",
+        "notes": "The catalogue also mentions a 250 F version from 16:00 to 18:00 with the same code, not listed separately."
+      }
+    }
+  ]
+}

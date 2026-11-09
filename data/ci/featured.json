@@ -1,0 +1,15 @@
+{
+  "country": "ci",
+  "updated": "2026-11-09",
+  "items": [],
+  "shortcuts": [
+    {
+      "entry_id": "moov-general-connaitre-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    }
+  ]
+}

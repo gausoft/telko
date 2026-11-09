@@ -1,0 +1,1183 @@
+{
+  "operator": "mtn",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "mtn-internet-pack-200",
+      "kind": "bundle",
+      "name": "Pack internet 200 F",
+      "description": "220 Mo valables 2 jours.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 220,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 200 F",
+        "description": "220 MB valid 2 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-300",
+      "kind": "bundle",
+      "name": "Pack internet 300 F",
+      "description": "400 Mo valables 3 jours.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 300 F",
+        "description": "400 MB valid 3 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-400",
+      "kind": "bundle",
+      "name": "Pack internet 400 F",
+      "description": "450 Mo valables 3 jours.",
+      "price": 400,
+      "allowances": {
+        "data_mb": 450,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 400 F",
+        "description": "450 MB valid 3 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-500",
+      "kind": "bundle",
+      "name": "Pack internet 500 F",
+      "description": "750 Mo valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 500 F",
+        "description": "750 MB valid 3 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-1000",
+      "kind": "bundle",
+      "name": "Pack internet 1 000 F",
+      "description": "1,5 Go valables 5 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 1,000 F",
+        "description": "1.5 GB valid 5 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-1500",
+      "kind": "bundle",
+      "name": "Pack internet 1 500 F",
+      "description": "2,2 Go valables 10 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 2253,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 1,500 F",
+        "description": "2.2 GB valid 10 days.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-2000",
+      "kind": "bundle",
+      "name": "Pack internet 2 000 F",
+      "description": "3 Go valables 30 jours, avec MTN TV.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 2,000 F",
+        "description": "3 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-2500",
+      "kind": "bundle",
+      "name": "Pack internet 2 500 F",
+      "description": "3,7 Go valables 30 jours, avec MTN TV.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 3789,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 2,500 F",
+        "description": "3.7 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-5000",
+      "kind": "bundle",
+      "name": "Pack internet 5 000 F",
+      "description": "7,4 Go valables 30 jours, avec MTN TV.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 7578,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 5,000 F",
+        "description": "7.4 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-10000",
+      "kind": "bundle",
+      "name": "Pack internet 10 000 F",
+      "description": "20 Go valables 30 jours, avec MTN TV.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 10,000 F",
+        "description": "20 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-15000",
+      "kind": "bundle",
+      "name": "Pack internet 15 000 F",
+      "description": "30 Go valables 30 jours, avec MTN TV.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 15,000 F",
+        "description": "30 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-pack-20000",
+      "kind": "bundle",
+      "name": "Pack internet 20 000 F",
+      "description": "45 Go valables 30 jours, avec MTN TV.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 46080,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pack"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du menu des packs internet. Le tableau de la page a une colonne « Facebook & WhatsApp inclus » dont les valeurs ne sont pas lisibles. Volume converti à 1 024 Mo par Go.",
+      "en": {
+        "name": "Internet pack 20,000 F",
+        "description": "45 GB valid 30 days, with MTN TV.",
+        "notes": "Code of the internet packs menu. The page table has a \"Facebook & WhatsApp included\" column whose values are not readable. Volume converted at 1,024 MB per GB."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-200",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 200 F",
+      "description": "650 Mo valables 1 jour.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 650,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 200 F",
+        "description": "650 MB valid 1 day.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-300",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 300 F",
+      "description": "900 Mo valables 1 jour.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 900,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 300 F",
+        "description": "900 MB valid 1 day.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-1000",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 1 000 F",
+      "description": "4 Go valables 7 jours, avec Facebook et WhatsApp illimités de 23 h à 7 h.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 1,000 F",
+        "description": "4 GB valid 7 days, with unlimited Facebook and WhatsApp from 23:00 to 07:00.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-1500",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 1 500 F",
+      "description": "6 Go valables 7 jours, avec Facebook et WhatsApp illimités de 23 h à 7 h.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 1,500 F",
+        "description": "6 GB valid 7 days, with unlimited Facebook and WhatsApp from 23:00 to 07:00.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-2500",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 2 500 F",
+      "description": "10 Go valables 10 jours, avec Facebook et WhatsApp illimités.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 2,500 F",
+        "description": "10 GB valid 10 days, with unlimited Facebook and WhatsApp.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-10000",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 10 000 F",
+      "description": "40 Go valables 15 jours, avec Facebook et WhatsApp illimités.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 40960,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne le menu *500# : le pack se choisit dans le menu (option 1).",
+      "en": {
+        "name": "C'Chic internet pack 10,000 F",
+        "description": "40 GB valid 15 days, with unlimited Facebook and WhatsApp.",
+        "notes": "The page gives the *500# menu: you pick the pack in the menu (option 1)."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-500",
+      "kind": "bundle",
+      "name": "Pack C'Chic internet 500 F",
+      "description": "Pack internet avec 25 SMS, valable 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": null,
+        "sms": 25
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "c'chic",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La liste de la page annonce 2 Go, son tableau 1,5 Go : volume non publié ici, à vérifier.",
+      "en": {
+        "name": "C'Chic internet pack 500 F",
+        "description": "Internet pack with 25 SMS, valid 3 days.",
+        "notes": "The page list says 2 GB, its table says 1.5 GB: volume not listed here, to be checked."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-tiktok-300",
+      "kind": "bundle",
+      "name": "Pack TikTok 300 F",
+      "description": "1 Go valable 3 jours, utilisable sur TikTok.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "tiktok"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.ci/deal/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne « *500*1# puis 5 » pour y accéder.",
+      "en": {
+        "name": "TikTok pack 300 F",
+        "description": "1 GB valid 3 days, usable on TikTok.",
+        "notes": "The page gives \"*500*1# then 5\" to reach it."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-reseaux-sociaux-300",
+      "kind": "bundle",
+      "name": "Réseaux sociaux 24 h 300 F",
+      "description": "10 Mo + 24 h de connexion illimitée sur WhatsApp, Facebook, Twitter, Snapchat, Viber, Instagram et YouTube.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 10,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "réseaux sociaux"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 1.",
+      "en": {
+        "name": "Social networks 24 h 300 F",
+        "description": "10 MB + 24 h of unlimited connection on WhatsApp, Facebook, Twitter, Snapchat, Viber, Instagram and YouTube.",
+        "notes": "In the *500# menu: option 1."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-reseaux-sociaux-500",
+      "kind": "bundle",
+      "name": "Réseaux sociaux 48 h 500 F",
+      "description": "10 Mo + 48 h de connexion illimitée sur WhatsApp, Facebook, Twitter, Snapchat, Viber, Instagram et YouTube.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 10,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "réseaux sociaux"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 1.",
+      "en": {
+        "name": "Social networks 48 h 500 F",
+        "description": "10 MB + 48 h of unlimited connection on WhatsApp, Facebook, Twitter, Snapchat, Viber, Instagram and YouTube.",
+        "notes": "In the *500# menu: option 1."
+      }
+    },
+    {
+      "id": "mtn-internet-cchic-nuit-200",
+      "kind": "bundle",
+      "name": "Pack internet nuit 200 F",
+      "description": "2 Go + 30 min d'appels locaux, de 23 h à 7 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 1.",
+      "en": {
+        "name": "Night internet pack 200 F",
+        "description": "2 GB + 30 min of local calls, from 23:00 to 07:00.",
+        "notes": "In the *500# menu: option 1."
+      }
+    }
+  ]
+}

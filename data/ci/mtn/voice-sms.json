@@ -1,0 +1,499 @@
+{
+  "operator": "mtn",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "mtn-voice-sms-appels-illimites-300",
+      "kind": "bundle",
+      "name": "Pack appels illimités 300 F",
+      "description": "appels illimités, valable jusqu'à minuit.",
+      "price": 300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Jusqu'à minuit",
+        "en": {
+          "label": "Until midnight"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9.",
+      "en": {
+        "name": "Unlimited calls pack 300 F",
+        "description": "unlimited calls, valid until midnight.",
+        "notes": "Code: *105*1# then option 9."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-appels-illimites-1000",
+      "kind": "bundle",
+      "name": "Pack appels illimités 1 000 F",
+      "description": "appels illimités + 500 Mo, valable 3 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 512,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9. Le volume de 1 000 F est lu « 500 Mo » sur la page.",
+      "en": {
+        "name": "Unlimited calls pack 1,000 F",
+        "description": "unlimited calls + 500 MB, valid 3 days.",
+        "notes": "Code: *105*1# then option 9. The 1,000 F volume is read as \"500 MB\" on the page."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-appels-illimites-3000",
+      "kind": "bundle",
+      "name": "Pack appels illimités 3 000 F",
+      "description": "appels illimités + 1,5 Go, valable 7 jours.",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9.",
+      "en": {
+        "name": "Unlimited calls pack 3,000 F",
+        "description": "unlimited calls + 1.5 GB, valid 7 days.",
+        "notes": "Code: *105*1# then option 9."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-appels-illimites-10000",
+      "kind": "bundle",
+      "name": "Pack appels illimités 10 000 F",
+      "description": "appels illimités + 300 SMS + 10 Go, valable 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": -1,
+        "sms": 300
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9.",
+      "en": {
+        "name": "Unlimited calls pack 10,000 F",
+        "description": "unlimited calls + 300 SMS + 10 GB, valid 30 days.",
+        "notes": "Code: *105*1# then option 9."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-appels-illimites-15000",
+      "kind": "bundle",
+      "name": "Pack appels illimités 15 000 F",
+      "description": "appels illimités + 500 SMS + 15 Go, valable 30 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 15360,
+        "voice_min": -1,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9.",
+      "en": {
+        "name": "Unlimited calls pack 15,000 F",
+        "description": "unlimited calls + 500 SMS + 15 GB, valid 30 days.",
+        "notes": "Code: *105*1# then option 9."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-appels-illimites-500",
+      "kind": "bundle",
+      "name": "Pack appels illimités 500 F",
+      "description": "Pack appels valable 1 jour.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*105*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/packs-appels-illimites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code : *105*1# puis option 9. La colonne « Appels » indique seulement « 1 jour » : contenu non précisé, à vérifier.",
+      "en": {
+        "name": "Unlimited calls pack 500 F",
+        "description": "Calls pack valid 1 day.",
+        "notes": "Code: *105*1# then option 9. The \"Calls\" column only says \"1 day\": content not specified, to be checked."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-cchic-nuit-dimanche-200",
+      "kind": "bundle",
+      "name": "Pack appel nuit et dimanche 200 F",
+      "description": "10 min tous réseaux + appels illimités vers les numéros complices le dimanche.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels",
+        "c'chic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 2. Validité non précisée.",
+      "en": {
+        "name": "Night and Sunday call pack 200 F",
+        "description": "10 min all networks + unlimited calls to buddy numbers on Sunday.",
+        "notes": "In the *500# menu: option 2. Validity not specified."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-cchic-illimite-complice-300",
+      "kind": "bundle",
+      "name": "Pack illimité complice (jour) 300 F",
+      "description": "Appels gratuits 24 h/24 vers vos numéros complices pendant 1 jour.",
+      "price": 300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "complices",
+        "c'chic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 2.",
+      "en": {
+        "name": "Unlimited buddy pack (day) 300 F",
+        "description": "Free calls 24/7 to your buddy numbers for 1 day.",
+        "notes": "In the *500# menu: option 2."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-cchic-illimite-complice-500",
+      "kind": "bundle",
+      "name": "Pack illimité complice (semaine) 500 F",
+      "description": "Appels gratuits 24 h/24 vers vos numéros complices pendant 10 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "complices",
+        "c'chic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 2. Le « pack semaine » est annoncé pour 10 jours sur la page.",
+      "en": {
+        "name": "Unlimited buddy pack (week) 500 F",
+        "description": "Free calls 24/7 to your buddy numbers for 10 days.",
+        "notes": "In the *500# menu: option 2. The \"week pack\" is announced for 10 days on the page."
+      }
+    },
+    {
+      "id": "mtn-voice-sms-cchic-illimite-complice-1000",
+      "kind": "bundle",
+      "name": "Pack illimité complice (mois) 1 000 F",
+      "description": "Appels gratuits 24 h/24 vers vos numéros complices pendant 30 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "appels illimités",
+        "complices",
+        "c'chic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu *500# : option 2.",
+      "en": {
+        "name": "Unlimited buddy pack (month) 1 000 F",
+        "description": "Free calls 24/7 to your buddy numbers for 30 days.",
+        "notes": "In the *500# menu: option 2."
+      }
+    }
+  ]
+}

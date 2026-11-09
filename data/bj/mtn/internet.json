@@ -1,0 +1,568 @@
+{
+  "operator": "mtn",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "mtn-internet-forfait-internet-100",
+      "kind": "bundle",
+      "name": "Forfait Internet 100 F",
+      "description": "166 Mo valables 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 166,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le volume vient de la fiche détaillée du forfait ; la page affiche parfois un arrondi en Go.",
+      "en": {
+        "name": "Internet bundle 100 F",
+        "description": "166 MB valid 24 h.",
+        "notes": "The volume comes from the bundle's detail sheet; the page sometimes shows a rounded GB figure."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-200",
+      "kind": "bundle",
+      "name": "Forfait Internet 200 F",
+      "description": "333 Mo valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 333,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le volume vient de la fiche détaillée du forfait ; la page affiche parfois un arrondi en Go.",
+      "en": {
+        "name": "Internet bundle 200 F",
+        "description": "333 MB valid 24 h.",
+        "notes": "The volume comes from the bundle's detail sheet; the page sometimes shows a rounded GB figure."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-300",
+      "kind": "bundle",
+      "name": "Forfait Internet 300 F",
+      "description": "500 Mo valables 24 h avec WhatsApp gratuit.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 300 F",
+        "description": "500 MB valid 24 h with free WhatsApp.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-500",
+      "kind": "bundle",
+      "name": "Forfait Internet 500 F",
+      "description": "1 Go valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 500 F",
+        "description": "1 GB valid 24 h.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-750",
+      "kind": "bundle",
+      "name": "Forfait Internet 750 F",
+      "description": "1 Go valables 2 jours.",
+      "price": 750,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 750 F",
+        "description": "1 GB valid 2 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-1000",
+      "kind": "bundle",
+      "name": "Forfait Internet 1 000 F",
+      "description": "850 Mo valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 850,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La fiche détaillée donne 850 Mo ; le code d'activation est le menu des offres, le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Internet bundle 1 000 F",
+        "description": "850 MB valid 7 days.",
+        "notes": "The detail sheet gives 850 MB; the activation code is the offers menu, you pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-2500",
+      "kind": "bundle",
+      "name": "Forfait Internet 2 500 F",
+      "description": "4,07 Go valables 15 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 4168,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 2 500 F",
+        "description": "4.07 GB valid 15 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-5000",
+      "kind": "bundle",
+      "name": "Forfait Internet 5 000 F",
+      "description": "8,14 Go valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 8335,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 5 000 F",
+        "description": "8.14 GB valid 30 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-15000",
+      "kind": "bundle",
+      "name": "Forfait Internet 15 000 F",
+      "description": "24,4 Go valables 30 jours.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 24986,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 15 000 F",
+        "description": "24.4 GB valid 30 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-20000",
+      "kind": "bundle",
+      "name": "Forfait Internet 20 000 F",
+      "description": "32,5 Go valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 33280,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 20 000 F",
+        "description": "32.5 GB valid 30 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    },
+    {
+      "id": "mtn-internet-forfait-internet-25000",
+      "kind": "bundle",
+      "name": "Forfait Internet 25 000 F",
+      "description": "40,7 Go valables 30 jours.",
+      "price": 25000,
+      "allowances": {
+        "data_mb": 41677,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-internet/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code d'activation : menu des offres, le forfait se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Internet bundle 25 000 F",
+        "description": "40.7 GB valid 30 days.",
+        "notes": "Activation code: the offers menu, you pick the bundle in the operator's menu."
+      }
+    }
+  ]
+}

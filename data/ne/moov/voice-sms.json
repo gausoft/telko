@@ -1,0 +1,886 @@
+{
+  "operator": "moov",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "moov-voice-sms-flex-50",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 50 F",
+      "description": "8 min tous réseaux et 8 SMS vers Moov, 24 h.",
+      "price": 50,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 8,
+        "sms": 8
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*1*7*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Activation possible aussi en envoyant 50 par SMS au 2930.",
+      "en": {
+        "name": "Moov Flex bundle 50 F",
+        "description": "8 min to all networks and 8 SMS to Moov, 24 h.",
+        "notes": "Can also be activated by sending 50 by SMS to 2930."
+      }
+    },
+    {
+      "id": "moov-voice-sms-flex-100",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 100 F",
+      "description": "16 min tous réseaux et 32 SMS vers Moov Africa, 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 16,
+        "sms": 32
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*1*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moov Flex bundle 100 F",
+        "description": "16 min to all networks and 32 SMS to Moov Africa, 24 h."
+      }
+    },
+    {
+      "id": "moov-voice-sms-flex-200",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 200 F",
+      "description": "32 min tous réseaux, 15 min vers Moov et 80 SMS vers Moov Africa, 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 32,
+        "sms": 80
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code est publié tel quel, avec une étape de moins que les autres offres Flex : à vérifier sur un téléphone.",
+      "en": {
+        "name": "Moov Flex bundle 200 F",
+        "description": "32 min to all networks, 15 min to Moov and 80 SMS to Moov Africa, 24 h.",
+        "notes": "The code is published as is, with one step fewer than the other Flex offers: to check on a phone."
+      }
+    },
+    {
+      "id": "moov-voice-sms-flex-300",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 300 F",
+      "description": "50 min tous réseaux, 15 min vers Moov et 120 SMS vers Moov Africa, 24 h.",
+      "price": 300,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": 120
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*1*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moov Flex bundle 300 F",
+        "description": "50 min to all networks, 15 min to Moov and 120 SMS to Moov Africa, 24 h."
+      }
+    },
+    {
+      "id": "moov-voice-sms-flex-500",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 500 F",
+      "description": "75 min tous réseaux, 25 min et 150 SMS vers Moov Africa, 7 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 75,
+        "sms": 150
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*1*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne précise pas à quel réseau s'appliquent les 25 min en plus.",
+      "en": {
+        "name": "Moov Flex bundle 500 F",
+        "description": "75 min to all networks, 25 min and 150 SMS to Moov Africa, 7 days.",
+        "notes": "The page does not say which network the extra 25 min apply to."
+      }
+    },
+    {
+      "id": "moov-voice-sms-flex-1000",
+      "kind": "bundle",
+      "name": "Forfait Moov Flex 1 000 F",
+      "description": "200 min tous réseaux, 50 min et 220 SMS vers Moov Africa, 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 200,
+        "sms": 220
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*1*1*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov flex",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-flex/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne précise pas à quel réseau s'appliquent les 50 min en plus.",
+      "en": {
+        "name": "Moov Flex bundle 1 000 F",
+        "description": "200 min to all networks, 50 min and 220 SMS to Moov Africa, 7 days.",
+        "notes": "The page does not say which network the extra 50 min apply to."
+      }
+    },
+    {
+      "id": "moov-voice-sms-nuit-100",
+      "kind": "bundle",
+      "name": "Forfait Nuit 100 F",
+      "description": "125 min vers Moov Africa Niger, de 22h à 5h, pendant 1 nuit.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 125,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 nuit",
+        "en": {
+          "label": "1 night"
+        }
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*515*4*1*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nuit",
+        "appels",
+        "moov"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-nuits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Night bundle 100 F",
+        "description": "125 min to Moov Africa Niger, from 10 pm to 5 am, for 1 night."
+      }
+    },
+    {
+      "id": "moov-voice-sms-nuit-200",
+      "kind": "bundle",
+      "name": "Forfait Nuit 200 F",
+      "description": "280 min vers Moov Africa Niger, de 22h à 5h, pendant 1 nuit.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 280,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 nuit",
+        "en": {
+          "label": "1 night"
+        }
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*515*4*1*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nuit",
+        "appels",
+        "moov"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-nuits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Night bundle 200 F",
+        "description": "280 min to Moov Africa Niger, from 10 pm to 5 am, for 1 night."
+      }
+    },
+    {
+      "id": "moov-voice-sms-nuit-500",
+      "kind": "bundle",
+      "name": "Forfait Nuit 500 F",
+      "description": "850 min vers Moov Africa Niger, de 22h à 5h, pendant 7 nuits.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 850,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 nuits",
+        "en": {
+          "label": "7 nights"
+        }
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*515*4*1*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nuit",
+        "appels",
+        "moov"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-nuits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Night bundle 500 F",
+        "description": "850 min to Moov Africa Niger, from 10 pm to 5 am, for 7 nights."
+      }
+    },
+    {
+      "id": "moov-voice-sms-nuit-1500",
+      "kind": "bundle",
+      "name": "Forfait Nuit 1 500 F",
+      "description": "3 500 min vers Moov Africa Niger, de 22h à 5h, pendant 30 nuits.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 3500,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 nuits",
+        "en": {
+          "label": "30 nights"
+        }
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "05:00"
+      },
+      "ussd": {
+        "template": "*515*4*1*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nuit",
+        "appels",
+        "moov"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-nuits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Night bundle 1 500 F",
+        "description": "3,500 min to Moov Africa Niger, from 10 pm to 5 am, for 30 nights."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-50",
+      "kind": "bundle",
+      "name": "Moov Garabassa 50 F",
+      "description": "15 min et 15 SMS vers Moov, 24 h.",
+      "price": 50,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 15
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*1*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 50 F",
+        "description": "15 min and 15 SMS to Moov, 24 h.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-100",
+      "kind": "bundle",
+      "name": "Moov Garabassa 100 F",
+      "description": "35 min et 70 SMS vers Moov, 24 h.",
+      "price": 100,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 35,
+        "sms": 70
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 100 F",
+        "description": "35 min and 70 SMS to Moov, 24 h.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-200",
+      "kind": "bundle",
+      "name": "Moov Garabassa 200 F",
+      "description": "75 min et 150 SMS vers Moov, 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 75,
+        "sms": 150
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 200 F",
+        "description": "75 min and 150 SMS to Moov, 24 h.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-500",
+      "kind": "bundle",
+      "name": "Moov Garabassa 500 F",
+      "description": "160 min et 320 SMS vers Moov, 72 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 160,
+        "sms": 320
+      },
+      "validity": {
+        "days": 3,
+        "label": "72 h",
+        "en": {
+          "label": "72 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*4*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 500 F",
+        "description": "160 min and 320 SMS to Moov, 72 h.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-1000",
+      "kind": "bundle",
+      "name": "Moov Garabassa 1 000 F",
+      "description": "400 min et 800 SMS vers Moov, 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 400,
+        "sms": 800
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*5*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 1 000 F",
+        "description": "400 min and 800 SMS to Moov, 7 days.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-1500",
+      "kind": "bundle",
+      "name": "Moov Garabassa 1 500 F",
+      "description": "600 min et 1 200 SMS vers Moov, 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 600,
+        "sms": 1200
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 1 500 F",
+        "description": "600 min and 1,200 SMS to Moov, 7 days.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    },
+    {
+      "id": "moov-voice-sms-garabassa-5000",
+      "kind": "bundle",
+      "name": "Moov Garabassa 5 000 F",
+      "description": "1 500 min et 3 000 SMS vers Moov, 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 1500,
+        "sms": 3000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*5*1*7*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "garabassa",
+        "famille moov",
+        "appels",
+        "sms"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-garabassa/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offre réservée aux abonnés Moov « Famille » ; la page renvoie au 888 pour plus d'informations.",
+      "en": {
+        "name": "Moov Garabassa 5 000 F",
+        "description": "1,500 min and 3,000 SMS to Moov, 30 days.",
+        "notes": "Offer for Moov \"Famille\" subscribers; the page points to 888 for more information."
+      }
+    }
+  ]
+}

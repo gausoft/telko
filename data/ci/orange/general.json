@@ -1,0 +1,45 @@
+{
+  "operator": "orange",
+  "category": "general",
+  "entries": [
+    {
+      "id": "orange-general-changer-profil",
+      "kind": "service",
+      "name": "Changer de profil mobile",
+      "description": "Passer d'un profil mobile Orange à un autre.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "profil"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/les-profils-mobile.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page indique que les migrations entre profils sont possibles et de suivre les instructions.",
+      "en": {
+        "name": "Change mobile profile",
+        "description": "Switch from one Orange mobile profile to another.",
+        "notes": "The page says migrations between profiles are possible and to follow the instructions."
+      }
+    }
+  ]
+}

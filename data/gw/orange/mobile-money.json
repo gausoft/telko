@@ -1,0 +1,278 @@
+{
+  "operator": "orange",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "orange-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Orange Money",
+      "description": "Menu principal d'Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/apresentacao-do-servico-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/como-funciona-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu. Code secret par défaut 0000 à changer. Solde, dernières opérations et transfert international se choisissent dans le menu.",
+      "en": {
+        "name": "Orange Money menu",
+        "description": "Main menu of Orange Money.",
+        "notes": "The PIN is typed in the menu. Default PIN 0000 must be changed. Balance, last transactions and international transfer are chosen in the menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-transfert",
+      "kind": "service",
+      "name": "Transfert d'argent",
+      "description": "Envoyer de l'argent à un autre compte Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#1*1*{phone}*{amount}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            },
+            "min": 500,
+            "max": 1500000
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "envoyer",
+        "argent"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/apresentacao-do-servico-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/como-funciona-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit à l'écran. La page du simulateur écrit #144#6*1# pour le transfert national : à vérifier. Frais : voir la grille.",
+      "en": {
+        "name": "Money transfer",
+        "description": "Send money to another Orange Money account.",
+        "notes": "The PIN is typed on screen. The simulator page writes #144#6*1# for national transfer: to be checked. Fees: see the table."
+      }
+    },
+    {
+      "id": "orange-mobile-money-gestion-compte",
+      "kind": "service",
+      "name": "Gestion du compte",
+      "description": "Menu de gestion du compte Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#5#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "compte",
+        "gestion"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-money/gestao-deconta.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Account management",
+        "description": "Orange Money account management menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-changer-code",
+      "kind": "service",
+      "name": "Changer le code secret",
+      "description": "Modifier le code secret Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#51#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "code secret",
+        "sécurité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-money/gestao-deconta.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret actuel et le nouveau se saisissent à l'écran.",
+      "en": {
+        "name": "Change the PIN",
+        "description": "Change your Orange Money PIN.",
+        "notes": "The current and new PINs are typed on screen."
+      }
+    },
+    {
+      "id": "orange-mobile-money-langue",
+      "kind": "service",
+      "name": "Changer la langue",
+      "description": "Changer la langue du menu Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#54#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "langue"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-money/gestao-deconta.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Change language",
+        "description": "Change the language of the Orange Money menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-virement-banque",
+      "kind": "service",
+      "name": "Transfert vers une banque",
+      "description": "Envoyer de l'argent vers un compte bancaire partenaire.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#6#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "banque",
+        "virement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-para-contas-bancarias.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Banques partenaires citées : Banco da União, Banque Atlantique, Orabank.",
+      "en": {
+        "name": "Transfer to a bank",
+        "description": "Send money to a partner bank account.",
+        "notes": "Partner banks listed: Banco da União, Banque Atlantique, Orabank."
+      }
+    }
+  ]
+}

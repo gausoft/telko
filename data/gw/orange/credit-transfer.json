@@ -1,0 +1,185 @@
+{
+  "operator": "orange",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "orange-credit-solde",
+      "kind": "service",
+      "name": "Solde et consommation",
+      "description": "Consulter votre solde et votre consommation.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#123#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "consommation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Balance and usage",
+        "description": "Check your balance and usage."
+      }
+    },
+    {
+      "id": "orange-credit-djudan-saldo",
+      "kind": "service",
+      "name": "Djudan na Saldo",
+      "description": "Emprunter du crédit, à rembourser à la prochaine recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*520*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "avance",
+        "crédit",
+        "djudan"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/djudan-na-saldo.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne *520*montant# dans l'en-tête mais *120*montant# dans le détail : à vérifier. Conditions : au moins 40 F sur le compte principal et une SIM de plus de 3 mois.",
+      "en": {
+        "name": "Djudan na Saldo",
+        "description": "Borrow airtime, repaid at your next top-up.",
+        "notes": "The page gives *520*amount# in the header but *120*amount# in the details: to be checked. Conditions: at least 40 F on the main account and a SIM older than 3 months."
+      }
+    },
+    {
+      "id": "orange-credit-recharge-orange-money",
+      "kind": "service",
+      "name": "Recharger avec Orange Money",
+      "description": "Recharger votre propre numéro depuis Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#2*1*{amount}*1#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-money/compra-de-credito-telefonico.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-recarga/recargas.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Gratuit selon la page. Le code secret se saisit à l'écran, pas dans le lien. Autre voie : #144# puis 2 puis 1 dans le menu.",
+      "en": {
+        "name": "Top up with Orange Money",
+        "description": "Top up your own number from Orange Money.",
+        "notes": "Free according to the page. The PIN is typed on screen, not in the link. Other route: #144#, then 2, then 1 in the menu."
+      }
+    },
+    {
+      "id": "orange-credit-recharge-menu",
+      "kind": "service",
+      "name": "Recharge",
+      "description": "Menu de recharge Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "recharge",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-recarga/recargas.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Bonus affichés par la page : 5 000 F recharge donne 1 000 F de bonus, 10 000 F donne 2 000 F, 25 000 F donne 5 000 F ; 500 F et 1 000 F sans bonus. Recharge Tico-Tico dès 100 F. Code menu : le reste se choisit dans le menu.",
+      "en": {
+        "name": "Top-up",
+        "description": "Orange Money top-up menu.",
+        "notes": "Bonuses shown on the page: a 5,000 F top-up gives a 1,000 F bonus, 10,000 F gives 2,000 F, 25,000 F gives 5,000 F; 500 F and 1,000 F have no bonus. Tico-Tico top-up from 100 F. Menu code: you choose the rest in the menu."
+      }
+    }
+  ]
+}

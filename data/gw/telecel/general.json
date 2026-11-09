@@ -1,0 +1,49 @@
+{
+  "operator": "telecel",
+  "category": "general",
+  "entries": [
+    {
+      "id": "telecel-general-telezap",
+      "kind": "bundle",
+      "name": "TeleZap",
+      "description": "WhatsApp (texte, audio, image) gratuit pendant 7 jours, renouvelable.",
+      "price": 0,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*638*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "telezap",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://telecel.gw/telezap",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "TeleZap",
+        "description": "Free WhatsApp (text, audio, image) for 7 days, renewable."
+      }
+    }
+  ]
+}

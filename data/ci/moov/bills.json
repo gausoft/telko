@@ -1,0 +1,129 @@
+{
+  "operator": "moov",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "moov-bills-canal-iroko",
+      "kind": "service",
+      "name": "Réabonnement CANAL+ / IROKO+",
+      "description": "Reconduire votre abonnement CANAL+ / IROKO+ avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "facture",
+        "tv",
+        "canal-iroko"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/reabonnement-tv/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : taper 4 puis 3, puis choisir la rubrique.",
+      "en": {
+        "name": "CANAL+ / IROKO+ subscription renewal",
+        "description": "Renew your CANAL+ / IROKO+ subscription with Moov Money.",
+        "notes": "In the menu: press 4 then 3, then choose the option."
+      }
+    },
+    {
+      "id": "moov-bills-easy-tv",
+      "kind": "service",
+      "name": "Réabonnement EASY TV",
+      "description": "Reconduire votre abonnement EASY TV avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "facture",
+        "tv",
+        "easy-tv"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/reabonnement-tv/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : taper 4 puis 4, puis choisir la rubrique.",
+      "en": {
+        "name": "EASY TV subscription renewal",
+        "description": "Renew your EASY TV subscription with Moov Money.",
+        "notes": "In the menu: press 4 then 4, then choose the option."
+      }
+    },
+    {
+      "id": "moov-bills-startimes",
+      "kind": "service",
+      "name": "Réabonnement STARTIMES",
+      "description": "Reconduire votre abonnement STARTIMES avec Moov Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "facture",
+        "tv",
+        "startimes"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/reabonnement-tv/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : taper 4 puis 7, puis choisir la rubrique.",
+      "en": {
+        "name": "STARTIMES subscription renewal",
+        "description": "Renew your STARTIMES subscription with Moov Money.",
+        "notes": "In the menu: press 4 then 7, then choose the option."
+      }
+    }
+  ]
+}

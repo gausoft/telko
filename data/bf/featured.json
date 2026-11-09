@@ -1,0 +1,23 @@
+{
+  "country": "bf",
+  "updated": "2026-11-09",
+  "items": [],
+  "shortcuts": [
+    {
+      "entry_id": "orange-general-mon-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    },
+    {
+      "entry_id": "telecel-general-mon-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    }
+  ]
+}

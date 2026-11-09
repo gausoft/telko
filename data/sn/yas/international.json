@@ -1,0 +1,210 @@
+{
+  "operator": "yas",
+  "category": "international",
+  "entries": [
+    {
+      "id": "yas-international-illimax-international-990",
+      "kind": "bundle",
+      "name": "Illimax international 990 F",
+      "description": "5 minutes vers l'international et 250 Mo WhatsApp, valables 30 jours.",
+      "price": 990,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": 5,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "illimax",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes ne sont pas valables vers la Mauritanie, la Gambie, la Guinée Conakry, la Guinée-Bissau et le Mali. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax international 990 F",
+        "description": "5 international minutes and 250 Mo WhatsApp, valid 30 days.",
+        "notes": "Minutes are not valid to Mauritania, The Gambia, Guinea Conakry, Guinea-Bissau and Mali. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-international-illimax-international-1990",
+      "kind": "bundle",
+      "name": "Illimax international 1990 F",
+      "description": "10 minutes vers l'international et 500 Mo WhatsApp, valables 30 jours.",
+      "price": 1990,
+      "allowances": {
+        "data_mb": 500,
+        "voice_min": 10,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "illimax",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes ne sont pas valables vers la Mauritanie, la Gambie, la Guinée Conakry, la Guinée-Bissau et le Mali. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax international 1990 F",
+        "description": "10 international minutes and 500 Mo WhatsApp, valid 30 days.",
+        "notes": "Minutes are not valid to Mauritania, The Gambia, Guinea Conakry, Guinea-Bissau and Mali. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-international-illimax-international-2990",
+      "kind": "bundle",
+      "name": "Illimax international 2990 F",
+      "description": "15 minutes vers l'international et 750 Mo WhatsApp, valables 30 jours.",
+      "price": 2990,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": 15,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "illimax",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes ne sont pas valables vers la Mauritanie, la Gambie, la Guinée Conakry, la Guinée-Bissau et le Mali. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax international 2990 F",
+        "description": "15 international minutes and 750 Mo WhatsApp, valid 30 days.",
+        "notes": "Minutes are not valid to Mauritania, The Gambia, Guinea Conakry, Guinea-Bissau and Mali. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-international-illimax-international-4990",
+      "kind": "bundle",
+      "name": "Illimax international 4990 F",
+      "description": "25 minutes vers l'international et 1 Go WhatsApp, valables 30 jours.",
+      "price": 4990,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": 25,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "illimax",
+        "whatsapp"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes ne sont pas valables vers la Mauritanie, la Gambie, la Guinée Conakry, la Guinée-Bissau et le Mali. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Illimax international 4990 F",
+        "description": "25 international minutes and 1 Go WhatsApp, valid 30 days.",
+        "notes": "Minutes are not valid to Mauritania, The Gambia, Guinea Conakry, Guinea-Bissau and Mali. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

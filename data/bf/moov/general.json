@@ -1,0 +1,227 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-compat-4g",
+      "kind": "service",
+      "name": "Vérifier la compatibilité 4G",
+      "description": "Vérifier si votre carte SIM est compatible 4G.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*200*12#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "4g",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/internet-mobile/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Vérifier la compatibilité 4G",
+        "description": "Check whether your SIM card is 4G compatible."
+      }
+    },
+    {
+      "id": "moov-general-forfait-4g",
+      "kind": "service",
+      "name": "Souscrire un forfait 4G+",
+      "description": "Souscrire un forfait 4G+.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*200*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "4g",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/internet-mobile/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Souscrire un forfait 4G+",
+        "description": "Subscribe to a 4G+ bundle."
+      }
+    },
+    {
+      "id": "moov-general-kiosque",
+      "kind": "service",
+      "name": "Kiosque",
+      "description": "Ouvrir le kiosque de services Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*200#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Kiosque",
+        "description": "Open the Moov services kiosk."
+      }
+    },
+    {
+      "id": "moov-general-moov-sante",
+      "kind": "service",
+      "name": "Moov Santé",
+      "description": "Service Moov Santé.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*450#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "santé",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moov Santé",
+        "description": "Moov Health service."
+      }
+    },
+    {
+      "id": "moov-general-mon-statut",
+      "kind": "service",
+      "name": "Mon statut",
+      "description": "Service Mon statut.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*1226#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Mon statut",
+        "description": "My status service."
+      }
+    },
+    {
+      "id": "moov-general-pubs",
+      "kind": "service",
+      "name": "Messages publicitaires",
+      "description": "Activer ou couper la réception des messages publicitaires.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*444#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "publicité",
+        "réglage"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://moov-africa.bf/wp-content/uploads/2026/10/CATALOGUE-DES-OFFRES-22-10-2026.docx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Messages publicitaires",
+        "description": "Turn advertising messages on or off."
+      }
+    }
+  ]
+}

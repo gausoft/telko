@@ -1,0 +1,122 @@
+{
+  "operator": "celtiis",
+  "category": "general",
+  "entries": [
+    {
+      "id": "celtiis-general-menu-offres",
+      "kind": "service",
+      "name": "Menu des offres Celtiis",
+      "description": "Activer un forfait, un pass ou un service.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "forfait",
+        "activation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Celtiis offers menu",
+        "description": "Activate a bundle, a pass or a service.",
+        "notes": "You choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "celtiis-general-suivi-consommation",
+      "kind": "service",
+      "name": "Suivi de la consommation",
+      "description": "Consulter sa consommation et ses forfaits.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*104#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "consommation",
+        "suivi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Consumption check",
+        "description": "Check your consumption and bundles."
+      }
+    },
+    {
+      "id": "celtiis-general-suivi-pass-internet",
+      "kind": "service",
+      "name": "Suivi du Pass Internet",
+      "description": "Consulter la consommation de son Pass Internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*104*2*2*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "internet",
+        "pass internet",
+        "suivi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Internet Pass check",
+        "description": "Check your Internet Pass consumption."
+      }
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "operator": "moov",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "moov-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Moov Money",
+      "description": "Ouvrir le menu Moov Money : transfert, retrait, achat de crédit, factures.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/moov-money/achat-de-credits-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moov Money menu",
+        "description": "Open the Moov Money menu: transfer, withdrawal, airtime, bills."
+      }
+    },
+    {
+      "id": "moov-mobile-money-recharge-soi",
+      "kind": "service",
+      "name": "Recharger mon numéro avec Moov Money",
+      "description": "Acheter du crédit pour votre propre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/achat-de-credits-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : taper 1 (recharge d'unités) puis 1 (votre numéro).",
+      "en": {
+        "name": "Top up my number with Moov Money",
+        "description": "Buy airtime for your own Moov number.",
+        "notes": "In the menu: press 1 (airtime top-up) then 1 (your number)."
+      }
+    },
+    {
+      "id": "moov-mobile-money-recharge-tiers",
+      "kind": "service",
+      "name": "Recharger le numéro d'un proche",
+      "description": "Acheter du crédit pour un autre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "recharge",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/achat-de-credits-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : taper 1 puis 2, puis saisir le numéro et le montant.",
+      "en": {
+        "name": "Top up someone else's number",
+        "description": "Buy airtime for another Moov number.",
+        "notes": "In the menu: press 1 then 2, then enter the number and the amount."
+      }
+    },
+    {
+      "id": "moov-mobile-money-achat-forfaits",
+      "kind": "service",
+      "name": "Acheter un forfait avec Moov Money",
+      "description": "Acheter un forfait Izy heures+, internet, international ou Folie.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*9#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "moov money",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/moov-money/achat-de-credits-forfaits/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page des achats donne *159*9# : la même page et trois autres donnent *155*9#, retenu ici. À vérifier.",
+      "en": {
+        "name": "Buy a bundle with Moov Money",
+        "description": "Buy an Izy heures+, internet, international or Folie bundle.",
+        "notes": "The purchase page gives *159*9#: the same page and three others give *155*9#, kept here. To be checked."
+      }
+    },
+    {
+      "id": "moov-mobile-money-code-secret-numero-recuperation",
+      "kind": "service",
+      "name": "Code secret oublié : numéro de récupération",
+      "description": "Étape 1 : enregistrer le numéro qui recevra le code temporaire.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*6*6*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "code secret",
+        "réinitialisation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/auto-reinitialisation-code-secret-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Service gratuit, pour un solde de 5 000 F ou moins, 2 fois par jour et 5 fois par mois.",
+      "en": {
+        "name": "Forgotten secret code: recovery number",
+        "description": "Step 1: register the number that will receive the temporary code.",
+        "notes": "Free service, for a balance of 5,000 F or less, 2 times a day and 5 times a month."
+      }
+    },
+    {
+      "id": "moov-mobile-money-code-secret-code-temporaire",
+      "kind": "service",
+      "name": "Code secret oublié : code temporaire",
+      "description": "Étape 2 : générer un code temporaire envoyé par SMS.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*6*6*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "code secret",
+        "réinitialisation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/auto-reinitialisation-code-secret-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Forgotten secret code: temporary code",
+        "description": "Step 2: generate a temporary code sent by SMS."
+      }
+    },
+    {
+      "id": "moov-mobile-money-code-secret-reinitialiser",
+      "kind": "service",
+      "name": "Code secret oublié : nouveau code",
+      "description": "Étape 3 : choisir un nouveau code secret avec le code temporaire.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*155*6*6*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "code secret",
+        "réinitialisation"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/auto-reinitialisation-code-secret-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Forgotten secret code: new code",
+        "description": "Step 3: choose a new secret code using the temporary code."
+      }
+    }
+  ]
+}

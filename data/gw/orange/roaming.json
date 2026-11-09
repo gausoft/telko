@@ -1,0 +1,1043 @@
+{
+  "operator": "orange",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "orange-viagem-afrique-ouest-voix-1000",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest voix et SMS 1000 F",
+      "description": "5 min, 10 SMS, valables 3 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 5,
+        "sms": 10
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa voice and SMS 1000 F",
+        "description": "5 min, 10 SMS, valid 3 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-voix-2500",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest voix et SMS 2500 F",
+      "description": "15 min, 15 SMS, valables 3 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 15,
+        "sms": 15
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa voice and SMS 2500 F",
+        "description": "15 min, 15 SMS, valid 3 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-voix-9900",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest voix et SMS 9900 F",
+      "description": "60 min, 30 SMS, valables 7 jours.",
+      "price": 9900,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": 30
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa voice and SMS 9900 F",
+        "description": "60 min, 30 SMS, valid 7 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-voix-19900",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest voix et SMS 19900 F",
+      "description": "120 min, 60 SMS, valables 15 jours.",
+      "price": 19900,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 120,
+        "sms": 60
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa voice and SMS 19900 F",
+        "description": "120 min, 60 SMS, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-data-1000",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest internet 1000 F",
+      "description": "20 Mo, valables 3 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 20,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa internet 1000 F",
+        "description": "20 MB, valid 3 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-data-2500",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest internet 2500 F",
+      "description": "50 Mo, valables 3 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 50,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa internet 2500 F",
+        "description": "50 MB, valid 3 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-data-9900",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest internet 9900 F",
+      "description": "200 Mo, valables 7 jours.",
+      "price": 9900,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa internet 9900 F",
+        "description": "200 MB, valid 7 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-afrique-ouest-data-19900",
+      "kind": "bundle",
+      "name": "Viagem Afrique de l'Ouest internet 19900 F",
+      "description": "450 Mo, valables 15 jours.",
+      "price": 19900,
+      "allowances": {
+        "data_mb": 450,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "afrique de l'ouest",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-africa-ocidental.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem West Africa internet 19900 F",
+        "description": "450 MB, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-voix-5000",
+      "kind": "bundle",
+      "name": "Viagem Europe voix et SMS 5000 F",
+      "description": "8 min, 5 SMS, valables 5 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 8,
+        "sms": 5
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe voice and SMS 5000 F",
+        "description": "8 min, 5 SMS, valid 5 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-voix-10000",
+      "kind": "bundle",
+      "name": "Viagem Europe voix et SMS 10000 F",
+      "description": "16 min, 10 SMS, valables 15 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 16,
+        "sms": 10
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe voice and SMS 10000 F",
+        "description": "16 min, 10 SMS, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-voix-20000",
+      "kind": "bundle",
+      "name": "Viagem Europe voix et SMS 20000 F",
+      "description": "35 min, 20 SMS, valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 35,
+        "sms": 20
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe voice and SMS 20000 F",
+        "description": "35 min, 20 SMS, valid 30 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-data-5000",
+      "kind": "bundle",
+      "name": "Viagem Europe internet 5000 F",
+      "description": "10 Mo, valables 10 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 10,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe internet 5000 F",
+        "description": "10 MB, valid 10 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-data-10000",
+      "kind": "bundle",
+      "name": "Viagem Europe internet 10000 F",
+      "description": "20 Mo, valables 15 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 20,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe internet 10000 F",
+        "description": "20 MB, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-europe-data-20000",
+      "kind": "bundle",
+      "name": "Viagem Europe internet 20000 F",
+      "description": "40 Mo, valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 40,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "europe",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-europa.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Europe internet 20000 F",
+        "description": "40 MB, valid 30 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-cabo-verde-gambie-5000",
+      "kind": "bundle",
+      "name": "Viagem Cabo Verde et Gambie 5000 F",
+      "description": "10 min, 5 SMS, valables 10 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": 5
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cabo verde",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-cabo-verde.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Cabo Verde and Gambia 5000 F",
+        "description": "10 min, 5 SMS, valid 10 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-cabo-verde-gambie-10000",
+      "kind": "bundle",
+      "name": "Viagem Cabo Verde et Gambie 10000 F",
+      "description": "20 min, 10 SMS, valables 15 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": 10
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cabo verde",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-cabo-verde.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Cabo Verde and Gambia 10000 F",
+        "description": "20 min, 10 SMS, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-cabo-verde-gambie-20000",
+      "kind": "bundle",
+      "name": "Viagem Cabo Verde et Gambie 20000 F",
+      "description": "40 min, 20 SMS, valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 40,
+        "sms": 20
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "cabo verde",
+        "gambie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-cabo-verde.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Cabo Verde and Gambia 20000 F",
+        "description": "40 min, 20 SMS, valid 30 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-mauritanie-5000",
+      "kind": "bundle",
+      "name": "Viagem Mauritanie 5000 F",
+      "description": "10 min, 10 SMS, valables 10 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 10,
+        "sms": 10
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Mauritania 5000 F",
+        "description": "10 min, 10 SMS, valid 10 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-mauritanie-10000",
+      "kind": "bundle",
+      "name": "Viagem Mauritanie 10000 F",
+      "description": "20 min, 25 SMS, valables 15 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": 25
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Mauritania 10000 F",
+        "description": "20 min, 25 SMS, valid 15 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    },
+    {
+      "id": "orange-viagem-mauritanie-20000",
+      "kind": "bundle",
+      "name": "Viagem Mauritanie 20000 F",
+      "description": "50 min, 60 SMS, valables 30 jours.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 50,
+        "sms": 60
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#166#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mauritanie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-movel-orange-viagem/pass-mauritania.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code du portail Orange Viagem : le pass se choisit dans le menu. Consommation : #166# option 3. Pass Cabo Verde via #566#.",
+      "en": {
+        "name": "Viagem Mauritania 20000 F",
+        "description": "50 min, 60 SMS, valid 30 days.",
+        "notes": "Orange Viagem portal code: you pick the pass in the menu. Usage: #166# option 3. Cabo Verde pass via #566#."
+      }
+    }
+  ]
+}
