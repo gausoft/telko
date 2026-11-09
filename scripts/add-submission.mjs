@@ -55,7 +55,12 @@ function readArguments(args) {
 /** Reads the labelled lines of the endpoint message. */
 function parseMessage(text) {
   const lines = text.split('\n').map((l) => l.trim());
-  const field = (label) => lines.find((l) => l.startsWith(`${label} : `))?.slice(label.length + 3) ?? '';
+  const field = (label) => {
+    const found = lines.filter((l) => l.startsWith(`${label} : `));
+    if (found.length > 1) fail(`The message has several "${label}" lines: it was tampered with or pasted twice.`);
+
+    return found[0]?.slice(label.length + 3) ?? '';
+  };
   const head = lines.find((l) => /\([a-z]{2}\)$/.test(l)) ?? '';
   const [label, service] = head.replace(/\s*\([a-z]{2}\)$/, '').split(/,\s*(.*)/s);
   const message = {
