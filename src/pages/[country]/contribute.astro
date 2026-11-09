@@ -1,0 +1,11 @@
+---
+import Contribute from '../../views/Contribute.astro';
+import { settingsPaths } from '../../lib/routes';
+import type { SettingsProps } from '../../views/view-types';
+
+export const getStaticPaths = () => settingsPaths('fr');
+
+type Props = SettingsProps;
+---
+
+<Contribute {...Astro.props} />

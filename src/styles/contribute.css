@@ -1,0 +1,256 @@
+/* Contribution assistant: one question per screen, big targets, one action at the bottom. */
+.contribute {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.contribute .step {
+  min-height: 100dvh;
+  padding: var(--space-4) var(--space-5) calc(var(--space-8) + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contribute .step[hidden] {
+  display: none;
+}
+
+.contribute h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.contribute h1:focus {
+  outline: none;
+}
+
+.contribute .icon-btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: none;
+  color: var(--text);
+  margin-left: calc(var(--space-2) * -1);
+}
+
+.contribute .eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.contribute .choices {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contribute legend {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.contribute .choice {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  font-weight: 700;
+}
+
+.contribute .part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 56px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  margin-bottom: var(--space-2);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contribute .part select {
+  min-height: 44px;
+  max-width: 60%;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--tag-bg);
+  color: inherit;
+  font: inherit;
+  font-size: 15px;
+  padding: 0 var(--space-3);
+}
+
+.contribute .choice-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contribute .choice-text small {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.contribute .recap-operator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.contribute .choice input {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--action);
+}
+
+.contribute .field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contribute .field input,
+.contribute .field textarea {
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--tag-bg);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+  color: var(--text);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contribute .field input {
+  min-height: 52px;
+}
+
+.contribute .field input:focus-visible,
+.contribute .field textarea:focus-visible {
+  outline: 3px solid var(--action);
+  outline-offset: 2px;
+}
+
+.contribute .mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contribute .hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.contribute .warn {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--tag-bg);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contribute .error {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--danger, #c0261c);
+}
+
+.contribute .recap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contribute .recap-block {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.contribute .recap-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.contribute .recap-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.contribute .edit {
+  min-height: 44px;
+  margin: calc(var(--space-2) * -1) calc(var(--space-2) * -1) calc(var(--space-2) * -1) 0;
+  padding: 0 var(--space-3);
+  border: 0;
+  background: none;
+  color: var(--action);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.contribute .recap-value {
+  font-size: 19px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contribute .recap-code {
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--tag-bg);
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.contribute .recap-proof {
+  margin-top: var(--space-1);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.contribute .center {
+  text-align: center;
+}
+
+.contribute .cta {
+  margin-top: auto;
+  height: 60px;
+  border: 0;
+  border-radius: 18px;
+  background: var(--action);
+  color: var(--on-action);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 800;
+  text-decoration: none;
+}

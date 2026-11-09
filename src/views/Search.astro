@@ -23,7 +23,7 @@ const first = data.operators[0]?.id ?? '';
 const soon = catalog.countries.filter((country) => country.status === 'soon');
 ---
 
-<AppLayout seo={appPageSeo(fill(m.search.pageTitle, { country: data.country.name }), `/${data.country.code}/recherche`, lang)} withDock>
+<AppLayout seo={appPageSeo(fill(m.search.pageTitle, { country: data.country.name }), `/${data.country.code}/search`, lang)} withDock>
   <main class="page" data-country={data.country.code}>
     <h1 class="heading">{m.common.search}</h1>
     <label class="field">
@@ -58,7 +58,7 @@ const soon = catalog.countries.filter((country) => country.status === 'soon');
   </main>
 
   <script is:inline type="application/json" id="search-data" set:html={payload} />
-  <Dock country={data.country.code} operators={data.operators} operator={first} current="recherche" />
+  <Dock country={data.country.code} operators={data.operators} operator={first} current="search" />
   <CodeBuilder catalog={catalog} country={data.country.code} />
   <DialToast />
 </AppLayout>

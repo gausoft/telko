@@ -6,10 +6,10 @@ describe('page motion', () => {
   it('measures depth without the language prefix', () => {
     expect(depthOf('/tg')).toBe(1);
     expect(depthOf('/en/tg')).toBe(1);
-    expect(depthOf('/tg/recherche')).toBe(2);
-    expect(depthOf('/en/tg/reglages')).toBe(2);
+    expect(depthOf('/tg/search')).toBe(2);
+    expect(depthOf('/en/tg/settings')).toBe(2);
     expect(depthOf('/tg/yas/internet')).toBe(3);
-    expect(depthOf('/bienvenue')).toBe(1);
+    expect(depthOf('/welcome')).toBe(1);
     expect(depthOf('/')).toBe(0);
   });
 

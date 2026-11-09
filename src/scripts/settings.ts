@@ -35,7 +35,7 @@ function wireCountry(current: string): void {
       return;
     }
     writePref('country', code);
-    window.location.href = localePath(splitLang(window.location.pathname).lang, `/${code}/reglages`);
+    window.location.href = localePath(splitLang(window.location.pathname).lang, `/${code}/settings`);
   });
 }
 

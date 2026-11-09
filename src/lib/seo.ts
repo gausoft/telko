@@ -113,6 +113,11 @@ export function sectionSeo(data: CountryCatalog, operator: Operator, section: Se
   };
 }
 
+/** Share image of a section page, reused by pages that belong to the section (one fee page per amount). */
+export function sectionImage(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): string {
+  return imagePath(sectionCard(data, operator, section, lang));
+}
+
 /** Every share image the build renders, in every language: one default, one per country home, one per section page. */
 export function shareCards(catalog: Catalog): ShareCard[] {
   return LANGS.flatMap((lang) => {
@@ -189,13 +194,13 @@ function sectionFacts(data: CountryCatalog, operator: Operator, section: Section
   const fromLine = from ? copy.from(from) : null;
   const highlights: Record<Section['id'], string | null> = {
     internet: popularOffer(data, operator, entries, lang) ?? fromLine,
-    appels: fromLine ?? codes,
-    argent: codes,
-    factures: codes,
-    frais: fees > 0 ? copy.amounts(fees) : null,
-    aide: codes,
+    calls: fromLine ?? codes,
+    money: codes,
+    bills: codes,
+    fees: fees > 0 ? copy.amounts(fees) : null,
+    help: codes,
   };
-  const brand: Brand = section.id === 'argent' || section.id === 'frais' ? money : operator;
+  const brand: Brand = section.id === 'money' || section.id === 'fees' ? money : operator;
 
   return { heading: copy.heading(section.id, ctx), description: copy.description(section.id, ctx), highlight: highlights[section.id], brand };
 }

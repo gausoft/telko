@@ -1,0 +1,316 @@
+---
+import '../styles/fold.css';
+import { SHOW_BRAND_LOGOS } from '../config';
+import BrandMark from './BrandMark.astro';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { pageLang } from '../i18n/paths';
+import type { Brand, Country, Operator } from '../lib/schema';
+import { FEE_PAGE_AMOUNTS, quoteFor, splitQuote } from '../lib/fee-lookup';
+import type { FeeRow } from '../lib/fee-lookup-types';
+import { formatAmount, splitUnit } from '../lib/format';
+import type { FeeCalculatorData } from '../lib/fee-calculator-types';
+
+interface Props {
+  rows: FeeRow[];
+  operators: Operator[];
+  country: Country;
+  /** Amount shown on first render (a fee page for one amount); empty on the general fees page. */
+  initial?: number;
+}
+
+const { rows, operators, country, initial } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const operations = Object.keys(m.fees.operations);
+const brandOf = (b: { short_name: string; badge: Brand['badge']; logo: string | null }) => ({ name: b.short_name, badge: b.badge, logo: SHOW_BRAND_LOGOS && b.logo ? `/brands/${b.logo}` : null });
+const names = operators.map((o) => ({ id: o.id, name: o.mobile_money?.short_name ?? o.short_name, brand: brandOf(o.mobile_money ?? o) }));
+const payload: FeeCalculatorData = {
+  rows,
+  names,
+  operations: m.fees.operations,
+  amountLabel: country.amount_label,
+  text: { invalid: m.fees.calc.invalid, noBand: m.fees.calc.noBand, resultFor: m.fees.calc.resultFor, more: m.fees.calc.more },
+};
+const json = JSON.stringify(payload).replace(/</g, '\\u003c');
+const first = initial === undefined ? null : initial;
+const cards = first === null ? [] : names.map((n) => ({ ...n, ...splitQuote(quoteFor(rows, n.id, first, operations)) }));
+const opName = (op: string): string => m.fees.operations[op as keyof typeof m.fees.operations];
+const isLong = (text: string): boolean => text.length > 9;
+const anyMore = cards.some((c) => c.rest.length > 0);
+---
+
+<section class="fq" data-fq>
+  <header class="fq-hero">
+    <h2 class="fq-title">{m.fees.calc.title}</h2>
+    <p class="fq-sub">{m.fees.calc.subtitle}</p>
+  </header>
+
+  <form class="fq-form" novalidate>
+    <label for="fq-input">{m.fees.calc.label}</label>
+    <input id="fq-input" name="amount" inputmode="numeric" autocomplete="off" aria-describedby="fq-error" placeholder={m.fees.calc.placeholder} value={first ?? ''} />
+  </form>
+
+  <div class="fq-presets" role="group" aria-label={m.fees.calc.otherAmounts}>
+    {FEE_PAGE_AMOUNTS.map((amount) => <button type="button" data-amount={amount}>{formatAmount(amount, country.amount_label)}</button>)}
+  </div>
+
+  <p class="fq-error" id="fq-error" role="alert" hidden></p>
+
+  <div class="fq-result" aria-live="polite">
+    {first !== null && <p class="fq-for">{fill(m.fees.calc.resultFor, { amount: formatAmount(first, country.amount_label) })}</p>}
+    {
+      first !== null && (
+        <div class="fq-cards">
+          {cards.map((card) => (
+            <section class="fq-card">
+              <h3 class="fq-who"><BrandMark brand={{ name: card.brand.name, badge: card.brand.badge, logo: card.brand.logo === null ? null : card.brand.logo.replace('/brands/', '') }} size={28} />{card.name}</h3>
+              {card.head === null && <p class="fq-none">{m.fees.calc.noBand}</p>}
+              {card.head && <p class="fq-op">{opName(card.head.operation)}</p>}
+              {card.head?.rows.map((row) => <p class:list={['fq-big', { 'fq-long': isLong(row.amount) }]}>{splitUnit(row.amount, country.amount_label) ? <>{splitUnit(row.amount, country.amount_label)?.value}<span class="fq-unit"> {country.amount_label}</span></> : row.amount}</p>)}
+            </section>
+          ))}
+        </div>
+      )
+    }
+    {
+      anyMore && (
+        <details class="fold fq-more">
+          <summary>{m.fees.calc.more}</summary>
+          {cards.filter((c) => c.rest.length > 0).map((card) => (
+            <section class="fq-rest">
+              <h3>{card.name}</h3>
+              {card.rest.map((group) => (
+                <div class="fq-group">
+                  <p class="fq-op">{opName(group.operation)}</p>
+                  <ul>
+                    {group.rows.map((row) => (
+                      <li class="fq-line">
+                        <span class="fq-cond">{row.condition}</span>
+                        <span class="fq-fee">{row.amount}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </section>
+          ))}
+        </details>
+      )
+    }
+  </div>
+
+  <script type="application/json" id="fq-data" set:html={json} />
+</section>
+
+<script>
+  import { parseAmount, quoteFor } from '../lib/fee-lookup';
+  import type { FeeCalculatorData } from '../lib/fee-calculator-types';
+  import { renderQuotes } from '../scripts/fee-calculator-view';
+
+  const root = document.querySelector<HTMLElement>('[data-fq]');
+  const raw = document.getElementById('fq-data')?.textContent;
+
+  if (root && raw) {
+    const data = JSON.parse(raw) as FeeCalculatorData;
+    const input = root.querySelector<HTMLInputElement>('#fq-input');
+    const error = root.querySelector<HTMLElement>('.fq-error');
+    const result = root.querySelector<HTMLElement>('.fq-result');
+    const operations = Object.keys(data.operations);
+
+    const update = (): void => {
+      if (!input || !error || !result) return;
+
+      const text = input.value.trim();
+      const amount = parseAmount(text);
+
+      error.hidden = text === '' || amount !== null;
+      error.textContent = data.text.invalid;
+      if (amount === null) return result.replaceChildren();
+
+      const quotes = data.names.map((n) => ({ name: n.name, brand: n.brand, quote: quoteFor(data.rows, n.id, amount, operations) }));
+      renderQuotes(result, quotes, amount, data);
+    };
+
+    input?.addEventListener('input', update);
+    root.querySelector('form')?.addEventListener('submit', (event) => event.preventDefault());
+    root.querySelectorAll<HTMLButtonElement>('[data-amount]').forEach((button) =>
+      button.addEventListener('click', () => {
+        if (input) input.value = button.dataset['amount'] ?? '';
+        update();
+      }),
+    );
+  }
+</script>
+
+<style is:global>
+  .fq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-5) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--action);
+    color: #fff;
+  }
+
+  .fq-title {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .fq-sub {
+    margin-top: var(--space-1);
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .fq-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .fq-form input {
+    height: 64px;
+    padding: 0 var(--space-4);
+    border: 0;
+    border-radius: var(--radius-sm);
+    background: #fff;
+    color: #0d0b26;
+    font: inherit;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .fq-form input:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .fq-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .fq-presets button {
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border: 0;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.2);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .fq-error {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .fq-result {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .fq-for {
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .fq-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+    gap: var(--space-2);
+  }
+
+  .fq-card {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface-raised);
+    color: var(--text);
+  }
+
+  .fq-who {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: var(--space-2);
+  }
+
+  .fq-unit {
+    font-size: 0.5em;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  .fq-op {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  .fq-big {
+    margin-top: var(--space-1);
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+  }
+
+  .fq-long {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .fq-none {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .fq-rest h3 {
+    font-size: 15px;
+    font-weight: 800;
+    margin: var(--space-2) 0 var(--space-1);
+  }
+
+  .fq-group {
+    margin: 0 0 var(--space-2);
+  }
+
+  .fq-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fq-line {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+    min-height: 44px;
+    border-top: 1px solid var(--tag-bg);
+    font-size: 14px;
+  }
+
+  .fq-cond {
+    flex: 1 1 140px;
+    min-width: 0;
+  }
+
+  .fq-fee {
+    font-weight: 800;
+    text-align: right;
+    white-space: nowrap;
+  }
+</style>

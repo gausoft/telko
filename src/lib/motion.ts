@@ -5,7 +5,7 @@
 
 export type MotionKind = 'forward' | 'back' | 'same';
 
-/** "/tg" is 1, "/tg/recherche" 2, "/tg/yas/internet" 3; the "/en" prefix does not count. */
+/** "/tg" is 1, "/tg/search" 2, "/tg/yas/internet" 3; the "/en" prefix does not count. */
 export function depthOf(pathname: string): number {
   return pathname
     .replace(/^\/en(?=\/|$)/, '')

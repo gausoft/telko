@@ -44,11 +44,11 @@ describe('paths', () => {
   });
 
   it('splits and switches the language of a path', () => {
-    expect(splitLang('/en/tg/recherche')).toEqual({ lang: 'en', path: '/tg/recherche' });
+    expect(splitLang('/en/tg/search')).toEqual({ lang: 'en', path: '/tg/search' });
     expect(splitLang('/en')).toEqual({ lang: 'en', path: '/' });
     expect(splitLang('/tg')).toEqual({ lang: 'fr', path: '/tg' });
-    expect(switchLang('/tg/reglages', 'en')).toBe('/en/tg/reglages');
-    expect(switchLang('/en/tg/reglages', 'fr')).toBe('/tg/reglages');
+    expect(switchLang('/tg/settings', 'en')).toBe('/en/tg/settings');
+    expect(switchLang('/en/tg/settings', 'fr')).toBe('/tg/settings');
   });
 
   it('finds the country with or without a language prefix', () => {
