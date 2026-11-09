@@ -939,7 +939,7 @@
       },
       "time_window": null,
       "ussd": {
-        "template": "*909*234#",
+        "template": "*909*2*3*4#",
         "params": []
       },
       "payment_methods": [],

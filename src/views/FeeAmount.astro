@@ -1,0 +1,86 @@
+---
+import AppHeader from '../components/AppHeader.astro';
+import Dock from '../components/Dock.astro';
+import FeeCalculator from '../components/FeeCalculator.astro';
+import AppLayout from '../layouts/AppLayout.astro';
+import { fill } from '../i18n/format-message';
+import { messages } from '../i18n/messages';
+import { localePath, pageLang } from '../i18n/paths';
+import { FEE_PAGE_AMOUNTS } from '../lib/fee-lookup';
+import { toFeeRows } from '../lib/fee-rows';
+import { formatAmount } from '../lib/format';
+import { feeAmountSeo } from '../lib/seo-fee';
+import type { FeeAmountProps } from './view-types';
+
+type Props = FeeAmountProps;
+
+const { data, operator, amount } = Astro.props;
+const lang = pageLang(Astro.url);
+const m = messages(lang);
+const code = data.country.code;
+const rows = toFeeRows(data.fees, m.fees, lang === 'fr' ? ',' : '.');
+const base = localePath(lang, `/${code}/${operator.id}`);
+---
+
+<AppLayout seo={feeAmountSeo(data, operator, amount, lang)} withDock>
+  <main class="page">
+    <AppHeader country={data.country} back={`${base}/frais`} title={fill(m.fees.calc.pageHeading, { amount: formatAmount(amount, data.country.amount_label), money: (operator.mobile_money ?? operator).short_name })} />
+
+    <FeeCalculator rows={rows} operators={data.operators} country={data.country} initial={amount} />
+
+    <nav class="others" aria-label={m.fees.calc.otherAmounts}>
+      <h2>{m.fees.calc.otherAmounts}</h2>
+      <ul>
+        {FEE_PAGE_AMOUNTS.filter((a) => a !== amount).map((a) => <li><a href={`${base}/frais/${a}`}>{formatAmount(a, data.country.amount_label)}</a></li>)}
+      </ul>
+      <a class="all" href={`${base}/frais`}>{m.fees.calc.allFees}</a>
+    </nav>
+  </main>
+
+  <Dock country={code} operators={data.operators} operator={operator.id} pinned current="none" />
+</AppLayout>
+
+<style>
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .others h2 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: var(--space-2);
+  }
+
+  .others ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0 0 var(--space-3);
+    padding: 0;
+  }
+
+  .others a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border-radius: 999px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .others .all {
+    background: transparent;
+    color: var(--action-text);
+    padding: 0;
+  }
+</style>

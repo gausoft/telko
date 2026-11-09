@@ -113,6 +113,11 @@ export function sectionSeo(data: CountryCatalog, operator: Operator, section: Se
   };
 }
 
+/** Share image of a section page, reused by pages that belong to the section (one fee page per amount). */
+export function sectionImage(data: CountryCatalog, operator: Operator, section: Section, lang: Lang): string {
+  return imagePath(sectionCard(data, operator, section, lang));
+}
+
 /** Every share image the build renders, in every language: one default, one per country home, one per section page. */
 export function shareCards(catalog: Catalog): ShareCard[] {
   return LANGS.flatMap((lang) => {

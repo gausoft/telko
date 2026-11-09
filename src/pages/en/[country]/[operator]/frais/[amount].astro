@@ -1,0 +1,11 @@
+---
+import FeeAmount from '../../../../../views/FeeAmount.astro';
+import { feeAmountPaths } from '../../../../../lib/fee-routes';
+import type { FeeAmountProps } from '../../../../../views/view-types';
+
+export const getStaticPaths = () => feeAmountPaths('en');
+
+type Props = FeeAmountProps;
+---
+
+<FeeAmount {...Astro.props} />

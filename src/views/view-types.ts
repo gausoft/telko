@@ -37,3 +37,11 @@ export interface SectionProps {
   section: Section;
   catalog: Catalog;
 }
+
+/** The fees of one searched amount, for one operator's page. */
+export interface FeeAmountProps {
+  data: CountryCatalog;
+  operator: Operator;
+  amount: number;
+  catalog: Catalog;
+}

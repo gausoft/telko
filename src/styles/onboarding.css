@@ -247,3 +247,9 @@
 .onboarding h1:focus {
   outline: none;
 }
+
+.notice {
+  margin-top: var(--space-4);
+  font-size: 13px;
+  opacity: 0.85;
+}
