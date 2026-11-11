@@ -1,0 +1,47 @@
+{
+  "operator": "moov",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "moov-credit-transfer-moov-faba",
+      "kind": "service",
+      "name": "Moov Faba",
+      "description": "Emprunter du crédit (100, 200, 500 ou 1 000 F), à rembourser au prochain rechargement.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "faba",
+        "avance de crédit",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Commission de 10 % au remboursement. Réservé aux abonnés qui consomment au moins 200 F par mois. Possible aussi par SMS (100, 200, 500 ou 1 000) au 300.",
+      "en": {
+        "name": "Moov Faba",
+        "description": "Borrow airtime (100, 200, 500 or 1,000 F), repaid at your next top-up.",
+        "notes": "10% commission on repayment. For subscribers who spend at least 200 F a month. Also possible by SMS (100, 200, 500 or 1,000) to 300."
+      }
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "operator": "orange",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "orange-balur-pacote-1",
+      "kind": "bundle",
+      "name": "Balur Pacote 1",
+      "description": "10 min, 10 SMS et 15 Mo, valables 1 jour.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 15,
+        "voice_min": 10,
+        "sms": 10
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 1",
+        "description": "10 min, 10 SMS and 15 MB, valid 1 day.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    },
+    {
+      "id": "orange-balur-pacote-2",
+      "kind": "bundle",
+      "name": "Balur Pacote 2",
+      "description": "25 min, 20 SMS et 80 Mo, valables 1 jour.",
+      "price": 250,
+      "allowances": {
+        "data_mb": 80,
+        "voice_min": 25,
+        "sms": 20
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 2",
+        "description": "25 min, 20 SMS and 80 MB, valid 1 day.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    },
+    {
+      "id": "orange-balur-pacote-3",
+      "kind": "bundle",
+      "name": "Balur Pacote 3",
+      "description": "50 min, 50 SMS et 250 Mo, valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": 50,
+        "sms": 50
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 3",
+        "description": "50 min, 50 SMS and 250 MB, valid 3 days.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    },
+    {
+      "id": "orange-balur-pacote-4",
+      "kind": "bundle",
+      "name": "Balur Pacote 4",
+      "description": "80 min, 100 SMS et 400 Mo, valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": 80,
+        "sms": 100
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 4",
+        "description": "80 min, 100 SMS and 400 MB, valid 7 days.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    },
+    {
+      "id": "orange-balur-pacote-5",
+      "kind": "bundle",
+      "name": "Balur Pacote 5",
+      "description": "160 min, 300 SMS et 1,2 Go, valables 30 jours,",
+      "price": 3000,
+      "allowances": {
+        "data_mb": 1229,
+        "voice_min": 160,
+        "sms": 300
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 5",
+        "description": "160 min, 300 SMS and 1.2 GB, valid 30 days.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    },
+    {
+      "id": "orange-balur-pacote-6",
+      "kind": "bundle",
+      "name": "Balur Pacote 6",
+      "description": "480 min, 1000 SMS et 3,0 Go, valables 30 jours,",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": 480,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#521#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "balur",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/ofertas-internet-movel/balur.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les minutes valent pour les numéros Orange Bissau et les SMS pour Orange. Solde internet Balur : #5234#4#. La page indique des promotions « jusqu'au 30 juin » : texte peut-être ancien.",
+      "en": {
+        "name": "Balur Pack 6",
+        "description": "480 min, 1000 SMS and 3.0 GB, valid 30 days.",
+        "notes": "Minutes are for Orange Bissau numbers and SMS for Orange. Balur internet balance: #5234#4#. The page mentions promotions \"until 30 June\": possibly stale text."
+      }
+    }
+  ]
+}

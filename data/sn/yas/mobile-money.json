@@ -1,0 +1,45 @@
+{
+  "operator": "yas",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "yas-mobile-money-menu-mixx",
+      "kind": "service",
+      "name": "Menu Mixx by Yas",
+      "description": "Menu principal de Mixx by Yas : transfert, achat de crédit et de pass, factures, Yonéma.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#150#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "mixx",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Mixx by Yas menu",
+        "description": "Main Mixx by Yas menu: transfers, airtime and pass purchase, bills, Yonéma.",
+        "notes": "The PIN is typed in the menu. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

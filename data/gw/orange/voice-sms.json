@@ -1,0 +1,382 @@
+{
+  "operator": "orange",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "orange-ilimitados-pacote-1",
+      "kind": "bundle",
+      "name": "Ilimitados Pacote 1",
+      "description": "Appels illimités pendant 24 h.",
+      "price": 250,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "ilimitados",
+        "appels",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/papia-tok.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels illimités. Selon la page Ilimitados, ce pack ne vaut que vers les numéros Orange Bissau ; la page Papia Tok parle de tous les réseaux pour 250, 700, 1 500 et 5 000 F : sources contradictoires. Un seul Ilimitado actif à la fois.",
+      "en": {
+        "name": "Ilimitados Pack 1",
+        "description": "Unlimited calls for 24 h.",
+        "notes": "Unlimited calls. The Ilimitados page says this pack only works to Orange Bissau numbers; the Papia Tok page says all networks for 250, 700, 1,500 and 5,000 F: contradictory sources. Only one Ilimitado active at a time."
+      }
+    },
+    {
+      "id": "orange-ilimitados-pacote-2",
+      "kind": "bundle",
+      "name": "Ilimitados Pacote 2",
+      "description": "Appels illimités pendant 72 h.",
+      "price": 700,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "72 h",
+        "en": {
+          "label": "72 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "ilimitados",
+        "appels",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/papia-tok.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels illimités. Selon la page Ilimitados, ce pack ne vaut que vers les numéros Orange Bissau ; la page Papia Tok parle de tous les réseaux pour 250, 700, 1 500 et 5 000 F : sources contradictoires. Un seul Ilimitado actif à la fois.",
+      "en": {
+        "name": "Ilimitados Pack 2",
+        "description": "Unlimited calls for 72 h.",
+        "notes": "Unlimited calls. The Ilimitados page says this pack only works to Orange Bissau numbers; the Papia Tok page says all networks for 250, 700, 1,500 and 5,000 F: contradictory sources. Only one Ilimitado active at a time."
+      }
+    },
+    {
+      "id": "orange-ilimitados-pacote-3",
+      "kind": "bundle",
+      "name": "Ilimitados Pacote 3",
+      "description": "Appels illimités pendant 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "ilimitados",
+        "appels",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/papia-tok.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels illimités. Selon la page Ilimitados, ce pack ne vaut que vers les numéros Orange Bissau ; la page Papia Tok parle de tous les réseaux pour 250, 700, 1 500 et 5 000 F : sources contradictoires. Un seul Ilimitado actif à la fois.",
+      "en": {
+        "name": "Ilimitados Pack 3",
+        "description": "Unlimited calls for 7 days.",
+        "notes": "Unlimited calls. The Ilimitados page says this pack only works to Orange Bissau numbers; the Papia Tok page says all networks for 250, 700, 1,500 and 5,000 F: contradictory sources. Only one Ilimitado active at a time."
+      }
+    },
+    {
+      "id": "orange-ilimitados-pacote-4",
+      "kind": "bundle",
+      "name": "Ilimitados Pacote 4",
+      "description": "Appels illimités pendant 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "ilimitados",
+        "appels",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/papia-tok.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels illimités. Selon la page Ilimitados, ce pack ne vaut que vers les numéros Orange Bissau ; la page Papia Tok parle de tous les réseaux pour 250, 700, 1 500 et 5 000 F : sources contradictoires. Un seul Ilimitado actif à la fois.",
+      "en": {
+        "name": "Ilimitados Pack 4",
+        "description": "Unlimited calls for 30 days.",
+        "notes": "Unlimited calls. The Ilimitados page says this pack only works to Orange Bissau numbers; the Papia Tok page says all networks for 250, 700, 1,500 and 5,000 F: contradictory sources. Only one Ilimitado active at a time."
+      }
+    },
+    {
+      "id": "orange-ilimitados-pacote-5",
+      "kind": "bundle",
+      "name": "Ilimitados Pacote 5",
+      "description": "Appels illimités pendant 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": -1,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "ilimitados",
+        "appels",
+        "voix"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/ilimitados.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/movel-formulas/papia-tok.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Appels illimités, valables seulement vers les numéros Orange Bissau selon la page Ilimitados. Un seul Ilimitado actif à la fois.",
+      "en": {
+        "name": "Ilimitados Pack 5",
+        "description": "Unlimited calls for 24 h.",
+        "notes": "Unlimited calls, only to Orange Bissau numbers according to the Ilimitados page. Only one Ilimitado active at a time."
+      }
+    },
+    {
+      "id": "orange-orange-plus-menu",
+      "kind": "service",
+      "name": "Orange +",
+      "description": "Portail des offres voix et SMS Orange +.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#121#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange +",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/orange-plus.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page Orange + cite aussi #521#. Solde Orange + : #123# puis 0. Offre possible vers un autre numéro.",
+      "en": {
+        "name": "Orange +",
+        "description": "Orange + voice and SMS offers portal.",
+        "notes": "The Orange + page also cites #521#. Orange + balance: #123# then 0. Offers can be gifted to another number."
+      }
+    },
+    {
+      "id": "orange-liga-me",
+      "kind": "service",
+      "name": "Liga-me",
+      "description": "Demander à un proche de vous rappeler.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*521*{phone}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "rappel",
+        "appel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/servicos/liga-me.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Une fois par jour. La condition de solde est illisible sur la page.",
+      "en": {
+        "name": "Liga-me",
+        "description": "Ask someone to call you back.",
+        "notes": "Once a day. The balance condition is unreadable on the page."
+      }
+    }
+  ]
+}

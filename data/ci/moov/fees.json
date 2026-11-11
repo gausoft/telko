@@ -1,0 +1,410 @@
+{
+  "operator": "moov",
+  "service": "moov-money",
+  "entries": [
+    {
+      "id": "moov-fees-p2p-5-1000",
+      "operation": "transfer-national",
+      "min": 5,
+      "max": 1000,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Transfert vers un abonné Moov, de 5 à 1 000 F : 0 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les tranches suivantes (1 001 à 2 000 000 F) n'ont pas de montant lisible dans le tableau de la page : non publiées ici.",
+      "en": {
+        "label": "Transfer to a Moov subscriber, from 5 to 1,000 F: 0 F",
+        "notes": "The next brackets (1,001 to 2,000,000 F) have no readable amount in the page table: not listed here."
+      }
+    },
+    {
+      "id": "moov-fees-retrait-2000-et-moins",
+      "operation": "withdrawal",
+      "min": 5,
+      "max": 2000,
+      "fee": null,
+      "fee_percent": 1,
+      "label": "Retrait d'argent, de 5 à 2 000 F : 1 %",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les autres tranches du tableau n'ont pas de montant lisible : non publiées ici.",
+      "en": {
+        "label": "Cash withdrawal, from 5 to 2,000 F: 1%",
+        "notes": "The other brackets in the table have no readable amount: not listed here."
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-200-1000",
+      "operation": "withdrawal",
+      "min": 200,
+      "max": 1000,
+      "fee": 250,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 200 à 1 000 F : 250 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Intitulé « Retrait autres réseaux » repris tel quel de la page.",
+      "en": {
+        "label": "Withdrawal other network, from 200 to 1,000 F: 250 F",
+        "notes": "Heading \"Retrait autres réseaux\" taken as is from the page."
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-1001-5000",
+      "operation": "withdrawal",
+      "min": 1001,
+      "max": 5000,
+      "fee": 300,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 1 001 à 5 000 F : 300 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal other network, from 1,001 to 5,000 F: 300 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-5001-10000",
+      "operation": "withdrawal",
+      "min": 5001,
+      "max": 10000,
+      "fee": 800,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 5 001 à 10 000 F : 800 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal other network, from 5,001 to 10,000 F: 800 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-10001-25000",
+      "operation": "withdrawal",
+      "min": 10001,
+      "max": 25000,
+      "fee": 900,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 10 001 à 25 000 F : 900 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal other network, from 10,001 to 25,000 F: 900 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-25001-50000",
+      "operation": "withdrawal",
+      "min": 25001,
+      "max": 50000,
+      "fee": 1400,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 25 001 à 50 000 F : 1 400 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal other network, from 25,001 to 50,000 F: 1,400 F"
+      }
+    },
+    {
+      "id": "moov-fees-retrait-autre-reseau-50001-100000",
+      "operation": "withdrawal",
+      "min": 50001,
+      "max": 100000,
+      "fee": 2400,
+      "fee_percent": null,
+      "label": "Retrait autre réseau  de 50 001 à 100 000 F : 2 400 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Withdrawal other network, from 50,001 to 100,000 F: 2,400 F"
+      }
+    },
+    {
+      "id": "moov-fees-depot-100-500000",
+      "operation": "deposit",
+      "min": 100,
+      "max": 500000,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Dépôt d'argent, de 100 à 500 000 F : 0 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Au-delà, la page annonce 100 F de frais et de timbre à partir de 5 001 F : non publié ici.",
+      "en": {
+        "label": "Cash deposit, from 100 to 500,000 F: 0 F",
+        "notes": "Beyond that, the page states 100 F of fees and stamp duty from 5,001 F: not listed here."
+      }
+    },
+    {
+      "id": "moov-fees-facture-cie-sodeci-5-2000",
+      "operation": "other",
+      "min": 5,
+      "max": 2000,
+      "fee": 150,
+      "fee_percent": null,
+      "label": "Facture CIE / SODECI  de 5 à 2 000 F : 150 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE / SODECI bill, from 5 to 2,000 F: 150 F"
+      }
+    },
+    {
+      "id": "moov-fees-facture-cie-sodeci-2001-500000",
+      "operation": "other",
+      "min": 2001,
+      "max": 500000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Facture CIE / SODECI  de 2 001 à 500 000 F : 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE / SODECI bill, from 2,001 to 500,000 F: 200 F"
+      }
+    },
+    {
+      "id": "moov-fees-cie-prepayee-1-1000",
+      "operation": "other",
+      "min": 1,
+      "max": 1000,
+      "fee": 50,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 1 à 1 000 F : 50 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 1 to 1,000 F: 50 F"
+      }
+    },
+    {
+      "id": "moov-fees-cie-prepayee-1001-10000",
+      "operation": "other",
+      "min": 1001,
+      "max": 10000,
+      "fee": 100,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 1 001 à 10 000 F : 100 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 1,001 to 10,000 F: 100 F"
+      }
+    },
+    {
+      "id": "moov-fees-cie-prepayee-10001-20000",
+      "operation": "other",
+      "min": 10001,
+      "max": 20000,
+      "fee": 150,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 10 001 à 20 000 F : 150 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 10,001 to 20,000 F: 150 F"
+      }
+    },
+    {
+      "id": "moov-fees-cie-prepayee-20001-1000000",
+      "operation": "other",
+      "min": 20001,
+      "max": 1000000,
+      "fee": 200,
+      "fee_percent": null,
+      "label": "Recharge CIE prépayée  de 20 001 à 1 000 000 F : 200 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CIE prepaid top-up, from 20,001 to 1,000,000 F: 200 F"
+      }
+    },
+    {
+      "id": "moov-fees-reabonnement-tv",
+      "operation": "other",
+      "min": 0,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Réabonnement CANAL+, EASY TV, STARTIMES : 0 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/moov-money/tarifs-moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "CANAL+, EASY TV, STARTIMES renewal: 0 F"
+      }
+    }
+  ]
+}

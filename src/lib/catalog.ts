@@ -39,8 +39,19 @@ interface FileContext {
   now: Date;
 }
 
-export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Date = new Date()): Catalog {
-  const countries = parse(files, '/data/countries.json', countriesFileSchema).countries;
+/**
+ * `TELKO_PREVIEW_COUNTRIES=1 npm run dev` shows every `soon` country that has data as if it were
+ * live, so maintainers can review it in the app. Never set it for a build that is published.
+ */
+const PREVIEW_COUNTRIES = process.env.TELKO_PREVIEW_COUNTRIES === '1';
+
+export function loadCatalog(
+  files: Record<string, unknown> = RAW_FILES,
+  now: Date = new Date(),
+  preview: boolean = PREVIEW_COUNTRIES,
+): Catalog {
+  const listed = parse(files, '/data/countries.json', countriesFileSchema).countries;
+  const countries = preview ? listed.map((country) => previewed(files, country)) : listed;
   const byCountry = new Map<string, CountryCatalog>();
   const pending = new Map<string, CountryCatalog>();
 
@@ -54,6 +65,12 @@ export function loadCatalog(files: Record<string, unknown> = RAW_FILES, now: Dat
   }
 
   return { countries, byCountry, pending };
+}
+
+function previewed(files: Record<string, unknown>, country: Country): Country {
+  if (country.status === 'live' || !hasFolder(files, country.code)) return country;
+
+  return { ...country, status: 'live' };
 }
 
 /**

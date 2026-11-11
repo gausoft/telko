@@ -1,0 +1,44 @@
+{
+  "operator": "orange",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "orange-useful-numbers-assistance",
+      "kind": "service",
+      "name": "Assistance Orange",
+      "description": "Joindre l'assistance Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "+225 07 07 07 07 02",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/fr/pass-mix.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Numéro donné par la page des offres : « Besoin d'assistance ? Contactez-nous au… ».",
+      "en": {
+        "name": "Orange help",
+        "description": "Reach Orange help.",
+        "notes": "Number given by the offers page: \"Need help? Contact us at...\"."
+      }
+    }
+  ]
+}

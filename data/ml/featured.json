@@ -1,0 +1,47 @@
+{
+  "country": "ml",
+  "updated": "2026-11-09",
+  "items": [],
+  "shortcuts": [
+    {
+      "entry_id": "moov-general-solde",
+      "label": "Solde",
+      "brand": "operator",
+      "en": {
+        "label": "Balance"
+      }
+    },
+    {
+      "entry_id": "moov-general-mon-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    },
+    {
+      "entry_id": "orange-mobile-money-solde",
+      "label": "Solde Orange Money",
+      "brand": "mobile_money",
+      "en": {
+        "label": "Orange Money balance"
+      }
+    },
+    {
+      "entry_id": "telecel-general-solde",
+      "label": "Solde",
+      "brand": "operator",
+      "en": {
+        "label": "Balance"
+      }
+    },
+    {
+      "entry_id": "telecel-general-mon-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    }
+  ]
+}

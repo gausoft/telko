@@ -1,0 +1,47 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-transfert-argent-international",
+      "kind": "service",
+      "name": "Envoi d'argent vers un autre pays Moov",
+      "description": "Envoyer de l'argent à un numéro Moov du Burkina Faso, de Côte d'Ivoire, du Mali, du Niger ou du Togo.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*855*1*1*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "transfert",
+        "international",
+        "moov money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/transfert-dargent-international/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Jusqu'à 2 000 000 F par opération, 24 h sur 24. Numéro du bénéficiaire avec l'indicatif du pays, montant, motif et code secret se saisissent dans le menu.",
+      "en": {
+        "name": "Send money to another Moov country",
+        "description": "Send money to a Moov number in Burkina Faso, Côte d'Ivoire, Mali, Niger or Togo.",
+        "notes": "Up to 2,000,000 F per transaction, 24/7. Recipient number with country code, amount, reason and PIN are typed in the menu."
+      }
+    }
+  ]
+}

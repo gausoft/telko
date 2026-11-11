@@ -1,0 +1,172 @@
+{
+  "operator": "telecel",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "telecel-credit-transfert",
+      "kind": "service",
+      "name": "Transférer du crédit",
+      "description": "Envoyer du crédit à un autre numéro Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*510*{amount}*{phone}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          },
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site indique un code secret en fin de saisie : il se tape à l'écran.",
+      "en": {
+        "name": "Transfer credit",
+        "description": "Send credit to another Telecel number.",
+        "notes": "The site shows a PIN at the end of the entry: type it on screen."
+      }
+    },
+    {
+      "id": "telecel-credit-recharge-proche",
+      "kind": "service",
+      "name": "Recharger un proche avec un code de recharge",
+      "description": "Recharger le numéro d'un proche avec un code de recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*501*{phone}*{voucher}#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          },
+          {
+            "name": "voucher",
+            "type": "text",
+            "label": "Code de recharge",
+            "required": true,
+            "en": {
+              "label": "Voucher code"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code de recharge est celui de votre carte, à saisir au moment de l'appel.",
+      "en": {
+        "name": "Top up a relative with a voucher code",
+        "description": "Top up a relative's number using a voucher code.",
+        "notes": "The voucher code comes from your card, typed when dialling."
+      }
+    },
+    {
+      "id": "telecel-credit-recharge-carte",
+      "kind": "service",
+      "name": "Recharger avec une carte",
+      "description": "Recharger votre numéro avec le code d'une carte de recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*500*{voucher}#",
+        "params": [
+          {
+            "name": "voucher",
+            "type": "text",
+            "label": "Code de recharge",
+            "required": true,
+            "en": {
+              "label": "Voucher code"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "recharge"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/solutions-prepayees/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.telecelmali.com/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Top up with a card",
+        "description": "Top up your number with a recharge card code."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "operator": "orange",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "orange-internet-pass-jour-80mo-1j",
+      "kind": "bundle",
+      "name": "Pass Internet 80 Mo (1 jour)",
+      "description": "80 Mo valables 1 jour.",
+      "price": null,
+      "allowances": {
+        "data_mb": 80,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 80 MB (1 day)",
+        "description": "80 MB, valid 1 day.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-80mo-4j",
+      "kind": "bundle",
+      "name": "Pass Internet 80 Mo (4 jours)",
+      "description": "80 Mo valables 4 jours.",
+      "price": null,
+      "allowances": {
+        "data_mb": 80,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 4,
+        "label": "4 jours",
+        "en": {
+          "label": "4 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 80 MB (4 days)",
+        "description": "80 MB, valid 4 days.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-200mo-1j",
+      "kind": "bundle",
+      "name": "Pass Internet 200 Mo (1 jour)",
+      "description": "200 Mo valables 1 jour. Avec 120 min de Spotify.",
+      "price": null,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 200 MB (1 day)",
+        "description": "200 MB, valid 1 day. With 120 min of Spotify.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-jour-2500mo-1j",
+      "kind": "bundle",
+      "name": "Pass Internet 2,5 Go (1 jour)",
+      "description": "2,5 Go valables 1 jour.",
+      "price": null,
+      "allowances": {
+        "data_mb": 2500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "jour"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 2.5 GB (1 day)",
+        "description": "2.5 GB, valid 1 day.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-600mo",
+      "kind": "bundle",
+      "name": "Pass Internet 600 Mo (7 jours)",
+      "description": "600 Mo valables 7 jours.",
+      "price": null,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-semaine-forfaits-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 600 MB (7 days)",
+        "description": "600 MB, valid 7 days.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-1500mo",
+      "kind": "bundle",
+      "name": "Pass Internet 1,5 Go (7 jours)",
+      "description": "1,5 Go valables 7 jours. Avec 360 min de Spotify.",
+      "price": null,
+      "allowances": {
+        "data_mb": 1500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-semaine-forfaits-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 1.5 GB (7 days)",
+        "description": "1.5 GB, valid 7 days. With 360 min of Spotify.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-semaine-4500mo",
+      "kind": "bundle",
+      "name": "Pass Internet 4,5 Go (7 jours)",
+      "description": "4,5 Go valables 7 jours. Avec 720 min de Spotify.",
+      "price": null,
+      "allowances": {
+        "data_mb": 4500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "semaine"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-semaine-forfaits-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 4.5 GB (7 days)",
+        "description": "4.5 GB, valid 7 days. With 720 min of Spotify.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-3000mo",
+      "kind": "bundle",
+      "name": "Pass Internet 3 Go (30 jours)",
+      "description": "3 Go valables 30 jours.",
+      "price": null,
+      "allowances": {
+        "data_mb": 3000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-mois-petit-budget-rapide-debit-rapidite-4g.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 3 GB (30 days)",
+        "description": "3 GB, valid 30 days.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-12000mo",
+      "kind": "bundle",
+      "name": "Pass Internet 12 Go (30 jours)",
+      "description": "12 Go valables 30 jours. Avec 1440 min de Spotify.",
+      "price": null,
+      "allowances": {
+        "data_mb": 12000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-mois-petit-budget-rapide-debit-rapidite-4g.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 12 GB (30 days)",
+        "description": "12 GB, valid 30 days. With 1440 min of Spotify.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-30000mo",
+      "kind": "bundle",
+      "name": "Pass Internet 30 Go (30 jours)",
+      "description": "30 Go valables 30 jours. Avec 3600 min de Spotify.",
+      "price": null,
+      "allowances": {
+        "data_mb": 30000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-mois-petit-budget-rapide-debit-rapidite-4g.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 30 GB (30 days)",
+        "description": "30 GB, valid 30 days. With 3600 min of Spotify.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-mois-45000mo",
+      "kind": "bundle",
+      "name": "Pass Internet 45 Go (30 jours)",
+      "description": "45 Go valables 30 jours.",
+      "price": null,
+      "allowances": {
+        "data_mb": 45000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#101#211#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "pass",
+        "mois"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-mois-petit-budget-rapide-debit-rapidite-4g.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix de chaque pass n'est pas publié sur le site : le tarif s'affiche dans le menu au moment de l'achat (pass « à partir de 100, 500 ou 2 000 F » selon la page). Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Internet Pass 45 GB (30 days)",
+        "description": "45 GB, valid 30 days.",
+        "notes": "The price of each pass is not published on the site: the tariff is shown in the menu when you buy (passes 'from 100, 500 or 2,000 F' depending on the page). This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit-600mo",
+      "kind": "bundle",
+      "name": "Pass nuit 600 Mo",
+      "description": "600 Mo utilisables la nuit, de 23 h à 7 h.",
+      "price": null,
+      "allowances": {
+        "data_mb": 600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "#101#2131#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfait-internet-nuit-internet-a-petit-prix-petit-budget-eleve-etudiant.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix n'est pas publié sur le site. Valable de 23 h à 7 h. Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Night pass 600 MB",
+        "description": "600 MB usable at night, 11 pm to 7 am.",
+        "notes": "The price is not published on the site. Valid from 11 pm to 7 am. This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit-1200mo",
+      "kind": "bundle",
+      "name": "Pass nuit 1,2 Go",
+      "description": "1,2 Go utilisables la nuit, de 23 h à 7 h.",
+      "price": null,
+      "allowances": {
+        "data_mb": 1200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "#101#2131#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfait-internet-nuit-internet-a-petit-prix-petit-budget-eleve-etudiant.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix n'est pas publié sur le site. Valable de 23 h à 7 h. Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Night pass 1.2 GB",
+        "description": "1.2 GB usable at night, 11 pm to 7 am.",
+        "notes": "The price is not published on the site. Valid from 11 pm to 7 am. This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit-4000mo",
+      "kind": "bundle",
+      "name": "Pass nuit 4 Go",
+      "description": "4 Go utilisables la nuit, de 23 h à 7 h.",
+      "price": null,
+      "allowances": {
+        "data_mb": 4000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "#101#2131#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfait-internet-nuit-internet-a-petit-prix-petit-budget-eleve-etudiant.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix n'est pas publié sur le site. Valable de 23 h à 7 h. Ce code ouvre le menu d'achat, il faut y choisir le pass.",
+      "en": {
+        "name": "Night pass 4 GB",
+        "description": "4 GB usable at night, 11 pm to 7 am.",
+        "notes": "The price is not published on the site. Valid from 11 pm to 7 am. This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-pass-nuit-4000mo-bonus-4g",
+      "kind": "bundle",
+      "name": "Pass nuit 4 Go + 4 Go bonus 4G",
+      "description": "4 Go plus 4 Go offerts en 4G, utilisables la nuit de 23 h à 7 h.",
+      "price": null,
+      "allowances": {
+        "data_mb": 8000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "23:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "#101#2131#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "nuit",
+        "4g"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfait-internet-nuit-internet-a-petit-prix-petit-budget-eleve-etudiant.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix n'est pas publié sur le site. Valable de 23 h à 7 h. Ce code ouvre le menu d'achat, il faut y choisir le pass. Le bonus de 4 Go est réservé à la 4G.",
+      "en": {
+        "name": "Night pass 4 GB + 4 GB 4G bonus",
+        "description": "4 GB plus 4 GB free on 4G, usable at night 11 pm to 7 am.",
+        "notes": "The price is not published on the site. Valid from 11 pm to 7 am. The 4 GB bonus is for 4G only. This code opens the purchase menu, then choose the pass."
+      }
+    },
+    {
+      "id": "orange-internet-acheter-pass-orange-money",
+      "kind": "service",
+      "name": "Acheter un pass avec Orange Money",
+      "description": "Ouvre le menu d'achat de pass Internet payés avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#33#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass",
+        "orange money"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page cite aussi le code #144#22# pour cet achat. Choisir le pass dans le menu.",
+      "en": {
+        "name": "Buy a pass with Orange Money",
+        "description": "Opens the menu to buy Internet passes paid with Orange Money.",
+        "notes": "The page also mentions #144#22# for this purchase. Choose the pass in the menu."
+      }
+    },
+    {
+      "id": "orange-internet-offrir-pass",
+      "kind": "service",
+      "name": "Offrir un pass Internet",
+      "description": "Offrir un pass Internet à un autre numéro Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#23#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass",
+        "cadeau"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro du destinataire et le pass se choisissent dans le menu.",
+      "en": {
+        "name": "Gift an Internet pass",
+        "description": "Gift an Internet pass to another Orange number.",
+        "notes": "The recipient's number and the pass are chosen in the menu."
+      }
+    },
+    {
+      "id": "orange-internet-consulter-pass",
+      "kind": "service",
+      "name": "Consulter son pass Internet",
+      "description": "Voir le solde et la date de fin de votre pass Internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#22#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "solde",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-jour-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check your Internet pass",
+        "description": "See the balance and expiry date of your Internet pass."
+      }
+    },
+    {
+      "id": "orange-internet-consommation-nuit",
+      "kind": "service",
+      "name": "Consommation du pass nuit",
+      "description": "Voir votre consommation de pass Internet de nuit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#224#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "nuit",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfait-internet-nuit-internet-a-petit-prix-petit-budget-eleve-etudiant.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Night pass usage",
+        "description": "See your night Internet pass usage."
+      }
+    },
+    {
+      "id": "orange-internet-menu-souscription",
+      "kind": "service",
+      "name": "Menu de souscription Internet",
+      "description": "Menu USSD d'abonnement aux pass Internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#212#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/forfaits-semaine-forfaits-pass-internet-petit-prix-pas-cher-petit-budget-pass.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les pages Orange indiquent #101#211# ou #101#212# pour acheter un pass : à vérifier lequel ouvre quoi.",
+      "en": {
+        "name": "Internet subscription menu",
+        "description": "USSD menu to subscribe to Internet passes.",
+        "notes": "Orange pages give #101#211# or #101#212# to buy a pass: to verify which one opens what."
+      }
+    },
+    {
+      "id": "orange-internet-djiguiya-internet",
+      "kind": "service",
+      "name": "Djiguiya Internet (Internet à crédit)",
+      "description": "Empruntez du volume Internet, remboursé à votre prochaine recharge avec 10 % de frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#170#2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "emprunt",
+        "djiguiya"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/djiguiya-internet.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Offres : 20 Mo 4 jours (frais 10 F, à rembourser 110 F), 100 Mo 1 jour (25 F, 275 F), 300 Mo 7 jours (50 F, 550 F), 750 Mo 7 jours (100 F, 1 100 F). Conditions : 6 mois d'ancienneté, 500 F rechargés le mois précédent, au moins 99 F de crédit, prêt précédent remboursé. Consommation : #123#.",
+      "en": {
+        "name": "Djiguiya Internet (Internet on credit)",
+        "description": "Borrow Internet data, repaid at your next top-up with a 10% fee.",
+        "notes": "Packs: 20 MB 4 days (fee 10 F, repay 110 F), 100 MB 1 day (25 F, 275 F), 300 MB 7 days (50 F, 550 F), 750 MB 7 days (100 F, 1,100 F). Conditions: 6 months seniority, 500 F topped up the previous month, at least 99 F credit, previous loan repaid. Usage: #123#."
+      }
+    }
+  ]
+}

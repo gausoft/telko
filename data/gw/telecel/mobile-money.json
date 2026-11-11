@@ -1,0 +1,88 @@
+{
+  "operator": "telecel",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "telecel-mobile-money-portail",
+      "kind": "service",
+      "name": "Portail mobile money Telecel",
+      "description": "Menu principal du mobile money Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*110#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "teletaku",
+        "telecel cash",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://help.taptapsend.com/en/receiving-countries/how-can-i-send-money-to-guinea-bissau",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://telecel.gw/mobile-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code issu d'un seul site secondaire (Taptap Send, septembre 2026), absent du site officiel : à vérifier. L'ancien nom Telecel Cash est cité par cette source ; le site officiel parle de TeleTaku.",
+      "en": {
+        "name": "Telecel mobile money portal",
+        "description": "Main menu of Telecel mobile money.",
+        "notes": "Code from a single secondary site (Taptap Send, September 2026), absent from the official site: to be checked. This source uses the former name Telecel Cash; the official site says TeleTaku."
+      }
+    },
+    {
+      "id": "telecel-mobile-money-solde",
+      "kind": "service",
+      "name": "Solde mobile money",
+      "description": "Consulter votre solde mobile money Telecel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*124#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "teletaku",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://help.taptapsend.com/en/receiving-countries/how-can-i-send-money-to-guinea-bissau",
+            "kind": "secondary",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code issu d'un seul site secondaire (Taptap Send, septembre 2026), absent du site officiel : à vérifier.",
+      "en": {
+        "name": "Mobile money balance",
+        "description": "Check your Telecel mobile money balance.",
+        "notes": "Code from a single secondary site (Taptap Send, September 2026), absent from the official site: to be checked."
+      }
+    }
+  ]
+}

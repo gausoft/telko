@@ -1,0 +1,365 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-menu-forfaits",
+      "kind": "service",
+      "name": "Menu des forfaits Moov",
+      "description": "Activer un forfait internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*123#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "forfait",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/forfaits-internet-volume/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Moov bundles menu",
+        "description": "Activate an internet bundle.",
+        "notes": "You choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "moov-general-menu-combo-pass",
+      "kind": "service",
+      "name": "Menu Combo et Pass Bonus",
+      "description": "Activer un Moov Combo ou un Pass Bonus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "combo",
+        "pass bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-combo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Combo and Pass Bonus menu",
+        "description": "Activate a Moov Combo or a Pass Bonus.",
+        "notes": "You choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "moov-general-pass-bonus-tiers",
+      "kind": "service",
+      "name": "Pass Bonus pour un tiers",
+      "description": "Activer un Pass Bonus pour un autre abonné.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*173*4*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "pass bonus",
+        "tiers",
+        "offrir"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le numéro du bénéficiaire se saisit dans le menu.",
+      "en": {
+        "name": "Pass Bonus for someone else",
+        "description": "Activate a Pass Bonus for another subscriber.",
+        "notes": "The recipient's number is typed in the menu."
+      }
+    },
+    {
+      "id": "moov-general-solde-pass-bonus",
+      "kind": "service",
+      "name": "Solde du Pass Bonus",
+      "description": "Consulter le solde de son Pass Bonus.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*173*5*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "pass bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-pass-bonus/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pass Bonus balance",
+        "description": "Check your Pass Bonus balance."
+      }
+    },
+    {
+      "id": "moov-general-emprunter-credit",
+      "kind": "service",
+      "name": "Emprunter du crédit",
+      "description": "Emprunter du crédit quand vous n'en avez plus, à rembourser au prochain rechargement.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*221#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit secours",
+        "emprunt",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/credit-secours-appels/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le crédit emprunté sert aux appels, aux SMS et aux forfaits internet. La page ne publie pas de frais.",
+      "en": {
+        "name": "Borrow airtime",
+        "description": "Borrow airtime when you run out, repaid at your next top-up.",
+        "notes": "Borrowed credit works for calls, SMS and internet bundles. The page publishes no fee."
+      }
+    },
+    {
+      "id": "moov-general-emprunter-montant",
+      "kind": "service",
+      "name": "Emprunter un montant précis",
+      "description": "Emprunter un montant de crédit de votre choix.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*221*{amount}#",
+        "params": [
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit secours",
+        "emprunt",
+        "avance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/credit-secours-appels/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Borrow a specific amount",
+        "description": "Borrow an amount of airtime of your choice."
+      }
+    },
+    {
+      "id": "moov-general-solde-credit-secours",
+      "kind": "service",
+      "name": "Solde du crédit secours",
+      "description": "Consulter le crédit secours emprunté.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*221*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit secours",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/credit-secours-appels/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Emergency credit balance",
+        "description": "Check the emergency credit you borrowed."
+      }
+    },
+    {
+      "id": "moov-general-montant-a-rembourser",
+      "kind": "service",
+      "name": "Montant à rembourser",
+      "description": "Consulter le montant du crédit secours à rembourser.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*221*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit secours",
+        "remboursement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/credit-secours-appels/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Amount to repay",
+        "description": "Check the emergency credit amount to repay."
+      }
+    },
+    {
+      "id": "moov-general-payer-moov-liberte",
+      "kind": "service",
+      "name": "Payer l'abonnement Moov Liberté",
+      "description": "Payer la mensualité de l'abonnement Moov Liberté.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*199*99#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov liberté",
+        "abonnement",
+        "paiement"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.bj/moov-liberte/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Abonnements de 12 mois (3 mois minimum) à 15 000, 17 000, 20 000 ou 25 000 F par mois, payables d'avance. La page ne donne ni nom d'offre ni volume, donc ils ne sont pas listés comme forfaits.",
+      "en": {
+        "name": "Pay the Moov Liberté subscription",
+        "description": "Pay the monthly Moov Liberté subscription fee.",
+        "notes": "12-month subscriptions (3-month minimum) at 15,000, 17,000, 20,000 or 25,000 F per month, paid in advance. The page gives no offer name or volume, so they are not listed as bundles."
+      }
+    }
+  ]
+}

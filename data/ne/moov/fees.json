@@ -1,0 +1,158 @@
+{
+  "operator": "moov",
+  "service": "moov-money",
+  "entries": [
+    {
+      "id": "moov-fees-transfert-national",
+      "operation": "transfer-national",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.8,
+      "label": "Transfert national Moov Money : 1,8 % du montant",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Moov Money national transfer: 1.8% of the amount"
+      }
+    },
+    {
+      "id": "moov-fees-transfert-international",
+      "operation": "transfer-regional",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.8,
+      "label": "Transfert international Moov Money : 1,8 % du montant",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne distingue pas les pays de destination : « national et international » au même tarif.",
+      "en": {
+        "label": "Moov Money international transfer: 1.8% of the amount",
+        "notes": "The page does not distinguish destination countries: \"national and international\" at the same rate."
+      }
+    },
+    {
+      "id": "moov-fees-depot-compte",
+      "operation": "deposit",
+      "min": 0,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Rechargement du compte Moov Money : 0 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Moov Money account top-up: 0 F"
+      }
+    },
+    {
+      "id": "moov-fees-paiement-facture",
+      "operation": "other",
+      "min": 0,
+      "max": null,
+      "fee": null,
+      "fee_percent": null,
+      "label": "Paiement de factures NIGELEC et SEEN : à partir de 50 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Montant exact selon la facture : la page indique seulement « à partir de 50 F ».",
+      "en": {
+        "label": "NIGELEC and SEEN bill payments: from 50 F",
+        "notes": "Exact amount depends on the bill: the page only says \"from 50 F\"."
+      }
+    },
+    {
+      "id": "moov-fees-reabonnement-tv",
+      "operation": "other",
+      "min": 0,
+      "max": null,
+      "fee": 0,
+      "fee_percent": null,
+      "label": "Réabonnement Canal+ et Telestar : gratuit",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Canal+ and Telestar renewals: free"
+      }
+    }
+  ]
+}

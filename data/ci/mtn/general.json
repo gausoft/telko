@@ -1,0 +1,124 @@
+{
+  "operator": "mtn",
+  "category": "general",
+  "entries": [
+    {
+      "id": "mtn-general-menu-packs",
+      "kind": "service",
+      "name": "Menu des forfaits MTN",
+      "description": "Ouvrir le menu des forfaits voix, internet et SMS.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*105#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "forfaits",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/unik/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "MTN bundles menu",
+        "description": "Open the voice, internet and SMS bundles menu."
+      }
+    },
+    {
+      "id": "mtn-general-menu-cchic",
+      "kind": "service",
+      "name": "Menu MTN C'Chic",
+      "description": "Découvrir les offres de la communauté MTN C'Chic.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "c'chic",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/mtn-cchic/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "MTN C'Chic menu",
+        "description": "Discover the MTN C'Chic community offers."
+      }
+    },
+    {
+      "id": "mtn-general-menu-unik",
+      "kind": "service",
+      "name": "Menu MTN UNIK",
+      "description": "Souscrire aux forfaits du programme de fidélité UNIK.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*501#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "unik",
+        "fidélité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/deal/unik/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page indique « *501# puis option 1 » pour souscrire.",
+      "en": {
+        "name": "MTN UNIK menu",
+        "description": "Subscribe to the bundles of the UNIK loyalty program.",
+        "notes": "The page says \"*501# then option 1\" to subscribe."
+      }
+    }
+  ]
+}

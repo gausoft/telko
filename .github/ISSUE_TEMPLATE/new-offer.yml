@@ -7,14 +7,11 @@ body:
     attributes:
       value: |
         Indiquez votre source. Ne partagez **jamais** votre code secret.
-  - type: dropdown
+  - type: input
     id: operator
     attributes:
       label: Pays et opérateur
-      options:
-        - Yas Togo
-        - Moov Africa Togo
-        - Autre pays ou autre opérateur (précisez-le dans la description)
+      placeholder: Yas Togo, Moov Africa Bénin…
     validations:
       required: true
   - type: input
@@ -28,8 +25,8 @@ body:
     id: code
     attributes:
       label: Code USSD
-      description: Remplacez les valeurs variables par {numero}, {montant}, {code_secret}.
-      placeholder: "*155*1*1*{numero}*{montant}*{code_secret}#"
+      description: Remplacez les valeurs variables par {phone}, {amount}, {pin}.
+      placeholder: "*155*1*1*{phone}*{amount}*{pin}#"
     validations:
       required: true
   - type: textarea

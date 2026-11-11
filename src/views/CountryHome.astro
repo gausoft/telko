@@ -39,7 +39,7 @@ const brands: Record<string, OperatorBrands> = Object.fromEntries(
 // "<" is escaped so data can never close the script tag it is embedded in.
 const brandsJson = JSON.stringify(brands).replace(/</g, '\\u003c');
 
-const icons = { internet: Signal, appels: PhoneCall, argent: Wallet, factures: Zap, frais: ReceiptText, aide: LifeBuoy } as const;
+const icons = { internet: Signal, calls: PhoneCall, money: Wallet, bills: Zap, fees: ReceiptText, help: LifeBuoy } as const;
 const blocks = data.operators.map((operator) => ({
   operator,
   featured: featuredFor(data, operator.id),
@@ -81,7 +81,7 @@ const blocks = data.operators.map((operator) => ({
                   <span class="tile-icon">
                     <Icon size={20} aria-hidden="true" />
                   </span>
-                  <span>{section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id]}</span>
+                  <span class="tile-label">{section.id === 'money' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id]}</span>
                 </a>
               );
             })}
@@ -99,7 +99,7 @@ const blocks = data.operators.map((operator) => ({
     </script>
   </main>
 
-  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="accueil" />
+  <Dock country={data.country.code} operators={data.operators} operator={first.id} current="home" />
   <script is:inline type="application/json" id="brand-data" set:html={brandsJson} />
   <CodeBuilder catalog={catalog} country={data.country.code} />
   <DialToast />
@@ -214,8 +214,18 @@ const blocks = data.operators.map((operator) => ({
     gap: var(--space-2);
     color: var(--text);
     text-decoration: none;
-    font-size: 13px;
+    padding-inline: var(--space-1);
+    /* Shrinks a little on narrow phones so "Orange Money" still fits three tiles to a row. */
+    font-size: min(13px, 3.4vw);
     font-weight: 700;
+  }
+
+  /* One line only: a long mobile money name ("Telecel Money") is cut rather than wrapped. */
+  .tile-label {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .tile-icon {
@@ -231,7 +241,7 @@ const blocks = data.operators.map((operator) => ({
 
   @media (min-width: 900px) {
     .tiles {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(max-content, 1fr));
     }
   }
 </style>

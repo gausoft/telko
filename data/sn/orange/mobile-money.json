@@ -1,0 +1,88 @@
+{
+  "operator": "orange",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "orange-mobile-money-menu-orange-money",
+      "kind": "service",
+      "name": "Menu Orange Money",
+      "description": "Menu principal d'Orange Money : transfert, retrait, achat de crédit, factures.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "mobile money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.sn/actualite/les-services-orange",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit dans le menu. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Orange Money menu",
+        "description": "Main Orange Money menu: transfers, withdrawals, airtime, bills.",
+        "notes": "The PIN is typed in the menu. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-code-secret",
+      "kind": "service",
+      "name": "Créer ou modifier mon code secret",
+      "description": "Pour créer ou modifier votre code secret Orange Money. Le code par défaut doit être changé dès la création du compte.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#73#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "code secret"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/orange-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit à l'écran, jamais dans Telko.",
+      "en": {
+        "name": "Create or change my PIN",
+        "description": "To create or change your Orange Money PIN. The default code must be changed as soon as the account is created.",
+        "notes": "The PIN is typed on screen, never in Telko."
+      }
+    }
+  ]
+}

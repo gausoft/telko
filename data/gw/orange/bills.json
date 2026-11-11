@@ -1,0 +1,87 @@
+{
+  "operator": "orange",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "orange-bills-canal-iroko",
+      "kind": "service",
+      "name": "Canal+ et Iroko+ via Orange Money",
+      "description": "Réactiver un abonnement Canal+ ou Iroko+ avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "canal+",
+        "iroko+",
+        "tv"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/como-funciona-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu #144#, choisir l'option 3. La page cite aussi le paiement de l'électricité (EAGB) par Orange Money, sans code publié.",
+      "en": {
+        "name": "Canal+ and Iroko+ via Orange Money",
+        "description": "Renew a Canal+ or Iroko+ subscription with Orange Money.",
+        "notes": "In the #144# menu, choose option 3. The page also mentions paying electricity (EAGB) with Orange Money, with no published code."
+      }
+    },
+    {
+      "id": "orange-bills-casa-box",
+      "kind": "service",
+      "name": "Renouveler la Casa Box",
+      "description": "Renouveler l'abonnement internet à la maison.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#352#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "casa box",
+        "internet à la maison"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/casa-box.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Casa Box Access 20 000 F par mois, Conforto 24 000 F par mois. Assistance : 508.",
+      "en": {
+        "name": "Renew Casa Box",
+        "description": "Renew the home internet subscription.",
+        "notes": "Casa Box Access 20,000 F a month, Conforto 24,000 F a month. Support: 508."
+      }
+    }
+  ]
+}

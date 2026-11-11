@@ -1,0 +1,190 @@
+{
+  "operator": "expresso",
+  "category": "general",
+  "entries": [
+    {
+      "id": "expresso-general-nopale-50",
+      "kind": "bundle",
+      "name": "Nopalé 50 F",
+      "description": "Vous payez 50 F et recevez 500 F de crédit utilisable pour les appels, l'internet et les SMS, valable 24 h.",
+      "price": 50,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*24*50#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nopalé",
+        "crédit",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Nopalé 50 F",
+        "description": "You pay 50 F and get 500 F of credit usable for calls, data and SMS, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-general-nopale-500",
+      "kind": "bundle",
+      "name": "Nopalé 500 F",
+      "description": "Vous payez 500 F et recevez 20000 F de crédit utilisable pour les appels, l'internet et les SMS, valable 24 h.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*24*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nopalé",
+        "crédit",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Nopalé 500 F",
+        "description": "You pay 500 F and get 20000 F of credit usable for calls, data and SMS, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-general-nopale-1000",
+      "kind": "bundle",
+      "name": "Nopalé 1000 F",
+      "description": "Vous payez 1000 F et recevez 30000 F de crédit utilisable pour les appels, l'internet et les SMS, valable 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*24*1000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nopalé",
+        "crédit",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Nopalé 1000 F",
+        "description": "You pay 1000 F and get 30000 F of credit usable for calls, data and SMS, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-general-nopale-2000",
+      "kind": "bundle",
+      "name": "Nopalé 2000 F",
+      "description": "Vous payez 2000 F et recevez 40000 F de crédit utilisable pour les appels, l'internet et les SMS, valable 30 jours.",
+      "price": 2000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*24*2000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "nopalé",
+        "crédit",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Nopalé 2000 F",
+        "description": "You pay 2000 F and get 40000 F of credit usable for calls, data and SMS, valid 30 days."
+      }
+    }
+  ]
+}

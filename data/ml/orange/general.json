@@ -1,0 +1,342 @@
+{
+  "operator": "orange",
+  "category": "general",
+  "entries": [
+    {
+      "id": "orange-general-portail-101",
+      "kind": "service",
+      "name": "Portail Orange #101#",
+      "description": "Menu principal des services Orange : pass, forfaits, services.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "portail"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/le-portail-101.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Orange portal #101#",
+        "description": "Main menu of Orange services: passes, packs, services."
+      }
+    },
+    {
+      "id": "orange-general-consulter-credit",
+      "kind": "service",
+      "name": "Consulter son crédit",
+      "description": "Voir votre crédit avant ou après une recharge.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#123#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/achat-de-credit-telphonique/recharger-mon-compte.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check your credit",
+        "description": "See your credit before or after a top-up."
+      }
+    },
+    {
+      "id": "orange-general-fidelite",
+      "kind": "service",
+      "name": "Orange Fidélité",
+      "description": "Programme de fidélité Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#140#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "fidélité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-plus.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Détail du programme non relevé.",
+      "en": {
+        "name": "Orange Loyalty",
+        "description": "Orange loyalty programme.",
+        "notes": "Programme details not collected."
+      }
+    },
+    {
+      "id": "orange-general-jobs",
+      "kind": "service",
+      "name": "Orange Jobs",
+      "description": "Service d'offres d'emploi par USSD.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#107#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "emploi"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-plus.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Détail non relevé.",
+      "en": {
+        "name": "Orange Jobs",
+        "description": "Job offers service by USSD.",
+        "notes": "Details not collected."
+      }
+    },
+    {
+      "id": "orange-general-bip-appelle-moi",
+      "kind": "service",
+      "name": "Bip « Appelle-moi »",
+      "description": "Envoyer gratuitement un message demandant d'être rappelé.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#441#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "bip",
+        "rappel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/bip.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Bip \"Call me\"",
+        "description": "Send a free message asking to be called back."
+      }
+    },
+    {
+      "id": "orange-general-bip-credit",
+      "kind": "service",
+      "name": "Bip « Envoie de crédit »",
+      "description": "Demander à un proche de vous envoyer du crédit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#442#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "bip",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/bip.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Bip \"Send credit\"",
+        "description": "Ask a relative to send you credit."
+      }
+    },
+    {
+      "id": "orange-general-messagerie-vocale",
+      "kind": "service",
+      "name": "Messagerie vocale",
+      "description": "Menu de la messagerie vocale : 1 pour activer, 2 pour désactiver.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#491#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "messagerie"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/restez-joignable.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le choix 1 ou 2 se fait dans le menu.",
+      "en": {
+        "name": "Voicemail",
+        "description": "Voicemail menu: 1 to activate, 2 to deactivate.",
+        "notes": "Choose 1 or 2 in the menu."
+      }
+    },
+    {
+      "id": "orange-general-a-sara-nye",
+      "kind": "service",
+      "name": "A Sara Nyé (appel payé par le destinataire)",
+      "description": "Appeler en faisant payer le destinataire.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#355#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "appel",
+        "collect"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/services-mobile/a-sara-nye.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Serveur vocal 7412 : composer 888 puis le numéro. Appel facturé 81 F TTC la minute au destinataire.",
+      "en": {
+        "name": "A Sara Nyé (receiver pays)",
+        "description": "Call and let the receiver pay.",
+        "notes": "IVR 7412: dial 888 then the number. Call billed 81 F incl. tax per minute to the receiver."
+      }
+    },
+    {
+      "id": "orange-general-wimo-menu",
+      "kind": "service",
+      "name": "Wimo : menu des pass",
+      "description": "Pass pour la clé 4G Wimo : de 40 Mo (100 F) à 25 Go (10 000 F).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#101#212#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "wimo",
+        "4g",
+        "internet"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/offres-internet-mobile/wimo.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi #144#33# (Orange Money). Grille : 1 jour 40 Mo 100 F ; 4 jours 40 Mo 150 F ; 1 jour 160 Mo 100 F ; 1 jour 2 Go 1 000 F ; 7 jours 400 Mo 500 F ; 7 jours 1 Go 1 000 F ; 7 jours 3 Go 2 000 F ; 30 jours 1,5 Go 2 000 F ; 8 Go 5 000 F ; 25 Go 10 000 F. Service Wimo : 7414.",
+      "en": {
+        "name": "Wimo: pass menu",
+        "description": "Passes for the Wimo 4G modem: from 40 MB (100 F) to 25 GB (10,000 F).",
+        "notes": "Also #144#33# (Orange Money). Grid: 1 day 40 MB 100 F; 4 days 40 MB 150 F; 1 day 160 MB 100 F; 1 day 2 GB 1,000 F; 7 days 400 MB 500 F; 7 days 1 GB 1,000 F; 7 days 3 GB 2,000 F; 30 days 1.5 GB 2,000 F; 8 GB 5,000 F; 25 GB 10,000 F. Wimo service: 7414."
+      }
+    }
+  ]
+}

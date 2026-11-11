@@ -1,0 +1,756 @@
+{
+  "operator": "telecel",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "telecel-internet-36mo-100f",
+      "kind": "bundle",
+      "name": "Forfait 36 Mo (30 jours)",
+      "description": "36 Mo d'Internet valables 30 jours.",
+      "price": 100,
+      "allowances": {
+        "data_mb": 36,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*10#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "36 MB pack (30 days)",
+        "description": "36 MB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-300mo-400f",
+      "kind": "bundle",
+      "name": "Forfait 300 Mo (30 jours)",
+      "description": "300 Mo d'Internet valables 30 jours.",
+      "price": 400,
+      "allowances": {
+        "data_mb": 300,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "300 MB pack (30 days)",
+        "description": "300 MB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-420mo-450f",
+      "kind": "bundle",
+      "name": "Forfait 420 Mo (30 jours)",
+      "description": "420 Mo d'Internet valables 30 jours.",
+      "price": 450,
+      "allowances": {
+        "data_mb": 420,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*300#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "420 MB pack (30 days)",
+        "description": "420 MB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-1000mo-1000f",
+      "kind": "bundle",
+      "name": "Forfait 1 Go (30 jours)",
+      "description": "1 Go d'Internet valables 30 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*750#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "1 GB pack (30 days)",
+        "description": "1 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-2500mo-1800f",
+      "kind": "bundle",
+      "name": "Forfait 2,5 Go (30 jours)",
+      "description": "2,5 Go d'Internet valables 30 jours.",
+      "price": 1800,
+      "allowances": {
+        "data_mb": 2500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*1700#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "2.5 GB pack (30 days)",
+        "description": "2.5 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-4000mo-2500f",
+      "kind": "bundle",
+      "name": "Forfait 4 Go (30 jours)",
+      "description": "4 Go d'Internet valables 30 jours.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 4000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*1000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "4 GB pack (30 days)",
+        "description": "4 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-12000mo-5000f",
+      "kind": "bundle",
+      "name": "Forfait 12 Go (30 jours)",
+      "description": "12 Go d'Internet valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 12000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*5200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "12 GB pack (30 days)",
+        "description": "12 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-25000mo-9000f",
+      "kind": "bundle",
+      "name": "Forfait 25 Go (30 jours)",
+      "description": "25 Go d'Internet valables 30 jours.",
+      "price": 9000,
+      "allowances": {
+        "data_mb": 25000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*5000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "25 GB pack (30 days)",
+        "description": "25 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-35000mo-10000f",
+      "kind": "bundle",
+      "name": "Forfait 35 Go (30 jours)",
+      "description": "35 Go d'Internet valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 35000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*15000#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "35 GB pack (30 days)",
+        "description": "35 GB of data, valid 30 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-60mo-150f",
+      "kind": "bundle",
+      "name": "Forfait 60 Mo (4 jours)",
+      "description": "60 Mo d'Internet valables 4 jours.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 60,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 4,
+        "label": "4 jours",
+        "en": {
+          "label": "4 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*50#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "60 MB pack (4 days)",
+        "description": "60 MB of data, valid 4 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-200mo-200f",
+      "kind": "bundle",
+      "name": "Forfait 200 Mo (2 jours)",
+      "description": "200 Mo d'Internet valables 2 jours.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*110#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "200 MB pack (2 days)",
+        "description": "200 MB of data, valid 2 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-650mo-500f",
+      "kind": "bundle",
+      "name": "Forfait 650 Mo (2 jours)",
+      "description": "650 Mo d'Internet valables 2 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 650,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "650 MB pack (2 days)",
+        "description": "650 MB of data, valid 2 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-2000mo-1000f",
+      "kind": "bundle",
+      "name": "Forfait 2 Go (2 jours)",
+      "description": "2 Go d'Internet valables 2 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 2000,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*1500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "2 GB pack (2 days)",
+        "description": "2 GB of data, valid 2 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-1500mo-1000f",
+      "kind": "bundle",
+      "name": "Forfait 1,5 Go (7 jours)",
+      "description": "1,5 Go d'Internet valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*1200#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "1.5 GB pack (7 days)",
+        "description": "1.5 GB of data, valid 7 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    },
+    {
+      "id": "telecel-internet-6500mo-2000f",
+      "kind": "bundle",
+      "name": "Forfait 6,5 Go (7 jours)",
+      "description": "6,5 Go d'Internet valables 7 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 6500,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*550*2500#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.telecelmali.com/pricing/offres-mobiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel Telecel Mali est récent et reprend une grille « validée par l'AMRTP » de mai 2026 : à confirmer sur un téléphone.",
+      "en": {
+        "name": "6.5 GB pack (7 days)",
+        "description": "6.5 GB of data, valid 7 days.",
+        "notes": "The official Telecel Mali site is recent and reuses a grid 'validated by AMRTP' from May 2026: to confirm on a phone."
+      }
+    }
+  ]
+}

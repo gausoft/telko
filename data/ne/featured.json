@@ -1,0 +1,15 @@
+{
+  "country": "ne",
+  "updated": "2026-11-09",
+  "items": [],
+  "shortcuts": [
+    {
+      "entry_id": "airtel-general-consulter-solde",
+      "label": "Solde",
+      "brand": "operator",
+      "en": {
+        "label": "Balance"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "operator": "mtn",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "mtn-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu MoMo",
+      "description": "Ouvrir le menu MoMo : transfert, retrait, crédit, factures.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*133#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "momo",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/helppersonal/envoyez-et-recevoir-de-largent-a-petits-prix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "MoMo menu",
+        "description": "Open the MoMo menu: transfer, withdrawal, airtime, bills."
+      }
+    },
+    {
+      "id": "mtn-mobile-money-transfert-international",
+      "kind": "service",
+      "name": "Envoyer de l'argent à l'étranger",
+      "description": "Envoyer de l'argent depuis MoMo vers le Bénin, le Burkina Faso, la Guinée-Bissau, le Mali, le Sénégal ou le Togo.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*133#",
+        "params": []
+      },
+      "payment_methods": [
+        "momo"
+      ],
+      "third_party": null,
+      "tags": [
+        "momo",
+        "transfert international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/helppersonal/envoyez-et-recevoir-de-largent-a-petits-prix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Dans le menu : option 3 puis 2 ; la liste des opérateurs par pays est en option 9.",
+      "en": {
+        "name": "Send money abroad",
+        "description": "Send money from MoMo to Benin, Burkina Faso, Guinea-Bissau, Mali, Senegal or Togo.",
+        "notes": "In the menu: option 3 then 2; the list of operators by country is in option 9."
+      }
+    }
+  ]
+}

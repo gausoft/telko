@@ -1,0 +1,573 @@
+{
+  "operator": "yas",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "yas-voice-sms-tawfekh-200",
+      "kind": "bundle",
+      "name": "Tawfekh 200 F",
+      "description": "60 minutes d'appel valables 24 h.",
+      "price": 200,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels",
+        "tawfekh"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Tawfekh 200 F",
+        "description": "60 call minutes, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-tawfekh-500",
+      "kind": "bundle",
+      "name": "Tawfekh 500 F",
+      "description": "250 minutes d'appel valables 24 h.",
+      "price": 500,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 250,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels",
+        "tawfekh"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Tawfekh 500 F",
+        "description": "250 call minutes, valid 24 h.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-tawfekh-1000",
+      "kind": "bundle",
+      "name": "Tawfekh 1000 F",
+      "description": "500 minutes d'appel valables 7 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 500,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels",
+        "tawfekh"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Tawfekh 1000 F",
+        "description": "500 call minutes, valid 7 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-tawfekh-2000",
+      "kind": "bundle",
+      "name": "Tawfekh 2000 F",
+      "description": "1000 minutes d'appel valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 1000,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels",
+        "tawfekh"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Tawfekh 2000 F",
+        "description": "1000 call minutes, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-tawfekh-5000",
+      "kind": "bundle",
+      "name": "Tawfekh 5000 F",
+      "description": "2400 minutes d'appel valables 30 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 2400,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "appels",
+        "tawfekh"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Tawfekh 5000 F",
+        "description": "2400 call minutes, valid 30 days.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-200",
+      "kind": "bundle",
+      "name": "Bougna voix 200 F",
+      "description": "Vous payez 200 F et recevez 2000 F de crédit d'appel, valables 24 h.",
+      "price": 200,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 200 F",
+        "description": "You pay 200 F and get 2000 F of call credit, valid 24 h.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-500",
+      "kind": "bundle",
+      "name": "Bougna voix 500 F",
+      "description": "Vous payez 500 F et recevez 10000 F de crédit d'appel, valables 24 h.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 500 F",
+        "description": "You pay 500 F and get 10000 F of call credit, valid 24 h.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-750",
+      "kind": "bundle",
+      "name": "Bougna voix 750 F",
+      "description": "Vous payez 750 F et recevez 12000 F de crédit d'appel, valables 7 jours.",
+      "price": 750,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 750 F",
+        "description": "You pay 750 F and get 12000 F of call credit, valid 7 days.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-1000",
+      "kind": "bundle",
+      "name": "Bougna voix 1000 F",
+      "description": "Vous payez 1000 F et recevez 15000 F de crédit d'appel, valables 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 1000 F",
+        "description": "You pay 1000 F and get 15000 F of call credit, valid 7 days.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-2000",
+      "kind": "bundle",
+      "name": "Bougna voix 2000 F",
+      "description": "Vous payez 2000 F et recevez 40000 F de crédit d'appel, valables 30 jours.",
+      "price": 2000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 2000 F",
+        "description": "You pay 2000 F and get 40000 F of call credit, valid 30 days.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-voice-sms-bougna-5000",
+      "kind": "bundle",
+      "name": "Bougna voix 5000 F",
+      "description": "Vous payez 5000 F et recevez 150000 F de crédit d'appel, valables 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "#155#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "voix",
+        "bougna",
+        "bonus"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/particulier/mobile-plans/voice-sms/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La FAQ officielle cite le #400# pour activer Bougna, les fiches de l'offre citent le #155#. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Bougna voix 5000 F",
+        "description": "You pay 5000 F and get 150000 F of call credit, valid 30 days.",
+        "notes": "The official FAQ gives #400# to activate Bougna, the offer cards give #155#. Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

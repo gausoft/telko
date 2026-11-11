@@ -1,0 +1,689 @@
+{
+  "operator": "moov",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "moov-mixed-izymix-plus-150",
+      "kind": "bundle",
+      "name": "IzyMix+ 150 F",
+      "description": "10 min tous réseaux + 15 Mo + 30 SMS.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 15,
+        "voice_min": 10,
+        "sms": 30
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 150 F",
+        "description": "10 min all networks + 15 MB + 30 SMS.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-200",
+      "kind": "bundle",
+      "name": "IzyMix+ 200 F",
+      "description": "17 min tous réseaux + 25 Mo + 50 SMS.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 25,
+        "voice_min": 17,
+        "sms": 50
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 200 F",
+        "description": "17 min all networks + 25 MB + 50 SMS.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-300",
+      "kind": "bundle",
+      "name": "IzyMix+ 300 F",
+      "description": "27 min tous réseaux + 100 Mo + 100 SMS + 5 numéros favoris.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": 27,
+        "sms": 100
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 300 F",
+        "description": "27 min all networks + 100 MB + 100 SMS + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-500",
+      "kind": "bundle",
+      "name": "IzyMix+ 500 F",
+      "description": "50 min tous réseaux + 250 Mo + 250 SMS + 5 numéros favoris.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": 50,
+        "sms": 250
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 500 F",
+        "description": "50 min all networks + 250 MB + 250 SMS + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-1000",
+      "kind": "bundle",
+      "name": "IzyMix+ 1 000 F",
+      "description": "100 min tous réseaux + 1 Go + 500 SMS + 5 numéros favoris.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": 100,
+        "sms": 500
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 1,000 F",
+        "description": "100 min all networks + 1 GB + 500 SMS + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-1500",
+      "kind": "bundle",
+      "name": "IzyMix+ 1 500 F",
+      "description": "200 min + 1,5 Go + 500 SMS tous réseaux + 5 numéros favoris.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": 200,
+        "sms": 500
+      },
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 1,500 F",
+        "description": "200 min + 1.5 GB + 500 SMS all networks + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-2500",
+      "kind": "bundle",
+      "name": "IzyMix+ 2 500 F",
+      "description": "250 min + 2,5 Go + 500 SMS tous réseaux + SMS illimités Moov + 5 numéros favoris.",
+      "price": 2500,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": 250,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 2,500 F",
+        "description": "250 min + 2.5 GB + 500 SMS all networks + unlimited Moov SMS + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-5000",
+      "kind": "bundle",
+      "name": "IzyMix+ 5 000 F",
+      "description": "500 min et 500 SMS tous réseaux + 5 Go + SMS illimités Moov + 5 numéros favoris.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": 5120,
+        "voice_min": 500,
+        "sms": 500
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 5,000 F",
+        "description": "500 min and 500 SMS all networks + 5 GB + unlimited Moov SMS + 5 favorite numbers.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-10000",
+      "kind": "bundle",
+      "name": "IzyMix+ 10 000 F",
+      "description": "830 min et 1 000 SMS + 10 Go + appels et SMS illimités Moov.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": 10240,
+        "voice_min": 830,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 10,000 F",
+        "description": "830 min and 1,000 SMS + 10 GB + unlimited Moov calls and SMS.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-izymix-plus-20000",
+      "kind": "bundle",
+      "name": "IzyMix+ 20 000 F",
+      "description": "1 660 min et 1 000 SMS + 20 Go + appels et SMS illimités Moov.",
+      "price": 20000,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": 1660,
+        "sms": 1000
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "izymix+",
+        "mixte",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-izy-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général IzyMix+, le forfait se choisit dans le menu. Le prix est lu sur l'image du forfait de la page. Achat aussi par Moov Money via *155*9*1#.",
+      "en": {
+        "name": "IzyMix+ 20,000 F",
+        "description": "1,660 min and 1,000 SMS + 20 GB + unlimited Moov calls and SMS.",
+        "notes": "The page gives no dedicated code per bundle: general IzyMix+ code, you pick the bundle in the menu. The price is read from the bundle image on the page. Also bought with Moov Money via *155*9*1#."
+      }
+    },
+    {
+      "id": "moov-mixed-folie-mix-700",
+      "kind": "bundle",
+      "name": "Moov Folie Mix 700 F",
+      "description": "1 h d'appels tous réseaux + 1,5 Go, valables 5 jours.",
+      "price": 700,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2*1*3*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "folie",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/folie-mix/moov-folie-mix/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page donne aussi *155*9# pour l'achat par Moov Money.",
+      "en": {
+        "name": "Moov Folie Mix 700 F",
+        "description": "1 h of calls to all networks + 1.5 GB, valid 5 days.",
+        "notes": "The page also gives *155*9# for buying with Moov Money."
+      }
+    },
+    {
+      "id": "moov-mixed-folie-nuit-200",
+      "kind": "bundle",
+      "name": "Moov Folie Nuit 200 F",
+      "description": "2 Go + 30 min tous réseaux, utilisables la nuit.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": 30,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "Une nuit",
+        "en": {
+          "label": "One night"
+        }
+      },
+      "time_window": {
+        "from": "22:00",
+        "to": "07:00"
+      },
+      "ussd": {
+        "template": "*303*2*1*7#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "folie",
+        "nuit",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code vient de la page des codes utiles. La page Folie Internet donne la nuit de 22 h à 7 h, la page des forfaits spéciaux donne 23 h à 5 h pour un forfait du même prix : à vérifier.",
+      "en": {
+        "name": "Moov Folie Night 200 F",
+        "description": "2 GB + 30 min all networks, usable at night.",
+        "notes": "The code comes from the useful codes page. The Folie Internet page gives the night from 22:00 to 07:00, the special bundles page gives 23:00 to 05:00 for a bundle at the same price: to be checked."
+      }
+    },
+    {
+      "id": "moov-mixed-folie-hebdo-700",
+      "kind": "bundle",
+      "name": "Moov Folie Hebdo 700 F",
+      "description": "2 Go + 60 min tous réseaux, valables 7 jours.",
+      "price": 700,
+      "allowances": {
+        "data_mb": 2048,
+        "voice_min": 60,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "folie",
+        "hebdo",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à ce forfait : code général Moov Folie, le forfait se choisit dans le menu. Moov Money : *155*9#.",
+      "en": {
+        "name": "Moov Folie Weekly 700 F",
+        "description": "2 GB + 60 min all networks, valid 7 days.",
+        "notes": "The page gives no dedicated code for this bundle: general Moov Folie code, you pick the bundle in the menu. Moov Money: *155*9#."
+      }
+    }
+  ]
+}

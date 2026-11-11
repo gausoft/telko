@@ -41,11 +41,11 @@ function soonDescription(country: string, operators: string[]): string {
 function heading(id: SectionId, c: SectionCopyContext): string {
   const headings: Record<SectionId, string> = {
     internet: `Forfaits internet ${c.operatorShort}`,
-    appels: `Appels et SMS ${c.operatorShort}`,
-    argent: `Codes ${c.moneyShort}`,
-    factures: `Factures avec ${c.operatorShort}`,
-    frais: `Frais ${c.moneyShort}`,
-    aide: `Codes utiles ${c.operatorShort}`,
+    calls: `Appels et SMS ${c.operatorShort}`,
+    money: `Codes ${c.moneyShort}`,
+    bills: `Factures avec ${c.operatorShort}`,
+    fees: `Frais ${c.moneyShort}`,
+    help: `Codes utiles ${c.operatorShort}`,
   };
 
   return headings[id];
@@ -57,11 +57,11 @@ function description(id: SectionId, c: SectionCopyContext): string {
   const lead = (noun: string): string => (c.count > 0 ? `${c.count} ${noun}` : noun.charAt(0).toUpperCase() + noun.slice(1));
   const descriptions: Record<SectionId, string> = {
     internet: `${lead('forfaits internet')} ${c.operatorName}, du jour au mois${from}. Le code de chaque forfait se compose en un tap.`,
-    appels: `${lead('forfaits appels et SMS')} ${c.operatorName}${from}. Le code se compose en un tap.`,
-    argent: `${lead('codes')} ${c.moneyName} prêts à composer. Telko ne demande jamais votre code secret.`,
-    factures: `${lead('codes')} pour payer vos factures avec ${c.operatorName}, prêts à composer.`,
-    frais: c.fees > 0 ? `Les frais ${c.moneyName} : ${c.fees} montants, avec la source de chacun.` : `Les frais ${c.moneyName}, avec leur source.`,
-    aide: `${lead('codes utiles')} ${c.operatorName} : solde, numéro et services, en un tap.`,
+    calls: `${lead('forfaits appels et SMS')} ${c.operatorName}${from}. Le code se compose en un tap.`,
+    money: `${lead('codes')} ${c.moneyName} prêts à composer. Telko ne demande jamais votre code secret.`,
+    bills: `${lead('codes')} pour payer vos factures avec ${c.operatorName}, prêts à composer.`,
+    fees: c.fees > 0 ? `Les frais ${c.moneyName} : ${c.fees} montants, avec la source de chacun.` : `Les frais ${c.moneyName}, avec leur source.`,
+    help: `${lead('codes utiles')} ${c.operatorName} : solde, numéro et services, en un tap.`,
   };
 
   return descriptions[id];

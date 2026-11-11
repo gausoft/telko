@@ -1,0 +1,1160 @@
+{
+  "operator": "moov",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "moov-internet-classic-150",
+      "kind": "bundle",
+      "name": "Forfait internet 150 F",
+      "description": "150 Mo valables 2 jours.",
+      "price": 150,
+      "allowances": {
+        "data_mb": 150,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 150 F",
+        "description": "150 MB valid 2 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-200",
+      "kind": "bundle",
+      "name": "Forfait internet 200 F",
+      "description": "220 Mo valables 2 jours.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 220,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 200 F",
+        "description": "220 MB valid 2 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-300",
+      "kind": "bundle",
+      "name": "Forfait internet 300 F",
+      "description": "400 Mo valables 2 jours.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 400,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "2 jours",
+        "en": {
+          "label": "2 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 300 F",
+        "description": "400 MB valid 2 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-500",
+      "kind": "bundle",
+      "name": "Forfait internet 500 F",
+      "description": "750 Mo valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 500 F",
+        "description": "750 MB valid 3 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-750",
+      "kind": "bundle",
+      "name": "Forfait internet 750 F",
+      "description": "1 Go valables 7 jours.",
+      "price": 750,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 750 F",
+        "description": "1 GB valid 7 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-1000",
+      "kind": "bundle",
+      "name": "Forfait internet 1 000 F",
+      "description": "1,5 Go valables 5 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 1,000 F",
+        "description": "1.5 GB valid 5 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-1500",
+      "kind": "bundle",
+      "name": "Forfait internet 1 500 F",
+      "description": "2,5 Go valables 10 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 2560,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 1,500 F",
+        "description": "2.5 GB valid 10 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-2000",
+      "kind": "bundle",
+      "name": "Forfait internet 2 000 F",
+      "description": "3 Go valables 30 jours.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": 3072,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 2,000 F",
+        "description": "3 GB valid 30 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-4900",
+      "kind": "bundle",
+      "name": "Forfait internet 4 900 F",
+      "description": "7,4 Go valables 30 jours.",
+      "price": 4900,
+      "allowances": {
+        "data_mb": 7578,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 4,900 F",
+        "description": "7.4 GB valid 30 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-9900",
+      "kind": "bundle",
+      "name": "Forfait internet 9 900 F",
+      "description": "20 Go valables 30 jours.",
+      "price": 9900,
+      "allowances": {
+        "data_mb": 20480,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 9,900 F",
+        "description": "20 GB valid 30 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-14900",
+      "kind": "bundle",
+      "name": "Forfait internet 14 900 F",
+      "description": "30 Go valables 30 jours.",
+      "price": 14900,
+      "allowances": {
+        "data_mb": 30720,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 14,900 F",
+        "description": "30 GB valid 30 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-classic-19900",
+      "kind": "bundle",
+      "name": "Forfait internet 19 900 F",
+      "description": "45 Go valables 30 jours.",
+      "price": 19900,
+      "allowances": {
+        "data_mb": 46080,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "data",
+        "forfait",
+        "classic"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code d'achat des pass internet, le forfait se choisit dans le menu. Moov Money : *155*9*2#.",
+      "en": {
+        "name": "Internet bundle 19,900 F",
+        "description": "45 GB valid 30 days.",
+        "notes": "The page gives no dedicated code per bundle: general internet pass purchase code, you pick the bundle in the menu. Moov Money: *155*9*2#."
+      }
+    },
+    {
+      "id": "moov-internet-maxi-data-24000",
+      "kind": "bundle",
+      "name": "Maxi Data 24 000 F",
+      "description": "150 Go valables 30 jours, pour box 4G ou pocket wifi.",
+      "price": 24000,
+      "allowances": {
+        "data_mb": 153600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "box 4g",
+        "pocket wifi",
+        "maxi data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/offre-internet-maxi-data/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix est lu sur l'image de la page Maxi Data ; le même prix figure en texte sur la page des forfaits classics.",
+      "en": {
+        "name": "Maxi Data 24,000 F",
+        "description": "150 GB valid 30 days, for 4G box or pocket wifi.",
+        "notes": "The price is read from the image on the Maxi Data page; the same price appears as text on the classics bundles page."
+      }
+    },
+    {
+      "id": "moov-internet-maxi-data-29000",
+      "kind": "bundle",
+      "name": "Maxi Data 29 000 F",
+      "description": "300 Go valables 30 jours, pour box 4G ou pocket wifi.",
+      "price": 29000,
+      "allowances": {
+        "data_mb": 307200,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "box 4g",
+        "pocket wifi",
+        "maxi data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/offre-internet-maxi-data/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix est lu sur l'image de la page Maxi Data ; le même prix figure en texte sur la page des forfaits classics.",
+      "en": {
+        "name": "Maxi Data 29,000 F",
+        "description": "300 GB valid 30 days, for 4G box or pocket wifi.",
+        "notes": "The price is read from the image on the Maxi Data page; the same price appears as text on the classics bundles page."
+      }
+    },
+    {
+      "id": "moov-internet-maxi-data-39000",
+      "kind": "bundle",
+      "name": "Maxi Data 39 000 F",
+      "description": "400 Go valables 30 jours, pour box 4G ou pocket wifi.",
+      "price": 39000,
+      "allowances": {
+        "data_mb": 409600,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "box 4g",
+        "pocket wifi",
+        "maxi data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/offre-internet-maxi-data/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le prix est lu sur l'image de la page Maxi Data ; le même prix figure en texte sur la page des forfaits classics.",
+      "en": {
+        "name": "Maxi Data 39,000 F",
+        "description": "400 GB valid 30 days, for 4G box or pocket wifi.",
+        "notes": "The price is read from the image on the Maxi Data page; the same price appears as text on the classics bundles page."
+      }
+    },
+    {
+      "id": "moov-internet-folie-200-650",
+      "kind": "bundle",
+      "name": "Internet Moov Folie 200 F",
+      "description": "650 Mo valables 1 jour.",
+      "price": 200,
+      "allowances": {
+        "data_mb": 650,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "folie",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général Moov Folie. La page des forfaits classics affiche une autre grille Moov Data Folie (200 F = 650 Mo 2 jours, 500 F = 2 Go 3 jours, 1 000 F = 4 Go 7 jours, 1 500 F = 6 Go 7 jours) : contradiction à vérifier.",
+      "en": {
+        "name": "Moov Folie Internet 200 F",
+        "description": "650 MB valid 1 day.",
+        "notes": "The page gives no dedicated code per bundle: general Moov Folie code. The classics page shows another Moov Data Folie grid (200 F = 650 MB 2 days, 500 F = 2 GB 3 days, 1,000 F = 4 GB 7 days, 1,500 F = 6 GB 7 days): contradiction to be checked."
+      }
+    },
+    {
+      "id": "moov-internet-folie-300-900",
+      "kind": "bundle",
+      "name": "Internet Moov Folie 300 F",
+      "description": "900 Mo valables 1 jour.",
+      "price": 300,
+      "allowances": {
+        "data_mb": 900,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 1,
+        "label": "1 jour",
+        "en": {
+          "label": "1 day"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "folie",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général Moov Folie. La page des forfaits classics affiche une autre grille Moov Data Folie (200 F = 650 Mo 2 jours, 500 F = 2 Go 3 jours, 1 000 F = 4 Go 7 jours, 1 500 F = 6 Go 7 jours) : contradiction à vérifier.",
+      "en": {
+        "name": "Moov Folie Internet 300 F",
+        "description": "900 MB valid 1 day.",
+        "notes": "The page gives no dedicated code per bundle: general Moov Folie code. The classics page shows another Moov Data Folie grid (200 F = 650 MB 2 days, 500 F = 2 GB 3 days, 1,000 F = 4 GB 7 days, 1,500 F = 6 GB 7 days): contradiction to be checked."
+      }
+    },
+    {
+      "id": "moov-internet-folie-500-1500",
+      "kind": "bundle",
+      "name": "Internet Moov Folie 500 F",
+      "description": "1,5 Go valables 3 jours.",
+      "price": 500,
+      "allowances": {
+        "data_mb": 1536,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "folie",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général Moov Folie. La page des forfaits classics affiche une autre grille Moov Data Folie (200 F = 650 Mo 2 jours, 500 F = 2 Go 3 jours, 1 000 F = 4 Go 7 jours, 1 500 F = 6 Go 7 jours) : contradiction à vérifier.",
+      "en": {
+        "name": "Moov Folie Internet 500 F",
+        "description": "1.5 GB valid 3 days.",
+        "notes": "The page gives no dedicated code per bundle: general Moov Folie code. The classics page shows another Moov Data Folie grid (200 F = 650 MB 2 days, 500 F = 2 GB 3 days, 1,000 F = 4 GB 7 days, 1,500 F = 6 GB 7 days): contradiction to be checked."
+      }
+    },
+    {
+      "id": "moov-internet-folie-1000-4000",
+      "kind": "bundle",
+      "name": "Internet Moov Folie 1 000 F",
+      "description": "4 Go valables 5 jours.",
+      "price": 1000,
+      "allowances": {
+        "data_mb": 4096,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 5,
+        "label": "5 jours",
+        "en": {
+          "label": "5 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "folie",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne donne pas de code propre à chaque forfait : code général Moov Folie. La page des forfaits classics affiche une autre grille Moov Data Folie (200 F = 650 Mo 2 jours, 500 F = 2 Go 3 jours, 1 000 F = 4 Go 7 jours, 1 500 F = 6 Go 7 jours) : contradiction à vérifier.",
+      "en": {
+        "name": "Moov Folie Internet 1,000 F",
+        "description": "4 GB valid 5 days.",
+        "notes": "The page gives no dedicated code per bundle: general Moov Folie code. The classics page shows another Moov Data Folie grid (200 F = 650 MB 2 days, 500 F = 2 GB 3 days, 1,000 F = 4 GB 7 days, 1,500 F = 6 GB 7 days): contradiction to be checked."
+      }
+    },
+    {
+      "id": "moov-internet-folie-hebdo-1500",
+      "kind": "bundle",
+      "name": "Internet Moov Folie Hebdo 1 500 F",
+      "description": "6 Go valables 7 jours.",
+      "price": 1500,
+      "allowances": {
+        "data_mb": 6144,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "folie",
+        "hebdo"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfait-internet-moov-folie/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code général Moov Folie, le forfait se choisit dans le menu. Moov Money : *155*9#.",
+      "en": {
+        "name": "Moov Folie Weekly Internet 1,500 F",
+        "description": "6 GB valid 7 days.",
+        "notes": "General Moov Folie code, you pick the bundle in the menu. Moov Money: *155*9#."
+      }
+    },
+    {
+      "id": "moov-internet-achat-pour-un-tiers",
+      "kind": "service",
+      "name": "Acheter un pass internet pour un tiers",
+      "description": "Offrir un pass internet à un autre numéro Moov.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "tiers"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buy an internet pass for someone else",
+        "description": "Buy an internet pass for another Moov number."
+      }
+    },
+    {
+      "id": "moov-internet-acheter-pass",
+      "kind": "service",
+      "name": "Acheter un pass internet",
+      "description": "Ouvrir le menu d'achat des pass internet.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303*3*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/forfaits-internet-classics/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Buy an internet pass",
+        "description": "Open the internet pass purchase menu."
+      }
+    }
+  ]
+}

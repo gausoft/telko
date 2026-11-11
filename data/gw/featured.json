@@ -1,0 +1,23 @@
+{
+  "country": "gw",
+  "updated": "2026-11-09",
+  "items": [],
+  "shortcuts": [
+    {
+      "entry_id": "orange-general-numero",
+      "label": "Mon numéro",
+      "brand": "operator",
+      "en": {
+        "label": "My number"
+      }
+    },
+    {
+      "entry_id": "telecel-mobile-money-solde",
+      "label": "Solde mobile money",
+      "brand": "mobile_money",
+      "en": {
+        "label": "Mobile money balance"
+      }
+    }
+  ]
+}

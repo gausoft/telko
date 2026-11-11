@@ -1,0 +1,228 @@
+{
+  "operator": "orange",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "orange-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Orange Money",
+      "description": "Ouvrir le menu Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Menu Orange Money",
+        "description": "Open the Orange Money menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-acheter-credit",
+      "kind": "service",
+      "name": "Acheter du crédit",
+      "description": "Acheter du crédit avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Acheter du crédit",
+        "description": "Buy airtime with Orange Money."
+      }
+    },
+    {
+      "id": "orange-mobile-money-transfert",
+      "kind": "service",
+      "name": "Transférer de l'argent",
+      "description": "Envoyer de l'argent avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144*2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Transférer de l'argent",
+        "description": "Send money with Orange Money."
+      }
+    },
+    {
+      "id": "orange-mobile-money-retrait",
+      "kind": "service",
+      "name": "Retirer de l'argent",
+      "description": "Retirer de l'argent avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "retrait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Retirer de l'argent",
+        "description": "Withdraw money with Orange Money."
+      }
+    },
+    {
+      "id": "orange-mobile-money-payer-facture",
+      "kind": "service",
+      "name": "Payer une facture",
+      "description": "Payer une facture avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144*4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "facture"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Payer une facture",
+        "description": "Pay a bill with Orange Money."
+      }
+    },
+    {
+      "id": "orange-mobile-money-acheter-forfaits",
+      "kind": "service",
+      "name": "Acheter des forfaits",
+      "description": "Acheter des forfaits avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*144*5#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "forfait"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Acheter des forfaits",
+        "description": "Buy bundles with Orange Money."
+      }
+    }
+  ]
+}

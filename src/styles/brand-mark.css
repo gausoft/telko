@@ -12,13 +12,14 @@
 .brand-mark-logo {
   background: #ffffff;
   box-shadow: 0 0 0 1px rgba(18, 17, 31, 0.08);
-  padding: calc(var(--size) * 0.12);
+  padding: calc(var(--size) * 0.18);
 }
 
 .brand-mark-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 12%;
 }
 
 .brand-mark-badge {

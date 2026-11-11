@@ -26,7 +26,7 @@ const { data, operator, section, catalog } = Astro.props;
 const lang = pageLang(Astro.url);
 const m = messages(lang);
 const isInternet = section.id === 'internet';
-const isCalls = section.id === 'appels';
+const isCalls = section.id === 'calls';
 
 const entries: CatalogEntry[] = sectionEntries(data, operator.id, section).sort((a, b) => Number(a.price === null) - Number(b.price === null) || (a.price ?? 0) - (b.price ?? 0));
 
@@ -59,8 +59,8 @@ const fees = data.fees.filter((f) => f.operator === operator.id);
 /** Day the data shown on this page was last read, taken from its own sources; shown under the list. */
 const readOn = lastReadOn([operator, ...entries, ...fees].map((item) => item.provenance));
 const SOURCE_DATE = readOn === null ? null : formatDay(readOn, lang);
-const initialTab: string = isInternet ? 'mois' : CALL_TABS[0];
-const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id];
+const initialTab: string = isInternet ? 'month' : CALL_TABS[0];
+const title = section.id === 'money' ? (operator.mobile_money?.short_name ?? m.common.mobileMoney) : m.sections[section.id];
 ---
 
 <AppLayout seo={sectionSeo(data, operator, section, lang)} withDock>
@@ -79,9 +79,9 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
       )
     }
 
-    {section.id === 'frais' && <FeeCalculator rows={toFeeRows(data.fees, m.fees, lang === 'fr' ? ',' : '.')} operators={data.operators} country={data.country} />}
+    {section.id === 'fees' && <FeeCalculator rows={toFeeRows(data.fees, m.fees, lang === 'fr' ? ',' : '.')} operators={data.operators} country={data.country} />}
     {
-      section.id === 'frais' && (
+      section.id === 'fees' && (
         <details class="fold all-bands">
           <summary>{m.fees.calc.allBands}</summary>
           <FeeTable fees={fees} operator={operator} />
@@ -90,7 +90,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
     }
 
     {
-      section.id !== 'frais' && (
+      section.id !== 'fees' && (
         <div class="list">
           {rows.map((r) => (
             <div data-tab-row={r.tab} hidden={r.tab !== undefined && r.tab !== initialTab}>
@@ -109,7 +109,7 @@ const title = section.id === 'argent' ? (operator.mobile_money?.short_name ?? m.
     {SOURCE_DATE && <p class="source mono">{fill(m.section.source, { date: SOURCE_DATE })}</p>}
   </main>
 
-  <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'argent' ? section.id : 'none'} />
+  <Dock country={data.country.code} operators={data.operators} operator={operator.id} pinned current={section.id === 'internet' || section.id === 'money' ? section.id : 'none'} />
   {rows.some((r) => r.entry.ussd.params.length > 0) && <CodeBuilder catalog={catalog} country={data.country.code} />}
   <DialToast />
 </AppLayout>

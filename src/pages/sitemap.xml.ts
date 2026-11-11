@@ -17,7 +17,7 @@ export const GET: APIRoute = ({ site }) => {
   const paths = [...loadCatalog().byCountry.values()].flatMap((data) => [
     `/${data.country.code}`,
     ...data.operators.flatMap((o) => SECTIONS.map((s) => `/${data.country.code}/${o.id}/${s.id}`)),
-    ...data.operators.filter((o) => data.fees.some((f) => f.operator === o.id)).flatMap((o) => FEE_PAGE_AMOUNTS.map((a) => `/${data.country.code}/${o.id}/frais/${a}`)),
+    ...data.operators.filter((o) => data.fees.some((f) => f.operator === o.id)).flatMap((o) => FEE_PAGE_AMOUNTS.map((a) => `/${data.country.code}/${o.id}/fees/${a}`)),
   ]);
   const href = (path: string): string => escapeXml(new URL(path, site).href);
   const alternates = (path: string): string =>

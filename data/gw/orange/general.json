@@ -1,0 +1,199 @@
+{
+  "operator": "orange",
+  "category": "general",
+  "entries": [
+    {
+      "id": "orange-general-numero",
+      "kind": "service",
+      "name": "Connaître son numéro",
+      "description": "Afficher votre numéro Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#110#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Show my number",
+        "description": "Show your Orange number."
+      }
+    },
+    {
+      "id": "orange-general-nha-orange",
+      "kind": "service",
+      "name": "Menu Nha Orange",
+      "description": "Menu de services Nha Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#111#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "nha orange"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange-bissau.com/pt/aplicacao-movel/nha-orange.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Nha Orange menu",
+        "description": "Nha Orange services menu.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "orange-general-souscrire-offre",
+      "kind": "service",
+      "name": "Souscrire à une offre",
+      "description": "Menu pour souscrire à une offre.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#170#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "offre",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/numeros-uteis.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Libellé de la page : « Para subscrever uma oferta ». Contenu du menu non détaillé.",
+      "en": {
+        "name": "Subscribe to an offer",
+        "description": "Menu to subscribe to an offer.",
+        "notes": "Page label: \"Para subscrever uma oferta\". Menu content not detailed."
+      }
+    },
+    {
+      "id": "orange-general-toma-pa-mi",
+      "kind": "service",
+      "name": "Toma Pa Mi",
+      "description": "Portail de revente des revendeurs TICOTICO.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#132#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "revendeur",
+        "ticotico"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/toma-pa-mi.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Réservé aux revendeurs : vente de pass voix, SMS et data aux clients.",
+      "en": {
+        "name": "Toma Pa Mi",
+        "description": "Reseller portal for TICOTICO retailers.",
+        "notes": "For retailers: selling voice, SMS and data passes to customers."
+      }
+    },
+    {
+      "id": "orange-general-orange-fixe",
+      "kind": "service",
+      "name": "Orange Fixe",
+      "description": "Alertes SMS Orange Fixe.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#524#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "sms",
+        "alertes"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/diverso/orange-fixe.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Possible aussi par SMS au 50020. Tarifs affichés par la page : 35 F à l'inscription, 25 F par jour, 150 F par semaine, 500 F par mois (non repris comme offre faute de détail).",
+      "en": {
+        "name": "Orange Fixe",
+        "description": "Orange Fixe SMS alerts.",
+        "notes": "Also possible by SMS to 50020. Prices shown on the page: 35 F at sign-up, 25 F a day, 150 F a week, 500 F a month (not turned into offers for lack of detail)."
+      }
+    }
+  ]
+}

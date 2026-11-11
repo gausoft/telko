@@ -1,0 +1,349 @@
+{
+  "operator": "mtn",
+  "category": "mixed",
+  "entries": [
+    {
+      "id": "mtn-mixed-forfait-maxi-100",
+      "kind": "bundle",
+      "name": "Forfait Maxi 100 F",
+      "description": "166 F de crédit utilisable pour appels, SMS et internet pendant 24 h.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 100 F",
+        "description": "166 F of credit usable for calls, SMS and internet for 24 h.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-150",
+      "kind": "bundle",
+      "name": "Forfait Maxi 150 F",
+      "description": "250 F de crédit utilisable pour appels, SMS et internet pendant 24 h.",
+      "price": 150,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 150 F",
+        "description": "250 F of credit usable for calls, SMS and internet for 24 h.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-200",
+      "kind": "bundle",
+      "name": "Forfait Maxi 200 F",
+      "description": "333 F de crédit utilisable pour appels, SMS et internet pendant 24 h.",
+      "price": 200,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 200 F",
+        "description": "333 F of credit usable for calls, SMS and internet for 24 h.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-500",
+      "kind": "bundle",
+      "name": "Forfait Maxi 500 F",
+      "description": "833 F de crédit utilisable pour appels, SMS et internet pendant 48 h.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 2,
+        "label": "48 h",
+        "en": {
+          "label": "48 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 500 F",
+        "description": "833 F of credit usable for calls, SMS and internet for 48 h.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-1000",
+      "kind": "bundle",
+      "name": "Forfait Maxi 1 000 F",
+      "description": "1 666 F de crédit utilisable pour appels, SMS et internet pendant 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 1 000 F",
+        "description": "1 666 F of credit usable for calls, SMS and internet for 7 days.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-2500",
+      "kind": "bundle",
+      "name": "Forfait Maxi 2 500 F",
+      "description": "4 166 F de crédit utilisable pour appels, SMS et internet pendant 15 jours.",
+      "price": 2500,
+      "allowances": null,
+      "validity": {
+        "days": 15,
+        "label": "15 jours",
+        "en": {
+          "label": "15 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 2 500 F",
+        "description": "4 166 F of credit usable for calls, SMS and internet for 15 days.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    },
+    {
+      "id": "mtn-mixed-forfait-maxi-5000",
+      "kind": "bundle",
+      "name": "Forfait Maxi 5 000 F",
+      "description": "8 333 F de crédit utilisable pour appels, SMS et internet pendant 30 jours.",
+      "price": 5000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*173#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "maxi",
+        "appel",
+        "internet",
+        "sms",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.bj/brands/forfait-maxi/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Tarifs après activation : 0,47 F par seconde, 1 F par Mo, 2 F par SMS. Autres codes publiés pour le même forfait : *199# et *880#. Le forfait se choisit dans le menu.",
+      "en": {
+        "name": "Maxi bundle 5 000 F",
+        "description": "8 333 F of credit usable for calls, SMS and internet for 30 days.",
+        "notes": "Rates once active: 0.47 F per second, 1 F per MB, 2 F per SMS. Other codes published for the same bundle: *199# and *880#. You pick the bundle in the menu."
+      }
+    }
+  ]
+}

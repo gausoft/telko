@@ -1,0 +1,192 @@
+{
+  "country": "ne",
+  "operators": [
+    {
+      "id": "airtel",
+      "name": "Airtel Niger",
+      "short_name": "Airtel",
+      "former_names": [
+        "Celtel Niger"
+      ],
+      "badge": {
+        "label": "A",
+        "background": "#E40000",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": {
+        "id": "airtel-money",
+        "name": "Airtel Money",
+        "short_name": "Airtel Money",
+        "former_names": [],
+        "badge": {
+          "label": "AM",
+          "background": "#E40000",
+          "foreground": "#FFFFFF"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.airtel.ne",
+      "customer_service": null,
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://x.com/airtelniger",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://x.com/airtelmoney_ne",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site officiel bloque l'accès automatique : offres et codes relevés sur les comptes officiels Airtel Niger et Airtel Money Niger. Aucun numéro de service client publié trouvé.",
+      "en": {
+        "notes": "The official site blocks automated access: offers and codes taken from the official Airtel Niger and Airtel Money Niger accounts. No published customer service number found."
+      }
+    },
+    {
+      "id": "moov",
+      "name": "Moov Africa Niger",
+      "short_name": "Moov",
+      "former_names": [
+        "Moov Niger"
+      ],
+      "badge": {
+        "label": "MA",
+        "background": "#EC6707",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "moov.png",
+      "mobile_money": {
+        "id": "moov-money",
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [],
+        "badge": {
+          "label": "MM",
+          "background": "#EC6707",
+          "foreground": "#FFFFFF"
+        },
+        "logo": "moov-money.png"
+      },
+      "prefixes": [],
+      "website": "https://www.moov-africa.ne",
+      "customer_service": "888",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/moov-money",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ne/actualites/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site annonce « MOOVNIGER devient MOOVAFRICA NIGER ». Numéro 888 lu dans le bouton d'aide du site.",
+      "en": {
+        "notes": "The site announces \"MOOVNIGER becomes MOOVAFRICA NIGER\". Number 888 read from the site's help button."
+      }
+    },
+    {
+      "id": "zamani",
+      "name": "Zamani Telecom",
+      "short_name": "Zamani",
+      "former_names": [
+        "Orange Niger"
+      ],
+      "badge": {
+        "label": "Z",
+        "background": "#007A3D",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "zamani.png",
+      "mobile_money": {
+        "id": "zamani-cash",
+        "name": "Zamani Cash",
+        "short_name": "Zamani Cash",
+        "former_names": [],
+        "badge": {
+          "label": "ZC",
+          "background": "#007A3D",
+          "foreground": "#FFFFFF"
+        },
+        "logo": "zamani.png"
+      },
+      "prefixes": [],
+      "website": "https://www.zamanitelecom.com",
+      "customer_service": null,
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.zamanitelecom.com/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.zamanitelecom.com/zamani-cash",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aucun numéro de service client clair : le site affiche un numéro à 9 chiffres dans un lien d'appel, et « 222 » ou « 1313 » sans explication cohérente. À compléter depuis le Niger.",
+      "en": {
+        "notes": "No clear customer service number: the site shows a 9-digit number in a call link, and \"222\" or \"1313\" without a consistent explanation. To be filled in from Niger."
+      }
+    },
+    {
+      "id": "niger-telecoms",
+      "name": "Niger Télécoms",
+      "short_name": "Niger Télécoms",
+      "former_names": [],
+      "badge": {
+        "label": "NT",
+        "background": "#0A5CA8",
+        "foreground": "#FFFFFF"
+      },
+      "logo": null,
+      "mobile_money": null,
+      "prefixes": [],
+      "website": "https://www.nigertelecoms.ne",
+      "customer_service": "+227 20 62 20 00",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.nigertelecoms.ne/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site est en maintenance et ne publie aucune offre ni code : aucune entrée de données pour cet opérateur pour l'instant. Numéro lu dans le lien d'appel du site.",
+      "en": {
+        "notes": "The site is under maintenance and publishes no offer or code: no data entries for this operator for now. Number read from the site's call link."
+      }
+    }
+  ]
+}

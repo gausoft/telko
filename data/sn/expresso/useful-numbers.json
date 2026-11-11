@@ -1,0 +1,49 @@
+{
+  "operator": "expresso",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "expresso-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client Expresso",
+      "description": "Numéro d'assistance publié sur le site officiel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "70 100 11 11",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.expressotelecom.sn/contact/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site publie aussi le 30 100 10 00.",
+      "en": {
+        "name": "Expresso customer service",
+        "description": "Assistance number published on the official site.",
+        "notes": "The site also publishes 30 100 10 00."
+      }
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "operator": "orange",
+  "category": "mobile-money",
+  "entries": [
+    {
+      "id": "orange-mobile-money-menu",
+      "kind": "service",
+      "name": "Menu Orange Money",
+      "description": "Menu principal d'Orange Money, gratuit, avec les 5 dernières opérations.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "menu"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orangemali.com/fr/gerer-son-compte-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Orange Money menu",
+        "description": "Main Orange Money menu, free, with the last 5 transactions."
+      }
+    },
+    {
+      "id": "orange-mobile-money-transfert-national",
+      "kind": "service",
+      "name": "Transfert Orange Money national",
+      "description": "Envoyer de l'argent à un numéro Orange Money du Mali.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#1*1*{phone}*{amount}*1#",
+        "params": [
+          {
+            "name": "phone",
+            "type": "phone",
+            "label": "Numéro du destinataire",
+            "required": true,
+            "en": {
+              "label": "Recipient's number"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/transfert/transfert-national.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Frais annoncés : 50 F pour tous les montants. Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "National Orange Money transfer",
+        "description": "Send money to an Orange Money number in Mali.",
+        "notes": "Announced fee: 50 F for all amounts. The PIN is typed on screen."
+      }
+    },
+    {
+      "id": "orange-mobile-money-beka-transfert",
+      "kind": "service",
+      "name": "Béka Transfert (vers un non-inscrit)",
+      "description": "Envoyer de l'argent à quelqu'un qui n'a pas de compte Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#11#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "transfert",
+        "béka"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/transfert/beka-transfert.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Maximum 200 000 F. Le destinataire reçoit un code à 10 chiffres. Remboursement après 15 jours si non retiré.",
+      "en": {
+        "name": "Béka Transfert (to a non-registered person)",
+        "description": "Send money to someone without an Orange Money account.",
+        "notes": "Maximum 200,000 F. The recipient gets a 10-digit code. Refunded after 15 days if not withdrawn."
+      }
+    },
+    {
+      "id": "orange-mobile-money-transfert-intra-regional",
+      "kind": "service",
+      "name": "Transfert Orange Money intra-régional",
+      "description": "Envoyer de l'argent vers la Côte d'Ivoire ou le Sénégal.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#1*2#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "transfert",
+        "international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/transfert/transfert-intra-regional.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Jusqu'à 1 000 000 F. Pays cités par la page : Côte d'Ivoire, Mali, Sénégal. La suite se choisit à l'écran.",
+      "en": {
+        "name": "Intra-regional Orange Money transfer",
+        "description": "Send money to Côte d'Ivoire or Senegal.",
+        "notes": "Up to 1,000,000 F. Countries named on the page: Côte d'Ivoire, Mali, Senegal. The rest is chosen on screen."
+      }
+    },
+    {
+      "id": "orange-mobile-money-solde",
+      "kind": "service",
+      "name": "Consulter son solde Orange Money",
+      "description": "Voir le solde de votre compte Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#5*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/gestion-de-compte/gerer-son-compte.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "Check your Orange Money balance",
+        "description": "See your Orange Money balance.",
+        "notes": "The PIN is typed on screen."
+      }
+    },
+    {
+      "id": "orange-mobile-money-tarifs",
+      "kind": "service",
+      "name": "Tarifs Orange Money (menu)",
+      "description": "Voir les tarifs depuis le menu Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#7*1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "tarifs"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Orange Money tariffs (menu)",
+        "description": "See tariffs from the Orange Money menu."
+      }
+    },
+    {
+      "id": "orange-mobile-money-paiement-marchand",
+      "kind": "service",
+      "name": "Paiement marchand Sarali",
+      "description": "Payer un commerçant avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#8*{merchant_code}*{amount}#",
+        "params": [
+          {
+            "name": "merchant_code",
+            "type": "text",
+            "label": "Code du marchand",
+            "required": true,
+            "en": {
+              "label": "Merchant code"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "amount",
+            "label": "Montant",
+            "required": true,
+            "en": {
+              "label": "Amount"
+            }
+          }
+        ]
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "orange money",
+        "paiement",
+        "marchand"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/le-paiement-marchand-sarali.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code secret se saisit à l'écran.",
+      "en": {
+        "name": "Sarali merchant payment",
+        "description": "Pay a merchant with Orange Money.",
+        "notes": "The PIN is typed on screen."
+      }
+    }
+  ]
+}

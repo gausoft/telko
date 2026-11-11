@@ -1,0 +1,43 @@
+{
+  "operator": "orange",
+  "category": "international",
+  "entries": [
+    {
+      "id": "orange-international-pass-internationaux",
+      "kind": "service",
+      "name": "Pass Internationaux",
+      "description": "Pass pour appeler l'étranger.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#167#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "international"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.sn/offres-mobiles/jamono-new-s-cool-mod-15",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "International passes",
+        "description": "Passes to call abroad.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-forfaits-appels",
+      "kind": "service",
+      "name": "Forfaits appels internationaux",
+      "description": "Menu des forfaits d'appels vers l'international.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#2#5#1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix non lus.",
+      "en": {
+        "name": "International call packs",
+        "description": "International calling packs menu.",
+        "notes": "Prices not read."
+      }
+    }
+  ]
+}

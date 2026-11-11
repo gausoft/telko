@@ -1,0 +1,357 @@
+{
+  "operator": "orange",
+  "service": "orange-money",
+  "entries": [
+    {
+      "id": "orange-fees-transfert-national",
+      "operation": "transfer-national",
+      "min": 500,
+      "max": 1500000,
+      "fee": 50,
+      "fee_percent": null,
+      "label": "Transfert Orange Money vers Orange Money : de 500 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Orange Money to Orange Money transfer: 500 to 1,500,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-transfert-international",
+      "operation": "transfer-regional",
+      "min": 1,
+      "max": null,
+      "fee": null,
+      "fee_percent": 1.5,
+      "label": "Transfert vers le Sénégal, le Mali, le Burkina Faso, la Côte d'Ivoire ou le Niger : tout montant",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Taux de 1,5 % depuis le 3 novembre 2021, retrait gratuit pour le bénéficiaire. Le tableau de la page affiche « 1,5 FCFA » : à vérifier.",
+      "en": {
+        "label": "Transfer to Senegal, Mali, Burkina Faso, Côte d'Ivoire or Niger: any amount",
+        "notes": "Rate of 1.5% since 3 November 2021, free withdrawal for the beneficiary. The page table shows \"1,5 FCFA\": to be checked."
+      }
+    },
+    {
+      "id": "orange-fees-retrait-1-2500",
+      "operation": "withdrawal",
+      "min": 1,
+      "max": 2500,
+      "fee": 125,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 1 à 2 500 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 1 to 2,500 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-2501-5000",
+      "operation": "withdrawal",
+      "min": 2501,
+      "max": 5000,
+      "fee": 250,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 2 501 à 5 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 2,501 to 5,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-5001-10000",
+      "operation": "withdrawal",
+      "min": 5001,
+      "max": 10000,
+      "fee": 350,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 5 001 à 10 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 5,001 to 10,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-10001-15000",
+      "operation": "withdrawal",
+      "min": 10001,
+      "max": 15000,
+      "fee": 450,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 10 001 à 15 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 10,001 to 15,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-15001-25000",
+      "operation": "withdrawal",
+      "min": 15001,
+      "max": 25000,
+      "fee": 550,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 15 001 à 25 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 15,001 to 25,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-25001-50000",
+      "operation": "withdrawal",
+      "min": 25001,
+      "max": 50000,
+      "fee": 1050,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 25 001 à 50 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 25,001 to 50,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-50001-100000",
+      "operation": "withdrawal",
+      "min": 50001,
+      "max": 100000,
+      "fee": 1600,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 50 001 à 100 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 50,001 to 100,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-100001-250000",
+      "operation": "withdrawal",
+      "min": 100001,
+      "max": 250000,
+      "fee": 1900,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 100 001 à 250 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 100,001 to 250,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-250001-500000",
+      "operation": "withdrawal",
+      "min": 250001,
+      "max": 500000,
+      "fee": 3200,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 250 001 à 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 250,001 to 500,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-500001-1000000",
+      "operation": "withdrawal",
+      "min": 500001,
+      "max": 1000000,
+      "fee": 6400,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 500 001 à 1 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 500,001 to 1,000,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-1000001-1500000",
+      "operation": "withdrawal",
+      "min": 1000001,
+      "max": 1500000,
+      "fee": 9600,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 1 000 001 à 1 500 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 1,000,001 to 1,500,000 F"
+      }
+    },
+    {
+      "id": "orange-fees-retrait-1500001-2000000",
+      "operation": "withdrawal",
+      "min": 1500001,
+      "max": 2000000,
+      "fee": 11200,
+      "fee_percent": null,
+      "label": "Retrait chez un agent : de 1 500 001 à 2 000 000 F",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange-bissau.com/pt/transferencia-e-levantamento-via-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "label": "Agent withdrawal: 1,500,001 to 2,000,000 F"
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-portail-555",
+      "kind": "service",
+      "name": "Portail Moov #555#",
+      "description": "Menu principal de Moov Africa Malitel.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "menu",
+        "portail"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Moov portal #555#",
+        "description": "Main menu of Moov Africa Malitel."
+      }
+    },
+    {
+      "id": "moov-general-solde",
+      "kind": "service",
+      "name": "Consulter son solde",
+      "description": "Voir votre crédit.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#1#3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "solde"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Check your balance",
+        "description": "See your credit."
+      }
+    },
+    {
+      "id": "moov-general-mon-numero",
+      "kind": "service",
+      "name": "Connaître son numéro",
+      "description": "Afficher votre propre numéro.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#1#4#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Know your number",
+        "description": "Show your own number."
+      }
+    },
+    {
+      "id": "moov-general-kiosque-acte",
+      "kind": "service",
+      "name": "Kiosque d'information, à l'acte",
+      "description": "Souscription à l'acte au kiosque d'information.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#6#1#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "kiosque"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Information kiosk, pay per use",
+        "description": "Pay-per-use subscription to the information kiosk."
+      }
+    },
+    {
+      "id": "moov-general-kiosque-abonnement",
+      "kind": "service",
+      "name": "Kiosque d'information, abonnement",
+      "description": "Souscription par abonnement au kiosque d'information.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#555#6#2#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "kiosque"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ml/Professionnel/aide-assistance/Pages/le-portail-555.aspx",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Information kiosk, subscription",
+        "description": "Subscription to the information kiosk."
+      }
+    }
+  ]
+}

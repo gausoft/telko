@@ -7,14 +7,14 @@ import { filesFor, keyLang, readyKey } from '../src/scripts/offline-sync';
 
 const pack = {
   pages: {
-    shared: ['/tg', '/tg/recherche', '/brands/yas.svg'],
+    shared: ['/tg', '/tg/search', '/brands/yas.svg'],
     byOperator: { yas: ['/tg/yas/internet'], moov: ['/tg/moov/internet'] },
   },
 };
 
 describe('offline files', () => {
   it('downloads the shared files and the chosen operators only', () => {
-    expect(filesFor(pack, ['moov'])).toEqual(['/tg', '/tg/recherche', '/brands/yas.svg', '/tg/moov/internet']);
+    expect(filesFor(pack, ['moov'])).toEqual(['/tg', '/tg/search', '/brands/yas.svg', '/tg/moov/internet']);
   });
 
   it('ignores an unknown operator', () => {
@@ -30,7 +30,7 @@ describe('offline packs per language', () => {
   it('lists the English pages under /en', () => {
     expect(pack.lang).toBe('en');
     expect(pack.pages.shared).toContain('/en/tg');
-    expect(pack.pages.shared).toContain('/en/tg/recherche');
+    expect(pack.pages.shared).toContain('/en/tg/search');
     expect(pack.pages.byOperator['yas']).toContain('/en/tg/yas/internet');
     expect(pack.pages.shared).toContain('/brands/yas.svg');
   });

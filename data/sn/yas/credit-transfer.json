@@ -1,0 +1,88 @@
+{
+  "operator": "yas",
+  "category": "credit-transfer",
+  "entries": [
+    {
+      "id": "yas-credit-transfer-partage-credit",
+      "kind": "service",
+      "name": "Partage de crédit",
+      "description": "Menu pour partager du crédit avec un proche.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#177#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "transfert"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La syntaxe directe publiée dans la FAQ est ambiguë : seul le menu est repris ici. Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Airtime sharing",
+        "description": "Menu to share airtime with someone.",
+        "notes": "The direct syntax published in the FAQ is ambiguous: only the menu is used here. Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "yas-credit-transfer-lebalma",
+      "kind": "service",
+      "name": "Lebalma (micro-crédit)",
+      "description": "Avance de crédit, jusqu'à 300 000 F selon l'offre publiée.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#188#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "crédit",
+        "avance",
+        "lebalma"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://yas.sn/consumer-faqs/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://yas.sn/mixx-by-yas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Lebalma (micro-credit)",
+        "description": "Credit advance, up to 300,000 F according to the published offer.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}

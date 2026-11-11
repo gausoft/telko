@@ -1,0 +1,292 @@
+{
+  "operator": "moov",
+  "category": "roaming",
+  "entries": [
+    {
+      "id": "moov-roaming-data-100",
+      "kind": "bundle",
+      "name": "Pass Data Roaming 100 Mo",
+      "description": "100 Mo à l'étranger, valables 30 jours.",
+      "price": 2900,
+      "allowances": {
+        "data_mb": 100,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Achat par Moov Money : *155*9*6*1#. Une des deux grilles de la page ajoute un pass 1 Go à 9 900 F (Hadj) : voir le pass Hadj.",
+      "en": {
+        "name": "Data Roaming pass 100 MB",
+        "description": "100 MB abroad, valid 30 days.",
+        "notes": "Buy with Moov Money: *155*9*6*1#. One of the two tables on the page adds a 1 GB pass at 9,900 F (Hadj): see the Hadj pass."
+      }
+    },
+    {
+      "id": "moov-roaming-data-250",
+      "kind": "bundle",
+      "name": "Pass Data Roaming 250 Mo",
+      "description": "250 Mo à l'étranger, valables 30 jours.",
+      "price": 7000,
+      "allowances": {
+        "data_mb": 250,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Achat par Moov Money : *155*9*6*1#. Une des deux grilles de la page ajoute un pass 1 Go à 9 900 F (Hadj) : voir le pass Hadj.",
+      "en": {
+        "name": "Data Roaming pass 250 MB",
+        "description": "250 MB abroad, valid 30 days.",
+        "notes": "Buy with Moov Money: *155*9*6*1#. One of the two tables on the page adds a 1 GB pass at 9,900 F (Hadj): see the Hadj pass."
+      }
+    },
+    {
+      "id": "moov-roaming-data-750",
+      "kind": "bundle",
+      "name": "Pass Data Roaming 750 Mo",
+      "description": "750 Mo à l'étranger, valables 30 jours.",
+      "price": 19900,
+      "allowances": {
+        "data_mb": 750,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "data"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Achat par Moov Money : *155*9*6*1#. Une des deux grilles de la page ajoute un pass 1 Go à 9 900 F (Hadj) : voir le pass Hadj.",
+      "en": {
+        "name": "Data Roaming pass 750 MB",
+        "description": "750 MB abroad, valid 30 days.",
+        "notes": "Buy with Moov Money: *155*9*6*1#. One of the two tables on the page adds a 1 GB pass at 9,900 F (Hadj): see the Hadj pass."
+      }
+    },
+    {
+      "id": "moov-roaming-mix",
+      "kind": "service",
+      "name": "Pass Mix Roaming",
+      "description": "Minutes et internet à l'étranger.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "mixte"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Les deux grilles de la page se contredisent : 100 Mo + 5 min à 3 900 F, 250 Mo + 10 min à 7 000 F, 750 Mo + 15 min à 19 900 F pour l'une ; 5 min + 100 Mo à 3 900 F, 10 min + 250 Mo à 9 900 F, 15 min + 1 Go à 29 900 F pour l'autre. Prix non publiés ici. Moov Money : *155*9*6*2#.",
+      "en": {
+        "name": "Mix Roaming pass",
+        "description": "Minutes and internet abroad.",
+        "notes": "The two tables on the page contradict each other: 100 MB + 5 min at 3,900 F, 250 MB + 10 min at 7,000 F, 750 MB + 15 min at 19,900 F for one; 5 min + 100 MB at 3,900 F, 10 min + 250 MB at 9,900 F, 15 min + 1 GB at 29,900 F for the other. Prices not listed here. Moov Money: *155*9*6*2#."
+      }
+    },
+    {
+      "id": "moov-roaming-pass-hadj",
+      "kind": "bundle",
+      "name": "Pass Hadj 1 Go",
+      "description": "1 Go valable 10 jours, uniquement en Arabie saoudite.",
+      "price": 9900,
+      "allowances": {
+        "data_mb": 1024,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 10,
+        "label": "10 jours",
+        "en": {
+          "label": "10 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "hadj"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code donné est celui du menu roaming : le pass se choisit dans le menu.",
+      "en": {
+        "name": "Hadj pass 1 GB",
+        "description": "1 GB valid 10 days, in Saudi Arabia only.",
+        "notes": "The code given is the roaming menu code: you pick the pass in the menu."
+      }
+    },
+    {
+      "id": "moov-roaming-compteur",
+      "kind": "service",
+      "name": "Recharger le compteur roaming",
+      "description": "Recharger le compteur roaming.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*303*6*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime",
+        "moov-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "roaming",
+        "compteur"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/espace-particulier/moov-roaming/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page écrit le code sans le premier *. Moov Money : *155*9*6*3#.",
+      "en": {
+        "name": "Top up the roaming meter",
+        "description": "Top up the roaming meter.",
+        "notes": "The page writes the code without the leading *. Moov Money: *155*9*6*3#."
+      }
+    }
+  ]
+}

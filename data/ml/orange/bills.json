@@ -1,0 +1,168 @@
+{
+  "operator": "orange",
+  "category": "bills",
+  "entries": [
+    {
+      "id": "orange-bills-eau-electricite",
+      "kind": "service",
+      "name": "Factures eau et électricité",
+      "description": "Payer EDM SA, SOMAGEP SA ou Office du Niger avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "eau",
+        "électricité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/eau-electricite.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Passer par le menu #144#. Frais : 100 F jusqu'à 2 000 F, 200 F de 2 001 à 5 000 F, 250 F au-delà.",
+      "en": {
+        "name": "Water and electricity bills",
+        "description": "Pay EDM SA, SOMAGEP SA or Office du Niger with Orange Money.",
+        "notes": "Go through the #144# menu. Fees: 100 F up to 2,000 F, 200 F from 2,001 to 5,000 F, 250 F above."
+      }
+    },
+    {
+      "id": "orange-bills-isago",
+      "kind": "service",
+      "name": "Électricité prépayée ISAGO",
+      "description": "Acheter de l'électricité prépayée EDM avec Orange Money.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#324#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "électricité",
+        "isago"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/isago.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Montant minimum 500 F selon la page (20 F cité ailleurs), maximum 50 000 F. Assistance : 37070.",
+      "en": {
+        "name": "ISAGO prepaid electricity",
+        "description": "Buy EDM prepaid electricity with Orange Money.",
+        "notes": "Minimum 500 F per the page (20 F quoted elsewhere), maximum 50,000 F. Support: 37070."
+      }
+    },
+    {
+      "id": "orange-bills-tv",
+      "kind": "service",
+      "name": "Réabonnement TV",
+      "description": "Réabonner Canalsat ou Malivision avec Orange Money, sans frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "tv"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/reabonnements-tv.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Passer par le menu #144#.",
+      "en": {
+        "name": "TV renewal",
+        "description": "Renew Canalsat or Malivision with Orange Money, free of charge.",
+        "notes": "Go through the #144# menu."
+      }
+    },
+    {
+      "id": "orange-bills-orange",
+      "kind": "service",
+      "name": "Factures Orange",
+      "description": "Payer vos factures Orange avec Orange Money, sans frais.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "#144#",
+        "params": []
+      },
+      "payment_methods": [
+        "orange-money"
+      ],
+      "third_party": null,
+      "tags": [
+        "factures",
+        "orange"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orangemali.com/fr/paiement/factures-orange.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Passer par le menu #144#.",
+      "en": {
+        "name": "Orange bills",
+        "description": "Pay your Orange bills with Orange Money, free of charge.",
+        "notes": "Go through the #144# menu."
+      }
+    }
+  ]
+}

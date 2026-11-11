@@ -1,0 +1,158 @@
+{
+  "country": "ci",
+  "operators": [
+    {
+      "id": "orange",
+      "name": "Orange Côte d'Ivoire",
+      "short_name": "Orange",
+      "former_names": [],
+      "badge": {
+        "label": "OR",
+        "background": "#FF7900",
+        "foreground": "#000000"
+      },
+      "logo": "orange.svg",
+      "mobile_money": {
+        "id": "orange-money",
+        "name": "Orange Money",
+        "short_name": "OM",
+        "former_names": [],
+        "badge": {
+          "label": "OM",
+          "background": "#FF7900",
+          "foreground": "#000000"
+        },
+        "logo": "orange-money.svg"
+      },
+      "prefixes": [],
+      "website": "https://www.orange.ci",
+      "customer_service": "+225 07 07 07 07 02",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.ci/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.ci/fr/tarifs-orange-money.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.orange.ci/fr/pass-mix.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Orange ne publie pas de code pour ses pass internet et mixtes : ils s'achètent dans l'application Max it.",
+      "en": {
+        "notes": "Orange does not publish a code for its internet and mixed passes: they are bought in the Max it app."
+      }
+    },
+    {
+      "id": "mtn",
+      "name": "MTN Côte d'Ivoire",
+      "short_name": "MTN",
+      "former_names": [],
+      "badge": {
+        "label": "MTN",
+        "background": "#FFCB05",
+        "foreground": "#000000"
+      },
+      "logo": "mtn.svg",
+      "mobile_money": {
+        "id": "momo",
+        "name": "MoMo",
+        "short_name": "MoMo",
+        "former_names": [],
+        "badge": {
+          "label": "M",
+          "background": "#FFCB05",
+          "foreground": "#000000"
+        },
+        "logo": null
+      },
+      "prefixes": [],
+      "website": "https://www.mtn.ci",
+      "customer_service": "555",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.ci/momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.ci/momo/momo-particuliers/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    },
+    {
+      "id": "moov",
+      "name": "Moov Africa Côte d'Ivoire",
+      "short_name": "Moov",
+      "former_names": [],
+      "badge": {
+        "label": "MA",
+        "background": "#EC6707",
+        "foreground": "#FFFFFF"
+      },
+      "logo": "moov.png",
+      "mobile_money": {
+        "id": "moov-money",
+        "name": "Moov Money",
+        "short_name": "Moov Money",
+        "former_names": [],
+        "badge": {
+          "label": "MM",
+          "background": "#EC6707",
+          "foreground": "#FFFFFF"
+        },
+        "logo": "moov-money.png"
+      },
+      "prefixes": [],
+      "website": "https://www.moov-africa.ci/",
+      "customer_service": "1010",
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ci/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/codes-utiles/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.moov-africa.ci/moov-money/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null
+    }
+  ]
+}

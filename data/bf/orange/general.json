@@ -1,0 +1,80 @@
+{
+  "operator": "orange",
+  "category": "general",
+  "entries": [
+    {
+      "id": "orange-general-mon-numero",
+      "kind": "service",
+      "name": "Connaître mon numéro",
+      "description": "Afficher votre numéro Orange.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*444#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "numéro",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Connaître mon numéro",
+        "description": "Show your Orange number."
+      }
+    },
+    {
+      "id": "orange-general-pharmacies-garde",
+      "kind": "service",
+      "name": "Pharmacies de garde",
+      "description": "Trouver les pharmacies de garde.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*456*3#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "pharmacie",
+        "information"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.orange.bf/fr/codes-utiles-new.html",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Pharmacies de garde",
+        "description": "Find duty pharmacies."
+      }
+    }
+  ]
+}

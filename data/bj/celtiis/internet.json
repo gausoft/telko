@@ -1,0 +1,214 @@
+{
+  "operator": "celtiis",
+  "category": "internet",
+  "entries": [
+    {
+      "id": "celtiis-internet-pass-internet-15000",
+      "kind": "bundle",
+      "name": "Pass Internet 15 000 F",
+      "description": "24,4 Go valables 30 jours, puis internet limité à 2 Mbit/s.",
+      "price": 15000,
+      "allowances": {
+        "data_mb": 24986,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass internet",
+        "illiminet",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104*2*2*4#. Le pass se choisit dans le menu d'activation.",
+      "en": {
+        "name": "Internet Pass 15 000 F",
+        "description": "24.4 GB valid 30 days, then internet limited to 2 Mbps.",
+        "notes": "Price including tax. Consumption check: *104*2*2*4#. You pick the pass in the activation menu."
+      }
+    },
+    {
+      "id": "celtiis-internet-pass-internet-19000",
+      "kind": "bundle",
+      "name": "Pass Internet 19 000 F",
+      "description": "31 Go valables 30 jours, puis internet limité à 2 Mbit/s.",
+      "price": 19000,
+      "allowances": {
+        "data_mb": 31744,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass internet",
+        "illiminet",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104*2*2*4#. Le pass se choisit dans le menu d'activation.",
+      "en": {
+        "name": "Internet Pass 19 000 F",
+        "description": "31 GB valid 30 days, then internet limited to 2 Mbps.",
+        "notes": "Price including tax. Consumption check: *104*2*2*4#. You pick the pass in the activation menu."
+      }
+    },
+    {
+      "id": "celtiis-internet-pass-internet-25000",
+      "kind": "bundle",
+      "name": "Pass Internet 25 000 F",
+      "description": "41 Go valables 30 jours, puis internet limité à 2 Mbit/s.",
+      "price": 25000,
+      "allowances": {
+        "data_mb": 41984,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass internet",
+        "illiminet",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104*2*2*4#. Le pass se choisit dans le menu d'activation.",
+      "en": {
+        "name": "Internet Pass 25 000 F",
+        "description": "41 GB valid 30 days, then internet limited to 2 Mbps.",
+        "notes": "Price including tax. Consumption check: *104*2*2*4#. You pick the pass in the activation menu."
+      }
+    },
+    {
+      "id": "celtiis-internet-pass-internet-29000",
+      "kind": "bundle",
+      "name": "Pass Internet 29 000 F",
+      "description": "47,2 Go valables 30 jours, puis internet limité à 2 Mbit/s.",
+      "price": 29000,
+      "allowances": {
+        "data_mb": 48333,
+        "voice_min": null,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "internet",
+        "pass internet",
+        "illiminet",
+        "mensuel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104*2*2*4#. Le pass se choisit dans le menu d'activation.",
+      "en": {
+        "name": "Internet Pass 29 000 F",
+        "description": "47.2 GB valid 30 days, then internet limited to 2 Mbps.",
+        "notes": "Price including tax. Consumption check: *104*2*2*4#. You pick the pass in the activation menu."
+      }
+    }
+  ]
+}

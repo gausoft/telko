@@ -16,7 +16,7 @@ interface Props {
   operator: string;
   /** True on operator pages: the page's operator wins over the saved one. */
   pinned?: boolean;
-  current: 'accueil' | 'internet' | 'argent' | 'recherche' | 'reglages' | 'none';
+  current: 'home' | 'internet' | 'money' | 'search' | 'settings' | 'none';
 }
 
 const { country, operators, operator, pinned = false, current } = Astro.props;
@@ -25,10 +25,10 @@ const m = messages(lang);
 const moneyLabels = Object.fromEntries(operators.map((o) => [o.id, o.mobile_money?.short_name ?? m.common.mobileMoney]));
 const opHref = (section: string): string => localePath(lang, `/${country}/{op}/${section}`);
 const items = [
-  { id: 'accueil', label: m.common.home, href: localePath(lang, `/${country}`), template: null, Icon: House },
+  { id: 'home', label: m.common.home, href: localePath(lang, `/${country}`), template: null, Icon: House },
   { id: 'internet', label: m.sections.internet, href: opHref('internet').replace('{op}', operator), template: opHref('internet'), Icon: Signal },
-  { id: 'argent', label: moneyLabels[operator] ?? m.common.mobileMoney, href: opHref('argent').replace('{op}', operator), template: opHref('argent'), Icon: Wallet },
-  { id: 'reglages', label: m.common.settings, href: localePath(lang, `/${country}/reglages`), template: null, Icon: Settings },
+  { id: 'money', label: moneyLabels[operator] ?? m.common.mobileMoney, href: opHref('money').replace('{op}', operator), template: opHref('money'), Icon: Wallet },
+  { id: 'settings', label: m.common.settings, href: localePath(lang, `/${country}/settings`), template: null, Icon: Settings },
 ] as const;
 const [home, internet, money, settings] = items;
 ---
@@ -42,14 +42,14 @@ const [home, internet, money, settings] = items;
       </a>
     ))
   }
-  <a class="fab" href={localePath(lang, `/${country}/recherche`)} aria-label={m.common.search} aria-current={current === 'recherche' ? 'page' : undefined}>
+  <a class="fab" href={localePath(lang, `/${country}/search`)} aria-label={m.common.search} aria-current={current === 'search' ? 'page' : undefined}>
     <Search size={24} aria-hidden="true" />
   </a>
   {
     [money, settings].map(({ id, label, href, template, Icon }) => (
       <a href={href} data-operator-href={template ?? undefined} aria-current={current === id ? 'page' : undefined}>
         <Icon size={22} aria-hidden="true" />
-        <span data-money-label={id === 'argent' ? '' : undefined}>{label}</span>
+        <span data-money-label={id === 'money' ? '' : undefined}>{label}</span>
       </a>
     ))
   }
@@ -104,7 +104,8 @@ const [home, internet, money, settings] = items;
     margin: 0 auto;
     padding: var(--space-1) var(--space-2) calc(var(--space-1) + env(safe-area-inset-bottom, 0px));
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /* The mobile money column gets more room: "Orange Money" is the longest label of the dock. */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 64px minmax(0, 1.4fr) minmax(0, 1fr);
     align-items: end;
     background: var(--dock);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -120,8 +121,12 @@ const [home, internet, money, settings] = items;
     gap: 3px;
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 11px;
+    font-size: min(11px, 3.1vw);
     font-weight: 700;
+  }
+
+  a > span {
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -1,0 +1,107 @@
+{
+  "operator": "moov",
+  "category": "international",
+  "entries": [
+    {
+      "id": "moov-international-tchad-2000",
+      "kind": "bundle",
+      "name": "Forfait Tchad 2 000 F",
+      "description": "6 min vers le Tchad, 48 h.",
+      "price": 2000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 6,
+        "sms": null
+      },
+      "validity": {
+        "days": 2,
+        "label": "48 h",
+        "en": {
+          "label": "48 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*8*1*1*1*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "tchad",
+        "international",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-tchad/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le code de cette offre compte une étape de plus que celui de l'offre à 5 000 F : publié tel quel, à vérifier sur un téléphone.",
+      "en": {
+        "name": "Chad bundle 2,000 F",
+        "description": "6 min to Chad, 48 h.",
+        "notes": "This offer's code has one step more than the 5,000 F offer's: published as is, to check on a phone."
+      }
+    },
+    {
+      "id": "moov-international-tchad-5000",
+      "kind": "bundle",
+      "name": "Forfait Tchad 5 000 F",
+      "description": "16 min vers le Tchad, 7 jours.",
+      "price": 5000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 16,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*515*8*1*2*1#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "tchad",
+        "international",
+        "appels"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/forfaits-tchad/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Chad bundle 5,000 F",
+        "description": "16 min to Chad, 7 days."
+      }
+    }
+  ]
+}

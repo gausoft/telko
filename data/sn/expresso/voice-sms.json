@@ -1,0 +1,236 @@
+{
+  "operator": "expresso",
+  "category": "voice-sms",
+  "entries": [
+    {
+      "id": "expresso-voice-sms-jokko-100",
+      "kind": "bundle",
+      "name": "Jokko 100 F",
+      "description": "Vous payez 100 F et recevez 5000 F de crédit, pour tous les réseaux, valable 24 h.",
+      "price": 100,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*99*100#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "jokko",
+        "bonus",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Jokko 100 F",
+        "description": "You pay 100 F and get 5000 F of credit for all networks, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-voice-sms-jokko-250",
+      "kind": "bundle",
+      "name": "Jokko 250 F",
+      "description": "Vous payez 250 F et recevez 25000 F de crédit, pour tous les réseaux, valable 24 h.",
+      "price": 250,
+      "allowances": null,
+      "validity": {
+        "days": 1,
+        "label": "24 h",
+        "en": {
+          "label": "24 h"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*99*3#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "jokko",
+        "bonus",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Jokko 250 F",
+        "description": "You pay 250 F and get 25000 F of credit for all networks, valid 24 h."
+      }
+    },
+    {
+      "id": "expresso-voice-sms-jokko-500",
+      "kind": "bundle",
+      "name": "Jokko 500 F",
+      "description": "Vous payez 500 F et recevez 30000 F de crédit, pour tous les réseaux, valable 3 jours.",
+      "price": 500,
+      "allowances": null,
+      "validity": {
+        "days": 3,
+        "label": "3 jours",
+        "en": {
+          "label": "3 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*99*4#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "jokko",
+        "bonus",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Jokko 500 F",
+        "description": "You pay 500 F and get 30000 F of credit for all networks, valid 3 days."
+      }
+    },
+    {
+      "id": "expresso-voice-sms-jokko-1000",
+      "kind": "bundle",
+      "name": "Jokko 1000 F",
+      "description": "Vous payez 1000 F et recevez 50000 F de crédit, pour tous les réseaux, valable 7 jours.",
+      "price": 1000,
+      "allowances": null,
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*99*5#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "jokko",
+        "bonus",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Jokko 1000 F",
+        "description": "You pay 1000 F and get 50000 F of credit for all networks, valid 7 days."
+      }
+    },
+    {
+      "id": "expresso-voice-sms-jokko-2000",
+      "kind": "bundle",
+      "name": "Jokko 2000 F",
+      "description": "Vous payez 2000 F et recevez 100000 F de crédit, pour tous les réseaux, valable 30 jours.",
+      "price": 2000,
+      "allowances": null,
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*99*6#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "jokko",
+        "bonus",
+        "crédit"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.expressotelecom.sn/offres/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": null,
+      "en": {
+        "name": "Jokko 2000 F",
+        "description": "You pay 2000 F and get 100000 F of credit for all networks, valid 30 days."
+      }
+    }
+  ]
+}

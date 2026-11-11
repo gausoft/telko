@@ -1,0 +1,159 @@
+{
+  "operator": "celtiis",
+  "category": "international",
+  "entries": [
+    {
+      "id": "celtiis-international-pass-hello-africa",
+      "kind": "bundle",
+      "name": "Pass Hello Afrique",
+      "description": "8 minutes d'appel vers Afrique valables 7 jours.",
+      "price": 2800,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 8,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "hello",
+        "appel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104#. Le pass se choisit dans le menu.",
+      "en": {
+        "name": "Hello Pass Africa",
+        "description": "8 call minutes to Africa valid 7 days.",
+        "notes": "Price including tax. Consumption check: *104#. You pick the pass in the menu."
+      }
+    },
+    {
+      "id": "celtiis-international-pass-hello-europe",
+      "kind": "bundle",
+      "name": "Pass Hello Europe-Amérique",
+      "description": "12 minutes d'appel vers Europe-Amérique valables 7 jours.",
+      "price": 3600,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 12,
+        "sms": null
+      },
+      "validity": {
+        "days": 7,
+        "label": "7 jours",
+        "en": {
+          "label": "7 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "hello",
+        "appel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104#. Le pass se choisit dans le menu.",
+      "en": {
+        "name": "Hello Pass Europe-America",
+        "description": "12 call minutes to Europe-America valid 7 days.",
+        "notes": "Price including tax. Consumption check: *104#. You pick the pass in the menu."
+      }
+    },
+    {
+      "id": "celtiis-international-pass-hello-world",
+      "kind": "bundle",
+      "name": "Pass Hello Monde",
+      "description": "20 minutes d'appel vers Monde valables 30 jours.",
+      "price": 10000,
+      "allowances": {
+        "data_mb": null,
+        "voice_min": 20,
+        "sms": null
+      },
+      "validity": {
+        "days": 30,
+        "label": "30 jours",
+        "en": {
+          "label": "30 days"
+        }
+      },
+      "time_window": null,
+      "ussd": {
+        "template": "*199#",
+        "params": []
+      },
+      "payment_methods": [
+        "airtime"
+      ],
+      "third_party": null,
+      "tags": [
+        "international",
+        "hello",
+        "appel"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://celtiis.bj/celtiis/offres",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Prix TTC. Suivi de la consommation : *104#. Le pass se choisit dans le menu.",
+      "en": {
+        "name": "Hello Pass World",
+        "description": "20 call minutes to World valid 30 days.",
+        "notes": "Price including tax. Consumption check: *104#. You pick the pass in the menu."
+      }
+    }
+  ]
+}

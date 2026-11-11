@@ -1,0 +1,130 @@
+{
+  "operator": "mtn",
+  "category": "useful-numbers",
+  "entries": [
+    {
+      "id": "mtn-useful-numbers-service-client",
+      "kind": "service",
+      "name": "Service client MTN (centre d'appel)",
+      "description": "Joindre le centre d'appel MTN et MoMo.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "555",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "service client",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/momo/momo-particuliers/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.ci/momo/contact-momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Aussi accès prioritaire pour les clients UNIK. Le numéro est présenté comme le centre d'appel MoMo sur le site.",
+      "en": {
+        "name": "MTN customer service (call center)",
+        "description": "Reach the MTN and MoMo call center.",
+        "notes": "Also priority access for UNIK customers. The site presents the number as the MoMo call center."
+      }
+    },
+    {
+      "id": "mtn-useful-numbers-whatsapp",
+      "kind": "service",
+      "name": "Assistance MoMo sur WhatsApp",
+      "description": "Écrire au robot d'assistance MoMo sur WhatsApp.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "05 75 50 50 50",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "whatsapp",
+        "assistance"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/momo/momo-particuliers/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          },
+          {
+            "url": "https://www.mtn.ci/momo/contact-momo/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Courriel d'assistance : assistances.ci@mtn.com.",
+      "en": {
+        "name": "MoMo help on WhatsApp",
+        "description": "Message the MoMo help chatbot on WhatsApp.",
+        "notes": "Help email: assistances.ci@mtn.com."
+      }
+    },
+    {
+      "id": "mtn-useful-numbers-arnaque",
+      "kind": "service",
+      "name": "Signaler une arnaque MoMo",
+      "description": "En cas d'arnaque, appeler le 555 ou le 222.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "222",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "arnaque",
+        "sécurité"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.mtn.ci/momo/momo-particuliers/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Le site cite le 555 ou le 222 pour l'assistance en cas d'arnaque.",
+      "en": {
+        "name": "Report a MoMo scam",
+        "description": "In case of a scam, call 555 or 222.",
+        "notes": "The site gives 555 or 222 for help in case of a scam."
+      }
+    }
+  ]
+}

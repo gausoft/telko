@@ -1,0 +1,121 @@
+{
+  "operator": "moov",
+  "category": "general",
+  "entries": [
+    {
+      "id": "moov-general-moov-partage",
+      "kind": "service",
+      "name": "Moov Partage",
+      "description": "Service Moov Partage : suivez les instructions à l'écran.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*102#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov partage",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "La page ne décrit pas le service en détail : elle indique seulement de composer le code et de suivre les instructions.",
+      "en": {
+        "name": "Moov Partage",
+        "description": "Moov Partage service: follow the on-screen instructions.",
+        "notes": "The page does not describe the service in detail: it only says to dial the code and follow the instructions."
+      }
+    },
+    {
+      "id": "moov-general-moov-lambata",
+      "kind": "service",
+      "name": "Moov Lambata",
+      "description": "Conserver votre numéro (option 2 pour le masquer).",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*800#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov lambata",
+        "numéro",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Moov Lambata",
+        "description": "Keep your number (option 2 to hide it).",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    },
+    {
+      "id": "moov-general-moov-kiosque",
+      "kind": "service",
+      "name": "Moov Kiosque",
+      "description": "Accéder au service Moov Kiosque.",
+      "price": null,
+      "allowances": null,
+      "validity": null,
+      "time_window": null,
+      "ussd": {
+        "template": "*512#",
+        "params": []
+      },
+      "payment_methods": [],
+      "third_party": null,
+      "tags": [
+        "moov kiosque",
+        "service"
+      ],
+      "provenance": {
+        "status": "unverified",
+        "sources": [
+          {
+            "url": "https://www.moov-africa.ne/espace-particulier/services-vas/",
+            "kind": "official",
+            "accessed": "2026-10-28"
+          }
+        ],
+        "verified_at": null,
+        "verified_by": null
+      },
+      "notes": "Code menu : le reste se choisit dans le menu de l'opérateur.",
+      "en": {
+        "name": "Moov Kiosk",
+        "description": "Access the Moov Kiosk service.",
+        "notes": "Menu code: you choose the rest in the operator's menu."
+      }
+    }
+  ]
+}
