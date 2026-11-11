@@ -1,10 +1,14 @@
-import { checkCode } from './contribution';
+import { PROOF_LABELS, checkCode } from './contribution';
 import type { ContributionDraft, ContributionProof } from './contribution-types';
 import type { Submission, SubmissionContext, SubmissionParse } from './submission-types';
 
 const PROOFS: ContributionProof[] = ['device', 'official', 'other'];
 const SHORT = 200;
 const LONG = 1000;
+// Control characters except tab and line breaks, which are folded into spaces.
+// eslint-disable-next-line no-control-regex
+const CONTROL = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/;
+const LINE_BREAKS = /[\r\n\u0085\u2028\u2029]+/g;
 
 export function submissionOf(draft: ContributionDraft, context: SubmissionContext): Submission {
   return {
@@ -27,10 +31,13 @@ export function parseSubmission(input: unknown): SubmissionParse {
   if (typeof input !== 'object' || input === null) return { ok: false, field: 'body' };
   const raw = input as Record<string, unknown>;
 
+  // Every field lands on one labelled line of the message: line breaks are folded into spaces,
+  // other control characters are refused, so a visitor cannot forge a line such as "Source : ...".
   const text = (key: string, max: number, required: boolean): string | null => {
     const value = raw[key];
     if (typeof value !== 'string') return required ? null : '';
-    const trimmed = value.trim();
+    if (CONTROL.test(value)) return null;
+    const trimmed = value.replace(LINE_BREAKS, ' ').trim();
 
     return trimmed.length > max || (required && trimmed === '') ? null : trimmed;
   };
@@ -56,7 +63,7 @@ export function parseSubmission(input: unknown): SubmissionParse {
     ['code', code !== null && checkCode(code) === null],
     ['details', details !== null],
     ['proof', typeof proof === 'string' && (PROOFS as string[]).includes(proof)],
-    ['sourceUrl', sourceUrl !== null && (sourceUrl === '' || /^https?:\/\//.test(sourceUrl))],
+    ['sourceUrl', sourceUrl !== null && (sourceUrl === '' || /^https?:\/\/\S+$/.test(sourceUrl))],
     ['contact', contact !== null],
     ['date', date !== null && /^\d{4}-\d{2}-\d{2}$/.test(date)],
   ];
@@ -81,16 +88,26 @@ export function parseSubmission(input: unknown): SubmissionParse {
   };
 }
 
-/** One readable line per field, for destinations that show plain text. */
+/** The message the owner reads: French, one labelled line per field, flagged as unverified. */
 export function submissionText(submission: Submission): string {
   const lines = [
+    'Nouvelle proposition (non vérifiée)',
     `${submission.operator}, ${submission.service} (${submission.country})`,
-    `${submission.name}: ${submission.code}`,
-    submission.details,
-    `Proof: ${submission.proof}${submission.sourceUrl ? `, ${submission.sourceUrl}` : ''}`,
-    `Date: ${submission.date}`,
+    `Nom : ${submission.name}`,
+    `Code : ${submission.code}`,
+    `Détails : ${submission.details}`,
+    `Preuve : ${PROOF_LABELS[submission.proof]}`,
   ];
-  if (submission.contact) lines.push(`Contact: ${submission.contact}`);
+  if (submission.sourceUrl) lines.push(`Source : ${submission.sourceUrl}`);
+  lines.push(`Date : ${frenchDate(submission.date)}`);
+  if (submission.contact) lines.push(`Contact : ${submission.contact}`);
 
   return lines.join('\n');
+}
+
+/** 2026-11-09 becomes 09/11/2026. */
+function frenchDate(iso: string): string {
+  const [year, month, day] = iso.split('-');
+
+  return `${day}/${month}/${year}`;
 }

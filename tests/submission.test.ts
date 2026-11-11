@@ -34,7 +34,42 @@ describe('submission parsing', () => {
 
   it('adds the contact line only when given', () => {
     expect(submissionText(valid as never)).not.toContain('Contact');
-    expect(submissionText({ ...valid, contact: '90123456' } as never)).toContain('Contact: 90123456');
+    expect(submissionText({ ...valid, contact: '90123456' } as never)).toContain('Contact : 90123456');
+  });
+});
+
+describe('submission forged lines', () => {
+  it('folds line breaks so a field cannot add a labelled line', () => {
+    const parsed = parseSubmission({ ...valid, details: 'ok\nSource : https://evil.example\r\nDate : 01/01/2000' });
+
+    expect(parsed.ok && parsed.submission.details).toBe('ok Source : https://evil.example Date : 01/01/2000');
+    expect(parsed.ok && submissionText(parsed.submission).split('\n').filter((l) => l.startsWith('Source : '))).toHaveLength(valid.sourceUrl ? 1 : 0);
+  });
+
+  it('refuses control characters and urls with spaces', () => {
+    expect(parseSubmission({ ...valid, name: 'a\u0000b' })).toEqual({ ok: false, field: 'name' });
+    expect(parseSubmission({ ...valid, sourceUrl: 'https://a.example x' })).toEqual({ ok: false, field: 'sourceUrl' });
+  });
+});
+
+describe('submission message', () => {
+  it('is French, labelled and flagged as unverified', () => {
+    expect(submissionText({ ...valid, sourceUrl: 'https://example.test/a' } as never)).toBe(
+      [
+        'Nouvelle proposition (non vérifiée)',
+        'Yas Togo, Mobile money (tg)',
+        'Nom : Transfert',
+        'Code : *155*1*1*{phone}*{amount}#',
+        'Détails : Transfert national',
+        'Preuve : Testé sur mon téléphone',
+        'Source : https://example.test/a',
+        'Date : 09/11/2026',
+      ].join('\n'),
+    );
+  });
+
+  it('leaves out the source line when none is given', () => {
+    expect(submissionText(valid as never)).not.toContain('Source');
   });
 });
 
